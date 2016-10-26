@@ -1,0 +1,131 @@
+/*p {
+    color: #0f0;               / зеленый цвет текста /
+    border: 5px solid;         / рамка будет зеленой /
+    box-shadow: 0 0 50px;      / и тень элемента     /
+    text-shadow: 4px 4px 10px; / и тень текста       /
+}*/
+
+@font-face {
+    font-family: "Old London";
+    src: url(OldLondon.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "C&L";
+    src: url(C&LBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url(ArchivoNarrow.ttf) format("truetype");
+}
+
+html, body {
+    font-size: 14px;
+    height: 100%;
+    background: rgb(193, 179, 166);
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+header {
+    width: 100%;
+    font-size: 11px;
+}
+
+#paper-name, #index, #weather, #sections {
+    float: left;
+}
+
+#index, #sections {
+    width: 12%;
+}
+
+#weather {
+    width: 14%;
+}
+
+header h3 {
+    text-align: center;
+    margin: 0;
+    height: 30px;
+}
+
+#paper-name {
+    font-family: "Old London";
+    text-align: center;
+    width: 62%;
+}
+
+header table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header table td:first-child {
+    width: 100%;
+}
+
+#info {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    white-space: nowrap;
+}
+
+#info div div {
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+
+#info div div:first-child {
+    text-align: left;
+    width: 14%;
+}
+
+#info div div:last-child {
+    text-align: right;
+    width: 14%;
+}
+
+#info div div:nth-child(odd) {
+    font-size: 20px;
+}
+
+main h1 {
+    font-family: "C&L";
+    text-align: justify;
+}
+
+article > div {
+    column-count: 2;
+}
+
+blockquote {
+    font-size: 50px;
+    margin: 0;
+    font-family: "Archivo";
+    font-stretch: ultra-condensed;
+}
+
+#coast-panel {
+    padding-top: 10px;
+    border-top: 2px solid black;
+    width: 30%;
+}
+
+#coast-panel h2, h3 {
+    font-family: "C&L";
+    margin: 10px 0px;
+}
