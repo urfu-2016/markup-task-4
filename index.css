@@ -13,6 +13,14 @@
 @font-face {
     font-family: "C&L";
     src: url(C&LBold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "C&L";
+    src: url(C&LBoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
