@@ -20,6 +20,10 @@
     src: url(ArchivoNarrow.ttf) format("truetype");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-size: 14px;
     height: 100%;
@@ -34,6 +38,12 @@ h1 {
 
 h2 {
     font-size: 35px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    text-indent: 8px;
 }
 
 header {
@@ -109,7 +119,13 @@ main h1 {
 }
 
 article > div {
+    text-align: justify;
+}
+
+#coast-panel > div {
     column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
 }
 
 blockquote {
@@ -123,9 +139,35 @@ blockquote {
     padding-top: 10px;
     border-top: 2px solid black;
     width: 30%;
+    float: left;
 }
 
 #coast-panel h2, h3 {
     font-family: "C&L";
     margin: 10px 0px;
 }
+
+#local-farmer {
+    padding-left: 10px;
+    float: left;
+    width: 70%;
+}
+
+#local-farmer h2 {
+    margin: 0;
+    font-style: italic;
+    font-weight: "C&L";
+}
+
+#local-farmer > div {
+    padding-top: 8px;
+}
+
+#local-farmer figure {
+    width: 66%;
+    margin: 5px 5px 0px 0px;
+    padding: 5px 0px;
+    border-top: 1px solid black;
+    float: left;
+}
+
