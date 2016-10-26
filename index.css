@@ -1,153 +1,143 @@
-
-html {
-    
-}
-body {
+body
+{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     font: 14px 'Times New Roman', serif;
 }
 
-header {
-  margin-top: 10px;  
-  text-align: center;
-  margin-bottom: 10px;  
-  font-size: 1rem;
+header
+{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
-.content {
-
-  display:  block;
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-  border: solid 1px black;
-  box-shadow: 2px 2px white,
-                    3px 3px black,
-                    5px 5px white,
-                    6px 6px black,
-                    8px 8px white,
-                    9px 9px black,
-                    11px 11px white,
-                    12px 12px black,
-                    0px 10px 20px black;
-  padding: 10px 30px 10px 30px;  
-  display: block;
-  background: url('https://image.freepik.com/free-photo/background-of-smooth-texture_1154-649.jpg');
-  
+.content
+{
+    display: block;
+    font-size: .9rem;
+    margin-bottom: 30px;
+    border: solid 1px black;
+    box-shadow: 2px 2px white, 3px 3px black;
+    /*        5px 5px white, 6px 6px black,  
+        8px 8px white, 9px 9px black, 
+        11px 11px white, 12px 12px black,
+        0 10px 20px black;*/
+    padding: 10px 30px;
+    background: url('https://image.freepik.com/free-photo/background-of-smooth-texture_1154-649.jpg');
 }
 
-.content article {
-  text-indent: 10px;
+.content article
+{
+    text-indent: 10px;
 }
 
-video {
-  width: 100%;
+video
+{
+    width: 100%;
 }
 
-.news {
-  margin-right: 20px;
-  display: inline-block;
-  width: 49%;
-  column-count: 3;
-  column-gap: 10px;
-  column-rule: 1px dashed #000;
-
-
+.news
+{
+    margin-right: 20px;
+    display: inline-block;
+    width: 49%;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px dashed #000;
 }
 
-.main-news{
-  padding: 10px;
-  border: 1px dashed #000;
-  /*float: right;*/
-  width: 46%;
-  display: inline-block;
-  margin-top: 0px;
-  vertical-align: top;
+.main-news
+{
+    padding: 10px;
+    border: 1px dashed #000;
+    /*float: right;*/
+    width: 46%;
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top;
 }
 
-.main-news article {
-  font-size: 1rem;
-
+.main-news article
+{
+    font-size: 1rem;
 }
 
-h1 {
-  text-align: center;
+h1
+{
+    text-align: center;
 }
 
-#increase-font::after{
-  /*content: */
-  background: red; 
+.font-size[value='16'] ~ .content
+{
+    font-size: 1.2rem;
 }
 
-.font-size[value="16"] ~ .content
- {
-     font-size: 1.2rem;
- }
+.font-size[value='16'] ~ .content h3
+{
+    font-size: 1.4rem;
+}
 
- .font-size[value="16"] ~ .content h3
- {
-     font-size: 1.4rem;
- }
+.font-size[value='16'] ~ .content h1
+{
+    font-size: 2.2rem;
+}
 
-  .font-size[value="16"] ~ .content h1
- {
-     font-size: 2.2rem;
- }
+.font-size[value='18'] ~ .content
+{
+    font-size: 1.4rem;
+}
 
- .font-size[value="18"] ~ .content
- {
-     font-size: 1.4rem;
- }
+.font-size[value='18'] ~ .content h3
+{
+    font-size: 1.6rem;
+}
 
- .font-size[value="18"] ~ .content h3
- {
-     font-size: 1.6rem;
- }
+.font-size[value='18'] ~ .content h1
+{
+    font-size: 2.8rem;
+}
 
-  .font-size[value="18"] ~ .content h1
- {
-     font-size: 2.8rem
- }
+.font-size[value='20'] ~ .content
+{
+    font-size: 1.6rem;
+}
 
+.font-size[value='20'] ~ .content h3
+{
+    font-size: 1.8rem;
+}
 
- .font-size[value="20"] ~ .content
- {
-     font-size: 1.6rem;
- }
+.font-size[value='20'] ~ .content h1
+{
+    font-size: 3.2rem;
+}
 
- .font-size[value="20"] ~ .content h3
- {
-     font-size: 1.8rem;
- }
-
-  .font-size[value="20"] ~ .content h1
- {
-     font-size: 3.2rem
- }
-
- .font-family[value="sans-serif"] ~ .content
- {
+.font-family[value='sans-serif'] ~ .content
+{
     font-family: sans-serif;
- }
+}
 
- .font-family[value="cursive"] ~ .content
- {
+.font-family[value='cursive'] ~ .content
+{
     font-family: cursive;
- }
+}
 
- .font-family[value="fantasy"] ~ .content
- {
+.font-family[value='fantasy'] ~ .content
+{
     font-family: fantasy;
- }
+}
 
-  .font-family[value="monospace"] ~ .content
- {
+.font-family[value='monospace'] ~ .content
+{
     font-family: monospace;
- }
+}
 
- .page-mode[value="night"] ~ .content
- {
+.page-mode[value='night'] ~ .content
+{
     color: white;
-    background: rgba(0,0,0,0.5);
- }
+    background: rgba(0, 0, 0, .5);
+}
+
