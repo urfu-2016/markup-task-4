@@ -72,11 +72,11 @@ h1.newspaper-title
     font-variant: small-caps;
     font-family: 'Kurale', serif;
     text-align: center;
-    text-shadow: 0 1px 0 #efebe9,
-        0 2px 0 #efebe9,
-        0 3px 0 #d2d7d0,
-        0 4px 0 #d2d7d0,
-        0 5px 0 #757575,
+    text-shadow: 0 1px 0 #efebe9, 
+        0 2px 0 #efebe9, 
+        0 3px 0 #d2d7d0, 
+        0 4px 0 #d2d7d0, 
+        0 5px 0 #757575, 
         0 6px 0 #757575;
     letter-spacing: 15px;
 }
@@ -92,9 +92,9 @@ h2
     text-align: left;
     font-family: 'PT Mono', monospace;
     padding: 15px;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2),
-        0 -1px 1px 0 rgba(0,0,0,.2),
-        0 0 0 7px #4e342e inset,
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2), 
+        0 -1px 1px 0 rgba(0,0,0,.2), 
+        0 0 0 7px #4e342e inset, 
         0 0 10px 7px #b3c4bb inset;
 }
 
@@ -200,8 +200,8 @@ ol.stop-ham-rules li:nth-child(2n+1)
     margin-bottom: 10px;
     border-radius: 2px;
     border-left: 10px solid #d7ccc8;
-    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
-        -2px -2px 5px 0 rgba(0,0,0,.1),
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1), 
+        -2px -2px 5px 0 rgba(0,0,0,.1), 
         2px 2px 5px 0 rgba(0,0,0,.1), 
         -2px 2px 5px 0 rgba(0,0,0,.1);
     letter-spacing: 2px;
