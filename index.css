@@ -1,181 +1,390 @@
-/*p {
-    color: #0f0;               / зеленый цвет текста /
-    border: 5px solid;         / рамка будет зеленой /
-    box-shadow: 0 0 50px;      / и тень элемента     /
-    text-shadow: 4px 4px 10px; / и тень текста       /
-}*/
-
-@font-face {
-    font-family: "Old London";
-    src: url(OldLondon.ttf) format("truetype");
+@font-face
+{
+    font-family: 'Old London';
+    src: url(OldLondon.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: "C&L";
-    src: url(C&LBold.ttf) format("truetype");
+@font-face
+{
+    font-family: 'C&L';
+    src: url(C&LBold.ttf) format('truetype');
     font-weight: bold;
 }
 
-@font-face {
-    font-family: "C&L";
+@font-face
+{
+    font-family: 'C&L';
     src: url(C&LBoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Archivo";
-    src: url(ArchivoNarrow.ttf) format("truetype");
+@font-face
+{
+    font-family: 'Archivo';
+    src: url(ArchivoNarrow.ttf) format('truetype');
 }
 
-* {
+html,
+body
+{
+    font-size: 14px;
+    height: 100%;
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.border-box
+{
     box-sizing: border-box;
 }
 
-html, body {
-    font-size: 14px;
-    height: 100%;
-    background: rgb(193, 179, 166);
-}
-
-h1 {
-    font-size: 100px;
-    font-weight: normal;
+h1,
+h2,
+h3
+{
     margin: 0;
 }
 
-h2 {
-    font-size: 35px;
+h1
+{
+    font-size: 100px;
+    font-weight: normal;
 }
 
-p {
+h2
+{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.centered
+{
+    text-align: center;
+    margin: 0 auto;
+}
+
+p
+{
     margin: 0;
     padding: 0;
     text-indent: 8px;
+    text-align: justify;
 }
 
-header {
+.pull-right
+{
+    text-align: right;
+}
+
+.night-mode:checked ~ div
+{
+    background: black;
+    color: white;
+}
+
+.different-font:checked ~ div
+{
+    font-family: 'Comic Sans MS';
+    font-size: 12px;
+}
+
+.large-font:checked ~ div
+{
+    font-size: larger;
+}
+
+.small-font:checked ~ div
+{
+    font-size: smaller;
+}
+
+header
+{
     width: 100%;
     font-size: 11px;
 }
 
-#paper-name, #index, #weather, #sections {
-    float: left;
-}
-
-#index, #sections {
-    width: 12%;
-}
-
-#weather {
-    width: 14%;
-}
-
-header h3 {
-    text-align: center;
-    margin: 0;
+header h3
+{
+    font-style: italic;
     height: 30px;
 }
 
-#paper-name {
-    font-family: "Old London";
-    text-align: center;
+.paper-name,
+.index,
+.weather,
+.sections
+{
+    float: left;
+}
+
+.index,
+.sections
+{
+    width: 12%;
+}
+
+.weather
+{
+    width: 14%;
+}
+
+.paper-name
+{
+    font-family: 'Old London';
     width: 62%;
 }
 
-header table {
+header table
+{
     border-collapse: collapse;
     width: 80%;
     margin: 0 auto;
 }
 
-header table td:first-child {
+header table td:first-child
+{
     width: 100%;
 }
 
-#info {
+.info
+{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 5px 0px;
-    margin: 10px 0px;
+    padding: 5px 0;
+    margin-top: 10px;
     white-space: nowrap;
 }
 
-#info div div {
+.info div div
+{
     float: left;
     width: 24%;
-    text-align: center;
 }
 
-#info div div:first-child {
-    text-align: left;
+.info div div:first-child
+{
     width: 14%;
 }
 
-#info div div:last-child {
-    text-align: right;
+.info div div:last-child
+{
     width: 14%;
 }
 
-#info div div:nth-child(odd) {
+.info div div:nth-child(odd)
+{
     font-size: 20px;
 }
 
-main h1 {
-    font-family: "C&L";
-    text-align: justify;
+article:not(:last-of-type)
+{
+    border-right: 1px solid black;
+    padding-right: 10px;
 }
 
-article > div {
-    text-align: justify;
+article:not(:first-of-type)
+{
+    padding-left: 10px;
 }
 
-#coast-panel > div {
+article h2,
+article h3
+{
+    font-family: 'C&L';
+    margin: 10 0;
+    width: 100%;
+}
+
+article p:first-of-type:first-letter
+{
+    font-size: 30px;
+    font-family: 'Old London';
+}
+
+.col-2
+{
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
 }
 
-blockquote {
-    font-size: 50px;
+.col-3
+{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+
+.author
+{
+    font-style: italic;
+}
+
+blockquote
+{
+    font-size: 35px;
     margin: 0;
-    font-family: "Archivo";
+    font-family: 'Archivo';
     font-stretch: ultra-condensed;
 }
 
-#coast-panel {
-    padding-top: 10px;
-    border-top: 2px solid black;
+blockquote:before
+{
+    content: '';
+    width: 60%;
+    display: block;
+    margin: 5px 0 0 20%;
+    border-top: 1px solid black;
+}
+
+blockquote:after
+{
+    content: '';
+    width: 60%;
+    display: block;
+    margin: 0 0 5px 20%;
+    border-top: 1px solid black;
+}
+
+.coast-panel
+{
     width: 30%;
     float: left;
 }
 
-#coast-panel h2, h3 {
-    font-family: "C&L";
-    margin: 10px 0px;
-}
-
-#local-farmer {
-    padding-left: 10px;
+.local-farmer
+{
     float: left;
-    width: 70%;
+    width: 30%;
 }
 
-#local-farmer h2 {
+figure
+{
     margin: 0;
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+figcaption
+{
     font-style: italic;
-    font-weight: "C&L";
 }
 
-#local-farmer > div {
-    padding-top: 8px;
+figure img
+{
+    width: 100%;
 }
 
-#local-farmer figure {
-    width: 66%;
-    margin: 5px 5px 0px 0px;
-    padding: 5px 0px;
-    border-top: 1px solid black;
+.wtb
+{
+    float: right;
+    height: 120px;
+    width: 170px;
+    border: 3px dashed black;
+    margin: 5px 0 0 10px;
+    padding: 5px;
+}
+
+.legend
+{
+    display: block;
+    cursor: pointer;
+}
+
+.legend-color
+{
+    color: #ff8000;
+}
+
+.yellow-color
+{
+    color: #ffd100;
+}
+
+.green-color
+{
+    color: #1eff00;
+}
+
+.gold-color
+{
+    color: gold;
+}
+
+.silver-color
+{
+    color: silver;
+}
+
+.sienna-color
+{
+    color: sienna;
+}
+
+.tooltip
+{
+    display: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 0;
+    width: 320px;
+    transform: translateX(-90%) translateY(-370px);
+}
+
+.tooltip td
+{
+    padding: 0;
+    width: 50%;
+}
+
+.tooltip table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tooltip div
+{
+    background: rgb(8, 13, 33);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px solid #777;
+}
+
+.legend:hover + .tooltip
+{
+    display: block;
+}
+
+.pixar-news
+{
     float: left;
+    width: 40%;
+    padding-left: 10px;
 }
 
+.vertical
+{
+    width: 1em;
+    word-wrap: break-word;
+    letter-spacing: 100px;
+}
+
+aside
+{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 1px solid black;
+    padding: 3px;
+}
