@@ -199,10 +199,10 @@ ol.stop-ham-rules li:nth-child(2n+1)
     padding: 7px 20px;
     margin-bottom: 10px;
     border-radius: 2px;
-    border-left: 10px solid #D7ccc8;
+    border-left: 10px solid #d7ccc8;
     box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
         -2px -2px 5px 0 rgba(0,0,0,.1),
-        2px 2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1), 
         -2px 2px 5px 0 rgba(0,0,0,.1);
     letter-spacing: 2px;
     transition: .3s all linear;
