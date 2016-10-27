@@ -1,0 +1,192 @@
+@font-face
+{
+    font-family: OldNews;
+    src: url(fonts/OldNewspaperTypes.ttf);
+}
+
+html
+{
+    background: lightblue;
+}
+
+.newspaper
+{
+    margin-top: 10px;
+    background: lightgray;
+    border: solid 1px;
+}
+
+h1
+{
+    font: 70px 'Old English Text MT';
+    text-align: center;
+    margin-top: 0;
+}
+
+h2
+{
+    font-size: 30px;
+    column-span: all;
+    font-style: italic;
+}
+
+h3
+{
+    border-bottom: solid 2px;
+}
+
+h4
+{
+    margin-top: 5%;
+    font: 30px 'Agency FB';
+    font-weight: bold;
+}
+
+header
+{
+    height: 110px;
+    text-align: center;
+}
+
+.left-header
+{
+    font: 20px 'Agency FB';
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.left-header p
+{
+    border: solid 1px;
+    margin-top: 5px;
+    margin-left: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.center-header
+{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.right-header
+{
+    position: absolute;
+    left: 80%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.right-header p
+{
+    margin-top: -20%;
+    font: 12px 'Times New Roman';
+    text-align: left;
+}
+
+.information
+{
+    text-align: center;
+    font-family: OldNews;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.information hr
+{
+    border: none;
+    background-color: black;
+    margin-top: 2px;
+    margin-bottom: 0;
+    height: 1px;
+}
+
+main
+{
+    font-family: OldNews;
+    font-size: 12px;
+    text-align: center;
+}
+
+main div
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.left-main
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    border-right: solid 1px;
+}
+
+.two-columns
+{
+    width: 100%;
+    column-count: 2;
+    column-rule: 1px solid black;
+    margin-left: -15px;
+}
+
+.four-columns
+{
+    display: inline-block;
+    width: 50%;
+    column-count: 4;
+    column-rule: 1px solid black;
+    border-right: solid 1px;
+    padding-right: 15px;
+}
+
+h3:first-letter
+{
+    font: 40px 'Old English Text MT';
+}
+
+/*Дополнительное задание*/
+
+.change-color:checked ~ div
+{
+    background: black;
+    color: white;
+}
+
+.change-color:checked ~ div hr
+{
+    background-color: white;
+}
+
+.change-color:checked ~ div div
+{
+    column-rule: 1px solid white;
+}
+
+.big-font:checked ~ div main
+{
+    font-size: 20px;
+}
+
+.small-font:checked ~ div main
+{
+    font-size: 10px;
+}
+
+.arial:checked ~ div main
+{
+    font-family: Arial;
+}
+
+.chiller:checked ~ div main
+{
+    font-family: Chiller;
+}
