@@ -70,72 +70,72 @@ h1
     text-align: center;
 }
 
-.font-size[value='16'] ~ .content
+input[name='font-size'][value='120']:checked ~ .content
 {
     font-size: 1.2rem;
 }
 
-.font-size[value='16'] ~ .content h3
+input[name='font-size'][value='120']:checked ~ .content h3
 {
     font-size: 1.4rem;
 }
 
-.font-size[value='16'] ~ .content h1
+input[name='font-size'][value='120']:checked ~ .content h1
 {
     font-size: 2.2rem;
 }
 
-.font-size[value='18'] ~ .content
+input[name='font-size'][value='140']:checked ~ .content
 {
     font-size: 1.4rem;
 }
 
-.font-size[value='18'] ~ .content h3
+input[name='font-size'][value='140']:checked ~ .content h3
 {
     font-size: 1.6rem;
 }
 
-.font-size[value='18'] ~ .content h1
+input[name='font-size'][value='140']:checked ~ .content h1
 {
     font-size: 2.8rem;
 }
 
-.font-size[value='20'] ~ .content
+input[name='font-size'][value='160']:checked ~ .content
 {
     font-size: 1.6rem;
 }
 
-.font-size[value='20'] ~ .content h3
+.finput[name='font-size'][value='160']:checked ~ .content h3
 {
     font-size: 1.8rem;
 }
 
-.font-size[value='20'] ~ .content h1
+input[name='font-size'][value='160']:checked ~ .content h1
 {
     font-size: 3.2rem;
 }
 
-.font-family[value='sans-serif'] ~ .content
+input[name='font-family'][value='sans-serif']:checked ~ .content
 {
     font-family: sans-serif;
 }
 
-.font-family[value='cursive'] ~ .content
+input[name='font-family'][value='cursive']:checked ~ .content
 {
     font-family: cursive;
 }
 
-.font-family[value='fantasy'] ~ .content
+input[name='font-family'][value='fantasy']:checked ~ .content
 {
     font-family: fantasy;
 }
 
-.font-family[value='monospace'] ~ .content
+input[name='font-family'][value='monospace']:checked ~ .content
 {
     font-family: monospace;
 }
 
-.page-mode[value='night'] ~ .content
+input.page-mode:checked ~ .content
 {
     color: white;
     background: rgba(0, 0, 0, .5);

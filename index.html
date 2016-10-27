@@ -5,28 +5,17 @@
     <meta charset="utf-8">
     <title>NewYorkTimes</title>
 </head>
-
 <body>
-    <select class="font-size"
-     onchange="this.setAttribute('value', this.options[this.options.selectedIndex].value)">
-        <option value="default">default</option>
-        <option value="16">16</option>
-        <option value="18">18</option>
-        <option value="20">20</option>
-    </select>
-    <select class="font-family"
-     onchange="this.setAttribute('value', this.options[this.options.selectedIndex].value)">
-        <option value="serif">serif</option>
-        <option value="sans-serif">sans-serif</option>
-        <option value="cursive">cursive</option>
-        <option value="fantasy">fantasy</option>
-        <option value="monospace">monospace</option>
-    </select>
-    <select class="page-mode"
-     onchange="this.setAttribute('value', this.options[this.options.selectedIndex].value)">
-        <option value="normal">normal-mode</option>
-        <option value="night">night-mode</option>
-    </select>
+    <input type="radio" name="font-size" value="100" checked>100%
+    <input type="radio" name="font-size" value="120">20%
+    <input type="radio" name="font-size" value="140">140%
+    <input type="radio" name="font-size" value="160">160%
+    <input type="radio" name="font-family" value="serif" checked>serif
+    <input type="radio" name="font-family" value="sans-serif">sans-serif
+    <input type="radio" name="font-family" value="cursive">cursive
+    <input type="radio" name="font-family" value="monospace">monospace
+    <input type="radio" name="font-family" value="fantasy">fantasy
+    <input type="checkbox" class="page-mode">night-mode
     <div class="content">
         <header>
             <img src="http://bit.ly/2eRoM2c" alt="The New York Times">
