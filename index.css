@@ -1,10 +1,12 @@
-main {
+main
+{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-section.newspaper {
+section.newspaper
+{
     width: 1200px;
     background: radial-gradient(at top, #FFF8E1, #FFE0B2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
@@ -14,7 +16,8 @@ section.newspaper {
     flex-wrap: wrap;
 }
 
-article.news {
+article.news
+{
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -30,33 +33,39 @@ article.news {
     width: 850px;
 }
 
-header {
+header
+{
     width: 100%;
 
 }
 
-div.src {
+div.src
+{
     display: flex;
     justify-content: space-around;
 }
 
-div.src h3 {
+div.src h3
+{
     font-family: 'Kaushan Script', cursive;
     color: red;
     letter-spacing: 10px;
 }
 
-div.src h3:hover {
+div.src h3:hover
+{
     -webkit-transform: scale(2);
     -ms-ransform: scale(2);
     transform: scale(2);
 }
 
-a {
+a
+{
     text-decoration: none;
 }
 
-h1.newspaper-title {
+h1.newspaper-title
+{
     color: #795548;
     font-size: 78px;
     font-weight: bold;
@@ -72,11 +81,13 @@ h1.newspaper-title {
     letter-spacing: 15px;
 }
 
-aside {
+aside
+{
     width: 300px;
 }
 
-h2 {
+h2
+{
     color: #795548;
     text-align: left;
     font-family: 'PT Mono', monospace;
@@ -87,7 +98,9 @@ h2 {
     0 0 10px 7px #b3c4bb inset;
 }
 
-h2.title:first-letter, h2.extra-title span {
+h2.title:first-letter,
+h2.extra-title span
+{
     font-size: 1.5em;
     padding: 2px 10px;
     margin-right: 5px;
@@ -98,18 +111,24 @@ h2.title:first-letter, h2.extra-title span {
     font-weight: bold;
 }
 
-h2.extra-title span {
+h2.extra-title span
+{
     color: red;
 }
 
-p {
+p
+{
     color: #D84315;
     text-align: justify;
     font-family: 'Ruslan Display', cursive;
     word-break: keep-all;
 }
 
-p:active, li:active, h2:active, h3:active {
+p:active,
+li:active,
+h2:active,
+h3:active
+{
     zoom: 2;
     word-break: keep-all;
     -o-transform: scaleY(1.2);
@@ -126,47 +145,56 @@ p:active, li:active, h2:active, h3:active {
     z-index: 1;
 }
 
-p.say {
+p.say
+{
     text-align: center;
     padding-right: 5px;
     border: 2px dotted #263238;
 }
 
-.what-say {
+.what-say
+{
     color: #607D8B;
 }
 
-p:nth-child(2n) {
+p:nth-child(2n)
+{
     text-align: right;
     color: #5D4037;
     font-family: 'Pattaya', sans-serif;
 }
 
-p.autor {
+p.autor
+{
     color: white;
     text-align: center;
     background-color: #3E2723;
 }
 
-ol.stop-ham-rules li {
+ol.stop-ham-rules li
+{
     text-align: justify;
     padding: 5px;
     border-bottom: solid;
 }
 
-ol.stop-ham-rules li:nth-child(2n) {
+ol.stop-ham-rules li:nth-child(2n)
+{
     border-right: 1px solid;
 }
 
-ol.stop-ham-rules li:nth-child(2n+1) {
+ol.stop-ham-rules li:nth-child(2n+1)
+{
     border-left: 1px solid;
 }
 
-.border {
+.border
+{
     list-style: none;
     padding: 0;
 }
-.border li {
+.border li
+{
     padding: 7px 20px;
     margin-bottom: 10px;
     border-radius: 2px;
@@ -178,26 +206,31 @@ ol.stop-ham-rules li:nth-child(2n+1) {
     letter-spacing: 2px;
     transition: 0.3s all linear;
 }
-.border li:nth-child(2){
+.border li:nth-child(2)
+{
     border-color: #BCAAA4;
 }
-.border li:nth-child(3){
+.border li:nth-child(3)
+{
     border-color: #A1887F;
 }
 
-img.big-pic {
+img.big-pic
+{
     border: solid;
     display: block;
     column-span: all;
     -webkit-filter: sepia(100%);
 }
 
-img.mini-pic {
+img.mini-pic
+{
     transform: rotate(-10deg);
     -webkit-filter: sepia(100%);
 }
 
-img {
+img
+{
     margin: 5px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -206,11 +239,13 @@ img {
     transition: all 1s ease;
 }
 
-img:hover {
+img:hover
+{
     -webkit-filter: sepia(0%);
 }
 
-p.tip {
+p.tip
+{
     font-size: 30px;
     word-break: break-all;
     width: 20px;
