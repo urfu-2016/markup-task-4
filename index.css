@@ -109,6 +109,23 @@ p {
     word-break: keep-all;
 }
 
+p:active, li:active, h2:active, h3:active {
+    zoom: 2;
+    word-break: keep-all;
+    -o-transform: scaleY(1.2);
+    -ms-transform: scaleY(1.2);
+    -moz-transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+    background-color: white;
+    border: solid #4E342E;
+    margin: 10px;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+}
+
 p.say {
     text-align: center;
     padding-right: 5px;
@@ -191,4 +208,10 @@ img {
 
 img:hover {
     -webkit-filter: sepia(0%);
+}
+
+p.tip {
+    font-size: 30px;
+    word-break: break-all;
+    width: 20px;
 }
