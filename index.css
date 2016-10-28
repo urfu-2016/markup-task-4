@@ -1,19 +1,16 @@
 main
 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 1300px;
+    margin: auto;
+    background: radial-gradient(at top, #fff8e1, #ffe0b2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 section.newspaper
 {
-    width: 1200px;
-    background: radial-gradient(at top, #fff8e1, #ffe0b2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin: auto;
+    display: table;
 }
 
 article.news
@@ -31,18 +28,19 @@ article.news
     -moz-column-gap: 40px;
     column-gap: 40px;
     width: 850px;
+    display: table-cell;
 }
 
 header
 {
     width: 100%;
-
 }
 
 div.src
 {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    display: table;
 }
 
 div.src h3
@@ -50,13 +48,14 @@ div.src h3
     font-family: 'Kaushan Script', cursive;
     color: red;
     letter-spacing: 10px;
+    display: table-cell;
 }
 
 div.src h3:hover
 {
-    -webkit-transform: scale(2);
-    -ms-ransform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1.5);
+    -ms-ransform: scale(1.5);
+    transform: scale(1.5);
 }
 
 a
@@ -78,7 +77,9 @@ h1.newspaper-title
 
 aside
 {
-    width: 300px;
+    width: 250px;
+    padding: 25px;
+    display: table-cell
 }
 
 h2
