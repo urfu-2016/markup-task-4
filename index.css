@@ -1,12 +1,15 @@
-body {
+body
+{
     background: url(http://xn----btblbleucc2b.su/style/bg.jpg);
 }
 
-html {
+html
+{
     overflow-x: hidden;
 }
 
-.fact {
+.fact
+{
     padding: 5px;
     margin: 10px;
     float: left;
@@ -18,29 +21,34 @@ html {
     
 }
 
-header {
+header
+{
     text-align: center;
     color: #000;
     font-family: 'Pacifico', cursive;
     border-top: 10px solid #000;
 }
 
-h1 {
+h1
+{
     margin: 5px;
     font-size: 50px;
     font-family: 'Pacifico', cursive;
 }
 
-#under-header {
+.under-header
+{
     border-bottom: 10px solid #000;
 }
 
-#date {
+.date
+{
     position: relative;
     left: 34%;
 }
 
-article {
+article
+{
     column-count: 5;
     column-width: 300px;
     column-rule: 2px solid #000;
@@ -54,44 +62,51 @@ article {
 
 article p,
 h2,
-h3 {
+h3
+{
     font-family: 'Pacifico', cursive;
     text-indent: 18px;
     font-size: 13px;
 }
 
-img.autor {
+.autor
+{
     width: 50%;
     float: left;
     margin: 0px 1px 2px 0;
 }
 
-img {
+img
+{
     width: 100%;
 }
 
 h2,
-h3 {
+h3
+{
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     font-family: 'Pacifico', cursive;
     font-size: 27px;
 }
 
-h2 {
+h2
+{
     column-span: all;
     width: 500px;
     font-family: 'Pacifico', cursive;
     font-size: 30px;
 }
 
-ul {
+ul
+{
     color: #000;
     font-family: 'Domine', serif;
     font-size: 15px;
 }
 
-div.content {
+div.content
+{
     text-align: justify;
     margin-bottom: 6px;
     font-family: 'Pacifico', cursive;
@@ -99,21 +114,24 @@ div.content {
 
 }
 
-.kosmonavt {
+.kosmonavt
+{
     text-align: center;
     border-radius: 100px;
     border: 3px solid black;
     box-shadow: 0 0 7px #000; 
 }
 
-blockquote {
+blockquote
+{
     margin: 6px 20px;
     padding: 6px;
     font-style: italic;
     font-family: 'Domine', serif;
 }
 
-.columns_2 {
+.columns_2
+{
     column-count: 2;
     column-rule: 1.5px solid #000;
 }
