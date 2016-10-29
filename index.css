@@ -3,8 +3,13 @@ body
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url('http://www.americanpoison.com/assets/asset-1462849913795.png?v=0.9827029061624899');
+    background-image: url('background1.png');
 
+}
+
+table, td
+{
+    border: 1px double black;
 }
 
 p
@@ -22,8 +27,14 @@ td
 {
     filter: grayscale(100%);
     width: 20%;
+    vertical-align: top;
 }
 
+img
+{
+    width: 100%;
+    height: 100%;
+}
 .bible td
 {
     width: 30%;
@@ -57,12 +68,6 @@ blockquote
     margin: 0 auto;
 }
 
-.genius
-{
-    width: 100%;
-    height: 100%;
-}
-
 input[name='font_type']:checked ~ table tbody tr td p
 {
     font-family: 'Elephant';
@@ -71,7 +76,7 @@ input[name='font_type']:checked ~ table tbody tr td p
 input[name='modern_color']:checked ~ table tbody tr td
 {
     filter: none;
-    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/1c/06/ab/1c06abc1c0d04e628e3efdd6f76fd6fd.png');
+    background-image: url('background2.png');
     color: #45161c;
 }
 
