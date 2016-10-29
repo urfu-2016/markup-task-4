@@ -15,6 +15,11 @@ h1
     font-size: 60px;
 }
 
+h4
+{
+    text-align: center;
+}
+
 .left_col
 {
     word-break: break-all;
