@@ -1,0 +1,79 @@
+header{
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 2px;
+    font-family: "Times New Roman";
+}
+body {
+    background: url(http://bgfons.com/upload/paper_texture331.jpg);
+}
+main {
+    column-count: 4;
+    column-rule: 2px solid #000;
+}
+main div.first p {
+    column-count: 2;
+    column-rule: 2px solid #000;
+}
+
+main div h2 {
+    font-style: italic;
+    margin: 10px;
+}
+
+main div.second h2 {
+    font-family: Verdana;
+    font-style: normal;
+    text-decoration: underline;
+}
+main div.third h2{
+    font-size: 1.5em;
+    font-family: Cambria;
+    font-style: normal;
+    text-decoration: overline;
+    letter-spacing: -1px;
+    word-spacing: -1.5px;
+}
+main div.second p{
+    column-count: 3;
+    column-rule: 2px solid #000;
+}
+main div.third p{
+    column-count: 2;
+    column-rule: 2px solid #000;
+}
+hr {
+    color: #000;
+    border: none;
+    background-color: black;
+    height: 2px;
+}
+h3{
+    letter-spacing: -1px;
+    font-style: italic;
+    font-size: 1.5em;
+    word-spacing: -1.5px;
+    margin: 2px;
+    text-transform: uppercase;
+}
+h3 span {
+    font-size: 0.8em;
+    font-style: normal;
+    text-transform: lowercase;
+    font-family: Cambria;
+    text-decoration: overline;
+}
+main p::first-letter {
+    color: #000;
+    font: normal 40px Times New Roman;
+}
+blockquote {
+    font-style: italic;
+}
+div.weather {
+    font: normal 20px Verdana;
+    margin: 5px;
+    padding: 5px;
+    border: 2px;
+    border-style: solid;
+}
