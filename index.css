@@ -1,26 +1,29 @@
 @font-face
 {
     font-family: 'Old London';
-    src: url('fonts/OldLondon.woff2') format('woff2'),
-         url('fonts/OldLondon.ttf') format('truetype'),
-         url('fonts/OldLondon.eot') format('embedded-opentype');
+    /* тут и в других @font-face линтер требовал пробел после запятой,
+       а мой текстовый редактор эти пробелы любезной удалял. пришлось
+       сделать отступы так. */
+    src: url('fonts/OldLondon.woff2')
+        format('woff2'), url('fonts/OldLondon.ttf')
+        format('truetype'), url('fonts/OldLondon.eot') format('embedded-opentype');
 }
 
 @font-face
 {
     font-family: 'C&L';
-    src: url('fonts/C&LBold.woff2') format('woff2'),
-         url('fonts/C&LBold.ttf') format('truetype'),
-         url('fonts/C&LBold.eot') format('embedded-opentype');
+    src: url('fonts/C&LBold.woff2')
+        format('woff2'), url('fonts/C&LBold.ttf')
+        format('truetype'), url('fonts/C&LBold.eot') format('embedded-opentype');
     font-weight: bold;
 }
 
 @font-face
 {
     font-family: 'C&L';
-    src: url('fonts/C&LBoldItalic.woff2') format('woff2'),
-         url('fonts/C&LBoldItalic.ttf') format('truetype'),
-         url('fonts/C&LBoldItalic.eot') format('embedded-opentype');
+    src: url('fonts/C&LBoldItalic.woff2')
+        format('woff2'), url('fonts/C&LBoldItalic.ttf')
+        format('truetype'), url('fonts/C&LBoldItalic.eot') format('embedded-opentype');
     font-weight: bold;
     font-style: italic;
 }
@@ -28,9 +31,9 @@
 @font-face
 {
     font-family: 'Archivo';
-    src: url('fonts/ArchivoNarrow.woff2') format('woff2'),
-         url('fonts/ArchivoNarrow.ttf') format('truetype'),
-         url('fonts/ArchivoNarrow.eot') format('embedded-opentype');
+    src: url('fonts/ArchivoNarrow.woff2')
+        format('woff2'), url('fonts/ArchivoNarrow.ttf')
+        format('truetype'), url('fonts/ArchivoNarrow.eot') format('embedded-opentype');
 }
 
 html,
@@ -41,7 +44,7 @@ body
     height: 100%;
     width: 1366px;
     margin: 0 auto;
-    line-height: 1.150;
+    line-height: 1.15;
 }
 
 @media (max-width: 1455px)
@@ -353,7 +356,8 @@ figure img
     cursor: auto;
 }
 
-.tooltip:hover {
+.tooltip:hover
+{
     display: block;
 }
 
