@@ -1,6 +1,6 @@
 p 
 {
-    margin: 0px;
+    margin: 0;
     text-indent: 1.5em;
 }
 
@@ -9,7 +9,7 @@ h1
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
     letter-spacing: 5px;
-    margin-top: 0px;
+    margin-top: 0;
     border: 2px dashed #000;
 }
 
@@ -71,12 +71,12 @@ h5
 .from
 {
     text-align: right;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .date
 {
-    font-weight: bold;   
+    font-weight: bold; 
 }
 
 .bold
