@@ -104,3 +104,25 @@ div.weather
     border: 2px;
     border-style: solid;
 }
+
+.change-color:checked~div
+{
+    background: black;
+    color: white;
+}
+
+.change-color:checked~h3
+{
+    background: black;
+    color: white;
+}
+
+.zoom:checked~div
+{
+    font-size: 1.5em;
+}
+
+.change-style:checked~div
+{
+    font-family: Cambria;
+}
