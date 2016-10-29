@@ -1,63 +1,84 @@
-body {
-	background-image: url('http://i.stack.imgur.com/kb0Zm.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	font-weight: bolder;
+body
+{
+    background-image: url('http://i.stack.imgur.com/kb0Zm.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bolder;
 }
-h1 {
-	border: 8px double black;
+
+h1
+{
+    border: 8px double black;
     padding: 10px;
-	text-align: center;
-	font-family: 'Kunstler Script';
-	font-size: 60px
+    text-align: center;
+    font-family: 'Kunstler Script';
+    font-size: 60px;
 }
-.left_col {
-	word-break: break-all;
-	border: 4px dashed black;
+
+.left_col
+{
+    word-break: break-all;
+    border: 4px dashed black;
     padding: 10px;
-	float: left;
-	height: 100%;
-	width: 45%;
+    float: left;
+    height: 100%;
+    width: 45%;
 }
-.right_col {
-	word-break: break-all;
-	border: 4px dashed black;
+
+.right_col
+{
+    word-break: break-all;
+    border: 4px dashed black;
     padding: 10px;
-	float: right;
-	height: 100%;
-	width: 45%;
+    float: right;
+    height: 100%;
+    width: 45%;
 }
-.menu {
-	float: right;
+
+.menu
+{
+    float: right;
 }
-hr {
+
+hr
+{
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid black;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 }
-img {
+
+img
+{
     display: block;
     margin: 0 auto;
 }
-p {
-	font-family: Arial, Helvetica, sans-serif;
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
 }
-p:first-letter {
-    font-family: "Times New Roman", serif;
+
+p:first-letter
+{
+    font-family: 'Times New Roman', serif;
     font-size: 200%;
 }
-input[name="diff_font"]:checked ~ div article p {
-	font-family: 'Kunstler Script';
-	font-size: 175%
+
+input[name='diff_font']:checked ~ div article p
+{
+    font-family: 'Kunstler Script';
+    font-size: 175%;
 }
-input[name="aggressive"]:checked ~ div
+
+input[name='aggressive']:checked ~ div
 {
     color: red;
 }
-input[name="bigger_font"]:checked ~ div
-{	
+
+input[name='bigger_font']:checked ~ div
+{
     font-size: 130%;
 }
