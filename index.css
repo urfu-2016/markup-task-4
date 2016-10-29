@@ -1,0 +1,219 @@
+@font-face 
+{
+    font-family: ImpactRegular;
+    src: url(fonts/ImpactRegular.woff);
+}
+@font-face 
+{
+    font-family: YesevaOne;
+    src: url(fonts/YesevaOneRegular.woff);
+}
+@font-face 
+{
+    font-family: OfficinaSerifBold;
+    src: url(fonts/OfficinaSerifBold.woff);
+}
+
+p::first-letter
+{
+    font-weight: bold;
+}
+
+.vertical
+{
+    float: left;
+    width: 3%;
+    word-wrap: break-word;
+    letter-spacing: 10px;
+    overflow: hidden;
+}
+
+.day
+{
+    text-align: center;
+    outline: 2px solid black;
+    font-size: 20px;
+    column-span: all;
+    width: 98%;
+    margin-bottom: 2px;
+    margin-top: 3px;
+}
+
+.message
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+p
+{
+    text-indent: 5%;
+}
+
+h1
+{
+    font-family: ImpactRegular;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+table,
+th,
+td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.to
+{
+    font-weight: bold;
+    column-span: all;
+    font-style: arial;
+    font-size: 15px;
+    text-align: center;
+}
+
+.appeal
+{
+    font-family: OfficinaSerifBold;
+    letter-spacing: .4em;
+    font-size: 25px;
+    text-align: center;
+    column-span: all;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.destination
+{
+    column-span: all;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+h2
+{
+    font-family: 'Arial';
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.logo,
+.img-left
+{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0 10px 10px 0;
+}
+
+.date
+{
+    text-indent: 0;
+    text-align: right;
+    font-size: 13px;
+}
+
+.from
+{
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.sign
+{
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.time
+{
+    margin-top: 0;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.time-column
+{
+    font-size: 9px;
+    column-count: 2;
+    column-rule: 1px;
+}
+
+.right-column
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+    column-width: auto;
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.caption-after
+{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+.black-white-mode:checked ~ div
+{
+    background: black;
+    color: white;
+}
+
+.big-font:checked ~ div
+{
+    font-size: 13px;
+}
+
+.change-font:checked ~ div
+{
+    font-family: sans-serif;
+}
+
+.caption
+{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: .4em;
+    font-family: YesevaOne;
+}
+
+.main
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+    column-width: auto;
+    width: 97%;
+}
+
+.container
+{
+    font-size: 14px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
