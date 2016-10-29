@@ -1,0 +1,158 @@
+@font-face
+{
+    font-family: 'Abhaya Libre';
+    src: url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Indie Flower';
+    src: url('fonts/Indie_Flower/IndieFlower.ttf');
+}
+
+@font-face
+{
+    font-family: 'Cormorant Garamond Italic';
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf');
+}
+
+@font-face
+{
+    font-family: 'Cormorant Garamond';
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf');
+}
+
+@font-face
+{
+    font-family: 'Cookie Regular';
+    src: url('fonts/Cookie/Cookie-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Rock Salt';
+    src: url('fonts/Rock_Salt/RockSalt.ttf');
+}
+
+@font-face
+{
+    font-family: 'Playball';
+    src: url('fonts/Playball/Playball-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Fredoka One';
+    src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf');
+}
+
+header
+{
+    font-family: 'Abhaya Libre';
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+}
+
+header img
+{
+    height: 5rem;
+}
+
+h3
+{
+    font-family: 'Indie Flower';
+    color: #900;
+    word-spacing: 1rem;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    column-span: all;
+}
+
+main
+{
+    column-count: 4;
+    column-gap: 5px;
+    column-rule: 3px groove darkslategray;
+    border: 3px groove darkslategray;
+    padding: 8px;
+}
+
+p
+{
+    text-indent: 2%;
+}
+
+p::first-letter
+{
+    font-family: 'Cookie Regular';
+    font-size: 4em;
+    color: crimson;
+}
+
+div.img_block img
+{
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 0 20px;
+}
+
+div.img_block div.caption
+{
+    display: inline-block;
+    font-size: 1rem;
+    width: 15rem;
+    font-family: 'Cormorant Garamond';
+
+}
+
+div.img_block div.caption.q
+{
+    font-family: 'Cormorant Garamond Italic';
+}
+
+div.img_block
+{
+    column-span: all;
+    display: block;
+    float: none;
+    /*width: 80rem;*/
+    border: 3px groove darkslategray;
+    padding: 20px 20px 20px 0;
+    align-content: center;
+}
+
+div.img_inline
+{
+    padding: 10px;
+
+}
+
+div.img_inline img
+{
+    width: 100%;
+}
+
+div.img_inline div.caption
+{
+    font-family: 'Rock Salt';
+    font-size: .6rem;
+    display: block;
+}
+
+p q
+{
+    font-family: 'Playball';
+    text-indent: 4%;
+    font-size: 1.3rem;
+}
+
+em
+{
+    font-family: 'Fredoka One';
+}
