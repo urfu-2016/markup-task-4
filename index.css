@@ -1,70 +1,80 @@
 
-html, body {
+html,
+body
+{
     height: 100%;
-    background: #FFF1CC;
-    font-family: "Franklin Gothic Medium", sans-serif;
+    background: #fff1cc;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
-div {
-    //border: 2px solid black;
-}
-
-#body_main,
-#body_header,
-#usa_today,
-#body_footer{
+.body_main,
+.body_header,
+.usa_today_header,
+.body_footer
+{
     width: 1000px;
     margin-bottom: 10px;
-    //padding: 5px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#body_header {
+.body_header
+{
     border: 0;
-    border-top: 4px solid #55C6E6;
+    border-top: 4px solid #55c6e6;
     padding: 8px 0;
     color: white;
     text-align: center;
 }
-.header_text {
+
+.header_text
+{
     text-transform: uppercase;
 }
-.right_text {
+
+.right_text
+{
     float: right;
 }
-.left_text {
+
+.left_text
+{
     float: left;
 }
 
-
-#usa_today {
+.usa_today_header
+{
     font-size: 5em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    background: #55C6E6;
-    color: #FFF1CC;
+    background: #55c6e6;
+    color: #fff1cc;
 }
 
-#body_main {
-    font-size: 0.8em;
+.body_main
+{
+    font-size: .8em;
 }
 
-#body_footer {
+.body_footer
+{
     border: 0;
-    border-top: 4px solid #55C6E6;
+    border-top: 4px solid #55c6e6;
     padding: 8px 0;
 }
-#body_header div,
-#body_footer div {
+
+.body_header div,
+.body_footer div
+{
     border: 0;
-    background: #55C6E6;
+    background: #55c6e6;
     width: 100%;
     height: 20px;
 }
 
-.column_header {
+.column_header
+{
     word-break: normal;
     font-weight: bold;
     font-size: 1.5em;
@@ -83,75 +93,102 @@ div {
     word-break: break-all;
     overflow: hidden;
 }
-.column1 {
+
+.column1
+{
     width: 30%;
     column-width: 200px;
     border: 2px solid black;
 }
-.newsline {
+
+.newsline
+{
     margin-bottom: 10px;
     padding: 5px;
 }
-.newsline header {
+
+.newsline header
+{
     border-bottom: 4px solid black;
     margin: 5px;
     font-size: 1.5em;
 
 }
-.newsline .week_day {
+
+.newsline .week_day
+{
     font-weight: bold;
 }
-.newsline h1 {
+
+.newsline h1
+{
     margin: 5px;
     border-bottom: 2px solid black;
     text-transform: uppercase;
     font-size: 2em;
 }
-.newsline p:first-of-type {
+
+.newsline p:first-of-type
+{
     text-transform: uppercase;
 }
-.newsline > img {
+
+.newsline > img
+{
     float: left;
     width: 40%;
     margin-right: 5px;
     border: 2px solid black;
 }
-.newsline_topic {
+
+.newsline_topic
+{
     font-weight: bold;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 
-.article_author {
+.article_author
+{
     margin: 0;
     font-weight: bold;
 }
-.usa_today {
+
+.usa_today
+{
     font-weight: bold;
     text-transform: uppercase;
     word-break: keep-all;
 }
 
-.column2 {
+.column2
+{
     width: 65%;
 }
+
 .column2_top,
 .column2_middle,
-.column2_bottom {
+.column2_bottom
+{
     width: 98%;
     margin: 5px auto;
 }
-.column2_top {
-    //margin-top:0;
+
+.column2_top
+{
     width: 95%;
     border: 10px solid red;
     box-shadow: 0 0 0 2px black;
 }
+
 .column2_top h1,
-.column2_top h2 {
+.column2_top h2
+{
     margin: 10px;
 }
-.column2_top_img {
+
+.column2_top_img
+{
     margin: 0 10px auto;
     float: left;
     width: 55%;
@@ -159,57 +196,81 @@ div {
     font-size: 1.2em;
     font-weight: bold;
 }
-.column2_top_img>img {
+
+.column2_top_img > img
+{
     width: 100%;
 }
-.column2_top_article {
+
+.column2_top_article
+{
     border-top: 2px solid black;
     margin-bottom: 10px;
     display: inline-block;
     width: 40%;
     column-count: 2;
 }
+
 .column2_middle,
-.column2_bottom {
+.column2_bottom
+{
     column-count: 4;
     width: 98%;
     border-top: 3px solid black;
 }
-.column2_middle {
+
+.column2_middle
+{
     border-top: 3px solid black;
     border-bottom: 2px solid black;
 }
-.column2_middle_article {
+
+.column2_middle_article
+{
     margin: 5px;
 }
-.column2_middle_article img {
+
+.column2_middle_article img
+{
     width: 100%;
     float: right;
 }
-.column3 {
+
+.column3
+{
     border-top: 2px solid black;
 }
+
 .column3_left,
-.column3_right {
+.column3_right
+{
     display: inline-block;
     margin: 10px;
 }
-.column3_left {
+
+.column3_left
+{
     width: 65%;
     column-count: 4;
     border-right: 2px solid black;
 }
-.column3_left figure {
+
+.column3_left figure
+{
     margin: 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
 }
-.column3_left img {
+
+.column3_left img
+{
     width: 80%;
 }
-.column3_right {
+
+.column3_right
+{
     float: right;
     width: 30%;
     column-count: 2;
