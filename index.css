@@ -1,81 +1,81 @@
 body
 {
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-image: url('http://www.americanpoison.com/assets/asset-1462849913795.png?v=0.9827029061624899');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('http://www.americanpoison.com/assets/asset-1462849913795.png?v=0.9827029061624899');
 
 }
 
 p
 {
-	font-family: "Bodoni MT";
+    font-family: 'Bodoni MT';
 }
 
 p:first-letter
 {
-	font-family: "Algerian";
-	font-size: 200%;
+    font-family: 'Algerian';
+    font-size: 200%;
 }
 
 td
 {
-	filter: grayscale(100%);
-	width: 20%;
+    filter: grayscale(100%);
+    width: 20%;
 }
 
-#bible td
+.bible td
 {
-	width: 30%;
+    width: 30%;
 }
 
 blockquote
 {
-	background-color: rgba(128,128,128, 0.5);
+    background-color: rgba(128,128,128, .5);
 }
 
 .cap
 {
-	font-family: "Algerian";
-	font-size: 300%;
+    font-family: 'Algerian';
+    font-size: 300%;
 }
 
 .attention
 {
-	font-family: "Matura MT Script Capitals";
-	font-size: 150%;
+    font-family: 'Matura MT Script Capitals';
+    font-size: 150%;
 }
 
-#author
+.author
 {
-	font-style: bold;
+    font-style: bold;
 }
 
-#streamer
+.streamer
 {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
-#genius
-{ 
-	width: 100%;
-	height: 100%;
-}
-
-input[name="font_type"]:checked ~ table tbody tr td p
+.genius
 {
-	font-family: 'Elephant';
+    width: 100%;
+    height: 100%;
 }
 
-input[name="modern_color"]:checked ~ table tbody tr td
+input[name='font_type']:checked ~ table tbody tr td p
 {
- 	filter: none;
- 	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/1c/06/ab/1c06abc1c0d04e628e3efdd6f76fd6fd.png");
- 	color: #45161c;
+    font-family: 'Elephant';
 }
 
-input[name="font_size"]:checked ~ table tbody tr td p
-{	
+input[name='modern_color']:checked ~ table tbody tr td
+{
+    filter: none;
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/1c/06/ab/1c06abc1c0d04e628e3efdd6f76fd6fd.png');
+    color: #45161c;
+}
+
+input[name='font_size']:checked ~ table tbody tr td p
+{
     font-size: 150%;
 }
