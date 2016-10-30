@@ -1,0 +1,367 @@
+body,
+html
+{
+    margin: 0;
+    padding: 0;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+header
+{
+    font-size: 2.8vw;
+    height: 25vw;
+}
+
+main
+{
+    padding: 2vw;
+    background: #f9ecd0;
+    color: 575757;
+    /*background-image: url('https://s11.postimg.org/71zt9fcsj/old_newspaper_background_for_word_440311.jpg');*/
+    /*background-image: url('https://s11.postimg.org/4lkcp1kcz/old_paper.jpg');*/
+    background-image: url('https://s14.postimg.org/m00hqgizl/m_X8_Rmz_I.jpg');
+
+}
+
+.red-header
+{
+    text-transform: uppercase;
+    color: #fc5a44;
+    text-align: center;
+    font-size: 1.76em;
+    font-family: sans-serif;
+    letter-spacing: -.4vw;
+    word-spacing: .8vm;
+}
+
+.underline
+{
+    text-decoration: underline;
+    font-size: 1.5vw;
+}
+
+header .underline
+{
+    text-transform: uppercase;
+    text-align: right;
+}
+
+header h2
+{
+    margin: .5vw 0;
+}
+
+header article
+{
+    width: 65.5vw;
+    float: right;
+    position: relative;
+    border-bottom: 5px solid #111;
+}
+
+header article h2
+{
+    text-align: right;
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+
+article .subtext
+{
+    font-family: sans-serif;
+    position: absolute;
+    font-size: 50%;
+    width: 17vw;
+    text-align: center;
+    bottom: 4.5vw;
+    left: 11vw;
+    line-height: 130%;
+    letter-spacing: 0;
+    font-stretch: condensed;
+    font-weight: bold;
+    word-spacing: .5vw;
+}
+
+.frame-box
+
+{
+    border: 1px solid #111;
+    width: 25vw;
+    display: inline-block;
+    font-size: 1vw;
+    float: left;
+    word-break: break-all;
+}
+
+.frame-box h3
+{
+    padding: 0 .5vw;
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+
+.frame-box p
+{
+    padding: 0 .5vw;
+    text-indent: 1vw;
+    text-align: left;
+    margin: 0;
+}
+
+.frame-box .bottom-left-record,
+.frame-box .bottom-right-record
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.frame-box .bottom-left-record
+{
+    margin: 1vw 0 1.5vw 2vw;
+    float: left;
+}
+
+.frame-box .bottom-right-record
+{
+    margin: 1vw 2vw 1.5vw 0;
+    float: right;
+}
+
+.text-large
+{
+    font-size: 150%;
+}
+
+.logo
+{
+    position: absolute;
+    left: 0;
+    bottom: 28%;
+    width: 10vw;
+}
+
+.note
+{
+    height: 2vw;
+    line-height: 40%;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    margin-bottom: 2px;
+}
+
+.note div
+{
+    font-size: 45%;
+    display: inline-block;
+    text-align: center;
+}
+
+.note div:first-child
+{
+    font-size: 50%;
+    font-style: italic;
+    text-align: left;
+}
+
+.note div:last-child
+{
+    text-align: right;
+}
+
+.large-marker
+{
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    background: #111;
+    margin: 0 2vw;
+}
+
+.main-content
+{
+    margin-top: 5vw;
+    height: 58vw;
+}
+
+.main-content section:first-child
+{
+    float: left;
+    width: 30vw;
+}
+
+.main-content .text-container
+{
+    float: right;
+    width: 57vw;
+}
+
+.text-container h3,
+.bottom-content h3
+{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin-top: 0;
+    text-align: center;
+}
+
+.group
+{
+    font-size: 1vw;
+    -webkit-column-width: 15vw;
+    -moz-column-width: 15vw;
+    column-width: 15vw;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 3vw;
+    -moz-column-gap: 3vw;
+    column-gap: 3vw;
+    word-break: break-all;
+}
+
+.group p
+{
+    margin-top: 0;
+    margin-bottom: 1vw;
+    text-indent: 1vw;
+}
+
+.star-img
+{
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+}
+
+.star-img figcaption
+{
+    text-align: right;
+    font-size: 1vw;
+}
+
+.star-img img
+{
+    width: 30vw;
+}
+
+.star-img p
+{
+    margin-bottom: 1vw;
+}
+
+.bottom-content
+{
+    padding-bottom: 5vw;
+}
+
+.bottom-content section:first-child
+{
+    width: 25vw;
+    display: inline-block;
+}
+
+.bottom-content section:first-child p:first-child::first-letter
+{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.info-box
+{
+    margin: 0;
+    display: inline-block;
+    margin-left: 2vw;
+    max-width: 65vw;
+    min-height: 32vw;
+    border: 1px solid #111;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+    padding: 1vw 0 0 .5vw;
+}
+
+.info-box .box-label
+{
+    position: absolute;
+    font-size: 2vw;
+    font-style: italic;
+    font-family: serif;
+    margin: 0;
+    top: -1.5vw;
+    left: 22.5vw;
+    background: #fde4b5;
+    padding: 0 .5vw;
+    border-radius: 50% 50% 0 0;
+    height: 2vw;
+}
+
+.info-box img
+{
+    width: 8vw;
+}
+
+.group-min
+{
+    font-size: 1vw;
+    -webkit-column-width: 7vw;
+    -moz-column-width: 7vw;
+    column-width: 7vw;
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
+    -webkit-column-gap: 1vw;
+    -moz-column-gap: 1vw;
+    column-gap: 1vw;
+    word-break: break-all;
+}
+
+.group-min p
+{
+    margin-top: 0;
+    margin-bottom: 1vw;
+    text-indent: 1vw;
+}
+
+.info-box h6
+{
+    text-indent: 1vw;
+    font-weight: bold;
+    display: inline-block;
+    width: 20vw;
+    font-size: 1vw;
+}
+
+.info-box .group
+{
+    -webkit-column-gap: 1vw;
+    -moz-column-gap: 1vw;
+    column-gap: 1vw;
+    margin-right: .8vw;
+}
+
+.group-min img
+{
+    margin-left: .8vw;
+}
+
+.group-min figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.group-min figure p
+{
+    margin: 0;
+}
+
+.group-min figure figcaption
+{
+    font-weight: bold;
+    text-align: center;
+}
