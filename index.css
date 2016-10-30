@@ -4,14 +4,14 @@
     src: url(decor.TTF);
 }
 
-#header
+div.header
 {
     font-family: Decor, 'Times New Roman';
     font-size: 70px;
     text-align: center;
 }
 
-#footer
+div.footer
 {
     text-align: center;
 }
@@ -37,10 +37,6 @@ div.one:first-letter
 {
     font-family: Decor, 'Times New Roman';
     font-size: 40px;
-}
-
-#img {
-    text-align: right;
 }
 
 img
