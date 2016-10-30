@@ -6,7 +6,8 @@ body
     font: 15px 'Times New Roman', serif;
 }
 
-.content {
+.content
+{
     background: url('http://bit.ly/2f0lLgc');
     /*border: 3px ridge black;*/
     text-align: center;
@@ -82,7 +83,7 @@ input[name='size'][value='80']:checked ~ .content h3
 
 input[name='size'][value='110']:checked ~ .content
 {
-     font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 input[name='size'][value='110']:checked ~ .content h3
