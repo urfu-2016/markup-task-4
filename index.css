@@ -1,176 +1,212 @@
-@font-face {
+@font-face
+{
     font-family: NewspaperTitle;
     src: url('fonts/Dearest.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: Newspaper;
     src: url('fonts/LeagueGothic-CondensedRegular.ttf');
 }
 
-@font-face {
-     font-family: NewspaperText;
-     src: url('fonts/Gputeks-Regular.ttf');
+@font-face
+{
+
+    font-family: NewspaperText;
+    src: url('fonts/Gputeks-Regular.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewspaperTitleTheme;
     src: url('fonts/SourceSansPro-Semibold.ttf');
 }
-@font-face {
+@font-face
+{
     font-family: NewspaperMiniTitleTheme;
     src: url('fonts/SourceSansPro-SemiboldIt.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewpaperFirstLetter;
     src: url('fonts/Kirsty.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewspaperMainText;
     src: url('fonts/EncodeSans-Light.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewspaperInfo;
     src: url('fonts/Lobster.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewspaperBlockTitle;
     src: url('fonts/Scratch.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: NewspaperSign;
     src: url('fonts/SixCaps.ttf');
 }
 
-.NewsPaperInfo td {
+.NewsPaperInfo td
+{
     font-family: NewspaperInfo;
     width: 300px;
     text-align: center;
 }
 
 .PaperTitle,
-.UnderTitleInfo {
+.UnderTitleInfo
+{
     border-bottom-style: double;
 }
 
-header {
+header
+{
     font-family: NewspaperTitle;
     font-size: 70px;
     text-align: center;
 }
 
-.BigSign {
+.BigSign
+{
     font-family: Newspaper;
-    font-size:160px;
+    font-size: 160px;
     text-align: center;
     word-spacing: 80px;
     letter-spacing: 10px;
 }
 
-td {
+td
+{
     vertical-align: top;
 }
 
-.ThemeTitle-1 {
+.ThemeTitle-1
+{
     font-family: Newspaper;
-    font-size:90px;
+    font-size: 90px;
     word-spacing: 20px;
     letter-spacing: 1px;
     text-align: center;
 }
 
-.ThemeTitle-2 {
+.ThemeTitle-2
+{
     font-family: NewspaperTitleTheme;
     font-size: 40px;
 }
 
-.ThemeTitle-3 {
+.ThemeTitle-3
+{
     font-family: NewspaperTitleTheme;
     font-size: 40px;
 }
 
-.ThemeTitle-4 {
+.ThemeTitle-4
+{
     font-family: NewspaperMiniTitleTheme;
     font-size: 40px;
 }
 
-.ThemeTitle-5 {
+.ThemeTitle-5
+{
     font-family: NewspaperMiniTitleTheme;
     font-size: 40px;
 }
 
-.ThemeTitle-6 {
+.ThemeTitle-6
+{
     font-family: NewspaperMiniTitleTheme;
     font-size: 40px;
 }
 
-.miniTitle {
+.miniTitle
+{
     font-family: NewspaperTitleTheme;
     font-size: 30px;
 }
 
-.BlockNews {
+.BlockNews
+{
     border: 1px solid black;
     height: 300px;
     text-align: center;
 }
 
-.TitleBlockNews {
+.TitleBlockNews
+{
     font-family: NewspaperBlockTitle;
     font-size: 25px;
     text-align: center;
 }
 
-td hr {
+td hr
+{
     width: 130px;
 }
 
-.BoldHr {
+.BoldHr
+{
     width: inherit;
 }
 
-.first-column {
+.first-column
+{
     width: 250px;
 }
 
-.second-column {
-    width: 250px
+.second-column
+{
+    width: 250px;
 }
 
-.third-column {
-    width: 250px
+.third-column
+{
+    width: 250px;
 }
 
-.first-mini-column {
+.first-mini-column
+{
     width: 350px;
     text-align: center;
 }
 
-.second-mini-column {
+.second-mini-column
+{
     width: 250px;
 }
 
-p {
+p
+{
     font-family: NewspaperMainText;
     text-indent: 1.5em;
 }
 
-p:first-letter {
+p:first-letter
+{
     font-family: NewpaperFirstLetter;
     font-size: 25px;
 }
 
-figcaption {
+figcaption
+{
     font-family: NewspaperSign;
     font-size: 35px;
 }
 
-.footerSign {
+.footerSign
+{
     font-family: NewspaperSign;
     font-size: 35px;
 }
