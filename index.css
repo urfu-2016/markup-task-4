@@ -1,0 +1,129 @@
+@font-face
+{
+    font-family: 'Righteous';
+    src: url('fonts/Righteous/Righteous-Regular.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Covered_By_Your_Grace';
+    src: url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Quattrocento';
+    src: url('fonts/Quattrocento/Quattrocento-Regular.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Coming_Soon';
+    src: url('fonts/Coming_Soon/ComingSoon.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Handlee';
+    src: url('fonts/Handlee/Handlee-Regular.ttf');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico/Pacifico.ttf');
+    font-weight: bold;
+}
+
+body
+{
+    background-color: azure;
+}
+
+header
+{
+    font-family: 'Righteous';
+    font-size: 5rem;
+    text-align: center;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: 3px solid darkcyan;
+}
+
+main div.text
+{
+    font-family: 'Handlee';
+    column-count: 4;
+    column-rule: 3px dashed darkcyan;
+}
+
+h1
+{
+    font-family: 'Covered_By_Your_Grace';
+    font-size: 3rem;
+    text-align: center;
+    border: 4px inset aquamarine;
+    background-color: lavender;
+    color: #00004d;
+}
+
+.caption
+{
+    font-family: 'Quattrocento';
+    font-size: 1.2rem;
+    border-bottom: 4px inset aquamarine;
+}
+
+.text::first-letter
+{
+    font-size: 250%;
+    color: #5e0080;
+    font-weight: bold;
+}
+
+q
+{
+    font-family: 'Coming_Soon';
+    background-color: khaki;
+}
+
+.first_img
+{
+    column-span: all;
+    width: 100% ;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px inset aquamarine;
+
+}
+
+.first_img img
+{
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.first_img div
+{
+    margin: 5%;
+    padding-left: 20px;
+}
+
+.img_caption
+{
+    font-family: 'Pacifico';
+}
+
+.second_img
+{
+    width: 100%;
+}
