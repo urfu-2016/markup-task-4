@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script|Neucha|Ruslan+Display');
+
+div.date
+{
+    text-align: right;
+    margin: -17px 0 0;
+}
+
+div.author
+{
+    text-align: left;
+    margin: -30px 0 0;
+}
+
+.all_column
+{
+    column-span: all;
+    text-align: center;
+}
+
+body
+{
+    width: 960px;
+    margin: 5px auto;
+    border: 4px solid black;
+}
+
+div.head
+{
+    height: 30px;
+    background-color: rgba(255, 255, 0, .3);
+    border-bottom: 4px solid black;
+}
+
+div.head h1
+{
+    font-family: 'Ruslan Display', cursive;
+    margin: 0;
+}
+
+div.blocks
+{
+    padding: 10px;
+    column-count: 3;
+    column-rule: 2px solid black;
+}
+
+div.post p:first-of-type::first-letter
+{
+    color: red;
+    font-size: 25px;
+}
+
+p
+{
+    font-family: 'Neucha', cursive;
+    hyphens: auto;
+}
+
+h3
+{
+    font-family: 'Marck Script', cursive;
+    hyphens: auto;
+}
