@@ -1,30 +1,41 @@
-@font-face {
+@font-face
+{
     font-family: Italy B; 
     src: url(Fonts/ItalyB.eot); 
     src: local(ItalyB), url(Fonts/ItalyB.ttf); 
-   }
-@font-face {
+}
+
+@font-face
+{
     font-family: Marianna; 
     src: local(Marianna), url(Fonts/Marianna.ttf); 
-   }
-@font-face {
+}
+
+@font-face
+{
     font-family: Roland-Decor; 
     src: local(Roland-Decor), url(Fonts/Roland-Decor.ttf); 
-   }
-@font-face {
+}
+
+@font-face 
+{
     font-family: Parisian; 
     src: local(Parisian), url(Fonts/Parisian.ttf); 
-   }
-@font-face {
+}
+
+@font-face
+{
     font-family: Matreshka; 
     src: local(Matreshka), url(Fonts/Matreshka.ttf); 
-   }
+}
+
 aside
 {
     position: absolute;
     bottom: 1px;
     left: 20px;
 }
+
 body
 { 
     background: url(2.png) repeat-y, 
@@ -72,6 +83,7 @@ p:first-letter
     font-size: 20px;  
     font-family: Georgia, 'Times New Roman', serif;  
 }
+
 .first_article
 {
     column-count: 2;
@@ -124,6 +136,7 @@ figcaption
     text-shadow: 0 2px white, 0 3px #777;
     text-align: center;
 }
+
 .head
 {
     column-count: 3;
@@ -191,49 +204,4 @@ img {
     word-wrap: break-word;
     letter-spacing: 100px;
     overflow: hidden;
-}
-
-input[type="button"]
-{
-    text-decoration:none; text-align:center; 
-    padding:11px 32px; 
-    border:solid 1px #0f6b49; 
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px; 
-    border-radius: 4px; 
-    font:18px Georgia, "Times New Roman", Times, serif; 
-    font-weight:bold; 
-    color:#05020f; 
-    background-color:#3BA4C7; 
-    background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
-    background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
-    background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
-    background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
-    background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
-    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
-    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
-    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
-}
-
-input[type="button"]:hover
-{
-    padding:11px 32px; 
-    border:solid 1px #0f6b49; 
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px; 
-    border-radius: 4px; 
-    font:18px Georgia, "Times New Roman", Times, serif; 
-    font-weight:bold; 
-    color:#05020f; 
-     background-color:#e2f5f2; 
-    background-image: -moz-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
-    background-image: -webkit-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
-    background-image: -o-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
-    background-image: -ms-linear-gradient(top, #e2f5f2 0% ,#1982A5 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
-    background-image: linear-gradient(top, #e2f5f2 0% ,#1982A5 100%);   
-    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
-    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
-    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;   
 }
