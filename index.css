@@ -1,32 +1,37 @@
 @font-face
 {
-    font-family: Italy B; 
-    src: url(Fonts/ItalyB.eot); 
-    src: local(ItalyB), url(Fonts/ItalyB.ttf); 
+    font-family: Italy B;
+    src: local(ItalyB)
+        , url(Fonts/ItalyB.eot)
+        , url(Fonts/ItalyB.ttf);
 }
 
 @font-face
 {
-    font-family: Marianna; 
-    src: local(Marianna), url(Fonts/Marianna.ttf); 
+    font-family: Marianna;
+    src: local(Marianna)
+        , url(Fonts/Marianna.ttf);
 }
 
 @font-face
 {
-    font-family: Roland-Decor; 
-    src: local(Roland-Decor), url(Fonts/Roland-Decor.ttf); 
-}
-
-@font-face 
-{
-    font-family: Parisian; 
-    src: local(Parisian), url(Fonts/Parisian.ttf); 
+    font-family: Roland-Decor;
+    src: local(Roland-Decor)
+        , url(Fonts/Roland-Decor.ttf);
 }
 
 @font-face
 {
-    font-family: Matreshka; 
-    src: local(Matreshka), url(Fonts/Matreshka.ttf); 
+    font-family: Parisian;
+    src: local(Parisian)
+        , url(Fonts/Parisian.ttf);
+}
+
+@font-face
+{
+    font-family: Matreshka;
+    src: local(Matreshka)
+    , url(Fonts/Matreshka.ttf);
 }
 
 aside
@@ -37,9 +42,9 @@ aside
 }
 
 body
-{ 
-    background: url(2.png) repeat-y, 
-                url(2.png) 100% 0 repeat-y;
+{
+    background: url(2.png) repeat-y,
+        url(2.png) 100% 0 repeat-y;
     background-size: 10px, 10px;
     margin: 10px 40px;
 }
@@ -61,7 +66,7 @@ body
 {
     position: absolute;
     top: 125px;
-    right: 250px; /* Положение от правого края */
+    right: 250px;
     line-height: 1px;
 }
 
@@ -76,12 +81,12 @@ p
 
 p:first-letter
 {  
-    display: block;  
-    margin: 5px 0 0 5px;  
-    float: left;  
-    color: #ff3366;  
-    font-size: 20px;  
-    font-family: Georgia, 'Times New Roman', serif;  
+    display: block;
+    margin: 5px 0 0 5px;
+    float: left;
+    color: #ff3366;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 .first_article
@@ -129,7 +134,7 @@ figcaption
     margin: 1em 0 0.5em 0;
     color: #343434;
     font-weight: normal;
-    font-family: 'Ultra', sans-serif;  
+    font-family: 'Ultra', sans-serif;
     font-size: 50px;
     line-height: 42px;
     text-transform: uppercase;
