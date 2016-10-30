@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: "HogwartsWizard";
-    src: url("HogwartsWizard.eot?") format("eot"), url("HogwartsWizard.woff") format("woff"), url("HogwartsWizard.ttf") format("truetype"), url("HogwartsWizard.svg#HogwartsWizard") format("svg");
+    font-family: 'HogwartsWizard';
+    src: url('HogwartsWizard.eot?') format('eot'), url('HogwartsWizard.woff') format('woff'), url('HogwartsWizard.ttf') format('truetype'), url('HogwartsWizard.svg#HogwartsWizard') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +23,7 @@ div.frame
 body
 {
     background-color: #fff;
-    background-image: url("paper2.jpg");
+    background-image: url('paper2.jpg');
 }
 
 h1,
@@ -50,7 +50,7 @@ h1
 
 h3
 {
-    font-family: "HogwartsWizard", "Times New Roman";
+    font-family: 'HogwartsWizard', 'Times New Roman';
     font-size: 24px;
 }
 
@@ -63,7 +63,7 @@ p
 {
     text-indent: 30px;
     text-align: justify;
-    font-family: "Harrington", sans-serif;
+    font-family: 'Harrington', sans-serif;
 }
 
 .firstParagraph
