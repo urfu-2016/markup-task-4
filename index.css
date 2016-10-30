@@ -1,0 +1,157 @@
+@font-face
+{
+    font-family: 'Canterbury';
+    src: url('fonts/Canterbury.ttf')
+        format('truetype');
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: url('fonts/OldStandard-Regular.ttf')
+        format('truetype');
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: url('fonts/OldStandard-Bold.ttf')
+        format('truetype');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'OldStandard';
+    src: url('fonts/OldStandard-Italic.ttf')
+        format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Special Elite';
+    src: url('fonts/SpecialElite.ttf')
+        format('truetype');
+}
+
+.content
+{
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: 'OldStandard';
+}
+
+.newspaper-name
+{
+    font-size: 140px;
+    font-family: 'Canterbury';
+    text-align: center;
+}
+
+.info-line
+{
+    width: 100%;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+.service,
+.price
+{
+    text-align: right;
+}
+
+.town
+{
+    text-align: center;
+}
+
+.newspaper-number,
+.associated-press
+{
+    text-align: left;
+}
+
+.header-newspaper
+{
+    font-family: 'Times New Roman', serif;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150px;
+}
+
+.gagarin,
+.first-column,
+.third-column
+{
+    float: left;
+    width: 30%;
+}
+
+.first-column
+{
+    border-right: 1px solid black;
+    min-height: 100%;
+}
+
+.third-column
+{
+    border-left: 1px solid black;
+    min-height: 100%;
+}
+
+h1,
+h2,
+p
+{
+    margin: 0 3%;
+}
+
+h1
+{
+    font-size: 60px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+.gagarin
+{
+    margin: 0 2%;
+    width: 35%;
+}
+
+.content:after
+{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.nightMode:checked ~ .content
+{
+    background: #494949;
+    color: #f9faff;
+}
+
+.smallSize:checked ~ .content .information
+{
+    font-size: smaller;
+}
+
+.bigSize:checked ~ .content .information
+{
+    font-size: larger;
+}
+
+.elite:checked ~ .content .information
+{
+    font-family: 'Special Elite';
+}
