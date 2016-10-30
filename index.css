@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: Italy B;
-    src: local(ItalyB)
+    src: local(italyb)
         , url(Fonts/ItalyB.eot)
         , url(Fonts/ItalyB.ttf);
 }
@@ -9,29 +9,29 @@
 @font-face
 {
     font-family: Marianna;
-    src: local(Marianna)
+    src: local(marianna)
         , url(Fonts/Marianna.ttf);
 }
 
 @font-face
 {
     font-family: Roland-Decor;
-    src: local(Roland-Decor)
+    src: local(roland-decor)
         , url(Fonts/Roland-Decor.ttf);
 }
 
 @font-face
 {
     font-family: Parisian;
-    src: local(Parisian)
+    src: local(parisian)
         , url(Fonts/Parisian.ttf);
 }
 
 @font-face
 {
     font-family: Matreshka;
-    src: local(Matreshka)
-    , url(Fonts/Matreshka.ttf);
+    src: local(matreshka)
+        , url(Fonts/Matreshka.ttf);
 }
 
 aside
@@ -43,8 +43,8 @@ aside
 
 body
 {
-    background: url(2.png) repeat-y,
-        url(2.png) 100% 0 repeat-y;
+    background: url(2.png) repeat-y
+        , url(2.png) 100% 0 repeat-y;
     background-size: 10px, 10px;
     margin: 10px 40px;
 }
@@ -54,7 +54,8 @@ body
     text-align: center;
 }
 
-.content {
+.content
+{
     margin: 1px;
     font-family: 'Italy B';
     float: right;
@@ -65,7 +66,7 @@ body
 .cat
 {
     position: absolute;
-    top: 125px;
+    top: 90px;
     right: 250px;
     line-height: 1px;
 }
@@ -80,11 +81,11 @@ p
 }
 
 p:first-letter
-{  
+{
     display: block;
     margin: 5px 0 0 5px;
     float: left;
-    color: #ff3366;
+    color: #f36;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', serif;
 }
@@ -98,8 +99,8 @@ p:first-letter
 }
 
 .first
-{   
-    letter-spacing : 3px;
+{
+    letter-spacing: 3px;
     font-family: Marianna;
     font-weight: bold;
     border-style: 2px, double;
@@ -131,7 +132,7 @@ figcaption
 
 .title
 {
-    margin: 1em 0 0.5em 0;
+    margin: 1em 0 0.5em;
     color: #343434;
     font-weight: normal;
     font-family: 'Ultra', sans-serif;
@@ -155,7 +156,8 @@ h2
     font-family: 'Roland-Decor';
 }
 
-img {
+img
+{
     margin: 5px;
     padding: 10px;
 }
@@ -170,7 +172,8 @@ img {
     column-span: all;
 }
 
-.round {
+.round
+{
     border-radius: 100px;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
