@@ -1,18 +1,23 @@
-h1
+h1,
+h2
 {
     text-align: center;
+}
+
+h1
+{
     font: 4.5em Oswald, sans-serif;
 }
 
 h2
 {
     font: 1em 'Alfa Slab One', cursive;
-    text-align: center;
 }
 
 article
 {
     font-size: 20px;
+    background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
 }
 
 .black_theme:checked ~ article
@@ -23,7 +28,9 @@ article
 
 .helvetica_font:checked ~ article p,
 .helvetica_font:checked ~ article h1,
-.helvetica_font:checked ~ article ul
+.helvetica_font:checked ~ article ul,
+.helvetica_font:checked ~ article h2,
+.helvetica_font:checked ~ article footer
 {
     font-family: Helvetica, sans-serif;
 }
@@ -58,11 +65,6 @@ ul
     margin-left: 10%;
     margin-right: 50%;
     margin-top: 10%;
-}
-
-body
-{
-    background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
 }
 
 .columns_paragraps
