@@ -16,16 +16,6 @@ div.footer
     text-align: center;
 }
 
-.theme
-{
-    font-weight: bold;
-}
-
-.ya
-{
-    color: red;
-}
-
 div.one
 {
     column-count: 4;
@@ -39,8 +29,19 @@ div.one:first-letter
     font-size: 40px;
 }
 
+.theme
+{
+    font-weight: bold;
+}
+
+.ya
+{
+    color: red;
+}
+
 img
 {
     width: 150px;
     height: 200px;
+    float: right;
 }
