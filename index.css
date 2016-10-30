@@ -1,0 +1,50 @@
+@font-face
+{
+    font-family: Decor;
+    src: url(decor.TTF);
+}
+
+#header
+{
+    font-family: Decor, 'Times New Roman';
+    font-size: 70px;
+    text-align: center;
+}
+
+#footer
+{
+    text-align: center;
+}
+
+.theme
+{
+    font-weight: bold;
+}
+
+.ya
+{
+    color: red;
+}
+
+div.one
+{
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+}
+
+div.one:first-letter
+{
+    font-family: Decor, 'Times New Roman';
+    font-size: 40px;
+}
+
+#img {
+    text-align: right;
+}
+
+img
+{
+    width: 150px;
+    height: 200px;
+}
