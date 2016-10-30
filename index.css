@@ -1,0 +1,173 @@
+@font-face
+ {
+    font-family: Faster One;
+    src: url(fonts/FasterOne-Regular.ttf);
+}
+@font-face
+{
+    font-family: Ruslan Display;
+    src: url(fonts/RuslanDisplay.ttf);
+}
+@font-face
+{
+    font-family: Lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+@font-face
+{
+    font-family: Neucha;
+    src: url(fonts/Neucha.ttf);
+}
+@font-face
+{
+    font-family: Marck Script;
+    src: url(fonts/MarckScript-Regular.ttf);
+}
+@font-face
+{
+    font-family: Prosto One;
+    src: url(fonts/ProstoOne-Regular.ttf);
+}
+@font-face
+{
+    font-family: Russo One;
+    src: url(fonts/RussoOne-Regular.ttf);
+}
+@font-face
+{
+    font-family: Pattaya;
+    src: url(fonts/Pattaya-Regular.ttf);
+}
+@font-face
+{
+    font-family: Ledger;
+    src: url(fonts/Ledger-Regular.ttf);
+}
+@font-face
+{
+    font-family: Anonymous Pro;
+    src: url(fonts/AnonymousPro-Italic.ttf);
+}
+
+body
+{
+    background-color: #eee;
+    margin: 30px;
+}
+
+header
+{
+    font-family: Faster One;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+h1
+{
+    font-family: Ruslan Display;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2
+{
+    font-family: Lobster;
+}
+
+blockquote
+{
+    font-family: Marck Script;
+    font-size: 20px;
+}
+
+p
+{
+    text-indent: 1%;
+    white-space: normal;
+}
+
+p.first::first-letter
+{
+    font: italic 35px Times New Roman;
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+}
+
+.coach
+{
+    font-family: Pattaya;
+}
+
+.young
+{
+    font-family: Ledger;
+}
+
+.player
+{
+    font-family: Neucha;
+}
+
+.club
+{
+    font-family: Prosto One;
+}
+
+.governing
+{
+    font-family: Anonymous Pro;
+}
+
+.president
+{
+    font-family: Russo One;
+}
+
+.shock
+{
+    text-decoration: underline;
+}
+
+pre
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer
+{
+    font: italic bold 20px Times New Roman;
+    margin-top: 15px;
+}
+
+div.mainArticle
+{
+    width: 1500px;
+    column-width: 400px;
+    column-rule: 2px solid;
+    float: left;
+}
+
+div.facts
+{
+    width: 330px;
+    float: right;
+    column-count: 1;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    padding-left: 2px;
+}
+
+.imgCenter
+{
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+}
+
+figcaption
+{
+    text-align: center;
+}
