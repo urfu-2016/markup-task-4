@@ -1,9 +1,10 @@
-body
+.newspaper
 {
-    background-image: url('http://i.stack.imgur.com/kb0Zm.jpg');
+    background-image: url('white-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     font-weight: bolder;
+    padding: 50px;
 }
 
 h1
@@ -17,32 +18,28 @@ h1
 
 h4
 {
+    padding: 5px;
+    margin: 5px;
     text-align: center;
 }
 
-.left_col
+td
 {
+    padding: 5px;
     word-break: break-all;
     border: 4px dashed black;
-    padding: 10px;
-    float: left;
-    height: 100%;
-    width: 45%;
 }
 
-.right_col
+table
 {
-    word-break: break-all;
-    border: 4px dashed black;
-    padding: 10px;
-    float: right;
-    height: 100%;
-    width: 45%;
+    table-layout: fixed;
+    width: 100%;
 }
 
-.menu
+td
 {
-    float: right;
+    width: 50%;
+    vertical-align: top;
 }
 
 hr
@@ -51,41 +48,61 @@ hr
     height: 1px;
     border: 0;
     border-top: 1px solid black;
-    margin: 1em 0;
     padding: 0;
+    margin: 5px 0;
 }
 
 img
 {
     width: 80%;
-    height: 80%;
+    height: 40%;
     display: block;
     margin: 0 auto;
 }
 
+.picture_with_title
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+q
+{
+    font-style: italic;
+}
+
 p
 {
+    padding: 5px;
+    margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p:first-letter
 {
     font-family: 'Times New Roman', serif;
-    font-size: 200%;
+    font-size: 150%;
 }
 
-input[name='diff_font']:checked ~ div article p
+input[name='diff_font']:checked ~ div table tr td p
 {
-    font-family: 'Kunstler Script';
-    font-size: 175%;
+    font-family: 'Blackadder ITC';
+    font-size: 160%;
 }
 
-input[name='aggressive']:checked ~ div
+input[name='diff_font']:checked ~ div table tr td
 {
-    color: red;
+    font-family: 'Blackadder ITC';
+    font-size: 160%;
 }
 
-input[name='bigger_font']:checked ~ div
+input[name='black_white']:checked ~ div
+{
+    background-image: url('black-bg.jpg');
+    color: white;
+}
+
+input[name='bigger_font']:checked ~ div table
 {
     font-size: 130%;
 }
