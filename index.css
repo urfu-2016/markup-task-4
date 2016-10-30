@@ -1,4 +1,5 @@
-body {
+body
+{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -11,11 +12,13 @@ body {
     text-align: center;
 }
 
-h3 {
+h3
+{
     font: 20px 'Arial', serif;
 }
 
-.main_news {
+.main_news
+{
     width: 44%;
     display: inline-block;
     vertical-align: top;
@@ -26,7 +29,8 @@ h3 {
     padding: 10px;
 }
 
-.add_news {
+.add_news
+{
     width: 44%;
     display: inline-block;
     vertical-align: top;
@@ -41,87 +45,107 @@ h3 {
 
 }
 
-.inside_main_news {
+.inside_main_news
+{
     column-count: 2;
     -moz-column-count: 2;
     column-rule: 2px solid #000;
     -moz-column-rule: 2px solid #000;
 }
 
-article::first-letter {
+article::first-letter
+{
     font: 25px sans-serif;
 }
 
-hr {
+hr
+{
     background-color: black;
     height: 2px;
 }
 
-input.night:checked ~ .content {
+input.night:checked ~ .content
+{
     color: white;
     background: url('http://bit.ly/2fhRTzK');
 }
 
-input[name='size'][value='80']:checked ~.content {
+input[name='size'][value='80']:checked ~ .content
+{
     font-size: .8rem;
 }
 
-input[name='size'][value='80']:checked ~.content h3 {
+input[name='size'][value='80']:checked ~ .content h3
+{
     font-size: 1rem;
 }
 
-input[name='size'][value='110']:checked ~.content {
+input[name='size'][value='110']:checked ~ .content
+{
      font-size: 1.1rem;
 }
 
-input[name='size'][value='110']:checked ~.content h3 {
+input[name='size'][value='110']:checked ~ .content h3
+{
     font-size: 1.2rem;
 }
 
-input[name='size'][value='120']:checked ~.content {
+input[name='size'][value='120']:checked ~ .content
+{
     font-size: 1.2rem;
 }
 
-input[name='size'][value='120']:checked ~.content h3 {
+input[name='size'][value='120']:checked ~ .content h3
+{
     font-size: 1.4rem;
 }
 
-input[name='size'][value='140']:checked ~.content {
+input[name='size'][value='140']:checked ~ .content
+{
     font-size: 1.4rem;
 }
 
-input[name='size'][value='140']:checked ~.content h3 {
+input[name='size'][value='140']:checked ~ .content h3
+{
     font-size: 1.6rem;
 }
 
-input[name='family'][value='Serif']:checked ~.content {
+input[name='family'][value='Serif']:checked ~ .content
+{
     font-family: serif;
 }
 
-input[name='family'][value='Serif']:checked ~.content h3 {
+input[name='family'][value='Serif']:checked ~ .content h3
+{
     font-family: serif;
 }
 
-input[name='family'][value='Sans-serif']:checked ~.content {
+input[name='family'][value='Sans-serif']:checked ~ .content
+{
     font-family: sans-serif;
 }
 
-input[name='family'][value='Sans-serif']:checked ~.content h3 {
+input[name='family'][value='Sans-serif']:checked ~ .content h3
+{
     font-family: sans-serif;
 }
 
-input[name='family'][value='Monospace']:checked ~.content {
+input[name='family'][value='Monospace']:checked ~ .content
+{
     font-family: monospace;
 }
 
-input[name='family'][value='Monospace']:checked ~.content h3 {
+input[name='family'][value='Monospace']:checked ~ .content h3
+{
     font-family: monospace;
 }
 
-input[name='family'][value='Cursive']:checked ~.content {
+input[name='family'][value='Cursive']:checked ~ .content
+{
     font-family: cursive;
 }
 
-input[name='family'][value='Cursive']:checked ~.content h3 {
+input[name='family'][value='Cursive']:checked ~ .content h3
+{
     font-family: cursive;
 }
