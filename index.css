@@ -1,0 +1,251 @@
+.centering
+{
+    text-align: center;
+}
+
+p.title
+{
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+
+p.about
+{
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+p.descr-edition
+{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+table.header-descr,
+table.table-title
+{
+    width: 100%;
+}
+
+td.td-title
+{
+    width: 70%;
+}
+
+td.td-separator
+{
+    width: 3%;
+}
+
+td.td-about
+{
+    width: 27%;
+    vertical-align: top;
+}
+
+td.td-descr
+{
+    width: 20%;
+    text-align: center;
+}
+
+body
+{
+    height: 100%;
+    width: 1366px;
+    margin: 0 auto;
+    background: url(images/texture.png);
+    background-repeat: repeat;
+}
+
+hr
+{
+    margin: 0;
+}
+
+img.doctorwho
+{
+    width: 100%;
+}
+
+q
+{
+    quotes: '\00ab' '\00bb';
+}
+
+h1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+h2
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3
+{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+p
+{
+    margin-top: 0;
+    text-indent: 8px;
+}
+
+article p:first-of-type:first-letter
+{
+    font-size: 25px;
+    font-family: 'Courier New';
+}
+
+blockquote
+{
+    font-size: 25px;
+}
+
+blockquote:before
+{
+    top: 0;
+    left: 0;
+    content: '\201C';
+}
+
+blockquote:after
+{
+    top: 0;
+    right: 0;
+    content: '\201D';
+}
+
+.page
+{
+    margin: 0 5%;
+}
+
+.box
+{
+    border: 3px double #000;
+}
+
+.doctorwho-news
+{
+    text-align: center;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.left-side
+{
+    width: 50%;
+    float: left;
+}
+
+.other-news
+{
+    text-align: justify;
+    float: left;
+    width: 100%;
+}
+
+.sherlock-news
+{
+    margin-left: 10px;
+    width: 37%;
+    text-align: justify;
+    float: left;
+}
+
+.col-format
+{
+    column-gap: 10px;
+    column-rule: 1px dashed #000;
+    text-align: justify;
+}
+
+.col-4
+{
+    column-count: 4;
+}
+
+.col-3
+{
+    column-count: 3;
+}
+
+.little-news
+{
+    float: left;
+    margin-left: 10px;
+    width: 10%;
+    text-align: justify;
+}
+
+.tv-radio-news
+{
+    border: 3px solid #000;
+    background-color: #bbb;
+
+}
+
+.tv-radio-news > p
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 146%;
+    text-align: center;
+}
+
+.black-and-white:checked ~ div > div,
+.black-and-white:checked ~ header,
+.black-and-white:checked ~ div > article,
+.black-and-white:checked ~ div > section
+{
+    background: black;
+    color: white;
+}
+
+.switch-font:checked ~ div > div,
+.switch-font:checked ~ header,
+.switch-font:checked ~ div > article,
+.switch-font:checked ~ div > section
+{
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.large-font:checked ~ div > div,
+.large-font:checked ~ header,
+.large-font:checked ~ div > article,
+.large-font:checked ~ div > section
+{
+    font-size: 20px;
+}
+
+.small-font:checked ~ div > div,
+.small-font:checked ~ header,
+.small-font:checked ~ div > article,
+.small-font:checked ~ div > section
+{
+    font-size: 12px;
+}
