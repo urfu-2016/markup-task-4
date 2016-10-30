@@ -1,0 +1,239 @@
+@font-face {
+    font-family: Italy B; 
+    src: url(Fonts/ItalyB.eot); 
+    src: local(ItalyB), url(Fonts/ItalyB.ttf); 
+   }
+@font-face {
+    font-family: Marianna; 
+    src: local(Marianna), url(Fonts/Marianna.ttf); 
+   }
+@font-face {
+    font-family: Roland-Decor; 
+    src: local(Roland-Decor), url(Fonts/Roland-Decor.ttf); 
+   }
+@font-face {
+    font-family: Parisian; 
+    src: local(Parisian), url(Fonts/Parisian.ttf); 
+   }
+@font-face {
+    font-family: Matreshka; 
+    src: local(Matreshka), url(Fonts/Matreshka.ttf); 
+   }
+aside
+{
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+}
+body
+{ 
+    background: url(2.png) repeat-y, 
+                url(2.png) 100% 0 repeat-y;
+    background-size: 10px, 10px;
+    margin: 10px 40px;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.content {
+    margin: 1px;
+    font-family: 'Italy B';
+    float: right;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.cat
+{
+    position: absolute;
+    top: 125px;
+    right: 250px; /* Положение от правого края */
+    line-height: 1px;
+}
+
+p
+{
+    margin: 10px;
+    padding: 0;
+    text-indent: 8px;
+    text-align: justify;
+    font-family: Parisian;
+}
+
+p:first-letter
+{  
+    display: block;  
+    margin: 5px 0 0 5px;  
+    float: left;  
+    color: #ff3366;  
+    font-size: 20px;  
+    font-family: Georgia, 'Times New Roman', serif;  
+}
+.first_article
+{
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+
+}
+
+.first
+{   
+    letter-spacing : 3px;
+    font-family: Marianna;
+    font-weight: bold;
+    border-style: 2px, double;
+    border: 1px solid black;
+}
+
+figure
+{
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+    float: left;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+figcaption
+{
+    font-style: italic;
+    text-align: right;
+}
+
+.last_article
+{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+
+.title
+{
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;  
+    font-size: 50px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;
+    text-align: center;
+}
+.head
+{
+    column-count: 3;
+    column-rule: 2px solid #fff;
+    border-bottom: 2px solid black;
+}
+
+h2 
+{
+    text-align: center;
+    font-family: 'Roland-Decor';
+}
+
+img {
+    margin: 5px;
+    padding: 10px;
+}
+
+.info
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-family: Italy B;
+    column-span: all;
+}
+
+.round {
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    box-shadow: 0 0 7px #666;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
+
+}
+
+.state
+{
+    font-family: Matreshka;
+}
+
+.weather
+{
+    margin: 3px;
+    font-family: 'Italy B';
+    float: left;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    width: 100%;
+}
+
+.vertical
+{
+    width: 1em;
+    word-wrap: break-word;
+    letter-spacing: 100px;
+    overflow: hidden;
+}
+
+input[type="button"]
+{
+    text-decoration:none; text-align:center; 
+    padding:11px 32px; 
+    border:solid 1px #0f6b49; 
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px; 
+    border-radius: 4px; 
+    font:18px Georgia, "Times New Roman", Times, serif; 
+    font-weight:bold; 
+    color:#05020f; 
+    background-color:#3BA4C7; 
+    background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+    background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+}
+
+input[type="button"]:hover
+{
+    padding:11px 32px; 
+    border:solid 1px #0f6b49; 
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px; 
+    border-radius: 4px; 
+    font:18px Georgia, "Times New Roman", Times, serif; 
+    font-weight:bold; 
+    color:#05020f; 
+     background-color:#e2f5f2; 
+    background-image: -moz-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
+    background-image: -webkit-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
+    background-image: -o-linear-gradient(top, #e2f5f2 0%, #1982A5 100%); 
+    background-image: -ms-linear-gradient(top, #e2f5f2 0% ,#1982A5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+    background-image: linear-gradient(top, #e2f5f2 0% ,#1982A5 100%);   
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;   
+}
