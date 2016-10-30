@@ -1,69 +1,83 @@
-@font-face {
+@font-face
+{
     font-family: gothical;
     src: url(1.ttf);
 }
 
-body {
+body
+{
     background: url(1.jpg);
     background-size: 100%;
 }
-h1 {
+
+h1
+{
     text-align: center;
     font: italic 50px gothical;
 }
 
-p {
+p
+{
     font-family: segoe script;
     hyphens: manual;
 }
 
-.image {
+.image
+{
     font: italic 20px segoe print;
     padding: 30px;
     column-span: all;
     text-align: center;
 }
 
-img {
+img
+{
     width: 100%;
     margin: auto;
 }
 
-h3 {
+h3
+{
     font: italic 25px gothical;
     font-weight: bold;
 }
 
-p::first-letter {
+p::first-letter
+{
     font: italic 50px segoe print;
     color: #000;
 }
 
-.left {
+.left
+{
     font: italic 25px gothical;
     color: #000;
     float: left;
 }
 
-.right {
+.right
+{
     font: italic 25px gothical;
     color: #000;
     float: right;
 }
 
-.one_column {
+.one_column
+{
     column-rule: 2px solid gray;
     column-count: 1;
     column-gap: 20px;
 }
 
-.two_column {
+.two_column
+{
     column-rule: 2px solid gray;
     column-count: 2;
     column-gap: 20px;
 }
 
-.three_column {
+.three_column
+{
     column-rule: 2px solid gray;
     column-count: 2;
     column-gap: 20px;
