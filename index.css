@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+@import url('https://fonts.googleapis.com/css?family=Underdog');
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body
+{
+    background: papayawhip;
+}
+
+h1
+{
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+    align-self: center;
+    text-align: center;
+}
+
+.info-bar
+{
+    font-family: 'Pattaya', sans-serif;
+}
+
+footer
+{
+    font-family: 'Lobster', cursive;
+}
+
+.columns-3
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-fill: auto;
+    -moz-column-rule: 2px solid black;
+    column-rule: 2px solid black;
+    margin-right: 15px;
+}
+
+.columns-2
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-fill: auto;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+.span
+{
+    column-span: all;
+}
+
+h3,
+.article-header
+{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.article-content
+{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.article-content:first-letter
+{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.image
+{
+    text-align: center;
+    border: 1px solid dimgray;
+}
+
+.image-note
+{
+    font-family: 'Underdog', cursive;
+    font-size: 85%;
+    margin-top: -4px;
+}
+
+.vertical-text
+{
+    font-family: 'Coiny', cursive;
+    width: .4em;
+    word-wrap: break-word;
+    font-size: 80%;
+    text-align: center;
+}
