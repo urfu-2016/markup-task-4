@@ -150,7 +150,7 @@ hr
 .ogl
 {
     width: 300px;
-    height: 196px;
+    height: 216px;
     border: 2px double;
     float: right;
     font-weight: normal;
@@ -166,7 +166,7 @@ hr
     width: 300px;
     height: 200px;
     float: left;
-    padding-top: 200px;
+    padding-top: 215px;
 }
 
 .food
