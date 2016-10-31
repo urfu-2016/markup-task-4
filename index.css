@@ -10,8 +10,8 @@
 {
     font-family: 'Parseltongue';
     src: url('PARSELTO.eot?') format('eot'), url('PARSELTO.woff') format('woff'), url('PARSELTO.ttf') format('truetype'), url('PARSELTO.svg#Parseltongue') format('svg');
-    font-weight:normal;
-    font-style:normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face
@@ -19,13 +19,13 @@
     font-family: 'Lazurski Bold Italic';
     src: url('LAZURSK2.eot?') format('eot'), url('LAZURSK2.woff') format('woff'), url('LAZURSK2.ttf') format('truetype'), url('LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
     font-weight: normal;
-    font-style:normal;
+    font-style: normal;
 }
 
 @font-face
 {
     font-family: 'Harrington';
-    src: url('HARNGTON.eot?') format('eot'),url('HARNGTON.woff') format('woff'), url('HARNGTON.ttf') format('truetype'), url('HARNGTON.svg#Harrington') format('svg');
+    src: url('HARNGTON.eot?') format('eot'), url('HARNGTON.woff') format('woff'), url('HARNGTON.ttf') format('truetype'), url('HARNGTON.svg#Harrington') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -49,14 +49,16 @@
 @font-face
 {
     font-family: 'Tire Shop Demo Version';
-    src: url('tireshop_demo.eot?') format('eot'), url('tireshop_demo.woff') format('woff'), url('tireshop_demo.ttf') format('truetype'), url('tireshop_demo.svg#TireShopDemoVersion') format('svg');font-weight: normal;
+    src: url('tireshop_demo.eot?') format('eot'), url('tireshop_demo.woff') format('woff'), url('tireshop_demo.ttf') format('truetype'), url('tireshop_demo.svg#TireShopDemoVersion') format('svg');
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face 
 {
     font-family: 'Parisian  Normal';
-    src: url('parisr.eot?') format('eot'), url('parisr.woff') format('woff'), url('parisr.ttf') format('truetype'), url('parisr.svg#ParisianNormal') format('svg');font-weight: normal;
+    src: url('parisr.eot?') format('eot'), url('parisr.woff') format('woff'), url('parisr.ttf') format('truetype'), url('parisr.svg#ParisianNormal') format('svg');
+    font-weight: normal;
     font-style: normal;
 }
 
