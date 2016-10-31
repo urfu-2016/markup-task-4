@@ -1,21 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
 
 /* Handwriting */
 @import url(https://fonts.googleapis.com/css?family=Courgette|Handlee|Merienda);
 
+.image-container {
+    break-inside: avoid;
+    display: block;
+    column-count: 2;
+}
+
+img {
+    column-span: all;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    filter: sepia(75%);
+}
+
 div
 {
-    column-count: 4;
+    column-count: 2;
     column-width: 200px;
     column-rule: 1px solid #000;
 }
 
 main
 {
-    background-image: url(bg-light.jpg);
-    background-repeat: no-repeat;
+    background-image: url(images/bg-light.jpg);
 }
 
 header
@@ -27,7 +41,10 @@ header
 
 h2
 {
+    font-family: 'Chewy', cursive;
     column-span: all;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
     text-align: center;
 }
 
@@ -65,7 +82,7 @@ input[value='large']:checked ~ main
 
 input[value='dark']:checked ~ main
 {
-    background-image: url(bg-dark.jpg);
+    background-image: url(images/bg-dark.jpg);
     color: #fff;
 }
 
@@ -92,4 +109,9 @@ input[value='handwriting']:checked ~ main p
 input[value='handwriting']:checked ~ main h3
 {
     font-family: 'Merienda', cursive;
+}
+
+input[value='dark']:checked ~ main img
+{
+    filter: grayscale(100%);
 }
