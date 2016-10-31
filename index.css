@@ -1,6 +1,6 @@
 main
 {
-    width: 1300px;
+    width: 1000px;
     margin: auto;
     background: radial-gradient(at top, #fff8e1, #ffe0b2);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -15,19 +15,19 @@ section.newspaper
 
 article.news
 {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+    -moz-column-count: 2;
+    -moz-column-fill: auto; /* Firefox */
+    column-fill: auto;
     -webkit-column-rule-style: solid;
     -moz-column-rule-style: solid;
     column-rule-style: solid;
     border-right: double;
     padding-right: 20px;
-    column-width: 250px;
+    column-width: 200px;
     -webkit-column-gap: 40px;
     -moz-column-gap: 40px;
     column-gap: 40px;
-    width: 850px;
+    width: 700px;
     display: table-cell;
 }
 
@@ -77,7 +77,7 @@ h1.newspaper-title
 
 aside
 {
-    width: 250px;
+    width: 180px;
     padding: 25px;
     display: table-cell;
 }
@@ -115,27 +115,6 @@ p
     text-align: justify;
     font-family: 'Ruslan Display', cursive;
     word-break: keep-all;
-}
-
-p:active,
-li:active,
-h2:active,
-h3:active
-{
-    zoom: 2;
-    word-break: keep-all;
-    -o-transform: scaleY(1.2);
-    -ms-transform: scaleY(1.2);
-    -moz-transform: scaleY(1.2);
-    -webkit-transform: scaleY(1.2);
-    transform: scaleY(1.2);
-    background-color: white;
-    border: solid #4e342e;
-    margin: 10px;
-    position: fixed;
-    top: 25px;
-    left: 0;
-    z-index: 1;
 }
 
 p.say
@@ -195,7 +174,6 @@ ol.stop-ham-rules li:nth-child(2n+1)
     border-left: 10px solid #d7ccc8;
     box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1), -2px -2px 5px 0 rgba(0,0,0,.1);
     letter-spacing: 2px;
-    transition: .3s all linear;
 }
 
 .border li:nth-child(2)
@@ -213,33 +191,11 @@ img.big-pic
     border: solid;
     display: block;
     column-span: all;
-    -webkit-filter: sepia(100%);
+    margin-bottom: 15px;
 }
 
-img.mini-pic
+.date
 {
-    transform: rotate(-10deg);
-    -webkit-filter: sepia(100%);
-}
-
-img
-{
-    margin: 5px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-img:hover
-{
-    -webkit-filter: sepia(0%);
-}
-
-p.tip
-{
-    font-size: 30px;
     word-break: break-all;
-    width: 20px;
+    width: 10px;
 }
