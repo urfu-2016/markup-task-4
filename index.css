@@ -47,6 +47,34 @@
     src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf');
 }
 
+@font-face
+{
+    font-family: 'Trirong';
+    src: url('fonts/Trirong/Trirong-Black.ttf');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('fonts/Lobster/Lobster-Regular.ttf');
+}
+
+input[id='font_size']:checked ~ main
+{
+    font-size: 1.3em;
+}
+
+input[id='font_family']:checked ~ main
+{
+    font-family: 'Trirong';
+}
+
+input[id='color']:checked ~ main
+{
+    color: white;
+    background: black;
+}
+
 header
 {
     font-family: 'Abhaya Libre';
@@ -58,6 +86,12 @@ header
 header img
 {
     height: 5rem;
+}
+
+span.checkbox_caption
+{
+    font-family: 'Lobster';
+
 }
 
 h3
@@ -80,6 +114,18 @@ main
     column-rule: 3px groove darkslategray;
     border: 3px groove darkslategray;
     padding: 8px;
+}
+
+p.end
+{
+    text-indent: 0;
+    font-size: 2em;
+    width: .7em;
+    text-align: center;
+    word-wrap: break-word;
+    margin-left: 30%;
+    color: inherit;
+    font-family: inherit;
 }
 
 p
@@ -108,7 +154,6 @@ div.img_block div.caption
     font-size: 1rem;
     width: 15rem;
     font-family: 'Cormorant Garamond';
-
 }
 
 div.img_block div.caption.q
@@ -121,7 +166,6 @@ div.img_block
     column-span: all;
     display: block;
     float: none;
-    /*width: 80rem;*/
     border: 3px groove darkslategray;
     padding: 20px 20px 20px 0;
     align-content: center;
@@ -130,7 +174,6 @@ div.img_block
 div.img_inline
 {
     padding: 10px;
-
 }
 
 div.img_inline img
@@ -149,7 +192,7 @@ p q
 {
     font-family: 'Playball';
     text-indent: 4%;
-    font-size: 1.3rem;
+    font-size: 120%;
 }
 
 em
