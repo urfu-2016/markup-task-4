@@ -4,12 +4,12 @@
 
 @font-face
 {
-    font-family:'LilliputSteps-Regular';
-    src: url("font/lilliput_steps.eot?")
-    format("eot"), url("font/lilliput_steps.woff")
-    format("woff"), url("font/lilliput_steps.ttf")
-    format("truetype"), url("font/lilliput_steps.svg#LilliputSteps-Regular")
-    format("svg");
+    font-family: 'LilliputSteps-Regular';
+    src: url('font/lilliput_steps.eot?')
+        format('eot'), url('font/lilliput_steps.woff')
+        format('woff'), url('font/lilliput_steps.ttf')
+        format('truetype'), url('font/lilliput_steps.svg#LilliputSteps-Regular')
+        format('svg');
 }
 
 .headline
@@ -167,7 +167,7 @@ span.sv-size-3
     float: right;
     padding-left: 10px;
     padding-right: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .zoom-img:focus
