@@ -1,10 +1,11 @@
-body{
-    background: linear-gradient(to bottom, #DEB887, #BDB76B);
-    font-family: Arial, Helvetica, Calibri, sans-serif;
+body
+{
+    background: linear-gradient(to bottom, #deb887, #bdb76b);
     font: 15px Courier New;
-
+    font-family: Arial, Helvetica, Calibri, sans-serif;
 }
-header{
+header
+{
     color: red;
     font-size: 78px;
     font: Times Arial;
@@ -13,35 +14,41 @@ header{
     padding: 0;
     text-shadow: 4px 4px #808080;
 }
-aside{
+aside
+{
     column-gap: 3em;
     margin: 0;
     padding: 0;
 }
-.different{
+.different
+{
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
     column-rule: 2px solid black;
 }
-.reserve{
+.reserve
+{
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
     column-rule: 2px solid black;
 }
-.hussars{
+.hussars
+{
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
     column-rule: 2px solid black;
 }
-div {
+div 
+{
     border-top: 4px double black; 
     margin: 0;
     padding: 0;
 }
-p:first-of-type::first-letter {
+p:first-of-type::first-letter 
+{
     color: #f00;
     font-size: 150%;
     font: Times New Roman;
@@ -49,41 +56,50 @@ p:first-of-type::first-letter {
     text-shadow: 2px 2px #808080;
     margin: 2px; 
 }
-p {
+p 
+{
     font-variant: small-caps;
     text-align: justify;
 }
-h1{
+h1
+{
     font-size: 100%;
 }
-h2{
+h2
+{
     font-size: 150%;
 }
-h3{
+h3
+{
     font-size: 110%;
 }
-h1, h2, h3{
+h1, h2, h3
+{
     text-align: center;
     -webkit-column-span: all;
     column-span: all;
     display: block;
 }
-img{
+img
+{
     width: 100%;
     float: left;
     display: block;
 }
-#imgDifferent {
+#imgDifferent 
+{
     width: 50%;
     float: left;
     display: block;
 }
-section{
+section
+{
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
 }
-#card{
+#card
+{
     text-align: center;
     -webkit-column-span: all;
     column-span: all;
@@ -123,7 +139,8 @@ section{
 {
     font-size: 150%;
 }
-.large-font:checked ~ header{
+.large-font:checked ~ header
+{
     font-size: 550%;
 }
 .small-font:checked ~ div,
@@ -137,7 +154,8 @@ section{
 {
     font-size: 90%;
 }
-footer {
+footer 
+{
     display: inline-block;
     padding-bottom: 0px;
     float: left;
