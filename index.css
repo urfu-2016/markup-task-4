@@ -51,18 +51,12 @@ main
     column-rule: 2px solid black;
 }
 
-h3,
-h4,
-h5
-{
-    text-align: center;
-}
-
 h3
 {
     font-family: Andale Mono, monospace;
     font-size: 25px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h4
@@ -70,11 +64,13 @@ h4
     font-family: Courier New, monospace;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h5
 {
     font-size: 15px;
+    text-align: center;
 }
 
 q
