@@ -1,0 +1,151 @@
+body{
+    background: linear-gradient(to bottom, #DEB887, #BDB76B);
+    font-family: Arial, Helvetica, Calibri, sans-serif;
+    font: 15px Courier New;
+
+}
+header{
+    color: red;
+    font-size: 78px;
+    font: Times Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 4px 4px #808080;
+}
+aside{
+    column-gap: 3em;
+    margin: 0;
+    padding: 0;
+}
+.different{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-rule: 2px solid black;
+}
+.reserve{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    column-rule: 2px solid black;
+}
+.hussars{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    column-rule: 2px solid black;
+}
+div {
+    border-top: 4px double black; 
+    margin: 0;
+    padding: 0;
+}
+p:first-of-type::first-letter {
+    color: #f00;
+    font-size: 150%;
+    font: Times New Roman;
+    font-style: italic;
+    text-shadow: 2px 2px #808080;
+    margin: 2px; 
+}
+p {
+    font-variant: small-caps;
+    text-align: justify;
+}
+h1{
+    font-size: 100%;
+}
+h2{
+    font-size: 150%;
+}
+h3{
+    font-size: 110%;
+}
+h1, h2, h3{
+    text-align: center;
+    -webkit-column-span: all;
+    column-span: all;
+    display: block;
+}
+img{
+    width: 100%;
+    float: left;
+    display: block;
+}
+#imgDifferent {
+    width: 50%;
+    float: left;
+    display: block;
+}
+section{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+#card{
+    text-align: center;
+    -webkit-column-span: all;
+    column-span: all;
+    display: inline-block;
+    width: 100%;
+}
+.black-and-white:checked ~ div,
+.black-and-white:checked ~ div > div,
+.black-and-white:checked ~ header,
+.black-and-white:checked ~ h1,
+.black-and-white:checked ~ footer,
+.black-and-white:checked ~ aside,
+.black-and-white:checked ~ div > section,
+.black-and-white:checked ~ main
+{
+    background: black;
+    color: white;
+}
+.switch-font:checked ~ div,
+.switch-font:checked ~ div > div,
+.switch-font:checked ~ header,
+.switch-font:checked ~ h1,
+.switch-font:checked ~ footer,
+.switch-font:checked ~ aside,
+.switch-font:checked ~ div > section,
+.switch-font:checked ~ main
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.large-font:checked ~ div,
+.large-font:checked ~ div > div,
+.large-font:checked ~ h1,
+.large-font:checked ~ footer,
+.large-font:checked ~ aside,
+.large-font:checked ~ div > section,
+.large-font:checked ~ main
+{
+    font-size: 150%;
+}
+.large-font:checked ~ header{
+    font-size: 550%;
+}
+.small-font:checked ~ div,
+.small-font:checked ~ div > div,
+.small-font:checked ~ header,
+.small-font:checked ~ h1,
+.small-font:checked ~ footer,
+.small-font:checked ~ aside,
+.small-font:checked ~ div > section,
+.small-font:checked ~ main
+{
+    font-size: 90%;
+}
+footer {
+    display: inline-block;
+    padding-bottom: 0px;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    clear: both;
+    width: 100%;
+    border-top: 4px double black; 
+}
