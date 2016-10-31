@@ -1,0 +1,105 @@
+.container
+{
+    border: 2px double black;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+}
+
+.page-name
+{
+    font-size: 120px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+}
+
+.page-info
+{
+    font-size: 15px;
+    text-align: right;
+}
+
+article
+{
+    column-count: 2;
+    column-rule: 1px solid black;
+}
+
+article h2,
+h3
+{
+    column-span: all;
+    margin: 0 5%;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+article em
+{
+    column-span: all;
+}
+
+em
+{
+    font-size: 15px;
+}
+
+.section
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.first-column,
+.second-column,
+.third-column
+{
+    float: left;
+    width: 33%;
+}
+
+.earth-img
+{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.weather
+{
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 5px;
+}
+
+.weather h3
+{
+    text-align: center;
+}
+
+.first-column
+{
+    border-right: 1px solid black;
+    min-height: 100%;
+}
+
+.third-column
+{
+    border-left: 1px solid black;
+    min-height: 100%;
+}
+
+h2,
+p
+{
+    margin: 0 2.5%;
+}
+
+.container:after
+{
+    clear: both;
+    display: block;
+    content: '';
+}
