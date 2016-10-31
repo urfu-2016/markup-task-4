@@ -6,13 +6,15 @@
 /* Handwriting */
 @import url(https://fonts.googleapis.com/css?family=Courgette|Handlee|Merienda);
 
-.image-container {
+.image-container
+{
     break-inside: avoid;
     display: block;
     column-count: 2;
 }
 
-img {
+img
+{
     column-span: all;
     display: block;
     width: 100%;
