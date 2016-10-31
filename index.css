@@ -3,12 +3,6 @@ html
     background: #e3d5d5;
 }
 
-h2,
-h1
-{
-    margin: 5px;
-}
-
 hr
 {
     border: none;
@@ -18,8 +12,9 @@ hr
     margin-bottom: 0;
 }
 
-header h1
+h1
 {
+    margin: 10px;
     text-align: center;
     font-size: 85px;
 }
@@ -31,7 +26,7 @@ header h1
     letter-spacing: .5em;
 }
 
-.main
+main
 {
     margin: 10px;
     column-count: 4;
@@ -39,13 +34,12 @@ header h1
     font-size: 12px;
 }
 
-.main p::first-letter
+main p::first-letter
 {
-    font-family: KellySlab;
-    font-size: 25px;
+    font: 25px KellySlab, Georgia, serif;
 }
 
-.first p
+.two-columns
 {
     text-indent: 5%;
     font-family: KellySlab;
@@ -55,12 +49,8 @@ header h1
 
 .first h2
 {
-    font-family: OpenSans;
-}
-
-span
-{
-    font-size: 10px;
+    font: 15px OpenSans, Arial, sans-serif;
+    margin: 10px;
 }
 
 .second
@@ -68,7 +58,8 @@ span
     text-indent: 5%;
     font-family: Cambria;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1.4;
+    word-spacing: 1.5;
 }
 
 .second h2
@@ -79,18 +70,18 @@ span
 
 .third
 {
+    font: 12px Courier, monospace;
     column-count: 2;
-    font-family: monospace;
-    font-size: 12px;
     column-rule: 1px solid #000;
 }
 
 .third h2
 {
+    margin: 5px;
+    padding: 5px;
+    font: 25px 'CormorantInfant', Georgia, serif;
     column-span: all;
     text-transform: capitalize;
-    font-family: 'Poiret One', cursive;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -99,19 +90,37 @@ span
     width: 30%;
 }
 
+.weather h2
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .weather
 {
     background-color: rgba(224, 224, 209, .63);
     font: normal 12px Cambria;
-    width: 95%;
-    margin-top: 10px;
+    width: 98%;
+    margin-top: 15px;
     padding: 5px;
     border: 1px solid black;
 }
 
+figure
+{
+    margin: 0;
+}
+
 img
 {
-    width: 100%;
+    width: 240px;
+}
+
+figcaption
+{
+    font-size: 9px;
+    color: #5a5858;
 }
 
 @font-face
@@ -123,13 +132,13 @@ img
 @font-face
 {
     font-family: OpenSans;
-    src: url(fonts/OpenSans-CondLight.ttf);
+    src: url(fonts/OpenSans-CondBold.ttf);
 }
 
 @font-face
 {
-    font-family: Poiret One;
-    src: url(fonts/PoiretOne-Regular.ttf);
+    font-family: CormorantInfant;
+    src: url(fonts/CormorantInfant-Bold.ttf);
 }
 
 @font-face
