@@ -1,0 +1,89 @@
+.switcher
+{
+    column-count: 2;
+    text-align: center;
+}
+
+.weather
+{
+    break-inside: avoid-column;
+}
+
+.currency-course
+{
+    break-inside: avoid-column;
+    float: right;
+}
+
+.right
+{
+    text-align: right;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.data
+{
+    column-count: 3;
+    border: 2px solid black;
+}
+
+.data p
+{
+    text-align: center;
+}
+
+.head
+{
+    text-align: center;
+}
+
+h2 ~ h3
+{
+    text-align: center;
+}
+
+.left,
+.center,
+.right
+{
+    column-count: 2;
+}
+
+section
+{
+    break-inside: avoid-column;
+}
+
+.container
+{
+    column-count: 3;
+    column-rule: 1px solid black;
+    border-top: 1px solid black;
+}
+
+h3,
+h5
+{
+    column-span: all;
+}
+
+.wraper
+{
+    width: 100%;
+    overflow: hidden;
+    column-count: 3;
+}
+
+img
+{
+    width: 250px;
+}
+
+aside
+{
+    column-span: all;
+}
