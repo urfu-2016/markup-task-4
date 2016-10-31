@@ -1,0 +1,119 @@
+header
+{
+    text-align: center;
+    display: inline;
+}
+
+.logo
+{
+    font-family: Canterbury, serif;
+    font-size: 24px;
+}
+
+div
+{
+    display: inline-block;
+}
+
+.match
+{
+    text-align: left;
+    float: right;
+    border: 3px solid black;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: 1px outset #000;
+    column-gap: 40px;
+    font-size: 16px;
+}
+
+h2
+{
+    margin: 2px;
+}
+
+section.news
+{
+    column-count: 2;
+    column-gap: 40px;
+    font-size: 16px;
+}
+
+article img
+{
+    width: 100%;
+}
+
+.news
+{
+    font-family: 'IM Fell English SC', serif;
+    font-size: 18px;
+}
+
+main.p:first-letter
+{
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-indent: 20px;
+}
+
+main.p:first-of-type
+{
+    text-indent: 20px;
+}
+
+figure
+{
+    margin: 0;
+}
+
+img
+{
+    margin-top: 5px;
+}
+
+figcaption
+{
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: Canterbury;
+    src: url(fonts/Canterbury.ttf);
+}
+
+@font-face
+{
+    font-family: 'IM Fell English SC';
+    src: url(fonts/Fell-English.ttf);
+}
+
+section.fans
+{
+    column-count: 2;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.fans-span
+{
+    column-span: all;
+}
+
+.foremost
+{
+    column-span: all;
+    border: 3px solid black;
+    padding: 10px;
+    font-style: italic;
+    text-align: justify;
+}
