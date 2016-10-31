@@ -1,8 +1,7 @@
 @font-face
 {
     font-family: GothicRus;
-    src: url('fonts/GothicRus.woff') format('woff'), 
-        url('fonts/GothicRus.ttf') format('truetype');
+    src: url('fonts/GothicRus.woff') format('woff'), url('fonts/GothicRus.ttf') format('truetype');
 }
 
 header h1
