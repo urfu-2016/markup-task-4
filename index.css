@@ -6,6 +6,60 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family: 'Parseltongue';
+    src: url('PARSELTO.eot?') format('eot'), url('PARSELTO.woff') format('woff'), url('PARSELTO.ttf') format('truetype'), url('PARSELTO.svg#Parseltongue') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face
+{
+    font-family: 'Lazurski Bold Italic';
+    src: url('LAZURSK2.eot?') format('eot'), url('LAZURSK2.woff') format('woff'), url('LAZURSK2.ttf') format('truetype'), url('LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face
+{
+    font-family: 'Harrington';
+    src: url('HARNGTON.eot?') format('eot'),url('HARNGTON.woff') format('woff'), url('HARNGTON.ttf') format('truetype'), url('HARNGTON.svg#Harrington') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Walk Around the Block';
+    src: url('Walk-Around-the-Block.eot?') format('eot'), url('Walk-Around-the-Block.woff') format('woff'), url('Walk-Around-the-Block.ttf') format('truetype'), url('Walk-Around-the-Block.svg#WalkAroundtheBlock') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'CinzelDecorative-Regular';
+    src: url('CinzelDecorative-Regular.eot?') format('eot'), url('CinzelDecorative-Regular.woff') format('woff'), url('CinzelDecorative-Regular.ttf') format('truetype'), url('CinzelDecorative-Regular.svg#CinzelDecorative-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Tire Shop Demo Version';
+    src: url('tireshop_demo.eot?') format('eot'), url('tireshop_demo.woff') format('woff'), url('tireshop_demo.ttf') format('truetype'), url('tireshop_demo.svg#TireShopDemoVersion') format('svg');font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Parisian  Normal';
+    src: url('parisr.eot?') format('eot'), url('parisr.woff') format('woff'), url('parisr.ttf') format('truetype'), url('parisr.svg#ParisianNormal') format('svg');font-weight: normal;
+    font-style: normal;
+}
+
 main
 {
     columns: 200px;
@@ -37,7 +91,7 @@ h4
 {
     text-align: left;
     font-weight: bold;
-    font-family: 'Lazurski Cyrillic', arial;
+    font-family: 'Lazurski Bold Italic', arial;
 }
 
 h1
@@ -99,7 +153,8 @@ table.content
     text-align: center;
     font-size: 40px;
     width: 100%;
-    font-family: 'President Cyr', arial;
+    font-family: 'Walk Around the Block', arial;
+    color: #000;
     text-shadow: 4px 4px 4px #aaa;
 }
 
@@ -107,8 +162,7 @@ table
 {
     width: 100%;
     break-inside: avoid-column;
-    font-family: 'University Cyrillic', arial;
-    font-size: 1.2em;
+    font-family: 'Parisian  Normal', arial;
 }
 
 td.left
@@ -131,7 +185,7 @@ figure
     margin: 0;
     break-inside: avoid-column;
     text-align: center;
-    font-family: 'Cinzel Decorative', arial;
+    font-family: 'CinzelDecorative-Regular', arial;
 }
 
 .noGap
@@ -142,6 +196,17 @@ figure
 span.date
 {
     font-size: 2em;
-    font-family: 'President Cyr', arial;
+    font-family: 'Walk Around the Block', arial;
     text-shadow: 4px 4px 4px #aaa;
+}
+
+img
+{
+    width: 100%;
+}
+
+img.logo
+{
+    height: 100%;
+    width: auto;
 }
