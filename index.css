@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lobster&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&subset=cyrillic');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer
+{
+    font-family: 'EB Garamond', serif;
+    padding: 0 18px;
+}
+
+p
+{
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+main article
+{
+    -moz-columns: 300px auto;
+    -webkit-columns: 300px auto;
+    columns: 300px auto;
+}
+
+.image
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.image img
+{
+    margin: 0 auto;
+}
+
+main article
+{
+    padding: 0 0 10px;
+}
+
+main article h2
+{
+    -moz-column-span: all;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+aside article
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+article:not(:last-child):after,
+footer:before,
+header:after
+{
+    content: '';
+    display: block;
+    height: 1px;
+    border: 1px solid #000;
+    background: black;
+    -moz-column-span: all;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+html
+{
+    background: #f8ecc2;
+    font-family: 'Lobster', cursive;
+    line-height: 1.5em;
+}
+
+header,
+footer
+{
+    line-height: 2em;
+    font-size: 50px;
+    text-align: center;
+}
+
+main
+{
+    float: left;
+    width: 80%;
+}
+
+aside
+{
+    float: right;
+    width: 20%;
+}
+
+.cls
+{
+    content: '';
+    clear: both;
+}
