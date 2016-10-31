@@ -2,24 +2,24 @@
 {
     font-family: Cloister Black;
     src: url(cloisterblack-webfont.woff2)
-    format('woff2'), url(cloisterblack-webfont.woff)
-    format('woff'), url(cloisterblack-webfont.ttf) format('truetype');
+        format('woff2'), url(cloisterblack-webfont.woff)
+        format('woff'), url(cloisterblack-webfont.ttf) format('truetype');
 }
 
 @font-face
 {
     font-family: Roland;
     src: url(roland-webfont.woff2)
-    format('woff2'), url(roland-webfont.woff)
-    format('woff'), url(roland-webfont.ttf) format('truetype');
+        format('woff2'), url(roland-webfont.woff)
+        format('woff'), url(roland-webfont.ttf) format('truetype');
 }
 
 @font-face
 {
     font-family: Black Label;
     src: url(vtks_black_label_normal-webfont.woff2)
-    format('woff2'), url(vtks_black_label_normal-webfont.woff)
-    format('woff'), url(vtks_black_label_normal-webfont.ttf) format('truetype');
+        format('woff2'), url(vtks_black_label_normal-webfont.woff)
+        format('woff'), url(vtks_black_label_normal-webfont.ttf) format('truetype');
 }
 
 body,
