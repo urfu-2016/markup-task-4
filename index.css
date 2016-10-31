@@ -5,6 +5,18 @@
     font-size: .7em;
 }
 
+.mainHR
+{
+    border-color: #000;
+    border-width: 3px;
+}
+
+.separator
+{
+    border-color: #000;
+    border-width: 1px;
+}
+
 .leftSelect
 {
     float: left;
@@ -33,7 +45,7 @@ main
 
 .column3
 {
-    column-rule: 2px solid black;
+    column-rule: 2px solid #000;
     column-count: 3;
     max-width: 43%;
     float: left;
@@ -41,7 +53,7 @@ main
 
 .column4
 {
-    column-rule: 2px solid black;
+    column-rule: 2px solid #000;
     column-count: 4;
     max-width: 56%;
     float: right;
