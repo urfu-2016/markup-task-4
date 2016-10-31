@@ -1,0 +1,142 @@
+@import url('http://allfont.ru/allfont.css?fonts=cyrillicgoth-medium');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('http://allfont.ru/allfont.css?fonts=Rurintania');
+
+body
+{
+    column-count: 2;
+    column-width: 500px;
+    column-rule: 2px solid;
+    column-gap: 10px;
+    min-height: 500px;
+    background-color: #ffe4c4;
+}
+
+img
+{
+    float: left;
+    width: 250px;
+}
+
+h1
+{
+    font-family: 'Rurintania', arial;
+    font-size: 35px;
+    letter-spacing: 50px;
+    text-align: center;
+    word-spacing: 40px;
+    column-span: all;
+    color: #cd853f;
+}
+
+h4
+{
+    font-family: 'CyrillicGoth Medium', arial;
+    font-size: 20px;
+    letter-spacing: 20px;
+    text-align: center;
+    column-span: all;
+    border: 1px solid #cd853f;
+    color: #cd853f;
+}
+
+.titles
+{
+    column-span: 2;
+    text-align: center;
+    color: #daa520;
+    font-size: 20px;
+    display: block;
+}
+
+.title1
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title2
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.title3
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title4
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.title5
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titles::first-letter
+{
+    font-size: 30px;
+    font-family: 'Rurintania', arial;
+}
+
+.texts::first-letter
+{
+    font-size: 25px;
+    font-family: 'CyrillicGoth Medium', arial;
+}
+
+.texts
+{
+    color: #8b4513;
+    text-align: justify;
+    column-rule: 1px dotted;
+}
+
+.first-text
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    min-height: 250px;
+    column-count: 2;
+}
+
+.second-text
+{
+    font-family: 'Merriweather', serif;
+    line-height: 23px;
+    column-count: 2;
+    min-height: 250px;
+    font-size: 16px;
+    letter-spacing: -.5px;
+}
+
+.third-text
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    column-count: 2;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.fourth-text
+{
+    font-family: 'Play', sans-serif;
+    column-count: 2;
+    line-height: 17px;
+    font-size: 18px;
+}
+
+.fifth-text
+{
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 18px;
+    font-size: 16px;
+}
