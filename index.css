@@ -1,0 +1,82 @@
+@font-face {
+    font-family:Bickham;
+    src: url("Bickham.ttf");
+}
+
+ @font-face {
+     font-family:Сhancelaresca;
+     src: url("Сhancelaresca.ttf");
+ }
+ @font-face {
+     font-family:Queen;
+     src: url("Queen.ttf");
+
+
+body {
+    margin: 0 3em;
+    background: url(fon.jpg) no-repeat;
+    background-size: cover;
+}
+h1, h2, h3, p {
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font: italic 3.7em Arial, sans-serif;
+}
+h2 {
+    font: 1.8em Queen, sans-serif;
+}
+header h1 {
+    font: 6em Bickham, sans-serif;
+    text-shadow: 0.03em 0.02em #696969;
+}
+header img {
+    float: left;
+    margin: 2.4em 3.5em;
+    border: solid #222222;;
+    position: absolute;
+}
+q{
+    font: 0.95em Сhancelaresca, sans-serif
+}
+hr {
+    border: none;
+    background-color: #000;
+    height: 0.1em;
+    text-align: center;
+}
+main {
+    text-indent: 0.2em;
+    font-size: 1em;
+}
+p:first-letter {
+    font: bold 1.6em Brigin;
+}
+
+.introduction {
+    column-count: 2;
+    column-rule: 0.15em solid #000;
+}
+.biography {
+    column-count: 1;
+}
+.quote {
+    margin:1em;
+    float: right;
+}
+
+
+.finances {
+    column-count: 3;
+    column-rule: 0.15em solid #000;
+    font-size: 1em;
+}
+.drug {
+    column-count: 2;
+    column-rule: 0.15em solid #000;
+}
+.content {
+    column-count: 2;
+    column-rule: 0.15em solid #000;
+}
