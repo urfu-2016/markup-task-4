@@ -141,7 +141,14 @@ section
 
 }
 
-.black-and-white:checked ~ *
+.black-and-white:checked ~ div,
+.black-and-white:checked ~ div > div,
+.black-and-white:checked ~ header,
+.black-and-white:checked ~ h1,
+.black-and-white:checked ~ footer,
+.black-and-white:checked ~ aside,
+.black-and-white:checked ~ div > section,
+.black-and-white:checked ~ main
 {
     background: black;
     color: white;
