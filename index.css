@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=New+Rocker);
+@import url(https://fonts.googleapis.com/css?family=Diplomata+SC);
+@import url(https://fonts.googleapis.com/css?family=UnifrakturCook:700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    background: url(http://img15.deviantart.net/cbb9/i/2005/258/c/4/paper_texture_v5_by_bashcorpo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    border-bottom: 10px double #000;
+    border-top: 5px solid #000;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'New Rocker', cursive;
+}
+
+article {
+    -webkit-column-count: 5;
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    align-content: center;
+}
+
+.first
+{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+}
+
+.first-img
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+.second
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+}
+.second-img
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+pre
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Mono', serif;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-family: 'IM Fell English', serif;
+    font-size: 32px;
+}
+
+h2 {
+    -webkit-column-span: all;
+    -ms-grid-column-span: all;
+    column-span: all;
+    width: 500px;
+    font-family: 'IM Fell English', serif;
+    font-size: 32px;
+}
+
+p:first-letter {
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.author
+{
+    font: 1.1em 'Bree Serif', serif;
+    line-height: 20px;
+    padding-top: 10px;
+    float: right;
+}
+
+.more
+{
+    font: 1.1em IM Fell English, cursive;
+}
