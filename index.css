@@ -3,7 +3,9 @@ body
     background: linear-gradient(to bottom, #deb887, #bdb76b);
     font: 15px Courier New;
     font-family: Arial, Helvetica, Calibri, sans-serif;
+
 }
+
 header
 {
     color: red;
@@ -13,91 +15,121 @@ header
     margin: 0;
     padding: 0;
     text-shadow: 4px 4px #808080;
+
 }
+
 aside
 {
     column-gap: 3em;
     margin: 0;
     padding: 0;
+
 }
+
 .different
 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
     column-rule: 2px solid black;
+
 }
+
 .reserve
 {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
     column-rule: 2px solid black;
+
 }
+
 .hussars
 {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
     column-rule: 2px solid black;
+
 }
+
 div 
 {
     border-top: 4px double black; 
     margin: 0;
     padding: 0;
+
 }
+
 p:first-of-type::first-letter 
 {
     color: #f00;
     font-size: 150%;
+    font-style: italic;\
     font: Times New Roman;
-    font-style: italic;
     text-shadow: 2px 2px #808080;
     margin: 2px; 
+
 }
+
 p 
 {
     font-variant: small-caps;
     text-align: justify;
+
 }
+
 h1
 {
     font-size: 100%;
+
 }
+
 h2
 {
     font-size: 150%;
+
 }
+
 h3
 {
     font-size: 110%;
+
 }
+
 h1, h2, h3
 {
     text-align: center;
     -webkit-column-span: all;
     column-span: all;
     display: block;
+
 }
+
 img
 {
     width: 100%;
     float: left;
     display: block;
+
 }
+
 #imgDifferent 
 {
     width: 50%;
     float: left;
     display: block;
+
 }
+
 section
 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
+
 }
+
 #card
 {
     text-align: center;
@@ -105,7 +137,9 @@ section
     column-span: all;
     display: inline-block;
     width: 100%;
+
 }
+
 .black-and-white:checked ~ div,
 .black-and-white:checked ~ div > div,
 .black-and-white:checked ~ header,
@@ -117,7 +151,9 @@ section
 {
     background: black;
     color: white;
+
 }
+
 .switch-font:checked ~ div,
 .switch-font:checked ~ div > div,
 .switch-font:checked ~ header,
@@ -128,7 +164,9 @@ section
 .switch-font:checked ~ main
 {
     font-family: 'PT Sans Narrow', sans-serif;
+
 }
+
 .large-font:checked ~ div,
 .large-font:checked ~ div > div,
 .large-font:checked ~ h1,
@@ -138,11 +176,15 @@ section
 .large-font:checked ~ main
 {
     font-size: 150%;
+
 }
+
 .large-font:checked ~ header
 {
     font-size: 550%;
+
 }
+
 .small-font:checked ~ div,
 .small-font:checked ~ div > div,
 .small-font:checked ~ header,
@@ -153,17 +195,17 @@ section
 .small-font:checked ~ main
 {
     font-size: 90%;
+
 }
+
 footer 
 {
     display: inline-block;
-    padding-bottom: 0px;
     float: left;
-    margin-top: 0px;
-    padding-top: 0px;
     background-position: 0 bottom;
     background-repeat: repeat-x;
     clear: both;
     width: 100%;
-    border-top: 4px double black; 
+    border-top: 4px double black;
+
 }
