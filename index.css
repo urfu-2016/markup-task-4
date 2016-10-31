@@ -57,7 +57,7 @@ article p.formatted
     white-space: pre-wrap;
 }
 
-quote
+blockquote
 {
     border-left: 10px solid #ccc;
     quotes: '\201C''\201D''\2018''\2019';
@@ -66,26 +66,26 @@ quote
     background: gray;
 }
 
-quote:hover
+blockquote:hover
 {
     margin: 1.5em 10px;
-    padding: 0.5em 10px;
+    padding: .5em 10px;
 }
 
-quote:before
+blockquote:before
 {
     color: #ccc;
     content: open-quote;
 }
 
-quote:after
+blockquote:after
 {
     content: '\'\'';
 }
 
 article p.huge-spaced
 {
-    letter-spacing: 0.8em;
+    letter-spacing: .8em;
 }
 
 article p.small-caps
@@ -115,7 +115,7 @@ article p.indented
 
 article p.bad-fonted
 {
-    font-family: "Comic Sans MS" "Comic Sans" fantasy;
+    font-family: 'Comic Sans MS' 'Comic Sans' fantasy;
     line-height: 16px;
 }
 
