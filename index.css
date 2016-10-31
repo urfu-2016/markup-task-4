@@ -24,7 +24,7 @@ h3
     font-weight: 400;
 }
 
-figcaption,
+.entry-img figcaption,
 footer p,
 h4
 {
@@ -168,6 +168,14 @@ p.date
 {
     overflow: hidden;
     position: relative;
+}
+
+figcaption
+{
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 8px;
+    text-transform: uppercase;
 }
 
 .entry-img
