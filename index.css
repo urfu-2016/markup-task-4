@@ -1,0 +1,160 @@
+@font-face
+{
+    font-family: 'Jellyka Delicious Cake';
+    src: url('fonts/jellyka_delicious_cake-webfont.woff2') format('woff2'),
+        url('fonts/jellyka_delicious_cake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Alabama;
+    src: url(fonts/Alabama.ttf);
+}
+
+@font-face
+{
+    font-family: Oranienbaum;
+    src: url(fonts/Oranienbaum.ttf);
+}
+
+@font-face
+{
+    font-family: Remeslo;
+    src: url(fonts/Remeslo.ttf);
+}
+
+@font-face
+{
+    font-family: 'Snowstorm Light';
+    src: url('fonts/Snowstorm Light.otf');
+}
+
+body
+{
+    background: url(images/background.jpg) #fffeb6;
+}
+
+.table-header
+{
+    width: 100%;
+}
+
+.newspaper-header,
+.date
+{
+    text-align: center;
+}
+
+.newspaper-header
+{
+    margin: 20px 0;
+    font: 100px 'Jellyka Delicious Cake', serif;
+}
+
+.edition,
+.weather
+{
+    width: 200px;
+    padding: 20px 30px;
+}
+
+.edition div,
+.weather div
+{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    font: 14px Alabama, serif;
+}
+
+.date
+{
+    border-top: 6px double #000;
+    border-bottom: 6px double #000;
+    line-height: 40px;
+    font-family: Alabama, serif;
+}
+
+.main-article,
+.secondary-articles
+{
+    font: 18px Oranienbaum, sans-serif;
+    column-count: 3;
+    column-rule: 1px solid #000;
+}
+
+.main-article
+{
+    width: 60%;
+    vertical-align: top;
+    padding-right: 15px;
+    border-right: 6px double #000;
+}
+
+.secondary-articles
+{
+    width: 40%;
+    vertical-align: top;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.image
+{
+    column-span: all;
+    display: block;
+    width: 100%;
+}
+
+.secondary-image
+{
+    margin-top: 20px;
+}
+
+.main-header,
+.secondary-header
+{
+    font: bold 16px 'Snowstorm Light', serif;
+    padding: 10px 0;
+    column-span: all;
+    font-size: 28px;
+}
+
+.main-header
+{
+    text-align: center;
+}
+
+.main-header:before
+{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    margin: 20px auto;
+    background: #000;
+}
+
+.main-article p:first-letter,
+.secondary-articles p:first-letter
+{
+    font: 1.7em Remeslo, serif;
+}
+
+.secondary-header
+{
+    font-size: 22px;
+}
+
+.content
+{
+    border-bottom: 6px double #000;
+}
+
+q
+{
+    font-style: italic;
+}
