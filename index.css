@@ -78,7 +78,7 @@ section:first-child
     font-size: 14px;
 }
 
- section:last-child
+section:last-child
 {
     font-family: myFontS, sans-serif;
 }
