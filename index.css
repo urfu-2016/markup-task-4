@@ -15,16 +15,6 @@ header
     text-shadow: 4px 4px #e0e0e0;
 }
 
-a
-{
-    text-decoration: none;
-}
-
-a:hover
-{
-    font-weight: bold;
-}
-
 .date
 {
     font-family: 'Satisfy', cursive;
