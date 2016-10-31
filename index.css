@@ -2,10 +2,23 @@
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 @import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
 
+@font-face
+{
+    font-family:'LilliputSteps-Regular';
+    src: url("font/lilliput_steps.eot?")
+    format("eot"), url("font/lilliput_steps.woff")
+    format("woff"), url("font/lilliput_steps.ttf")
+    format("truetype"), url("font/lilliput_steps.svg#LilliputSteps-Regular")
+    format("svg");
+}
+
 .headline
 {
     font-family: Coiny, serif;
     text-align: center;
+    width: 90%;
+    float: left;
+
 }
 
 main
@@ -146,4 +159,37 @@ span.sv-size-3
 .sv-font-2:checked ~ main
 {
     font-family: Monotype Corsiva, cursive;
+}
+
+.zoom-img
+{
+    width: 110px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor:pointer;
+}
+
+.zoom-img:focus
+{
+    text-align: center;
+    width: 400px;
+}
+
+.vertical
+{
+    font-family: LilliputSteps-Regular, cursive;
+    margin-left: 40%;
+    width: 1ch;
+    text-align: center;
+    word-wrap: break-word;
+    float: left;
+}
+
+.weather
+{
+    font-family: LilliputSteps-Regular, cursive;
+    margin-left: 90%;
+    text-align: center;
+    height: 140px;
 }
