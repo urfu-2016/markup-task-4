@@ -1,0 +1,127 @@
+body
+{
+    background: url(http://abali.ru/wp-content/uploads/2012/11/tekstura_staroy_korichnevoy_bumagi-1024.jpg);
+}
+
+@font-face
+{
+    font-family: Rodeo;
+    src: url('fonts/rodeo.ttf');
+}
+
+@font-face
+{
+    font-family: Goudy;
+    src: url('fonts/goudy.ttf');
+}
+
+@font-face
+{
+    font-family: Grotesk;
+    src: url('fonts/grotesk.ttf');
+}
+
+@font-face
+{
+    font-family: DS-note;
+    src: url('fonts/ds-note.ttf');
+}
+
+@font-face
+{
+    font-family: President;
+    src: url('fonts/president.ttf');
+}
+
+.title
+{
+    font: 55px Goudy;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+.date
+{
+    float: left;
+    font: normal 20px Cambria;
+    font-weight: 900;
+}
+
+blockquote
+{
+    font-family: President, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+main
+{
+    margin-top: 20px;
+    border-top: 2px solid;
+    column-count: 4;
+    -moz-column-count: 4;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+p:first-letter
+{
+    font-size: 2em;
+}
+
+main div p
+{
+    font-size: 18px;
+}
+
+main div.block1 p
+{
+    column-count: 2;
+    column-rule: 1px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 1px solid #000;
+}
+
+main div.block2 p
+{
+    font-family: Rodeo, serif;
+    font-size: 30px;
+    font-weight: 900;
+    column-count: 2;
+    column-rule: 1px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 1px solid #000;
+}
+
+main div.block3 p
+{
+    font-family: DS-note, serif;
+    font-weight: 600;
+    column-count: 2;
+    column-rule: 1px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 1px solid #000;
+}
+
+main div h1
+{
+    text-align: center;
+    font-family: Grotesk, serif;
+    font-style: oblique;
+    font-size: 2em;
+    margin: 10px;
+}
+
+main div h6
+{
+    margin-top: 3px;
+    text-align: center;
+}
+
+main div img
+{
+    margin-top: 3px;
+    column-span: all;
+    width: 310px;
+}
