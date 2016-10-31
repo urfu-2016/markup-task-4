@@ -9,8 +9,8 @@ body
 header
 {
     color: red;
-    font-size: 78px;
     font: Times Arial;
+    font-size: 78px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ aside
 
 div 
 {
-    border-top: 4px double black; 
+    border-top: 4px double black;
     margin: 0;
     padding: 0;
 
@@ -65,8 +65,8 @@ p:first-of-type::first-letter
 {
     color: #f00;
     font-size: 150%;
-    font-style: italic;\
-    font: Times New Roman;
+    font-style: italic;
+    font: times new roman;
     text-shadow: 2px 2px #808080;
     margin: 2px; 
 
@@ -97,7 +97,9 @@ h3
 
 }
 
-h1, h2, h3
+h1,
+h2,
+h3
 {
     text-align: center;
     -webkit-column-span: all;
