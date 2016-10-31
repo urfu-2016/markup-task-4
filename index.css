@@ -65,6 +65,7 @@ h3,
 .article-content
 {
     font-family: 'Philosopher', sans-serif;
+    hyphens: auto;
 }
 
 .article-content:first-letter
