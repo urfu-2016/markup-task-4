@@ -1,0 +1,104 @@
+html
+{
+    width: 100%;
+    height: auto;
+}
+body
+{
+    width: 100%;
+    height: auto;
+    background-color: #dec4a6;
+    margin: 0 auto;
+}
+header
+{
+    width: 100%;
+    height: auto;
+}
+@font-face {
+    font-family: myFontH1;
+    src: url('Karmen.ttf');
+}
+@font-face {
+    font-family: myFontH2;
+    src: url('PG_IsadoraCyrPro-Regular.ttf');
+}
+@font-face {
+    font-family: myFontS;
+    src: url('a_Empirial.ttf');
+}
+h1
+{
+    font-family: myFontH1, sans-serif;
+    font-size: 50px;
+    padding-left: 100px;
+}
+.weather
+{
+    padding: 4px;
+    border: 2px solid #000;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+}
+.date
+{
+    width: 100%;
+    height: auto;
+    border-top: 4px double #000;
+    border-bottom: 4px double #000;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-left: 20px;
+}
+main
+{
+    width: 100%;
+    column-count: 4;
+    column-rule: 2px solid #000000;
+    padding-top: 30px;
+}
+section:first-child
+ {
+     font-family: Lucida Console, Monaco5, monospace;
+     letter-spacing: 2px;
+     font-size: 14px;
+ }
+section:last-child
+{
+    font-family: myFontS, sans-serif;
+}
+h2
+{
+    font-family: myFontH2, sans-serif;
+    column-span: all;
+}
+p
+{
+    hyphens: manual;
+}
+
+p:first-child:first-letter
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+.gl_img
+{
+    column-span: all;
+}
+img {
+    width: 98%;
+}
+.img1{
+    width: 500px;
+    height: auto;
+}
+figure
+{
+    font-family: Arial;
+    font-size: 10px;
+    display: block;
+}
