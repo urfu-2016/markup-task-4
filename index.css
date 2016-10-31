@@ -1,0 +1,145 @@
+@font-face
+{
+    font-family: Itim-Regular;
+    src: url(fonts/Itim-Regular.TTF);
+}
+@font-face
+{
+    font-family: Butcherman-Regular;
+    src: url(fonts/Butcherman-Regular.TTF);
+}
+
+body
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff9;
+    padding: 15px 10px 10px;
+}
+
+header
+{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+p
+{
+    hyphens: manual;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.smallbox
+{
+    display: inline-block;
+    width: 16%;
+    height: 1.5em;
+    text-align: center;
+}
+
+.middlebox
+{
+    display: inline-block;
+    width: 60%;
+    height: 1.5em;
+    text-align: center;
+}
+
+.headFont
+{
+    font: 25px Butcherman-Regular, Arial;
+    letter-spacing: 10px;
+    word-spacing: 1px;
+}
+
+.itim-font
+{
+    font: 15px Itim-Regular;
+}
+
+.firstArticle
+{
+    white-space: normal;
+    border: 4px double black;
+    width: 48%;
+    height: 960px;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+    float: left;
+
+}
+
+.secondArticle
+{
+    white-space: normal;
+    border: 4px double black;
+    width: 48%;
+    height: auto;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+    float: left;
+}
+
+.thirdArticle
+{
+    white-space: normal;
+    border: 4px double black;
+    width: 48%;
+    height: auto;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+    float: bottom;
+}
+
+p::first-letter
+{
+    font: italic 50px Times New Roman;
+    padding: 10px;
+    color: black;
+}
+
+.podpis
+{
+    column-span: all;
+    height: 20px;
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.pos
+{
+    column-span: all;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.postext
+{
+    column-span: all;
+    text-align: center;
+    font: 40px bold Arial;
+    text-transform: uppercase;
+}
+
+hr
+{
+    color: black;
+    background-color: black;
+    height: 1px;
+}
