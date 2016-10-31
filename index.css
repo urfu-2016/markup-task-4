@@ -17,8 +17,8 @@ td
     font-style: italic;
     font-size: 500%;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dat
@@ -89,5 +89,5 @@ main
 .gametime table td
 {
     text-align: left;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
