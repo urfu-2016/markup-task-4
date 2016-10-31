@@ -1,0 +1,164 @@
+@font-face
+{
+    font-family: 'cormorant_italic';
+    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2') format('woff2')
+        , url('fonts/cormorantinfant-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'cormorant_bold_italic';
+    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2') format('woff2')
+        , url('fonts/cormorantinfant-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'russo_oneregular';
+    src: url('fonts/russoone-regular-webfont.woff2') format('woff2')
+        , url('fonts/russoone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'anonymous_proregular';
+    src: url('fonts/anonymouspro-regular-webfont.woff2') format('woff2')
+        , url('fonts/anonymouspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'rubik_mono_oneregular';
+    src: url('fonts/rubikmonoone-regular-webfont.woff2') format('woff2')
+        , url('fonts/rubikmonoone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.changeColorsW2B:focus ~ main
+{
+    background-color: black;
+    color: white;
+}
+
+.changeColorsB2W:focus ~ main
+{
+    background-color: white;
+    color: black;
+}
+
+.bigHeader
+{
+    font-family: rubik_mono_oneregular, sans-serif;
+    font-size: 40px;
+}
+
+body
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+}
+
+.firstParagraph:first-letter
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph
+{
+    margin: 0;
+    padding: 0;
+    font-family: anonymous_proregular, monospace;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+.header
+{
+    font-family: russo_oneregular, sans-serif;
+    font-size: 20px;
+    column-span: all;
+    margin: 0 auto;
+}
+
+.article
+{
+    column-width: 150px;
+    column-rule: 1px solid black;
+}
+
+.firstParagraph :first-letter
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quote
+{
+    font-family: cormorant_italic, monospace;
+    font-style: italic;
+}
+
+.quoteHeader
+{
+    font-family: cormorant_bold_italic, monospace;
+    font-style: italic;
+}
+
+.headerPart
+{
+    font-family: russo_oneregular, sans-serif;
+    font-size: 18px;
+}
+
+.headerExample
+{
+    font-family: russo_oneregular, sans-serif;
+    font-size: 16px;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.vertical
+{
+    width: 18px;
+    height: 100px;
+    float: left;
+    line-height: 18px;
+}
+
+.image
+{
+    column-span: all;
+    width: 655px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.imagePart
+{
+    height: 470px;
+    width: 655px;
+    display: block;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Rick_Astley_impersonator_rickrolling_a_basketball_game.png');
+
+}
