@@ -1,0 +1,169 @@
+.date
+{
+    margin: 0;
+    text-align: center;
+    font-size: .7em;
+}
+
+.leftSelect
+{
+    float: left;
+    margin-right: 3px;
+}
+
+.rightSelect
+{
+    float: right;
+    margin-left: 3px;
+}
+
+main
+{
+    text-align: justify;
+}
+
+.mainHeader
+{
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 4px;
+    font-family: Lobster_Two;
+    font-size: 3em;
+}
+
+.column3
+{
+    column-rule: 2px solid black;
+    column-count: 3;
+    max-width: 43%;
+    float: left;
+}
+
+.column4
+{
+    column-rule: 2px solid black;
+    column-count: 4;
+    max-width: 56%;
+    float: right;
+    margin-left: 1px;
+}
+
+h3
+{
+    font-family: Orbitron;
+    text-align: left;
+    letter-spacing: .4em;
+    margin-bottom: .4em;
+    margin-top: .4em;
+}
+
+header
+{
+    font-family: Fjalla_One;
+    text-align: center;
+    margin-bottom: .4em;
+    margin-top: .4em;
+}
+
+footer
+{
+    text-align: right;
+    font-size: .8em;
+}
+
+p
+{
+    margin: 2%;
+    font-size: .9em;
+    text-indent: 5%;
+}
+
+.multiColumnPicture
+{
+    column-span: all;
+    margin-left: 0;
+}
+
+figure img
+{
+    max-width: 100%;
+}
+
+figure
+{
+    margin: 0;
+}
+
+figcaption
+{
+    font-size: .6em;
+}
+
+.multiColumnHead
+{
+    column-span: all;
+}
+
+.breakingWord
+{
+    word-wrap: break-word;
+    width: .7em;
+    float: left;
+    margin-right: .7em;
+    margin-left: .7em;
+}
+
+blockquote
+{
+    font-family: Architects_Daughter;
+    font-size: .9em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.firstParagraph::first-letter
+{
+    font-style: italic;
+    font-size: 40px;
+}
+
+li > div
+{
+    font-family: Libre_Baskerville;
+    font-size: .7em;
+}
+
+ul
+{
+    padding-left: 15px;
+}
+
+@font-face
+{
+    font-family: 'Lobster_Two';
+    src: url('fonts/Lobster_Two/LobsterTwo-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: 'Architects_Daughter';
+    src: url('fonts/Architects_Daughter/ArchitectsDaughter.ttf');
+}
+
+@font-face
+{
+    font-family: 'Fjalla_One';
+    src: url('fonts/Fjalla_One/FjallaOne-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron/Orbitron-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Libre_Baskerville';
+    src: url('fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf');
+}

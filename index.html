@@ -2,7 +2,241 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Newspaper</title>
 </head>
-<body>
+<body id="body">
+<header class="mainHeader">The New York Times</header>
+<hr size="5px" color="black">
+<div>
+    <select class="leftSelect" onchange="document.getElementById('body').style.fontFamily = value">
+        <option value="" selected="selected">Default font</option>
+        <option value="Arial">Arial</option>
+        <option value="Orbitron">Orbitron</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+    <select class="leftSelect" onchange="document.getElementById('body').style.fontSize = value">
+        <option value="" selected="selected">Default font-size</option>
+        <option value="0.7em">Smaller</option>
+        <option value="1.2em">Larger</option>
+    </select>
+    <select class="rightSelect" onchange="document.getElementById('body').style.color = value">
+        <option value="" selected="selected">Default color</option>
+        <option value='brown'>Brown</option>
+        <option value='white'>White</option>
+        <option value='grey'>Grey</option>
+    </select>
+    <select class="rightSelect" onchange="document.getElementById('body').style.backgroundColor =  value">
+
+        <option value="" selected="selected">Default background</option>
+
+        <option value='beige'>Beige</option>
+
+        <option value='lightGrey'>Light grey</option>
+
+    </select>
+    <div class="date">Monday, October, 31, 2016</div>
+</div>
+<hr size="5px" color="black">
+<main>
+    <section class="column3">
+        <h3 class="multiColumnHead">Science</h3>
+        <article>
+            <header class="multiColumnHead">A Scaredy-Cat’s Investigation Into Why People Enjoy Fear</header>
+            <figure class="multiColumnPicture">
+                <img src="pictures/1.jpg">
+                <figcaption>Why people enjoy fear</figcaption>
+            </figure>
+            <p class="firstParagraph">Halloween is here again. That means your co-workers have planted
+                surprise spiders around the office. You’ve been invited to a haunted hayride. Your
+                neighbor’s yard has a full cemetery, rigged with motion detectors and pop-up zombies.
+                Chicken-livered from the start, I have always dreaded this time of year. Haunted houses,
+                ghost tours and horror film fests are not my thing, and why people love having the
+                daylights scared out of them completely escapes me.</p>
+            <p>I decided to try to understand my friends who are on the lookout for thrills this time of
+                year. As it turns out, there are many possible reasons some people like to be scared stiff.
+                Each person’s threshold for experiences that provoke fear is made up of a unique recipe
+                that blends nature and nurture. <q>The ingredients vary from person to person,</q> said Frank
+                Farley, a psychologist at Temple University and a former president of the American
+                Psychological Association.</p>
+            <p>Dr. Farley is interested in what draws certain people to extreme behaviors, like driving
+                racecars, climbing Mount Everest and flying hot air balloons across oceans. In the 1980s,
+                he coined the term <q>Type T</q> personality to refer to the behavioral profile of
+                thrill-seekers. What makes someone thrill-seeking, he said, comes down to a mix of genes,
+                environment and early development.</p>
+            <p>David Zald, a neuropsychologist at Vanderbilt University, studies one piece of the equation.
+                His research partly focuses on dopamine, a chemical involved in our brain’s response to
+                reward. In the past, he has found that people who lack what he calls “brakes” on dopamine
+                release tend to pursue thrilling activities.</p>
+            <p>When you go to a haunted house, you’re grappling with a conflict, Dr. Zald said:<q>The
+                experience could either be fun or terrifying, and how you weigh that balance could depend
+                in part on dopamine levels.</q> <q>Having a greater amount of dopamine pushes someone to
+                pursue the goal of excitement,</q> he said, <q>whereas someone who basically has less
+                dopamine is more likely to hold back and say, ‘No, this isn’t worth it to me.’</q></p>
+            <p>
+                Socially, we get cues about how to respond to fear from those around us, said Margee Kerr,
+                a sociologist and author of the book “Scream: Chilling Adventures in the Science of Fear.”
+                Early on, that’s taking notes from our parents about how to deal with distress. Later,
+                experiencing stressful situations with others can cultivate social bonds.
+            </p>
+            <p>Part of that has to do with emotional contagion, or a communal response to shared
+                experiences, Dr. Kerr said. If your friend is captivated by the horror movie you are
+                watching together, you process that by recreating the same feeling in your own mind, and
+                that can bring you closer together. People also tend to hold onto memories of fear more
+                intensely, she said, so if you have positive associations with a scary situation, like
+                going to a haunted house, you’ll likely want to do it again.</p>
+            <p>Fear-seeking can also be a way of testing oneself. Josh Randall and Kristjan Thor, creators
+                of Blackout, a haunted house experience that consistently tops rankings of “Most Extreme
+                Haunted Houses,” said they see many people coming to their events with a goal of
+                self-fortification. “It’s almost like a dare to themselves,” Mr. Thor said. “People want to
+                be able to conquer something.”</p>
+            <p>For many, being scared is a jolting escape from daily life. When immersed in a scary
+                situation, you can suspend your disbelief and live in the moment — and that loss of control
+                can feel really good. This is key for Blackout, Mr. Randall said: <blockquote>For a finite
+            period of time, that audience member can turn off the real world, and live in a fantasy world
+            .</blockquote>
+            <p>After talking with the experts, I was starting to see why some friends love getting spooked.
+                But why do I hate being scared so much?</p>
+            <p>It could be because I was never exposed to horror movies or haunted houses growing up, so by
+                the time I did experience these things, I was ill-prepared. It could be that the regions in
+                my  brain involved in coding fear and anxiety are more sensitive. Most likely, it is a mix
+                of many different factors. Regardless of the reason though, <q>it’s perfectly O.K. not to
+                    like scary things,</q> Dr. Kerr said.</p>
+            <p>For people who cannot fathom sitting out a haunted house, it’s important not to coerce your
+                more cautious friends into doing something they do not want to, Dr. Kerr said. “That can
+                compound the fear, and make it even worse.” So, for any friends who were thinking of
+                inviting me to the haunted house this weekend, save your breath — I have a doctor’s note.</p>
+            <hr width=50px align="right">
+            <footer>STEPH YIN</footer>
+        </article>
+        <hr width=100px align="center" color="black">
+    </section>
+    <div class="column4">
+        <section>
+            <h3 class="breakingWord">Technology</h3>
+            <article>
+                <header>Facebook Can Tell You What to Expect in the Voting Booth</header>
+                <p class="firstParagraph">Facebook is using its enormous reach to get out the informed vote
+                    on Election Day.</p>
+                <p>The social media giant has created a vote planner tool that shows users what candidates and
+                    issues will be on their ballots on Nov. 8, including local, state and national choices
+                    .</p>
+                <p>The tool was created with data collected from election officials by the nonpartisan
+                    research group Center for Technology and Civic Life. It also shows where each candidate
+                    stands on major issues.</p>
+                <p>“We wanted to help people prepare for the election and make it as easy as possible to
+                    prepare,” said Jeremy Galen, a product marketing manager at Facebook.</p>
+                <p>According to Facebook, only about 20 states mail out samples before an election, making it
+                    hard for voters to be truly informed before they make their choices.</p>
+                <p>The company has also made it possible for users to share their choices with friends because
+                    <q>many people look to friends and family for information and guidance about how to
+                        vote,</q>Mr. Galen said.</p>
+                <p>But Facebook also realized that voting is a private matter for most people. While the
+                    company generally encourages people to make public the information they post to the
+                    platform, people must opt in to make their vote planner information visible to friends who
+                    have also used the tool.</p>
+                <p>Facebook began working on the tool six months ago as part of its work to promote civic
+                    engagement.</p>
+                <p>The company has sent out Election Day reminders since 2008, and it sends such notifications
+                    in 47 countries. In January, it introduced a voter registration reminder to coincide with
+                    the United States presidential primaries and it ran live broadcasts of this year’s
+                    presidential debates.</p>
+                <p>Users can also save and print out their choices and bring them to the ballot box, where
+                    phones are generally prohibited.</p>
+                <hr width=50px align="right">
+                <footer>KATIE BENNEROCT</footer>
+            </article>
+            <hr width=100px align="center" color="black">
+            <article>
+                <header>After You Strengthen Your Passwords, Here’s How to Store Them</header>
+                <p class="firstParagraph">THE recent revelation that the account information of at least 500
+                    million Yahoo users
+                    was stolen in 2014 was a big reminder that we all need to be smarter about our digital
+                    security. That includes our smartphones, which are increasingly the repositories for
+                    all sorts of information about our digital lives.</p>
+                <p>Turning our smartphones into personal data fortresses requires the use of strong
+                    passwords — and never using the same password for different services. Fortunately,
+                    there are plenty of apps that can help you remember all those passwords.</p>
+                <p>Dashlane, which is free to download for iOS and Android devices, is an excellent secure
+                    password system. The app, which is essentially a digital strongbox for all your online
+                    keys, has just one master password to remember. After you enter that password (which
+                    should be very strong), you have access to all your other passwords inside the app.</p>
+                <p>This means people can move beyond using easy-to-remember passwords like “123456” and use
+                    longer, more complex passwords that are more difficult for hackers to crack. To help,
+                    Dashlane has a password generator that users can customize, for instance by varying the
+                    length of passwords or specifying whether they should include nonletter symbols.</p>
+                <p>Dashlane can automatically update passwords, a feature that is compatible with many
+                    websites including IFTTT and Kickstarter. You can also create your own passwords, and
+                    Dashlane will analyze how hacker-resistant they are and flag any passwords that have
+                    already been used elsewhere.</p>
+                <p>Dashlane has a built-in browser that is designed to be secure, so people can shop or
+                    bank online with fewer worries about having their information compromised. It also
+                    allows users to securely share passwords with others — a useful feature for anyone with
+                    shared accounts.</p>
+                <p>An upgraded version, which costs $40 a year, provides extras like cloud-based backup of
+                    your password information and secure sharing of passwords between different devices.</p>
+                <hr width=50px align="right">
+                <footer>KIT EATON</footer>
+            </article>
+        </section>
+        <section>
+            <h3>Travel</h3>
+            <article>
+                <header>How to Pick a Group Trip</header>
+                <figure>
+                    <img src="pictures/2.jpg">
+                    <figcaption>Strange picture from TheNYTimes</figcaption>
+                </figure>
+                <p class="firstParagraph">Going on a group trip for your next vacation is a way to meet
+                    like-minded travelers and
+                    get
+                    more from your money, according to Heidi Podjavorsek, the vice president for sales and
+                    marketing at the Signature Travel Network and a specialist in group vacations.
+                <blockquote>"Since the others on your trip are interested in the itinerary, you’re with
+                    people who share a common interest,” she said, “and the cost of the trip usually covers
+                    some meals, tours of popular attractions and other inclusions, which add up to a big money
+                    savings.”</blockquote>
+                <p>There are hundreds of options when it comes to picking a group trip. Here, Ms. Podjavorsek
+                    shares her advice on finding the best one for you.</p>
+                <ul>
+                    <li><div>MATCH A TRIP TO YOUR STYLE All</div> group trips to the same destination aren’t
+                        created equal, and it’s important to book one based on your priorities — some are
+                        activity-based, while others focus on culture, gastronomy or luxury accommodations.
+                        If you’re interested in Tuscan wine, for example, Butterfield &amp; Robinson and
+                        Backroads offer bike tours of Tuscany, while the itineraries for the region from
+                        Abercrombie &amp; Kent include access to some prestigious wineries and high-end
+                        meals.Trips from Globus and Trafalgar visit more wineries that are less exclusive;
+                        these trips also cost less.</li>
+                    <li><div>
+                        IS FLEXIBILITY IMPORTANT?</div> Some group trips, according to Ms. Podjavorsek, have
+                        itineraries with activities from morning through dinner and are ideal for travelers
+                        who want little free time. Others, such as those from G Adventures and Insight
+                        Vacations, allow for more flexibility — they may include only a half-day of
+                        activity while the rest of the day is left open for exploring on your own. Decide
+                        which appeals to you more.</li>
+                    <li><div>THE CASE FOR A SMALLER GROUP </div>Generally, a group trip shouldn’t have more
+                        than 16 people, Ms. Podjavorsek said. <q>Everything takes longer when you have more
+                            people, including hotel check-in and meals,</q> she said. Also, larger groups
+                        rely on buses for transportation, which are too big to get into the city centers of
+                        many small towns, especially in Europe. But a benefit of traveling with a larger group
+                        is the price — these trips are usually less expensive than their smaller
+                        counterparts.</li>
+                    <li><div>AGE AND DIVERSITY</div> If you want to travel with people in your age range,
+                        pick a trip accordingly. Companies that tend to attract travelers older than 50
+                        include Insight Vacations, Globus and Natural Habitat Adventures. Younger travelers
+                        are drawn to G Adventures, Contiki Tours and Cosmos. If you want to travel with
+                        people from countries besides the United States, trips from Trafalgar, Insight
+                        Vacations and Abercrombie &amp; Kent attract travelers from around the world.</li>
+                    <li><div>IS IT FAMILY-FRIENDLY?</div> Many group trips aren’t ideal if you’re traveling
+                        with young children or teenagers, while some are meant specifically for families.
+                        Adventures by Disney, Backroads, Butterfield &amp; Robinson, Tauck Bridges,
+                        Trafalgar and Cox &amp; Kings offer high-quality family-friendly group trips.</li>
+                </ul>
+                <hr width=50px align="right">
+                <footer>SHIVANI VORAOCT</footer>
+            </article>
+        </section>
+    </div>
+</main>
 </body>
 </html>
