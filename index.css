@@ -1,22 +1,24 @@
 @font-face {
     font-family: Cloister Black;
-    src: url(cloisterblack-webfont.woff2) format("woff2"),
-    url(cloisterblack-webfont.woff) format("woff"),
-    url(cloisterblack-webfont.ttf) format("truetype");
+    src: url(cloisterblack-webfont.woff2) format('woff2'),
+        url(cloisterblack-webfont.woff) format('woff'),
+        url(cloisterblack-webfont.ttf) format('truetype');
 }
 
-@font-face {
+@font-face
+{
     font-family: Roland;
-    src: url(roland-webfont.woff2) format("woff2"),
-    url(roland-webfont.woff) format("woff"),
-    url(roland-webfont.ttf) format("truetype");
+    src: url(roland-webfont.woff2) format('woff2'),
+        url(roland-webfont.woff) format('woff'),
+        url(roland-webfont.ttf) format('truetype');
 }
 
-@font-face {
+@font-face
+{
     font-family: Black Label;
-    src: url(vtks_black_label_normal-webfont.woff2) format("woff2"),
-    url(vtks_black_label_normal-webfont.woff) format("woff"),
-    url(vtks_black_label_normal-webfont.ttf) format("truetype");
+    src: url(vtks_black_label_normal-webfont.woff2) format('woff2'),
+        url(vtks_black_label_normal-webfont.woff) format('woff'),
+        url(vtks_black_label_normal-webfont.ttf) format('truetype');
 }
 
 body,
@@ -24,79 +26,93 @@ h1,
 h3,
 header,
 div,
-p {
+p
+{
     padding: 0;
     margin: 0;
 }
 
 html {
     font-size: 16px;
-    margin: 0 1% 0 1%;
+    margin: 0 1%;
 }
 
-header {
+header
+{
     width: 100%;
 }
 
-header div {
+header div
+{
     width: 100%;
 }
 
 header div,
-header h1 {
+header h1
+{
     float: left;
     margin-bottom: 1%;
 }
 
-header div:last-child {
+header div:last-child
+{
     margin-bottom: 3px;
 }
 
-.weather {
+.weather
+{
     width: 20%;
 }
 
-.weather h4 {
-    font: italic 0.8rem Arial, sans-serif;
+.weather h4
+{
+    font: italic .8rem Arial, sans-serif;
 }
 
-.weather p {
-    font: 0.5rem Arial, sans-serif;
+.weather p
+{
+    font: .5rem Arial, sans-serif;
 }
 
-h1 {
+h1
+{
     width: 60%;
     font: 5rem Cloister Black, sans-serif;
     text-align: center;
 }
 
-.rate {
+.rate
+{
     margin-top: 1%;
     width: 20%;
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 
-.rate table {
+.rate table
+{
     width: 100%;
-    border: 0.2rem solid black;
+    border: .2rem solid black;
     padding: 0;
     border-spacing: 0;
 }
 
 .rate th,
-.rate td {
+.rate td
+{
     margin: 0;
     border-right: 1px solid black;
 }
 
-.date {
+.date
+{
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     padding: 2px;
 }
 
-.date p {
+.date p
+{
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -104,7 +120,8 @@ h1 {
     font-size: 1.3rem;
 }
 
-.main {
+.main
+{
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -113,7 +130,8 @@ h1 {
     column-rule: 2px solid black;
 }
 
-.article {
+.article
+{
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -121,72 +139,88 @@ h1 {
     break-after: column;
 }
 
-.nobreak {
+.nobreak
+{
     break-inside: avoid;
 }
 
-.col3 {
+.col3
+{
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
 }
 
-.article h3 {
+.article h3
+{
     text-align: center;
     font-size: 1.1rem;
 }
 
-.article p {
-    font-size: 0.8rem;
+.article p
+{
+    font-size: .8rem;
 }
 
-.imgblock {
+.imgblock
+{
     padding: 4px;
     border-top: 2px solid black;
     break-inside: avoid-column;
     border-bottom: 2px solid black;
-    margin: 2px 0 2px 0;
+    margin: 2px 0;
     font-family: Black Label, sans-serif;
     text-align: center;
 }
 
-.imgblock img {
+.imgblock img
+{
     width: 100%;
 }
 
-.imgblock p {
+.imgblock p
+{
     font-size: 1rem;
 }
 
-.allcols {
+.allcols
+{
     -webkit-column-span: all;
     column-span: all;
 }
 
-.article p:first-of-type:first-letter {
+.article p:first-of-type:first-letter
+{
     font-family: Roland, serif;
     font-size: 1.5rem;
 }
 
-.l {
+.l
+{
     font-size: 1.5rem;
     font-family: Cloister Black, serif;
 }
-@media screen and (min-width: 2000px) {
-    html {
+
+@media screen and (min-width: 2000px)
+{
+    html
+    {
         width: 1400px;
         margin: auto;
     }
 
-    .weather {
+    .weather
+    {
         width: 25%;
     }
 
-    h1 {
+    h1
+    {
         width: 50%;
     }
 
-    .rate {
-        width: 25%
+    .rate
+    {
+        width: 25%;
     }
 }
