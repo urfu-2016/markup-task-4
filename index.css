@@ -66,9 +66,8 @@ p:first-of-type::first-letter
     color: #f00;
     font-size: 150%;
     font-style: italic;
-    font: times new roman;
     text-shadow: 2px 2px #808080;
-    margin: 2px; 
+    margin: 2px;
 
 }
 
@@ -116,7 +115,7 @@ img
 
 }
 
-#imgDifferent 
+.imgDifferent 
 {
     width: 50%;
     float: left;
@@ -132,7 +131,7 @@ section
 
 }
 
-#card
+.card
 {
     text-align: center;
     -webkit-column-span: all;
