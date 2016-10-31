@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Marck+Script:&subset=latin,cyrillic');
+
+.title
+{
+    font-family: 'Marck Script', cursive;
+    font-size: 75px;
+    margin: 5px;
+}
+
+h2
+{
+    font-size: 10px;
+    margin: 5px;
+    font-family: 'STIXGeneral';
+}
+
+table
+{
+    text-align: center;
+    border-spacing: 20px;
+    font-family: 'Noteworthy'; /* откуда этот шрифт*/
+    vertical-align: top;
+    table-layout: fixed; /* Фиксированная ширина ячеек */
+    width: 100%;
+}
+
+td
+{
+    text-align: justify;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+tr
+{
+    text-align: start;
+}
+
+th
+{
+    text-align: center;
+}
+
+thead
+{
+    margin: 5px;
+}
+
+.quest
+{
+    font-weight: bold;
+}
+
+p:first-letter
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.date
+{
+    border: 3px;
+    border-color: black;
+    border-style: double none;
+    padding: 5px;
+}
+
+.head
+{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.picture
+{
+    width: 100%;
+
+}
