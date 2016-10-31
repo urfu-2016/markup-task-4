@@ -47,6 +47,11 @@ header
     text-align: center;
 }
 
+.right-side
+{
+    float: right;
+}
+
 p.signature-header
 {
     width: 20%;
