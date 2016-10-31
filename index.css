@@ -1,4 +1,3 @@
-@import url('http://allfont.ru/allfont.css?fonts=cyrillicgoth-medium');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
@@ -6,7 +5,18 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 @import url('https://fonts.googleapis.com/css?family=Play');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-@import url('http://allfont.ru/allfont.css?fonts=Rurintania');
+
+@font-face
+{
+    font-family: 'Zanerian';
+    src: url(zanerian_two.ttf);
+}
+
+@font-face
+{
+    font-family: 'Keetanokatakana';
+    src: url(keetanokatakana.ttf);
+}
 
 body
 {
@@ -26,7 +36,7 @@ img
 
 h1
 {
-    font-family: 'Rurintania', arial;
+    font-family: 'Zanerian', arial;
     font-size: 35px;
     letter-spacing: 50px;
     text-align: center;
@@ -37,7 +47,7 @@ h1
 
 h4
 {
-    font-family: 'CyrillicGoth Medium', arial;
+    font-family: 'Keetanokatakana', arial;
     font-size: 20px;
     letter-spacing: 20px;
     text-align: center;
@@ -83,13 +93,13 @@ h4
 .titles::first-letter
 {
     font-size: 30px;
-    font-family: 'Rurintania', arial;
+    font-family: 'Zanerian', arial;
 }
 
 .texts::first-letter
 {
     font-size: 25px;
-    font-family: 'CyrillicGoth Medium', arial;
+    font-family: 'Keetanokatakana', arial;
 }
 
 .texts
