@@ -1,22 +1,19 @@
 @font-face
 {
     font-family: 'Lobster';
-    src: local('Lobster'), local('Lobster-Regular'), 
-        url(https://fonts.gstatic.com/s/lobster/v18/c28rH3kclCLEuIsGhOg7evY6323mHUZFJMgTvxaG2iE.woff2);
+    src: url(https://fonts.gstatic.com/s/lobster/v18/c28rH3kclCLEuIsGhOg7evY6323mHUZFJMgTvxaG2iE.woff2);
 }
 
 @font-face
 {
     font-family: 'Bad Script';
-    src: local('Bad Script Regular'), local('BadScript-Regular'), 
-        url(https://fonts.gstatic.com/s/badscript/v5/xvnrV3H3fZsc-fSw6fOJeCEAvth_LlrfE80CYdSH47w.woff2);
+    src: url(https://fonts.gstatic.com/s/badscript/v5/xvnrV3H3fZsc-fSw6fOJeCEAvth_LlrfE80CYdSH47w.woff2);
 }
 
 @font-face
 {
     font-family: 'Ruslan Display';
-    src: local('Ruslan Display'), local('RuslanDisplay'), 
-        url(https://fonts.gstatic.com/s/ruslandisplay/v7/SREdhlyLNUfU1VssRBfs3vU6mWWEjxQfxRM03tsnJcQ.woff2);
+    src: url(https://fonts.gstatic.com/s/ruslandisplay/v7/SREdhlyLNUfU1VssRBfs3vU6mWWEjxQfxRM03tsnJcQ.woff2);
 }
 
 body
