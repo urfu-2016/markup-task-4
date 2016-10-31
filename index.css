@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: Cloister Black;
-    src: url(cloisterblack-webfont.woff2) format('woff2'),
+    src: url(cloisterblack-webfont.woff2) format('woff2'), 
         url(cloisterblack-webfont.woff) format('woff'),
         url(cloisterblack-webfont.ttf) format('truetype');
 }
