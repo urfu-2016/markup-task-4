@@ -1,0 +1,135 @@
+@font-face
+{
+    font-family: 'Lobster';
+    src: local('Lobster'), local('Lobster-Regular'),
+    url(https://fonts.gstatic.com/s/lobster/v18/c28rH3kclCLEuIsGhOg7evY6323mHUZFJMgTvxaG2iE.woff2);
+}
+@font-face
+{
+    font-family: 'Bad Script';
+    src: local('Bad Script Regular'), local('BadScript-Regular'),
+    url(https://fonts.gstatic.com/s/badscript/v5/xvnrV3H3fZsc-fSw6fOJeCEAvth_LlrfE80CYdSH47w.woff2);
+}
+@font-face
+{
+    font-family: 'Ruslan Display';
+    src: local('Ruslan Display'), local('RuslanDisplay'),
+    url(https://fonts.gstatic.com/s/ruslandisplay/v7/SREdhlyLNUfU1VssRBfs3vU6mWWEjxQfxRM03tsnJcQ.woff2);
+}
+body
+{
+    background: lightgoldenrodyellow;
+}
+header
+{
+    border-top: dotted 2px red;
+    border-bottom: dotted 2px red;
+}
+.logo
+{
+    width: 75%;
+}
+.logo > h1
+{
+    font: 40px 'Lobster';
+    text-align: center;
+}
+.weather
+{
+    margin: 10px 0;
+    padding: 5px;
+    float: right;
+    border-left: dotted 2px red;
+    width: 20%;
+}
+.weather > div
+{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+.info
+{
+    text-align: center;
+    border-top: dotted 2px red;
+}
+.main_news,
+.other_news
+{
+    column-count: 3;
+    column-rule: solid 1px lightgrey;
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+}
+.main_news
+{
+    border: dotted 2px blue;
+}
+h2
+{
+    color: dodgerblue;
+    margin-top: 0;
+    column-span: all;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+h3
+{
+    text-shadow: 1px 1px 5px grey;
+}
+.pic
+{
+    display: inline-block;
+    text-align: center;
+    color: gray;
+}
+.pic > img
+{
+    border: solid 1px gray;
+    border-radius: 5px;
+    max-width: 100%;
+}
+p
+{
+    word-wrap: break-word;
+}
+p:first-letter
+{
+    color: red;
+    font-size: 24px;
+}
+footer
+{
+    border-top: dotted 2px red;
+    padding: 10px;
+}
+blockquote
+{
+    font-style: italic;
+}
+blockquote:after
+{
+    content: '"';
+}
+blockquote:before
+{
+    content: '"';
+}
+.quotes
+{
+    float: right;
+    width: 20%;
+}
+.quotes > q
+{
+    font-family: 'Bad Script', cursive;
+}
+.quotes > div
+{
+    color: gray;
+    text-align: right;
+    padding: 5px 0;
+}
