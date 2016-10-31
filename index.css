@@ -1,3 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
+@font-face
+{
+    font-family: Ubuntu Mono;
+    src: url('font/ubuntu-mono.ttf') format('ttf'), url('font/ubuntu-mono.woff') format('woff');
+}
+
+html
+{
+    font-size: 17px;
+}
+
 body
 {
     width: 90%;
@@ -20,15 +35,7 @@ header::first-letter
     color: #f00;
 }
 
-.change
-{
-    float: left;
-    border: solid 2px black;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
-label
+.info
 {
     padding-right: 5px;
 }
@@ -39,8 +46,12 @@ label
     column-count: 2;
     column-gap: 10px;
     column-rule: 1px solid #000;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -moz-column-rule: 1px solid #000;
     display: block;
     font-size: .9rem;
+    word-spacing: -.05rem;
     margin-bottom: 30px;
     text-align: justify;
     border: solid 1px black;
@@ -66,15 +77,16 @@ label
     word-wrap: break-word;
 }
 
-article::first-letter
+.section::first-letter
 {
     color: #f00;
     font-size: 1.5em;
 }
 
-img
+.innerImg
 {
     width: 95%;
+    height: 100%;
     padding-top: 30px;
     margin-left: 10px;
     background-color: white;
@@ -89,15 +101,19 @@ img
     column-count: 3;
     column-gap: 10px;
     column-rule: 1px dashed #000;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-rule: 1px dashed #000;
 }
 
-.best
+.bestReferat
 {
     padding: 10px;
     border: 1px solid #000;
     margin-top: 0;
     vertical-align: top;
     column-span: all;
+    -moz-column-span: all;
 }
 
 h3
@@ -113,6 +129,7 @@ h3
 input[name='font-size'][value='2']:checked ~ .content
 {
     font-size: 1.1rem;
+    word-spacing: .1rem;
 }
 
 input[name='font-size'][value='2']:checked ~ .content h3
@@ -128,6 +145,7 @@ input[name='font-size'][value='2']:checked ~ .content h1
 input[name='font-size'][value='3']:checked ~ .content
 {
     font-size: 1.2rem;
+    word-spacing: .15rem;
 }
 
 input[name='font-size'][value='3']:checked ~ .content h3
