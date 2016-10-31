@@ -15,7 +15,7 @@ body
 header
 {
     width: 100%;
-    height: auto;
+    height: 100px;
 }
 
 @font-face
@@ -36,21 +36,32 @@ header
     src: url('a_Empirial.ttf');
 }
 
-h1
+.header
 {
     font-family: myFontH1, sans-serif;
-    font-size: 50px;
-    padding-left: 100px;
+    font-size: 55px;
+    margin: 0 450px;
 }
 
-.weather
+.quote, .weather
 {
     padding: 4px;
     border: 2px solid #000;
     position: absolute;
-    top: 25px;
+    top: 10px;
+
+}
+
+.weather
+{
     right: 25px;
     font-size: 20px;
+}
+
+.quote
+{
+    left: 25px;
+    font-size: 15px;
 }
 
 .date
@@ -66,9 +77,17 @@ h1
 main
 {
     width: 100%;
-    column-count: 4;
-    column-rule: 2px solid #000;
     padding-top: 30px;
+}
+
+
+section
+{
+    width: 98%;
+    overflow: hidden;
+    position: relative;
+    column-count: 4;
+    column-rule: 1px solid #000;
 }
 
 section:first-child
@@ -83,10 +102,9 @@ section:last-child
     font-family: myFontS, sans-serif;
 }
 
-h2
+h1
 {
     font-family: myFontH2, sans-serif;
-    column-span: all;
 }
 
 p
@@ -100,25 +118,14 @@ p:first-child:first-letter
     font-weight: 800;
 }
 
-.gl_img
-{
-    column-span: all;
-}
-
 img
 {
     width: 98%;
-}
-
-.img1
-{
-    width: 500px;
     height: auto;
 }
 
 figure
 {
-    font-family: Arial;
+    font-family: Arial, Arial, Helvetica, sans-serif;
     font-size: 10px;
-    display: block;
 }
