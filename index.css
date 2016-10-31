@@ -141,40 +141,20 @@ section
 
 }
 
-.black-and-white:checked ~ div,
-.black-and-white:checked ~ div > div,
-.black-and-white:checked ~ header,
-.black-and-white:checked ~ h1,
-.black-and-white:checked ~ footer,
-.black-and-white:checked ~ aside,
-.black-and-white:checked ~ div > section,
-.black-and-white:checked ~ main
+.black-and-white:checked ~ *
 {
     background: black;
     color: white;
 
 }
 
-.switch-font:checked ~ div,
-.switch-font:checked ~ div > div,
-.switch-font:checked ~ header,
-.switch-font:checked ~ h1,
-.switch-font:checked ~ footer,
-.switch-font:checked ~ aside,
-.switch-font:checked ~ div > section,
-.switch-font:checked ~ main
+.switch-font:checked ~ *
 {
     font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
-.large-font:checked ~ div,
-.large-font:checked ~ div > div,
-.large-font:checked ~ h1,
-.large-font:checked ~ footer,
-.large-font:checked ~ aside,
-.large-font:checked ~ div > section,
-.large-font:checked ~ main
+.large-font:checked ~ *
 {
     font-size: 150%;
 
@@ -186,14 +166,7 @@ section
 
 }
 
-.small-font:checked ~ div,
-.small-font:checked ~ div > div,
-.small-font:checked ~ header,
-.small-font:checked ~ h1,
-.small-font:checked ~ footer,
-.small-font:checked ~ aside,
-.small-font:checked ~ div > section,
-.small-font:checked ~ main
+.small-font:checked ~ *
 {
     font-size: 90%;
 
