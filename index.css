@@ -148,13 +148,26 @@ section
 
 }
 
-.switch-font:checked ~ *
+.switch-font:checked ~ div,
+.switch-font:checked ~ div > div,
+.switch-font:checked ~ header,
+.switch-font:checked ~ h1,
+.switch-font:checked ~ footer,
+.switch-font:checked ~ aside,
+.switch-font:checked ~ div > section,
+.switch-font:checked ~ main
 {
     font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
-.large-font:checked ~ *
+.large-font:checked ~ div,
+.large-font:checked ~ div > div,
+.large-font:checked ~ h1,
+.large-font:checked ~ footer,
+.large-font:checked ~ aside,
+.large-font:checked ~ div > section,
+.large-font:checked ~ main
 {
     font-size: 150%;
 
@@ -166,7 +179,14 @@ section
 
 }
 
-.small-font:checked ~ *
+.small-font:checked ~ div,
+.small-font:checked ~ div > div,
+.small-font:checked ~ header,
+.small-font:checked ~ h1,
+.small-font:checked ~ footer,
+.small-font:checked ~ aside,
+.small-font:checked ~ div > section,
+.small-font:checked ~ main
 {
     font-size: 90%;
 
