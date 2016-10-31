@@ -10,8 +10,7 @@
  @font-face {
      font-family:Queen;
      src: url("Queen.ttf");
-
-
+}
 body {
     margin: 0 3em;
     background: url(fon.jpg) no-repeat;
