@@ -1,8 +1,7 @@
 @font-face
 {
     font-family: 'cormorant_italic';
-    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2') format('woff2')
-        , url('fonts/cormorantinfant-mediumitalic-webfont.woff') format('woff');
+    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2') format('woff2'), url('fonts/cormorantinfant-mediumitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,8 +10,7 @@
 @font-face
 {
     font-family: 'cormorant_bold_italic';
-    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2') format('woff2')
-        , url('fonts/cormorantinfant-bolditalic-webfont.woff') format('woff');
+    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2') format('woff2'), url('fonts/cormorantinfant-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -21,8 +19,7 @@
 @font-face
 {
     font-family: 'russo_oneregular';
-    src: url('fonts/russoone-regular-webfont.woff2') format('woff2')
-        , url('fonts/russoone-regular-webfont.woff') format('woff');
+    src: url('fonts/russoone-regular-webfont.woff2') format('woff2'), url('fonts/russoone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -31,8 +28,7 @@
 @font-face
 {
     font-family: 'anonymous_proregular';
-    src: url('fonts/anonymouspro-regular-webfont.woff2') format('woff2')
-        , url('fonts/anonymouspro-regular-webfont.woff') format('woff');
+    src: url('fonts/anonymouspro-regular-webfont.woff2') format('woff2'), url('fonts/anonymouspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -41,26 +37,25 @@
 @font-face
 {
     font-family: 'rubik_mono_oneregular';
-    src: url('fonts/rubikmonoone-regular-webfont.woff2') format('woff2')
-        , url('fonts/rubikmonoone-regular-webfont.woff') format('woff');
+    src: url('fonts/rubikmonoone-regular-webfont.woff2') format('woff2'), url('fonts/rubikmonoone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-.changeColorsW2B:focus ~ main
+.change-colors-W2B:focus ~ main
 {
     background-color: black;
     color: white;
 }
 
-.changeColorsB2W:focus ~ main
+.change-colors-B2W:focus ~ main
 {
     background-color: white;
     color: black;
 }
 
-.bigHeader
+.big-header
 {
     font-family: rubik_mono_oneregular, sans-serif;
     font-size: 40px;
@@ -73,7 +68,7 @@ body
     width: 800px;
 }
 
-.firstParagraph:first-letter
+.first-paragraph:first-letter
 {
     font-size: 30px;
     font-weight: bold;
@@ -102,7 +97,7 @@ body
     column-rule: 1px solid black;
 }
 
-.firstParagraph :first-letter
+.first-paragraph :first-letter
 {
     font-size: 30px;
     font-weight: bold;
@@ -114,19 +109,19 @@ body
     font-style: italic;
 }
 
-.quoteHeader
+.quote-header
 {
     font-family: cormorant_bold_italic, monospace;
     font-style: italic;
 }
 
-.headerPart
+.subtitle
 {
     font-family: russo_oneregular, sans-serif;
     font-size: 18px;
 }
 
-.headerExample
+.header-example
 {
     font-family: russo_oneregular, sans-serif;
     font-size: 16px;
@@ -138,15 +133,19 @@ body
     color: black;
 }
 
-.vertical
+.vertical-header
 {
     width: 18px;
     height: 100px;
-    float: left;
     line-height: 18px;
+    word-break: break-all;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
 }
 
-.image
+.student-block
 {
     column-span: all;
     width: 655px;
@@ -154,11 +153,19 @@ body
     margin: 0 auto;
 }
 
-.imagePart
+.part-picture
 {
     height: 470px;
     width: 655px;
     display: block;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Rick_Astley_impersonator_rickrolling_a_basketball_game.png');
 
+}
+
+.article-vertical-header
+{
+    display: inline-block;
+    width: 97%;
+    column-count: 3;
+    column-rule: 1px solid black;
 }
