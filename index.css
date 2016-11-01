@@ -89,7 +89,11 @@ p:first-child::first-letter
 .post-1
 {
     column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
     column-rule: 1px solid rgba(0,0,0, .5);
+    -moz-column-rule: 1px solid rgba(0,0,0, .5);
+    -webkit-column-rule: 1px solid rgba(0,0,0, .5);
     hyphens: auto;
     break-inside: avoid-page;
 }
@@ -97,7 +101,11 @@ p:first-child::first-letter
 .post-2
 {
     column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
     column-rule: 1px solid rgba(0,0,0, .5);
+    -moz-column-rule: 1px solid rgba(0,0,0, .5);
+    -webkit-column-rule: 1px solid rgba(0,0,0, .5);
     hyphens: auto;
 }
 
@@ -176,7 +184,7 @@ span.sv-size-3
     cursor: pointer;
 }
 
-.zoom-img:focus
+.zoom-img:hover
 {
     text-align: center;
     width: 400px;
