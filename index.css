@@ -30,14 +30,14 @@
 
 body
 {
-    font: 18pt 'Marck Script', cursive;
+    font: 18pt 'Marck Script';
     background-color: #ffffe0;
     border: 2px solid #d3d3d3;
 }
 
 .head
 {
-    font: 42pt 'Coiny', cursive;
+    font: 42pt 'Coiny';
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
@@ -60,7 +60,7 @@ body
 {
     text-overflow: ellipsis;
     padding: 5px;
-    font: 18pt 'Marck Script', cursive;
+    font: 18pt 'Marck Script';
     background-color: #ffffe0;
 }
 
@@ -113,14 +113,14 @@ body
 
 .first-paragraph::first-letter
 {
-    font: 150% 'Lobster', cursive;
+    font: 150% 'Lobster';
     color: #d3d3d3;
 }
 
 .special
 {
     margin-left: 45%;
-    word-break: break-word;
+    word-break: break-all;
     width: 1em;
     line-height: 1em;
     font-family: monospace;
