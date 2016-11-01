@@ -1,75 +1,111 @@
+@font-face {
+    font-family: 'Marck Script';
+    src: local('Marck Script'),
+        url('./fonts/Marck Script/MarckScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'),
+        url('./fonts/Lobster/Lobster-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ruslan Display';
+    src: local('Ruslan Display'),
+        url('./fonts/Ruslan Display/RuslanDisplay.ttf');
+}
+
+@font-face {
+    font-family: 'Coiny';
+    src: local('Coiny'),
+        url('./fonts/Coiny/Coiny-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Satisfy';
+    src: local('Satisfy'),
+        url('./fonts/Satisfy/Satisfy-Regular.ttf');
+}
+
 body
 {
     font-size: 18pt;
     font-family: 'Marck Script', cursive;
-    background-color: lightyellow;
-    border: 2px solid lightgray;
+    background-color: #ffffe0;
+    border: 2px solid #d3d3d3;
 }
 
-header
+.head
 {
     font-family: 'Coiny', cursive;
-    text-align: center;
     font-size: 42pt;
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
 
+.center {
+    text-align: center;
+}
+
 .date
 {
     font-family: 'Satisfy', cursive;
-    text-align: center;
 }
 
 .configurations
 {
     font-family: 'Coiny', cursive;
-    text-align: center;
 }
 
 .articles
 {
     text-overflow: ellipsis;
     padding: 5px;
-    font-size: 18pt;
-    font-family: 'Marck Script', cursive;
-    background-color: lightyellow;
+    font-size: 18pt, 'Marck Script', cursive;
+    background-color: #ffffe0;
 }
 
 .col-2
 {
     column-count: 2;
-    column-rule: 2px solid lightgray;
+    column-rule: 2px solid #d3d3d3;
+    -webkit-column-count: 2;
+    -webkit-column-rule: 2px solid #d3d3d3;
+    -moz-column-count: 2;
+    -moz-column-rule: 2px solid #d3d3d3;
 }
 
 .col-3
 {
     column-count: 3;
-    column-rule: 2px solid lightgray;
+    column-rule: 2px solid #d3d3d3;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 2px solid #d3d3d3;
+    -moz-column-count: 3;
+    -moz-column-rule: 2px solid #d3d3d3;
 }
 
-h1
+.article-header
 {
     font-family: 'Ruslan Display', cursive;
-    text-align: center;
 }
 
-h2
+.paragraph-header
 {
     font-family: 'Lobster', cursive;
-    text-align: center;
 }
 
-blockquote
+.quotes
 {
     margin: 7px;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     padding: 10px;
 }
 
 .image
 {
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     padding: 0;
     margin: 5px;
 }
@@ -79,25 +115,18 @@ blockquote
     width: 100%;
 }
 
-.image > .signature
-{
-    text-align: center;
-}
-
 .first-paragraph::first-letter
 {
-    font-family: 'Lobster', cursive;
-    font-size: 150%;
-    color: lightgray;
+    font: 150%, 'Lobster', cursive;
+    color: #d3d3d3;
 }
 
 .special
 {
     margin-left: 45%;
-    word-break: break-all;
+    word-break: break-word;
     width: 1em;
     line-height: 1em;
-    text-align: center;
     font-family: monospace;
 }
 
@@ -140,7 +169,7 @@ blockquote
 .white:checked ~ .articles
 {
     color: #000;
-    background-color: lightyellow;
+    background-color: #ffffe0;
 }
 
 .black:checked ~ .articles
