@@ -16,6 +16,7 @@ body
     margin-left: auto;
     margin-right: auto;
 }
+
 .topInfo
 {
     height: 1070px;
@@ -202,7 +203,8 @@ body
     width: 100%;
 }
 
-.mainInfo-top-article > article{
+.mainInfo-top-article > article
+{
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
