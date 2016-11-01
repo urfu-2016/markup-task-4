@@ -1,38 +1,47 @@
 @font-face {
     font-family: 'Marck Script';
     src: url('./fonts/Marck Script/MarckScript-Regular.ttf');
+    src: url('./fonts/Marck Script/MarckScript-Regular.eot');
+    src: url('./fonts/Marck Script/MarckScript-Regular.woff');
 }
 
 @font-face {
     font-family: 'Lobster';
     src: url('./fonts/Lobster/Lobster-Regular.ttf');
+    /* Конвертер почему-то отказался генерировать .eot и .woff для Lobster. */
 }
 
 @font-face {
     font-family: 'Ruslan Display';
     src: url('./fonts/Ruslan Display/RuslanDisplay.ttf');
+    src: url('./fonts/Ruslan Display/RuslanDisplay.eot');
+    src: url('./fonts/Ruslan Display/RuslanDisplay.woff');
 }
 
 @font-face {
     font-family: 'Coiny';
     src: url('./fonts/Coiny/Coiny-Regular.ttf');
+    src: url('./fonts/Coiny/Coiny-Regular.eot');
+    src: url('./fonts/Coiny/Coiny-Regular.woff');
 }
 
 @font-face {
     font-family: 'Satisfy';
     src: url('./fonts/Satisfy/Satisfy-Regular.ttf');
+    src: url('./fonts/Satisfy/Satisfy-Regular.eot');
+    src: url('./fonts/Satisfy/Satisfy.woff');
 }
 
 body
 {
-    font: 18pt 'Marck Script', cursive;
+    font: normal 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
     border: 2px solid #d3d3d3;
 }
 
 .head
 {
-    font: 42pt 'Coiny', cursive;
+    font: normal 42pt 'Coiny', cursive;
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
@@ -55,7 +64,7 @@ body
 {
     text-overflow: ellipsis;
     padding: 5px;
-    font: 18pt 'Marck Script', cursive;
+    font: normal 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
 }
 
@@ -65,6 +74,8 @@ body
     column-rule: 2px solid #d3d3d3;
     -moz-column-count: 2;
     -moz-column-rule: 2px solid #d3d3d3;
+    -webkit-column-count: 2;
+    -webkit-column-rule: 2px solid #d3d3d3;
 }
 
 .col-3
@@ -73,6 +84,8 @@ body
     column-rule: 2px solid #d3d3d3;
     -moz-column-count: 3;
     -moz-column-rule: 2px solid #d3d3d3;
+    -webkit-column-count: 3;
+    -webkit-column-rule: 2px solid #d3d3d3;
 }
 
 .article-header,
@@ -108,7 +121,7 @@ body
 
 .first-paragraph::first-letter
 {
-    font: 150% 'Lobster', cursive;
+    font: normal 150% 'Lobster', cursive;
     color: #d3d3d3;
 }
 
