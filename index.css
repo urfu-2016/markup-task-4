@@ -1,10 +1,36 @@
+@font-face
+{
+    font-family: Adler;
+    src: url('Adler.ttf');
+}
+
+@font-face
+{
+    font-family: Lumen;
+    src: url('Lumenharmaa.ttf');
+}
+
 .newspaper
 {
     background-image: url('white-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-weight: bolder;
     padding: 50px;
+    font-family: 'Lumen';
+    font-size: 120%;
+
+}
+
+.article_title
+{
+    font-family: 'Adler';
+    font-size: 140%;
+}
+
+.vertical-text
+{
+    transform: rotate(90deg);
+    transform-origin: left top 0;
 }
 
 h1
@@ -23,25 +49,6 @@ h4
     text-align: center;
 }
 
-td
-{
-    padding: 5px;
-    word-break: break-all;
-    border: 4px dashed black;
-}
-
-table
-{
-    table-layout: fixed;
-    width: 100%;
-}
-
-td
-{
-    width: 50%;
-    vertical-align: top;
-}
-
 hr
 {
     display: block;
@@ -50,6 +57,16 @@ hr
     border-top: 1px solid black;
     padding: 0;
     margin: 5px 0;
+}
+
+.content
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 4px outset black;
+    -moz-column-rule: 4px outset black;
+    column-rule: 4px outset black;
 }
 
 img
@@ -84,16 +101,14 @@ p:first-letter
     font-size: 150%;
 }
 
-input[name='diff_font']:checked ~ div table tr td p
+input[name='diff_font']:checked ~ div div p
 {
-    font-family: 'Blackadder ITC';
-    font-size: 160%;
+    font-family: 'Adler';
 }
 
-input[name='diff_font']:checked ~ div table tr td
+input[name='diff_font']:checked ~ div
 {
-    font-family: 'Blackadder ITC';
-    font-size: 160%;
+    font-family: 'Adler';
 }
 
 input[name='black_white']:checked ~ div
@@ -102,7 +117,7 @@ input[name='black_white']:checked ~ div
     color: white;
 }
 
-input[name='bigger_font']:checked ~ div table
+input[name='bigger_font']:checked ~ div
 {
     font-size: 130%;
 }
