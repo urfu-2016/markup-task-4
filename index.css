@@ -13,6 +13,20 @@ body
     padding: 1rem 4rem;
 }
 
+.newspaper-info
+{
+    float: left;
+    width: 1rem;
+}
+
+.info
+{
+    width: 1em;
+    margin-right: 1rem;
+    font-family: 'Courier', monospace;
+    font-size: .5rem;
+}
+
 .newspaper-name
 {
     margin: 0;
@@ -45,7 +59,7 @@ body
 {
     margin: 0;
     padding: 1.25rem 0;
-    column-count: 4;
+    column-count: 3;
     column-rule: 1px solid #211702;
     column-gap: 1.5rem;
 }
@@ -55,9 +69,20 @@ body
     margin: 0;
 }
 
+.any-news:nth-of-type(4)
+{
+    column-count: 2;
+}
+
+.any-news:nth-of-type(4) figure,
+.any-news:nth-of-type(4) .any-news-header
+{
+    column-span: all;
+}
+
 figure
 {
-    margin: 0;
+    margin: 0 0 1rem;
 }
 
 figcaption
