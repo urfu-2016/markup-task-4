@@ -1,0 +1,514 @@
+.common_bg
+{
+    background: url(img/newspaper_bg.jpg) center no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lobster', Arial, sans-serif;
+}
+
+.main-block
+{
+    position: relative;
+    z-index: 10;
+    margin: 20px;
+}
+
+header
+{
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px double #252525;
+    border-top: 4px double #252525;
+}
+
+.header__name
+{
+    height: 202px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.header__name h1
+{
+    font-size: 86px;
+    color: #252525;
+    font-family: 'Bungee Shade';
+    text-align: center;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+
+.header__name h1 span
+{
+    font-size: 54px;
+    color: #252525;
+    font-family: 'Bungee Shade';
+    -webkit-transform: translate(-150px, 70px);
+    transform: translate(-150px, 70px);
+    display: inline-block;
+}
+
+.header__logo
+{
+    float: left;
+    width: 15%;
+    margin: 10px 0 10px 20px;
+    border-right: 4px double #252525;
+}
+
+.header__logo
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header__info
+{
+    width: 15%;
+    height: 224px;
+    float: right;
+    position: relative;
+    border-left: 4px double #252525;
+    margin: 10px 0;
+}
+
+.header__info h4
+{
+    font-size: 50px;
+    font-family: 'Pacifico';
+    font-weight: bold;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 44px;
+    right: 0;
+}
+
+.header__info p
+{
+    font-size: 30px;
+    font-family: 'Pacifico';
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    margin: 14px 0 0 70px;
+}
+
+.header__info p span
+{
+    font-size: 30px;
+    font-family: 'Pacifico';
+}
+
+.page-content
+{
+    margin: 40px;
+}
+
+.page-content__header
+{
+    border-top: 4px solid #252525;
+    border-bottom: 4px solid #252525;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-content__header_pos-1 img
+{
+    float: right;
+}
+
+.page-content__header_pos-1 h2,
+.page-content__header_pos-1 h3
+{
+    float: left;
+    width: 40%;
+}
+
+.page-content__header h2
+{
+    font-size: 42px;
+    font-family: 'Lobster';
+    line-height: 1.4;
+}
+
+.page-content__header h3
+{
+    font-size: 24px;
+    font-family: 'Play';
+
+    line-height: 1.1;
+}
+
+.page-content__article
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.page-content__article_pos-1
+{
+    -webkit-column-rule: 1px solid #252525;
+    -moz-column-rule: 1px solid #252525;
+    column-rule: 1px solid #252525;
+    padding: 20px;
+}
+
+.page-content__article_pos-1 > h2
+{
+    visibility: hidden;
+}
+
+.page-content__article p
+{
+    font-size: 20px;
+    line-height: 1.1;
+    font-family: 'Open Sans Condensed';
+}
+
+.page-content__article p span
+{
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-indent: 10px;
+    margin: 30px 0 10px;
+    font-family: 'Open Sans Condensed';
+}
+
+.page-content__article p span:first-of-type
+{
+    margin-top: 0;
+}
+
+.page-content__article p span::first-letter
+{
+    color: red;
+    font-size: 30px;
+}
+
+.page-content__footer
+{
+    border-bottom: 4px solid #252525;
+    padding: 20px;
+}
+
+.page-content__footer
+{
+    overflow: hidden;
+}
+
+.page-content__footer p
+{
+    font-size: 16px;
+    line-height: 1.3;
+    font-family: 'Play';
+    text-align: left;
+    width: 40%;
+    float: right;
+    clear: both;
+
+}
+
+.page-content__footer p span
+{
+    font-weight: bold;
+}
+
+.diffe-section
+{
+    width: auto;
+    margin: 0 60px;
+    font-size: 24px;
+    font-family: 'Play';
+    text-align: right;
+}
+
+.page-content__header_pos-2 img
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.page-content__header_pos-2 h2
+{
+    font-size: 70px;
+    font-family: 'Poiret One';
+    text-align: center;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+}
+
+.page-content__article_pos-2
+{
+    padding: 10px;
+    margin: 10px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    width: 70%;
+    border-right: 4px solid #252525;
+    float: left;
+    box-sizing: border-box;
+}
+
+.page-content__article_pos-2
+{
+    visibility: hidden;
+}
+
+.main-page-aside__joke
+{
+    float: right;
+    width: 26%;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.main-page-aside__joke h3
+{
+    font-size: 24px;
+    font-family: 'Play';
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.main-page-aside__joke p
+{
+    font-size: 16px;
+    font-family: 'Open Sans Condensed';
+    margin: 20px 0;
+    position: relative;
+}
+
+.main-page-aside__joke p:after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url(img/mem.png) center no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.main-page-aside__joke p:before
+{
+    content: '*****';
+    font-size: 20px;
+    font-family: 'Open Sans Condensed';
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-content__footer_pos-2
+{
+    clear: both;
+}
+
+.main-block > footer
+{
+    margin: 20px 60px;
+}
+
+.main-block > footer p
+{
+    font-size: 16px;
+    font-family: 'Play';
+}
+
+input,
+label
+{
+    position: fixed;
+    z-index: 20;
+}
+
+.background_black
+{
+    right: 20px;
+    top: 40px;
+}
+
+input
+{
+    margin: 0;
+    display: none;
+}
+
+.label
+{
+    top: 50px;
+    right: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    padding: 10px;
+    background: #fff;
+    position: fixed;
+    width: 220px;
+    display: block;
+    opacity: .5;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.label:hover
+{
+    opacity: 1;
+}
+
+.bg_w
+{
+    top: 100px;
+}
+
+.font-family-1
+{
+    top: 150px;
+}
+
+.font-family-2
+{
+    top: 200px;
+}
+
+.font-family-3
+{
+    top: 250px;
+}
+
+.font-size-16
+{
+    top: 300px;
+}
+
+.font-size-18
+{
+    top: 350px;
+}
+
+.font-size-20
+{
+    top: 400px;
+}
+
+.background_black:checked ~ .common_bg
+{
+    background: #000;
+}
+
+.background_white:checked ~ .common_bg
+{
+    background: #fff;
+}
+
+.background_black:checked ~ .main-block header .header__logo img
+{
+    display: none;
+}
+
+.background_black:checked ~ .main-block header .header__logo
+{
+    background: url(img/logo_w.png) center no-repeat;
+    background-size: cover;
+    height: 224px;
+
+}
+
+.background_black:checked ~ .main-block h1,
+.background_black:checked ~ .main-block h2,
+.background_black:checked ~ .main-block h3,
+.background_black:checked ~ .main-block h4,
+.background_black:checked ~ .main-block span,
+.background_black:checked ~ .main-block p,
+.background_black:checked ~ .main-block p span,
+.background_black:checked ~ .main-block div,
+.background_black:checked ~ .main-block header,
+.background_black:checked ~ .main-block footer
+ {
+    color: #fff;
+    border-color: #fff;
+}
+
+.press-start:checked ~ .main-block h1,
+.press-start:checked ~ .main-block h2,
+.press-start:checked ~ .main-block h3,
+.press-start:checked ~ .main-block h4,
+.press-start:checked ~ .main-block span,
+.press-start:checked ~ .main-block p,
+.press-start:checked ~ .main-block p span,
+.press-start:checked ~ .main-block div,
+.press-start:checked ~ .main-block header,
+.press-start:checked ~ .main-block footer
+ {
+    font-family: 'Press Start 2P', 'Open Sans Condensed' !important;
+}
+
+.ruslan-display:checked ~ .main-block h1,
+.ruslan-display:checked ~ .main-block h2,
+.ruslan-display:checked ~ .main-block h3,
+.ruslan-display:checked ~ .main-block h4,
+.ruslan-display:checked ~ .main-block span,
+.ruslan-display:checked ~ .main-block p,
+.ruslan-display:checked ~ .main-block p span,
+.ruslan-display:checked ~ .main-block div,
+.ruslan-display:checked ~ .main-block header,
+.ruslan-display:checked ~ .main-block footer
+ {
+    font-family: 'Ruslan Display', 'Open Sans Condensed' !important;
+}
+
+.kelly-slab:checked ~ .main-block h1,
+.kelly-slab:checked ~ .main-block h2,
+.kelly-slab:checked ~ .main-block h3,
+.kelly-slab:checked ~ .main-block h4,
+.kelly-slab:checked ~ .main-block span,
+.kelly-slab:checked ~ .main-block p,
+.kelly-slab:checked ~ .main-block p span,
+.kelly-slab:checked ~ .main-block div,
+.kelly-slab:checked ~ .main-block header,
+.kelly-slab:checked ~ .main-block footer
+ {
+    font-family: 'Kelly Slab', 'Open Sans Condensed' !important;
+}
+
+.font-size-16:checked ~ .main-block h3,
+.font-size-16:checked ~ .main-block h4,
+.font-size-16:checked ~ .main-block span,
+.font-size-16:checked ~ .main-block p,
+.font-size-16:checked ~ .main-block p span,
+.font-size-16:checked ~ .main-block div
+{
+    font-size: 16px !important;
+}
+
+.font-size-18:checked ~ .main-block h3,
+.font-size-18:checked ~ .main-block h4,
+.font-size-18:checked ~ .main-block span,
+.font-size-18:checked ~ .main-block p,
+.font-size-18:checked ~ .main-block p span,
+.font-size-18:checked ~ .main-block div
+{
+    font-size: 18px !important;
+}
+
+.font-size-20:checked ~ .main-block h3,
+.font-size-20:checked ~ .main-block h4,
+.font-size-20:checked ~ .main-block span,
+.font-size-20:checked ~ .main-block p,
+.font-size-20:checked ~ .main-block p span,
+.font-size-20:checked ~ .main-block div
+{
+    font-size: 20px !important;
+}

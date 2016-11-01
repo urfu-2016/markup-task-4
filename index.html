@@ -2,7 +2,205 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <title>Newspaper</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="index.css" media="screen" title="no title">
 </head>
 <body>
+    <input id="bg_b" type="checkbox" name="bg_b" value="" class="background_black">
+    <label for="bg_b" class="label bg_b">Черный фон и белый шрифт</label>
+    <input id="bg_w" type="checkbox" name="bg_w" value="" class="background_white">
+    <label for="bg_w" class="label bg_w">Белый фон и черный шрифт</label>
+    <input id="font-family-1" type="checkbox" name="font-family-1" value="" class="press-start">
+    <label for="font-family-1" class="label font-family-1">Шрифт: Press Start 2P</label>
+    <input id="font-family-2" type="checkbox" name="font-family-2" value="" class="ruslan-display">
+    <label for="font-family-2" class="label font-family-2">Шрифт: Ruslan Display</label>
+    <input id="font-family-3" type="checkbox" name="font-family-3" value="" class="kelly-slab">
+    <label for="font-family-3" class="label font-family-3">Шрифт: Kelly Slab</label>
+    <input id="font-size-16" type="checkbox" name="font-size-16" value="" class="font-size-16">
+    <label for="font-size-16" class="label font-size-16">Размер шрифта: 16</label>
+    <input id="font-size-18" type="checkbox" name="font-size-18" value="" class="font-size-18">
+    <label for="font-size-18" class="label font-size-18">Размер шрифта: 18</label>
+    <input id="font-size-20" type="checkbox" name="font-size-20" value="" class="font-size-20">
+    <label for="font-size-20" class="label font-size-20">Размер шрифта: 20</label>
+    <div class="common_bg"></div>
+    <div class="main-block">
+        <header>
+            <div class="header__logo">
+                <img src="img/logo.png" alt="WTF">
+            </div><div class="header__info">
+                <h4>№ 111</h4>
+                <p class="header__info_data">21 <span>October</span> 2015г</p>
+            </div><div class="header__name">
+                <h1>WTF is <span>goin on?!</span></h1>
+            </div></header><main>
+            <section class="page-content">
+                <header class="page-content__header page-content__header_pos-1">
+                    <img src="http://static.gq.ru/medialibrary/494/49400d5a3640532bd35daf4b69bcc5b1.gif"
+                    alt="Презентация">
+                    <h2>10 фактов о новых MacBook Pro</h2>
+                    <h3>У новых макбуков появилась функциональная сенсорная полоса
+                        над клавиатурой, а еще они стали тоньше, чем MacBook Air.
+                        Рассказываем, чем еще новинки отличаются от
+                         предыдущих версий.</h3>
+                </header>
+                <article class="page-content__article page-content__article_pos-1">
+                    <h2>Рубрика IT</h2>
+                    <p><span>1Их три</span>Модели с диагональю 13 и 15 дюймов, а также еще одна версия на
+                        13 дюймов – более простая.
+                    <span>2 Сенсорная полоса Touch Bar</span>
+                    Вме&shy;сто функ&shy;ци&shy;о&shy;наль&shy;ных кла&shy;виш
+                    над кла&shy;ви&shy;а&shy;ту&shy;рой у но&shy;вых MacBook Pro
+                     – по&shy;ло&shy;са с экра&shy;ном Retina, ко&shy; то&shy;рую
+                      в Apple кра&shy;си&shy;во на&shy;зва&shy;ли Touch Bar. Что это и для че&shy;
+го нуж&shy;но? По фак&shy;ту Touch Bar за&shy;ме&shy;ня&shy;ет со&shy;бой те са&shy; мые си&shy;
+стем&shy;ные кла&shy;ви&shy;ши, от&shy;ве&shy; ча&shy;ю&shy;щие за яр&shy;кость экра&shy;на,
+гром&shy; кость и про&shy;чие па&shy;ра&shy;мет&shy;ры, – про&shy;сто
+эти кла&shy;ви&shy;ши ста&shy;ли сен&shy;сор&shy;ны&shy;ми. Но в ре&shy;аль&shy;но&shy;сти
+функ&shy;ци&shy;о&shy; наль&shy;ность ку&shy;да ши&shy;ре. Те&shy;перь для каж&shy; до&shy;го
+при&shy;ло&shy;же&shy;ния есть свой на&shy;бор кно&shy;пок быст&shy;ро&shy;го
+до&shy;сту&shy;па к тем или иным функ&shy;ци&shy;ям, а са&shy;ми сен&shy;сор&shy;ные кноп&shy;
+ки-пик&shy;то&shy;грам&shy;мы мож&shy;но бу&shy;дет на&shy;стро&shy;ить под се&shy;бя. Вспом&shy;
+ни&shy;те, сколь&shy;ко вре&shy;ме&shy;ни у вас от&shy;ни&shy;ма&shy;ет
+по&shy;иск ка&shy;кой-ли&shy;бо функ&shy;ции в муль&shy;ти&shy;ме&shy;диа&shy;пле&shy; е&shy;
+ре, по&shy;пу&shy;ляр&shy;ной кноп&shy;ки для ре&shy;дак&shy;ти&shy;ро&shy;ва&shy; ния до&shy;
+ку&shy;мен&shy;тов или по&shy;про&shy;сту быст&shy;рой воз&shy;мож&shy;но&shy;
+сти по&shy;де&shy;лить&shy;ся фай&shy;лом. Те&shy;перь вы мо&shy;же&shy;те вы&shy;не&shy; сти
+лю&shy;бую функ&shy;цию в этот «бар» са&shy;мо&shy;сто&shy;я&shy;тель&shy;но, ес&shy; ли,
+ко&shy;неч&shy;но, она уже не там.<br>
+                <span>3 Но можно и без нее</span>Та са&shy;мая тре&shy;тья мо&shy;дель
+                     MacBook Pro 13 по&shy;нра&shy;вит&shy;ся не толь&shy;ко са&shy;мым
+                     эко&shy;ном&shy;ным (сто&shy;ит она по&shy;чти на $300 мень&shy;ше),
+                     но и кон&shy;сер&shy;ва&shy;тив&shy;ным: ни&shy;ка&shy;ко&shy;го
+Touch Bar, толь&shy;ко клас&shy;си&shy;че&shy;ские кла&shy;ви&shy;ши Esc, Power и F1–F12.<br>
+<span>4 Выбирайте модель с Touch ID</span>Мо&shy;де&shy;ли MacBook Pro с Bar
+об&shy;за&shy;ве&shy;лись в при&shy;да&shy;чу еще и ска&shy;не&shy;ром от&shy;пе&shy;чат&shy;
+ков паль&shy;цев Touch ID. Он ну&shy;жен пре&shy;иму&shy;ще&shy;ствен&shy;но
+для вхо&shy;да в си&shy;сте&shy;му ком&shy;пью&shy;те&shy; ра, а так&shy;же для по&shy;ку&shy;
+пок online с Apple Pay. Так что те&shy;перь нет не&shy;об&shy; хо&shy;ди&shy;мо&shy;сти
+иметь под ру&shy;кой iPhone или iPad, что&shy;бы там под&shy;твер&shy;
+ждать по&shy;куп&shy;ку от&shy;пе&shy;чат&shy;ком паль&shy;ца.<br>
+<span>5 Это самые быстрые и легкие MacBook Pro в истории</span> И, быть мо&shy;жет,
+луч&shy;шие лэп&shy;то&shy;пы во&shy;об&shy;ще. По&shy;смот&shy;ри&shy;те са&shy;ми,
+толь&shy;ко от&shy;но&shy;си&shy;тель&shy;но преды&shy;ду&shy;ще&shy;го по&shy; ко&shy;
+ле&shy;ния
+MacBook Pro но&shy;вин&shy;ка MacBook Pro 15 на 130 % мощ&shy;нее в пла&shy; не 3D-гра&shy;
+фи&shy;ки, на 60 % шуст&shy;рее в иг&shy;рах и на 57 % – при об&shy;ра&shy;бот&shy;ке
+ви&shy;део. Мо&shy;дель 13 дюй&shy;мов быст&shy;рее на 103 % в иг&shy;рах
+и на 76 % в ра&shy;бо&shy;те с ви&shy;део и 3D-гра&shy;фи&shy;кой. Что до раз&shy;ме&shy;
+ров, то 13-дюй&shy;мо&shy;вая мо&shy;дель все&shy;го 14,9 мм в тол&shy;щи&shy;ну (на 17 %
+тонь&shy;ше преды&shy;ду&shy;щей мо&shy;де&shy;ли) и на це&shy;лых 23 %
+лег&shy;че – все&shy;го 1,3 кг.<br>
+<span>6 Лучший экран</span> Экран в но&shy;вых мо&shy;де&shy;лях на 67 % яр&shy;че, чем
+ в преды&shy;ду&shy;щих MacBook Pro, так&shy;же в нем на 67 % уве&shy;ли&shy;че&shy;но
+ ка&shy;че&shy;ство кон&shy;тра&shy;ста и на 25 % цве&shy;то&shy;вая гам&shy;ма.
+Мы, чест&shy;но, не зна&shy;ем, ка&shy;ким об&shy;ра&shy; зом в Apple это из&shy;ме&shy;
+ря&shy;ют, но по&shy;ве&shy;рим на сло&shy;во.<br>
+<span>7 Самый удобный трекпад</span> По&shy;верх&shy;ность трек&shy;па&shy;да, с по&shy;
+мо&shy;щью ко&shy;то&shy;рой вы не&shy; по&shy;сред&shy;ствен&shy;но управ&shy;ля&shy;
+е&shy;те сво&shy;им MacBook Pro, ста&shy;ла в два ра&shy;за боль&shy;ше от&shy;но&shy;
+си&shy;тель&shy;но
+преды&shy;ду&shy;щих мо&shy; де&shy;лей. Бла&shy;го&shy;да&shy;ря схо&shy;жей с MacBook
+ 12 осо&shy;бен&shy;но&shy;сти Force Touch, рас&shy;по&shy;зна&shy;ю&shy;щей сра&shy;
+ зу не&shy;сколь&shy;ко сте&shy;пе&shy; ней на&shy;жа&shy;тия, но&shy;вые трек&shy;
+ па&shy;ды
+еще и са&shy;мые удоб&shy;ные из тех, что мы ко&shy;гда-ли&shy;бо ви&shy;де&shy;ли.
+Раз&shy;мер кла&shy;виш так&shy;же уве&shy; ли&shy;чен и срав&shy;ним с кноп&shy;
+ка&shy;ми в MacBook по&shy;след&shy;не&shy;го по&shy; ко&shy;ле&shy;ния.
+<br>
+<span>8 MacBook Air, считайте, мертв</span> Ко&shy;гда-то са&shy;мый сек&shy;су&shy;
+аль&shy;ный из лэп&shy;то&shy;пов от&shy;прав&shy; лен на свал&shy;ку ис&shy;то&shy;
+рии. Сре&shy;ди лег&shy;ких и тон&shy;ких он уже дав&shy; но не эта&shy;лон (есть MacBook
+12 и еще де&shy;сят&shy;ки кон&shy;ку&shy;рен&shy;тов на Windows 10), а по ско&shy;
+ро&shy;сти и ка&shy;че&shy;ству ком&shy;по&shy;нен&shy;тов (экран из про&shy;шло&shy;
+го, на&shy;при&shy;мер) уже дав&shy;но дол&shy;жен был быть снят с про&shy;из&shy;
+вод&shy;ства.
+Так вот, но&shy;вые MacBook Pro со все&shy;ми на&shy; во&shy;ро&shy;та&shy;ми все
+рав&shy;но тонь&shy;ше MacBook Air (вер&shy;сия 13 дюй&shy;мов мень&shy;ше Air на
+13 %). Един&shy;ствен&shy;ный мо&shy;мент: се&shy;го&shy;дня Air – это са&shy;мый
+до&shy;ступ&shy;ный
+MacBook.<br>
+<span>9 Классический USB тоже</span> При&shy;выч&shy;ные USB вам и не нуж&shy;ны.
+Да, боль&shy;шин&shy;ство име&shy;ю&shy;щих&shy; ся про&shy;во&shy;дов се&shy;го&shy;
+дня по&shy;ка еще вы&shy;хо&shy;дят с под&shy;держ&shy; кой USB 3.0, но по&shy;чти все
+но&shy;вин&shy;ки пе&shy;ре&shy;шли на USB Type-C, как в но&shy;вых лэп&shy;то&shy;
+пах Apple. В MacBook он один. В MacBook Pro 13 без Touch Bar – два. А в MacBook Pro
+13 и 15 с Touch Bar – аж це&shy;лых че&shy;ты&shy;ре. Каж&shy;дый из них мо&shy;жет
+за&shy;ря&shy;жать ком&shy;пью&shy;тер, быть пор&shy;том для под&shy; клю&shy;че&shy;
+ния внеш&shy;не&shy;го дис&shy;плея и во&shy;об&shy;ще чем угод&shy;но.<br>
+</p>
+                </article>
+                <footer class="page-content__footer page-content__footer_pos-1">
+                    <p><span>АВТОР:</span> ПАВЕЛ ЛОМАКИН, 28 ОКТЯБРЯ 2016 Г.</p>
+                    <p><span>ИСТОЧНИК ФОТО:</span> APPLE</p>
+                </footer>
+            </section>
+            <p class="diffe-section">МУЖСКИЕ НОВОСТИ</p>
+            <section class="page-content page-content_aside-true">
+                <header class="page-content__header page-content__header_pos-2">
+                    <h2>ПИВО ПРОТИВ МОЗГА</h2>
+                    <img src="img/news_img_1.gif" alt="">
+                </header>
+                <article class="page-content__article page-content__article_pos-2">
+                    <h2>Для мужиков</h2>
+                    <p>Ока&shy;зы&shy;ва&shy;ет&shy;ся,  для при&shy;туп&shy;ле&shy;ния тво&shy;ей
+                        моз&shy;го&shy;вой ак&shy;тив&shy;но&shy;сти на 20 % хва&shy;тит все&shy;го
+                        трех вы&shy;пи&shy;тых кру&shy;жек пи&shy;ва в не&shy;де&shy;лю!<br>
+Об этом нам за&shy;яви&shy;ли ис&shy;пан&shy;ские уче&shy;ные. Их ис&shy;сле&shy;до&shy;ва&shy;ния
+по&shy;ка&shy;за&shy;ли, что для ре&shy;ше&shy;ния иден&shy;тич&shy;ных за&shy;дач пью&shy;щие лю&shy;
+ди при&shy;ла&shy;га&shy;ют на&shy;мно&shy;го боль&shy;ше уси&shy;лий, чем не&shy;пью&shy;щие.<br>
+ В хо&shy;де экс&shy;пе&shy;ри&shy;мен&shy;та доб&shy;ро&shy;воль&shy;цев раз&shy;де&shy;ли&shy;ли
+ на две груп&shy;пы. Не&shy;удач&shy;ни&shy;ки из пер&shy;вой груп&shy;пы ал&shy;ко&shy;голь не упо&shy;
+ треб&shy;ля&shy;ли, а вот счаст&shy;лив&shy;цы-доб&shy;ро&shy;воль&shy;цы из вто&shy;рой груп&shy;пы
+ вы&shy;пи&shy;ва&shy;ли не&shy;мно&shy;го боль&shy;ше 1,5 лит&shy;ра пи&shy;ва в не&shy;де&shy;лю.<br>
+ Всем участ&shy;ни&shy;кам по окон&shy;ча&shy;нию экс&shy;пе&shy;ри&shy;мен&shy;та про&shy;ве&shy;ри&shy;
+ ли ре&shy;ак&shy;цию на ми&shy;га&shy;ю&shy;щие сиг&shy;на&shy;лы. По&shy;сле че&shy;го каж&shy;до&shy;
+ му ис&shy;пы&shy;ту&shy;е&shy;мо&shy;му из&shy;ме&shy;ри&shy;ли моз&shy;го&shy;вую ак&shy;тив&shy;ность,
+  ско&shy;рость и точ&shy;ность ре&shy;ак&shy;ций.<br>
+Ре&shy;зуль&shy;тат ис&shy;сле&shy;до&shy;ва&shy;ния по&shy;ка&shy;зал, что обе груп&shy;пы доб&shy;
+ро&shy;воль&shy;цев в рав&shy;ной сте&shy;пе&shy;ни хо&shy;ро&shy;шо спра&shy;ви&shy;лись с за&shy;
+да&shy;ни&shy;ем: раз&shy;ни&shy;ца меж&shy;ду точ&shy;но&shy;стью и ско&shy;ро&shy;стью ре&shy;ак&shy;
+ций «под&shy;опыт&shy;ных» бы&shy;ла не&shy;зна&shy;чи&shy;тель&shy;ная. Но под&shy;вох крыл&shy;ся в
+дру&shy;гом: нерв&shy;ная си&shy;сте&shy;ма вы&shy;пи&shy;ва&shy;ю&shy;щих лю&shy;дей ис&shy;пы&shy;
+ты&shy;ва&shy;ла ощу&shy;ти&shy;мые пе&shy;ре&shy;груз&shy;ки в мо&shy;мент про&shy;хож&shy;де&shy;ния
+ те&shy;ста.<br>
+ По&shy;лу&shy;чен&shy;ные из&shy;ме&shy;ре&shy;ния ука&shy;зы&shy;ва&shy;ют на то, что у не&shy;
+ пью&shy;щих лю&shy;дей пик ак&shy;тив&shy;но&shy;сти моз&shy;га со&shy;став&shy;ля&shy;ет 18 мик&shy;
+ ро&shy;вольт, а у лю&shy;би&shy;те&shy;лей за&shy;гля&shy;нуть в ста&shy;кан этот по&shy;ка&shy;за&shy;
+ тель на&shy;хо&shy;дит&shy;ся в рай&shy;о&shy;не 20 мик&shy;ро&shy;вольт. За два го&shy;да на&shy;
+ блю&shy;де&shy;ний он воз&shy;рос уже до 22 мкВ. Все эти циф&shy;ры сви&shy;де&shy;тель&shy;ству&shy;
+ ют о вре&shy;до&shy;нос&shy;ном вли&shy;я&shy;нии  ал&shy;ко&shy;го&shy;ля на пси&shy;хи&shy;ку че&shy;
+ ло&shy;ве&shy;ка и на его моз&shy;го&shy;вую ак&shy;тив&shy;ность. Хо&shy;тя mansword счи&shy;та&shy;ет,
+ что ра&shy;ди двух не&shy;счаст&shy;ных мик&shy;ро&shy;вольт не сто&shy;ит ли&shy;шать се&shy;бя удо&shy;
+ воль&shy;ствия. Ес&shy;ли ты, ко&shy;неч&shy;но, по&shy;треб&shy;ля&shy;ешь уме&shy;рен&shy;но и с умом.
+ &lt;/p&gt;</p>
+                </article>
+                <aside class="main-page-aside__joke joke">
+                    <h3>Шутейки за 300!</h3>
+                    <div class="joke__item">
+                        <p>
+                        Сидит программист глубоко в отладке.<br>
+                        Подходит сынишка:<br>
+                        - Папа, почему солнышко каждый день встает на востоке, а садится на западе?<br>
+                        - Ты это проверял?<br>
+                        - Проверял.<br>
+                        - Хорошо проверял?<br>
+                        - Хорошо.<br>
+                        - Работает?<br>
+                        - Работает.<br>
+                        - Каждый день работает?<br>
+                        - Да, каждый день.<br>
+                        - Тогда ради бога, сынок, ничего не трогай, ничего не меняй.<br>
+                        </p>
+                    </div>
+                </aside>
+                <footer class="page-content__footer page-content__footer_pos-2">
+                </footer>
+            </section>
+        </main>
+        <footer>
+            <p>© WTF production 2015.</p>
+        </footer>
+    </div>
 </body>
 </html>
