@@ -1,8 +1,8 @@
 @font-face
 {
     font-family: 'unifrakturmaguntiabook';
-    src: local('UnifrakturMaguntia'), url('unifrakturmaguntia-book-webfont.woff2') format('woff2'), 
-    url('unifrakturmaguntia-book-webfont.woff') format('woff');
+    src: local('UnifrakturMaguntia'), url('unifrakturmaguntia-book-webfont.woff2') format('woff2');
+    src: url('unifrakturmaguntia-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face
 {
     font-family: 'cormorant_scbold';
-    src: local('Cormorant'), url('cormorantsc-bold-webfont.woff2') format('woff2'), 
-    url('cormorantsc-bold-webfont.woff') format('woff');
+    src: local('Cormorant'), url('cormorantsc-bold-webfont.woff2') format('woff2');
+    src: url('cormorantsc-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -160,7 +160,7 @@ main
     border: 1px solid;
     padding-top: 5px;
     padding-bottom: 5px;
-    text-align: center; 
+    text-align: center;
     margin-top: -80px;
     overflow: hidden;
     word-wrap: break-word;
