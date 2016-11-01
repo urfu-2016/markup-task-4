@@ -25,14 +25,14 @@
 
 body
 {
-    font: 18pt 'Marck Script';
+    font: cursive 18pt 'Marck Script';
     background-color: #ffffe0;
     border: 2px solid #d3d3d3;
 }
 
 .head
 {
-    font: 42pt 'Coiny';
+    font: cursive 42pt 'Coiny';
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
@@ -55,7 +55,7 @@ body
 {
     text-overflow: ellipsis;
     padding: 5px;
-    font: 18pt 'Marck Script';
+    font: cursive 18pt 'Marck Script';
     background-color: #ffffe0;
 }
 
@@ -108,7 +108,7 @@ body
 
 .first-paragraph::first-letter
 {
-    font: 150% 'Lobster';
+    font: cursive 150% 'Lobster';
     color: #d3d3d3;
 }
 
