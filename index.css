@@ -1,0 +1,312 @@
+@font-face
+{
+    font-family: 'Beryozki';
+    src: url(Beryozki.eot) format('embedded-opentype')
+        , url(Beryozki.woff) format('woff')
+        , url(Beryozki.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body 
+{
+    font-family: Georgia, Times New Roman, serif;
+}
+
+div 
+{
+    background-color: #f3ece2;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    column-width: 200px;
+}
+
+.wrapper
+{
+    width: 1600px;
+    height: 1600px;
+    position: relative;
+    border: 1px solid;
+}
+
+.header
+{
+    top: 0;
+    width: auto;
+    height: 200px;
+    border-bottom: 1px solid;
+}
+
+.main 
+{
+    height: 1400px;
+}
+
+.left 
+{
+    position: absolute;
+    height: inherit;
+    left: 0;
+    width: 799px;
+    border-right: 1px solid;
+}
+
+.right 
+{
+    height: inherit;
+    position: absolute;
+    right: 0;
+    width: 600px;
+    border-left: 1px solid;
+}
+
+.center 
+{
+    position: absolute;
+    height: inherit;
+    left: 800px;
+    width: 200px;
+    line-height: 30px;
+}
+
+.left-top 
+{
+    position: absolute;
+    width: inherit;
+    height: 700px;
+    top: 0;
+    border-bottom: solid 1px;
+}
+
+.text-block 
+{
+    padding: 0 10px 10px;
+}
+
+.header-vertical 
+{
+    font-family: courier;
+    width: 15px;
+    left: 20px;
+    top: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: absolute;
+    line-height: 15px;
+    border-style: none;
+}
+
+.date 
+{
+    position: absolute;
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    right: 10px;
+    top: 10px;
+    width: 150px;
+    border: 5px double;
+}
+
+h1 
+{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.quote 
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+    text-indent: 20px;
+    color: grey;
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+    padding: 10px 0;
+}
+
+.left-top-text 
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 2px;
+    -webkit-column-gap: 2px;
+    column-gap: 2px;
+}
+
+.left-bottom 
+{
+    width: inherit;
+    height: 699px;
+    top: 701px;
+    position: absolute;
+    -moz-column-rule: 1px solid #ccc;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.right-top 
+{
+    position: absolute;
+    width: inherit;
+    height: 399px;
+    top: 0;
+    border-bottom: 1px solid;
+    font-family: 'Kurale', serif;
+    font-size: 14px;
+    text-align: right;
+}
+
+.right-bottom 
+{
+    width: inherit;
+    height: 1000px;
+    top: 400px;
+    position: absolute;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.wide-marck
+{
+    font-family: 'Marck Script', cursive;
+    font-size: .7em;
+    word-spacing: 10px;
+}
+
+.bold-600
+{
+    font-weight: 600;
+}
+
+.caps
+{
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+.beryozki
+{
+    font-family: 'Beryozki', cursive;
+    font-size: 40px;
+}
+
+.oblique-narrow
+{
+    font-family: Arial Narrow;
+    font-style: oblique;
+    font-weight: 800;
+}
+
+.big-line-height
+{
+    line-height: 50px;
+}
+
+.lowercased
+{
+    text-transform: lowercase;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.wide-uppercase
+{
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.center p 
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+p 
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.right-top p::first-line 
+{
+    text-decoration: underline;
+}
+
+hr 
+{
+    width: 50px;
+}
+
+.left-top-text p:first-of-type::first-letter 
+{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.right-top p 
+{
+    text-indent: 20px;
+}
+
+.left-top h2 
+{
+    text-transform: uppercase;
+}
+
+.left-top img 
+{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.left-bottom h2,
+.right-bottom h2
+{
+    font-family: 'Kurale', serif;
+}
+
+h2 .sub-header 
+{
+    font-size: .7em;
+}
+
+.advert 
+{
+    font-family: Courier New;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+    border: dotted 1px;
+    font-size: 15px;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.advert h3
+{
+    font-family: Arial;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
