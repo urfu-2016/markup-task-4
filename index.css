@@ -1,8 +1,10 @@
 @font-face
 {
     font-family: 'Jellyka Delicious Cake';
-    src: url('fonts/jellyka_delicious_cake-webfont.woff2') format('woff2')
-        , url('fonts/jellyka_delicious_cake-webfont.woff') format('woff');
+    src: local('Jellyka Delicious Cake'), url('fonts/Jellyka Delicious Cake.eot');
+    src: local('Jellyka Delicious Cake')
+        , url('fonts/Jellyka Delicious Cake.woff') format('woff')
+        , url('fonts/Jellyka Delicious Cake.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,30 +12,39 @@
 @font-face
 {
     font-family: Alabama;
-    src: url(fonts/Alabama.ttf);
-}
-
-@font-face
-{
-    font-family: Oranienbaum;
-    src: url(fonts/Oranienbaum.ttf);
+    src: local('Alabama'), url('fonts/Alabama.eot');
+    src: local('Alabama')
+        , url('fonts/Alabama.woff') format('woff')
+        , url('fonts/Alabama.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face
 {
     font-family: Remeslo;
-    src: url(fonts/Remeslo.ttf);
+    src: local('Remeslo'), url('fonts/Remeslo.eot');
+    src: local('Remeslo')
+        , url('fonts/Remeslo.woff') format('woff')
+        , url('fonts/Remeslo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face
 {
     font-family: 'Snowstorm Light';
-    src: url('fonts/Snowstorm Light.otf');
+    src: local('Snowstorm Light'), url('fonts/Snowstorm Light.eot');
+    src: local('Snowstorm Light')
+        , url('fonts/Snowstorm Light.woff') format('woff')
+        , url('fonts/Snowstorm Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body
 {
-    background: url(images/background.jpg) #fffeb6;
+    background: url(images/background.jpg);
 }
 
 .table-header
@@ -49,15 +60,14 @@ body
 
 .newspaper-header
 {
-    margin: 20px 0;
-    font: 100px 'Jellyka Delicious Cake', serif;
+    font: 100px 'Jellyka Delicious Cake', Remeslo, serif;
 }
 
 .edition,
 .weather
 {
     width: 200px;
-    padding: 20px 30px;
+    padding: 30px;
 }
 
 .edition div,
@@ -68,22 +78,24 @@ body
     text-align: center;
     padding: 10px 0;
     font: 14px Alabama, serif;
+    font-weight: 100;
 }
 
 .date
 {
     border-top: 6px double #000;
     border-bottom: 6px double #000;
-    line-height: 40px;
+    line-height: 35px;
     font-family: Alabama, serif;
+    font-weight: 100;
 }
 
 .main-article,
 .secondary-articles
 {
-    font: 18px Oranienbaum, sans-serif;
     column-count: 3;
     column-rule: 1px solid #000;
+    font: 18px Oranienbaum, sans-serif;
 }
 
 .main-article
