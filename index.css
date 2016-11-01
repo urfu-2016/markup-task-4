@@ -10,12 +10,13 @@
 {
     break-inside: avoid;
     display: block;
-    column-count: 2;
 }
 
 img
 {
+    -webkit-column-span: all;
     column-span: all;
+
     display: block;
     width: 100%;
     border-radius: 8px;
@@ -24,8 +25,12 @@ img
 
 div
 {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
     column-count: 2;
-    column-width: 200px;
+
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
     column-rule: 1px solid #000;
 }
 
@@ -43,8 +48,10 @@ header
 
 h2
 {
-    font-family: 'Chewy', cursive;
+    -webkit-column-span: all;
     column-span: all;
+
+    font-family: 'Chewy', cursive;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     text-align: center;
@@ -98,6 +105,11 @@ input[value='dark']:checked ~ main div
     column-rule-color: #fff;
 }
 
+input[value='dark']:checked ~ main img
+{
+    filter: grayscale(100%);
+}
+
 input[value='handwriting']:checked ~ main header
 {
     font-family: 'Courgette', cursive;
@@ -111,9 +123,4 @@ input[value='handwriting']:checked ~ main p
 input[value='handwriting']:checked ~ main h3
 {
     font-family: 'Merienda', cursive;
-}
-
-input[value='dark']:checked ~ main img
-{
-    filter: grayscale(100%);
 }
