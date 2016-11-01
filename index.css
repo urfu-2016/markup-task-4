@@ -1,52 +1,51 @@
 @font-face {
     font-family: 'Marck Script';
-    src: local('Marck Script'),
-        url('./fonts/Marck Script/MarckScript-Regular.ttf') format('tff'),
-        url('./fonts/Marck Script/MarckScript-Regular.eot') format('eot'),
-        url('./fonts/Marck Script/MarckScript-Regular.woff') format('woff');
+    src: local('Marck Script'), url('./fonts/Marck Script/MarckScript-Regular.ttf')
+        format('tff'), url('./fonts/Marck Script/MarckScript-Regular.eot')
+        format('eot'), url('./fonts/Marck Script/MarckScript-Regular.woff')
+        format('woff');
 }
 
 @font-face {
     font-family: 'Lobster';
-    src: local('Lobster'),
-        url('./fonts/Lobster/Lobster-Regular.ttf');
+    src: local('Lobster'), url('./fonts/Lobster/Lobster-Regular.ttf');
     /* Конвертер почему-то отказался генерировать .eot и .woff для Lobster. */
 }
 
 @font-face {
     font-family: 'Ruslan Display';
-    src: local('Ruslan Display'),
-        url('./fonts/Ruslan Display/RuslanDisplay.ttf') format('tff'),
-        url('./fonts/Ruslan Display/RuslanDisplay.eot') format('eot'),
-        url('./fonts/Ruslan Display/RuslanDisplay.woff') format('woff');
+    src: local('Ruslan Display'), url('./fonts/Ruslan Display/RuslanDisplay.ttf')
+        format('tff'), url('./fonts/Ruslan Display/RuslanDisplay.eot')
+        format('eot'), url('./fonts/Ruslan Display/RuslanDisplay.woff')
+        format('woff');
 }
 
 @font-face {
     font-family: 'Coiny';
-    src: local('Coiny'),
-        url('./fonts/Coiny/Coiny-Regular.ttf') format('tff'),
-        url('./fonts/Coiny/Coiny-Regular.eot') format('eot'),
-        url('./fonts/Coiny/Coiny-Regular.woff') format('woff');
+    src: local('Coiny'), url('./fonts/Coiny/Coiny-Regular.ttf')
+        format('tff'), url('./fonts/Coiny/Coiny-Regular.eot')
+        format('eot'), url('./fonts/Coiny/Coiny-Regular.woff')
+        format('woff');
 }
 
 @font-face {
     font-family: 'Satisfy';
-    src: local('Satisfy'),
-        url('./fonts/Satisfy/Satisfy-Regular.ttf') format('tff'),
-        url('./fonts/Satisfy/Satisfy-Regular.eot') format('eot'),
-        url('./fonts/Satisfy/Satisfy.woff') format('woff');
+    src: local('Satisfy'), url('./fonts/Satisfy/Satisfy-Regular.ttf')
+        format('tff'), url('./fonts/Satisfy/Satisfy-Regular.eot')
+        format('eot'), url('./fonts/Satisfy/Satisfy.woff')
+        format('woff');
 }
 
 body
 {
-    font: normal 18pt 'Marck Script', cursive;
+    font: 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
     border: 2px solid #d3d3d3;
 }
 
 .head
 {
-    font: normal 42pt 'Coiny', cursive;
+    font: 42pt 'Coiny', cursive;
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
@@ -67,7 +66,7 @@ body
 
 .articles
 {
-    font: normal 18pt 'Marck Script', cursive;
+    font: 18pt 'Marck Script', cursive;
     text-overflow: ellipsis;
     padding: 5px;
     background-color: #ffffe0;
@@ -77,9 +76,9 @@ body
 {
     column-count: 2;
     column-rule: 2px solid #d3d3d3;
-    -moz-column-count: 2;
+    -moz-columns: 2;
     -moz-column-rule: 2px solid #d3d3d3;
-    -webkit-column-count: 2;
+    -webkit-columns: 2;
     -webkit-column-rule: 2px solid #d3d3d3;
 }
 
@@ -87,9 +86,9 @@ body
 {
     column-count: 3;
     column-rule: 2px solid #d3d3d3;
-    -moz-column-count: 3;
+    -moz-columns: 3;
     -moz-column-rule: 2px solid #d3d3d3;
-    -webkit-column-count: 3;
+    -webkit-columns: 3;
     -webkit-column-rule: 2px solid #d3d3d3;
 }
 
@@ -126,7 +125,7 @@ body
 
 .first-paragraph::first-letter
 {
-    font: normal 150% 'Lobster', cursive;
+    font: 150% 'Lobster', cursive;
     color: #d3d3d3;
 }
 
