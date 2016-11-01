@@ -1,0 +1,173 @@
+
+.black-color:checked ~ header,
+.black-color:checked ~ section
+{
+    background: black;
+    color: white;
+}
+
+.white-color:checked ~ header,
+.white-color:checked ~ section
+{
+    background: white;
+    color: black;
+}
+
+.large-font:checked ~ header,
+.large-font:checked ~ section
+{
+    font-size: 20px;
+}
+
+.normal-font:checked ~ header,
+.normal-font:checked ~ section
+{
+    font-size: 15px;
+}
+
+.small-font:checked ~ header,
+.small-font:checked ~ section
+{
+    font-size: 12px;
+}
+
+.arial-font:checked ~ header,
+.arial-font:checked ~ section
+{
+    font-family: Arial;
+}
+
+.roman-font:checked ~ header,
+.roman-font:checked ~ section
+{
+    font-family: Times New Roman;
+}
+
+html
+{
+    font-size: 15px;
+}
+
+body
+{
+    margin: 0 auto;
+    max-width: 1030px;
+    height: inherit;
+}
+
+h1
+{
+    font-size: 3em;
+    margin: 5px;
+}
+
+h2
+{
+    font-size: 1.2em;
+    column-span: all;
+}
+
+h1,
+h2
+{
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+}
+
+p:first-letter
+{
+    font-size: 150%;
+}
+
+.left-column
+{
+    max-width: 200px;
+    float: left;
+}
+
+.center-columns 
+{
+    float: left;
+    column-count: 3;
+    -moz-column-count: 3;
+    max-width: 600px;
+}
+
+.thin-column
+{
+    min-width: 30px;
+    float: left;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.right-column
+{
+    max-width: 600px;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.bottom-columns
+{
+    column-count: 4;
+    -moz-column-count: 4;
+}
+
+.center-columns,
+.right-column,
+.bottom-columns
+{
+    min-width: 200px;
+    -moz-column-width: 190px;
+    column-width: 190px;
+}
+
+@media (max-width: 400px)
+{
+    .right-column 
+    {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .center-columns,
+    
+    .right-column
+    {
+        float: none;
+        max-width: 800px;
+    }
+}
+
+blockquote
+{
+    text-align: center;
+    column-span: all;
+}
+
+blockquote:before,
+blockquote:after
+{
+    font-size: 3em;
+}
+
+blockquote:before 
+{
+    content: '«';
+    float: left;
+}
+
+blockquote:after
+{
+    content: '»';
+    float: right;
+    margin-top: -1.3em;
+}
+
+section
+{
+    overflow: auto;
+}
