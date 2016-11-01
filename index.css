@@ -1,31 +1,26 @@
 @font-face {
     font-family: 'Marck Script';
-    src: local('Marck Script'),
-        url('./fonts/Marck Script/MarckScript-Regular.ttf');
+    src: url('./fonts/Marck Script/MarckScript-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Lobster';
-    src: local('Lobster'),
-        url('./fonts/Lobster/Lobster-Regular.ttf');
+    src: url('./fonts/Lobster/Lobster-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Ruslan Display';
-    src: local('Ruslan Display'),
-        url('./fonts/Ruslan Display/RuslanDisplay.ttf');
+    src: url('./fonts/Ruslan Display/RuslanDisplay.ttf');
 }
 
 @font-face {
     font-family: 'Coiny';
-    src: local('Coiny'),
-        url('./fonts/Coiny/Coiny-Regular.ttf');
+    src: url('./fonts/Coiny/Coiny-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Satisfy';
-    src: local('Satisfy'),
-        url('./fonts/Satisfy/Satisfy-Regular.ttf');
+    src: url('./fonts/Satisfy/Satisfy-Regular.ttf');
 }
 
 body
