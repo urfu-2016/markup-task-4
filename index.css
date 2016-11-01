@@ -1,17 +1,20 @@
 /*onclick="document.getElementById('main').style.fontSize='40px'*/
-@font-face {
+@font-face
+{
     font-family: 'CyrillicGoth';
     src: url('fonts/CyrillicGoth.ttf') format('TrueType');
 }
 
-html {
+html
+{
     background-color: aliceblue;
     color: black;
     font: 20px 'CyrillicGoth', 'Times New Roman', serif;
 
 }
 
-body {
+body
+{
     width: 80%;
     max-width: 960px;
     background-color: beige;
@@ -19,18 +22,23 @@ body {
     border: 2px solid green;
 }
 
-input[name ='scale'][id='50']:checked ~ .main {
+input[name ='scale'][id='50']:checked ~ .main
+{
     font-size: 0.5em;
 }
 
-input[name ='scale'][id='100']:checked ~ .main {
+input[name ='scale'][id='100']:checked ~ .main
+{
     font-size: 1em;
 }
 
-input[name ='scale'][id='150']:checked ~ .main {
+input[name ='scale'][id='150']:checked ~ .main
+{
     font-size: 1.5em;
 }
-.paperHead {
+
+.paperHead
+{
     text-align: center;
     text-shadow: 1px 1px 6px red;
     font-family: "Times New Roman", fantasy;
@@ -42,13 +50,15 @@ input[name ='scale'][id='150']:checked ~ .main {
     font-stretch: ultra-expanded;
 }
 
-.main {
+.main
+{
     font-size: 1rem;
     color: inherit;
     background-color: beige;
 }
 
-main.paperColumns {
+main.paperColumns
+{
     position: relative;
     padding: 10px;
     margin: 10px;
@@ -59,27 +69,31 @@ main.paperColumns {
     text-overflow: ellipsis;
 }
 
-.paperColumns p {
+.paperColumns p
+{
     text-align: left;
     -webkit-hyphens: manual;
     hyphens: manual;
     font-family: 'Segoe Print';
 }
 
-.paperColumns p::first-letter {
+.paperColumns p::first-letter
+{
+    font: 2em 'CyrillicGoth', serif;
     font-style: italic;
     font-weight: 900;
-    font: 2em 'CyrillicGoth', serif;
     color: #69ff50;
     float: left;
 }
 
-.paperColumns p::first-line {
+.paperColumns p::first-line
+{
     font-stretch: ultra-expanded;
     letter-spacing: 2px;
 }
 
-article > header {
+article > header
+{
     text-transform: uppercase;
     text-align: center;
     margin: 10px;
@@ -89,14 +103,16 @@ article > header {
     font-weight: bold;
 }
 
-.date {
+.date
+{
     float: right;
     color: darkblue;
     text-shadow: 1px 1px 6px red;
-    font-family: "Times New Roman", fantasy;
+    font-family: 'Times New Roman', fantasy;
 }
 
-.article1 {
+.article1
+{
     position: relative;
     width: 65%;
     float: left;
@@ -110,7 +126,8 @@ article > header {
     column-width: auto;
 }
 
-.actualArticle {
+.actualArticle
+{
     float: right;
     width: 30%;
     top: 10px;
@@ -120,7 +137,8 @@ article > header {
     color: inherit;
 }
 
-.article2 {
+.article2
+{
     position: relative;
     top: 10px;
     width: 97%;
@@ -133,18 +151,21 @@ article > header {
     column-width: auto;
 }
 
-.actualArticle > header {
+.actualArticle > header
+{
     float: left;
     color: #e223af;
     font-weight: bold;
 }
 
-.actualArticle > cite {
+.actualArticle > cite
+{
     font-style: italic;
     color: #1f1dff;
 }
 
-.leitmotif2 {
+.leitmotif2
+{
     column-span: all;
     color: red;
     font-stretch: ultra-condensed;
@@ -153,25 +174,23 @@ article > header {
     padding-bottom: 10px;
 }
 
-.imgRoad {
+.imgRoad
+{
     float: left;
 }
 
-.imgRoad > figcaption {
+.imgRoad > figcaption
+{
     text-align: center;
     font-weight: bold;
 }
 
-.imgRoad > img {
+.imgRoad > img
+{
     width: 150px;
 }
 
-#imgPowersThatBe img{
+img#PowersThatBe
+{
     width: 150px;
 }
-
-
-
-
-
-
