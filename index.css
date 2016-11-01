@@ -1,7 +1,8 @@
 @font-face
 {
     font-family: 'unifrakturmaguntiabook';
-    src: url('unifrakturmaguntia-book-webfont.woff2') format('woff2'), url('unifrakturmaguntia-book-webfont.woff') format('woff');
+    src: local('UnifrakturMaguntia'), url('unifrakturmaguntia-book-webfont.woff2') format('woff2'), 
+    url('unifrakturmaguntia-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +10,8 @@
 @font-face
 {
     font-family: 'cormorant_scbold';
-    src: url('cormorantsc-bold-webfont.woff2') format('woff2'), url('cormorantsc-bold-webfont.woff') format('woff');
+    src: local('Cormorant'), url('cormorantsc-bold-webfont.woff2') format('woff2'), 
+    url('cormorantsc-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -59,7 +61,7 @@ body header .mainTitle
     font-family: 'unifrakturmaguntiabook', bold;
 }
 
-.leftHead
+.leftHeader
 {
     border: 1px solid black;
     width: 150px;
@@ -68,7 +70,7 @@ body header .mainTitle
     margin-left: 20px;
 }
 
-.rightHead
+.rightHeader
 {
     border: 1px solid black;
     width: 150px;
@@ -124,12 +126,12 @@ main
     margin-top: -15px;
 }
 
-.mainSection header
+.mainSection header h2
 {
-    margin-top: -25px;
+    margin-top: 2px;
     text-align: center;
-    font: 26px bold;
-    font-family: 'cormorant_scbold', bold !important;
+    font: 42px bold;
+    font-family: 'cormorant_scbold', bold;
 }
 
 .firstArticle img
@@ -147,6 +149,21 @@ main
 .continue
 {
     white-space: nowrap;
+}
+
+.verticalText
+{
+
+    font: 14px bold;
+    float: right;
+    width: 13px;
+    border: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center; 
+    margin-top: -80px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .secondArticle
