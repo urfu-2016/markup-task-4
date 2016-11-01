@@ -18,22 +18,25 @@ h1
 
 p
 {
-    font-family: segoe script;
+    font-family: bart, segoe print, gabriola;
     hyphens: manual;
 }
 
 .image
 {
-    font: italic 20px segoe print;
+    font: italic 20px gabriola, bart, segoe print;
     padding: 30px;
-    column-span: all;
     text-align: center;
+}
+
+blockquote
+{
+    font: italic 20px gabriola, bart, segoe print;
 }
 
 img
 {
     width: 100%;
-    margin: auto;
 }
 
 h3
@@ -53,6 +56,8 @@ p::first-letter
     font: italic 25px gothical;
     color: #000;
     float: left;
+    width: 1ch;
+    word-wrap: break-word;
 }
 
 .right
@@ -60,25 +65,36 @@ p::first-letter
     font: italic 25px gothical;
     color: #000;
     float: right;
+    width: 1ch;
+    word-wrap: break-word;
 }
 
 .one_column
 {
-    column-rule: 2px solid gray;
-    column-count: 1;
-    column-gap: 20px;
+    -moz-column-rule: 2px solid gray;
+    -moz-column-count: 1;
+    -moz-column-gap: 20px;
+    -webkit-column-rule: 2px solid gray;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
 }
 
 .two_column
 {
-    column-rule: 2px solid gray;
-    column-count: 2;
-    column-gap: 20px;
+    -moz-column-rule: 2px solid gray;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-rule: 2px solid gray;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
 }
 
 .three_column
 {
-    column-rule: 2px solid gray;
-    column-count: 2;
-    column-gap: 20px;
+    -moz-column-rule: 2px solid gray;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-rule: 2px solid gray;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
 }
