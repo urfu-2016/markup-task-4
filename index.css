@@ -1,35 +1,40 @@
 @font-face {
     font-family: 'Marck Script';
-    src: url('./fonts/Marck Script/MarckScript-Regular.ttf');
-    src: url('./fonts/Marck Script/MarckScript-Regular.eot');
-    src: url('./fonts/Marck Script/MarckScript-Regular.woff');
+    src: local('Marck Script'),
+        url('./fonts/Marck Script/MarckScript-Regular.ttf') format('tff'),
+        url('./fonts/Marck Script/MarckScript-Regular.eot') format('eot'),
+        url('./fonts/Marck Script/MarckScript-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Lobster';
-    src: url('./fonts/Lobster/Lobster-Regular.ttf');
+    src: local('Lobster'),
+        url('./fonts/Lobster/Lobster-Regular.ttf');
     /* Конвертер почему-то отказался генерировать .eot и .woff для Lobster. */
 }
 
 @font-face {
     font-family: 'Ruslan Display';
-    src: url('./fonts/Ruslan Display/RuslanDisplay.ttf');
-    src: url('./fonts/Ruslan Display/RuslanDisplay.eot');
-    src: url('./fonts/Ruslan Display/RuslanDisplay.woff');
+    src: local('Ruslan Display'),
+        url('./fonts/Ruslan Display/RuslanDisplay.ttf') format('tff'),
+        url('./fonts/Ruslan Display/RuslanDisplay.eot') format('eot'),
+        url('./fonts/Ruslan Display/RuslanDisplay.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Coiny';
-    src: url('./fonts/Coiny/Coiny-Regular.ttf');
-    src: url('./fonts/Coiny/Coiny-Regular.eot');
-    src: url('./fonts/Coiny/Coiny-Regular.woff');
+    src: local('Coiny'),
+        url('./fonts/Coiny/Coiny-Regular.ttf') format('tff'),
+        url('./fonts/Coiny/Coiny-Regular.eot') format('eot'),
+        url('./fonts/Coiny/Coiny-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Satisfy';
-    src: url('./fonts/Satisfy/Satisfy-Regular.ttf');
-    src: url('./fonts/Satisfy/Satisfy-Regular.eot');
-    src: url('./fonts/Satisfy/Satisfy.woff');
+    src: local('Satisfy'),
+        url('./fonts/Satisfy/Satisfy-Regular.ttf') format('tff'),
+        url('./fonts/Satisfy/Satisfy-Regular.eot') format('eot'),
+        url('./fonts/Satisfy/Satisfy.woff') format('woff');
 }
 
 body
@@ -62,9 +67,9 @@ body
 
 .articles
 {
+    font: normal 18pt 'Marck Script', cursive;
     text-overflow: ellipsis;
     padding: 5px;
-    font: normal 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
 }
 
