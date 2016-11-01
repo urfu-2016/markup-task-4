@@ -22,17 +22,17 @@ body
     border: 2px solid green;
 }
 
-input[name ='scale'][id ='50']:checked ~ .main
+input[name='scale'][id='50']:checked ~ .main
 {
     font-size: 50%;
 }
 
-input[name ='scale'][id ='100']:checked ~ .main
+input[name='scale'][id='100']:checked ~ .main
 {
     font-size: 100%;
 }
 
-input[name ='scale'][id ='150']:checked ~ .main
+input[name='scale'][id='150']:checked ~ .main
 {
     font-size: 150%;
 }
@@ -190,7 +190,7 @@ article > header
     width: 150px;
 }
 
-#PowersThatBe
+.PowersThatBe > img
 {
     width: 150px;
 }
