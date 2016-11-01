@@ -30,16 +30,14 @@
 
 body
 {
-    font-size: 18pt;
-    font-family: 'Marck Script', cursive;
+    font: 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
     border: 2px solid #d3d3d3;
 }
 
 .head
 {
-    font-family: 'Coiny', cursive;
-    font-size: 42pt;
+    font: 42pt 'Coiny', cursive;
     background-color: #ededed;
     text-shadow: 4px 4px #e0e0e0;
 }
@@ -62,7 +60,7 @@ body
 {
     text-overflow: ellipsis;
     padding: 5px;
-    font-size: 18pt, 'Marck Script', cursive;
+    font: 18pt 'Marck Script', cursive;
     background-color: #ffffe0;
 }
 
@@ -115,7 +113,7 @@ body
 
 .first-paragraph::first-letter
 {
-    font: 150%, 'Lobster', cursive;
+    font: 150% 'Lobster', cursive;
     color: #d3d3d3;
 }
 
