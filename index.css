@@ -1,111 +1,113 @@
-.centering
-{
-    text-align: center;
-}
-
-p.title
-{
-    font-size: 60px;
-    margin: 0;
-    font-weight: bold;
-}
-
-p.about
-{
-    font-size: 12px;
-    margin: 0;
-    text-align: left;
-    vertical-align: top;
-}
-
-p.descr-edition
-{
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 0;
-}
-
-table.header-descr,
-table.table-title
-{
-    width: 100%;
-}
-
-td.td-title
-{
-    width: 70%;
-}
-
-td.td-separator
-{
-    width: 3%;
-}
-
-td.td-about
-{
-    width: 27%;
-    vertical-align: top;
-}
-
-td.td-descr
-{
-    width: 20%;
-    text-align: center;
-}
-
 body
 {
+    margin: 0 auto;
     height: 100%;
     width: 1366px;
-    margin: 0 auto;
     background: url(images/texture.png);
     background-repeat: repeat;
 }
 
-hr
+.text-center
 {
-    margin: 0;
+    text-align: center;
 }
 
-img.doctorwho
+.newspaper-name
 {
+    margin: 0;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.newspaper-name-container
+{
+    width: 70%;
+    display: inline-block;
+}
+
+.newspaper-about-container
+{
+    width: 30%;
+    display: inline-block;
+}
+
+.header-container
+{
+    width: 100%;
+    display: table;
+}
+
+.about
+{
+    margin: 0;
+    display: block;
+    vertical-align: top;
+    text-align: right;
+    font-size: .8em;
+}
+
+.newspaper-stats-container
+{
+    width: 100%;
+    display: table;
+}
+
+.descr-edition
+{
+    margin: 0;
+    width: 33%;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: .8em;
+}
+
+.hr-without-margin
+{
+    margin: 0;
     width: 100%;
 }
 
-q
+.doctorwho
+{
+    height: 300px;
+    width: 450px;
+}
+
+.beautiful-quotes
 {
     quotes: '\00ab' '\00bb';
 }
 
-h1
+.attract-attention
 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 50px;
     letter-spacing: 3px;
     word-spacing: 20px;
-    text-align: center;
+    font-size: 3.5em;
     font-style: italic;
+    text-align: center;
 }
 
-h2
+.ads-caption
 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: center;
 }
 
-h3
+.normal-caption
 {
-    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 1.5em;
     font-style: italic;
 }
 
-p
+.normal-paragraph
 {
     margin-top: 0;
     text-indent: 8px;
@@ -113,23 +115,22 @@ p
 
 article p:first-of-type:first-letter
 {
-    font-size: 25px;
-    font-family: 'Courier New';
+    font: 2em 'Courier New';
 }
 
-blockquote
+.quote
 {
-    font-size: 25px;
+    font-size: 2em;
 }
 
-blockquote:before
+.quote:before
 {
     top: 0;
     left: 0;
     content: '\201C';
 }
 
-blockquote:after
+.quote:after
 {
     top: 0;
     right: 0;
@@ -139,6 +140,8 @@ blockquote:after
 .page
 {
     margin: 0 5%;
+    display: table;
+    font-size: 14px;
 }
 
 .box
@@ -148,31 +151,33 @@ blockquote:after
 
 .doctorwho-news
 {
-    text-align: center;
-    float: left;
-    margin-bottom: 10px;
     width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .left-side
 {
     width: 50%;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
 }
 
 .other-news
 {
-    text-align: justify;
-    float: left;
     width: 100%;
+    display: inline-block;
+    text-align: justify;
 }
 
 .sherlock-news
 {
-    margin-left: 10px;
     width: 37%;
+    height: 100%;
+    margin-left: 10px;
+    display: inline-block;
     text-align: justify;
-    float: left;
 }
 
 .col-format
@@ -194,9 +199,11 @@ blockquote:after
 
 .little-news
 {
-    float: left;
+    height: 100%;
+    width: 10.5%;
     margin-left: 10px;
-    width: 10%;
+    display: inline-block;
+    vertical-align: top;
     text-align: justify;
 }
 
@@ -204,48 +211,34 @@ blockquote:after
 {
     border: 3px solid #000;
     background-color: #bbb;
-
 }
 
 .tv-radio-news > p
 {
-    font-size: 20px;
-    letter-spacing: 1px;
     margin: 0;
+    letter-spacing: 1px;
     line-height: 146%;
+    font-size: 1.5em;
     text-align: center;
 }
 
-.black-and-white:checked ~ div > div,
-.black-and-white:checked ~ header,
-.black-and-white:checked ~ div > article,
-.black-and-white:checked ~ div > section
+.black-and-white:checked ~ main
 {
     background: black;
     color: white;
 }
 
-.switch-font:checked ~ div > div,
-.switch-font:checked ~ header,
-.switch-font:checked ~ div > article,
-.switch-font:checked ~ div > section
+.switch-font:checked ~ main
 {
-    font-family: 'Arial';
-    font-size: 14px;
+    font: 1em 'Arial', sans-serif;
 }
 
-.large-font:checked ~ div > div,
-.large-font:checked ~ header,
-.large-font:checked ~ div > article,
-.large-font:checked ~ div > section
+.large-font:checked ~ main
 {
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
-.small-font:checked ~ div > div,
-.small-font:checked ~ header,
-.small-font:checked ~ div > article,
-.small-font:checked ~ div > section
+.small-font:checked ~ main
 {
-    font-size: 12px;
+    font-size: .8em;
 }
