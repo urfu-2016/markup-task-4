@@ -33,7 +33,7 @@ main
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-rule: 1px solid #000;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 main p::first-letter
@@ -53,8 +53,9 @@ main p::first-letter
 
 .first h2
 {
-    font: 15px OpenSans, Arial, sans-serif;
+    font: 17px OpenSans, Arial, sans-serif;
     margin: 10px;
+    text-align: center;
 }
 
 .second
@@ -75,9 +76,6 @@ main p::first-letter
 .third
 {
     font: 12px Courier, monospace;
-    column-count: 2;
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
     column-rule: 1px solid #000;
 }
 
@@ -86,7 +84,6 @@ main p::first-letter
     margin: 5px;
     padding: 5px;
     font: 25px 'CormorantInfant', Georgia, serif;
-    column-span: all;
     text-transform: capitalize;
     text-align: center;
 }
