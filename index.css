@@ -83,24 +83,10 @@
     font-size: 150px;
 }
 
-.gagarin,
-.first-column,
-.third-column
+div > p:first-letter
 {
-    float: left;
-    width: 30%;
-}
-
-.first-column
-{
-    border-right: 1px solid black;
-    min-height: 100%;
-}
-
-.third-column
-{
-    border-left: 1px solid black;
-    min-height: 100%;
+    font-size: 200%;
+    color: red;
 }
 
 h1,
@@ -108,6 +94,29 @@ h2,
 p
 {
     margin: 0 3%;
+}
+
+
+.information
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+.gagarin
+{
+    width: 100%;
+    margin: 0 3%;
+    margin-left: 0;
+}
+
+figcaption
+{
+    margin: 0 80%;
 }
 
 h1
@@ -122,17 +131,28 @@ h2
     font-size: 40px;
 }
 
-.gagarin
-{
-    margin: 0 2%;
-    width: 35%;
+blockquote {
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    text-align: center;
 }
 
-.content:after
-{
-    clear: both;
-    display: block;
-    content: '';
+blockquote:before {
+    color: #000;
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: -.4em;
+}
+
+blockquote:after {
+    color: #000;
+    content: "\201D";
+    font-size: 3em;
+    line-height: 0.1em;
+    vertical-align: -.45em;
 }
 
 .nightMode:checked ~ .content
