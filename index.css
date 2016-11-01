@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'Marck Script';
     src: local('Marck Script'),
-    url('./fonts/Marck Script/MarckScript-Regular.ttf');
+        url('./fonts/Marck Script/MarckScript-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Lobster';
     src: local('Lobster'),
-    url('./fonts/Lobster/Lobster-Regular.ttf');
+        url('./fonts/Lobster/Lobster-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Ruslan Display';
     src: local('Ruslan Display'),
-    url('./fonts/Ruslan Display/RuslanDisplay.ttf');
+        url('./fonts/Ruslan Display/RuslanDisplay.ttf');
 }
 
 @font-face {
     font-family: 'Coiny';
     src: local('Coiny'),
-    url('./fonts/Coiny/Coiny-Regular.ttf');
+        url('./fonts/Coiny/Coiny-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Satisfy';
     src: local('Satisfy'),
-    url('./fonts/Satisfy/Satisfy-Regular.ttf');
+        url('./fonts/Satisfy/Satisfy-Regular.ttf');
 }
 
 body
@@ -82,12 +82,14 @@ body
     -moz-column-rule: 2px solid #d3d3d3;
 }
 
-.article-header
+.article-header,
+.ruslan-display:checked ~ .articles
 {
     font-family: 'Ruslan Display', cursive;
 }
 
-.paragraph-header
+.paragraph-header,
+.lobster:checked ~ .articles
 {
     font-family: 'Lobster', cursive;
 }
@@ -150,16 +152,6 @@ body
 .marck-script:checked ~ .articles
 {
     font-family: 'Marck Script', cursive;
-}
-
-.lobster:checked ~ .articles
-{
-    font-family: 'Lobster', cursive;
-}
-
-.ruslan-display:checked ~ .articles
-{
-    font-family: 'Ruslan Display', cursive;
 }
 
 .white:checked ~ .articles
