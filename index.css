@@ -1,0 +1,217 @@
+body {
+
+}
+.pageHeader {
+    border: 2px solid black;
+    width: 1200px;
+    margin: auto;
+}
+.pageHeader > span:first-child {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+.mainTheme {
+    position: absolute;
+    height: 36px;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    margin: -18px 0 0 -50px;
+}
+.month {
+    letter-spacing: 7px;
+}
+.pageHeader > span:last-child {
+    display: inline-block;
+    width: 1000px;
+    column-count: 6;
+    font-size: 11px;
+}
+
+.title {
+    width: 1200px;
+    margin: auto;
+    padding: 10px 5px;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 605px;
+    height: 205px;
+    margin: 0 5px 0 0;
+}
+
+.logo img{
+    display: inline-block;
+    height: 150px;
+    z-index: 2;
+}
+
+.logo .nameNewspaper {
+    z-index: 1;
+    font: 130px fantasy;
+    display: inline-block;
+    height: 150px;
+    letter-spacing: 15px;
+}
+
+.logo .motto{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: right;
+    text-transform:uppercase;
+    font: italic 18px serif;
+    text-decoration: underline;
+}
+
+.logo div:last-child {
+    text-align: center;
+    font: 22px serif;
+    padding: 5px 0;
+    letter-spacing: -1px;
+    font-stretch: ultra-condensed;
+}
+
+.mainNew {
+    padding: 0 5px 0 10px;
+    display: inline-block;
+    width: 570px;
+    height: 215px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.mainNew h6 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.mainNew > span {
+    display: inline-block;
+    column-count: 2;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.inset {
+    border: 2px solid black;
+    width: 680px;
+}
+.inset > span {
+    vertical-align: middle;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-left: 1px solid black;
+    padding: 0 25px;
+    font: bold 14px monospace;
+}
+.bodyNewspaper {
+    border: 1px solid black;
+}
+
+.leftColumnNews {
+    vertical-align: top;
+    display: inline-block;
+    width: 900px;
+}
+
+.firstNews {
+    border-bottom: 1px solid black;
+}
+
+.firstNews h1 {
+    font-family: sans-serif;
+    margin: 5px 25px;
+}
+.firstNews img {
+    width: 700px;
+    margin: 10px 25px;
+}
+.firstNews span {
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 12px;
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.rightColumnNews {
+    padding: 10px;
+    display: inline-block;
+    border-left: 1px solid black;
+    height: 1700px;
+}
+
+.rightColumnNews h5 {
+    text-align: center;
+}
+
+.rightColumnNews h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.rightColumnNews span {
+    display: inline-block;
+    width: 266px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.secondNews {
+    border-bottom: 1px solid black;
+}
+.leftColumnSecondNews {
+    padding: 10px;
+    display: inline-block;
+    width: 350px;
+}
+.leftColumnSecondNews h3 {
+    text-align: center;
+}
+.leftColumnSecondNews span {
+    display: inline-block;
+    column-count: 2;
+    font-size: 12px;
+}
+
+.rightColumnSecondNews {
+    vertical-align: top;
+    padding: 10px;
+    display: inline-block;
+    width: 500px;
+    border-left: 1px solid black;
+}
+.rightColumnSecondNews h2 {
+    text-align: center;
+}
+.rightColumnSecondNews span {
+    display: inline-block;
+    column-count: 3;
+    font-size: 12px;
+}
+
+.thirdNews h1 {
+    padding: 10px 20px;
+    margin: 3px;
+    text-align: right;
+}
+
+.thirdNews span {
+    display: inline-block;
+    column-count: 5;
+    font-size: 10px;
+    padding: 10px;
+}
+
