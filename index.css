@@ -161,6 +161,12 @@ span.sv-size-3
     font-family: Monotype Corsiva, cursive;
 }
 
+.apple-img
+{
+    width: 210px;
+    padding: 5px;
+}
+
 .zoom-img
 {
     width: 110px;
@@ -174,6 +180,12 @@ span.sv-size-3
 {
     text-align: center;
     width: 400px;
+}
+
+.uber-img
+{
+    width: 240px;
+    padding: 5px;
 }
 
 .vertical
