@@ -1,0 +1,177 @@
+/*onclick="document.getElementById('main').style.fontSize='40px'*/
+@font-face {
+    font-family: 'CyrillicGoth';
+    src: url('fonts/CyrillicGoth.ttf') format('TrueType');
+}
+
+html {
+    background-color: aliceblue;
+    color: black;
+    font: 20px 'CyrillicGoth', 'Times New Roman', serif;
+
+}
+
+body {
+    width: 80%;
+    max-width: 960px;
+    background-color: beige;
+    margin: 0 auto;
+    border: 2px solid green;
+}
+
+input[name ='scale'][id='50']:checked ~ .main {
+    font-size: 0.5em;
+}
+
+input[name ='scale'][id='100']:checked ~ .main {
+    font-size: 1em;
+}
+
+input[name ='scale'][id='150']:checked ~ .main {
+    font-size: 1.5em;
+}
+.paperHead {
+    text-align: center;
+    text-shadow: 1px 1px 6px red;
+    font-family: "Times New Roman", fantasy;
+    font-size: 40px;
+    color: darkblue;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-variant: all-small-caps;
+    font-stretch: ultra-expanded;
+}
+
+.main {
+    font-size: 1rem;
+    color: inherit;
+    background-color: beige;
+}
+
+main.paperColumns {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    text-indent: 5%;
+    text-align: justify;
+    color: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.paperColumns p {
+    text-align: left;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+    font-family: 'Segoe Print';
+}
+
+.paperColumns p::first-letter {
+    font-style: italic;
+    font-weight: 900;
+    font: 2em 'CyrillicGoth', serif;
+    color: #69ff50;
+    float: left;
+}
+
+.paperColumns p::first-line {
+    font-stretch: ultra-expanded;
+    letter-spacing: 2px;
+}
+
+article > header {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+    column-span: all;
+    color: #1f1dff;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.date {
+    float: right;
+    color: darkblue;
+    text-shadow: 1px 1px 6px red;
+    font-family: "Times New Roman", fantasy;
+}
+
+.article1 {
+    position: relative;
+    width: 65%;
+    float: left;
+    height: 55%;
+    font-size: 1.1em;
+    margin: 5px;
+    padding: 5px;
+    column-count: 2;
+    -moz-column-count: 2;
+    column-rule: 2px solid;
+    column-width: auto;
+}
+
+.actualArticle {
+    float: right;
+    width: 30%;
+    top: 10px;
+    margin: 5px;
+    padding: 5px;
+    font: 1em 'Times New Roman', serif;
+    color: inherit;
+}
+
+.article2 {
+    position: relative;
+    top: 10px;
+    width: 97%;
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px;
+    column-count: 3;
+    -moz-column-count: 3;
+    column-rule: 2px solid;
+    column-width: auto;
+}
+
+.actualArticle > header {
+    float: left;
+    color: #e223af;
+    font-weight: bold;
+}
+
+.actualArticle > cite {
+    font-style: italic;
+    color: #1f1dff;
+}
+
+.leitmotif2 {
+    column-span: all;
+    color: red;
+    font-stretch: ultra-condensed;
+    font-style: oblique;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgRoad {
+    float: left;
+}
+
+.imgRoad > figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.imgRoad > img {
+    width: 150px;
+}
+
+#imgPowersThatBe img{
+    width: 150px;
+}
+
+
+
+
+
+
