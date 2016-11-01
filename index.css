@@ -96,7 +96,6 @@ p
     margin: 0 3%;
 }
 
-
 .information
 {
     -webkit-column-count: 3;
@@ -131,14 +130,16 @@ h2
     font-size: 40px;
 }
 
-blockquote {
+blockquote
+{
     font-style: italic;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     text-align: center;
 }
 
-blockquote:before {
+blockquote:before
+{
     color: #000;
     content: "\201C";
     font-size: 3em;
@@ -147,7 +148,8 @@ blockquote:before {
     vertical-align: -.4em;
 }
 
-blockquote:after {
+blockquote:after
+{
     color: #000;
     content: "\201D";
     font-size: 3em;
