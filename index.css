@@ -287,10 +287,12 @@ hr
     text-transform: uppercase;
     display: inline-block;
 }
+
 .main
 {
     padding-left: 3%;
 }
+
 .world
 {
     font-size: 30px;
