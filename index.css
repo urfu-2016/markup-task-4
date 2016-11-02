@@ -1,14 +1,32 @@
 
+@font-face
+{
+    font-family: 'radio newsman';
+    src: url(fonts/RadioNewsman.ttf) ;
+}
+
+@font-face
+{
+    font-family: 'chunkFive';
+    src: url(chunk-master/chunk.ttf);
+}
+
+@font-face
+{
+    font-family: 'knorke';
+    src: url(fonts/Knorke.ttf);
+}
+
 html,
 body
 {
     background: #fff1cc;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family: 'chunkFive', 'Franklin Gothic Medium', sans-serif;
 }
 
 .body-main,
 .body-header,
-.usaToday-header,
+.usa-today-header,
 .body-footer
 {
     width: 1000px;
@@ -17,7 +35,7 @@ body
     margin-right: auto;
 }
 
-.topInfo
+.top-info
 {
     height: 1070px;
     width: 1000px;
@@ -48,7 +66,7 @@ body
     float: left;
 }
 
-.usaToday-header
+.usa-today-header
 {
     font-size: 5em;
     font-weight: bold;
@@ -60,7 +78,7 @@ body
 
 .body-main
 {
-    font-size: .8em;
+    font-size: 12px;
 }
 
 .body-footer
@@ -79,8 +97,9 @@ body
     height: 20px;
 }
 
-.columnHeader
+.column-header
 {
+    font-family: 'radio newsman','chunkFive', sans-serif;
     word-break: normal;
     font-weight: bold;
     font-size: 1.5em;
@@ -90,7 +109,7 @@ body
 }
 
 .newsline,
-.mainInfo
+.main-info
 {
     height: 1000px;
     display: inline-block;
@@ -108,20 +127,20 @@ body
     padding: 5px;
 }
 
-.newsline header
+.newsline h1
 {
     border-bottom: 4px solid black;
     margin: 5px;
     font-size: 1.5em;
-
+    font-weight: normal;
 }
 
-.newsline .weekday
+.newsline h1 span
 {
     font-weight: bold;
 }
 
-.newsline h1
+.newsline h2
 {
     margin: 5px;
     border-bottom: 2px solid black;
@@ -138,58 +157,61 @@ body
 {
     float: left;
     width: 100px;
+    height: 160px;
     margin-right: 5px;
     border: 2px solid black;
 }
 
 .newsline-topic
 {
+    font-family: 'radio newsman','chunkFive', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     text-transform: uppercase;
     word-break: normal;
 }
 
-.articleAuthor
+.article-author
 {
     margin: 0;
     font-weight: bold;
 }
 
-.usaToday
+.usa-today
 {
     font-weight: bold;
     text-transform: uppercase;
     word-break: normal;
 }
 
-.mainInfo
+.main-info
 {
     width: 650px;
 }
 
-.mainInfo-top,
-.mainInfo-middle,
-.mainInfo-bottom
+.main-info-top,
+.main-info-middle,
+.main-info-bottom
 {
     width: 630px;
     margin: 5px auto;
 }
 
-.mainInfo-top
+.main-info-top
 {
     border: 10px solid red;
     box-shadow: 0 0 0 2px black;
 }
 
-.mainInfo-top h1,
-.mainInfo-top h2
+.main-info-top h1,
+.main-info-top h2
 {
     margin: 10px;
 }
 
-.mainInfo-top-img
+.main-info-top-img
 {
+    font-family: 'knorke','chunkFive', sans-serif;
     float: left;
     margin: 0 10px auto;
     width: 300px;
@@ -198,19 +220,19 @@ body
     font-weight: bold;
 }
 
-.mainInfo-top-img > img
+.main-info-top-img > img
 {
     width: 100%;
 }
 
-.mainInfo-top-article > article
+.main-info-top-article > article
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
 }
 
-.mainInfo-top-article
+.main-info-top-article
 {
     display: inline-block;
     border-top: 2px solid black;
@@ -220,8 +242,8 @@ body
     padding: 5px;
 }
 
-.mainInfo-middle,
-.mainInfo-bottom
+.main-info-middle,
+.main-info-bottom
 {
 
     width: 98%;
@@ -229,13 +251,13 @@ body
     padding: 5px;
 }
 
-.mainInfo-middle
+.main-info-middle
 {
     border-top: 3px solid black;
     border-bottom: 2px solid black;
 }
 
-.mainInfo-middle-article
+.main-info-middle-article
 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -243,46 +265,46 @@ body
     margin: 5px;
 }
 
-.mainInfo-middle-article img
+.main-info-middle-article img
 {
     width: 100%;
     float: right;
 }
 
-.mainInfo-bottom-article
+.main-info-bottom-article
 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
 }
 
-.bottomInfo
+.bottom-info
 {
     display: block;
     border-top: 2px solid black;
 }
 
-.bottomInfo-left,
-.bottomInfo-right
+.bottom-info-left,
+.bottom-info-right
 {
     display: inline-block;
     margin: 10px;
 }
 
-.bottomInfo-left
+.bottom-info-left
 {
     width: 65%;
     border-right: 2px solid black;
 }
 
-.bottomInfo-left-article
+.bottom-info-left-article
 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
 }
 
-.bottomInfo-left figure
+.bottom-info-left figure
 {
     margin: 0;
     width: 100%;
@@ -291,19 +313,32 @@ body
     text-align: center;
 }
 
-.bottomInfo-left img
+.bottom-info-left img
 {
     width: 80%;
 }
 
-.bottomInfo-right-article
+.bottom-info-right-article
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
 }
 
-.bottomInfo-right
+.article-text
+{
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+
+.article-text:first-letter
+{
+    font-size: 2em;
+}
+
+.bottom-info-right
 {
     float: right;
     width: 30%;
