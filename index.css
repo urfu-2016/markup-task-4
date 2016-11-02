@@ -23,7 +23,7 @@ body
 {
     width: 80rem;
     flex-direction: column;
-    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -79,7 +79,8 @@ hr
     font-size: 1.3rem;
 }
 
-.subheader span:nth-child(2){
+.subheader span:nth-child(2)
+{
     font-weight: bold;
 }
 
