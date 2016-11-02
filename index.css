@@ -1,5 +1,6 @@
 html
 {
+    font-family: KellySlab, Georgia, serif;
     background: #e3d5d5;
 }
 
@@ -29,11 +30,11 @@ h1
 main
 {
     margin: 10px;
-    column-count: 4;
     -moz-column-count: 4;
     -webkit-column-count: 4;
     -moz-column-rule: 1px solid #000;
     -webkit-column-rule: 1px solid #000;
+    column-count: 4;
     column-rule: 1px solid #000;
     font-size: 14px;
 }
@@ -47,11 +48,11 @@ main p::first-letter
 {
     text-indent: 5%;
     font-family: KellySlab;
-    column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
     -moz-column-rule: 1px solid #000;
     -webkit-column-rule: 1px solid #000;
+    column-count: 2;
     column-rule: 1px solid #000;
 }
 
@@ -116,18 +117,18 @@ main p::first-letter
 
 figure
 {
-    margin: 0;
+   
+    margin: 0 15px 0 0;
 }
 
 img
 {
-    width: 240px;
+    width: 103%;
 }
 
 figcaption
 {
     font-size: 9px;
-    color: #5a5858;
 }
 
 @font-face
@@ -153,3 +154,57 @@ figcaption
     font-family: Jura;
     src: url(fonts/Jura-Light.ttf);
 }
+
+@media (max-width: 900px)
+{
+    .two-columns{
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .third h2
+    {
+        text-align: left;
+        font-size: 22px;
+    }
+    .third h2
+    {
+        font-size: 18px;   
+    }
+}
+@media (max-width: 780px)
+{
+    .first h2
+    {
+        text-align: left;
+        font-size: 15px;
+    }
+    .second h2
+    {
+        font-size: 12px;
+    }
+    .third h2
+    {
+        font-size: 18px;   
+    }
+    
+}
+
+@media (max-width: 600px)
+{
+    main
+    {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;   
+    }
+    .second h2
+    {
+        font-size: 18px;
+    }
+    .third h2
+    {
+        font-size: 25px;   
+    }
+}
+
