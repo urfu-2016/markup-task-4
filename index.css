@@ -2,41 +2,37 @@
 {
     font-family: ImpactRegular;
     src: url(fonts/ImpactRegular.woff) 
-        format('woff'), url(fonts/ImpactRegular.ttf) format('ttf');
+        format('woff'), url(fonts/ImpactRegular.eot) format('eot');
 }
 @font-face 
 {
     font-family: YesevaOne;
     src: url(fonts/YesevaOneRegular.woff)
-        format('woff'), url(fonts/YesevaOneRegular.ttf) format('ttf');
+        format('woff'), url(fonts/YesevaOneRegular.eot) format('eot');
 }
 @font-face 
 {
     font-family: OfficinaSerifBold;
     src: url(fonts/OfficinaSerifBold.woff) 
-        format('woff'), url(fonts/OfficinaSerifBold.ttf) format('ttf');
-}
-
-::first-letter
-{
-    font-weight: bold;
+        format('woff'), url(fonts/OfficinaSerifBold.eot) format('eot');
 }
 
 .vertical
 {
-    word-break: break-word;
-    float: left;
-    width: 5%;
+    vertical-align: top;
+    display: inline-block;
+    width: 3%;
     word-wrap: break-word;
-    letter-spacing: 5px;
+    letter-spacing: 100px;
     overflow: hidden;
 }
 
 .day
 {
+    word-break: normal;
     display: block;
     text-align: center;
-    outline: 2px solid black;
+    outline: 2px solid #000;
     font-size: 20px;
     width: 98%;
     margin-bottom: 2px;
@@ -52,7 +48,7 @@
 
 h1
 {
-    font-family: ImpactRegular;
+    font-family: ImpactRegular, Arial;
     text-transform: uppercase;
     font-size: 40px;
     margin: 0 auto;
@@ -60,19 +56,18 @@ h1
     text-align: justify;
 }
 
-table,
-th,
-td
+.release,
+.cell
 {
-    border: 1px solid black;
+    border: 1px solid #000;
     border-collapse: collapse;
     text-align: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #000;
     margin-bottom: 5px;
     white-space: pre-wrap;
 }
 
-table
+.release
 {
     white-space: pre-wrap;
     width: 100%;
@@ -88,7 +83,7 @@ table
 
 .appeal
 {
-    font-family: OfficinaSerifBold;
+    font-family: OfficinaSerifBold, sans-serif;
     letter-spacing: .4em;
     font-size: 25px;
     text-align: center;
@@ -99,6 +94,7 @@ table
 
 .destination
 {
+    word-break: normal;
     font-style: italic;
     font-size: 14px;
     text-align: center;
@@ -106,7 +102,7 @@ table
 
 h2
 {
-    font-family: 'Arial';
+    font-family: Arial, sans-serif;
     text-transform: uppercase;
     font-size: 25px;
     margin: 0 auto;
@@ -116,8 +112,9 @@ h2
 .logo,
 .img-left
 {
+    vertical-align: top;
     display: inline-block;
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: 0 0 10;
 }
@@ -129,6 +126,7 @@ h2
 
 .date
 {
+    display: inline-block;
     text-indent: 0;
     text-align: right;
     font-size: 13px;
@@ -160,16 +158,16 @@ h2
     font-size: 9px;
     -moz-column-count: 2;
     column-count: 2;
-    -moz-column-rule: 1px solid black;
-    column-rule: 1px solid black;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
 .right-column
 {
     -moz-column-count: 2;
     column-count: 2;
-    -moz-column-rule: 1px solid black;
-    column-rule: 1px solid black;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
     -moz-column-width: auto;
     column-width: auto;
     font-size: 11px;
@@ -186,12 +184,12 @@ h2
 .black-white-mode:checked ~ header,
 .black-white-mode:checked ~ section
 {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
 }
 
 .big-font:checked ~ section,
-.big-font:checked ~ section div
+.big-font:checked ~ section p
 {
     font-size: 15px;
 }
@@ -202,15 +200,19 @@ h2
     font-family: sans-serif;
 }
 
+.right-content
+{
+    display: inline-block;
+}
+
 .caption
 {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;
     word-break: normal;
     font-size: 27px;
     font-weight: bold;
     letter-spacing: .4em;
-    font-family: YesevaOne;
+    font-family: YesevaOne, Helvetica;
 }
 
 .content
@@ -218,16 +220,21 @@ h2
     -moz-column-count: 2;
     -o-column-count: 2;
     column-count: 2;
-    -moz-column-rule: 1px solid black;
-    column-rule: 1px solid black;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
     -moz-column-width: auto;
     column-width: auto;
     width: 95%;
 }
 
+.content ::first-letter
+{
+    font-weight: bold;
+}
+
 .container
 {
-    word-break: break-all;
+    word-break: normal;
     font-size: 14px;
     padding: 40px;
     max-width: 800px;
