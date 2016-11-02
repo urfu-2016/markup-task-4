@@ -177,17 +177,9 @@ span.sv-size-3
 
 .zoom-img
 {
-    width: 110px;
-    float: right;
-    padding-left: 10px;
-    padding-right: 5px;
-    cursor: pointer;
-}
-
-.zoom-img:hover
-{
-    text-align: center;
-    width: 400px;
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .uber-img
@@ -212,4 +204,9 @@ span.sv-size-3
     margin-left: 90%;
     text-align: center;
     height: 140px;
+}
+
+div {
+    column-span: all;
+    text-align: center;
 }
