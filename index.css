@@ -11,24 +11,24 @@
     border: 5px double;
 }
 
-.headerOne
+.first-header
 {
     height: 75%;
 }
 
-.headerTwo
+.second-header
 {
     border-bottom: 3px solid;
     border-top: 3px solid;
     height: 24%;
 }
 
-.headerOne div
+.first-header div
 {
     display: inline-block;
 }
 
-.headerTwo div
+.second-header div
 {
     display: inline-block;
 }
@@ -38,35 +38,35 @@
     width: 20%;
 }
 
-.headPic
+.head-picture
 {
     width: 15%;
 }
 
-.headerName
+.header-name
 {
     width: 50%;
     font-size: 60px;
     font-family: 'Lobster', cursive;
 }
 
-.first
+.release
 {
     width: 40%;
 }
 
-.second,
-.third,
-.fourth
+.series,
+.edition,
+.price
 {
     width: 19%;
 }
 
-.blackRect
+.black-rect
 {
     background-color: black;
-    width: 20px !important;
-    height: 18px !important;
+    width: 20px;
+    height: 18px;
 }
 
 h1
@@ -108,24 +108,24 @@ h1
 
 .bar
 {
-    padding-top: 151px;
+    padding-top: 200px;
     width: 300px;
     height: 150px;
 }
 
 .colla
 {
-    padding-top: 106px;
+    padding-top: 138px;
     width: 260px;
     height: 300px;
 }
 
-.br
+.break-column
 {
     break-after: column;
 }
 
-.bold
+.bold-text
 {
     font-weight: bold;
 }
@@ -137,17 +137,17 @@ hr
     background-color: black;
 }
 
-.see
+.main-picture
 {
     text-align: center;
 }
 
-.see img
+.main-picture img
 {
     width: 100%;
 }
 
-.ogl
+.table-of-contents
 {
     width: 300px;
     height: 216px;
@@ -177,14 +177,14 @@ hr
     padding-left: 30px;
 }
 
-.hous
+.house
 {
     float: right;
     width: 150px;
     height: 350px;
 }
 
-.byt
+.bottle
 {
     width: 100px;
     height: auto;
@@ -204,7 +204,7 @@ hr
     font-weight: bold;
 }
 
-.pictureHeader
+.picture-header
 {
     background-color: black;
     color: white;
@@ -212,7 +212,7 @@ hr
     font-size: 20px;
 }
 
-.pictureHeader
+.picture-header
 {
     display: inline-block;
 }
@@ -222,7 +222,7 @@ hr
     text-align: center;
 }
 
-.bigText
+.big-text
 {
     text-align: right;
     float: left;
@@ -230,7 +230,7 @@ hr
     font-size: 20px;
 }
 
-.littleText
+.little-text
 {
     text-align: left;
     float: right;
@@ -238,24 +238,24 @@ hr
     font-size: 10px;
 }
 
-.pictureMainFirst
+.picture-main-food
 {
     width: 49%;
     float: left;
 }
 
-.pictureMainSecond
+.picture-main-shop
 {
     width: 50%;
     float: right;
 }
 
-.bigHousText
+.big-house-text
 {
     font-size: 20px;
 }
 
-.littleHousText
+.little-house-text
 {
     font-size: 12px;
 }
@@ -269,7 +269,7 @@ hr
     transform: rotate(-20deg);
 }
 
-.noj
+.scissors
 {
     width: 30px;
     height: 150px;
@@ -282,11 +282,15 @@ hr
     height: 155px;
 }
 
-.megaBox
+.mega-box
 {
+    text-transform: uppercase;
     display: inline-block;
 }
-
+.main
+{
+    padding-left: 3%;
+}
 .world
 {
     font-size: 30px;
@@ -294,13 +298,13 @@ hr
     float: left;
 }
 
-.bigWorld
+.big-world
 {
     font-family: fantasy;
     font-size: 50px;
 }
 
-.collaText
+.colla-text
 {
     width: 250px;
 }
@@ -309,4 +313,23 @@ hr
 {
     color: gray;
     float: right;
+}
+
+h3
+{
+    padding-left: 3%;
+}
+
+h1::first-letter
+{
+    color: darkkhaki;
+}
+
+.vertical
+{
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
