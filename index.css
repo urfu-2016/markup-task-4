@@ -5,12 +5,13 @@
 @font-face
 {
     font-family: Ubuntu Mono;
-    src: url('font/ubuntu-mono.ttf') format('ttf'), url('font/ubuntu-mono.woff') format('woff');
+    src: local(ubuntu mono), local('Ubuntu Mono'), url('font/ubuntu-mono.ttf')
+        format('ttf'), url('font/ubuntu-mono.woff') format('woff');
 }
 
 html
 {
-    font-size: 17px;
+    font: 17px 'Roboto Slab', serif;
 }
 
 body
@@ -18,10 +19,9 @@ body
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    font: 14px 'Roboto Slab', serif;
 }
 
-header
+.magazineTitle
 {
     margin-top: 10px;
     text-align: center;
@@ -30,7 +30,7 @@ header
     column-span: all;
 }
 
-header::first-letter
+.magazineTitle::first-letter
 {
     color: #f00;
 }
@@ -77,19 +77,29 @@ header::first-letter
     word-wrap: break-word;
 }
 
-.section::first-letter
+.referatTittle::first-letter
 {
     color: #f00;
     font-size: 1.5em;
 }
 
+.innerImgText
+{
+    background-color: white;
+    height: 85px;
+    margin-left: 10px;
+    object-fit: contain;
+    padding-top: 30px;
+    width: 89%;
+}
+
 .innerImg
 {
-    width: 95%;
-    height: 100%;
-    padding-top: 30px;
-    margin-left: 10px;
+    height: 280px;
     background-color: white;
+    object-fit: contain;
+    padding-top: 30px;
+    width: 100%;
 }
 
 .referat
@@ -113,15 +123,9 @@ header::first-letter
     margin-top: 0;
     vertical-align: top;
     column-span: all;
-    -moz-column-span: all;
 }
 
-h3
-{
-    text-align: center;
-}
-
-h3
+.referatTittle
 {
     text-align: center;
 }
