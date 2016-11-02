@@ -57,7 +57,7 @@ header div
 header div,
 header h1
 {
-    float: left;
+    display: inline-block;
     margin-bottom: 1%;
 }
 
@@ -83,7 +83,7 @@ header div:last-child
 
 h1
 {
-    width: 60%;
+    width: 59%;
     font: 5rem Cloister Black, sans-serif;
     text-align: center;
 }
@@ -223,7 +223,7 @@ h1
 
     h1
     {
-        width: 50%;
+        width: 48%;
     }
 
     .rate
