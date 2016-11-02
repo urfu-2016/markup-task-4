@@ -99,7 +99,7 @@ body
 
 .column-header
 {
-    font-family: 'radio newsman','chunkFive', sans-serif;
+    font-family: 'radio newsman', 'chunkFive', sans-serif;
     word-break: normal;
     font-weight: bold;
     font-size: 1.5em;
@@ -164,7 +164,7 @@ body
 
 .newsline-topic
 {
-    font-family: 'radio newsman','chunkFive', sans-serif;
+    font-family: 'radio newsman', 'chunkFive', sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -211,7 +211,7 @@ body
 
 .main-info-top-img
 {
-    font-family: 'knorke','chunkFive', sans-serif;
+    font-family: 'knorke', 'chunkFive', sans-serif;
     float: left;
     margin: 0 10px auto;
     width: 300px;
