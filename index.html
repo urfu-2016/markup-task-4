@@ -3,28 +3,25 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <title>The essential 'isms' of Bond</title>
 </head>
 <body>
     <label for="theme">Black theme</label>
-    <input type="checkbox" id="theme" name="theme" class="black_theme">
+    <input type="checkbox" id="theme" name="theme" class="black-theme">
     <br>
-    <label for="helvetica_font">Helvetica font</label>
-    <input type="checkbox" id="helvetica_font" name="font_type" class="helvetica_font">
+    <label for="helvetica-font">Helvetica font</label>
+    <input type="checkbox" id="helvetica-font" name="font-type" class="helvetica-font">
     <br>
-    <label for="lower_font">Set lower font size for paragraphs</label>
-    <input type="radio" id="lower_font" name="font_size" class="lower_font">
-    <label for="normal_font_size">Set normal font size for paragraphs</label>
-    <input type="radio" name="font_size" id="normal_font_size" class="normal_font_size" checked>
-    <label for="bigger_font">Set bigger font size for paragraphs</label>
-    <input type="radio" id="bigger_font" name="font_size" class="bigger_font">
+    <label for="lower-font">Set lower font size for paragraphs</label>
+    <input type="radio" id="lower-font" name="font-size" class="lower-font">
+    <label for="normal-font-size">Set normal font size for paragraphs</label>
+    <input type="radio" name="font-size" id="normal-font-size" class="normal-font-size" checked>
+    <label for="bigger-font">Set bigger font size for paragraphs</label>
+    <input type="radio" id="bigger-font" name="font-size" class="bigger-font">
     <article>
-        <h1>The essential 'isms' of Bond</h1>
-        <img src="https://www.svgimages.com/svg-image/s5/james-bond-stencil-256x256.png" alt="James Bond">
+        <header>
+            <h1>The essential 'isms' of Bond</h1>
+        </header>
         <ul>
             <li>Eroticism</li>
             <li>Cynicism</li>
@@ -32,15 +29,16 @@
             <li>Dynamism</li>
             <li>Patriotism</li>
         </ul>
-        <p class="first_paragraph">
+        <aside>Agent 007</aside>
+        <p class="first-paragraph">
             Not since Robin Hood has there been such a spectac&shy;ular and flercely patri&shy;ot&shy;ic folk 
             hero as James Bond. Since his dash&shy;ing debut in 1953 in the book "Casino Royale" he has 
             emphat&shy;ically become the most awesome secret agent in the world. A lonewolf locensed to 
             kill and la&shy;dykill he has also made an&shy;oth&shy;er kind of killing in the 
             cin&shy;ema where he is undis&shy;puted king of the box-office.
         </p>
-        <div class="columns_paragraps">
-            <p>
+        <div class="columns-paragraps">
+            <p class="paragraph">
                 A sort of one-main export over drive, the first three Bond pic&shy;tures have now been seen 
                 by more than 100 million people around the world and earned a massive $75 million.
                 Now Bond IV - <span class="quote">"Thunder-ball"</span> – has opened. Almost as inevitable 
@@ -48,7 +46,7 @@
                 movie records will fall to this film.
             </p>
             <h2>ENVIED</h2>
-            <p>
+            <p class="paragraph">
                 Bond is a veri&shy;ta&shy;ble queue-making ma&shy;ch&shy;ine.
                 Admired, envied, despired, hated, aped, and attacked? Ian Flem&shy;ing's hero is
                 pos&shy;itively the most discussed and compulsive invention of our time.
@@ -66,7 +64,7 @@
                 Russians, Germans, Kore&shy;ans, but nev&shy;er British.)
             </p>
             <h2>VILLAIN</h2>
-            <p>
+            <p class="paragraph">
                 The villain in "Thundeball" is one Largo, an
                 Itelian with black eye patch and ghost-white hair. And it is in this film that
                 the essentialisms of Bond can be observed in action. The story is not 15 minutes
@@ -91,8 +89,15 @@
                 don't think you should have ope&shy;ned that car door by your&shy;self my dear 
                 Colonel Bouvar."</span>
             </p>
+            <figure>
+                <img
+                    class="bond-image" 
+                    src="https://www.svgimages.com/svg-image/s5/james-bond-stencil-256x256.png" 
+                    alt="James Bond" title="Vector representation of the stencil of James Bond">
+                <figcaption class="image-title">Agent <span class="bold-agent-number">007</span></figcaption>
+            </figure>
             <h2>VIOLENT</h2>
-            <p>
+            <p class="paragraph">
                 Bouvar, his veil and wig torn aside to re&shy;veal
                 the hideous make up on his hard face, climbed to his feet. The fight was good
                 and Bouver died vio&shy;lently, stran&shy;gled with an iron poker.
@@ -105,7 +110,7 @@
                 car.They were for ev&shy;er earth&shy;bound by convention.
             </p>
             <h2>FANTASY</h2>
-            <p>
+            <p class="paragraph">
                 Bond has bro&shy;ken away, tak&shy;en the fanta&shy;sy of the
                 com&shy;ic strip and giv&shy;en it a pop art re&shy;ality. Hilar&shy;ious yet odd&shy;ly 
                 logical. It is part of his extraor&shy;dinary cunning of mixing excapism with a sence of fast

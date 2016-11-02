@@ -1,10 +1,53 @@
-h1,
+@font-face
+{
+    font-family: 'Alfa Slab One';
+    src: local('Alfa Slab One'), url('fonts/AlfaSlabOne-Regular.eot') 
+        format('eot'), url('fonts/AlfaSlabOne-Regular.ttf') 
+        format('truetype'), url('fonts/AlfaSlabOne-Regular.woff')  format('woff');
+    font-style: cursive;
+}
+
+@font-face
+{
+    font-family: 'Crete Round';
+    src: local('Crete Round'), url('fonts/CreteRound-Regular.eot') 
+        format('eot'), url('fonts/CreteRound-Regular.ttf') 
+        format('truetype'), url('fonts/CreteRound-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Josefin Slab';
+    src: local('Josefin Slab Bold'), url('fonts/JosefinSlab-Bold.eot')
+        format('eot'), url('fonts/JosefinSlab-Bold.ttf') 
+        format('truetype'), url('fonts/JosefinSlab-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Josefin Slab';
+    src: local('Josefin Slab'), url('fonts/JosefinSlab-Regular.eot') 
+        format('eot'), url('fonts/JosefinSlab-Regular.ttf') 
+        format('truetype'), url('fonts/JosefinSlab-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Oswald';
+    src: local('Oswald'), url('fonts/Oswald-Regular.eot') 
+        format('eot'), url('fonts/Oswald-Regular.ttf') 
+        format('truetype'), url('fonts/Oswald-Regular.woff') format('woff');
+}
+
+header,
 h2
 {
     text-align: center;
 }
 
-h1
+header
 {
     font: 4.5em Oswald, sans-serif;
 }
@@ -14,39 +57,55 @@ h2
     font: 1em 'Alfa Slab One', cursive;
 }
 
-article
+body
 {
     font-size: 20px;
     background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
 }
 
-.black_theme:checked ~ article
+aside
+{
+    width: 1%;
+    word-wrap: break-word;
+    margin-left: 55%;
+    margin-top: -26%;
+    font-size: 1.5em;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+}
+
+.bond-image
+{
+    margin-left: -35%;
+}
+
+.black-theme:checked ~ article
 {
     background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/05/black-parchment-paper-texture.jpg');
     color: #fff;
 }
 
-.helvetica_font:checked ~ article p,
-.helvetica_font:checked ~ article h1,
-.helvetica_font:checked ~ article ul,
-.helvetica_font:checked ~ article h2,
-.helvetica_font:checked ~ article footer
+.helvetica-font:checked ~ article p,
+.helvetica-font:checked ~ article header,
+.helvetica-font:checked ~ article ul,
+.helvetica-font:checked ~ article h2,
+.helvetica-font:checked ~ article footer
 {
     font-family: Helvetica, sans-serif;
 }
 
-.lower_font:checked ~ article p,
-.lower_font:checked ~ article > div > p,
-.lower_font:checked ~ article > div > h2,
-.lower_font:checked ~ article > .first_paragraph
+.lower-font:checked ~ article p,
+.lower-font:checked ~ article > div > p,
+.lower-font:checked ~ article > div > h2,
+.lower-font:checked ~ article > .first-paragraph
 {
     font-size: .6em;
 }
 
-.bigger_font:checked ~ article p,
-.bigger_font:checked ~ article > div > p,
-.bigger_font:checked ~ article > div > h2,
-.bigger_font:checked ~ article > .first_paragraph
+.bigger-font:checked ~ article p,
+.bigger-font:checked ~ article > div > p,
+.bigger-font:checked ~ article > div > h2,
+.bigger-font:checked ~ article > .first-paragraph
 {
     font-size: 1.2em;
 }
@@ -57,17 +116,7 @@ ul
     margin-left: 30%;
 }
 
-.first_paragraph
-{
-    font-weight: bold;
-    font-size: 1em;
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 50%;
-    margin-top: 10%;
-}
-
-.columns_paragraps
+.columns-paragraps
 {
     column-count: 4;
     column-width: 200px;
@@ -78,16 +127,26 @@ ul
 footer
 {
     text-align: right;
-    font: 15px 'Crete Round', sans-serif;
+    font: 15px 'Crete Round', serif;
+    margin-right: 3%;
+    margin-top: -1%;
+    margin-bottom: 2%;
 }
 
-img
+.image-title
 {
-    margin-right: 30%;
-    float: right;
+    text-align: center;
+    margin-top: -5%;
+    font: .75em 'Josefin Slab', serif;
 }
 
-article p:first-letter
+.bold-agent-number
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+article .paragraph:first-letter
 {
     font-size: 1.5em;
     font-weight: bold;
@@ -99,7 +158,15 @@ article p:first-letter
     font-weight: bold;
 }
 
-p
+.first-paragraph
+{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 50%;
+    font: bold 1em 'Josefin Slab', serif;
+}
+
+.paragraph
 {
     font: .75em 'Josefin Slab', serif;
 }
