@@ -96,7 +96,8 @@ a
     text-decoration: none;
 }
 
-.title, .extra-title
+.title,
+.extra-title
 {
     -moz-column-span: all;
     column-span: all;
