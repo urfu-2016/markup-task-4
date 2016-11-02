@@ -206,7 +206,8 @@ span.sv-size-3
     height: 140px;
 }
 
-div {
+div
+{
     column-span: all;
     text-align: center;
 }
