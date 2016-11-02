@@ -1,7 +1,8 @@
 @font-face
 {
     font-family: 'Old London';
-    src: url('fonts/Old London V1.woff2') format('woff2')
+    src: local('Old London')
+        , url('fonts/Old London V1.woff2') format('woff2')
         , url('fonts/Old London V1.woff') format('woff')
         , url('fonts/Old London V1.ttf') format('truetype');
     font-weight: normal;
@@ -16,13 +17,12 @@ body
 
 h1
 {
-    font-family: 'Old London', fantasy;
+    font: 80px 'Old London', fantasy;
     text-align: center;
-    font-size: 80px;
     margin: 0;
 }
 
-div.separator
+.separator
 {
     border-width: 5px 0;
     border-style: double;
@@ -42,7 +42,7 @@ div.column
     text-align: justify;
 }
 
-div.main.columns
+.main.columns
 {
     width: 29%;
     border-left: 2px solid black;
@@ -57,7 +57,7 @@ span
 
 .ya::first-letter
 {
-    font-size: 20px;
+    font-size: 1.5em;
     color: #f00;
 }
 
@@ -113,9 +113,7 @@ figcaption
 
 .column p:first-of-type::first-letter
 {
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Playfair Display', serif;
+    font: 600 20px 'Playfair Display', serif;
 }
 
 blockquote
