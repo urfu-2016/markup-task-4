@@ -139,8 +139,8 @@ body
 {
     margin-left: 45%;
     word-break: break-all;
-    width: 1em;
-    line-height: 1em;
+    width: 1ch;
+    line-height: 1ch;
     font-family: monospace;
 }
 
