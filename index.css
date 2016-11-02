@@ -1,4 +1,11 @@
-body, div, header, main, h1, hr, article, footer
+body,
+div,
+header,
+main,
+h1,
+hr,
+article,
+footer
 {
     display: flex;
     box-sizing: border-box;
@@ -9,15 +16,14 @@ body
     justify-content: center;
     margin: 0;
     padding-top: 2rem;
-    font-family: "Times New Roman", serif;
+    font-family: 'Times New Roman', serif;
 }
 
 .wrapper
 {
     width: 80rem;
     flex-direction: column;
-    box-shadow:
-        0 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.2);
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -41,9 +47,9 @@ h1
 {
     display: flex;
     word-break: break-all;
-    width: 0.5rem;
-    font-size: 0.8rem;
-    line-height: 0.9rem;
+    width: .5rem;
+    font-size: .8rem;
+    line-height: .9rem;
     text-align: center;
     font-weight: bolder;
     margin-left: 1rem;
@@ -61,9 +67,9 @@ header address
 
 hr
 {
-    height: 0.3rem;
+    height: .3rem;
     width: auto;
-    margin: 0.5rem 0;
+    margin: .5rem 0;
     background-color: #404040;
 }
 
@@ -106,7 +112,7 @@ article
 
 article h2
 {
-    margin: 1rem 0;
+    margin: 1rem 0 ;
     font-family: 'Noto Serif', serif;
     border-top: 1rem solid #000;
 }
@@ -124,8 +130,8 @@ article img
 
 article p
 {
-    column-rule: 0.15rem solid #000;
-    -moz-column-rule: 0.15rem solid #000;
+    column-rule: .15rem solid #000;
+    -moz-column-rule: .15rem solid #000;
     hyphens: auto;
     -ms-hyphens: auto;
     text-align: justify;
@@ -135,15 +141,16 @@ q
 {
     display: flex;
     font-family: 'Playfair Display', serif;
-    column-span:all;
+    column-span: all;
     font-size: 2rem;
     font-weight: bold;
-    border-width: 0.15rem 0;
+    border-width: .15rem 0;
     border-style: solid;
     text-align: center;
 }
 
-q:before, q:after
+q:before,
+q:after
 {
     content: none;
 }
@@ -226,5 +233,5 @@ footer article strong
 {
     font-weight: 900;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
