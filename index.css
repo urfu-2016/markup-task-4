@@ -1,4 +1,5 @@
-@font-face {
+@font-face
+{
     font-family: 'Marck Script';
     src: local('Marck Script'), url('./fonts/Marck Script/MarckScript-Regular.ttf')
         format('tff'), url('./fonts/Marck Script/MarckScript-Regular.eot')
@@ -6,13 +7,15 @@
         format('woff');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Lobster';
     src: local('Lobster'), url('./fonts/Lobster/Lobster-Regular.ttf');
     /* Конвертер почему-то отказался генерировать .eot и .woff для Lobster. */
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Ruslan Display';
     src: local('Ruslan Display'), url('./fonts/Ruslan Display/RuslanDisplay.ttf')
         format('tff'), url('./fonts/Ruslan Display/RuslanDisplay.eot')
@@ -20,7 +23,8 @@
         format('woff');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Coiny';
     src: local('Coiny'), url('./fonts/Coiny/Coiny-Regular.ttf')
         format('tff'), url('./fonts/Coiny/Coiny-Regular.eot')
@@ -28,7 +32,8 @@
         format('woff');
 }
 
-@font-face {
+@font-face
+{
     font-family: 'Satisfy';
     src: local('Satisfy'), url('./fonts/Satisfy/Satisfy-Regular.ttf')
         format('tff'), url('./fonts/Satisfy/Satisfy-Regular.eot')
@@ -50,7 +55,8 @@ body
     text-shadow: 4px 4px #e0e0e0;
 }
 
-.center {
+.center
+{
     text-align: center;
 }
 
