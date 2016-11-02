@@ -1,3 +1,28 @@
+@font-face {
+    font-family: Kurale;
+    src: url(https://fonts.googleapis.com/css?family=Kurale);
+}
+
+@font-face {
+    font-family: "PT Mono";
+    src: url(https://fonts.googleapis.com/css?family=PT+Mono);
+}
+
+@font-face {
+    font-family: "Ruslan Display";
+    src: url(https://fonts.googleapis.com/css?family=Ruslan+Display);
+}
+
+@font-face {
+    font-family: Pattaya;
+    src: url(https://fonts.googleapis.com/css?family=Pattaya);
+}
+
+@font-face {
+    font-family: "Kaushan Script";
+    src: url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+}
+
 .old-paper-page
 {
     margin: auto;
