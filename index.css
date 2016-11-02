@@ -118,7 +118,7 @@ ul
 
 .columns-paragraps
 {
-    column-count: 4;
+    -moz-column-count: 4;
     column-width: 200px;
     margin-left: 10%;
     margin-right: 20%;
