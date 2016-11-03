@@ -22,7 +22,7 @@ html
     background-color: white;
 }
 
-body
+.bodyNewspaper
 {
     margin: 0 auto;
     padding: 7px;
@@ -35,15 +35,16 @@ body
     background-size: cover;
 }
 
-body:hover
+.secondVersion:checked ~ .bodyNewspaper
 {
     color: white;
     background: url(phoneStars.png) 100% 100% no-repeat black;
     background-size: cover;
     font: 18px serif;
+    font-family: 'Times New Roman', serif;
 }
 
-body > header
+.bodyNewspaper > header
 {
     text-align: center;
     width: 100%;
@@ -55,10 +56,10 @@ table
     width: 100%;
 }
 
-body header .mainTitle
+.bodyNewspaper header .mainTitle
 {
     font: 65px bold;
-    font-family: 'unifrakturmaguntiabook', bold;
+    font-family: 'unifrakturmaguntiabook', serif;
 }
 
 .leftHeader
@@ -131,7 +132,7 @@ main
     margin-top: 2px;
     text-align: center;
     font: 42px bold;
-    font-family: 'cormorant_scbold', bold;
+    font-family: 'cormorant_scbold', serif;
 }
 
 .firstArticle img
