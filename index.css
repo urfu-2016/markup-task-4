@@ -23,7 +23,10 @@ body
     background-size: cover;
 }
 
-h1 h2 h3 p
+h1,
+h2,
+h3,
+p
 {
     margin: 0;
     text-align: center;
@@ -96,7 +99,9 @@ p:first-letter
     font: bold 1.6em Brigin;
 }
 
-.introduction .drug .content
+.introduction,
+.drug,
+.content
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
