@@ -23,28 +23,19 @@ body
     background-size: cover;
 }
 
-h1
+h1 h2 h3 p
 {
     margin: 0;
     text-align: center;
 }
 
-h2
+h4
 {
-    margin: 0;
-    text-align: center;
-}
 
-h3
-{
-    margin: 0;
-    text-align: center;
-}
-
-p
-{
-    margin: 0;
-    text-align: center;
+    width: .6em;
+    font: italic 1.3em Arial, sans-serif;
+    word-wrap: break-word;
+    float: left;
 }
 
 h1
@@ -63,16 +54,16 @@ header h1
     text-shadow: .03em .02em #696969;
 }
 
+q
+{
+    font: .95em Сhancelaresca, sans-serif;
+}
+
 header img
 {
     position: absolute;
     margin: 2.4em 3.5em;
     border: solid #222;
-}
-
-q
-{
-    font: .95em Сhancelaresca, sans-serif;
 }
 
 hr
@@ -89,15 +80,30 @@ main
     font-size: 1em;
 }
 
+figure.img figcaption
+{
+    font: italic;
+}
+
+figure.img
+{
+    margin: 0;
+    text-align: center;
+}
+
 p:first-letter
 {
     font: bold 1.6em Brigin;
 }
 
-.introduction
+.introduction .drug .content
 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
     column-rule: .15em solid #000;
+    -moz-column-rule: .15em solid #000;
+    -webkit-column-rule: .15em solid #000;
 }
 
 .biography
@@ -105,27 +111,13 @@ p:first-letter
     column-count: 1;
 }
 
-.quote
-{
-    margin: 1em;
-    float: right;
-}
-
 .finances
  {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     column-rule: .15em solid #000;
+    -moz-column-rule: .15em solid #000;
+    -webkit-column-rule: .15em solid #000;
     font-size: 1em;
-}
-
-.drug
-{
-    column-count: 2;
-    column-rule: .15em solid #000;
-}
-
-.content
-{
-    column-count: 2;
-    column-rule: .15em solid #000;
 }
