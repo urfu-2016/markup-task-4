@@ -36,56 +36,68 @@
         format('truetype');
 }
 
-.content
+.newspaper
 {
     border: 2px solid black;
     font-size: 20px;
     font-family: 'OldStandard';
 }
 
+.vertical-text
+{
+    word-wrap: break-word;
+    width: .7em;
+    left: 10px;
+    position: absolute;
+}
+
 .newspaper-name
 {
+    display: inline-block;
     font-size: 140px;
     font-family: 'Canterbury';
     text-align: center;
+    width: 98%;
 }
 
 .info-line
 {
-    width: 100%;
-    border-spacing: 0;
     font-size: 12px;
 }
 
 .service,
+.price,
+.town,
+.newspaper-number,
+.associated-press
+{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.newspaper-number
+{
+    text-align: left;
+}
+
 .price
 {
     text-align: right;
 }
 
-.town
-{
-    text-align: center;
-}
-
-.newspaper-number,
-.associated-press
-{
-    text-align: left;
-}
-
 .header-newspaper
 {
     font-family: 'Times New Roman', serif;
-    line-height: 1.2;
+    line-height: 1.2em;
     text-align: center;
     font-weight: bold;
     font-size: 150px;
 }
 
-div > p:first-letter
+article > p:first-letter
 {
-    font-size: 200%;
+    font-size: 2em;
     color: red;
 }
 
@@ -96,32 +108,55 @@ p
     margin: 0 3%;
 }
 
-.information
+article
 {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
     -webkit-column-rule: 1px solid black;
     -moz-column-rule: 1px solid black;
     column-rule: 1px solid black;
 }
 
+.raketa
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+main > div
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+main > div:first-child
+{
+    border-right: 1px solid black;
+}
+
+main > div:last-child
+{
+    border-left: 1px solid black;
+}
+
 .gagarin
 {
     width: 100%;
-    margin: 0 3%;
-    margin-left: 0;
 }
 
-figure
+.gagarin-face
 {
-    margin: 0;
-    margin-bottom: 10%;
+    margin: 0 3%;
+    display: inline-block;
+    width: 27%;
 }
 
 figcaption
 {
-    margin: 0 85%;
+    font-style: italic;
+    text-align: right;
 }
 
 h1
@@ -142,6 +177,8 @@ blockquote
     margin: 1.5em 10px;
     padding: .5em 10px;
     text-align: center;
+    -webkit-column-span: all;
+    column-span: all;
 }
 
 blockquote:before
@@ -163,23 +200,23 @@ blockquote:after
     vertical-align: -.45em;
 }
 
-.nightMode:checked ~ .content
+.nightMode:checked ~ .newspaper
 {
     background: #494949;
     color: #f9faff;
 }
 
-.smallSize:checked ~ .content .information
+.smallSize:checked ~ .newspaper main
 {
     font-size: smaller;
 }
 
-.bigSize:checked ~ .content .information
+.bigSize:checked ~ .newspaper main
 {
     font-size: larger;
 }
 
-.elite:checked ~ .content .information
+.elite:checked ~ .newspaper main
 {
     font-family: 'Special Elite';
 }
