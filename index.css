@@ -124,6 +124,11 @@ article
     column-span: all;
 }
 
+.raketa > img
+{
+    width: 100%;
+}
+
 main > div
 {
     display: inline-block;
