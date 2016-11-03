@@ -29,8 +29,8 @@
 
 .vertical-text
 {
-    transform: rotate(90deg);
-    transform-origin: left top 0;
+    width: .1em;
+    line-height: 1em;
 }
 
 h1
