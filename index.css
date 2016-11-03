@@ -1,7 +1,9 @@
 @font-face
 {
     font-family: 'cormorant_italic';
-    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2') format('woff2'), url('fonts/cormorantinfant-mediumitalic-webfont.woff') format('woff');
+    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2')
+        format('woff2'), url('fonts/cormorantinfant-mediumitalic-webfont.woff')
+        format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,7 +12,9 @@
 @font-face
 {
     font-family: 'cormorant_bold_italic';
-    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2') format('woff2'), url('fonts/cormorantinfant-bolditalic-webfont.woff') format('woff');
+    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2')
+        format('woff2'), url('fonts/cormorantinfant-bolditalic-webfont.woff')
+        format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,7 +23,9 @@
 @font-face
 {
     font-family: 'russo_oneregular';
-    src: url('fonts/russoone-regular-webfont.woff2') format('woff2'), url('fonts/russoone-regular-webfont.woff') format('woff');
+    src: url('fonts/russoone-regular-webfont.woff2')
+        format('woff2'), url('fonts/russoone-regular-webfont.woff')
+        format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,7 +34,9 @@
 @font-face
 {
     font-family: 'anonymous_proregular';
-    src: url('fonts/anonymouspro-regular-webfont.woff2') format('woff2'), url('fonts/anonymouspro-regular-webfont.woff') format('woff');
+    src: url('fonts/anonymouspro-regular-webfont.woff2')
+        format('woff2'), url('fonts/anonymouspro-regular-webfont.woff')
+        format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -37,25 +45,15 @@
 @font-face
 {
     font-family: 'rubik_mono_oneregular';
-    src: url('fonts/rubikmonoone-regular-webfont.woff2') format('woff2'), url('fonts/rubikmonoone-regular-webfont.woff') format('woff');
+    src: url('fonts/rubikmonoone-regular-webfont.woff2')
+        format('woff2'), url('fonts/rubikmonoone-regular-webfont.woff')
+        format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-.change-colors-W2B:focus ~ main
-{
-    background-color: black;
-    color: white;
-}
-
-.change-colors-B2W:focus ~ main
-{
-    background-color: white;
-    color: black;
-}
-
-.big-header
+.header
 {
     font-family: rubik_mono_oneregular, sans-serif;
     font-size: 40px;
@@ -68,12 +66,6 @@ body
     width: 800px;
 }
 
-.first-paragraph:first-letter
-{
-    font-size: 30px;
-    font-weight: bold;
-}
-
 .paragraph
 {
     margin: 0;
@@ -83,21 +75,26 @@ body
     text-indent: 5%;
 }
 
-.header
+.subtitle
 {
     font-family: russo_oneregular, sans-serif;
     font-size: 20px;
     column-span: all;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .article
 {
+    margin: 0;
     column-width: 150px;
+    -moz-column-width: 150px;
+    -webkit-column-width: 150px;
     column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    -webkit-column-rule: 1px solid black;
 }
 
-.first-paragraph :first-letter
+.paragraph:first-of-type:first-letter
 {
     font-size: 30px;
     font-weight: bold;
@@ -115,13 +112,13 @@ body
     font-style: italic;
 }
 
-.subtitle
+.sub-subtitle
 {
     font-family: russo_oneregular, sans-serif;
     font-size: 18px;
 }
 
-.header-example
+.subtitle-example
 {
     font-family: russo_oneregular, sans-serif;
     font-size: 16px;
@@ -136,36 +133,31 @@ body
 .vertical-header
 {
     width: 18px;
-    height: 100px;
     line-height: 18px;
     word-break: break-all;
     display: inline-block;
     padding: 0;
     margin: 0;
+    vertical-align: top;
 
 }
 
-.student-block
+.student-figure
 {
-    column-span: all;
-    width: 655px;
+
+    width: 800px;
     border: 1px solid black;
-    margin: 0 auto;
-}
-
-.part-picture
-{
-    height: 470px;
-    width: 655px;
-    display: block;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Rick_Astley_impersonator_rickrolling_a_basketball_game.png');
-
+    margin: 0;
 }
 
 .article-vertical-header
 {
     display: inline-block;
     width: 97%;
-    column-count: 3;
+    -moz-column-width: 200px; /* Для Firefox */
+    -webkit-column-width: 200px; /* Для Safari и Chrome */
+    column-width: 200px;
     column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    -webkit-column-rule: 1px solid black;
 }
