@@ -36,12 +36,10 @@
         format('truetype'), url('fonts/ArchivoNarrow.eot') format('embedded-opentype');
 }
 
-html,
 body
 {
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    height: 100%;
     width: 1366px;
     margin: 0 auto;
     line-height: 1.15;
@@ -49,16 +47,10 @@ body
 
 @media (max-width: 1455px)
 {
-    html,
     body
     {
-        margin-left: 25px;
+        margin-left: 40px;
     }
-}
-
-.border-box
-{
-    box-sizing: border-box;
 }
 
 h1,
@@ -83,7 +75,6 @@ h2
 .centered
 {
     text-align: center;
-    margin: 0 auto;
 }
 
 p
@@ -99,26 +90,29 @@ p
     text-align: right;
 }
 
-.night-mode:checked ~ div
+.night-mode:checked ~ header,
+.night-mode:checked ~ main
 {
     background: black;
     color: white;
 }
 
-.different-font:checked ~ div
+.different-font:checked ~ header,
+.different-font:checked ~ main
 {
-    font-family: 'Comic Sans MS';
-    font-size: 12px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-.large-font:checked ~ div
+.large-font:checked ~ header div,
+.large-font:checked ~ main
 {
-    font-size: larger;
+    font-size: 110%;
 }
 
-.small-font:checked ~ div
+.small-font:checked ~ header div,
+.small-font:checked ~ main
 {
-    font-size: smaller;
+    font-size: 90%;
 }
 
 header
@@ -136,7 +130,8 @@ header h3
 .head div,
 .head h1
 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .index,
@@ -177,16 +172,10 @@ header table td:first-child
     white-space: nowrap;
 }
 
-.clearfix:after
-{
-    content: '';
-    clear: both;
-    display: block;
-}
-
 .info div
 {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     width: 24%;
 }
 
@@ -203,6 +192,11 @@ header table td:first-child
 .info div:nth-child(odd)
 {
     font-size: 20px;
+}
+
+article
+{
+    box-sizing: border-box;
 }
 
 article:not(:last-of-type)
@@ -232,16 +226,16 @@ article p:first-of-type:first-letter
 
 .col-2
 {
-    column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
+    column-count: 2;
 }
 
 .col-3
 {
-    column-count: 3;
     -webkit-column-count: 3;
     -moz-column-count: 3;
+    column-count: 3;
 }
 
 .author
@@ -278,7 +272,8 @@ blockquote:after
 .doctor-strange,
 .donald-glover
 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 30%;
 }
 
@@ -287,8 +282,6 @@ figure
     margin: 0;
     padding: 5px 0;
     border-bottom: 2px solid black;
-    -webkit-column-span: all;
-    column-span: all;
 }
 
 figcaption
@@ -311,38 +304,43 @@ figure img
     padding: 5px;
 }
 
+.want-to-buy h2
+{
+    padding-bottom: 14px;
+}
+
 .legend
 {
     display: block;
     cursor: pointer;
 }
 
-.legend-color
+.legend-item
 {
     color: #ff8000;
 }
 
-.yellow-color
+.item-level
 {
     color: #ffd100;
 }
 
-.green-color
+.special-effect
 {
     color: #1eff00;
 }
 
-.gold-color
+.gold
 {
     color: gold;
 }
 
-.silver-color
+.silver
 {
     color: silver;
 }
 
-.sienna-color
+.copper
 {
     color: sienna;
 }
@@ -373,7 +371,7 @@ figure img
     width: 100%;
 }
 
-.tooltip div
+.tooltip > div
 {
     position: absolute;
     bottom: 100%;
@@ -391,7 +389,8 @@ figure img
 
 .pixar-news
 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 40%;
 }
 
