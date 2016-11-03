@@ -1,37 +1,37 @@
 @font-face
 {
     font-family: Italy B;
-    src: local(italyb)
-        , url(Fonts/ItalyB.eot)
-        , url(Fonts/ItalyB.ttf);
+    src: local(italyb),
+         url(Fonts/ItalyB.eot),
+         url(Fonts/ItalyB.ttf);
 }
 
 @font-face
 {
     font-family: Marianna;
-    src: local(marianna)
-        , url(Fonts/Marianna.ttf);
+    src: local(marianna),
+         url(Fonts/Marianna.ttf);
 }
 
 @font-face
 {
     font-family: Roland-Decor;
-    src: local(roland-decor)
-        , url(Fonts/Roland-Decor.ttf);
+    src: local(roland-decor),
+         url(Fonts/Roland-Decor.ttf);
 }
 
 @font-face
 {
     font-family: Parisian;
-    src: local(parisian)
-        , url(Fonts/Parisian.ttf);
+    src: local(parisian),
+         url(Fonts/Parisian.ttf);
 }
 
 @font-face
 {
     font-family: Matreshka;
-    src: local(matreshka)
-        , url(Fonts/Matreshka.ttf);
+    src: local(matreshka),
+         url(Fonts/Matreshka.ttf);
 }
 
 aside
@@ -45,7 +45,7 @@ body
 {
     background: url(2.png) repeat-y
         , url(2.png) 100% 0 repeat-y;
-    background-size: 10px, 10px;
+    background-size: 10px;
     margin: 10px 40px;
 }
 
@@ -65,10 +65,8 @@ body
 
 .cat
 {
-    position: absolute;
-    top: 90px;
-    right: 250px;
-    line-height: 1px;
+    position: relative;
+    left: 500px;
 }
 
 p
@@ -91,10 +89,9 @@ p:first-letter
 
 .first_article
 {
-    column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
-
+    column-count: 2;
 }
 
 .first
@@ -102,8 +99,8 @@ p:first-letter
     letter-spacing: 3px;
     font-family: Marianna;
     font-weight: bold;
-    border-style: 2px, double;
     border: 1px solid black;
+    border-style: 2px, double;
 }
 
 figure
@@ -124,29 +121,28 @@ figcaption
 
 .last_article
 {
-    column-count: 3;
     -webkit-column-count: 3;
     -moz-column-count: 3;
+    column-count: 3;
 }
 
 .title
 {
-    margin: 1em 0 .5em;
+    /*margin: 1em 0 .5em;*/
     color: #343434;
     font-weight: normal;
     font-family: 'Ultra', sans-serif;
     font-size: 50px;
-    line-height: 42px;
     text-transform: uppercase;
     text-shadow: 0 2px white, 0 3px #777;
-    text-align: center;
+    text-align: right;
+    max-width: 700px;
 }
 
 .head
 {
-    column-count: 3;
-    column-rule: 2px solid #fff;
     border-bottom: 2px solid black;
+    width: 100%;
 }
 
 h2 
@@ -163,32 +159,29 @@ img
 
 .info
 {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     padding: 5px 0;
     margin-top: 5px;
     font-family: Italy B;
-    column-span: all;
 }
 
 .round
 {
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    box-shadow: 0 0 7px #666;
     width: 500px;
     height: 365px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 7px #666;
 }
 
 .left
 {
-    text-align: left;
+    text-align: center;
 }
 
 .right
 {
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -197,14 +190,19 @@ img
     font-family: Matreshka;
 }
 
+.tophead
+{
+    border-bottom: 1 px solid black;
+}
+
 .weather
 {
     margin: 3px;
     font-family: 'Italy B';
     float: left;
-    border-bottom: 1px solid black;
     display: inline-block;
-    width: 100%;
+    max-width: 700px;
+
 }
 
 .vertical
