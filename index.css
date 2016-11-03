@@ -4,6 +4,7 @@ body
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url('background1.png');
+    font-family: 'Bodoni MT';
 
 }
 
@@ -13,15 +14,16 @@ td
     border: 1px double black;
 }
 
-p
-{
-    font-family: 'Bodoni MT';
-}
-
 p:first-letter
 {
     font-family: 'Algerian';
     font-size: 200%;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
 }
 
 td
@@ -29,12 +31,6 @@ td
     filter: grayscale(100%);
     width: 20%;
     vertical-align: top;
-}
-
-img
-{
-    width: 100%;
-    height: 100%;
 }
 
 .bible td
@@ -70,7 +66,23 @@ blockquote
     margin: 0 auto;
 }
 
-input[name='font_type']:checked ~ table tbody tr td p
+.big_img
+{
+    width: 100%;
+    height: 15%;
+}
+
+input[name='font_type']:checked ~ table tr td
+{
+    font-family: 'Elephant';
+}
+
+input[name='font_type']:checked ~ table tr td figure div
+{
+    font-family: 'Elephant';
+}
+
+input[name='font_type']:checked ~ table caption
 {
     font-family: 'Elephant';
 }
@@ -82,7 +94,7 @@ input[name='modern_color']:checked ~ table tbody tr td
     color: #45161c;
 }
 
-input[name='font_size']:checked ~ table tbody tr td p
+input[name='font_size']:checked ~ table
 {
     font-size: 150%;
 }
