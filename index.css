@@ -50,6 +50,12 @@ body
     font-size: 27px;
 }
 
+.font-other:checked ~ .newspaper > .main-left-column,
+.font-other:checked ~ .newspaper > .main-right-column
+{
+    height: 1600px;
+}
+
 .back-other:checked ~ .newspaper
 {
     background: #aaa;
