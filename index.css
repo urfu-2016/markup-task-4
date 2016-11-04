@@ -17,16 +17,17 @@ h3
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+body,
 .main-header,
-.website-news h2
+.website-news h2,
+.main-entry-img figcaption,
+h4
 {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
 }
 
-.entry-img figcaption,
-footer p,
-h4
+footer p
 {
     font-family: 'Marck Script', cursive;
 }
@@ -41,13 +42,31 @@ body
 body
 {
     background: #f8cfa7 url('img/page-background.png');
-    font-family: sans-serif;
     font-size: 14px;
+}
+
+a, a:link, a:visited
+{
+    color: #000;
+}
+
+a[href]:hover
+{
+    text-decoration: none;
 }
 
 figure
 {
     margin: 0 0 12px;
+    text-align: center;
+}
+
+figcaption
+{
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 8px;
+    text-transform: uppercase;
 }
 
 img
@@ -64,8 +83,8 @@ header
 
 h4
 {
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 15px;
+    font-weight: bold;
     margin: 12px 0;
 }
 
@@ -78,23 +97,23 @@ header h1
 {
     font-size: 80px;
     font-weight: normal;
-    margin: 24px 0;
+    margin: 0;
     text-align: center;
+}
+
+.newspaper-table
+{
+    border-spacing: 0;
+    width: 100%;
 }
 
 .weather-today,
 .quote-of-day
 {
     border: 2px solid #000;
-    float: right;
     font-size: 13px;
     padding: 16px;
     width: 240px;
-}
-
-.quote-of-day
-{
-    float: left;
 }
 
 .quote-of-day .author
@@ -104,14 +123,16 @@ header h1
     text-align: right;
 }
 
-.weather-today p
+.weather-value,
+.weather-stat
 {
-    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .weather-value
 {
-    float: left;
+    width: 30%;
 }
 
 .weather-temperature
@@ -128,13 +149,14 @@ header h1
 
 .weather-stat
 {
-    margin-left: 80px;
+    width: 69%;
 }
 
-p.date
+.today
 {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    display: block;
     font-family: monospace;
     font-size: 13px;
     letter-spacing: 2px;
@@ -153,7 +175,9 @@ p.date
     text-align: justify;
 }
 
-.multicolumn h2:first-child
+.weather-today p,
+.multicolumn h2:first-child,
+.main-entry p:first-child
 {
     margin-top: 0;
 }
@@ -166,39 +190,60 @@ p.date
 
 .main-entry-section
 {
+    margin: 0 24px;
     overflow: hidden;
     position: relative;
 }
 
-figcaption
+.attention,
+.main-entry-img-cell,
+.main-entry-cell
 {
-    font-family: monospace;
-    font-size: 12px;
-    padding-top: 8px;
+    vertical-align: top;
+}
+
+.attention
+{
+    width: 2em;
+}
+
+.attention p
+{
+    font-size: 28px;
+    margin: 0;
+    padding-right: 1em;
+    text-align: center;
     text-transform: uppercase;
+    width: 1em;
+    word-wrap: break-word;
 }
 
-.entry-img
+.main-entry-img-cell
 {
-    float: left;
-    width: 33%;
+    width: 470px;
 }
 
-.entry-img figcaption
+.main-entry-img
 {
-    font-size: 20px;
-    padding: 4px 12px;
+    padding-right: 24px;
+}
+
+.main-entry-img figcaption
+{
+    font-size: 17px;
+    padding: 8px 0;
     text-align: right;
+    text-transform: none;
+}
+
+.main-entry
+{
+    padding: 0;
 }
 
 .main-entry p
 {
     line-height: 20px;
-}
-
-.main-entry p:first-child
-{
-    margin-top: 0;
 }
 
 .website-news
@@ -213,13 +258,15 @@ figcaption
 .website-news h2:first-child
 {
     column-span: all;
-    margin: 1em 0;
+    margin: 0;
+    padding: 1em 0;
     text-align: center;
 }
 
 .website-news ul
 {
     list-style-type: square;
+    margin: 0;
     padding-left: 16px;
 }
 
@@ -228,6 +275,7 @@ figcaption
     break-inside: avoid;
     break-before: column;
     break-after: column;
+    padding-bottom: 8px;
 }
 
 footer
