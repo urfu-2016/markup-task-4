@@ -27,6 +27,7 @@ h1,
 h3,
 header,
 div,
+section,
 p
 {
     padding: 0;
@@ -39,7 +40,7 @@ html
     margin: 0 1%;
 }
 
-thead
+.rate thead
 {
     text-align: center;
 }
@@ -49,7 +50,8 @@ header
     width: 100%;
 }
 
-header div
+.header,
+.subinfo
 {
     width: 100%;
 }
@@ -61,7 +63,7 @@ header h1
     margin-bottom: 1%;
 }
 
-header div:last-child
+header > div:last-child
 {
     margin-bottom: 3px;
 }
@@ -81,7 +83,7 @@ header div:last-child
     font: .5rem Arial, sans-serif;
 }
 
-h1
+.header h1
 {
     width: 59%;
     font: 5rem Cloister Black, sans-serif;
@@ -127,7 +129,7 @@ h1
     font-size: 1.3rem;
 }
 
-.main
+main
 {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -137,39 +139,40 @@ h1
     column-rule: 2px solid black;
 }
 
-.article
+.paper
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    break-inside: avoid;
     break-after: column;
+    break-inside: avoid;
 }
 
 .nobreak
 {
     break-inside: avoid;
+    page-break-inside: avoid;
 }
 
-.col3
+.column-3
 {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
 }
 
-.article h3
+.paper h3
 {
     text-align: center;
     font-size: 1.1rem;
 }
 
-.article p
+.paper p
 {
     font-size: .8rem;
 }
 
-.imgblock
+.img-block
 {
     padding: 4px;
     border-top: 2px solid black;
@@ -180,23 +183,23 @@ h1
     text-align: center;
 }
 
-.imgblock img
+.img-block img
 {
     width: 100%;
 }
 
-.imgblock p
+.img-block p
 {
     font-size: 1rem;
 }
 
 .allcols
 {
-    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
-.article p:first-of-type:first-letter
+.paper p:first-of-type:first-letter
 {
     font-family: Roland, serif;
     font-size: 1.5rem;
