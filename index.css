@@ -6,9 +6,20 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+@font-face {
+    font-family: "AlexandraScriptRegular";
+    src: url("AlexandraScriptRegular.eot");
+    src: url("AlexandraScriptRegular.eot?#iefix")format("embedded-opentype"),
+    url("AlexandraScriptRegular.woff") format("woff"),
+    url("AlexandraScriptRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body
 {
     background: papayawhip;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1
@@ -72,6 +83,17 @@ h3,
 {
     font-size: 200%;
     font-weight: bold;
+}
+
+.great-speach
+{
+    font-family: "AlexandraScriptRegular";
+    font-size: 60px;
+}
+
+.great-speach .sign
+{
+    text-align: right;
 }
 
 .image
