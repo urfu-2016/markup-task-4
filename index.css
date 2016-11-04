@@ -21,8 +21,8 @@ body
 {
     background-image: url(http://bgfons.com/upload/paper_texture331.jpg);
     background-repeat: repeat;
-    background-size: 100%;
     -webkit-background-size: 100%;
+    background-size: 100%;
 }
 
 .twocolumn,
@@ -79,6 +79,7 @@ main p:first-letter
     font-family: Exo, sans-serif;
     text-transform: uppercase;
     -webkit-column-span: all;
+    column-span: all;
 }
 
 .head2
@@ -94,13 +95,6 @@ img
     margin: 10px 15px;
     width: 400px;
     height:270px;
-}
-
-header
-{
-    padding: 0;
-    text-align: center;
-    width: 100%;
 }
 
 .main-header
@@ -125,10 +119,10 @@ header
 
 .author
 {
-    font: 1.1em 'Bree Serif', serif;
+    font: 17px 'Bree Serif', serif;
     line-height: 20px;
     padding-top: 10px;
-    float: right;
+    text-align: right;
 }
 
 .more
