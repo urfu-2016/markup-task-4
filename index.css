@@ -10,7 +10,8 @@ body
     src: url(CormorantInfant-Bold.ttf);
 }
 
- P:first-letter {
+P:first-letter
+{
     font-family: 'Domine', cursive;
     font-size: 200%;
     color: red;
@@ -25,7 +26,7 @@ html
 {
     word-break: break-word;
     float: left;
-    margin: 0.8%;
+    margin: 1%;
     width: 13px;
     word-wrap: break-word;
     letter-spacing: 5px;
@@ -85,21 +86,21 @@ h1
 article.one
 {
     -moz-column-count: 4;
-         column-count: 4;
+    column-count: 4;
     -moz-column-width: 300px;
-         column-width: 300px;
+    column-width: 300px;
     -moz-column-rule: 2px solid #000;
-         column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
 
 article.two
 {
     -moz-column-count: 4;
-         column-count: 4;
+    column-count: 4;
     -moz-column-width: 300px;
-         column-width: 300px;
+    column-width: 300px;
     -moz-column-rule: 2px solid #000;
-         column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
 }
 
 main p,
@@ -132,14 +133,15 @@ h3
     font-size: 27px;
 }
 
-.subtitle {
-    margin: 20px 20px;
+.subtitle
+{
+    margin: 20px;
 }
 
 h2
 {
     -moz-column-span: all;
-         column-span: all;
+    column-span: all;
     width: 500px;
     font-family: 'Pacifico', cursive;
     font-size: 30px;
