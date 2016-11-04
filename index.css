@@ -1,0 +1,50 @@
+html {
+    background-image: url("https://im0-tub-ru.yandex.net/i?id=a4174638e06b66f257903f66ea5b638b&n=33&h=215&w=284")
+}
+header {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-variant: normal;
+}
+
+.articles {
+    -moz-column-count: 3;
+    -moz-column-rule: 2px solid;
+    -moz-column-gap: 100px;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 2px solid;
+    text-align: left;
+    margin: 2% 3%;
+}
+
+h3 {
+    font-family: 'Oldenburg', cursive;
+    text-align: center;
+    letter-spacing: .5em;
+}
+
+main article {
+    line-height: 20px;
+}
+
+main article p:first-of-type:first-letter {
+    font-family: 'Sacramento', cursive;
+    font-size: 33px;
+    font-weight: 800;
+}
+
+main article p {
+    font-family: 'Kaushan Script', cursive;
+    text-align: justify;
+}
+
+.date {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    float: left;
+    margin: 3%;
+}
