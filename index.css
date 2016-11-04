@@ -48,13 +48,13 @@ header
 .news-item
 {
     -moz-column-count: 3;
-    -moz-column-gap: 40px;
-    -moz-column-rule-style: solid;
     -webkit-column-count: 3;
-    -webkit-column-gap: 40px;
-    -webkit-column-rule-style: solid;
     column-count: 3;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
     column-gap: 40px;
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
     column-rule-style: solid;
 }
 
@@ -68,7 +68,7 @@ header
     display: inline-block;
 }
 
-.resource-links-block
+.links
 {
     width: 100%;
     text-align: center;
@@ -76,7 +76,7 @@ header
     vertical-align: top;
 }
 
-.resource-links
+.link
 {
     font-family: 'Kaushan Script', cursive;
     color: red;
@@ -84,7 +84,7 @@ header
     display: table-cell;
 }
 
-.resource-links:hover
+.link:hover
 {
     -webkit-transform: scale(1.5);
     -ms-ransform: scale(1.5);
@@ -106,9 +106,8 @@ a
     text-align: left;
     font-family: 'PT Mono', monospace;
     box-shadow: 0 0 0 7px #4e342e, 0 0 10px 7px #b3c4bb;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+    hyphens: auto;
+    text-transform: uppercase;
 }
 
 .title:first-letter,
@@ -128,22 +127,22 @@ a
     color: red;
 }
 
-.item-paper
+.report
 {
     padding: 5px;
     color: #d84315;
     text-align: justify;
     font-family: 'RuslanDisplay', cursive;
     word-break: normal;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .quote
 {
     text-align: center;
     border: 2px dotted #263238;
+    hyphens: auto;
+    margin: 0;
 }
 
 .quote-text
@@ -151,7 +150,7 @@ a
     color: #607d8b;
 }
 
-.item-paper:nth-child(2n + 1)
+.report:nth-child(2n + 1)
 {
     text-align: right;
     color: #5d4037;
@@ -182,13 +181,13 @@ a
     border-left: 1px solid;
 }
 
-.list-card
+.cards-list
 {
     list-style: none;
     padding: 0;
 }
 
-.list-card li
+.cards-list .card
 {
     margin: 10px 0;
     padding: 5px;
@@ -198,12 +197,12 @@ a
     letter-spacing: 2px;
 }
 
-.list-card .average-card
+.cards-list .average-card
 {
     border-color: #bcaaa4;
 }
 
-.list-card .dark-card
+.cards-list .dark-card
 {
     border-color: #a1887f;
 }
