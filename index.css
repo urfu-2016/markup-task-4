@@ -59,9 +59,14 @@
     src: url('fonts/Lobster/Lobster-Regular.ttf');
 }
 
-input[id='font_size']:checked ~ main
+input[name='font_size'][value='large']:checked ~ main
 {
     font-size: 1.3em;
+}
+
+input[name='font_size'][value='small']:checked ~ main
+{
+    font-size: .7em;
 }
 
 input[id='font_family']:checked ~ main
@@ -110,6 +115,7 @@ h1
     text-align: center;
     text-transform: capitalize;
     column-span: all;
+    -moz-column-span: all;
 }
 
 p
@@ -163,7 +169,6 @@ figure
 figure img
 {
     width: 100%;
-    height: 200%;
     display: block;
 }
 
