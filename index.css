@@ -19,10 +19,14 @@ header
 main
 {
     column-count: 4;
-    -moz-column-count: 4; /* Firefox */
-    -webkit-column-count: 4; /* Safari, Google */
     column-gap: 20px;
     column-rule: 2px solid black;
+    -moz-column-count: 4; /* Firefox */
+    -moz-column-gap: 20px;
+    -moz-column-rule: 2px solid black;
+    -webkit-column-count: 4; /* Safari, Google */
+    -webkit-column-gap: 20px;
+    -webkit-column-rule: 2px solid black;
     padding-top: 20px;
     text-align: justify;
 }
