@@ -17,13 +17,44 @@
         format('woff'), url(fonts/OfficinaSerifBold.eot) format('eot');
 }
 
+.topic h1
+{
+    font-family: ImpactRegular, Arial;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.appeal
+{
+    font-family: OfficinaSerifBold, sans-serif;
+    letter-spacing: .4em;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.caption
+{
+    font-family: YesevaOne, Helvetica;
+    white-space: nowrap;
+    word-break: normal;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: .4em;
+}
+
 .vertical
 {
     vertical-align: top;
     display: inline-block;
     width: 3%;
     word-wrap: break-word;
-    letter-spacing: 100px;
+    letter-spacing: 6em;
     overflow: hidden;
 }
 
@@ -33,7 +64,7 @@
     display: block;
     text-align: center;
     outline: 2px solid #000;
-    font-size: 20px;
+    font-size: 1.5em;
     width: 98%;
     margin-bottom: 2px;
     margin-top: 3px;
@@ -44,16 +75,6 @@
     display: inline-block;
     vertical-align: top;
     width: 100%;
-}
-
-h1
-{
-    font-family: ImpactRegular, Arial;
-    text-transform: uppercase;
-    font-size: 40px;
-    margin: 0 auto;
-    font-weight: bolder;
-    text-align: justify;
 }
 
 .release,
@@ -75,38 +96,25 @@ h1
 
 .to
 {
-    font-weight: bold;
-    font-style: arial;
-    font-size: 15px;
+    font: bold 1em arial;
     text-align: center;
-}
-
-.appeal
-{
-    font-family: OfficinaSerifBold, sans-serif;
-    letter-spacing: .4em;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-transform: uppercase;
 }
 
 .destination
 {
     word-break: normal;
     font-style: italic;
-    font-size: 14px;
+    font-size: 1em;
     text-align: center;
 }
 
-h2
+.topic h2,
+.content h2
 {
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 2em;
     margin: 0 auto;
-    text-align: justify;
 }
 
 .logo,
@@ -129,19 +137,18 @@ h2
     display: inline-block;
     text-indent: 0;
     text-align: right;
-    font-size: 13px;
+    font-size: 1em;
 }
 
 .from
 {
     text-align: right;
     font-weight: bold;
-
 }
 
 .sign
 {
-    font-size: 15px;
+    font-size: 1em;
     margin: 0 auto;
     text-align: center;
 }
@@ -155,7 +162,7 @@ h2
 
 .time-column
 {
-    font-size: 9px;
+    font-size: .75em;
     -moz-column-count: 2;
     column-count: 2;
     -moz-column-rule: 1px solid #000;
@@ -170,13 +177,13 @@ h2
     column-rule: 1px solid #000;
     -moz-column-width: auto;
     column-width: auto;
-    font-size: 11px;
+    font-size: .8em;
     display: block;
 }
 
 .caption-after
 {
-    font-size: 35px;
+    font-size: 2.2em;
     text-transform: uppercase;
     font-style: oblique;
 }
@@ -191,7 +198,7 @@ h2
 .big-font:checked ~ section,
 .big-font:checked ~ section p
 {
-    font-size: 15px;
+    font-size: 1.1em;
 }
 
 .change-font:checked ~ header,
@@ -203,16 +210,6 @@ h2
 .right-content
 {
     display: inline-block;
-}
-
-.caption
-{
-    white-space: nowrap;
-    word-break: normal;
-    font-size: 27px;
-    font-weight: bold;
-    letter-spacing: .4em;
-    font-family: YesevaOne, Helvetica;
 }
 
 .content
@@ -235,7 +232,7 @@ h2
 .container
 {
     word-break: normal;
-    font-size: 14px;
+    font-size: .85em;
     padding: 40px;
     max-width: 800px;
     margin: 0 auto;
