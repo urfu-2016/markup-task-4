@@ -1,0 +1,117 @@
+main {
+    font-size: 13px;
+    text-align: justify;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    column-rule: 2px solid black;
+    display:inline-block;
+    white-space: normal;
+}
+
+.news-header {
+    font-size: 80px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Ultra', serif;
+}
+.news-header-small {
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: left;
+    letter-spacing: 14px;
+    font-family: 'Oranienbaum', serif;
+}
+IMG.fig {
+    float: left;
+    padding: 15px;
+}
+hr.main {
+    border: none;
+    background-color: black;
+    color: black;
+    height: 20px;
+}
+hr.secondary {
+    border: none;
+    background-color: grey;
+    color: grey;
+    height: 3px;
+}
+.article-header {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 1%;
+}
+article {
+    font-family: 'Roboto Slab', serif;
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+    column-width: 100px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    display:inline-block;
+    text-indent: 1.5em;
+}
+
+article:first-letter {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.footnote {
+    background: #696969;
+    color: white;
+    display:inline-block;
+    float: right;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 15px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.block-1 {
+    margin-top: 5px;
+    padding: 5px;
+    width: 180px;
+    border: 7px double black;
+    font-size: 15px;
+    display:inline-block;
+}
+.block-2 {
+    margin-top: 5px;
+    padding: 5px;
+    width: 390px;
+    font-size: 17px;
+    border: 5px ridge darkgrey;
+    float: right;
+    text-align: justify;
+    margin-right: 10px;
+    font-family: 'Oranienbaum', serif;
+}
+aside {
+    float: right;display:inline;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+li {
+    font-weight: bold;
+    font-size: 17px;
+}
+
