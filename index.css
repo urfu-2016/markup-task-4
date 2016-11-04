@@ -23,6 +23,7 @@ main
     text-transform: uppercase;
     font-family: 'Ultra', serif;
 }
+
 .news-header-small
 {
     padding-top: 20px;
@@ -31,11 +32,13 @@ main
     letter-spacing: 14px;
     font-family: 'Oranienbaum', serif;
 }
+
 IMG.fig
 {
     float: left;
     padding: 15px;
 }
+
 hr.main
 {
     border: none;
@@ -43,6 +46,7 @@ hr.main
     color: black;
     height: 20px;
 }
+
 hr.secondary
 {
     border: none;
@@ -50,6 +54,7 @@ hr.secondary
     color: grey;
     height: 3px;
 }
+
 .article-header
 {
     font-family: 'Playfair Display SC', serif;
@@ -60,6 +65,7 @@ hr.secondary
     display: inline-block;
     padding: 1%;
 }
+
 article
 {
     font-family: 'Roboto Slab', serif;
@@ -104,6 +110,7 @@ article:first-letter
     font-size: 15px;
     display: inline-block;
 }
+
 .block-2
 {
     margin-top: 5px;
@@ -116,6 +123,7 @@ article:first-letter
     margin-right: 10px;
     font-family: 'Oranienbaum', serif;
 }
+
 aside
 {
     float: right;
@@ -124,6 +132,7 @@ aside
     -moz-column-count: 2;
     column-count: 2;
 }
+
 li
 {
     font-weight: bold;
