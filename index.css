@@ -1,3 +1,9 @@
+@font-face {
+    font-family: myFont;
+    src: url(IndieFlower.woff);
+}
+
+
 header
 {
     text-align: center;
@@ -15,12 +21,16 @@ main
 {
     column-count: 4;
     column-rule: 2px solid #000;
+    -moz-column-count: 4;
+    -moz-column-rule: 2px solid #000;
 }
 
 main div.first p
 {
     column-count: 2;
     column-rule: 2px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 2px solid #000;
 }
 
 main div h2
@@ -46,16 +56,14 @@ main div.third h2
     word-spacing: -1.5px;
 }
 
-main div.second p
-{
-    column-count: 3;
-    column-rule: 2px solid #000;
-}
+
 
 main div.third p
 {
     column-count: 2;
     column-rule: 2px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 2px solid #000;
 }
 
 hr
@@ -81,7 +89,7 @@ h3 span
     font-size: .8em;
     font-style: normal;
     text-transform: lowercase;
-    font-family: Cambria;
+    font-family: myFont, cursive;
     text-decoration: overline;
 }
 
@@ -124,5 +132,5 @@ div.weather
 
 .change-style:checked ~ div
 {
-    font-family: Cambria;
+    font-family: myFont, cursive;
 }
