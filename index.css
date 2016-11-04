@@ -82,7 +82,7 @@ h2
 .vertical-text
 {
     margin: 0 auto;
-    width: 0.5em;
+    width: .5em;
     font-size: 1.5em;
     word-wrap: break-word;
 }
