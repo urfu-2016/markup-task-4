@@ -8,30 +8,48 @@
 </head>
 <body>
 <header>
+    <div class="vertical">2<br>0<br>1<br>6</div>
     <h1>The Slack Times</h1>
-    <div class="separator">
+    <section class="separator">
         УрФУ, Суббота, Октябрь 29, 2016
-    </div>
+    </section>
 </header>
-
-<div class="content">
-    <div class="columns first">
-        <div class="column">
-            <h2 class="header">Новости от Хрюнделя</h2>
+<main>
+    <section class="half">
+        <article class="column">
+            <div class="unbreakable">
+                <h2 class="column-span-all">Новости от Хрюнделя</h2>
+                <figure class="column-span-all">
+                    <img src="img/hruborgnews.png" alt="Новости хрюнделя" title="Новости на сайте">
+                    <figcaption>Скрин новостей</figcaption>
+                </figure>
+                <p>
+                    С 26.10.2016 числа все основные новости можно будет найти на основном
+                    <a href="http://hruborg.herokuapp.com/">сайте</a> спецкурса веб-разработки от
+                    <span class="ya">Яндекса</span>
+                </p>
+            </div>
+            <div class="unbreakable">
+                <p>
+                    Об этом стало известно после комментария Сергея Гоголева:
+                </p>
+                <blockquote>
+                    На hruborg.herokuapp.com теперь будем дублировать важные анонсы и
+                    новости
+                </blockquote>
+            </div>
+        </article>
+    </section>
+    <section class="half">
+        <article class="column">
+            <div class="unbreakable">
+                <h2>Саботаж или баг?</h2>
+                <p>
+                    Ночью с 25 на 26 октября произошёл сбой в системе Хрюнделя.
+                </p>
+            </div>
             <p>
-                С 26.10.2016 числа все основные новости можно будет найти на основном
-                <a href="http://hruborg.herokuapp.com/">сайте</a> спецкурса веб-разработки от
-                <span class="ya">Яндекса</span>
-            </p>
-            <figure>
-                <img src="img/hruborgnews.png" alt="Новости хрюнделя" title="Новости на сайте">
-                <figcaption>Скрин новостей</figcaption>
-            </figure>
-        </div>
-        <div class="column">
-            <h2 class="header">Саботаж или баг?</h2>
-            <p>
-                Ночью с 25 на 26 октября произошёл сбой в системе Хрюнделя. Некоторые из
+                Некоторые из
                 добросовестных студентов хотели сдать домашнее задание по Javascript. Все тесты
                 были пройдены, но оказалось, что Хрюндель после этого удалил злополучных студентов.
                 Некоторые склонны полагать, что это был чётко спланированный и чисто проведённый
@@ -39,37 +57,15 @@
                 <span class="ya">Яндекс</span> не последовало. Остаётся только надеяться, что это
                 действительно был баг, и все наши аккаунты ещё в безопасности.
             </p>
-        </div>
-    </div>
-
-    <div class="main columns column">
-        <figure class="image">
-            <img src="img/ss.jpg" alt="Скандал" title="Скандальная картинка">
-            <figcaption>Картинка, вызвавшая негативную реакцию</figcaption>
-        </figure>
-        <h2 class="header">Не успели начать...</h2>
-        <h3>Ментор пригрозил баном студентке за картинку</h3>
-        <p>
-            7 октября студентка спецкурса веб-разработки от <span class="ya">Яндекс</span>, решила
-            пошутить, выложив в подходящий для этого чат random забавную картинку. Олег Мохов, один
-            из менторов данного спецкурса, не оценил юмор. Дело в том, что данная картинка содержала
-            ненормативную лекцию и могла оскорбить некоторых людей. Вот, как комментирует свои слова
-            сам Олег:
-        </p>
-        <blockquote>За мат</blockquote>
-        <p>
-            А мы настоятельно рекомендуем вам быть внимательными со всеми материалами, что вы
-            выкладываете в Slack, даже если они развлекательного характера.
-        </p>
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <h2 class="header">Победители в розыгрышах от Олега Семичева</h2>
-            <p>
-                В конкурсе №1 победил Александр Загнойко, получив солнцезащитные очки от
-                преподавателя.
-            </p>
+        </article>
+        <article class="column">
+            <div class="unbreakable">
+                <h2>Победители в розыгрышах от Олега Семичева</h2>
+                <p>
+                    В конкурсе №1 победил Александр Загнойко, получив солнцезащитные очки от
+                    преподавателя.
+                </p>
+            </div>
             <p>
                 В конкурсе №2 победитель предпочёл остаться анонимом. Наши источники сообщают, что
                 он получил 2 значка, надписи на которых когда-то послужили проблемой для ведущего
@@ -77,45 +73,53 @@
             </p>
             <p>В конкурсе №3 победила Галина Назарова. Подробности не известны.</p>
             <p>Примите искренние поздравления от нашей редакции!</p>
-        </div>
-        <div class="column">
-            <h2 class="header">Они всё видят</h2>
-            <p>Максим Воронцов высказал пожелание</p>
-            <blockquote>
-                Было бы круто, если бы на
-                <a href="http://hruborg.herokuapp.com/">hruborg.herokuapp.com</a> при переходах
-                между `Javascript`, `Верстка`, `Demo` сохранялось не только состояние инпута поиска,
-                но и компаратор у коллекции студентов
-            </blockquote>
+        </article>
+    </section>
+    <section class="half last">
+        <article class="column">
+            <div class="unbreakable">
+                <h2>Они всё видят</h2>
+                <p>Максим Воронцов высказал пожелание</p>
+                <blockquote>
+                    Было бы круто, если бы на
+                    <a href="http://hruborg.herokuapp.com/">hruborg.herokuapp.com</a> при переходах
+                    между `Javascript`, `Верстка`, `Demo` сохранялось не только состояние инпута
+                    поиска, но и компаратор у коллекции студентов
+                </blockquote>
+            </div>
             <p>
                 И, о, чудо! Его желание исполнилось. Если у Вас есть какие-либо пожелания по поводу
                 курса, Вы можете смело их предлагать! Кто знает, может именно ваше желание
                 исполнится завтра!
             </p>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <h2 class="header">Реклама</h2>
-            <p>Кооперацию предлагает Tim Sokerin:</p>
-            <blockquote>
-                Если кто хочет - пытаюсь обрабатывать данные из екселя через C#
-                (wpf, Visual Studio 2015). Кому интересно, пишите в личку.
-            </blockquote>
-            <p>Есть конкуренты, правда тут просто пропоганда от Сергея Жигалова:</p>
-            <blockquote>
-                Если кто хочет - умею обрабатывать данные из екселя через JavaScript
-                (nodejs, WebStorm). Кому интересно, учите JavaScript!
-            </blockquote>
-        </div>
-        <div class="column">
-            <h2 class="header">Юмор на сегодня</h2>
-            <figure>
-                <img src="img/commits.jpeg" alt="Коммиты" title="Юмор">
-                <figcaption>Чем дальше в лес...</figcaption>
-            </figure>
-        </div>
-    </div>
-</div>
+        </article>
+        <article class="column">
+            <div class="unbreakable">
+                <h2>Реклама</h2>
+                <p>Кооперацию предлагает Tim Sokerin:</p>
+                <blockquote>
+                    Если кто хочет - пытаюсь обрабатывать данные из екселя через C#
+                    (wpf, Visual Studio 2015). Кому интересно, пишите в личку.
+                </blockquote>
+            </div>
+            <div class="unbreakable">
+                <p>Есть конкуренты, правда тут просто пропоганда от Сергея Жигалова:</p>
+                <blockquote>
+                    Если кто хочет - умею обрабатывать данные из екселя через JavaScript
+                    (nodejs, WebStorm). Кому интересно, учите JavaScript!
+                </blockquote>
+            </div>
+        </article>
+        <article class="column">
+            <div class="unbreakable">
+                <h2>Юмор на сегодня</h2>
+                <figure>
+                    <img src="img/commits.jpeg" alt="Коммиты" title="Надеюсь никто не заметит">
+                    <figcaption>Чем дальше в лес...</figcaption>
+                </figure>
+            </div>
+        </article>
+    </section>
+</main>
 </body>
 </html>
