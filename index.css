@@ -5,14 +5,27 @@
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 @import url(https://fonts.googleapis.com/css?family=Lora);
 
+@font-face
+{
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-CondBold.ttf);
+}
+
+@font-face
+{
+    font-family: Pompadur;
+    src: url(fonts/pompadur.ttf);
+}
+
 body
 {
     background-image: url(http://bgfons.com/upload/paper_texture331.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100%;
     -webkit-background-size: 100%;
 }
 
+.twocolumn,
 .page
 {
     -webkit-column-count: 3;
@@ -21,43 +34,43 @@ body
     -moz-column-rule: 2px solid #000;
     column-count: 3;
     column-rule: 2px solid #000;
-    -moz-hyphens: auto;
-    hyphens: auto;
 }
 
-.first
+.twocolumn
 {
     -webkit-column-count: 2;
-    -webkit-column-rule: 2px solid #000;
     -moz-column-count: 2;
-    -moz-column-rule: 2px solid #000;
     column-count: 2;
-    column-rule: 2px solid #000;
-    -moz-hyphens: auto;
-    hyphens: auto;
 }
 
 .first-img
 {
-    -webkit-column-span: all;
-    column-span: all;
+    -webkit-column-span: 1;
+    column-span: 1;
 }
 
-p
+.paragraph
 {
     margin: 0;
     padding: 10px;
     text-align: justify;
-    font: 15px Lora, serif;
-    line-height: 22px;
+    font: 15px/22px Lora, serif;
+}
+
+.paragraph2
+{
+    margin: 0;
+    padding: 10px;
+    text-align: justify;
+    font: 17px OpenSans, Arial, sans-serif;
 }
 
 main p:first-letter
 {
-    font: 2em Dancing Script, cursive;
+    font: 32px Dancing Script, cursive;
 }
 
-h1
+.head1
 {
     margin: 0;
     padding-top: 10px;
@@ -68,17 +81,19 @@ h1
     -webkit-column-span: all;
 }
 
-h2
+.head2
 {
     margin-top: 15px;
     margin-bottom: 2px;
-    font: 1.3em Yanone Kaffeesatz, sans-serif;
+    font: 30px Yanone Kaffeesatz, sans-serif;
     text-align: center;
 }
 
 img
 {
-    width: 100%;
+    margin: 10px 15px;
+    width: 400px;
+    height:270px;
 }
 
 header
@@ -88,9 +103,24 @@ header
     width: 100%;
 }
 
-.header
+.main-header
 {
-    width: 200px;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header h1
+{
+   margin: 20px auto;
+   font-size: 40px;
+   color: #fff;
+}
+
+.main-header h1 span
+{
+   background: #000;
+   padding: 5px 15px;
+   margin: 0 5px;
 }
 
 .author
@@ -103,7 +133,7 @@ header
 
 .more
 {
-    font: 1.1em Kaushan Script, cursive;
+    font: 17px Kaushan Script, cursive;
 }
 
 figure
@@ -113,18 +143,20 @@ figure
 
 figcaption
 {
-    font-size: .8em;
+    margin: 0 0 20px;
+    font-size: 12px;
     text-align: center;
 }
 
-.notab
+.nocolumn
 {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
 }
 
-.nopadding
+.blockquote
 {
-    padding-top: 0;
+    margin: 5px 10px;
+    font: 16px Pompadur, fantasy;
 }
