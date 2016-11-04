@@ -32,8 +32,9 @@ p
     padding-top: 5px;
 }
 
-.frontpages {
-    float:left;
+.frontpages
+{
+    float: left;
     text-align: justify;
 }
 
@@ -72,7 +73,8 @@ p
     text-align: center;
 }
 
-.gametime table {
+.gametime table
+{
     width: 100%;
 }
 
