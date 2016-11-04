@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+@font-face
+{
+    src: local('fonts/Ubuntu-Regular.ttf');
+}
+
 body
 {
     margin: 0 auto;
@@ -5,6 +12,7 @@ body
     width: 1366px;
     background: url(images/texture.png);
     background-repeat: repeat;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .text-center
@@ -17,6 +25,7 @@ body
     margin: 0;
     font-size: 5em;
     font-weight: bold;
+    font-family: 'Coiny', cursive;
 }
 
 .newspaper-name-container
@@ -111,6 +120,13 @@ body
 {
     margin-top: 0;
     text-indent: 8px;
+}
+
+.updown-paragraph
+{
+    padding-left: 45%;
+    width: 1px;
+    word-wrap: break-word;
 }
 
 article p:first-of-type:first-letter
