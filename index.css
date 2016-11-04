@@ -6,27 +6,15 @@ html
 header
 {
     font-family: 'Pacifico', cursive;
-    text-align: center;
     font-variant: normal;
-}
-
-.articles
-{
-    -moz-column-count: 3;
-    -moz-column-rule: 2px solid;
-    -moz-column-gap: 100px;
-    column-count: 3;
-    column-gap: 100px;
-    column-rule: 2px solid;
-    text-align: left;
-    margin: 2% 3%;
+    text-align: center;
 }
 
 h3
 {
     font-family: 'Oldenburg', cursive;
-    text-align: center;
     letter-spacing: .5em;
+    text-align: center;
 }
 
 main article
@@ -51,6 +39,18 @@ main article p
 {
     text-transform: uppercase;
     text-align: center;
+}
+
+.articles
+{
+    -moz-column-count: 3;
+    -moz-column-rule: 2px solid;
+    -moz-column-gap: 100px;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 2px solid;
+    text-align: left;
+    margin: 2% 3%;
 }
 
 img
