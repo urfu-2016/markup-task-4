@@ -4,27 +4,21 @@
 {
     font-family: 'Hagin Caps Medium';
     src: url('fonts/hagin-caps-medium.eot');
-    src: url(fonts/hagin-caps-medium.eot?#iefix) format('embedded-opentype'),
-        url(fonts/hagin-caps-medium.woff) format('woff'),
-        url(fonts/hagin-caps-medium.tff) format('truetype');
+    src: url(fonts/hagin-caps-medium.eot?#iefix) format('embedded-opentype'), url(fonts/hagin-caps-medium.woff) format('woff'), url(fonts/hagin-caps-medium.tff) format('truetype');
 }
 
 @font-face
 {
     font-family: 'Bermount Line';
     src: url('fonts/bemount-line.eot');
-    src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'),
-        url(fonts/bemount-line.woff) format('woff'),
-        url(fonts/bemount-line.tff) format('truetype');
+    src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'), url(fonts/bemount-line.woff) format('woff'), url(fonts/bemount-line.tff) format('truetype');
 }
 
 @font-face
 {
     font-family: 'Karton';
     src: url('fonts/karton.eot');
-    src: url(fonts/karton.eot?#iefix) format('embedded-opentype'),
-        url(fonts/karton.woff) format('woff'),
-        url(fonts/karton.tff) format('truetype');
+    src: url(fonts/karton.eot?#iefix) format('embedded-opentype'), url(fonts/karton.woff) format('woff'), url(fonts/karton.tff) format('truetype');
 }
 
 .image-container
