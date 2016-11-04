@@ -156,7 +156,7 @@ article .subtext
 
 .note div:first-child
 {
-    font-size: .5em;
+    font-size: .49em;
     font-style: italic;
     text-align: left;
 }
@@ -185,6 +185,7 @@ article .subtext
     display: inline-block !important;
     width: 440px;
     margin-right: 40px;
+    vertical-align: top;
 }
 
 .main-content .text-container
@@ -225,6 +226,7 @@ article .subtext
 
 .illustration
 {
+    position: relative;
     margin: 0;
     padding: 0;
     width: 440px;
@@ -239,8 +241,9 @@ article .subtext
 
 .illustration img
 {
-    position: absolute;
+    /*position: absolute;*/
     width: 440px;
+    /*top: 25px;*/
 }
 
 .illustration p
@@ -275,9 +278,8 @@ article .subtext
     border: 1px solid #111;
     border-radius: 3px;
     position: relative;
-    padding: 14px 0 0 5px;
+    padding: 14px 0 20px 5px;
     vertical-align: top;
-    height: 650px;
 }
 
 .info-box .box-label
