@@ -1,50 +1,49 @@
-article
+.newspaper
 {
     margin: 0 auto;
     padding: 3%;
     width: 768px;
 }
 
-h1
+.newspaper-header-text
 {
     text-align: center;
     font-size: 48px;
 }
 
-.copyright
-{
-    width: 100%;
-    display: flex;
-}
-
-.copyright-item
-{
-    margin: auto;
-}
-
-section
+.three-columns
 {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -o-column-count: 3;
     column-count: 3;
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+.newspaper-section
+{
     text-align: justify;
 }
 
-section > h2
+.newspaper-section p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+.section-header
 {
     text-align: center;
 }
 
-section > small
+.watermark
 {
     float: right;
     font-style: italic;
-}
-
-section p:first-of-type:first-letter
-{
-    font-size: 2em;
 }
 
 .quote
@@ -59,38 +58,38 @@ section p:first-of-type:first-letter
     content: '\"';
 }
 
-img
+.section-picture
 {
     width: 100%;
     background-color: #fff;
 }
 
-.font-size[id='smaller']:checked ~ article section
+.font-size[id='smaller']:checked ~ .newspaper .newspaper-section
 {
     font-size: smaller;
 }
 
-.font-size[id='normal']:checked ~ article section
+.font-size[id='normal']:checked ~ .newspaper .newspaper-section
 {
     font-size: normal;
 }
 
-.font-size[id='larger']:checked ~ article section
+.font-size[id='larger']:checked ~ .newspaper .newspaper-section
 {
     font-size: larger;
 }
 
-.font-type[id='serif']:checked ~ article section
+.font-type[id='serif']:checked ~ .newspaper .newspaper-section
 {
     font-family: serif;
 }
 
-.font-type[id='sans-serif']:checked ~ article section
+.font-type[id='sans-serif']:checked ~ .newspaper .newspaper-section
 {
     font-family: sans-serif;
 }
 
-.read-mode[id='night-mode']:checked ~ article
+.read-mode[id='night-mode']:checked ~ .newspaper
 {
     background-color: #111;
     color: #eee;
