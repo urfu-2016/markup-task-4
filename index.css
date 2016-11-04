@@ -57,7 +57,7 @@ blockquote
 
 .author
 {
-    font-style: bold;
+    font-weight: bold;
 }
 
 .streamer
@@ -72,7 +72,16 @@ blockquote
     height: 15%;
 }
 
-input[name='font_type']:checked ~ table tr td
+.vertical
+{
+    line-height: 1em;
+    width: .1em;
+    width: 15%;
+    font-family: monospace;
+    font-size: 300%;
+}
+
+input[name='font_type']:checked ~ table tr td p
 {
     font-family: 'Elephant';
 }
