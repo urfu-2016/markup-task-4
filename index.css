@@ -1,52 +1,72 @@
 @font-face
- {
+{
     font-family: Faster One;
-    src: url(fonts/FasterOne-Regular.ttf);
+    src: local('Faster One')
+        , url(fonts/FasterOne-Regular.ttf)
+        , url(fonts/FasterOne-Regular.woff);
 }
 @font-face
 {
     font-family: Ruslan Display;
-    src: url(fonts/RuslanDisplay.ttf);
+    src: local('Ruslan Display')
+        , url(fonts/RuslanDisplay.ttf)
+        , url(fonts/RuslanDisplay.woff);
 }
 @font-face
 {
     font-family: Lobster;
-    src: url(fonts/Lobster-Regular.ttf);
+    src: local('Lobster')
+        , url(fonts/Lobster-Regular.ttf)
+        , url(fonts/Lobster-Regular.woff);
 }
 @font-face
 {
     font-family: Neucha;
-    src: url(fonts/Neucha.ttf);
+    src: local('Neucha')
+        , url(fonts/Neucha.ttf)
+        , url(fonts/Neucha.woff);
 }
 @font-face
 {
     font-family: Marck Script;
-    src: url(fonts/MarckScript-Regular.ttf);
+    src: local('Marck Script')
+        , url(fonts/MarckScript-Regular.ttf)
+        , url(fonts/MarckScript-Regular.woff);
 }
 @font-face
 {
     font-family: Prosto One;
-    src: url(fonts/ProstoOne-Regular.ttf);
+    src: local('Prosto One')
+        , url(fonts/ProstoOne-Regular.ttf)
+        , url(fonts/ProstoOne-Regular.woff);
 }
 @font-face
 {
     font-family: Russo One;
-    src: url(fonts/RussoOne-Regular.ttf);
+    src: local('Russo One')
+        , url(fonts/RussoOne-Regular.ttf)
+        , url(fonts/RussoOne-Regular.woff);
 }
 @font-face
 {
     font-family: Pattaya;
-    src: url(fonts/Pattaya-Regular.ttf);
+    src: local('Pattaya')
+        , url(fonts/Pattaya-Regular.ttf)
+        , url(fonts/Pattaya-Regular.woff);
 }
 @font-face
 {
     font-family: Ledger;
-    src: url(fonts/Ledger-Regular.ttf);
+    src: local('Ledger')
+        , url(fonts/Ledger-Regular.ttf)
+        , url(fonts/Ledger-Regular.wofff);
 }
 @font-face
 {
     font-family: Anonymous Pro;
-    src: url(fonts/AnonymousPro-Italic.ttf);
+    src: local('Anonymous Pro')
+        , url(fonts/AnonymousPro-Italic.ttf)
+        , url(fonts/AnonymousPro-Italic.woff);
 }
 
 body
@@ -57,16 +77,13 @@ body
 
 header
 {
-    font-family: Faster One;
+    font: bold 100px Faster One;
     text-align: center;
-    font-weight: bold;
-    font-size: 100px;
 }
 
 h1
 {
-    font-family: Ruslan Display;
-    font-size: 30px;
+    font: 30px Ruslan Display;
     text-align: center;
 }
 
@@ -77,8 +94,7 @@ h2
 
 blockquote
 {
-    font-family: Marck Script;
-    font-size: 20px;
+    font: 20px Marck Script;
 }
 
 p
@@ -87,7 +103,7 @@ p
     white-space: normal;
 }
 
-p.first::first-letter
+p.first-paragraph::first-letter
 {
     font: italic 35px Times New Roman;
     margin: 5px;
@@ -100,7 +116,7 @@ p.first::first-letter
     font-family: Pattaya;
 }
 
-.young
+.young-player
 {
     font-family: Ledger;
 }
@@ -113,6 +129,7 @@ p.first::first-letter
 .club
 {
     font-family: Prosto One;
+    font-size: 13px;
 }
 
 .governing
@@ -130,7 +147,7 @@ p.first::first-letter
     text-decoration: underline;
 }
 
-pre
+.vertical-text
 {
     font-size: 30px;
     font-weight: bold;
@@ -142,29 +159,26 @@ footer
     margin-top: 15px;
 }
 
-div.mainArticle
+.main-article
 {
-    width: 1500px;
-    column-width: 400px;
+
+    column-width: 550px;
     column-rule: 2px solid;
-    float: left;
 }
 
-div.facts
+.facts
 {
-    width: 330px;
-    float: right;
-    column-count: 1;
-    border-bottom: 3px solid;
-    border-left: 3px solid;
-    padding-left: 2px;
+    border: 3px solid;
+    padding: 1%;
+    margin-top: 40px;
 }
 
-.imgCenter
+.img-center
 {
     display: block;
     margin: 0 auto;
-    width: 380px;
+    width: 90%;
+    border-radius: 20px 10px;
 }
 
 figcaption
