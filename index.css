@@ -14,13 +14,6 @@
     src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'), url(fonts/bemount-line.woff) format('woff'), url(fonts/bemount-line.tff) format('truetype');
 }
 
-@font-face
-{
-    font-family: 'Karton';
-    src: url('fonts/karton.eot');
-    src: url(fonts/karton.eot?#iefix) format('embedded-opentype'), url(fonts/karton.woff) format('woff'), url(fonts/karton.tff) format('truetype');
-}
-
 body
 {
     min-width: 1500px;
