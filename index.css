@@ -21,6 +21,12 @@
     src: url(fonts/karton.eot?#iefix) format('embedded-opentype'), url(fonts/karton.woff) format('woff'), url(fonts/karton.tff) format('truetype');
 }
 
+body
+{
+    min-width: 1500px;
+    margin: 0 auto;
+}
+
 .image-container
 {
     break-inside: avoid;
@@ -43,7 +49,8 @@
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-
+    page-break-after: always;
+    display: block;
     -moz-column-rule: 1px solid #000;
     -webkit-column-rule: 1px solid #000;
     column-rule: 1px solid #000;
@@ -72,8 +79,17 @@ h2
     text-align: center;
 }
 
+.vertical-text
+{
+    margin: 0 auto;
+    width: 0.5em;
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
 h3
 {
+    break-inside: avoid;
     font-family: 'Neucha', cursive;
     font-size: 1.5em;
 }
@@ -94,14 +110,19 @@ hr
     border-top: 6px double #000;
 }
 
+hr.single-line
+{
+    border-top: 1px solid #000;
+}
+
 input[value='small']:checked ~ main
 {
-    font-size: .7em;
+    font-size: .8em;
 }
 
 input[value='large']:checked ~ main
 {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 input[value='dark']:checked ~ main
@@ -132,8 +153,7 @@ input[value='handwriting']:checked ~ main header
 
 input[value='handwriting']:checked ~ main p
 {
-    font-family: 'Karton', cursive;
-    font-size: 1.2em;
+    font-family: 'Neucha', cursive;
 }
 
 input[value='handwriting']:checked ~ main h3
