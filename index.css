@@ -67,16 +67,22 @@ aside
 {
     width: 1%;
     word-wrap: break-word;
-    margin-left: 55%;
-    margin-top: -26%;
+    margin-left: 45%;
     font-size: 1.5em;
     font-family: 'Alfa Slab One', cursive;
     text-transform: uppercase;
 }
 
+ul
+{
+    font: 2.25em 'Crete Round', sans-serif;
+    margin-left: 30%;
+}
+
 .bond-image
 {
-    margin-left: -35%;
+    margin-left: -5%;
+    width: 100%;
 }
 
 .black-theme:checked ~ article
@@ -110,18 +116,12 @@ aside
     font-size: 1.2em;
 }
 
-ul
+.columns
 {
-    font: 2.25em 'Crete Round', sans-serif;
-    margin-left: 30%;
-}
-
-.columns-paragraps
-{
-    -moz-column-count: 4;
-    column-width: 200px;
     margin-left: 10%;
-    margin-right: 20%;
+    margin-right: 10%;
+    column-width: 10em;
+    -moz-column-count: 4;
 }
 
 footer
@@ -129,7 +129,6 @@ footer
     text-align: right;
     font: 15px 'Crete Round', serif;
     margin-right: 3%;
-    margin-top: -1%;
     margin-bottom: 2%;
 }
 
