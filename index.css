@@ -1,11 +1,46 @@
 body
 {
+    font-family: 'CormorantInfant';
     background: url(http://xn----btblbleucc2b.su/style/bg.jpg);
+}
+
+@font-face
+{
+    font-family: 'CormorantInfant';
+    src: url(CormorantInfant-Bold.ttf);
+}
+
+ P:first-letter {
+    font-family: 'Domine', cursive;
+    font-size: 200%;
+    color: red;
 }
 
 html
 {
     overflow-x: hidden;
+}
+
+.vertical_left
+{
+    word-break: break-word;
+    float: left;
+    margin: 0.8%;
+    width: 13px;
+    word-wrap: break-word;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+
+.vertical_right
+{
+    word-break: break-word;
+    float: right;
+    margin: 1.5%;
+    width: 15px;
+    word-wrap: break-word;
+    letter-spacing: 5px;
+    overflow: hidden;
 }
 
 .fact
@@ -34,6 +69,7 @@ h1
     margin: 5px;
     font-size: 50px;
     font-family: 'Pacifico', cursive;
+
 }
 
 .under-header
@@ -44,32 +80,38 @@ h1
 .date
 {
     position: relative;
-    left: 34%;
 }
 
-article
+article.one
 {
-    column-count: 5;
-    column-width: 300px;
-    column-rule: 2px solid #000;
-    -webkit-column-count: 5;
-    -webkit-column-rule: 2px solid #000;
-    -webkit-column-width: 300px;
-    -moz-column-count: 5;
+    -moz-column-count: 4;
+         column-count: 4;
     -moz-column-width: 300px;
+         column-width: 300px;
     -moz-column-rule: 2px solid #000;
+         column-rule: 2px solid #000;
 }
 
-article p,
+article.two
+{
+    -moz-column-count: 4;
+         column-count: 4;
+    -moz-column-width: 300px;
+         column-width: 300px;
+    -moz-column-rule: 2px solid #000;
+         column-rule: 2px solid #000;
+}
+
+main p,
 h2,
 h3
 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Domine', cursive;
     text-indent: 18px;
     font-size: 13px;
 }
 
-.autor
+.author
 {
     width: 50%;
     float: left;
@@ -90,9 +132,14 @@ h3
     font-size: 27px;
 }
 
+.subtitle {
+    margin: 20px 20px;
+}
+
 h2
 {
-    column-span: all;
+    -moz-column-span: all;
+         column-span: all;
     width: 500px;
     font-family: 'Pacifico', cursive;
     font-size: 30px;
@@ -114,7 +161,7 @@ div.content
 
 }
 
-.kosmonavt
+.roundedFrame
 {
     text-align: center;
     border-radius: 100px;
@@ -134,4 +181,6 @@ blockquote
 {
     column-count: 2;
     column-rule: 1.5px solid #000;
+    -moz-column-count: 2;
+    -moz-column-rule: 1.5px solid #000;
 }
