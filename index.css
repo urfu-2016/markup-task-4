@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
+@font-face
+{
+    font-family: Ubuntu Mono;
+    src: local(ubuntu mono), local('Ubuntu Mono'), url('font/ubuntu-mono.ttf')
+        format('ttf'), url('font/ubuntu-mono.woff') format('woff');
+}
+
+html
+{
+    font: 17px 'Roboto Slab', serif;
+}
+
+body
+{
+    width: 90%;
+    margin: auto;
+}
+
+.magazineTitle
+{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    column-span: all;
+    border-bottom: 1px solid #000;
+}
+
+.magazineTitle::first-letter
+{
+    color: #f00;
+}
+
+.info
+{
+    padding-right: 5px;
+}
+
+.content
+{
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -moz-column-rule: 1px solid #000;
+    float: left;
+    column-count: 2;
+    column-gap: 10px;
+    column-rule: 1px solid #000;
+    font-size: .9rem;
+    word-spacing: -.05rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    border: solid 1px black;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, transparent 5px, #bbb 5px, #bbb 6px,
+    transparent 6px), linear-gradient(135deg, transparent 5px, #ddd 5px,
+    #ddd 6px, transparent 6px), #e4c29f;
+    background-size: 14px 14px;
+}
+
+.content article
+{
+    text-indent: 10px;
+}
+
+.vertical
+{
+    float: left;
+    width: .7rem;
+    margin-left: -.9rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.vertical::first-letter
+{
+    color: #f00;
+    margin-left: -.7rem;
+}
+
+.referatTittle::first-letter
+{
+    color: #f00;
+    font-size: 1.5rem;
+}
+
+.innerImgText
+{
+    background-color: #fff;
+    height: 100px;
+    margin-left: 10px;
+    object-fit: contain;
+    padding-top: 30px;
+    width: 89%;
+}
+
+.innerImg
+{
+    height: 280px;
+    background-color: white;
+    object-fit: contain;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.referat
+{
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-rule: 1px dashed #000;
+    margin-right: 20px;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px dashed #000;
+}
+
+.bestReferat
+{
+    padding: 10px;
+    border: 1px solid #000;
+    margin-top: 0;
+    vertical-align: top;
+    column-span: all;
+}
+
+.referatTittle
+{
+    text-align: center;
+}
+
+input[name='font-size'][value='2']:checked ~ .content
+{
+    font-size: 110%;
+}
+
+input[name='font-size'][value='3']:checked ~ .content
+{
+    font-size: 120%;
+}
+
+input[name='font-family'][value='2']:checked ~ .content
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input[name='font-family'][value='3']:checked ~ .content
+{
+    font-family: 'Comfortaa', cursive;
+}
+
+input[name='font-family'][value='4']:checked ~ .content
+{
+    font-family: 'Marck Script', cursive;
+}
+
+input[name='font-family'][value='5']:checked ~ .content
+{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+input.night-mode:checked ~ .content
+{
+    color: white;
+    background: linear-gradient(45deg, transparent 5px, #555 5px, #555 6px,
+    transparent 6px), linear-gradient(135deg, transparent 5px, #333 5px,
+    #333 6px, transparent 6px), #444;
+    background-size: 14px 14px;
+}
