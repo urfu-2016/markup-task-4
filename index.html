@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> 
     <title>DeLorean DMC-12</title>
 </head>
-<body class="main2">
+<body>
     <span>Режим:</span>
-    <input type="radio" id="white-color" class="white-color main" name="color" checked>
+    <input type="radio" id="white-color" class="white-color" name="color" checked>
     <label for="white-color">Дневной</label>
-    <input type="radio" class="black-color main2" id="black-color" name="color">
+    <input type="radio" class="black-color" id="black-color" name="color">
     <label for="black-color">Ночной</label><br>
     <span>Размер шрифта:</span>
     <input type="radio" class="large-font" id="large-font" name="font-size">
@@ -22,17 +22,17 @@
     <input type="radio" class="small-font"  id="small-font" name="font-size">
     <label for="small-font">Маленький</label><br>
     <span>Тип шрифта:</span>
-    <input type="radio" class="first-font" id="first-font" name="font-type">
+    <input type="radio" class="first-font-family" id="first-font" name="font-type">
     <label for="first-font">Neucha, Philosopher</label>
-    <input type="radio" class="second-font" id="second-font" name="font-type" checked>
+    <input type="radio" class="second-font-family" id="second-font" name="font-type" checked>
     <label for="second-font">Marck Script, Comic Sans MS</label>
-    <header>
-        <h1>Литературная неделя</h1>  
+    <header class="main frame">
+        <h1 class="header first-font">Литературная неделя</h1>  
     </header>
-    <div>
+    <div class="main content">
         <div class="one-column column">
-            <article>
-                <h2>Под вечер</h2>
+            <article class="poem">
+                <h2 class="header second-font">Под вечер</h2>
                 <p>
                     Угрюмо шмель гудит, <span>толкаясь по стеклу...</span><br>
                     В окно зарница <span>глянула тревожно...</span><br>
@@ -46,10 +46,10 @@
                     И ладаном <span>благоухает.</span><br>
                 </p>
             </article>
-            <article>
-                <h2>* * *</h2>
+            <article class="poem">
+                <h2 class="header second-font">* * *</h2>
                 <p>
-                    На окне, серебряном от инея,<br>
+                    На окне, серебряном <span>от инея,</span><br>
                     За ночь хризантемы расцвели.<br>
                     В верхних стеклах - <span>небо ярко-синее</span><br>
                     И застреха в <span>снеговой пыли.</span>
@@ -61,19 +61,21 @@
                     Белым снегом <span>все запушено.</span>
                 </p>
                 <p>
-                    И все утро яркие и чистые<br>
-                    Буду видеть краски в вышине,<br>
+                    И все утро яркие <span>и чистые</span><br>
+                    Буду видеть краски <span>в вышине,</span><br>
                     И до полдня <span>будут серебристые</span><br>
                     Хризантемы на моем окне.
                 </p>
             </article>
         </div>
         <div class="thin-column column">
-            <article><p>Иван Бунин</p></article>
+            <article><p class="v-direction">Иван Бунин</p></article>
         </div>
         <div class="center-column column">
-            <article>
-                <h2>Отрывок из рассказа <q>Антоновский яблоки</q></h2>
+            <article class="story">
+                <h2 class="header all-columns second-font">
+                    Отрывок из рассказа <q>Антоновский яблоки</q>
+                </h2>
                 <p>Помню раннее, свежее, тихое утро... Помню боль&shy;шой, весь зо&shy;ло&shy;той,
                 под&shy;сох&shy;ший и по&shy;ре&shy;дев&shy;ший сад, помню кленовые аллеи, тон&shy;кий
                 аро&shy;мат опав&shy;шей лист&shy;вы и – за&shy;пах антоновских яблок, за&shy;пах мёда
@@ -90,10 +92,10 @@
                 од&shy;ним, но уж та&shy;ко&shy;во за&shy;ве&shy;де&shy;ние – ни&shy;ког&shy;да
                 ме&shy;ща&shy;нин не об&shy;ор&shy;вёт его, а ещё ска&shy;жет:
                 </p>
-                <blockquote>
+                <blockquote class="blockquote all-columns">
                     – Вали, ешь досыта, – делать нечего! На сливанье все мёд пьют.
                 </blockquote>
-                <figure>
+                <figure class="all-columns illustration">
                     <img src="images/apples.jpg" alt="">
                     <figcaption>Петров-Водкин Кузьма <q>Яблоки</q></figcaption>
                 </figure>
@@ -110,8 +112,8 @@
             </article>
         </div>
         <div class="one-column column">
-            <article>
-                <h2>* * *</h2>
+            <article class="poem">
+                <h2 class="header second-font">* * *</h2>
                 <p>
                     На даче тихо, ночь темна,<br>
                     Туманны звезды голубые<br>
@@ -125,7 +127,7 @@
                     Волны, вздыхающей <span>в дремоте.</span>
                 </p>
             </article>
-            <blockquote>
+            <blockquote class="blockquote frame">
                 <q>Какая радость — существовать! Только видеть, хотя бы видеть лишь один этот
                 дым и этот свет. Если бы у меня не было рук и ног и я бы только мог сидеть
                 на лавочке и смотреть на заходящее солнце, то я был бы счастлив этим. Одно
