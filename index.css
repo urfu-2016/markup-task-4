@@ -1,30 +1,25 @@
 @font-face
 {
     font-family: DreamScar;
-    src: local('DreamScar'), url(fonts/dreamscar.ttf) format('truetype'), url(fonts/DreamScar.woff) format('woff'),
-        url(fonts/dreamscar.woff2) format('woff2'), url(fonts/dreamscar.eot) format('eot');
+    src: local('DreamScar'), url(fonts/dreamscar.ttf) format('truetype'), url(fonts/DreamScar.woff) format('woff'), url(fonts/dreamscar.woff2) format('woff2'), url(fonts/dreamscar.eot) format('eot');
 }
 
 @font-face
 {
     font-family: DrPoDecorRu;
-    src: local('DrPoDecorRu'), url(fonts/drpodecorru.ttf) format('truetype'), url(fonts/drpodecorru.eot) format('eot'),
-        url(fonts/DrPoDecorRu.woff) format('woff'), url(fonts/drpodecorru.woff2) format('woff2');
+    src: local('DrPoDecorRu'), url(fonts/drpodecorru.ttf) format('truetype'), url(fonts/drpodecorru.eot) format('eot'), url(fonts/DrPoDecorRu.woff) format('woff'), url(fonts/drpodecorru.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: B52;
-    src: local('B52'), url(fonts/b52.ttf) format('truetype'), url(fonts/b52.eot) format('eot'),
-        url(fonts/B52.woff) format('woff'), url(fonts/b52.woff2) format('woff2');
+    src: local('B52'), url(fonts/b52.ttf) format('truetype'), url(fonts/b52.eot) format('eot'), url(fonts/B52.woff) format('woff'), url(fonts/b52.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: AdanaScript;
-    src: local('AdanaScript'), url(fonts/adana-script.ttf) format('truetype'),
-        url(fonts/adana-script.eot) format('eot'), url(fonts/Adanascript.woff) format('woff'),
-        url(fonts/adana-script.woff2) format('woff2');
+    src: local('AdanaScript'), url(fonts/adana-script.ttf) format('truetype'), url(fonts/adana-script.eot) format('eot'), url(fonts/Adanascript.woff) format('woff'), url(fonts/adana-script.woff2) format('woff2');
 }
 
 .focus
