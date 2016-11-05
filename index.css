@@ -20,7 +20,6 @@ div
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
-    column-width: 200px;
 }
 
 .wrapper
@@ -139,6 +138,7 @@ h1
     -moz-column-gap: 2px;
     -webkit-column-gap: 2px;
     column-gap: 2px;
+    column-width: 300px;
 }
 
 .left-bottom 
