@@ -1,13 +1,19 @@
 @font-face
 {
     font-family: 'kingthings_foundationregular';
-    src: url('Kingthings_Foundation-webfont.eot');
-    src: url('Kingthings_Foundation-webfont.eot?#iefix') format('embedded-opentype');
-    src: url('Kingthings_Foundation-webfont.woff') format('woff');
-    src: url('Kingthings_Foundation-webfont.ttf') format('truetype');
-    src: url('Kingthings_Foundation-webfont.svg#kingthings_foundationregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/Kingthings_Foundation-webfont.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Astro_cyr-lat';
+    src: url('fonts/Astro_cyr-lat.otf');
+}
+
+@font-face
+{
+    font-family: 'Veronica script Two';
+    src: url('fonts/Veronica script Two.ttf');
 }
 
 body
@@ -17,8 +23,8 @@ body
 
 h1
 {
-    font-family: 'kingthings_foundationregular', Arial, sans-serif;
-    font-size: 60px;
+    font: 60px 'kingthings_foundationregular', Arial;
+    
     text-align: center;
 }
 
@@ -28,24 +34,29 @@ h1
     text-transform: uppercase;
 }
 
-hr
+hr.double-line
 {
+    padding: 0;
     border: none;
-    background-color: black;
+    border-top: medium double black;
     color: black;
-    height: 2px;
 }
 
-hr.article
+hr
+{
+    border: 1px solid black;
+}
+
+hr.article-separator
 {
     width: 100px;
 }
 
 main
 {
-    column-count: 4;
     -webkit-column-count: 4;
     -moz-column-count: 4;
+    column-count: 4;
     -webkit-column-rule: 2px solid black;
     -moz-column-rule: 2px solid black;
     column-rule: 2px solid black;
@@ -53,16 +64,15 @@ main
 
 h3
 {
-    font-family: Andale Mono, monospace;
-    font-size: 25px;
+    font: bold  27px 'Astro_cyr-lat';
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 h4
 {
-    font-family: Courier New, monospace;
-    font-size: 20px;
+    font:  20px 'Veronica script Two';
     text-transform: uppercase;
     text-align: center;
 }
@@ -81,5 +91,32 @@ q
 
 p::first-letter
 {
-    font-size: 150%;
+    font-size: 25px;
+}
+
+.picture
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.picture figcaption
+{
+    text-align: center;
+}
+
+.vertical-text-left
+{
+    float: left;
+    font-size: 20px;
+    word-break: break-all;
+    width: 15px;
+}
+
+.vertical-text-right
+{
+    float: right;
+    font-size: 20px;
+    word-break: break-all;
+    width: 15px;
 }
