@@ -1,0 +1,225 @@
+@font-face 
+{
+    font-family: ImpactRegular;
+    src: local('ImpactRegular'), url(fonts/ImpactRegular.woff) 
+        format('woff'), url(fonts/ImpactRegular.eot) format('eot');
+}
+
+@font-face 
+{
+    font-family: YesevaOne;
+    src: local('YesevaOne'), url(fonts/YesevaOneRegular.woff)
+        format('woff'), url(fonts/YesevaOneRegular.eot) format('eot');
+}
+
+@font-face 
+{
+    font-family: OfficinaSerifBold;
+    src: local('OfficinaSerifBold'), url(fonts/OfficinaSerifBold.woff) 
+        format('woff'), url(fonts/OfficinaSerifBold.eot) format('eot');
+}
+
+.portrait
+{
+    display: inline-block;
+    width: 96%;
+    margin: 0;
+}
+
+.topic
+{
+    border-top: 2px solid #000;
+}
+
+.theme
+{
+    border-bottom: 2px solid #000;
+}
+
+.topic h1
+{
+    margin: 0;
+    font: bolder 2.5em ImpactRegular;
+}
+
+.appeal
+{
+    letter-spacing: .4em;
+    font: 2em OfficinaSerifBold;
+    text-align: center;
+    margin: 0;
+}
+
+.caption
+{
+    font: bold 2em YesevaOne, Helvetica;
+    letter-spacing: .4em;
+}
+
+.vertical
+{
+    display: inline-block;
+    width: 3%;
+    word-wrap: break-word;
+    letter-spacing: 6em;
+}
+
+.day
+{
+    display: block;
+    text-align: center;
+    outline: 2px solid #000;
+    font-size: 1.5em;
+    width: 98%;
+    margin-top: 3px;
+}
+
+.message
+{
+    display: inline-block;
+}
+
+.release,
+.cell
+{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    margin-bottom: 5px;
+}
+
+.release
+{
+    width: 100%;
+}
+
+.to
+{
+    font: bold 1em arial;
+    text-align: center;
+}
+
+.destination
+{
+    font: italic 1em Arial;
+    text-align: center;
+}
+
+.topic h2,
+.content h2
+{
+    font: 2em Arial;
+    margin: 0;
+}
+
+.logo,
+.img-left
+{
+    vertical-align: top;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.logo
+{
+    width: 100%;
+}
+
+.date
+{
+    font-weight: bold;
+}
+
+.from
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.sign
+{
+    margin: 0;
+    text-align: center;
+}
+
+.report
+{
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.time-column
+{
+    font-size: .75em;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.right-column
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -moz-column-width: auto;
+    column-width: auto;
+    font-size: .8em;
+}
+
+.caption-after
+{
+    font: oblique 2.2em Arial;
+}
+
+.black-white-mode:checked ~ header,
+.black-white-mode:checked ~ section
+{
+    background: #000;
+    color: #fff;
+}
+
+.big-font:checked ~ section,
+.big-font:checked ~ section p
+{
+    font-size: 1.1em;
+}
+
+.change-font:checked ~ header,
+.change-font:checked ~ section
+{
+    font-family: sans-serif;
+}
+
+.right-content
+{
+    display: inline-block;
+}
+
+.content
+{
+    -moz-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    -moz-column-width: auto;
+    column-width: auto;
+    width: 100%;
+}
+
+.content ::first-letter
+{
+    font-weight: bold;
+}
+
+.container
+{
+    font-size: .85em;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
