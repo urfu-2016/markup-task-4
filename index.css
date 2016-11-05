@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Bilbo+Swash+Caps|Cormorant+Garamond|Pacifico|Quattrocento+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ewert');
+
+body
+{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+header
+{
+    margin-top: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+blockquote 
+{
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: '\201C''\201D''\2018''\2019';
+    column-span: all;
+    font-size: 1.5em;
+}
+
+blockquote:before
+{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+
+small.author
+{
+    font-size: .7em;
+    display: block;
+    position: relative;
+    left: 10%;
+}
+
+.content
+{
+    display: inline-block;
+    font-size: .9rem;
+    margin-bottom: 30px;
+    border: solid 1px black;
+    box-shadow: 2px 2px white, 3px 3px black;
+    padding: 20px;
+    background: url('https://image.freepik.com/free-photo/background-of-smooth-texture_1154-649.jpg');
+}
+
+article
+{
+    hyphens: auto;
+    word-break: break-word;
+}
+
+.content article
+{
+    text-indent: 10px;
+}
+
+.main-video
+{
+    width: 100%;
+}
+
+.news
+{
+    /*margin-right: 30px;*/
+    display: inline-block;
+    width: 50%;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+    
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+
+    column-gap: 10px;
+    column-rule: 1px dashed #000;
+    -moz-column-rule: 1px dashed #000;
+    -webkit-column-rule: 1px dashed #000;
+}
+
+.news article
+{
+    display: block;
+}
+
+.main-news
+{
+    width: 45%;
+    float: right;
+    padding: 10px;
+    border: 1px dashed #000;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.news article:first-of-type p:first-of-type::first-letter
+{
+    font: 50px 'Ewert', cursive;
+}
+
+article p::first-letter
+{
+    font-weight: 800;
+}
+
+h1
+{
+    text-align: center;
+}
+
+input[name='font-size'][value='120']:checked ~ .content p
+{
+    font-size: 1.2rem;
+}
+
+input[name='font-size'][value='120']:checked ~ .content small
+{
+    font-size: 1.1rem;
+}
+
+input[name='font-size'][value='120']:checked ~ .content blockquote
+{
+    font-size: 2rem;
+}
+
+input[name='font-size'][value='120']:checked ~ .content h3
+{
+    font-size: 1.4rem;
+}
+
+input[name='font-size'][value='120']:checked ~ .content h1
+{
+    font-size: 2.2rem;
+}
+
+input[name='font-size'][value='140']:checked ~ .content small
+{
+    font-size: 1.4rem;
+}
+
+input[name='font-size'][value='140']:checked ~ .content blockquote
+{
+    font-size: 2.5rem;
+}
+
+input[name='font-size'][value='140']:checked ~ .content p
+{
+    font-size: 1.4rem;
+}
+
+input[name='font-size'][value='140']:checked ~ .content h3
+{
+    font-size: 1.6rem;
+}
+
+input[name='font-size'][value='140']:checked ~ .content h1
+{
+    font-size: 2.8rem;
+}
+
+input[name='font-size'][value='160']:checked ~ .content small
+{
+    font-size: 1.8rem;
+}
+
+input[name='font-size'][value='160']:checked ~ .content blockquote
+{
+    font-size: 3rem;
+}
+
+input[name='font-size'][value='160']:checked ~ .content p
+{
+    font-size: 1.6rem;
+}
+
+input[name='font-size'][value='160']:checked ~ .content h3
+{
+    font-size: 1.8rem;
+}
+
+input[name='font-size'][value='160']:checked ~ .content h1
+{
+    font-size: 3.2rem;
+}
+
+input[name='font-family'][value='sans-serif']:checked ~ .content
+{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+input[name='font-family'][value='cursive']:checked ~ .content
+{
+    font-family: 'Pacifico', cursive;
+}
+
+input[name='font-family'][value='fantasy']:checked ~ .content
+{
+    font-family: 'Bilbo Swash Caps', fantasy;
+}
+
+input[name='font-family'][value='monospace']:checked ~ .content
+{
+    font-family: 'Anonymous Pro', monospace;
+}
+
+input.page-mode:checked ~ .content
+{
+    color: white;
+    background: rgba(0, 0, 0, .5);
+}
+
