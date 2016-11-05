@@ -45,6 +45,7 @@
 
 .vertical-text
 {
+    text-transform: uppercase;
     word-wrap: break-word;
     width: .7em;
     left: 10px;
@@ -71,6 +72,7 @@
 .newspaper-number,
 .associated-press
 {
+    text-transform: uppercase;
     display: inline-block;
     width: 20%;
     text-align: center;
@@ -118,13 +120,13 @@ article
     column-rule: 1px solid black;
 }
 
-.raketa
+.rocket
 {
     -webkit-column-span: all;
     column-span: all;
 }
 
-.raketa > img
+.rocket > img
 {
     width: 100%;
 }
@@ -205,18 +207,18 @@ blockquote:after
     vertical-align: -.45em;
 }
 
-.nightMode:checked ~ .newspaper
+.night-mode:checked ~ .newspaper
 {
     background: #494949;
     color: #f9faff;
 }
 
-.smallSize:checked ~ .newspaper main
+.small-size:checked ~ .newspaper main
 {
     font-size: smaller;
 }
 
-.bigSize:checked ~ .newspaper main
+.big-size:checked ~ .newspaper main
 {
     font-size: larger;
 }
