@@ -1,7 +1,10 @@
-@font-face
-{
-    font-family: Decor;
-    src: url(decor.TTF);
+@font-face {
+    font-family: 'decor';
+    src: url('fonts/decor.eot');
+    src: local('☺'), url('fonts/decor.woff') format('woff'), url('fonts/decor.ttf') format('truetype'), 
+    url('fonts/decor.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 p
@@ -9,32 +12,48 @@ p
     text-indent: 20px;
 }
 
+h1
+{
+    font-size: 16px;
+}
+
+h2
+{
+    font-size: 15px;
+}
+
+h2:first-letter
+{
+    color: red;
+    font-size: 14px;
+}
+
 header
 {
-    font-family: Decor, 'Times New Roman';
     font-size: 70px;
     text-align: center;
+    font-family: 'decor', 'Times New Roman';
 }
 
 main
 {
-    column-count: 4;
-    column-gap: 20px;
-    column-rule: 2px solid black;
     -moz-column-count: 4; /* Firefox */
     -moz-column-gap: 20px;
     -moz-column-rule: 2px solid black;
     -webkit-column-count: 4; /* Safari, Google */
     -webkit-column-gap: 20px;
     -webkit-column-rule: 2px solid black;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid black;
     padding-top: 20px;
     text-align: justify;
 }
 
 main:first-letter
 {
-    font-family: Decor, 'Times New Roman';
     font-size: 40px;
+    font-family: 'decor', 'Times New Roman';
 }
 
 footer
@@ -42,9 +61,10 @@ footer
     text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    font-size: 15px;
 }
 
-.img0
+.imgAnalyzing
 {
     width: 150px;
     height: 200px;
@@ -52,7 +72,7 @@ footer
     padding-left: 5px;
 }
 
-.img1
+.imgKnower
 {
     width: 150px;
     height: 210px;
@@ -60,7 +80,7 @@ footer
     padding-left: 5px;
 }
 
-.img2
+.imgThinking
 {
     width: 200px;
     height: 150px;
@@ -72,9 +92,4 @@ footer
 .theme
 {
     font-weight: bold;
-}
-
-.yandex
-{
-    color: red;
 }
