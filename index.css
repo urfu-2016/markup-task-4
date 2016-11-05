@@ -1,49 +1,66 @@
-.switcher
+@import url('https://fonts.googleapis.com/css?family=Special+Elite|Diplomata+SC|Viga|Indie+Flower|Nova+Mono');
+
+.large-size:checked ~ header,
+.large-size:checked ~ main
 {
-    column-count: 2;
-    text-align: center;
+    font-size: larger;
 }
 
-.weather
+.small-size:checked ~ header,
+.small-size:checked ~ main
+{
+    font-size: smaller;
+}
+
+.other-font:checked ~ main .container
+{
+    font-family: 'Indie Flower', serif;
+}
+
+.night-mode:checked ~ header,
+.night-mode:checked ~ main
+{
+    background-color: black;
+    color: white;
+}
+
+html
+{
+    font-size: 1em;
+}
+
+header
+{
+    width: 100%;
+    overflow: hidden;
+    column-count: 3;
+}
+
+.weather,
+.currency
 {
     break-inside: avoid-column;
-}
-
-.currency-course
-{
-    break-inside: avoid-column;
-    float: right;
-}
-
-.right
-{
-    text-align: right;
+    text-align: start;
+    font-family: 'Special Elite', serif;
 }
 
 h1
 {
     text-align: center;
+    font-family: 'Diplomata SC', serif;
+    font-size: 40px;
 }
 
-.data
+.info
 {
     column-count: 3;
-    border: 2px solid black;
-}
-
-.data p
-{
-    text-align: center;
+    border: 1px solid black;
 }
 
 .head
 {
     text-align: center;
-}
-
-h2 ~ h3
-{
-    text-align: center;
+    font-family: 'Special Elite', sans-serif;
 }
 
 .left,
@@ -51,10 +68,6 @@ h2 ~ h3
 .right
 {
     column-count: 2;
-}
-
-section
-{
     break-inside: avoid-column;
 }
 
@@ -63,27 +76,24 @@ section
     column-count: 3;
     column-rule: 1px solid black;
     border-top: 1px solid black;
+    font-family: 'Nova Mono', serif;
 }
 
 h3,
 h5
 {
     column-span: all;
+    /*font-family: 'Viga', sans-serif;*/
 }
 
-.wraper
-{
-    width: 100%;
-    overflow: hidden;
-    column-count: 3;
-}
-
-img
+.weather-img
 {
     width: 250px;
+    filter: grayscale(100%);
 }
 
 aside
 {
     column-span: all;
+    border: 1px solid black;
 }

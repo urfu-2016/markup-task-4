@@ -6,88 +6,81 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<div class="switcher">
-    <p><input type="radio" name="size" class="small-size">Small</p>
-
-    <p><input type="radio" name="size" class="standart-size" checked>Standart</p>
-
-    <p><input type="radio" name="size" class="large-size">Large</p>
-
-    <p class="right"><input type="checkbox" class="other-font">Other font</p>
-
-    <p class="right"><input type="checkbox" class="night-mode">Night mode</p>
-</div>
+<p>Font size</p>
+<input type="radio" name="size" id="small-size" class="small-size">
+<label for="small-size">Small</label>
+<input type="radio" name="size" id="standart-size" class="standart-size" checked>
+<label for="standart-size">Standart</label>
+<input type="radio" name="size" id="large-size" class="large-size">
+<label for="large-size">Large</label>
+<p>Options</p>
+<input type="checkbox" id="other-font" class="other-font">
+<label for="other-font">Other font</label>
+<input type="checkbox" id="night-mode" class="night-mode">
+<label for="night-mode">Night mode</label>
 <hr>
 <header>
-    <div class="wraper">
-        <div class="weather">
-            <table>
-                <thead>
-                <tr>
-                    <th colspan="2">Weather</th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>WIND</td>
-                    <td>E 10 mph</td>
-                </tr>
-                <tr>
-                    <td>HUMIDITY</td>
-                    <td>81%</td>
-                </tr>
-                <tr>
-                    <td>UV INDEX</td>
-                    <td>1 of 10</td>
-                </tr>
-                <tr>
-                    <td>SUN</td>
-                    <td>06:51 16:36</td>
-                </tr>
-            </table>
-        </div>
-        <h1>Daily Express</h1>
-
-        <div class="currency-course">
-            <table>
-                <thead>
-                <tr>
-                    <th colspan="2">Currency course</th>
-                </tr>
-                </thead>
-                <tr>
-                    <td>1 RUB</td>
-                    <td>0.0158704 USD</td>
-                </tr>
-                <tr>
-                    <td>1 USD</td>
-                    <td>63.0105 RUB</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+    <table class="weather">
+        <thead>
+            <tr>
+                <th colspan="2">Weather</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>WIND</td>
+            <td>E 10 mph</td>
+        </tr>
+        <tr>
+            <td>HUMIDITY</td>
+            <td>81%</td>
+        </tr>
+        <tr>
+            <td>UV INDEX</td>
+            <td>1 of 10</td>
+        </tr>
+        <tr>
+            <td>SUN</td>
+            <td>06:51 16:36</td>
+        </tr>
+    </table>
+    <h1>Daily Express</h1>
+    <table class="currency">
+        <thead>
+            <tr>
+                <th colspan="2">Currency course</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1 RUB</td>
+            <td>0.0158704 USD</td>
+        </tr>
+        <tr>
+            <td>1 USD</td>
+            <td>63.0105 RUB</td>
+        </tr>
+    </table>
 </header>
 <main>
-    <div class="data">
-        <p>NO. 10258</p>
+    <div class="head">
+        <div class="info">
+            <p>NO. 10258</p>
 
-        <p>SUNDAY, OCTOBER 30, 2016</p>
+            <p>SUNDAY, OCTOBER 30, 2016</p>
 
-        <p>ONE PENNY</p>
+            <p>ONE PENNY</p>
+        </div>
+        <h2>Politic news</h2>
+        <h3>Most read in UK</h3>
     </div>
-    <h2 class="head">Politic news</h2>
-
-    <h3>Most read in UK</h3>
-
     <div class="container">
-        <section class="left">
-            <h2>Left section</h2>
+        <div class="left">
             <article>
                 <h3>HER ROYAL HOTNESS: Prince Harry secretly dating US TV star Meghan Markle</h3>
                 <h5>PRINCE HARRY is secretly dating a stunning US actress, model and human rights
                     campaigner.</h5>
 
                 <p>Friends say the red-haired royal Romeo, often dubbed the world’s most eligible bachelor,
-                    has fallen for 35-year-old Meghan Markle.</p>
+                    has fallen for 35-year-old Meghan Markle.
 
                 <p>Insiders say Harry, 32, is “besotted” with the actress, best known for her role as
                     Rachel Zane in American TV legal drama Suits.</p>
@@ -135,9 +128,8 @@
 
                 <p>“William and Kate really liked her and she fitted in straight away,” added the insider.</p>
             </article>
-        </section>
-        <section class="center">
-            <h2>Center section</h2>
+        </div>
+        <div class="center">
             <article>
                 <h3>UK to STAY in single market? Business sec lets slip PM's Brexit negotiating
                     strategy</h3>
@@ -168,7 +160,7 @@
                 <h5>GRAB the winter coats - autumn is about to turn chilly with thermometers set to hit
                     freezing
                     this week.</h5>
-                <img src="images/cold.jpg" alt="Cold">
+                <img src="images/cold.jpg" alt="Cold" class="weather-img">
 
                 <p>Mild southerly breezes will be nudged away by bitter
                     northerly winds making things feel much more seasonal from Tuesday.</p>
@@ -186,9 +178,8 @@
                     Arctic region sinks across Britain.</p>
 
             </article>
-        </section>
-        <section class="right">
-            <h2>Right section</h2>
+        </div>
+        <div class="right">
             <article>
                 <h3>Hard Brexit 'may see Britain more than DOUBLE worth of failing EU agreements'
                     say experts</h3>
@@ -229,7 +220,7 @@
                     <li>more...</li>
                 </ul>
             </aside>
-        </section>
+        </div>
     </div>
 </main>
 </body>
