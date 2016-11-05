@@ -41,20 +41,38 @@
         format('truetype'), url('fonts/Oswald-Regular.woff') format('woff');
 }
 
-header,
-h2
-{
-    text-align: center;
-}
-
 header
 {
+    text-align: center;
     font: 4.5em Oswald, sans-serif;
 }
 
 h2
 {
+    text-align: center;
     font: 1em 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+}
+
+input,
+label
+{
+    position: absolute;
+}
+
+.black-theme,
+.helvetica-font
+{
+    margin-left: 10em;
+    margin-top: .5em;
+}
+
+.lower-font,
+.normal-font-size,
+.bigger-font
+{
+    margin-left: 22em;
+    margin-top: .4em;
 }
 
 body
@@ -63,11 +81,11 @@ body
     background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
 }
 
-aside
+.vertical-text
 {
     width: 1%;
     word-wrap: break-word;
-    margin-left: 45%;
+    margin: 0 auto;
     font-size: 1.5em;
     font-family: 'Alfa Slab One', cursive;
     text-transform: uppercase;
@@ -100,64 +118,51 @@ ul
     font-family: Helvetica, sans-serif;
 }
 
-.lower-font:checked ~ article p,
-.lower-font:checked ~ article > div > p,
-.lower-font:checked ~ article > div > h2,
-.lower-font:checked ~ article > .first-paragraph
+.lower-font:checked ~ article
 {
-    font-size: .6em;
+    font-size: .5em;
 }
 
-.bigger-font:checked ~ article p,
-.bigger-font:checked ~ article > div > p,
-.bigger-font:checked ~ article > div > h2,
-.bigger-font:checked ~ article > .first-paragraph
+.bigger-font:checked ~ article
 {
     font-size: 1.2em;
 }
 
 .columns
 {
-    margin-left: 10%;
-    margin-right: 10%;
-    column-width: 10em;
     -moz-column-count: 4;
+    column-count: 4;
+    margin: 0 auto;
 }
 
 footer
 {
     text-align: right;
-    font: 15px 'Crete Round', serif;
+    font: .75em 'Crete Round', serif;
     margin-right: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 1em;
 }
 
 .image-title
 {
     text-align: center;
-    margin-top: -5%;
     font: .75em 'Josefin Slab', serif;
 }
 
+article .paragraph:first-letter,
 .bold-agent-number
 {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-article .paragraph:first-letter
-{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.quote
+q
 {
     font-style: italic;
     font-weight: bold;
 }
 
-.first-paragraph
+article > p
 {
     text-align: left;
     margin-left: 10%;
@@ -165,7 +170,7 @@ article .paragraph:first-letter
     font: bold 1em 'Josefin Slab', serif;
 }
 
-.paragraph
+.columns p
 {
     font: .75em 'Josefin Slab', serif;
 }
