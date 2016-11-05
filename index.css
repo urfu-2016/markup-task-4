@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lobster&subset=cyrillic');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300&subset=cyrillic');
+@font-face
+{
+    font-family: Pompadur;
+    src: url(Pompadur.ttf);
+}
 
 h1,
 h2,
@@ -20,23 +25,11 @@ p
     padding: 0 10px;
 }
 
-main article
+.columnize
 {
-    -moz-columns: 300px auto;
-    -webkit-columns: 300px auto;
-    columns: 300px auto;
-}
-
-.image
-{
-    font-family: 'Roboto Slab', serif;
-    font-size: 13px;
-    overflow: hidden;
-}
-
-.image img
-{
-    margin: 0 auto;
+    -moz-columns: 300px 2;
+    -webkit-columns: 300px 2;
+    columns: 300px 2;
 }
 
 main article
@@ -44,11 +37,26 @@ main article
     padding: 0 0 10px;
 }
 
-main article h2
+main, aside
 {
-    -moz-column-span: all;
-    -webkit-column-span: all;
-    column-span: all;
+    display: inline-block;
+    vertical-align: top;
+}
+
+main {
+    width: 80%;
+    margin: 0 -6px 0 0;
+}
+
+aside {
+    width: 20%;
+}
+
+.image
+{
+    font-family: 'Roboto Slab', serif;
+    font-size: .8em;
+    overflow: hidden;
 }
 
 aside article
@@ -81,24 +89,66 @@ header,
 footer
 {
     line-height: 2em;
-    font-size: 50px;
+    font-size: 3.5em;
     text-align: center;
 }
 
-main
+figure
 {
-    float: left;
-    width: 80%;
+    margin: 0 5px;
 }
 
-aside
+input[value='small']:checked ~ *
 {
-    float: right;
-    width: 20%;
+    font-size: .7em;
 }
 
-.cls
+input[value='large']:checked ~ *
 {
-    content: '';
-    clear: both;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+q
+{
+  border-left: 10px solid #000;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  display: block;
+  font-family: Pompadur;
+}
+
+q:before
+{
+  color: #000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+
+q:after
+{
+  color: #000;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.15em;
+  vertical-align: -0.45em;
+  content: close-quote;
+}
+
+input[value='night']:checked ~ *,
+input[value='night']:checked ~ * q:after,
+input[value='night']:checked ~ * q:before
+{
+    background: #000;
+    color: #fff;
+}
+
+input
+{
+    display: none;
 }
