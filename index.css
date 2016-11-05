@@ -22,16 +22,17 @@ body
 {
     background-color: #ffe4c4;
 }
+
 main
 {
     column-count: 2;
     column-width: 500px;
-    column-rule: 2px solid;
-    column-gap: 10px;
+    column-rule: 2px solid #cd853f;
+    column-gap: 2em;
     -moz-column-count: 2;
     -moz-column-width: 500px;
     -moz-column-rule: 2px solid;
-    -moz-column-gap: 10px;
+    -moz-column-gap: 2em;
     min-height: 500px;
 }
 
