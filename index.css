@@ -1,27 +1,30 @@
 
 @font-face
 {
-    font-family: 'radio newsman';
-    src: url(fonts/RadioNewsman.ttf) ;
+    font-family: RadioNewsman;
+    src: local("RadioNewsman"),
+        url(fonts/RadioNewsman.ttf) ;
 }
 
 @font-face
 {
-    font-family: 'chunkFive';
-    src: url(chunk-master/chunk.ttf);
+    font-family: ChunkFive;
+    src: local('ChunkFive'),
+        url(chunk-master/chunk.ttf);
 }
 
 @font-face
 {
-    font-family: 'knorke';
-    src: url(fonts/Knorke.ttf);
+    font-family: Knorke;
+    src: local('Knorke'),
+        url(fonts/Knorke.ttf);
 }
 
 html,
 body
 {
     background: #fff1cc;
-    font-family: 'chunkFive', 'Franklin Gothic Medium', sans-serif;
+    font-family: ChunkFive, 'Franklin Gothic Medium', sans-serif;
 }
 
 .body-main,
@@ -67,8 +70,7 @@ body
 
 .usa-today-header
 {
-    font-size: 5em;
-    font-weight: bold;
+    font: 5em bold, ChunkFive, sans-serif;
     text-align: center;
     text-transform: uppercase;
     background: #55c6e6;
@@ -98,7 +100,7 @@ body
 
 .column-header
 {
-    font-family: 'radio newsman', 'chunkFive', sans-serif;
+    font-family: RadioNewsman, ChunkFive, sans-serif;
     word-break: normal;
     font-weight: bold;
     font-size: 1.5em;
@@ -107,7 +109,7 @@ body
     margin-bottom: 10px;
 }
 
-.column-header>h1
+.column-header > h1
 {
     text-transform: uppercase;
 }
@@ -167,7 +169,7 @@ body
 
 .newsline-topic
 {
-    font-family: 'radio newsman', 'chunkFive', sans-serif;
+    font-family: RadioNewsman, ChunkFive, sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -214,7 +216,7 @@ body
 
 .main-info-top-img
 {
-    font-family: 'knorke', 'chunkFive', sans-serif;
+    font-family: Knorke, ChunkFive, sans-serif;
     float: left;
     margin: 0 10px auto;
     width: 300px;
