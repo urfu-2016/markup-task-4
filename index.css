@@ -165,7 +165,8 @@ main
     font-size: .9rem;
 }
 
-.big-text p {
+.big-text p
+{
     font-size: 1.1rem;
     font-style: oblique;
 }
