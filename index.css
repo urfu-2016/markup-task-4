@@ -1,21 +1,21 @@
 @font-face
 {
     font-family: 'Canterbury';
-    src: url('fonts/Canterbury.ttf')
+    src: local('Canterbury'), url('fonts/Canterbury.ttf')
         format('truetype');
 }
 
 @font-face
 {
     font-family: 'OldStandard';
-    src: url('fonts/OldStandard-Regular.ttf')
+    src: local('OldStandard'), url('fonts/OldStandard-Regular.ttf')
         format('truetype');
 }
 
 @font-face
 {
     font-family: 'OldStandard';
-    src: url('fonts/OldStandard-Bold.ttf')
+    src: local('OldStandard'), url('fonts/OldStandard-Bold.ttf')
         format('truetype');
     font-weight: bold;
 }
@@ -23,7 +23,7 @@
 @font-face
 {
     font-family: 'OldStandard';
-    src: url('fonts/OldStandard-Italic.ttf')
+    src: local('OldStandard'), url('fonts/OldStandard-Italic.ttf')
         format('truetype');
     font-weight: bold;
     font-style: italic;
@@ -32,7 +32,7 @@
 @font-face
 {
     font-family: 'Special Elite';
-    src: url('fonts/SpecialElite.ttf')
+    src: local('Special Elite'), url('fonts/SpecialElite.ttf')
         format('truetype');
 }
 
