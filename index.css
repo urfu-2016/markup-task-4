@@ -13,7 +13,7 @@
 @font-face
 {
     font-family: 'Lazurski Bold Italic';
-    src: url('LAZURSK2.eot?') format('eot'), url('LAZURSK2.woff') format('woff'), url('LAZURSK2.ttf') format('truetype'), url('LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
+    src: url('fonts/LAZURSK2.eot?') format('eot'), url('fonts/LAZURSK2.woff') format('woff'), url('fonts/LAZURSK2.ttf') format('truetype'), url('fonts/LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
 }
 
 @font-face
@@ -25,19 +25,13 @@
 @font-face
 {
     font-family: 'Walk Around the Block';
-    src: url('Walk-Around-the-Block.eot?') format('eot'), url('Walk-Around-the-Block.woff') format('woff'), url('Walk-Around-the-Block.ttf') format('truetype'), url('Walk-Around-the-Block.svg#WalkAroundtheBlock') format('svg');
+    src: url('fonts/Walk-Around-the-Block.eot?') format('eot'), url('fonts/Walk-Around-the-Block.woff') format('woff'), url('fonts/Walk-Around-the-Block.ttf') format('truetype'), url('fonts/Walk-Around-the-Block.svg#WalkAroundtheBlock') format('svg');
 }
 
 @font-face
 {
     font-family: 'CinzelDecorative-Regular';
     src: url('fonts/CinzelDecorative-Regular.eot?') format('eot'), url('fonts/CinzelDecorative-Regular.woff') format('woff'), url('fonts/CinzelDecorative-Regular.ttf') format('truetype'), url('fonts/CinzelDecorative-Regular.svg#CinzelDecorative-Regular') format('svg');
-}
-
-@font-face
-{
-    font-family: 'Tire Shop Demo Version';
-    src: url('tireshop_demo.eot?') format('eot'), url('tireshop_demo.woff') format('woff'), url('tireshop_demo.ttf') format('truetype'), url('tireshop_demo.svg#TireShopDemoVersion') format('svg');
 }
 
 @font-face 
@@ -184,13 +178,16 @@ div.content
     font: 40px 'Walk Around the Block', arial;
     color: #000;
     text-shadow: 4px 4px 4px #aaa;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
 }
 
 div.content div
 {
     text-align: center;
     display: table-cell;
-
+    vertical-align: middle;
 }
 
 div.content div:nth-child(2n)
