@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: 'cormorant_italic';
-    src: url('fonts/cormorantinfant-mediumitalic-webfont.woff2')
+    src: local('cormorant_italic'), url('fonts/cormorantinfant-mediumitalic-webfont.woff2')
         format('woff2'), url('fonts/cormorantinfant-mediumitalic-webfont.woff')
         format('woff');
     font-weight: normal;
@@ -12,7 +12,7 @@
 @font-face
 {
     font-family: 'cormorant_bold_italic';
-    src: url('fonts/cormorantinfant-bolditalic-webfont.woff2')
+    src: local('cormorant_bold_italic'), url('fonts/cormorantinfant-bolditalic-webfont.woff2')
         format('woff2'), url('fonts/cormorantinfant-bolditalic-webfont.woff')
         format('woff');
     font-weight: normal;
@@ -23,7 +23,7 @@
 @font-face
 {
     font-family: 'russo_oneregular';
-    src: url('fonts/russoone-regular-webfont.woff2')
+    src: local('russo_oneregular'), url('fonts/russoone-regular-webfont.woff2')
         format('woff2'), url('fonts/russoone-regular-webfont.woff')
         format('woff');
     font-weight: normal;
@@ -34,29 +34,26 @@
 @font-face
 {
     font-family: 'anonymous_proregular';
-    src: url('fonts/anonymouspro-regular-webfont.woff2')
+    src: local('anonymous_proregular'), url('fonts/anonymouspro-regular-webfont.woff2')
         format('woff2'), url('fonts/anonymouspro-regular-webfont.woff')
         format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face
 {
     font-family: 'rubik_mono_oneregular';
-    src: url('fonts/rubikmonoone-regular-webfont.woff2')
+    src: local('rubik_mono_oneregular'), url('fonts/rubikmonoone-regular-webfont.woff2')
         format('woff2'), url('fonts/rubikmonoone-regular-webfont.woff')
         format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .header
 {
-    font-family: rubik_mono_oneregular, sans-serif;
-    font-size: 40px;
+    font: 40px rubik_mono_oneregular, sans-serif;
 }
 
 body
@@ -77,8 +74,7 @@ body
 
 .subtitle
 {
-    font-family: russo_oneregular, sans-serif;
-    font-size: 20px;
+    font: 20px russo_oneregular, sans-serif;
     column-span: all;
     margin: 0;
 }
@@ -89,9 +85,9 @@ body
     column-width: 150px;
     -moz-column-width: 150px;
     -webkit-column-width: 150px;
-    column-rule: 1px solid black;
-    -moz-column-rule: 1px solid black;
-    -webkit-column-rule: 1px solid black;
+    column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
 }
 
 .paragraph:first-of-type:first-letter
@@ -114,20 +110,18 @@ body
 
 .sub-subtitle
 {
-    font-family: russo_oneregular, sans-serif;
-    font-size: 18px;
+    font: 18px russo_oneregular, sans-serif;
 }
 
 .subtitle-example
 {
-    font-family: russo_oneregular, sans-serif;
-    font-size: 16px;
+    font: 16px russo_oneregular, sans-serif;
 }
 
 .link
 {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .vertical-header
@@ -144,9 +138,8 @@ body
 
 .student-figure
 {
-
     width: 800px;
-    border: 1px solid black;
+    border: 1px solid #000;
     margin: 0;
 }
 
@@ -157,7 +150,7 @@ body
     -moz-column-width: 200px; /* Для Firefox */
     -webkit-column-width: 200px; /* Для Safari и Chrome */
     column-width: 200px;
-    column-rule: 1px solid black;
-    -moz-column-rule: 1px solid black;
-    -webkit-column-rule: 1px solid black;
+    column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
 }
