@@ -2,7 +2,7 @@
 @font-face
 {
     font-family: RadioNewsman;
-    src: local("RadioNewsman"), url(fonts/RadioNewsman.ttf);
+    src: local('RadioNewsman'), url(fonts/RadioNewsman.ttf);
 }
 
 @font-face
