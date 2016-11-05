@@ -19,7 +19,8 @@ p
 
 h1
 {
-    font-family: 'Kaushan Script', cursive; font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
     letter-spacing: 5px;
     margin-top: 0;
     border: 2px dashed #000;
@@ -36,14 +37,16 @@ h2
 
 h5
 {
-    text-align: center; column-span: all; font-style: italic;
+    text-align: center;
+    column-span: all;
+    font-style: italic;
     margin: 10px;
 }
 
 .quote
 {
     column-count: 2;
-	-moz-column-count: 2; /* Для Firefox */
+    -moz-column-count: 2; /* Для Firefox */
     -webkit-column-count: 2; /* Для Safari и Chrome */
 }
 
@@ -52,7 +55,7 @@ h5
     column-count: 4;
     border-bottom: 2px dotted #000;
     padding-bottom: 10px;
-	-moz-column-count: 4; /* Для Firefox */
+    -moz-column-count: 4; /* Для Firefox */
     -webkit-column-count: 4; /* Для Safari и Chrome */
 }
 
@@ -73,10 +76,10 @@ h5
     column-count: 2;
     column-rule: 1px solid #000;
     border-bottom: 2px dotted #000;
-	-moz-column-count: 2; /* Для Firefox */
+    -moz-column-count: 2; /* Для Firefox */
     -moz-column-rule: 1px solid #000;
     -webkit-column-count: 2; /* Для Safari и Chrome */
-	-webkit-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
 }
 
 .left,
@@ -87,7 +90,7 @@ h5
     -moz-column-count: 2; /* Для Firefox */
     -moz-column-rule: 2px dotted #ccc;
     -webkit-column-count: 2; /* Для Safari и Chrome */
-	-webkit-column-rule: 2px dotted #ccc;
+    -webkit-column-rule: 2px dotted #ccc;
 }
 
 .from
@@ -118,7 +121,9 @@ h5
 
 .message
 {
-    text-align: center; column-span: all; font-style: italic;
+    text-align: center;
+    column-span: all;
+    font-style: italic;
     margin: 10px;
     font-family: 'Pacifico', cursive;
 }
@@ -127,6 +132,6 @@ h5
 {
     text-align: center;
     column-count: 2;
-	-moz-column-count: 2; /* Для Firefox */
+    -moz-column-count: 2; /* Для Firefox */
     -webkit-column-count: 2; /* Для Safari и Chrome */
 }
