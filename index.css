@@ -4,7 +4,7 @@ body
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url('background1.png');
-    font-family: 'Bodoni MT';
+    font-family: 'Bodoni MT', sans-serif;
 
 }
 
@@ -16,7 +16,7 @@ td
 
 p:first-letter
 {
-    font-family: 'Algerian';
+    font-family: 'Algerian', sans-serif;
     font-size: 200%;
 }
 
@@ -45,13 +45,13 @@ blockquote
 
 .cap
 {
-    font-family: 'Algerian';
+    font-family: 'Algerian', monospace;
     font-size: 300%;
 }
 
 .attention
 {
-    font-family: 'Matura MT Script Capitals';
+    font-family: 'Matura MT Script Capitals', sans-serif;
     font-size: 150%;
 }
 
@@ -77,22 +77,14 @@ blockquote
     line-height: 1em;
     width: 15%;
     font-family: monospace;
-    font-size: 300%;
+    font-size: 200%;
 }
 
-input[name='font_type']:checked ~ table tr td p
-{
-    font-family: 'Elephant';
-}
-
-input[name='font_type']:checked ~ table tr td figure div
-{
-    font-family: 'Elephant';
-}
-
+input[name='font_type']:checked ~ table,
+input[name='font_type']:checked ~ table tr td figure div,
 input[name='font_type']:checked ~ table caption
 {
-    font-family: 'Elephant';
+    font-family: 'Elephant', cursive;
 }
 
 input[name='modern_color']:checked ~ table tbody tr td
