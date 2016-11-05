@@ -1,25 +1,41 @@
 @font-face
 {
     font-family: DreamScar;
-    src: url(fonts/dreamscar.ttf);
+    src: local('DreamScar'),
+        url(fonts/dreamscar.ttf) format('truetype'),
+        url(fonts/DreamScar.woff) format('woff'),
+        url(fonts/dreamscar.woff2) format('woff2'),
+        url(fonts/dreamscar.eot) format('eot');
 }
 
 @font-face
 {
     font-family: DrPoDecorRu;
-    src: url(fonts/drpodecorru.ttf);
+    src: local('DrPoDecorRu'),
+        url(fonts/drpodecorru.ttf) format('truetype'),
+        url(fonts/drpodecorru.eot) format('eot'),
+        url(fonts/DrPoDecorRu.woff) format('woff'),
+        url(fonts/drpodecorru.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: B52;
-    src: url(fonts/b52.ttf);
+    src: local('B52'),
+        url(fonts/b52.ttf) format('truetype'),
+        url(fonts/b52.eot) format('eot'),
+        url(fonts/B52.woff) format('woff'),
+        url(fonts/b52.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: AdanaScript;
-    src: url(fonts/adana-script.ttf);
+    src: local('AdanaScript'),
+        url(fonts/adana-script.ttf) format('truetype'),
+        url(fonts/adana-script.eot) format('eot'),
+        url(fonts/Adanascript.woff) format('woff'),
+        url(fonts/adana-script.woff2) format('woff2');
 }
 
 .focus
@@ -55,7 +71,7 @@ article:after
     font-style: italic;
 }
 
-.table-like-section
+.bordered
 {
     border: solid 1px black;
     margin-bottom: 10px;
@@ -95,6 +111,7 @@ q
     word-wrap: break-word;
     text-transform: uppercase;
     border: solid 1px black;
+    letter-spacing: 100px;
 }
 
 .focus img
@@ -107,7 +124,7 @@ q
     min-width: 100px;
 }
 
-.wide-columns
+.wide-column
 {
     column-count: 2;
     column-width: 100px;
@@ -130,21 +147,21 @@ header
     margin-top: 50px;
 }
 
-.right img
+aside img
 {
     width: 100%;
     display: block;
     margin-bottom: 10px;
 }
 
-.smallcolumns
+.small-column
 {
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
 }
 
-.right
+aside
 {
     position: absolute;
     margin-right: 10px;
@@ -181,7 +198,15 @@ h3:first-letter
 
 p
 {
-    font-family: Georgia, serif;
     font-size: 14px;
     margin-top: 0;
+}
+
+body
+{
+    font-family: Georgia, serif;
+}
+
+.vertical p {
+    font-size: 16px;
 }
