@@ -1,0 +1,151 @@
+@font-face
+{
+    font-family: myFontH1;
+    src: url('Karmen.ttf');
+    src: url('Karmen.woff') format ('woff');
+}
+
+@font-face
+{
+    font-family: myFontH2;
+    src: url('PG_IsadoraCyrPro-Regular.ttf');
+    src: url('PGIsadoraCyrPro-Regular.woff') format ('woff');
+}
+
+@font-face
+{
+    font-family: myFontS;
+    src: url('a_Empirial.ttf');
+    src: url('a_empirial-webfont.woff') format ('woff');
+}
+
+html
+{
+    width: 100%;
+}
+
+body
+{
+    width: 100%;
+    min-width: 800px;
+    background-color: #dec4a6;
+    margin: 0 auto;
+}
+
+header
+{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.title
+{
+    display: inline-block;
+    font-family: myFontH1, sans-serif;
+    font-size: 55px;
+}
+
+.quote,
+.weather
+{
+    display: inline-block;
+    padding: 4px;
+    border: 2px solid #000;
+    margin: 4px;
+}
+
+.weather
+{
+    float: right;
+    font-size: 20px;
+}
+
+.quote
+{
+    float: left;
+    font-size: 15px;
+}
+
+.date,
+main
+{
+    box-sizing: border-box;
+}
+
+.date
+{
+    width: 100%;
+    height: auto;
+    border-top: 4px double #000;
+    border-bottom: 4px double #000;
+    position: absolute;
+    padding-left: 20px;
+}
+
+main
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+section
+{
+    width: 98%;
+    overflow: hidden;
+    position: relative;
+    column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+}
+
+section:first-child
+{
+    font-family: Lucida Console, Monaco5, monospace;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+section:last-child
+{
+    font-family: myFontS, sans-serif;
+}
+
+h1
+{
+    font-family: myFontH2, sans-serif;
+}
+
+p
+{
+    hyphens: manual;
+}
+
+p:first-child:first-letter
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.img_in_article
+{
+    max-width: 98%;
+    height: auto;
+}
+
+figure
+{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    break-inside: avoid;
+}
+
+footer
+{
+    padding-left: 10px;
+}
