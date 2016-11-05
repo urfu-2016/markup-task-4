@@ -1,37 +1,31 @@
 @font-face
 {
     font-family: Italy B;
-    src: local(italyb), 
-        url(fonts/ItalyB.eot), 
-        url(fonts/ItalyB.ttf);
+    src: local(italyb), url(fonts/ItalyB.eot), url(fonts/ItalyB.ttf);
 }
 
 @font-face
 {
     font-family: Marianna;
-    src: local(marianna), 
-        url(fonts/Marianna.ttf);
+    src: local(marianna), url(fonts/Marianna.ttf);
 }
 
 @font-face
 {
     font-family: Roland-Decor;
-    src: local(roland-decor), 
-        url(fonts/Roland-Decor.ttf);
+    src: local(roland-decor), url(fonts/Roland-Decor.ttf);
 }
 
 @font-face
 {
     font-family: Parisian;
-    src: local(parisian), 
-        url(fonts/Parisian.ttf);
+    src: local(parisian), url(fonts/Parisian.ttf);
 }
 
 @font-face
 {
     font-family: Matreshka;
-    src: local(matreshka), 
-        url(fonts/Matreshka.ttf);
+    src: local(matreshka), url(fonts/Matreshka.ttf);
 }
 
 aside
@@ -211,6 +205,6 @@ img
 {
     width: 1em;
     word-wrap: break-word;
-    letter-spacing: 95px;
+    letter-spacing: 100px;
     overflow: hidden;
 }
