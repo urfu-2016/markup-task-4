@@ -2,8 +2,8 @@
 {
     font-family: 'decor';
     src: url('fonts/decor.eot');
-    src: local('☺'), url('fonts/decor.woff') format('woff'), url('fonts/decor.ttf') format('truetype'), 
-        url('fonts/decor.svg') format('svg');
+    src: local('☺'), url('fonts/decor.woff') format('woff'), url('fonts/decor.ttf')
+        format('truetype'), url('fonts/decor.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
