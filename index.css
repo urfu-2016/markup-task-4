@@ -16,15 +16,15 @@
 {
     font-family: B52;
     src: local('B52'), url(fonts/b52.ttf) format('truetype'), url(fonts/b52.eot) format('eot'),
-    url(fonts/B52.woff) format('woff'), url(fonts/b52.woff2) format('woff2');
+        url(fonts/B52.woff) format('woff'), url(fonts/b52.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: AdanaScript;
     src: local('AdanaScript'), url(fonts/adana-script.ttf) format('truetype'),
-    url(fonts/adana-script.eot) format('eot'), url(fonts/Adanascript.woff) format('woff'),
-    url(fonts/adana-script.woff2) format('woff2');
+        url(fonts/adana-script.eot) format('eot'), url(fonts/Adanascript.woff) format('woff'),
+        url(fonts/adana-script.woff2) format('woff2');
 }
 
 .focus
