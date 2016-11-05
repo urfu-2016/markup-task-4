@@ -23,27 +23,27 @@ body
     font-size: 0;
 }
 
-.large-font:checked ~ .content .column
+.large-font:checked ~ .content
 {
     font-size: 20px;
 }
 
-.normal-font:checked ~ .content .column
+.normal-font:checked ~ .content
 {
     font-size: 15px;
 }
 
-.small-font:checked ~ .content .column
+.small-font:checked ~ .content
 {
     font-size: 12px;
 }
 
-.first-font-family:checked ~ .content .column
+.first-font-family:checked ~ .content
 {
     font-family: 'Neucha', cursive;
 }
 
-.second-font-family:checked ~ .content .column
+.second-font-family:checked ~ .content
 {
     font-family: 'Marck Script', cursive;
 }
