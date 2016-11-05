@@ -2,31 +2,32 @@
 {
     font-family: myFontH1;
     src: url('Karmen.ttf');
+    src: url('Karmen.woff') format ('woff');
 }
 
 @font-face
 {
     font-family: myFontH2;
     src: url('PG_IsadoraCyrPro-Regular.ttf');
+    src: url('PGIsadoraCyrPro-Regular.woff') format ('woff');
 }
 
 @font-face
 {
     font-family: myFontS;
     src: url('a_Empirial.ttf');
+    src: url('a_empirial-webfont.woff') format ('woff');
 }
 
 html
 {
     width: 100%;
-    height: auto;
 }
 
 body
 {
     width: 100%;
     min-width: 800px;
-    height: auto;
     background-color: #dec4a6;
     margin: 0 auto;
 }
@@ -38,7 +39,7 @@ header
     text-align: center;
 }
 
-.header
+.title
 {
     display: inline-block;
     font-family: myFontH1, sans-serif;
@@ -64,6 +65,12 @@ header
 {
     float: left;
     font-size: 15px;
+}
+
+.date,
+main
+{
+    box-sizing: border-box;
 }
 
 .date
@@ -133,8 +140,9 @@ p:first-child:first-letter
 figure
 {
     display: block;
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    break-inside: avoid;
 }
 
 footer
