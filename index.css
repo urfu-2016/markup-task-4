@@ -2,22 +2,19 @@
 @font-face
 {
     font-family: RadioNewsman;
-    src: local("RadioNewsman"),
-    url(fonts/RadioNewsman.ttf) ;
+    src: local("RadioNewsman"), url(fonts/RadioNewsman.ttf);
 }
 
 @font-face
 {
     font-family: ChunkFive;
-    src: local('ChunkFive'),
-    url(chunk-master/chunk.ttf);
+    src: local('ChunkFive'), url(chunk-master/chunk.ttf);
 }
 
 @font-face
 {
     font-family: Knorke;
-    src: local('Knorke'),
-    url(fonts/Knorke.ttf);
+    src: local('Knorke'), url(fonts/Knorke.ttf);
 }
 
 html,
