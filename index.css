@@ -2,7 +2,14 @@
 
 @font-face
 {
-    src: local('fonts/Ubuntu-Regular.ttf');
+    font-family: UbuntuFont;
+    src: url('fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: TrueArial;
+    src: local('Times New Roman');
 }
 
 body
@@ -12,7 +19,7 @@ body
     width: 1366px;
     background: url(images/texture.png);
     background-repeat: repeat;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: UbuntuFont, sans-serif;
 }
 
 .text-center
@@ -90,8 +97,7 @@ body
 
 .attract-attention
 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     letter-spacing: 3px;
     word-spacing: 20px;
     font-size: 3.5em;
@@ -246,7 +252,7 @@ article p:first-of-type:first-letter
 
 .switch-font:checked ~ main
 {
-    font: 1em 'Arial', sans-serif;
+    font: 1em TrueArial, sans-serif;
 }
 
 .large-font:checked ~ main
