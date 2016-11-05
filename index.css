@@ -148,9 +148,10 @@ footer
     font: .75em 'Josefin Slab', serif;
 }
 
-article .paragraph:first-letter,
+article p:first-letter,
 .bold-agent-number
 {
+    font-family: 'Josefin Slab Bold', serif;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -158,15 +159,16 @@ article .paragraph:first-letter,
 q
 {
     font-style: italic;
+    font-family: 'Josefin Slab Bold', serif;
     font-weight: bold;
 }
 
-article > p
+article > p:first-of-type
 {
     text-align: left;
     margin-left: 10%;
     margin-right: 50%;
-    font: bold 1em 'Josefin Slab', serif;
+    font: 1em 'Josefin Slab', serif;
 }
 
 .columns p
