@@ -10,15 +10,18 @@
     src: url('Lumenharmaa.ttf');
 }
 
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .newspaper
 {
-    background-image: url('white-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background: url('white-bg.jpg') 100% 100% no-repeat;
+    background-size: cover;
     padding: 50px;
     font-family: 'Lumen';
     font-size: 120%;
-
 }
 
 .article_title
@@ -29,8 +32,10 @@
 
 .vertical-text
 {
+    padding: 1em;
     width: .1em;
     line-height: 1em;
+    float: left;
 }
 
 h1
@@ -69,12 +74,23 @@ hr
     column-rule: 4px outset black;
 }
 
-img
+.spanned
+{
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+.london-pic
 {
     width: 80%;
     height: 40%;
     display: block;
     margin: 0 auto;
+    float: right;
 }
 
 .picture_with_title
@@ -92,7 +108,6 @@ p
 {
     padding: 5px;
     margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 p:first-letter
@@ -101,12 +116,8 @@ p:first-letter
     font-size: 150%;
 }
 
-input[name='diff_font']:checked ~ div div p
-{
-    font-family: 'Adler';
-}
-
-input[name='diff_font']:checked ~ div
+input[name='diff_font']:checked ~ div,
+input[name='diff_font']:checked ~ div main p
 {
     font-family: 'Adler';
 }
