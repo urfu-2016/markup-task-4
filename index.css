@@ -1,0 +1,100 @@
+body
+{
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('background1.png');
+    font-family: 'Bodoni MT', sans-serif;
+
+}
+
+table,
+td
+{
+    border: 1px double black;
+}
+
+p:first-letter
+{
+    font-family: 'Algerian', sans-serif;
+    font-size: 200%;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+td
+{
+    filter: grayscale(100%);
+    width: 20%;
+    vertical-align: top;
+}
+
+.bible td
+{
+    width: 30%;
+}
+
+blockquote
+{
+    background-color: rgba(128,128,128, .5);
+}
+
+.cap
+{
+    font-family: 'Algerian', monospace;
+    font-size: 300%;
+}
+
+.attention
+{
+    font-family: 'Matura MT Script Capitals', sans-serif;
+    font-size: 150%;
+}
+
+.author
+{
+    font-weight: bold;
+}
+
+.streamer
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.big_img
+{
+    width: 100%;
+    height: 15%;
+}
+
+.vertical
+{
+    line-height: 1em;
+    width: 15%;
+    font-family: monospace;
+    font-size: 200%;
+}
+
+input[name='font_type']:checked ~ table,
+input[name='font_type']:checked ~ table tr td figure div,
+input[name='font_type']:checked ~ table caption
+{
+    font-family: 'Elephant', cursive;
+}
+
+input[name='modern_color']:checked ~ table tbody tr td
+{
+    filter: none;
+    background-image: url('background2.png');
+    color: #45161c;
+}
+
+input[name='font_size']:checked ~ table
+{
+    font-size: 150%;
+}
