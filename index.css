@@ -2,36 +2,36 @@
 {
     font-family: Italy B;
     src: local(italyb),
-         url(Fonts/ItalyB.eot),
-         url(Fonts/ItalyB.ttf);
+        url(fonts/ItalyB.eot),
+        url(fonts/ItalyB.ttf);
 }
 
 @font-face
 {
     font-family: Marianna;
     src: local(marianna),
-         url(Fonts/Marianna.ttf);
+        url(fonts/Marianna.ttf);
 }
 
 @font-face
 {
     font-family: Roland-Decor;
     src: local(roland-decor),
-         url(Fonts/Roland-Decor.ttf);
+        url(fonts/Roland-Decor.ttf);
 }
 
 @font-face
 {
     font-family: Parisian;
     src: local(parisian),
-         url(Fonts/Parisian.ttf);
+        url(fonts/Parisian.ttf);
 }
 
 @font-face
 {
     font-family: Matreshka;
     src: local(matreshka),
-         url(Fonts/Matreshka.ttf);
+        url(fonts/Matreshka.ttf);
 }
 
 aside
@@ -43,8 +43,8 @@ aside
 
 body
 {
-    background: url(2.png) repeat-y
-        , url(2.png) 100% 0 repeat-y;
+    background: url(2.png) repeat-y,
+        url(2.png) 100% 0 repeat-y;
     background-size: 10px;
     margin: 10px 40px;
 }
@@ -66,7 +66,7 @@ body
 .cat
 {
     position: relative;
-    left: 500px;
+    left: 850px;
 }
 
 p
@@ -128,11 +128,10 @@ figcaption
 
 .title
 {
-    /*margin: 1em 0 .5em;*/
     color: #343434;
     font-weight: normal;
     font-family: 'Ultra', sans-serif;
-    font-size: 50px;
+    font-size: 70px;
     text-transform: uppercase;
     text-shadow: 0 2px white, 0 3px #777;
     text-align: right;
@@ -188,6 +187,8 @@ img
 .state
 {
     font-family: Matreshka;
+    border: 1px solid grey;
+    margin: 10px;
 }
 
 .tophead
@@ -202,6 +203,7 @@ img
     float: left;
     display: inline-block;
     max-width: 700px;
+    border-bottom: 1px solid black;
 
 }
 
