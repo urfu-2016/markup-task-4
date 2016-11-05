@@ -161,9 +161,12 @@ footer
 
 .main-article
 {
-
     column-width: 550px;
+    -moz-column-width: 550px;
+    -webkit-column-width: 550px;
     column-rule: 2px solid;
+    -moz-column-rule: 2px solid;
+    -webkit-column-rule: 2px solid;
 }
 
 .facts
