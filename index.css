@@ -1,79 +1,69 @@
 @font-face
 {
     font-family: 'HogwartsWizard';
-    src: url('HogwartsWizard.eot?') format('eot'), url('HogwartsWizard.woff') format('woff'), url('HogwartsWizard.ttf') format('truetype'), url('HogwartsWizard.svg#HogwartsWizard') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/HogwartsWizard.eot?') format('eot'), url('fonts/HogwartsWizard.woff') format('woff'), url('fonts/HogwartsWizard.ttf') format('truetype'), url('fonts/HogwartsWizard.svg#HogwartsWizard') format('svg');
 }
 
 @font-face
 {
     font-family: 'Parseltongue';
-    src: url('PARSELTO.eot?') format('eot'), url('PARSELTO.woff') format('woff'), url('PARSELTO.ttf') format('truetype'), url('PARSELTO.svg#Parseltongue') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/PARSELTO.eot?') format('eot'), url('fonts/PARSELTO.woff') format('woff'), url('fonts/PARSELTO.ttf') format('truetype'), url('fonts/PARSELTO.svg#Parseltongue') format('svg');
 }
 
 @font-face
 {
     font-family: 'Lazurski Bold Italic';
     src: url('LAZURSK2.eot?') format('eot'), url('LAZURSK2.woff') format('woff'), url('LAZURSK2.ttf') format('truetype'), url('LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face
 {
     font-family: 'Harrington';
-    src: url('HARNGTON.eot?') format('eot'), url('HARNGTON.woff') format('woff'), url('HARNGTON.ttf') format('truetype'), url('HARNGTON.svg#Harrington') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: local('Harrington'), url('fonts/HARNGTON.eot?') format('eot'), url('fonts/HARNGTON.woff') format('woff'), url('fonts/HARNGTON.ttf') format('truetype'), url('fonts/HARNGTON.svg#Harrington') format('svg');
 }
 
 @font-face
 {
     font-family: 'Walk Around the Block';
     src: url('Walk-Around-the-Block.eot?') format('eot'), url('Walk-Around-the-Block.woff') format('woff'), url('Walk-Around-the-Block.ttf') format('truetype'), url('Walk-Around-the-Block.svg#WalkAroundtheBlock') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face
 {
     font-family: 'CinzelDecorative-Regular';
-    src: url('CinzelDecorative-Regular.eot?') format('eot'), url('CinzelDecorative-Regular.woff') format('woff'), url('CinzelDecorative-Regular.ttf') format('truetype'), url('CinzelDecorative-Regular.svg#CinzelDecorative-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/CinzelDecorative-Regular.eot?') format('eot'), url('fonts/CinzelDecorative-Regular.woff') format('woff'), url('fonts/CinzelDecorative-Regular.ttf') format('truetype'), url('fonts/CinzelDecorative-Regular.svg#CinzelDecorative-Regular') format('svg');
 }
 
 @font-face
 {
     font-family: 'Tire Shop Demo Version';
     src: url('tireshop_demo.eot?') format('eot'), url('tireshop_demo.woff') format('woff'), url('tireshop_demo.ttf') format('truetype'), url('tireshop_demo.svg#TireShopDemoVersion') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face 
 {
     font-family: 'Parisian  Normal';
-    src: url('parisr.eot?') format('eot'), url('parisr.woff') format('woff'), url('parisr.ttf') format('truetype'), url('parisr.svg#ParisianNormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('fonts/parisr.eot?') format('eot'), url('fonts/parisr.woff') format('woff'), url('fonts/parisr.ttf') format('truetype'), url('fonts/parisr.svg#ParisianNormal') format('svg');
 }
 
 main
 {
-    columns: 200px;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    -webkit-column-rule: 1px solid;
+    -moz-column-rule: 1px solid;
     column-rule: 1px solid;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
     column-fill: auto;
 }
 
-div.frame
+article
 {
-    outline: 2px solid #000;
-    break-inside: avoid-column;
-    display: block;
+    -webkit-columns: 150px;
+    -moz-columns: 150px;
+    columns: 150px;
 }
 
 body
@@ -82,32 +72,32 @@ body
     background-image: url('paper2.jpg');
 }
 
-h1,
-h2,
-h3
-{
-    text-align: center;
-}
-
 h4
 {
     text-align: left;
-    font-weight: bold;
-    font-family: 'Lazurski Bold Italic', arial;
+    font: bold 1em 'Lazurski Bold Italic', arial;
 }
 
 h1
 {
-    font-family: 'Parseltongue', arial;
-    font-size: 48px;
+    font: 48px 'Parseltongue', arial;
     text-shadow: 4px 4px 4px #aaa;
     letter-spacing: normal;
+    text-align: center;
 }
 
 h3
 {
-    font-family: 'HogwartsWizard', 'Times New Roman';
-    font-size: 24px;
+    text-align: center;
+    font: bold 28px 'HogwartsWizard', 'Times New Roman';
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+.firstParagraph
+{
+    text-indent: 0;
 }
 
 p.firstParagraph::first-letter
@@ -122,14 +112,15 @@ p
     font-family: 'Harrington', sans-serif;
 }
 
-.firstParagraph
+p.author,
+address
 {
-    text-indent: 0;
+    font: italic 1em 'Times New Roman';
+    text-align: right;
 }
 
 hr
 {
-    color: #555;
     background-color: #555;
     border: 0 none;
     height: 1px;
@@ -137,49 +128,22 @@ hr
 
 blockquote
 {
-    font-family: Georgia, serif;
-    font-size: 14px;
-    font-style: italic;
+    font: italic 14px Georgia, serif;
     text-align: justify;
     margin: 15px;
 }
 
-table.factfile
+.factfile
 {
+    font: 1em 'Parisian  Normal', cursive;
+    break-inside: avoid-column;
     text-indent: 0;
     text-align: center;
 }
 
-table.content
+.factfile div:first-child
 {
-    text-align: center;
-    font-size: 40px;
-    width: 100%;
-    font-family: 'Walk Around the Block', arial;
-    color: #000;
-    text-shadow: 4px 4px 4px #aaa;
-}
-
-table
-{
-    width: 100%;
-    break-inside: avoid-column;
-    font-family: 'Parisian  Normal', arial;
-}
-
-td.left
-{
-    text-align: left;
-}
-
-td.right
-{
-    text-align: right;
-}
-
-address
-{
-    text-align: right;
+    font-weight: bold;
 }
 
 figure
@@ -195,20 +159,42 @@ figure
     break-inside: avoid-column;
 }
 
-span.date
+.date
 {
-    font-size: 2em;
-    font-family: 'Walk Around the Block', arial;
+    font: 2em 'Walk Around the Block', arial;
     text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
 }
 
 img
 {
-    width: 100%;
+    width: 150px;
 }
 
-img.logo
+.part
 {
-    height: 100%;
-    width: auto;
+    break-before: column;
+    break-after: column;
+}
+
+div.content
+{
+    display: table;
+    width: 100%;
+    font: 40px 'Walk Around the Block', arial;
+    color: #000;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+div.content div
+{
+    text-align: center;
+    display: table-cell;
+
+}
+
+div.content div:nth-child(2n)
+{
+    font-size: 2em;
+    text-align: center;
 }
