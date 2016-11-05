@@ -63,19 +63,17 @@ label
 .black-theme,
 .helvetica-font
 {
-    margin-left: 10em;
-    margin-top: .5em;
+    margin-left: 8em;
 }
 
 .lower-font,
 .normal-font-size,
 .bigger-font
 {
-    margin-left: 22em;
-    margin-top: .4em;
+    margin-left: 17.5em;
 }
 
-body
+article
 {
     font-size: 20px;
     background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
@@ -85,7 +83,7 @@ body
 {
     width: 1%;
     word-wrap: break-word;
-    margin: 0 auto;
+    margin: -.8em auto 0;
     font-size: 1.5em;
     font-family: 'Alfa Slab One', cursive;
     text-transform: uppercase;
@@ -132,7 +130,8 @@ ul
 {
     -moz-column-count: 4;
     column-count: 4;
-    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 footer
