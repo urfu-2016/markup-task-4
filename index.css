@@ -9,144 +9,141 @@
 @font-face
 {
     font-family: 'Zanerian';
-    src: url(zanerian_two.ttf);
+    src: local('Zanerian'), url(zanerian_two.ttf);
 }
 
 @font-face
 {
     font-family: 'Keetanokatakana';
-    src: url(keetanokatakana.ttf);
+    src: local('Keetanokatakana'), url(keetanokatakana.ttf);
 }
 
 body
+{
+    background-color: #ffe4c4;
+}
+main
 {
     column-count: 2;
     column-width: 500px;
     column-rule: 2px solid;
     column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-width: 500px;
+    -moz-column-rule: 2px solid;
+    -moz-column-gap: 10px;
     min-height: 500px;
-    background-color: #ffe4c4;
 }
 
 img
 {
-    float: left;
     width: 250px;
 }
 
-h1
+header
 {
-    font-family: 'Zanerian', arial;
-    font-size: 35px;
+    font: bold 35px 'Zanerian', arial;
     letter-spacing: 50px;
     text-align: center;
     word-spacing: 40px;
     column-span: all;
+    -moz-column-span: all;
     color: #cd853f;
 }
 
-h4
+div
 {
-    font-family: 'Keetanokatakana', arial;
-    font-size: 20px;
+    font: bold 20px 'Keetanokatakana', arial;
     letter-spacing: 20px;
     text-align: center;
     column-span: all;
+    -moz-column-span: all;
     border: 1px solid #cd853f;
     color: #cd853f;
 }
 
-.titles
-{
-    column-span: 2;
-    text-align: center;
-    color: #daa520;
-    font-size: 20px;
-    display: block;
-}
-
-.title1
-{
-    font-family: 'Roboto', sans-serif;
-}
-
-.title2
-{
-    font-family: 'Roboto Slab', serif;
-}
-
-.title3
-{
-    font-family: 'Roboto', sans-serif;
-}
-
-.title4
-{
-    font-family: 'Roboto Slab', serif;
-}
-
+.title1,
+.title3,
 .title5
 {
     font-family: 'Roboto', sans-serif;
 }
 
-.titles::first-letter
+.title2,
+.title4
 {
-    font-size: 30px;
-    font-family: 'Zanerian', arial;
+    font-family: 'Roboto Slab', serif;
 }
 
-.texts::first-letter
+article::first-letter
 {
-    font-size: 25px;
-    font-family: 'Keetanokatakana', arial;
+    font: 25px 'Keetanokatakana', arial;
 }
 
-.texts
+figcaption,
+article
 {
     color: #8b4513;
     text-align: justify;
     column-rule: 1px dotted;
+    column-gap: 2em;
+    -moz-column-rule: 1px dotted;
+    -moz-column-gap: 2em;
 }
 
 .first-text
 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font: 20px 'Roboto Condensed', sans-serif;
     line-height: 30px;
-    font-size: 20px;
     min-height: 250px;
+    -moz-column-count: 2;
     column-count: 2;
 }
 
 .second-text
 {
-    font-family: 'Merriweather', serif;
+    font: 16px 'Merriweather', serif;
     line-height: 23px;
     column-count: 2;
-    min-height: 250px;
-    font-size: 16px;
+    -moz-column-count: 2;
+    min-height: 350px;
     letter-spacing: -.5px;
 }
 
 .third-text
 {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font: 18px 'PT Sans Narrow', sans-serif;
     column-count: 2;
-    line-height: 25px;
-    font-size: 18px;
+    -moz-column-count: 2;
+    line-height: 15px;
 }
 
 .fourth-text
 {
-    font-family: 'Play', sans-serif;
+    font: 18px 'Play', sans-serif;
     column-count: 2;
-    line-height: 17px;
-    font-size: 18px;
+    -moz-column-count: 2;
+    line-height: 16px;
 }
 
 .fifth-text
 {
-    font-family: 'Comfortaa', sans-serif;
-    line-height: 18px;
-    font-size: 16px;
+    font: 16px 'Comfortaa', sans-serif;
+    line-height: 14px;
+    column-count: 2;
+    -moz-column-count: 2;
+}
+
+h3
+{
+    column-span: all;
+    -moz-column-span: 2;
+    text-align: center;
+    color: #daa520;
+    font-size: 20px;
+}
+
+h3::first-letter
+{
+    font: 30px 'Zanerian', arial;
 }
