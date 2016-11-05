@@ -1,0 +1,177 @@
+@font-face
+{
+    font-family: 'Alfa Slab One';
+    src: local('Alfa Slab One'), url('fonts/AlfaSlabOne-Regular.eot') 
+        format('eot'), url('fonts/AlfaSlabOne-Regular.ttf') 
+        format('truetype'), url('fonts/AlfaSlabOne-Regular.woff')  format('woff');
+    font-style: cursive;
+}
+
+@font-face
+{
+    font-family: 'Crete Round';
+    src: local('Crete Round'), url('fonts/CreteRound-Regular.eot') 
+        format('eot'), url('fonts/CreteRound-Regular.ttf') 
+        format('truetype'), url('fonts/CreteRound-Regular.woff') format('woff');
+}
+
+@font-face
+{
+    font-family: 'Josefin Slab';
+    src: local('Josefin Slab Bold'), url('fonts/JosefinSlab-Bold.eot')
+        format('eot'), url('fonts/JosefinSlab-Bold.ttf') 
+        format('truetype'), url('fonts/JosefinSlab-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Josefin Slab';
+    src: local('Josefin Slab'), url('fonts/JosefinSlab-Regular.eot') 
+        format('eot'), url('fonts/JosefinSlab-Regular.ttf') 
+        format('truetype'), url('fonts/JosefinSlab-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face
+{
+    font-family: 'Oswald';
+    src: local('Oswald'), url('fonts/Oswald-Regular.eot') 
+        format('eot'), url('fonts/Oswald-Regular.ttf') 
+        format('truetype'), url('fonts/Oswald-Regular.woff') format('woff');
+}
+
+header
+{
+    text-align: center;
+    font: 4.5em Oswald, sans-serif;
+}
+
+h2
+{
+    text-align: center;
+    font: 1em 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+}
+
+input,
+label
+{
+    position: absolute;
+}
+
+.black-theme,
+.helvetica-font
+{
+    margin-left: 8em;
+}
+
+.lower-font,
+.normal-font-size,
+.bigger-font
+{
+    margin-left: 17.5em;
+}
+
+article
+{
+    font-size: 20px;
+    background-image: url('https://inspirationhut.net/wp-content/uploads/2012/11/Grungy-Paper-Texture-1.jpg');
+}
+
+.vertical-text
+{
+    width: 1%;
+    word-wrap: break-word;
+    margin: -.8em auto 0;
+    font-size: 1.5em;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+}
+
+ul
+{
+    font: 2.25em 'Crete Round', sans-serif;
+    margin-left: 30%;
+}
+
+.bond-image
+{
+    margin-left: -5%;
+    width: 100%;
+}
+
+.black-theme:checked ~ article
+{
+    background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/05/black-parchment-paper-texture.jpg');
+    color: #fff;
+}
+
+.helvetica-font:checked ~ article p,
+.helvetica-font:checked ~ article header,
+.helvetica-font:checked ~ article ul,
+.helvetica-font:checked ~ article h2,
+.helvetica-font:checked ~ article footer
+{
+    font-family: Helvetica, sans-serif;
+}
+
+.lower-font:checked ~ article
+{
+    font-size: .5em;
+}
+
+.bigger-font:checked ~ article
+{
+    font-size: 1.2em;
+}
+
+.columns
+{
+    -moz-column-count: 4;
+    column-count: 4;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer
+{
+    text-align: right;
+    font: .75em 'Crete Round', serif;
+    margin-right: 3%;
+    margin-bottom: 1em;
+}
+
+.image-title
+{
+    text-align: center;
+    font: .75em 'Josefin Slab', serif;
+}
+
+article p:first-letter,
+.bold-agent-number
+{
+    font-family: 'Josefin Slab Bold', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+q
+{
+    font-style: italic;
+    font-family: 'Josefin Slab Bold', serif;
+    font-weight: bold;
+}
+
+article > p:first-of-type
+{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 50%;
+    font: 1em 'Josefin Slab', serif;
+}
+
+.columns p
+{
+    font: .75em 'Josefin Slab', serif;
+}
