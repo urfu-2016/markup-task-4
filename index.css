@@ -66,6 +66,25 @@ body
     background-image: url('paper2.jpg');
 }
 
+.column1
+{
+    break-after: column;
+    break-inside: avoid-column;
+}
+
+.column2
+{
+    break-before: column;
+    break-after: column;
+    break-inside: avoid-column;
+}
+
+.column3
+{
+    break-before: column;
+    break-inside: avoid-column;
+}
+
 h4
 {
     text-align: left;
@@ -158,22 +177,6 @@ figure
 img
 {
     width: 150px;
-}
-
-.column1
-{
-    break-after: column;
-}
-
-.column2
-{
-    break-before: column;
-    break-after: column;
-}
-
-.column3
-{
-    break-before: column;
 }
 
 div.content
