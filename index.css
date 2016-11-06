@@ -83,11 +83,6 @@ h1
     height: 100px;
 }
 
-.main
-{
-    display: inline-block;
-}
-
 .text
 {
     width: 560px;
@@ -96,19 +91,17 @@ h1
     column-count: 2;
     column-width: 270px;
     font-size: small;
-    float: left;
 }
 
 .elf
 {
-    float: left;
     width: 80px;
     height: 80px;
 }
 
 .bar
 {
-    padding-top: 200px;
+    padding-top: 150px;
     width: 300px;
     height: 150px;
 }
@@ -149,10 +142,10 @@ hr
 
 .table-of-contents
 {
+    display: relative;
     width: 300px;
     height: 216px;
     border: 2px double;
-    float: right;
     font-weight: normal;
 }
 
@@ -163,10 +156,10 @@ hr
 
 .totem
 {
+    display: relative;
     width: 300px;
     height: 200px;
-    float: left;
-    padding-top: 215px;
+    padding-top: 30px;
 }
 
 .food
@@ -179,28 +172,25 @@ hr
 
 .house
 {
-    float: right;
     width: 150px;
     height: 350px;
+    padding-left: 150px;
 }
 
 .bottle
 {
     width: 100px;
     height: auto;
-    float: left;
 }
 
 .mega
 {
     width: 250px;
-    float: left;
 }
 
 .picture
 {
     width: 700px;
-    float: right;
     font-weight: bold;
 }
 
@@ -212,7 +202,7 @@ hr
     font-size: 20px;
 }
 
-.picture-header
+.picture-header div
 {
     display: inline-block;
 }
@@ -225,15 +215,13 @@ hr
 .big-text
 {
     text-align: right;
-    float: left;
-    width: 74%;
+    width: 70%;
     font-size: 20px;
 }
 
 .little-text
 {
     text-align: left;
-    float: right;
     width: 20%;
     font-size: 10px;
 }
@@ -241,13 +229,11 @@ hr
 .picture-main-food
 {
     width: 49%;
-    float: left;
 }
 
 .picture-main-shop
 {
     width: 50%;
-    float: right;
 }
 
 .big-house-text
@@ -273,7 +259,6 @@ hr
 {
     width: 30px;
     height: 150px;
-    float: right;
 }
 
 .stock
@@ -297,7 +282,6 @@ hr
 {
     font-size: 30px;
     text-align: center;
-    float: left;
 }
 
 .big-world
@@ -314,7 +298,6 @@ hr
 .coast
 {
     color: gray;
-    float: right;
 }
 
 h3
