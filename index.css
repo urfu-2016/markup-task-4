@@ -1,0 +1,229 @@
+@font-face
+{
+    font-family: OldNews;
+    src: local('OldNewspaperTypes')
+        , url(fonts/OldNewspaperTypes.woff)
+        , url(fonts/OldNewspaperTypes.ttf);
+}
+
+@font-face
+{
+    font-family: OldEnglish;
+    src: local('Old English Text MT')
+        , url(fonts/OldEnglishTextMT.woff)
+        , url(fonts/OldEnglishTextMT.ttf);
+}
+
+@font-face
+{
+    font-family: AgencyR;
+    src: local('Agency FB')
+        , url(fonts/AGENCYR.woff) format('woff')
+        , url(fonts/AGENCYR.ttf) format('truetype');
+}
+
+html
+{
+    background: #add8e6;
+}
+
+div
+{
+    display: inline-block;
+}
+
+.newspaper
+{
+    background: #d3d3d3;
+    border: solid 1px;
+}
+
+h1
+{
+    font-size: 5em;
+    font-family: OldEnglish;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2
+{
+    font-size: 2em;
+    font-style: italic;
+}
+
+h3
+{
+    border-bottom: solid 2px;
+}
+
+h4
+{
+    margin: 0;
+    font-size: 2em;
+    font-family: AgencyR;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header
+{
+    height: 125px;
+    text-align: center;
+    position: relative;
+}
+
+header div
+{
+    height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.copyright-header
+{
+    position: absolute;
+    margin-top: 0;
+    width: .7em;
+    line-height: 1em;
+    font-size: .7em;
+    word-wrap: break-word;
+    font-family: 'Times New Roman';
+}
+
+.left-header
+{
+    font-size: 1em;
+    font-family: AgencyR;
+    width: 10%;
+}
+
+.left-header p
+{
+    border: solid 1px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.center-header
+{
+    width: 60%;
+}
+
+.right-header p
+{
+    margin-top: 0;
+    font: 1em 'Times New Roman';
+    text-align: left;
+}
+
+.information
+{
+    text-align: center;
+    font-family: OldNews;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.information hr
+{
+    border: none;
+    background-color: #000;
+    margin-top: 2px;
+    margin-bottom: 0;
+    height: 1px;
+}
+
+main
+{
+    font-family: OldNews;
+    font-size: .7em;
+}
+
+.left-main
+{
+    width: 40%;
+    margin: 10px 10px 10px 40px;
+    border-right: solid 1px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.right-main
+{
+    vertical-align: top;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.two-columns
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 1px solid;
+    -webkit-column-rule: 1px solid;
+    column-rule: 1px solid;
+}
+
+.four-columns
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-rule: 1px solid;
+    -webkit-column-rule: 1px solid;
+    column-rule: 1px solid;
+    border-right: solid 1px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+h3:first-letter
+{
+    font-size: 2em;
+    font-family: OldEnglish;
+}
+
+/*Дополнительное задание*/
+
+.change-color:checked ~ div
+{
+    background: #000;
+    color: #fff;
+}
+
+.change-color:checked ~ div hr
+{
+    background-color: #fff;
+}
+
+.change-color:checked ~ div div
+{
+    -moz-column-rule: 1px solid #fff;
+    -webkit-column-rule: 1px solid #fff;
+    column-rule: 1px solid #fff;
+}
+
+.big-font:checked ~ div
+{
+    font-size: 1.1em;
+}
+
+.small-font:checked ~ div
+{
+    font-size: .9em;
+}
+
+.arial:checked ~ div main
+{
+    font-family: Arial;
+}
+
+.chiller:checked ~ div main
+{
+    font-family: Chiller;
+}
