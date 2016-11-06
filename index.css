@@ -128,6 +128,7 @@ blockquote
     font-family: myFont, cursive;
 }
 
-label {
+label
+{
     font-size: 1.2em;
 }
