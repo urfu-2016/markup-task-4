@@ -1,27 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Lobster|Ruslan+Display');
+@font-face
+{
+    font-family: 'Bad Script';
+    src: url(BadScript.woff2) format('woff2'), url(BadScript.woff) format('woff');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url(Lobster.woff2) format('woff2'), url(Lobster.woff) format('woff');
+}
+
+@font-face
+{
+    font-family: 'Ruslan Display';
+    src: url(RuslanDisplay.woff2) format('woff2'), url(RuslanDisplay.woff) format('woff');
+}
 
 body
 {
     background: #fafad2;
 }
 
-body,
 header
 {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-header
-{
-    flex: 1 100%;
     border-top: solid 2px #000;
     border-bottom: solid 2px #000;
 }
 
 .logo
 {
-    flex: 3;
+    position: absolute;
+    width: 70%;
 }
 
 .logo > h1
@@ -32,7 +41,8 @@ header
 
 .weather
 {
-    flex: 1;
+    width: 25%;
+    margin-left: auto;
     border-left: solid 2px #000;
 }
 
@@ -53,19 +63,19 @@ header
 
 main
 {
-    flex: 3;
+    width: 70%;
     margin: 10px;
 }
 
 .main-news,
 .other-news
 {
-    column-count: 3;
     -moz-column-count: 3;
     -webkit-column-count: 3;
-    column-rule: solid 1px #d3d3d3;
+    column-count: 3;
     -moz-column-rule: solid 1px #d3d3d3;
     -webkit-column-rule: solid 1px #d3d3d3;
+    column-rule: solid 1px #d3d3d3;
 }
 
 article
@@ -111,6 +121,12 @@ h3
     max-width: 100%;
 }
 
+.pic > span,
+.weather > div > span
+{
+    display: block;
+}
+
 p
 {
     word-wrap: break-word;
@@ -122,6 +138,13 @@ p:first-letter
     font-size: 24px;
 }
 
+p > q
+{
+    display: block;
+    font-style: italic;
+    margin: 1em 10%;
+}
+
 footer
 {
     flex: 1 100%;
@@ -129,21 +152,11 @@ footer
     padding: 10px;
 }
 
-blockquote
-{
-    font-style: italic;
-}
-
-blockquote:after,
-blockquote:before
-{
-    content: '"';
-}
-
 section
 {
-    flex: 1;
-    margin: 10px;
+    position: absolute;
+    width: 25%;
+    right: 10px;
 }
 
 section > q
