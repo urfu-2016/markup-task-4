@@ -12,6 +12,7 @@ header
     font-family: 'Times New Roman';
 }
 
+
 body
 {
     background: url(http://bgfons.com/upload/paper_texture331.jpg);
@@ -68,7 +69,7 @@ hr
 {
     color: #000;
     border: none;
-    background-color: black;
+    background-color: #000;
     height: 2px;
 }
 
@@ -111,19 +112,22 @@ blockquote
     border-style: solid;
 }
 
-.change-color:checked ~ section,
-.change-color:checked ~ h3
+.change-color:checked ~ div
 {
-    background: black;
-    color: white;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
 }
 
-.zoom:checked ~ section
+.zoom:checked ~ div
 {
     font-size: 1.5em;
 }
 
-.change-style:checked ~ section
+.change-style:checked ~ div
 {
     font-family: myFont, cursive;
 }
@@ -131,4 +135,6 @@ blockquote
 label
 {
     font-size: 1.2em;
+    width: 100%;
 }
+
