@@ -20,8 +20,8 @@
 html,
 body
 {
+    font: 10px normal, ChunkFive, 'Franklin Gothic Medium', sans-serif;
     background: #fff1cc;
-    font-family: ChunkFive, 'Franklin Gothic Medium', sans-serif;
 }
 
 .body-main,
@@ -52,6 +52,7 @@ body
 
 .header-text
 {
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -97,10 +98,8 @@ body
 
 .column-header
 {
-    font-family: RadioNewsman, ChunkFive, sans-serif;
+    font: 1.5em bold, RadioNewsman, ChunkFive, sans-serif;
     word-break: normal;
-    font-weight: bold;
-    font-size: 1.5em;
     text-align: center;
     column-span: all;
     margin-bottom: 10px;
@@ -166,9 +165,7 @@ body
 
 .newsline-topic
 {
-    font-family: RadioNewsman, ChunkFive, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
+    font: 1.2em bold, RadioNewsman, ChunkFive, sans-serif;
     text-transform: uppercase;
     word-break: normal;
 }
@@ -261,10 +258,9 @@ body
 
 .main-info-middle-article
 {
-    -webkit-column-count: 4;
     -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-count: 4;
-    margin: 5px;
 }
 
 .main-info-middle-article img
