@@ -16,10 +16,10 @@ body
 main 
 {
     width: 100%;
-    columns: 4;
     -moz-columns: 4;
-    column-rule: 1px solid #2f4f4f;
+    columns: 4;
     -moz-column-rule: 1px solid #2f4f4f;
+    column-rule: 1px solid #2f4f4f;
 }
 
 article
@@ -38,10 +38,10 @@ p
 
 article.two-columns
 {
-    columns: 2;
     -moz-columns: 2;
-    column-rule: 1px solid #2f4f4f;
+    columns: 2;
     -moz-column-rule: 1px solid #2f4f4f;
+    column-rule: 1px solid #2f4f4f;
 }
 
 .image-in-text
@@ -85,21 +85,21 @@ q
     font-size: 120%;
     font-weight: 600;
     display: block;
-    margin: 5px;
     float: left;
     text-align: left;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
+    margin: 5px;
+    width: 15px;
+    word-break: break-all;
 }
 
 /* Custom fonts */
 @font-face
 {
     font-family: Edisson;
-    src: url(fonts/Edisson.ttf), url(fonts/Edisson.woff), url(fonts/Edisson.eot);
+    src: url(fonts/Edisson.ttf) format('truetype'), url(fonts/Edisson.woff) format('woff'), url(fonts/Edisson.eot) format('embedded-opentype');
 }
 @font-face
 {
     font-family: Five;
-    src: url(fonts/Five.ttf), url(fonts/Five.woff), url(fonts/Five.eot);
+    src: url(fonts/Five.ttf) format('truetype'), url(fonts/Five.woff) format('woff'), url(fonts/Five.eot) format('embedded-opentype');
 }
