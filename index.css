@@ -76,15 +76,14 @@ input[id='font_family']:checked ~ main
 
 input[id='color']:checked ~ main
 {
-    color: white;
-    background: black;
+    color: #fff;
+    background: #000;
 }
 
 header
 {
-    font-family: 'Abhaya Libre', 'Arial';
+    font: 5rem 'Abhaya Libre', serif;
     text-transform: uppercase;
-    font-size: 5rem;
     text-align: center;
 }
 
@@ -95,19 +94,19 @@ header img
 
 main
 {
-    column-count: 4;
     -moz-column-count: 4;
-    column-gap: 5px;
+    column-count: 4;
     -moz-column-gap: 5px;
-    column-rule: 3px groove darkslategray;
-    -moz-column-rule: 3px groove darkslategray;
-    border: 3px groove darkslategray;
+    column-gap: 5px;
+    -moz-column-rule: 3px groove #2f4f4f;
+    column-rule: 3px groove #2f4f4f;
+    border: 3px groove #2f4f4f;
     padding: 8px;
 }
 
 h1
 {
-    font-family: 'Indie Flower', 'Arial';
+    font-family: 'Indie Flower', fantasy;
     color: #900;
     word-spacing: 1rem;
     font-size: 2rem;
@@ -115,7 +114,6 @@ h1
     text-align: center;
     text-transform: capitalize;
     column-span: all;
-    -moz-column-span: all;
 }
 
 p
@@ -125,85 +123,82 @@ p
 
 p::first-letter
 {
-    font-family: 'Cookie Regular', 'Arial';
+    font-family: 'Cookie Regular', fantasy;
     font-size: 4em;
     color: crimson;
 }
 
-div.img_block
+figure.img-full-line
 {
     column-span: all;
     width: 100%;
-    border: 3px groove darkslategray;
+    border: 3px groove #2f4f4f;
     padding: 20px 0;
+    margin: 0;
     align-content: center;
 }
 
-div.img_block img
+figure.img-full-line img
 {
     width: 50%;
     float: left;
     margin: 0 20px;
 }
 
-div.img_block div.caption
+figure.img-full-line figcaption.caption-full-line
 {
     display: inline-block;
-    font-size: 1rem;
     width: 15rem;
-    font-family: 'Cormorant Garamond', 'Arial';
+    font: 1rem 'Cormorant Garamond', serif;
 }
 
-div.img_block div.caption.q
+figure.img-full-line figcaption.caption-full-line.q
 {
-    font-family: 'Cormorant Garamond Italic', 'Arial';
+    font-family: 'Cormorant Garamond Italic', fantasy;
 }
 
-figure
+figure.img-column
 {
     padding: 1%;
     margin: 0;
-    height: 500%;
+    width: 98%;
 }
 
-figure img
+figure.img-column img
 {
     width: 100%;
     display: block;
 }
 
-figcaption
+figcaption.caption-column
 {
-    font-family: 'Rock Salt', 'Arial';
-    font-size: .6rem;
+    font: .6rem 'Rock Salt', fantasy;
 }
 
 p q
 {
-    font-family: 'Playball', 'Arial';
+    font: 1.2em 'Playball', fantasy;
     text-indent: 4%;
-    font-size: 120%;
 }
 
 em
 {
-    font-family: 'Fredoka One', 'Arial';
+    font-family: 'Fredoka One', cursive;
 }
 
 span.checkbox_caption,
 .radio_caption
 {
-    font-family: 'Lobster';
+    font-family: 'Lobster', cursive;
 }
 
-p.end
+p.vertical-block
 {
     text-indent: 0;
-    font-size: 2em;
     width: .7em;
     text-align: center;
     word-wrap: break-word;
     margin-left: 35%;
     color: inherit;
-    font-family: inherit;
+    font: 2em inherit;
 }
