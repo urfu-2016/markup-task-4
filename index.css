@@ -58,7 +58,6 @@ input[name='size'][value='font_smaller']:checked ~ main
 input[name='family'][value='font_Arial']:checked ~ main div.text
 {
     font-family: 'Arial';
-    color: black;
 }
 
 input[name='color'][value='font_white']:checked ~ main
