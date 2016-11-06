@@ -3,10 +3,10 @@
     font-family: 'Pacifico';
     src: url('fonts/pacifico-webfont.eot');
     src: local('Pacifico'),
-        url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
-        url('fonts/pacifico-webfont.woff2') format('woff2'),
-        url('fonts/pacifico-webfont.woff') format('woff'),
-        url('fonts/pacifico-webfont.ttf') format('truetype');
+    url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/pacifico-webfont.woff2') format('woff2'),
+    url('fonts/pacifico-webfont.woff') format('woff'),
+    url('fonts/pacifico-webfont.ttf') format('truetype');
 }
 
 @font-face
@@ -102,7 +102,7 @@ article q
     font-weight: 600;
 }
 
-.vertical 
+.vertical
 {
     margin-left: 49%;
     width: 1px;
