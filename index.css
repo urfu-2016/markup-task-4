@@ -42,7 +42,8 @@
 
 .watermark
 {
-    float: right;
+    display: block;
+    text-align: right;
     font-style: italic;
 }
 
