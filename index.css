@@ -1,31 +1,41 @@
 @font-face
 {
     font-family: 'Lobster_Two';
-    src: url('fonts/Lobster_Two/LobsterTwo-Bold.ttf');
+    src: url('fonts/Lobster-Two/Lobster-Two-700.woff')
+        format('woff'), url('fonts/Lobster-Two/Lobster-Two-700.woff2')
+        format('woff2'), url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Architects_Daughter';
-    src: url('fonts/Architects_Daughter/ArchitectsDaughter.ttf');
+    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff')
+        format('woff'), url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2')
+        format('woff2'), url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Fjalla_One';
-    src: url('fonts/Fjalla_One/FjallaOne-Regular.ttf');
+    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff')
+        format('woff'), url('fonts/Fjalla-One/Fjalla-One-regular.woff2')
+        format('woff2'), url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron/Orbitron-Regular.ttf');
+    src: url('fonts/Orbitron/Orbitron-Regular.woff')
+        format('woff'), url('fonts/Orbitron/Orbitron-Regular.woff2')
+        format('woff2'), url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Libre_Baskerville';
-    src: url('fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf');
+    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff')
+        format('woff'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2')
+        format('woff2'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
 }
 
 .date
@@ -38,7 +48,19 @@
 {
     border-color: #000;
     border-width: 3px;
-    margin: 1px 1px 0 0;
+    margin: 1px 0;
+}
+
+hr
+{
+    margin: 11px 0;
+}
+
+.author
+{
+    font-size: .6em;
+    text-align: right;
+    margin-top: 2px;
 }
 
 .separator
@@ -54,14 +76,15 @@ label
 
 main
 {
-    text-align: justify;
-    column-count: 2;
-    margin-top: 10px;
     -moz-column-count: 2;
     -webkit-column-count: 2;
     -moz-column-rule: 2px solid #000;
     -webkit-column-rule: 2px solid #000;
     column-rule: 2px solid #000;
+    text-align: justify;
+    column-count: 2;
+    margin-top: 10px;
+    font-size: .9em;
 }
 
 .main-header
@@ -74,13 +97,13 @@ main
 
 .four-column
 {
-    column-rule: 2px solid #000;
-    column-count: 4;
-    margin-left: 1px;
     -moz-column-count: 4;
     -webkit-column-count: 4;
     -moz-column-rule: 2px solid #000;
     -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+    column-count: 4;
+    margin-left: 1px;
 }
 
 h2
@@ -88,22 +111,14 @@ h2
     font-family: Orbitron, monospace;
     text-align: left;
     letter-spacing: .4em;
-    margin-bottom: .4em;
-    margin-top: .4em;
+    margin: .4em 0;
 }
 
 h3
 {
     font-family: Fjalla_One, sans-serif;
     text-align: center;
-    margin-bottom: .4em;
-    margin-top: .4em;
-}
-
-footer
-{
-    text-align: right;
-    font-size: .8em;
+    margin: .4em 0;
 }
 
 p
@@ -120,7 +135,7 @@ figure img
 
 figure
 {
-    margin: 0;
+    margin: 2px;
 }
 
 figcaption
@@ -128,20 +143,19 @@ figcaption
     font-size: .6em;
 }
 
-.breaking-word
+.section-vertical-header
 {
     word-wrap: break-word;
     width: .7em;
     float: left;
-    margin-right: .7em;
-    margin-left: .7em;
+    margin: 0 .7em;
 }
 
 blockquote
 {
     font-family: Architects_Daughter, cursive;
     font-size: .9em;
-    margin: 0 0 15px 15px;
+    margin: 0 15px;
 }
 
 .first-paragraph::first-letter
@@ -156,6 +170,12 @@ li > div
     font-size: .7em;
 }
 
+.cursive-blockquote
+{
+    font-family: Lobster_Two, cursive;
+    font-size: .9em;
+}
+
 ul
 {
     padding-left: 15px;
@@ -163,8 +183,8 @@ ul
 
 .color-theme:checked ~ main
 {
-    background-color: beige;
-    color: grey;
+    background-color: #f5f5dc;
+    color: #808080;
 }
 
 .font-style:checked ~ main
@@ -174,7 +194,7 @@ ul
 
 .big-font-size:checked ~ main
 {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .small-font-size:checked ~ main
