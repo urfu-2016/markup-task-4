@@ -1,12 +1,35 @@
 @font-face
 {
-    font-family: myCustomFont;
-    src: url(10112.otf);
+    font-family: Coca-Cola;
+    src: local(coca-cola), url(fonts/Coca-cola.otf);
+}
+
+@font-face
+{
+    font-family: Starcraft;
+    src: local(starcraft), url(fonts/Starcraft.ttf);
+}
+
+@font-face
+{
+    font-family: Chocolate;
+    src: local(chocolate), url(fonts/Chocolate.otf);
+}
+
+@font-face
+{
+    font-family: Rusish;
+    src: local(rusish), url(fonts/Rusish.otf);
 }
 
 header
 {
-    font: 100px myCustomFont;
+    font: 100px Coca-Cola, serif;
+}
+
+footer
+{
+    font: 20px Starcraft, serif;
 }
 
 body
@@ -25,7 +48,7 @@ body
 
 h3
 {
-    font: 20px 'Arial', serif;
+    font: 15px 'Chocolate', serif;
 }
 
 .main_news
@@ -41,30 +64,29 @@ h3
 
 .add_news
 {
+    -moz-column-count: 2;
+    -moz-column-rule: 2px solid #000;
     width: 44%;
-    display: inline-block;
+    text-align: left;
     vertical-align: top;
+    display: inline-block;
     padding: 10px;
     margin-bottom: 10px;
     column-count: 2;
-    -moz-column-count: 2;
-    text-align: left;
     column-rule: 2px solid #000;
-    -moz-column-rule: 2px solid #000;
-
 }
 
 .inside_main_news
 {
-    column-count: 2;
     -moz-column-count: 2;
-    column-rule: 2px solid #000;
     -moz-column-rule: 2px solid #000;
+    column-count: 2;
+    column-rule: 2px solid #000;
 }
 
 .first_letter::first-letter
 {
-    font: 2rem sans-serif;
+    font: 3.5rem Rusish, sans-serif;
 }
 
 hr
