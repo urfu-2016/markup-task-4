@@ -29,7 +29,6 @@ html
 
 div
 {
-    overflow: hidden;
     display: inline-block;
 }
 
@@ -50,7 +49,6 @@ h1
 h2
 {
     font-size: 2em;
-    column-span: all;
     font-style: italic;
 }
 
@@ -68,35 +66,30 @@ h4
     text-transform: uppercase;
 }
 
-span
-{
-    text-transform: uppercase;
-}
-
 header
 {
-    height: 120px;
+    height: 125px;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 header div
 {
     height: 100px;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .copyright-header
 {
-    display: inline-block;
-    float: left;
-    height: 120px;
+    position: absolute;
     margin-top: 0;
-    width: 1em;
+    width: .7em;
     line-height: 1em;
-    font-size: 1em;
+    font-size: .7em;
     word-wrap: break-word;
-    font-family: monospace;
+    font-family: 'Times New Roman';
 }
 
 .left-header
@@ -132,6 +125,7 @@ header div
     font-family: OldNews;
     font-weight: bold;
     font-size: 1.4em;
+    text-transform: uppercase;
 }
 
 .information hr
@@ -150,32 +144,37 @@ main
     text-align: center;
 }
 
-main div
-{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .left-main
 {
+    float: left;
     width: 40%;
-    margin-right: 10px;
-    vertical-align: top;
+    margin: 10px;
     border-right: solid 1px;
-    padding-right: 20px;
+    padding-right: 4px;
 }
 
 .two-columns
 {
+    margin-left: 10px;
     column-count: 2;
-    column-rule: 1px solid black;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-rule: 1px solid;
+    -moz-column-rule: 1px solid;
+    -webkit-column-rule: 1px solid;
 }
 
 .four-columns
 {
-    width: 50%;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 55%;
     column-count: 4;
-    column-rule: 1px solid black;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-rule: 1px solid;
+    -moz-column-rule: 1px solid;
+    -webkit-column-rule: 1px solid;
     border-right: solid 1px;
     padding-right: 15px;
 }
@@ -202,16 +201,18 @@ h3:first-letter
 .change-color:checked ~ div div
 {
     column-rule: 1px solid #fff;
+    -moz-column-rule: 1px solid #fff;
+    -webkit-column-rule: 1px solid #fff;
 }
 
-.big-font:checked ~ div main
+.big-font:checked ~ div
 {
-    font-size: .8em;
+    font-size: 1.1em;
 }
 
-.small-font:checked ~ div main
+.small-font:checked ~ div
 {
-    font-size: .6em;
+    font-size: .9em;
 }
 
 .arial:checked ~ div main
