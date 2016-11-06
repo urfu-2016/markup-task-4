@@ -52,7 +52,7 @@ body
 {
     margin: 1px;
     font-family: 'Italy B';
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     text-align: left;
 }
 
@@ -80,7 +80,7 @@ p:first-letter
     font-family: Georgia, 'Times New Roman', serif;
 }
 
-.first_article
+.first-article
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -92,7 +92,7 @@ p:first-letter
     letter-spacing: 3px;
     font-family: Marianna;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid #000;
     border-style: 2px, double;
 }
 
@@ -100,7 +100,7 @@ figure
 {
     margin: 0;
     padding: 5px 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000;
     float: left;
     -webkit-column-span: all;
     column-span: all;
@@ -112,7 +112,7 @@ figcaption
     text-align: right;
 }
 
-.last_article
+.last-article
 {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -136,7 +136,7 @@ figcaption
 
 .head
 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000;
     width: 100%;
 }
 
@@ -189,7 +189,7 @@ img
 
 .tophead
 {
-    border-bottom: 1 px solid black;
+    border-bottom: 1 px solid #000;
 }
 
 .weather
@@ -199,7 +199,7 @@ img
     float: left;
     display: inline-block;
     max-width: 700px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
 
 }
 
