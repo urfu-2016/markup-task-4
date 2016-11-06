@@ -5,8 +5,6 @@
         , url('fonts/Old London V1.woff2') format('woff2')
         , url('fonts/Old London V1.woff') format('woff')
         , url('fonts/Old London V1.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 body
@@ -36,25 +34,26 @@ h1
     text-align: center;
 }
 
-main
+main,
+section
 {
     column-count: 2;
+    -moz-column-count: 2;
     column-rule: 2px solid black;
+    -moz-column-rule: 2px solid black;
 }
 
-.half
+section
 {
-    column-rule: 2px solid black;
-    column-count: 2;
     border-bottom: 4px double black;
 }
 
-.half.last
+section.last
 {
     border: none;
 }
 
-.column
+article
 {
     text-align: justify;
 }
@@ -69,7 +68,7 @@ main
     break-inside: avoid-column;
 }
 
-.column > div:first-of-type > p::first-letter
+article > div:first-of-type > p::first-letter
 {
     font: 600 20px 'Playfair Display', serif;
 }
