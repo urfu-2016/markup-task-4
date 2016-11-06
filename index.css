@@ -5,42 +5,30 @@ body
 
 @font-face
 {
-    font-family: Rodeo;
-    src: url('fonts/rodeo.ttf');
-}
-
-@font-face
-{
     font-family: Goudy;
-    src: url('fonts/goudy.ttf');
+    src: url('fonts/goudy.ttf') format('truetype'), url('fonts/goudy.woff') format('woff');
 }
 
 @font-face
 {
     font-family: Grotesk;
-    src: url('fonts/grotesk.ttf');
-}
-
-@font-face
-{
-    font-family: DS-note;
-    src: url('fonts/ds-note.ttf');
+    src: url('fonts/grotesk.ttf') format('truetype'), url('fonts/grotesk.woff') format('woff');
 }
 
 @font-face
 {
     font-family: President;
-    src: url('fonts/president.ttf');
+    src: url('fonts/president.ttf') format('truetype'), url('fonts/president.woff') format('woff');
 }
 
 .title
 {
-    font: 55px Goudy;
+    font: normal 55px Goudy;
     letter-spacing: -2px;
     font-weight: 500;
 }
 
-.date
+.datetime
 {
     float: left;
     font: normal 20px Cambria;
@@ -55,12 +43,12 @@ blockquote
     font-size: 16px;
 }
 
-main
+article
 {
     margin-top: 20px;
     border-top: 2px solid;
-    column-count: 4;
     -moz-column-count: 4;
+    column-count: 4;
     -moz-column-rule: 2px solid #000;
     column-rule: 2px solid #000;
 }
@@ -70,41 +58,38 @@ p:first-letter
     font-size: 2em;
 }
 
-main div p
+.paragraph p
 {
     font-size: 18px;
 }
 
-main div.block1 p
+.block1-paragraph p
 {
-    column-count: 2;
-    column-rule: 1px solid #000;
     -moz-column-count: 2;
+    column-count: 2;
     -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
-main div.block2 p
+.block2-paragraph p
 {
-    font-family: Rodeo, serif;
-    font-size: 30px;
-    font-weight: 900;
-    column-count: 2;
-    column-rule: 1px solid #000;
+    font-weight: 700;
     -moz-column-count: 2;
+    column-count: 2;
     -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
-main div.block3 p
+.block3-paragraph p
 {
-    font-family: DS-note, serif;
     font-weight: 600;
-    column-count: 2;
-    column-rule: 1px solid #000;
     -moz-column-count: 2;
+    column-count: 2;
     -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
-main div h1
+.paragraph h1
 {
     text-align: center;
     font-family: Grotesk, serif;
@@ -113,15 +98,14 @@ main div h1
     margin: 10px;
 }
 
-main div h6
+.paragraph h6
 {
     margin-top: 3px;
     text-align: center;
 }
 
-main div img
+.paragraph img
 {
     margin-top: 3px;
-    column-span: all;
     width: 310px;
 }
