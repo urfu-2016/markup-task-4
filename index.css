@@ -7,25 +7,25 @@
 @font-face
 {
     font-family: Marianna;
-    src: local(marianna), url(fonts/Marianna.ttf);
+    src: local(marianna), url(fonts/Marianna.ttf), url(fonts/Marianna.woff);
 }
 
 @font-face
 {
     font-family: Roland-Decor;
-    src: local(roland-decor), url(fonts/Roland-Decor.ttf);
+    src: local(roland-decor), url(fonts/Roland-Decor.ttf), url(fonts/Roland-Decor.woff);
 }
 
 @font-face
 {
     font-family: Parisian;
-    src: local(parisian), url(fonts/Parisian.ttf);
+    src: local(parisian), url(fonts/Parisian.ttf), url(fonts/Parisian.woff);
 }
 
 @font-face
 {
     font-family: Matreshka;
-    src: local(matreshka), url(fonts/Matreshka.ttf);
+    src: local(matreshka), url(fonts/Matreshka.ttf), url(fonts/Matreshka.ttf);
 }
 
 aside
@@ -40,6 +40,7 @@ body
     background: url(2.png) repeat-y, url(2.png) 100% 0 repeat-y;
     background-size: 10px;
     margin: 10px 40px;
+    overflow-x:hidden; 
 }
 
 .centered
@@ -51,7 +52,6 @@ body
 {
     margin: 1px;
     font-family: 'Italy B';
-    float: right;
     border-bottom: 1px solid black;
     text-align: left;
 }
@@ -76,7 +76,7 @@ p:first-letter
     display: block;
     float: left;
     color: #f36;
-    font-size: 20px;
+    font-size: 2em;
     font-family: Georgia, 'Times New Roman', serif;
 }
 
@@ -122,12 +122,15 @@ figcaption
 .title
 {
     color: #343434;
+
     font-weight: normal;
     font-family: 'Ultra', sans-serif;
     font-size: 70px;
+
     text-transform: uppercase;
     text-shadow: 0 2px white, 0 3px #777;
     text-align: right;
+
     max-width: 700px;
 }
 
@@ -180,7 +183,7 @@ img
 .state
 {
     font-family: Matreshka;
-    border: 1px solid grey;
+    border: 1px solid #808080;
     margin: 10px;
 }
 
