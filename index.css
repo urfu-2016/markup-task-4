@@ -107,5 +107,5 @@ p:first-letter
 .paragraph img
 {
     margin-top: 3px;
-    width: 310px;
+    width: 100%;
 }
