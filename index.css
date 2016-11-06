@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+@font-face 
+{
+    font-family: DSMoster;
+    src: url(DSMoster.ttf);
+    
+}
+
+@font-face 
+{
+    font-family: Tribune;
+    src: url(Tribune.ttf);
+    
+}
+
+@font-face 
+{
+    font-family: RedOctober;
+    src: url(Red_October.ttf);
+    
+}
+
+h1 
+ {
+    font-size: 124px;
+    text-align: center;
+    font-weight: 900;
+    font-family: Tribune;
+    margin: 0;
+}
+
+.cost
+{
+    text-align: left;
+    letter-spacing: -1.5px;
+    float: left;
+}
+
+.articles
+{
+    float: left;
+}
+
+.date 
+{
+    max-width: 49%;
+    text-align: right;
+    letter-spacing: -1.5px;
+    float: right;
+}
+
+.main_theme
+{
+    width: 77%;
+    float: left;
+    column-count: 3;
+    font-family: DSMoster;
+    text-indent: 25px;
+    text-align: justify;
+    hyphens: manual;
+    font-size: .8em;
+}
+
+.main_theme h4
+{
+    column-span: all;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.main_theme hr
+{
+    column-span: all;
+    height: 3px;
+    background-color: black;
+}
+
+.main_theme header,
+.other_news header
+{
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid;
+   
+}
+
+.other_news
+{
+    text-indent: 25px;
+    float: left;
+    width: 77%;
+    text-align: justify;
+    hyphens: manual;
+    column-count: 4;
+    border: 2px solid;
+    font-family: sans-serif;
+}
+
+.other_news p
+{
+    margin: 3px;
+}
+
+.main_theme p:first-of-type,
+.other_news p:first-of-type
+{
+    font-weight: bold;
+}
+
+.main_theme p:first-of-type:first-letter,
+.other_news p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+.add
+{
+    width: 25%;
+    float: left;
+    padding: 3px;
+    border: 2px solid;
+    height: 100%;
+}
+
+.add img
+{
+    width: 100%;
+}
+
+.blog
+{
+    width: 20%;
+    float: right;
+    border: 5px dashed;
+    padding: 0 0 0 8px;
+    
+    
+}
+
+.blog h2
+{
+    font-family: RedOctober;
+    font-size: .9em;
+}
+
+.blog p
+{
+    font-family: 'Marck Script';
+}
+
+.label
+{
+    font-size: 38px;
+    margin: 0;
+    font-style: oblique;
+    font-family: fantasy;
+    text-align: center;
+    border: double;
+    border-width: 5px 0;
+    min-width: 100%;
+    float: left;
+}
+
+.main_block 
+{
+    padding: 10px;
+    column-count: 10;
+    column-rule: 2px solid;
+    word-break: break-all;
+}
