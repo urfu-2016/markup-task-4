@@ -1,8 +1,9 @@
 @font-face
 {
     font-family: 'CormorantInfant';
-    src: local('CormorantInfant'), url(CormorantInfant-Bold.woff)
-        format('woff');
+    src: local('CormorantInfant'),
+     url(CormorantInfant-Bold.woff)
+     format('woff');
 }
 
 html
@@ -22,28 +23,28 @@ p:first-letter
     color: red;
 }
 
-.vertical_left
+.vertical_left,
+.vertical_right
 {
     word-break: break-word;
     position: absolute;
-    left: 0;
-    margin: 1%;
-    width: 13px;
     word-wrap: break-word;
     letter-spacing: 5px;
     overflow: hidden;
 }
 
+.vertical_left
+{
+    left: 0;
+    margin: 1%;
+    width: 13px;
+}
+
 .vertical_right
 {
-    word-break: break-word;
-    position: absolute;
     right: 0;
     margin: 1.5%;
     width: 15px;
-    word-wrap: break-word;
-    letter-spacing: 5px;
-    overflow: hidden;
 }
 
 .fact
@@ -51,7 +52,6 @@ p:first-letter
     font: 17px 'Roboto Condensed', sans-serif;
     padding: 5px;
     margin: 10px;
-    float: left;
     border: 2px solid #000;
     background: #ffefd5;
     page-break-inside: avoid;
