@@ -1,43 +1,37 @@
 @font-face
 {
     font-family: 'Righteous';
-    src: url('fonts/Righteous/Righteous-Regular.ttf');
-    font-weight: bold;
+    src: url('fonts/Righteous/Righteous-Regular.ttf'), url('fonts/Righteous/Righteous-Regular.ttf');
 }
 
 @font-face
 {
     font-family: 'Covered_By_Your_Grace';
-    src: url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.ttf');
-    font-weight: bold;
+    src: url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.ttf'), url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.woff');
 }
 
 @font-face
 {
     font-family: 'Quattrocento';
-    src: url('fonts/Quattrocento/Quattrocento-Regular.ttf');
-    font-weight: bold;
+    src: url('fonts/Quattrocento/Quattrocento-Regular.ttf'), url('fonts/Quattrocento/Quattrocento-Regular.woff');
 }
 
 @font-face
 {
     font-family: 'Coming_Soon';
-    src: url('fonts/Coming_Soon/ComingSoon.ttf');
-    font-weight: bold;
+    src: url('fonts/Coming_Soon/ComingSoon.ttf'), url('fonts/Coming_Soon/ComingSoon.woff');
 }
 
 @font-face
 {
     font-family: 'Handlee';
-    src: url('fonts/Handlee/Handlee-Regular.ttf');
-    font-weight: bold;
+    src: url('fonts/Handlee/Handlee-Regular.ttf'), url('fonts/Handlee/Handlee-Regular.ttf');
 }
 
 @font-face
 {
     font-family: 'Pacifico';
-    src: url('fonts/Pacifico/Pacifico.ttf');
-    font-weight: bold;
+    src: url('fonts/Pacifico/Pacifico.ttf'), url('fonts/Pacifico/Pacifico.ttf');
 }
 
 body
@@ -47,9 +41,30 @@ body
 
 header
 {
-    font-family: 'Righteous';
-    font-size: 5rem;
+    font: 5rem 'Righteous';
     text-align: center;
+}
+
+input[name='size'][value='font_larger']:checked ~ main
+{
+    font-size: 2em;
+}
+
+input[name='size'][value='font_smaller']:checked ~ main
+{
+    font-size: .5em;
+}
+
+input[name='family'][value='font_Arial']:checked ~ main div.text
+{
+    font-family: 'Arial';
+    color: black;
+}
+
+input[name='color'][value='font_white']:checked ~ main
+{
+    color: white;
+    background: black;
 }
 
 main
@@ -58,16 +73,16 @@ main
     column-rule: 3px solid darkcyan;
 }
 
-main div.text
+div.text
 {
-    font-family: 'Handlee';
+    font-family: 'Handlee', sans-serif;
     column-count: 4;
     column-rule: 3px dashed darkcyan;
 }
 
 h1
 {
-    font-family: 'Covered_By_Your_Grace';
+    font-family: 'Covered_By_Your_Grace', sans-serif;
     font-size: 3rem;
     text-align: center;
     border: 4px inset aquamarine;
@@ -77,21 +92,21 @@ h1
 
 .caption
 {
-    font-family: 'Quattrocento';
+    font-family: 'Quattrocento', serif;
     font-size: 1.2rem;
     border-bottom: 4px inset aquamarine;
 }
 
 .text::first-letter
 {
-    font-size: 250%;
+    font-size: 2.5em;
     color: #5e0080;
     font-weight: bold;
 }
 
 q
 {
-    font-family: 'Coming_Soon';
+    font-family: 'Coming_Soon', fantasy;
     background-color: khaki;
 }
 
@@ -102,7 +117,6 @@ q
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: 4px inset aquamarine;
-
 }
 
 .first_img img
@@ -120,7 +134,7 @@ q
 
 .img_caption
 {
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', fantasy;
 }
 
 .second_img
