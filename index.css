@@ -3,7 +3,8 @@
 @font-face
 {
     font-family: UbuntuFont;
-    src: url('fonts/Ubuntu-Regular.ttf');
+    src: local('Ubuntu')
+         url('fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face
@@ -17,8 +18,8 @@ body
     margin: 0 auto;
     height: 100%;
     width: 1366px;
-    background: url(images/texture.png);
-    background-repeat: repeat;
+    background: url(images/texture.png) repeat;
+    overflow-x: hidden;
     font-family: UbuntuFont, sans-serif;
 }
 
