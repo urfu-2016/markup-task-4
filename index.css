@@ -20,8 +20,8 @@
 .night-mode:checked ~ header,
 .night-mode:checked ~ main
 {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
 }
 
 html
@@ -56,7 +56,7 @@ h1
 {
     column-count: 3;
     -moz-column-count: 3;
-    border: 1px solid #000000;
+    border: 1px solid #000;
 }
 
 .head
@@ -78,9 +78,9 @@ h1
 {
     column-count: 3;
     -moz-column-count: 3;
-    column-rule: 1px solid #000000;
-    -moz-column-rule: 1px solid #000000;
-    border-top: 1px solid #000000;
+    column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    border-top: 1px solid #000;
     font-family: 'Nova Mono', serif;
 }
 
@@ -99,5 +99,5 @@ h5
 aside
 {
     column-span: all;
-    border: 1px solid #000000;
+    border: 1px solid #000;
 }
