@@ -7,24 +7,23 @@
 @font-face
 {
     font-family: 'Astro_cyr-lat';
-    src: url('fonts/Astro_cyr-lat.otf');
+    src: url('fonts/Astro_cyr-lat.woff') format('woff');
 }
 
 @font-face
 {
     font-family: 'Veronica script Two';
-    src: url('fonts/Veronica script Two.ttf');
+    src: url('fonts/Veronica script Two.woff') format('woff');
 }
 
 body
 {
-    background-color: rgb(217, 202, 169);
+    background-color: #d9caa9;
 }
 
 h1
 {
     font: 60px 'kingthings_foundationregular', Arial;
-    
     text-align: center;
 }
 
@@ -38,13 +37,13 @@ hr.double-line
 {
     padding: 0;
     border: none;
-    border-top: medium double black;
-    color: black;
+    border-top: medium double #000;
+    color: #000;
 }
 
 hr
 {
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 hr.article-separator
@@ -57,24 +56,27 @@ main
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
-    -webkit-column-rule: 2px solid black;
-    -moz-column-rule: 2px solid black;
-    column-rule: 2px solid black;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+h3,
+h4
+{
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h3
 {
-    font: bold  27px 'Astro_cyr-lat';
-    text-transform: uppercase;
-    text-align: center;
+    font: bold  27px 'Astro_cyr-lat', Arial;
     letter-spacing: 4px;
 }
 
 h4
 {
-    font: 20px 'Veronica script Two';
-    text-transform: uppercase;
-    text-align: center;
+    font: 20px 'Veronica script Two', Arial;
 }
 
 h5
@@ -83,10 +85,19 @@ h5
     text-align: center;
 }
 
-q
+blockquote
 {
-    quotes: '\201c' '\201d';
     font-size: 20px;
+}
+
+blockquote:before
+{
+    content: open-quote;
+}
+
+blockquote:after
+{
+    content: close-quote;
 }
 
 p::first-letter
@@ -94,7 +105,7 @@ p::first-letter
     font-size: 25px;
 }
 
-.picture
+.picture img
 {
     display: block;
     margin: 0 auto;
@@ -105,18 +116,20 @@ p::first-letter
     text-align: center;
 }
 
-.vertical-text-left
+.vertical-text-left,
+.vertical-text-right
 {
-    float: left;
     font-size: 20px;
     word-break: break-all;
     width: 15px;
 }
 
+.vertical-text-left
+{
+    float: left;
+}
+
 .vertical-text-right
 {
     float: right;
-    font-size: 20px;
-    word-break: break-all;
-    width: 15px;
 }
