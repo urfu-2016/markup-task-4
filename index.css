@@ -1,38 +1,75 @@
-html
-{
-    background-image: url('https://im0-tub-ru.yandex.net/i?id=a4174638e06b66f257903f66ea5b638b&n=33&h=215&w=284');
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/pacifico-webfont.eot');
+    src: local('Pacifico'),
+         url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pacifico-webfont.woff2') format('woff2'),
+         url('fonts/pacifico-webfont.woff') format('woff'),
+         url('fonts/pacifico-webfont.ttf') format('truetype');
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushanscript-regular-webfont.eot');
+    src: local('Kaushan Script'),
+         url('fonts/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('fonts/kaushanscript-regular-webfont.woff') format('woff'),
+         url('fonts/kaushanscript-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('fonts/sacramento-regular-webfont.eot');
+    src: local('Scramento'),
+         url('fonts/sacramento-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sacramento-regular-webfont.woff2') format('woff2'),
+         url('fonts/sacramento-regular-webfont.woff') format('woff'),
+         url('fonts/sacramento-regular-webfont.ttf') format('truetype');
+    unicode-range: U+000-5FF;
 }
 
 header
 {
     font-family: 'Pacifico', cursive;
     font-variant: normal;
-    text-align: center;
-}
-
-h3
-{
-    font-family: 'Oldenburg', cursive;
-    letter-spacing: .5em;
-    text-align: center;
-}
-
-main article
-{
-    line-height: 20px;
 }
 
 main article p:first-of-type:first-letter
 {
-    font-family: 'Sacramento', cursive;
-    font-size: 33px;
-    font-weight: 800;
+    font: 800 33px 'Sacramento', cursive;
 }
 
 main article p
 {
     font-family: 'Kaushan Script', cursive;
     text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+html
+{
+    background-image: url('https://goo.gl/I52HiU');
+}
+
+body
+{
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Oldenburg', cursive;
+    letter-spacing: .5rem;
+}
+
+main article
+{
+    line-height: 20px;
 }
 
 .date
@@ -49,7 +86,6 @@ main article p
     column-count: 3;
     column-gap: 100px;
     column-rule: 2px solid;
-    text-align: left;
     margin: 2% 3%;
 }
 
@@ -57,4 +93,18 @@ img
 {
     float: left;
     margin: 3%;
+}
+
+article q
+{
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.vertical {
+    margin-left: 49%;
+    width: 1px;
+    word-break: break-all;
+    text-transform: uppercase;
+    font-size: 20px ;
 }
