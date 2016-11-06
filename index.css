@@ -1,0 +1,211 @@
+html
+{
+    font-family: KellySlab, Georgia, serif;
+    background: #e3d5d5;
+}
+
+hr
+{
+    border: none;
+    background-color: black;
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+h1
+{
+    margin: 10px;
+    text-align: center;
+    font-size: 85px;
+}
+
+.date
+{
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: .5em;
+}
+
+main
+{
+    margin: 10px;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-count: 4;
+    column-rule: 1px solid #000;
+    font-size: 14px;
+}
+
+main p::first-letter
+{
+    font: 25px KellySlab, Georgia, serif;
+}
+
+.two-columns
+{
+    text-indent: 5%;
+    font-family: KellySlab;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-count: 2;
+    column-rule: 1px solid #000;
+}
+
+.first h2
+{
+    font: 17px OpenSans, Arial, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+.second
+{
+    text-indent: 5%;
+    font-family: Cambria;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    word-spacing: 1.4;
+}
+
+.second h2
+{
+    text-transform: uppercase;
+    font-family: 'KellySlab', cursive;
+}
+
+.third
+{
+    font: 12px Courier, monospace;
+    column-rule: 1px solid #000;
+}
+
+.third h2
+{
+    margin: 5px;
+    padding: 5px;
+    font: 25px 'CormorantInfant', Georgia, serif;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.third hr
+{
+    width: 30%;
+}
+
+.weather h2
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.weather
+{
+    background-color: rgba(224, 224, 209, .63);
+    font: normal 12px Cambria;
+    width: 98%;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+figure
+{
+
+    margin: 0 15px 0 0;
+}
+
+img
+{
+    width: 103%;
+}
+
+figcaption
+{
+    font-size: 9px;
+}
+
+@font-face
+{
+    font-family: KellySlab;
+    src: url(fonts/KellySlab-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: OpenSans;
+    src: url(fonts/OpenSans-CondBold.ttf);
+}
+
+@font-face
+{
+    font-family: CormorantInfant;
+    src: url(fonts/CormorantInfant-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: Jura;
+    src: url(fonts/Jura-Light.ttf);
+}
+
+@media (max-width: 900px)
+{
+    .two-columns
+    {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .third h2
+    {
+        text-align: left;
+        font-size: 22px;
+    }
+    .third h2
+    {
+        font-size: 18px;
+    }
+}
+@media (max-width: 780px)
+{
+    .first h2
+    {
+        text-align: left;
+        font-size: 15px;
+    }
+    .second h2
+    {
+        font-size: 12px;
+    }
+    .third h2
+    {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 600px)
+{
+    main
+    {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    .second h2
+    {
+        font-size: 18px;
+    }
+    .third h2
+    {
+        font-size: 25px;
+    }
+}
+
