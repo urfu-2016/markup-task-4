@@ -148,11 +148,6 @@ figure
     font-family: 'CinzelDecorative-Regular', arial;
 }
 
-.noGap
-{
-    break-inside: avoid-column;
-}
-
 .date
 {
     font: 2em 'Walk Around the Block', arial;
@@ -165,10 +160,20 @@ img
     width: 150px;
 }
 
-.part
+.column1
+{
+    break-after: column;
+}
+
+.column2
 {
     break-before: column;
     break-after: column;
+}
+
+.column3
+{
+    break-before: column;
 }
 
 div.content
@@ -190,7 +195,7 @@ div.content div
     vertical-align: middle;
 }
 
-div.content div:nth-child(2n)
+div.page
 {
     font-size: 2em;
     text-align: center;
