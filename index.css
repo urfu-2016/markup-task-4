@@ -40,7 +40,7 @@ body
     background: url(2.png) repeat-y, url(2.png) 100% 0 repeat-y;
     background-size: 10px;
     margin: 10px 40px;
-    overflow-x:hidden; 
+    overflow-x: hidden;
 }
 
 .centered
