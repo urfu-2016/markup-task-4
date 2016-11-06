@@ -4,7 +4,7 @@
 {
     font-family: UbuntuFont;
     src: local('Ubuntu')
-         url('fonts/Ubuntu-Regular.ttf');
+        url('fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face
