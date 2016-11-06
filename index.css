@@ -1,18 +1,18 @@
 @font-face
 {
-    font-family: 'kingthings_foundationregular';
+    font-family: 'Kingthings Foundation';
     src: url('fonts/Kingthings_Foundation-webfont.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'Astro_cyr-lat';
+    font-family: 'Astro';
     src: url('fonts/Astro_cyr-lat.woff') format('woff');
 }
 
 @font-face
 {
-    font-family: 'Veronica script Two';
+    font-family: 'Veronica Script Two';
     src: url('fonts/Veronica script Two.woff') format('woff');
 }
 
@@ -23,14 +23,8 @@ body
 
 h1
 {
-    font: 60px 'kingthings_foundationregular', Arial;
+    font: 60px 'Kingthings Foundation', Arial;
     text-align: center;
-}
-
-.date
-{
-    text-align: center;
-    text-transform: uppercase;
 }
 
 hr.double-line
@@ -62,7 +56,8 @@ main
 }
 
 h3,
-h4
+h4,
+.date
 {
     text-transform: uppercase;
     text-align: center;
@@ -70,13 +65,13 @@ h4
 
 h3
 {
-    font: bold  27px 'Astro_cyr-lat', Arial;
+    font: bold  27px 'Astro', Arial;
     letter-spacing: 4px;
 }
 
 h4
 {
-    font: 20px 'Veronica script Two', Arial;
+    font: 20px 'Veronica Script Two', Arial;
 }
 
 h5
@@ -109,6 +104,8 @@ p::first-letter
 {
     display: block;
     margin: 0 auto;
+    height: 451px;
+    width: 312px;
 }
 
 .picture figcaption
