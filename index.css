@@ -1,15 +1,13 @@
 @font-face
 {
     font-family: Canterbury;
-    src: url(fonts/Canterbury.ttf) format('truetype'),
-         url(fonts/Canterbury.woff) format('woff');
+    src: url(fonts/Canterbury.ttf) format('truetype'), url(fonts/Canterbury.woff) format('woff');
 }
 
 @font-face
 {
     font-family: 'IM Fell English SC';
-    src: url(fonts/Fell-English.ttf) format('truetype'),
-         url(fonts/Fell-English.woff) format('woff');
+    src: url(fonts/Fell-English.ttf) format('truetype'), url(fonts/Fell-English.woff) format('woff');
 }
 
 header
