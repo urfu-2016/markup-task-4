@@ -1,5 +1,6 @@
 article
 {
+    font-family: 'Slabo 27px', serif;
     margin: 0 auto;
     padding: 3%;
     width: 75%;
@@ -18,11 +19,41 @@ h1:first-of-type
     margin: 25px 0;
 }
 
+section div
+{
+    padding: 10px;
+    hyphens: manual;
+}
+
 section
 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
     column-count: 4;
     column-rule: 2px solid #555;
     text-align: justify;
+}
+
+.footnote
+{
+    padding: 10px;
+    margin: 10px;
+    -webkit-column-span: all;
+    column-span: all;
+    font-size: 1.15em;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-align: center;
+    border-top: 1px #555 solid;
+    border-bottom: 1px #555 solid;
+}
+
+q
+{
+    margin: 10px;
+    font-family: 'Coustard', serif;
+    display: block;
+    font-size: .85em;
 }
 
 .bracket
