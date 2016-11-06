@@ -37,9 +37,9 @@ main article
     padding: 0 0 10px;
 }
 
-main article:first-letter
+main article .columnize:first-letter
 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 main,
@@ -185,4 +185,35 @@ input
 label
 {
     position: absolute;
+    color: red;
+}
+
+.small-label,
+.medium-label,
+.large-label
+{
+    top: 5px;
+}
+
+.small-label,
+.day-label
+{
+    left: 5px;
+}
+
+.medium-label,
+.night-label
+{
+    left: 60px;
+}
+
+.large-label
+{
+    left: 125px;
+}
+
+.day-label,
+.night-label
+{
+    top: 20px;
 }
