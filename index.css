@@ -156,6 +156,11 @@ input[value='night']:checked ~ .container q:before
     color: #fff;
 }
 
+input[value='night']:checked ~ .container q
+{
+    border-left: 10px solid #fff;
+}
+
 input[value='night']:checked ~ .container article:not(:last-child):after,
 input[value='night']:checked ~ .container footer:before,
 input[value='night']:checked ~ .container header:after
