@@ -34,9 +34,9 @@ header h2
 @font-face
 {
     font-family: 'Brock Script_D';
-    src: url('BScript_D.eot?') format('eot'),  
-        url('BScript_D.woff') format('woff'),  
-        url('BScript_D.ttf') format('truetype'),  
+    src: url('BScript_D.eot?') format('eot'),
+        url('BScript_D.woff') format('woff'),
+        url('BScript_D.ttf') format('truetype'),
         url('BScript_D.svg#BrockScript_D') format('svg');
     font-weight: normal;
     font-style: normal;
