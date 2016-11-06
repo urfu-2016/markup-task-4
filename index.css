@@ -14,39 +14,59 @@
     src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'), url(fonts/bemount-line.woff) format('woff'), url(fonts/bemount-line.tff) format('truetype');
 }
 
-body
+.container
 {
-    min-width: 1500px;
-    margin: 0 auto;
+    white-space: nowrap;
+    display: block;
 }
 
-.image-container
+.half-screen
 {
-    break-inside: avoid;
-    display: block;
+    vertical-align: top;
+    white-space: normal;
+    display: inline-block;
+    overflow: hidden;
+    width: 50%;
+}
+
+.left
+{
+    border-right: 1px solid #000;
+}
+
+.right
+{
+    margin-left: -.3em;
+    border-left: 1px solid #000;
 }
 
 .article-image
 {
-    -webkit-column-span: all;
-    column-span: all;
-
     display: block;
     width: 100%;
     border-radius: 8px;
     filter: sepia(75%);
 }
 
-.container
+.columns
+{
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.two-columns
 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-    page-break-after: always;
-    display: block;
-    -moz-column-rule: 1px solid #000;
-    -webkit-column-rule: 1px solid #000;
-    column-rule: 1px solid #000;
+}
+
+.four-columns
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
 }
 
 main
@@ -63,9 +83,6 @@ header
 
 h2
 {
-    -webkit-column-span: all;
-    column-span: all;
-
     font-family: 'Lobster', cursive;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
@@ -87,13 +104,14 @@ h3
     font-size: 1.5em;
 }
 
-h3 + p:first-letter
+.first-paragraph:first-letter
 {
     font-size: 2em;
 }
 
 p
 {
+    margin: 0 .5em;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -131,7 +149,15 @@ input[value='dark']:checked ~ main hr
 
 input[value='dark']:checked ~ main div
 {
+    -moz-column-rule-color: #fff;
+    -webkit-column-rule-color: #fff;
     column-rule-color: #fff;
+    border-color: #fff;
+}
+
+input[value='dark']:checked ~ main h2
+{
+    border-color: #fff;
 }
 
 input[value='dark']:checked ~ main img
