@@ -25,15 +25,14 @@ body
 
 main
 {
-    column-count: 2;
-    column-width: 500px;
+    -moz-column-count: 4;
+    -moz-column-width: 250px;
+    -moz-column-rule: 2px solid #cd853f;
+    -moz-column-gap: 2em;
+    column-count: 4;
+    column-width: 250px;
     column-rule: 2px solid #cd853f;
     column-gap: 2em;
-    -moz-column-count: 2;
-    -moz-column-width: 500px;
-    -moz-column-rule: 2px solid;
-    -moz-column-gap: 2em;
-    min-height: 500px;
 }
 
 img
@@ -47,18 +46,18 @@ header
     letter-spacing: 50px;
     text-align: center;
     word-spacing: 40px;
-    column-span: all;
     -moz-column-span: all;
+    column-span: all;
     color: #cd853f;
 }
 
-div
+.date
 {
     font: bold 20px 'Keetanokatakana', arial;
     letter-spacing: 20px;
     text-align: center;
-    column-span: all;
     -moz-column-span: all;
+    column-span: all;
     border: 1px solid #cd853f;
     color: #cd853f;
 }
@@ -68,12 +67,14 @@ div
 .title5
 {
     font-family: 'Roboto', sans-serif;
+    line-height: 35px;
 }
 
 .title2,
 .title4
 {
     font-family: 'Roboto Slab', serif;
+    line-height: 35px;
 }
 
 article::first-letter
@@ -81,49 +82,42 @@ article::first-letter
     font: 25px 'Keetanokatakana', arial;
 }
 
-figcaption,
 article
 {
+    -moz-column-count: 1;
+    column-count: 1;
     color: #8b4513;
     text-align: justify;
-    column-rule: 1px dotted;
-    column-gap: 2em;
-    -moz-column-rule: 1px dotted;
-    -moz-column-gap: 2em;
+}
+
+figcaption
+{
+    color: #8b4513;
 }
 
 .first-text
 {
     font: 20px 'Roboto Condensed', sans-serif;
     line-height: 30px;
-    min-height: 250px;
-    -moz-column-count: 2;
-    column-count: 2;
+    height: 850px;
 }
 
 .second-text
 {
     font: 16px 'Merriweather', serif;
     line-height: 23px;
-    column-count: 2;
-    -moz-column-count: 2;
-    min-height: 350px;
     letter-spacing: -.5px;
 }
 
 .third-text
 {
     font: 18px 'PT Sans Narrow', sans-serif;
-    column-count: 2;
-    -moz-column-count: 2;
     line-height: 15px;
 }
 
 .fourth-text
 {
     font: 18px 'Play', sans-serif;
-    column-count: 2;
-    -moz-column-count: 2;
     line-height: 16px;
 }
 
@@ -131,14 +125,12 @@ article
 {
     font: 16px 'Comfortaa', sans-serif;
     line-height: 14px;
-    column-count: 2;
-    -moz-column-count: 2;
 }
 
 h3
 {
+    -moz-column-span: all;
     column-span: all;
-    -moz-column-span: 2;
     text-align: center;
     color: #daa520;
     font-size: 20px;
