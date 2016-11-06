@@ -46,7 +46,7 @@ article.two-columns
 
 .image-in-text
 {
-    width: 95%;
+    width: 100%;
     height: auto;
     filter: grayscale(1);
     border-radius: 25%;
