@@ -37,18 +37,26 @@ main article
     padding: 0 0 10px;
 }
 
-main, aside
+main article:first-letter
+{
+    font-size: 1.5em;
+}
+
+main,
+aside
 {
     display: inline-block;
     vertical-align: top;
 }
 
-main {
+main
+{
     width: 80%;
     margin: 0 -6px 0 0;
 }
 
-aside {
+aside
+{
     width: 20%;
 }
 
@@ -57,6 +65,7 @@ aside {
     font-family: 'Roboto Slab', serif;
     font-size: .8em;
     overflow: hidden;
+    margin: 10px auto;
 }
 
 aside article
@@ -98,12 +107,12 @@ figure
     margin: 0 5px;
 }
 
-input[value='small']:checked ~ *
+input[value='small']:checked ~ .container
 {
     font-size: .7em;
 }
 
-input[value='large']:checked ~ *
+input[value='large']:checked ~ .container
 {
     font-size: 1.3em;
     line-height: 1.3em;
@@ -111,44 +120,69 @@ input[value='large']:checked ~ *
 
 q
 {
-  border-left: 10px solid #000;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  display: block;
-  font-family: Pompadur;
+    border-left: 10px solid #000;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: '\201C''\201D''\2018''\2019';
+    display: block;
+    font-family: Pompadur;
 }
 
 q:before
 {
-  color: #000;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.15em;
-  vertical-align: -0.4em;
+    color: #000;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .15em;
+    vertical-align: -.4em;
 }
 
 q:after
 {
-  color: #000;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-left: 0.15em;
-  vertical-align: -0.45em;
-  content: close-quote;
+    color: #000;
+    content: close-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-left: .15em;
+    vertical-align: -.45em;
 }
 
-input[value='night']:checked ~ *,
-input[value='night']:checked ~ * q:after,
-input[value='night']:checked ~ * q:before
+input[value='night']:checked ~ .container,
+input[value='night']:checked ~ .container q:after,
+input[value='night']:checked ~ .container q:before
 {
     background: #000;
     color: #fff;
 }
 
+input[value='night']:checked ~ .container article:not(:last-child):after,
+input[value='night']:checked ~ .container footer:before,
+input[value='night']:checked ~ .container header:after
+{
+    background: white;
+}
+
 input
 {
     display: none;
+}
+
+.single-column
+{
+    width: 2px;
+    margin: 0 auto;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.image img
+{
+    margin-left: 2.5%;
+    width: 95%;
+}
+
+label
+{
+    position: absolute;
 }
