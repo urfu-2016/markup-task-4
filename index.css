@@ -1,114 +1,105 @@
-.column 
+header 
 {
-    display: inline-block;
-    vertical-align: top;
-    width: 24%;
-    column-count: 2;
-    column-width: 50%;
-    column-rule: 1px solid darkslategray;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid darkslategray;
-    word-break: break-all;
-    margin-left: 5px;
-    text-align: justify;
-    height: 550px;
-}
-
-.column > p:first-of-type::first-letter 
-{
-    font-size: 40px;
-    font-family: Edisson;
-}
-
-.column > p 
-{
-    padding-right: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Overpass;
-    line-height: 110%;
-}
-
-.image-with-sign 
-{
-    padding: 2px;
-    margin: 5px;
-    border: 2px dotted dimgray;
-    word-break: keep-all;
     text-align: center;
 }
 
-.image-with-sign > img 
+.header-text
 {
-    width: 100%;
-    filter: grayscale(1);
+    font: normal 8em Edisson;
 }
 
-q 
+body 
 {
-    font-family: Five;
-    font-style: italic;
+    background-color: #ffdead;
+}
+
+main 
+{
+    width: 100%;
+    columns: 4;
+    -moz-columns: 4;
+    column-rule: 1px solid #2f4f4f;
+    -moz-column-rule: 1px solid #2f4f4f;
+}
+
+article
+{
+    font-family: Cambria, serif;
+    text-align: justify;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-indent: 8%;
+}
+
+article.two-columns
+{
+    columns: 2;
+    -moz-columns: 2;
+    column-rule: 1px solid #2f4f4f;
+    -moz-column-rule: 1px solid #2f4f4f;
+}
+
+.image-in-text
+{
+    width: 95%;
+    height: auto;
+    filter: grayscale(1);
+    border-radius: 25%;
+    box-sizing: border-box;
+    border: 6px double #000;
+}
+
+p.first
+{
+    font-weight: 600;
+}
+
+p.first::first-letter
+{
+    font: 400 250% Edisson;
+}
+
+q
+{
+    font: italic 100% Five;
 }
 
 .edition
 {
     display: block;
     text-align: center;
-    font-size: 200%;
-    border-top: 4px double black;
-    border-bottom: 4px double black;
+    font: normal 200% Edisson;
+    border: 4px double #000;
+    border-left: none;
+    border-right: none;
     margin-bottom: 5px;
-    font-family: Edisson;
 }
 
-hr 
+.vertical-text
 {
+    font-size: 120%;
+    font-weight: 600;
     display: block;
-    height: 0;
-    width: 50%;
-    border: none;
-    border-bottom: 1px solid black;
+    margin: 5px;
+    float: left;
+    text-align: left;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }
 
-header 
-{
-    text-align: center;
-}
-
-body 
-{
-    background-color: navajowhite;
-}
-
+/* Custom fonts */
 @font-face
 {
     font-family: Edisson;
-    src: url(fonts/Edisson.ttf);
+    src: url(fonts/Edisson.ttf), url(fonts/Edisson.woff), url(fonts/Edisson.eot);
 }
 @font-face
 {
     font-family: Five;
-    src: url(fonts/Five.ttf);
-}
-
-@font-face
-{
-    font-family: Overpass;
-    src: url(fonts/Overpass.ttf);
-}
-
-.header-text
-{
-    font-size: 8em;
-    font-family: Edisson;
-}
-
-.urgently
-{
-    border: 3px double black;
-    font-size: 130%;
-    font-weight: 700;
-    margin: 4px;
-    display: inline-block;
+    src: url(fonts/Five.ttf), url(fonts/Five.woff), url(fonts/Five.eot);
 }
