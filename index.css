@@ -69,7 +69,7 @@ main p::first-letter
     font-family: Cambria;
     letter-spacing: 1px;
     line-height: 1.4;
-    word-spacing: 1.5;
+    word-spacing: 1.4;
 }
 
 .second h2
@@ -117,7 +117,7 @@ main p::first-letter
 
 figure
 {
-   
+
     margin: 0 15px 0 0;
 }
 
@@ -169,7 +169,7 @@ figcaption
     }
     .third h2
     {
-        font-size: 18px;   
+        font-size: 18px;
     }
 }
 @media (max-width: 780px)
@@ -185,9 +185,9 @@ figcaption
     }
     .third h2
     {
-        font-size: 18px;   
+        font-size: 18px;
     }
-    
+
 }
 
 @media (max-width: 600px)
@@ -196,7 +196,7 @@ figcaption
     {
         -moz-column-count: 2;
         -webkit-column-count: 2;
-        column-count: 2;   
+        column-count: 2;
     }
     .second h2
     {
@@ -204,7 +204,7 @@ figcaption
     }
     .third h2
     {
-        font-size: 25px;   
+        font-size: 25px;
     }
 }
 
