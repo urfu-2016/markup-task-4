@@ -193,32 +193,27 @@ label
     color: red;
 }
 
-.small-label,
-.medium-label,
-.large-label
+.row1
 {
     top: 5px;
 }
 
-.small-label,
-.day-label
+.row2
+{
+    top: 20px;
+}
+
+.column1
 {
     left: 5px;
 }
 
-.medium-label,
-.night-label
+.column2
 {
     left: 60px;
 }
 
-.large-label
+.column3
 {
     left: 125px;
-}
-
-.day-label,
-.night-label
-{
-    top: 20px;
 }
