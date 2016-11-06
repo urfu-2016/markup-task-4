@@ -4,7 +4,8 @@
     /* тут и в других @font-face линтер требовал пробел после запятой,
        а мой текстовый редактор эти пробелы любезной удалял. пришлось
        сделать отступы так. */
-    src: url('fonts/OldLondon.woff2')
+    src: local('Old London'),
+        url('fonts/OldLondon.woff2')
         format('woff2'), url('fonts/OldLondon.ttf')
         format('truetype'), url('fonts/OldLondon.eot') format('embedded-opentype');
 }
@@ -12,7 +13,8 @@
 @font-face
 {
     font-family: 'C&L';
-    src: url('fonts/C&LBold.woff2')
+    src: local('Champagne & Limousines Bold'),
+        url('fonts/C&LBold.woff2')
         format('woff2'), url('fonts/C&LBold.ttf')
         format('truetype'), url('fonts/C&LBold.eot') format('embedded-opentype');
     font-weight: bold;
@@ -21,7 +23,8 @@
 @font-face
 {
     font-family: 'C&L';
-    src: url('fonts/C&LBoldItalic.woff2')
+    src: local('Champagne & Limousines Bold Italic'),
+        url('fonts/C&LBoldItalic.woff2')
         format('woff2'), url('fonts/C&LBoldItalic.ttf')
         format('truetype'), url('fonts/C&LBoldItalic.eot') format('embedded-opentype');
     font-weight: bold;
@@ -31,7 +34,8 @@
 @font-face
 {
     font-family: 'Archivo';
-    src: url('fonts/ArchivoNarrow.woff2')
+    src: local('Archivo Narrow Regular'),
+        url('fonts/ArchivoNarrow.woff2')
         format('woff2'), url('fonts/ArchivoNarrow.ttf')
         format('truetype'), url('fonts/ArchivoNarrow.eot') format('embedded-opentype');
 }
@@ -266,6 +270,11 @@ blockquote:after
     width: 30%;
 }
 
+.pixar-news
+{
+    width: 40%;
+}
+
 figure
 {
     margin: 0;
@@ -378,11 +387,6 @@ figure img
 .legend:hover .tooltip
 {
     display: block;
-}
-
-.pixar-news
-{
-    width: 40%;
 }
 
 .vertical
