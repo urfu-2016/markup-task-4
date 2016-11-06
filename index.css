@@ -14,6 +14,11 @@
     src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'), url(fonts/bemount-line.woff) format('woff'), url(fonts/bemount-line.tff) format('truetype');
 }
 
+body
+{
+    min-width: 400px;
+}
+
 .container
 {
     white-space: nowrap;
