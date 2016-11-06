@@ -1,31 +1,33 @@
-body
-{
-    font-family: 'CormorantInfant';
-    background: url(http://xn----btblbleucc2b.su/style/bg.jpg);
-}
-
 @font-face
 {
     font-family: 'CormorantInfant';
-    src: url(CormorantInfant-Bold.ttf);
+    src: local('CormorantInfant'), url(CormorantInfant-Bold.woff)
+        format('woff');
 }
 
-P:first-letter
-{
-    font-family: 'Domine', cursive;
-    font-size: 200%;
-    color: red;
-}
 
 html
 {
     overflow-x: hidden;
 }
 
+body
+{
+    font-family: 'CormorantInfant';
+    background: url(http://xn----btblbleucc2b.su/style/bg.jpg);
+}
+
+p:first-letter
+{
+    font: 200% 'Domine', cursive;
+    color: red;
+}
+
 .vertical_left
 {
     word-break: break-word;
-    float: left;
+    position: absolute;
+    left: 0;
     margin: 1%;
     width: 13px;
     word-wrap: break-word;
@@ -36,7 +38,8 @@ html
 .vertical_right
 {
     word-break: break-word;
-    float: right;
+    position: absolute;
+    right: 0;
     margin: 1.5%;
     width: 15px;
     word-wrap: break-word;
@@ -46,31 +49,28 @@ html
 
 .fact
 {
+    font: 17px 'Roboto Condensed', sans-serif;
     padding: 5px;
     margin: 10px;
     float: left;
     border: 2px solid #000;
     background: #ffefd5;
-    font-size: 17px;
-    font-family: 'Roboto Condensed', sans-serif;
     page-break-inside: avoid;
     
 }
 
 header
 {
+    font: 'Pacifico', cursive;
     text-align: center;
     color: #000;
-    font-family: 'Pacifico', cursive;
     border-top: 10px solid #000;
 }
 
 h1
 {
+    font: bold 50px 'Pacifico', cursive;
     margin: 5px;
-    font-size: 50px;
-    font-family: 'Pacifico', cursive;
-
 }
 
 .under-header
@@ -84,7 +84,7 @@ h1
     position: relative;
 }
 
-article.one
+.article-one
 {
     -moz-column-count: 4;
     column-count: 4;
@@ -94,7 +94,7 @@ article.one
     column-rule: 2px solid #000;
 }
 
-article.two
+.article-two
 {
     -moz-column-count: 4;
     column-count: 4;
@@ -108,9 +108,8 @@ main p,
 h2,
 h3
 {
-    font-family: 'Domine', cursive;
+    font: 13px 'Domine', cursive;
     text-indent: 18px;
-    font-size: 13px;
 }
 
 .author
@@ -128,40 +127,36 @@ img
 h2,
 h3
 {
+    font: bold 27px 'Pacifico', cursive;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    font-family: 'Pacifico', cursive;
-    font-size: 27px;
 }
 
 .subtitle
 {
-    margin: 20px;
+    text-align: center;
 }
 
 h2
 {
+    font: 30px 'Pacifico', cursive;
+    text-align: center;
     -moz-column-span: all;
     column-span: all;
     width: 500px;
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
 }
 
 ul
 {
+    font: 15px 'Domine', serif;
     color: #000;
-    font-family: 'Domine', serif;
-    font-size: 15px;
 }
 
 div.content
 {
+    font: 28px 'Pacifico', cursive;
     text-align: justify;
     margin-bottom: 6px;
-    font-family: 'Pacifico', cursive;
-    font-size: 28px;
-
 }
 
 .roundedFrame
@@ -174,16 +169,16 @@ div.content
 
 blockquote
 {
+    font: italic 'Domine', serif;
     margin: 6px 20px;
     padding: 6px;
     font-style: italic;
-    font-family: 'Domine', serif;
 }
 
 .columns_2
 {
-    column-count: 2;
-    column-rule: 1.5px solid #000;
     -moz-column-count: 2;
+    column-count: 2;
     -moz-column-rule: 1.5px solid #000;
+    column-rule: 1.5px solid #000;
 }
