@@ -37,6 +37,7 @@
 body
 {
     background: url(images/background.jpg);
+    font: 18px Oranienbaum, sans-serif;
 }
 
 .table-header
@@ -70,7 +71,6 @@ body
     text-align: center;
     padding: 10px 0;
     font: 14px Alabama, serif;
-    font-weight: 100;
 }
 
 .date
@@ -82,6 +82,29 @@ body
     font-weight: 100;
 }
 
+.content
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 6px double #000;
+    column-rule: 6px double #000;
+    border-bottom: 6px double #000;
+}
+
+.main-article,
+.secondary-articles
+{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.secondary-articles
+{
+    font-size: 16px;
+    padding: 15px 0 0 15px;
+}
+
 .main-article-text,
 .secondary-article-text
 {
@@ -91,27 +114,8 @@ body
     column-rule: 1px solid #000;
 }
 
-.main-article
-{
-    font: 18px Oranienbaum, sans-serif;
-    width: 60%;
-    vertical-align: top;
-    padding-right: 15px;
-    border-right: 6px double #000;
-}
-
-.secondary-articles
-{
-    width: 40%;
-    vertical-align: top;
-    font-size: 15px;
-    padding-left: 15px;
-}
-
 .image
 {
-    column-span: all;
-    display: block;
     width: 100%;
 }
 
@@ -123,10 +127,8 @@ body
 .main-header,
 .secondary-header
 {
-    font: bold 16px 'Snowstorm Light', serif;
+    font: bold 28px 'Snowstorm Light', serif;
     padding-bottom: 10px;
-    column-span: all;
-    font-size: 28px;
 }
 
 .main-header
@@ -149,12 +151,12 @@ body
     font-size: 22px;
 }
 
-figure
+.content figure
 {
     margin: 15px 25px;
 }
 
-figcaption
+.content figcaption
 {
     margin-top: 5px;
     text-align: center;
@@ -166,29 +168,25 @@ figcaption
     font: 1.7em Remeslo, serif;
 }
 
-.content
-{
-    border-bottom: 6px double #000;
-}
-
-q
+.content q
 {
     font-style: italic;
 }
 
-p:first-child
+.main-article-text p:first-child,
+.secondary-article-text p:first-child
 {
     margin-top: 0;
 }
 
 .vertical
 {
-    font-size: 10px;
+    font-size: 8px;
     width: 1em;
     word-wrap: break-word;
 }
 
 .secondary-articles .vertical:first-letter
 {
-    font: 10px Oranienbaum, sans-serif;
+    font: 8px Oranienbaum, sans-serif;
 }
