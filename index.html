@@ -7,15 +7,22 @@
 </head>
 <body>
     <p>Цветовая схема</p>
-    <input type="checkbox" class="change-color">Сменить цветовую схему
+    <input type="checkbox" class="change-color" id="change-color">
+    <label for="change-color">Сменить цветовую схему</label>
     <p>Размер шрифта:</p>
-    <input type="radio" name="font-size" class="big-font">Большой
-    <input type="radio" name="font-size" checked>Обычный
-    <input type="radio" name="font-size" class="small-font">Маленький<br>
+    <input type="radio" name="font-size" class="big-font" id="big">
+    <label for="big">Большой</label>
+    <input type="radio" name="font-size" id="normal" checked>
+    <label for="normal">Обычный</label>
+    <input type="radio" name="font-size" id="small" class="small-font">
+    <label for="small">Маленький</label>
     <p>Шрифт:</p>
-    <input type="radio" name="font" class="arial">Arial
-    <input type="radio" name="font" checked>Газетный
-    <input type="radio" name="font" class="chiller">Chiller
+    <input type="radio" name="font" class="arial" id="font-arial">
+    <label for="font-arial">Arial</label>
+    <input type="radio" name="font" id="font-news" checked>
+    <label for="font-news">Газетный</label>
+    <input type="radio" name="font" class="chiller" id="font-chiller">
+    <label for="font-chiller">Chiller</label>
     <div class="newspaper">
         <header>
             <p class="copyright-header">&copy;EKB&nbsp;Times</p>
@@ -26,18 +33,18 @@
             </div>
             <div class="center-header"><h1>The EKB Times.</h1></div>
             <div class="right-header">
-                <h4>LATE CITY EDITION</h4>
+                <h4>Late city edition</h4>
                 <p>Contact: Bragin Egor<br>Chief Editor: Bragin Egor</p>
             </div>
         </header>
         <main>
             <article class="information">
                 <hr><hr>
-                <span>EKATERINBURG, THURSDAY, OCTOBER 27, 1985</span>
+                <span>Ekaterinburg, <time datetime="1985-11-27">thursday, october 27, 1985</time></span>
                 <hr><hr>
             </article>
             <div class="left-main">
-                <img src="img/woman.jpg" alt="woman" title="woman">
+                <img src="img/woman.jpg" alt="Annie Edson Taylor" title="Annie Edson Taylor">
                 <div class="two-columns">
                     <h2>
                         Melbourne Cup: Star jockey Michelle Payne fit again after horror fall
@@ -71,7 +78,6 @@
                         to explain why before saying:
                         "I think that looking back about things really wears me out."
                     </p>
-                    <h3>Meeting her idol</h3>
                     <p>
                         Her life to date has been sufficiently captivating for
                         a movie to be made by the Oscar-nominated actress and
@@ -88,6 +94,7 @@
                         whose first words regarding her Melbourne Cup triumph were
                         simply "well done."
                     </p>
+                    <h3>Meeting her idol</h3>
                     <p>
                         "It's something I take pretty seriously as I know that
                         I looked up to other people for inspiration," she says.
