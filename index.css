@@ -72,14 +72,6 @@ main .third p
     column-rule: 2px solid #000;
 }
 
-hr
-{
-    color: #000;
-    border: none;
-    background-color: #000;
-    height: 2px;
-}
-
 h3
 {
     letter-spacing: -1px;
