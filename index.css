@@ -1,19 +1,8 @@
 @font-face
 {
     font-family: 'CormorantInfant';
-    src: local('CormorantInfant'), 
-        url(CormorantInfant-Bold.woff)
-        format('woff');
+    src: local('CormorantInfant'), url(CormorantInfant-Bold.woff) format('woff');
 }
-
-@font-face
-{
-    font-family: 'CormorantInfant';
-    src: local('CormorantInfant'),
-     url(CormorantInfant-Bold.woff)
-     format('woff');
-}
-
 
 html
 {
