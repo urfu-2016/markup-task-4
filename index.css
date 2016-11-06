@@ -1,72 +1,62 @@
 @font-face
 {
     font-family: 'Abhaya Libre';
-    src: url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.ttf'),
-        url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.woff');
+    src: url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.ttf'), url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.woff');
     font-weight: bold;
 }
 
 @font-face
 {
     font-family: 'Indie Flower';
-    src: url('fonts/Indie_Flower/IndieFlower.ttf'),
-        url('fonts/Indie_Flower/IndieFlower.woff');
+    src: url('fonts/Indie_Flower/IndieFlower.ttf'), url('fonts/Indie_Flower/IndieFlower.woff');
 }
 
 @font-face
 {
     font-family: 'Cormorant Garamond Italic';
-    src: url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf'),
-        url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff');
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf'), url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff');
 }
 
 @font-face
 {
     font-family: 'Cormorant Garamond';
-    src: url('fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf'),
-        url('fonts/Cormorant_Garamond/CormorantGaramond-Light.woff');
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf'), url('fonts/Cormorant_Garamond/CormorantGaramond-Light.woff');
 }
 
 @font-face
 {
     font-family: 'Cookie Regular';
-    src: url('fonts/Cookie/Cookie-Regular.ttf'), 
-        url('fonts/Cookie/Cookie-Regular.woff');
+    src: url('fonts/Cookie/Cookie-Regular.ttf'), url('fonts/Cookie/Cookie-Regular.woff');
 }
 
 @font-face
 {
     font-family: 'Rock Salt';
-    src: url('fonts/Rock_Salt/RockSalt.ttf'), 
-        url('fonts/Rock_Salt/RockSalt.woff');
+    src: url('fonts/Rock_Salt/RockSalt.ttf'), url('fonts/Rock_Salt/RockSalt.woff');
 }
 
 @font-face
 {
     font-family: 'Playball';
-    src: url('fonts/Playball/Playball-Regular.ttf'), 
-        url('fonts/Playball/Playball-Regular.woff');
+    src: url('fonts/Playball/Playball-Regular.ttf'), url('fonts/Playball/Playball-Regular.woff');
 }
 
 @font-face
 {
     font-family: 'Fredoka One';
-    src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf'),
-        url('fonts/Fredoka_One/FredokaOne-Regular.woff');
+    src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf'), url('fonts/Fredoka_One/FredokaOne-Regular.woff');
 }
 
 @font-face
 {
     font-family: 'Trirong';
-    src: url('fonts/Trirong/Trirong-Black.ttf'),
-        url('fonts/Trirong/Trirong-Black.woff');
+    src: url('fonts/Trirong/Trirong-Black.ttf'), url('fonts/Trirong/Trirong-Black.woff');
 }
 
 @font-face
 {
     font-family: 'Lobster';
-    src: url('fonts/Lobster/Lobster-Regular.ttf'),
-        url('fonts/Lobster/Lobster-Regular.woff');
+    src: url('fonts/Lobster/Lobster-Regular.ttf'), url('fonts/Lobster/Lobster-Regular.woff');
 }
 
 input[name='font_size'][value='large']:checked ~ main
