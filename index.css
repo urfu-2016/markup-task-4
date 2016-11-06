@@ -215,12 +215,12 @@ blockquote:after
 
 .small-size:checked ~ .newspaper main
 {
-    font-size: smaller;
+    font-size: .8em;
 }
 
 .big-size:checked ~ .newspaper main
 {
-    font-size: larger;
+    font-size: 1.2em;
 }
 
 .elite:checked ~ .newspaper main
