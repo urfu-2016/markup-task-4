@@ -1,8 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Newspaper</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <p>Тема:</p>
+        <input type="radio" name="theme" value="dark" id="dark">
+        <label for="dark">Темная</label>
+        <input type="radio" name="theme" value="light" id="light" checked>
+        <label for="light">Светлая</label>
+
+        <p>Размер шрифта:</p>
+        <input type="radio" name="font-size" value="small" id="small">
+        <label for="small">Маленький</label>
+        <input type="radio" name="font-size" value="medium" id="medium" checked>
+        <label for="medium">Средний</label>
+        <input type="radio" name="font-size" value="large" id="large">
+        <label for="large">Большой</label>
+
+        <p>Тип шрифта:</p>
+        <input type="radio" name="font-type" value="default" id="default" checked>
+        <label for="default">Стандатный</label>
+        <input type="radio" name="font-type" value="handwriting" id="handwriting">
+        <label for="handwriting">Рукописный</label>
+
+        <main>
+            <hr>
+            <header>
+                Breaking news
+            </header>
+            <hr>
+            <article>
+                <div>
+                    <div class="container">
+                        <div class="half-screen left">
+                            <img src="images/first-news-image.jpg" class="article-image"
+                                title="Путин" alt="Путин">
+                            <h3>
+                                Пу&shy;тин пред&shy;ло&shy;жил 10 лет ко&shy;ло&shy;нии за отъ&shy;ем
+                                биз&shy;не&shy;са си&shy;ло&shy;ви&shy;ка&shy;ми
+                            </h3>
+                            <div class="columns two-columns">
+                                <p class="first-paragraph">
+                                    Си&shy;ло&shy;ви&shy;ки мо&shy;гут по&shy;пасть в ко&shy;ло&shy;нию на 10
+                                    лет, ес&shy;ли они при&shy;влек&shy;ли к уго&shy;лов&shy;ной
+                                    от&shy;вет&shy;ствен&shy;но&shy;сти за&shy;ве&shy;до&shy;мо
+                                    не&shy;ви&shy;нов&shy;ных пред&shy;при&shy;ни&shy;ма&shy;те&shy;лей и те
+                                    ли&shy;ши&shy;лись биз&shy;не&shy;са, сле&shy;ду&shy;ет из
+                                    вне&shy;сен&shy;но&shy;го в Гос&shy;ду&shy;му
+                                    за&shy;ко&shy;но&shy;про&shy;ек&shy;та
+                                    Вла&shy;ди&shy;ми&shy;ра Пу&shy;ти&shy;на
+                                </p>
+                            </div>
+                        </div>
+                        <div class="half-screen right">
+                            <div class="columns two-columns">
+                                <p>
+                                    В пят&shy;ни&shy;цу, 28 ок&shy;тяб&shy;ря, пре&shy;зи&shy;дент
+                                    Вла&shy;ди&shy;мир Пу&shy;тин внес​ за&shy;ко&shy;но&shy;про&shy;ект об
+                                    уже&shy;сто&shy;че&shy;нии от&shy;вет&shy;ствен&shy;но&shy;сти
+                                    пра&shy;во&shy;охра&shy;ни&shy;тель&shy;ных
+                                    ор&shy;га&shy;нов за не&shy;обос&shy;но&shy;ван&shy;ное
+                                    уго&shy;лов&shy;ное
+                                    пре&shy;сле&shy;до&shy;ва&shy;ние
+                                    пред&shy;при&shy;ни&shy;ма&shy;те&shy;лей.
+                                    По&shy;прав&shy;ка&shy;ми в ст.299 Уго&shy;лов&shy;но&shy;го
+                                    ко&shy;дек&shy;са Рос&shy;сии (УК; при&shy;вле&shy;че&shy;ние
+                                    за&shy;ве&shy;до&shy;мо
+                                    не&shy;ви&shy;нов&shy;но&shy;го к уго&shy;лов&shy;ной
+                                    от&shy;вет&shy;ствен&shy;но&shy;сти) пред&shy;ла&shy;га&shy;ет&shy;ся
+                                    уве&shy;ли&shy;чить срок ли&shy;ше&shy;ния сво&shy;бо&shy;ды с пя&shy;ти
+                                    до се&shy;ми лет. Ес&shy;ли это при&shy;ве&shy;ло к круп&shy;но&shy;му
+                                    ущер&shy;бу
+                                    или «иным тяж&shy;ким по&shy;след&shy;стви&shy;ям», то срок
+                                    на&shy;ка&shy;за&shy;ния мо&shy;жет быть от пя&shy;ти до 10 лет.
+                                    Круп&shy;ный
+                                    ущерб — это 1,5 млн руб., ска&shy;за&shy;но в до&shy;ку&shy;мен&shy;те.
+                                </p>
+                                <p>
+                                    Ста&shy;тья до&shy;пол&shy;ня&shy;ет&shy;ся так&shy;же но&shy;вым
+                                    со&shy;ста&shy;вом: «не&shy;за&shy;кон&shy;ное воз&shy;буж&shy;де&shy;ние
+                                    де&shy;ла, ес&shy;ли это де&shy;я&shy;ние со&shy;вер&shy;ше&shy;но в
+                                    це&shy;лях вос&shy;пре&shy;пят&shy;ство&shy;ва&shy;ния
+                                    пред&shy;при&shy;ни&shy;ма&shy;тель&shy;ской
+                                    де&shy;я&shy;тель&shy;но&shy;сти
+                                    ли&shy;бо из ко&shy;рыст&shy;ной или иной лич&shy;ной
+                                    за&shy;ин&shy;те&shy;ре&shy;со&shy;ван&shy;но&shy;сти,
+                                    по&shy;влек&shy;шее
+                                    пре&shy;кра&shy;ще&shy;ние пред&shy;при&shy;ни&shy;ма&shy;тель&shy;ской
+                                    де&shy;я&shy;тель&shy;но&shy;сти ли&shy;бо при&shy;чи&shy;не&shy;ние
+                                    круп&shy;но&shy;го ущер&shy;ба». За это пред&shy;ла&shy;га&shy;ет&shy;ся
+                                    на&shy;ка&shy;зы&shy;вать ли&shy;ше&shy;ни&shy;ем сво&shy;бо&shy;ды на
+                                    срок от пя&shy;ти до 10 лет.
+                                </p>
+                            </div>
+                            <hr class="single-line">
+                            <p class="vertical-text">+15 рублей</p>
+                        </div>
+                    </div>
+                    <h2>В ми&shy;ре жи&shy;вот&shy;ных</h2>
+                    <article>
+                        <div class="columns four-columns">
+                            <h3>
+                                В Ха&shy;ба&shy;ров&shy;ске про&shy;шел пи&shy;кет с
+                                тре&shy;бо&shy;ва&shy;ни&shy;ем ре&shy;аль&shy;но&shy;го
+                                на&shy;ка&shy;за&shy;ния для жи&shy;во&shy;де&shy;рок
+                            </h3>
+                            <p class="first-paragraph">
+                                Пи&shy;кет про&shy;тив же&shy;сто&shy;ко&shy;го об&shy;ра&shy;ще&shy;ния с
+                                жи&shy;вот&shy;ны&shy;ми и за спра&shy;вед&shy;ли&shy;вое
+                                на&shy;ка&shy;за&shy;ние для участ&shy;ни&shy;ков рас&shy;пра&shy;вы над
+                                со&shy;ба&shy;ка&shy;ми и кош&shy;ка&shy;ми про&shy;шел в
+                                суб&shy;бо&shy;ту на Ком&shy;со&shy;моль&shy;ской пло&shy;ща&shy;ди в
+                                Ха&shy;ба&shy;ров&shy;ске. Участ&shy;ни&shy;ки за&shy;жгли
+                                де&shy;сят&shy;ки све&shy;чей в па&shy;мять о за&shy;му&shy;чен&shy;ных
+                                жи&shy;во&shy;дер&shy;ка&shy;ми зве&shy;рях, пе&shy;ре&shy;да&shy;ет
+                                DVHab.
+                            </p>
+                            <p>
+                                По дан&shy;ным по&shy;ли&shy;ции, на пи&shy;кет при&shy;шли бо&shy;лее 150
+                                го&shy;ро&shy;жан, бес&shy;по&shy;ряд&shy;ков не
+                                за&shy;ре&shy;ги&shy;стри&shy;ро&shy;ва&shy;но. Участ&shy;ни&shy;ки
+                                пи&shy;ке&shy;та дер&shy;жа&shy;ли в ру&shy;ках пла&shy;ка&shy;ты
+                                &quot;Мак&shy;си&shy;маль&shy;но&shy;го на&shy;ка&shy;за&shy;ния
+                                жи&shy;во&shy;де&shy;рам&quot;, &quot;Убий&shy;цам не ме&shy;сто
+                                сре&shy;ди
+                                нас&quot;, &quot;Жи&shy;во&shy;де&shy;рок Ха&shy;ба&shy;ров&shy;ска в
+                                тюрь&shy;му&quot;, &quot;Тре&shy;бу&shy;ем уже&shy;сто&shy;чить
+                                ста&shy;тью
+                                245 УК РФ до 10 лет тюрь&shy;мы, штраф ро&shy;ди&shy;те&shy;лям от 500
+                                ты&shy;сяч руб&shy;лей&quot;. Не&shy;ко&shy;то&shy;рые при&shy;шли на
+                                ми&shy;тинг со сво&shy;и&shy;ми со&shy;ба&shy;ка&shy;ми.
+                                Ини&shy;ци&shy;а&shy;тив&shy;ная груп&shy;па го&shy;ро&shy;жан во
+                                вре&shy;мя
+                                пи&shy;ке&shy;та так&shy;же со&shy;би&shy;ра&shy;ла под&shy;пи&shy;си за
+                                ре&shy;аль&shy;ное на&shy;ка&shy;за&shy;ние ви&shy;нов&shy;ных,
+                                пе&shy;ре&shy;да&shy;ет РИА &quot;Но&shy;во&shy;сти&quot;.
+                            </p>
+                            <p>
+                                Так&shy;же ак&shy;ти&shy;ви&shy;сты ука&shy;зы&shy;ва&shy;ли на
+                                за&shy;кры&shy;тость след&shy;ствия по это&shy;му де&shy;лу от
+                                об&shy;ще&shy;ствен&shy;но&shy;сти.
+                            </p>
+                            <p>
+                                Пред&shy;ста&shy;ви&shy;тель ор&shy;га&shy;ни&shy;за&shy;ции
+                                &quot;Зо&shy;оза&shy;щи&shy;та ДВ&quot; На&shy;та&shy;лья
+                                Ко&shy;ва&shy;лен&shy;ко со&shy;об&shy;щи&shy;ла, что под&shy;пи&shy;си
+                                под пе&shy;ти&shy;ци&shy;я&shy;ми о на&shy;ка&shy;за&shy;нии
+                                ви&shy;нов&shy;ных
+                                и об уже&shy;сто&shy;че&shy;нии на&shy;ка&shy;за&shy;ния по
+                                уго&shy;лов&shy;ное ста&shy;тье &quot;Же&shy;сто&shy;кое
+                                об&shy;ра&shy;ще&shy;ние с жи&shy;вот&shy;ны&shy;ми&quot; так&shy;же
+                                со&shy;би&shy;ра&shy;ют в ин&shy;тер&shy;не&shy;те:
+                                &quot;Пе&shy;ти&shy;ции
+                                в ин&shy;тер&shy;не&shy;те под&shy;пи&shy;са&shy;ли бо&shy;лее 500
+                                ты&shy;сяч граж&shy;дан, так&shy;же ини&shy;ци&shy;а&shy;тив&shy;ные
+                                груп&shy;пы со&shy;би&shy;ра&shy;ют под&shy;пи&shy;си в
+                                под&shy;пис&shy;ных ли&shy;стах.
+                                В Ха&shy;ба&shy;ровск из дру&shy;гих го&shy;ро&shy;дов
+                                при&shy;сы&shy;ла&shy;ют ли&shy;сты с под&shy;пи&shy;ся&shy;ми. Их уже
+                                не&shy;сколь&shy;ко ты&shy;сяч, и под&shy;счет
+                                про&shy;дол&shy;жа&shy;ет&shy;ся&quot;.
+                            </p>
+                            <p>
+                                Жут&shy;кая ис&shy;то&shy;рия ста&shy;ла до&shy;сто&shy;я&shy;ни&shy;ем
+                                ши&shy;ро&shy;кой об&shy;ще&shy;ствен&shy;но&shy;сти по&shy;сле
+                                то&shy;го, как 18 ок&shy;тяб&shy;ря поль&shy;зо&shy;ва&shy;те&shy;ли
+                                ими&shy;дж&shy;бор&shy;да &quot;Двач&quot; на&shy;шли двух
+                                де&shy;ву&shy;шек, ко&shy;то&shy;рые на сво&shy;их стра&shy;ни&shy;цах
+                                в со&shy;ци&shy;аль&shy;ной се&shy;ти &quot;ВКонтакте&quot;
+                                вы&shy;кла&shy;ды&shy;ва&shy;ли фо&shy;то&shy;гра&shy;фии
+                                по&shy;ка&shy;ле&shy;чен&shy;ных и рас&shy;чле&shy;нен&shy;ных
+                                жи&shy;вот&shy;ных.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>

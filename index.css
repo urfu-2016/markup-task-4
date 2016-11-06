@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Neucha|Lily+Script+One|Roboto+Condensed');
+
+@font-face
+{
+    font-family: 'Hagin Caps Medium';
+    src: url('fonts/hagin-caps-medium.eot');
+    src: url(fonts/hagin-caps-medium.eot?#iefix) format('embedded-opentype'), url(fonts/hagin-caps-medium.woff) format('woff'), url(fonts/hagin-caps-medium.tff) format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Bermount Line';
+    src: url('fonts/bemount-line.eot');
+    src: url(fonts/bemount-line.eot?#iefix) format('embedded-opentype'), url(fonts/bemount-line.woff) format('woff'), url(fonts/bemount-line.tff) format('truetype');
+}
+
+body
+{
+    min-width: 400px;
+}
+
+.container
+{
+    white-space: nowrap;
+    display: block;
+}
+
+.half-screen
+{
+    vertical-align: top;
+    white-space: normal;
+    display: inline-block;
+    overflow: hidden;
+    width: 50%;
+}
+
+.left
+{
+    border-right: 1px solid #000;
+}
+
+.right
+{
+    margin-left: -.3em;
+    border-left: 1px solid #000;
+}
+
+.article-image
+{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    filter: sepia(75%);
+}
+
+.columns
+{
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.two-columns
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.four-columns
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+
+main
+{
+    background-image: url(images/bg-light.jpg);
+}
+
+header
+{
+    font-family: 'Lily Script One', cursive;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2
+{
+    font-family: 'Lobster', cursive;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+.vertical-text
+{
+    margin: 0 auto;
+    width: .5em;
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+
+h3
+{
+    break-inside: avoid;
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+}
+
+.first-paragraph:first-letter
+{
+    font-size: 2em;
+}
+
+p
+{
+    margin: 0 .5em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr
+{
+    border: 0;
+    border-top: 6px double #000;
+}
+
+hr.single-line
+{
+    border-top: 1px solid #000;
+}
+
+input[value='small']:checked ~ main
+{
+    font-size: .8em;
+}
+
+input[value='large']:checked ~ main
+{
+    font-size: 1.1em;
+}
+
+input[value='dark']:checked ~ main
+{
+    background-image: url(images/bg-dark.jpg);
+    color: #fff;
+}
+
+input[value='dark']:checked ~ main hr
+{
+    border-top-color: #fff;
+}
+
+input[value='dark']:checked ~ main div
+{
+    -moz-column-rule-color: #fff;
+    -webkit-column-rule-color: #fff;
+    column-rule-color: #fff;
+    border-color: #fff;
+}
+
+input[value='dark']:checked ~ main h2
+{
+    border-color: #fff;
+}
+
+input[value='dark']:checked ~ main img
+{
+    filter: grayscale(100%);
+}
+
+input[value='handwriting']:checked ~ main header
+{
+    font-family: 'Bermount Line', cursive;
+}
+
+input[value='handwriting']:checked ~ main p
+{
+    font-family: 'Neucha', cursive;
+}
+
+input[value='handwriting']:checked ~ main h3
+{
+    font-family: 'Hagin Caps Medium', cursive;
+}
