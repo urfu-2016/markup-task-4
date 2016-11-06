@@ -81,7 +81,7 @@ header:after
     display: block;
     height: 1px;
     border: 1px solid #000;
-    background: black;
+    background: #000;
     -moz-column-span: all;
     -webkit-column-span: all;
     column-span: all;
@@ -165,7 +165,7 @@ input[value='night']:checked ~ .container article:not(:last-child):after,
 input[value='night']:checked ~ .container footer:before,
 input[value='night']:checked ~ .container header:after
 {
-    background: white;
+    background: #fff;
 }
 
 input
@@ -190,7 +190,7 @@ input
 label
 {
     position: absolute;
-    color: red;
+    color: #f00;
 }
 
 .row1
