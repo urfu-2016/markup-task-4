@@ -20,8 +20,8 @@
 .night-mode:checked ~ header,
 .night-mode:checked ~ main
 {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 html
@@ -34,6 +34,7 @@ header
     width: 100%;
     overflow: hidden;
     column-count: 3;
+    -moz-column-count: 3;
 }
 
 .weather,
@@ -54,7 +55,8 @@ h1
 .info
 {
     column-count: 3;
-    border: 1px solid black;
+    -moz-column-count: 3;
+    border: 1px solid #000000;
 }
 
 .head
@@ -68,14 +70,17 @@ h1
 .right
 {
     column-count: 2;
+    -moz-column-count: 2;
     break-inside: avoid-column;
 }
 
 .container
 {
     column-count: 3;
-    column-rule: 1px solid black;
-    border-top: 1px solid black;
+    -moz-column-count: 3;
+    column-rule: 1px solid #000000;
+    -moz-column-rule: 1px solid #000000;
+    border-top: 1px solid #000000;
     font-family: 'Nova Mono', serif;
 }
 
@@ -83,7 +88,6 @@ h3,
 h5
 {
     column-span: all;
-    /*font-family: 'Viga', sans-serif;*/
 }
 
 .weather-img
@@ -95,5 +99,5 @@ h5
 aside
 {
     column-span: all;
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
