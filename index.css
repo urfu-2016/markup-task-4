@@ -78,6 +78,7 @@ body
     -webkit-column-gap: 1px;
     -moz-column-gap: 1px;
     column-gap: 1px;
+    overflow: hidden;
 }
 
 .main-left-column,
