@@ -157,7 +157,8 @@ figcaption
 
 @media (max-width: 900px)
 {
-    .two-columns{
+    .two-columns
+    {
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
