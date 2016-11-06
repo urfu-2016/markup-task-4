@@ -8,8 +8,8 @@ p
 .bigletter:first-letter
 {
     float: left;
-    font: 75px Arial,sans-serif;
-    padding: 4px 8px 0px 3px;
+    font: 75px Arial, sans-serif;
+    padding: 4px 8px 0 3px;
     font-family: Georgia;
 }
 
@@ -30,7 +30,8 @@ h2
     margin: 10px;
 }
 
-h5, footer
+h5,
+footer
 {
     text-align: center;
     column-span: all;
