@@ -1,124 +1,103 @@
 body
 {
     background: linear-gradient(to bottom, #deb887, #bdb76b);
-    font: 15px Courier New;
-    font-family: Arial, Helvetica, Calibri, sans-serif;
+    font-family: 'Kelly Slab', cursive, Verdana,Arial, Calibri, sans-serif;
+    padding: 10px;
 
 }
 
 header
 {
-    color: red;
-    font: Times Arial;
-    font-size: 78px;
+	display: block;
+	font: Times Arial;
     text-align: center;
-    margin: 0;
-    padding: 0;
     text-shadow: 4px 4px #808080;
-
 }
 
-aside
+header h1
 {
-    column-gap: 3em;
-    margin: 0;
+	color: red;
+	font-size: 4em;
+	margin: 0;
     padding: 0;
-
 }
 
-.different
+header h2
 {
-    -moz-column-count: 2;
+	border-top: 4px double black;
+	border-bottom: 4px double black;
+	font-size: 1.25em;
+	margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family:"Brock Script_D";
+	src:url("BScript_D.eot?") format("eot"),
+ 	url("BScript_D.woff") format("woff"),
+ 	url("BScript_D.ttf") format("truetype"),
+ 	url("BScript_D.svg#BrockScript_D") format("svg");
+ 	font-weight:normal;
+ 	font-style:normal;
+}
+
+ .first
+ {
+ 	-moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
     column-rule: 2px solid black;
+    padding: 2px;
+ }
 
-}
-
-.reserve
-{
-    -moz-column-count: 3;
+ .second
+ {
+ 	-moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
     column-rule: 2px solid black;
+    padding: 2px;
+ }
 
+.card {
+    border: 1px solid black;
+    width: 350px;
+    height: 310px;
 }
 
-.hussars
-{
-    -moz-column-count: 4;
+.card img{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.third
+ {
+ 	-moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
     column-rule: 2px solid black;
+    padding: 5px;
+ }
 
-}
-
-div 
+ img
 {
-    border-top: 4px double black;
-    margin: 0;
-    padding: 0;
+	filter: alpha(Opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    width: 350px;
+    float: left;
+    display: block;
 
 }
 
-p:first-of-type::first-letter 
-{
-    color: #f00;
-    font-size: 150%;
-    font-style: italic;
-    text-shadow: 2px 2px #808080;
-    margin: 2px;
-
-}
-
-p 
-{
-    font-variant: small-caps;
-    text-align: justify;
-
-}
-
-h1
-{
-    font-size: 100%;
-
-}
-
-h2
-{
-    font-size: 150%;
-
-}
-
-h3
-{
-    font-size: 110%;
-
-}
-
-h1,
-h2,
-h3
+h3,
+h4
 {
     text-align: center;
     -webkit-column-span: all;
     column-span: all;
-    display: block;
-
-}
-
-img
-{
-    width: 100%;
-    float: left;
-    display: block;
-
-}
-
-.imgDifferent 
-{
-    width: 50%;
-    float: left;
     display: block;
 
 }
@@ -131,82 +110,47 @@ section
 
 }
 
-.card
+p:first-of-type::first-letter 
 {
-    text-align: center;
-    -webkit-column-span: all;
-    column-span: all;
-    display: inline-block;
-    width: 100%;
-
+	font-family:"Brock Script_D";
+    color: #f00;
+    font-size: 250%;
+    text-shadow: 2px 2px #808080;
+    margin: 2px;
 }
 
-.black-and-white:checked ~ div,
-.black-and-white:checked ~ div > div,
-.black-and-white:checked ~ header,
-.black-and-white:checked ~ h1,
-.black-and-white:checked ~ footer,
-.black-and-white:checked ~ aside,
-.black-and-white:checked ~ div > section,
-.black-and-white:checked ~ main
+blockquote
+{
+	font-family: 'Yeseva One', cursive;
+}
+
+.black-and-white:checked ~ .newspaper
 {
     background: black;
     color: white;
-
 }
 
-.switch-font:checked ~ div,
-.switch-font:checked ~ div > div,
-.switch-font:checked ~ header,
-.switch-font:checked ~ h1,
-.switch-font:checked ~ footer,
-.switch-font:checked ~ aside,
-.switch-font:checked ~ div > section,
-.switch-font:checked ~ main
+.switch-font:checked ~ .newspaper
 {
     font-family: 'PT Sans Narrow', sans-serif;
-
 }
 
-.large-font:checked ~ div,
-.large-font:checked ~ div > div,
-.large-font:checked ~ h1,
-.large-font:checked ~ footer,
-.large-font:checked ~ aside,
-.large-font:checked ~ div > section,
-.large-font:checked ~ main
+.large-font:checked ~ .newspaper
 {
-    font-size: 150%;
-
+    font-size: larger;
 }
 
-.large-font:checked ~ header
+.small-font:checked ~ .newspaper
 {
-    font-size: 550%;
-
-}
-
-.small-font:checked ~ div,
-.small-font:checked ~ div > div,
-.small-font:checked ~ header,
-.small-font:checked ~ h1,
-.small-font:checked ~ footer,
-.small-font:checked ~ aside,
-.small-font:checked ~ div > section,
-.small-font:checked ~ main
-{
-    font-size: 90%;
-
+    font-size: smaller;
 }
 
 footer 
 {
     display: inline-block;
-    float: left;
     background-position: 0 bottom;
     background-repeat: repeat-x;
     clear: both;
     width: 100%;
     border-top: 4px double black;
-
 }
