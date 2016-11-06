@@ -1,0 +1,210 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.font-size-big:checked ~ .newspaper
+{
+    font-size: 28px;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+}
+
+.font-size-big:checked ~ .newspaper h2
+{
+    font-size: 30px;
+}
+
+.font-size-small:checked ~ .newspaper
+{
+    font-size: 12px;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+}
+
+.font-size-small:checked ~ .newspaper h2
+{
+    font-size: 20px;
+}
+
+.font-size-small:checked ~ .newspaper .img-mother,
+.font-size-big:checked ~ .newspaper .img-mother
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.font-other:checked ~ .newspaper
+{
+    font-family: Times;
+    font-size: 20px;
+}
+
+.font-other:checked ~ .newspaper h2
+{
+    font-size: 27px;
+}
+
+.font-other:checked ~ .newspaper > .main-left-column,
+.font-other:checked ~ .newspaper > .main-right-column
+{
+    height: 1600px;
+}
+
+.back-other:checked ~ .newspaper
+{
+    background: #aaa;
+    color: #fff;
+}
+
+.back-other:checked ~ .newspaper h2
+{
+    color: #fae25f;
+}
+
+.newspaper
+{
+    background: #ffe3bb;
+    font: 15px 'Poiret One', cursive;
+    width: 1300px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 1px;
+    -moz-column-gap: 1px;
+    column-gap: 1px;
+    overflow: hidden;
+}
+
+.main-left-column,
+.main-right-column
+{
+    border: 3px solid #000;
+    height: 1130px;
+}
+
+.vatican__header,
+.word-aleksey__header,
+.red-hill-church__header
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    text-align: center;
+}
+
+h2  
+{
+    font-size: 23px;
+    color: #ffa30d;
+    letter-spacing: 2px;
+    text-shadow: -.05em 0 .07em #000;
+}
+
+p
+{
+    margin: 0;
+}
+
+p:first-letter
+{
+    font-size: 2em;
+    margin-right: 2px;
+    color: #e96;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px white, 1px 1px 1px #9e9d99;
+}
+
+.vatican
+{
+    border-bottom: 3px solid #000;
+    padding: 10px;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+}
+
+.main-left-column-img
+{
+    padding: 10px;
+    text-align: right;
+    color: #f54;
+}
+
+.img-mother
+{
+    width: 100%;
+    height: 407px;
+    background: url('img/motherAndSon.jpg') 0 -300px;
+}
+
+.word-aleksey
+{
+    border-top: 3px solid #000;
+    padding: 10px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+}
+
+.word-aleksey__intro
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.red-hill-church
+{
+    padding: 10px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+}
+
+.church-image
+{
+    display: inline-block;
+    width: 90%;
+}
+
+.church-image__caption
+{
+    width: 8%;
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: right;
+    color: #f54;
+}
+
+.two-small-news
+{
+    padding: 10px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-rule: 3px solid #1a242f;
+    -moz-column-rule: 3px solid #1a242f;
+    column-rule: 3px solid #1a242f;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.noahs-ark
+{
+    padding: 10px;
+}
+
+.noahs-ark__header
+{
+    text-align: center;
+}
+
