@@ -8,13 +8,20 @@ header
 {
     text-align: center;
     font-size: 3.5em;
-    line-height: 2px;
+    line-height: 90px;
     font-family: 'Times New Roman';
+    border-bottom: solid;
 }
 
 body
 {
     background: url(http://bgfons.com/upload/paper_texture331.jpg);
+    margin: 0px;
+}
+
+img
+{
+    position: relative;
 }
 
 main
@@ -111,22 +118,23 @@ blockquote
     border-style: solid;
 }
 
-.change-color:checked ~ div
+.change-color:checked ~ .main-content
 {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: #000;
     color: #fff;
 }
 
-.zoom:checked ~ div
+.change-color:checked ~ div p::first-letter
+{
+    color: #fff;
+}
+
+.zoom:checked ~ .main-content
 {
     font-size: 1.5em;
 }
 
-.change-style:checked ~ div
+.change-style:checked ~ .main-content
 {
     font-family: myFont, cursive;
 }
