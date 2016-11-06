@@ -33,8 +33,8 @@ header
 {
     width: 100%;
     overflow: hidden;
-    column-count: 3;
     -moz-column-count: 3;
+    column-count: 3;
 }
 
 .weather,
@@ -54,8 +54,8 @@ h1
 
 .info
 {
-    column-count: 3;
     -moz-column-count: 3;
+    column-count: 3;
     border: 1px solid #000;
 }
 
@@ -69,17 +69,17 @@ h1
 .center,
 .right
 {
-    column-count: 2;
     -moz-column-count: 2;
+    column-count: 2;
     break-inside: avoid-column;
 }
 
 .container
 {
-    column-count: 3;
     -moz-column-count: 3;
-    column-rule: 1px solid #000;
     -moz-column-rule: 1px solid #000;
+    column-count: 3;
+    column-rule: 1px solid #000;
     border-top: 1px solid #000;
     font-family: 'Nova Mono', serif;
 }
