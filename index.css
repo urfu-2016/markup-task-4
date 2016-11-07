@@ -1,0 +1,264 @@
+@font-face
+{
+    font-family: 'Jellyka Delicious Cake';
+    src: local('Jellyka Delicious Cake'), url('fonts/Jellyka Delicious Cake.eot');
+    src: local('Jellyka Delicious Cake'), url('fonts/Jellyka Delicious Cake.woff') format('woff'), url('fonts/Jellyka Delicious Cake.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Alabama;
+    src: local('Alabama'), url('fonts/Alabama.eot');
+    src: local('Alabama'), url('fonts/Alabama.woff') format('woff'), url('fonts/Alabama.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: Remeslo;
+    src: local('Remeslo'), url('fonts/Remeslo.eot');
+    src: local('Remeslo'), url('fonts/Remeslo.woff') format('woff'), url('fonts/Remeslo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Snowstorm Light';
+    src: local('Snowstorm Light'), url('fonts/Snowstorm Light.eot');
+    src: local('Snowstorm Light'), url('fonts/Snowstorm Light.woff') format('woff'), url('fonts/Snowstorm Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Refale BG';
+    src: url('fonts/Refale BG.eot');
+    src: url('fonts/Refale BG.woff') format('woff'), url('fonts/Refale BG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    min-width: 800px;
+    margin: 0;
+}
+
+main
+{
+    margin-top: 20px;
+    padding: 10px;
+    background: url(images/background.jpg);
+    font: 18px Oranienbaum, sans-serif;
+}
+
+.table-header
+{
+    width: 100%;
+    border-top: 2px solid;
+}
+
+.newspaper-header,
+.date
+{
+    text-align: center;
+}
+
+.newspaper-header
+{
+    font: 5.5em 'Jellyka Delicious Cake', Remeslo, serif;
+}
+
+.side-info
+{
+    width: 200px;
+    padding: 30px;
+}
+
+.side-info .side-info-content
+{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: 10px 0;
+    font: .75em Alabama, serif;
+}
+
+.date
+{
+    border-top: 6px double #000;
+    border-bottom: 6px double #000;
+    line-height: 2em;
+    font-family: Alabama, serif;
+    font-weight: 100;
+}
+
+.content
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 6px double #000;
+    column-rule: 6px double #000;
+    border-bottom: 6px double #000;
+}
+
+.main-article,
+.secondary-articles
+{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.secondary-articles
+{
+    font-size: .9em;
+    padding: 15px 0 0 15px;
+}
+
+.main-article-text,
+.secondary-article-text
+{
+    -moz-column-count: 3;
+    column-count: 3;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+}
+
+.image
+{
+    width: 100%;
+}
+
+.secondary-image
+{
+    margin-top: 20px;
+}
+
+.main-header,
+.secondary-header
+{
+    font: bold 1.5em 'Snowstorm Light', serif;
+    padding-bottom: 10px;
+}
+
+.main-header
+{
+    text-align: center;
+}
+
+.main-header:before
+{
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    margin: 25px auto;
+    background: #000;
+}
+
+.secondary-header
+{
+    font-size: 1.2em;
+}
+
+.content figure
+{
+    margin: 15px 25px;
+}
+
+.content figcaption
+{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.main-article-text p:first-letter,
+.secondary-article-text p:first-letter
+{
+    font: 1.7em Remeslo, serif;
+}
+
+.content q
+{
+    font-style: italic;
+}
+
+.main-article-text p:first-child,
+.secondary-article-text p:first-child
+{
+    margin-top: 0;
+}
+
+.vertical
+{
+    font-size: .5em;
+    width: 1em;
+    word-wrap: break-word;
+}
+
+.secondary-articles .vertical:first-letter
+{
+    font: 1em Oranienbaum, sans-serif;
+}
+
+.controls-header
+{
+    margin: 20px 0 0 20px;
+}
+
+.controls-header + input
+{
+    margin-left: 30px;
+}
+
+.small-size:checked ~ main
+{
+    font-size: 14px;
+}
+
+.big-size:checked ~ main
+{
+    font-size: 22px;
+}
+
+.Refale-BG:checked ~ main
+{
+    font-family: 'Refale BG';
+}
+
+.black-beige:checked ~ main
+{
+    background: #000;
+    color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-header:before
+{
+    color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-article-text,
+.black-beige:checked ~ main .secondary-article-text,
+.black-beige:checked ~ main .content
+{
+    -moz-column-rule-color: #d3c2a1;
+    column-rule-color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .content,
+.black-beige:checked ~ main .date,
+.black-beige:checked ~ main .side-info .side-info-content
+{
+    border-color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-header:before
+{
+    background: #d3c2a1;
+}
