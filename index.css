@@ -1,0 +1,320 @@
+.header
+{
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+.morning
+{
+    border: 5px double;
+}
+
+.first-header
+{
+    height: 75%;
+}
+
+.second-header
+{
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+    height: 24%;
+}
+
+.first-header div
+{
+    display: inline-block;
+}
+
+.second-header div
+{
+    display: inline-block;
+}
+
+.morning
+{
+    width: 20%;
+}
+
+.head-picture
+{
+    width: 15%;
+}
+
+.header-name
+{
+    width: 50%;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.release
+{
+    width: 40%;
+}
+
+.series,
+.edition,
+.price
+{
+    width: 19%;
+}
+
+.black-rect
+{
+    background-color: black;
+    width: 20px;
+    height: 18px;
+}
+
+h1
+{
+    font-family: 'Neucha', cursive;
+    font-size: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.hs
+{
+    width: 130px;
+    height: 100px;
+}
+
+.text
+{
+    width: 560px;
+    -moz-column-width: 270px;
+    -webkit-column-width: 270px;
+    column-count: 2;
+    column-width: 270px;
+    font-size: 13px;
+}
+
+.elf
+{
+    width: 80px;
+    height: 80px;
+}
+
+.bar
+{
+    padding-top: 150px;
+    width: 300px;
+    height: 150px;
+}
+
+.colla
+{
+    padding-top: 138px;
+    width: 260px;
+    height: 300px;
+}
+
+.break-column
+{
+    break-after: column;
+}
+
+.bold-text
+{
+    font-weight: bold;
+}
+
+hr
+{
+    height: 3px;
+    border: none;
+    background-color: black;
+}
+
+.main-picture
+{
+    text-align: center;
+}
+
+.main-picture img
+{
+    width: 100%;
+}
+
+.table-of-contents
+{
+    display: relative;
+    width: 300px;
+    height: 216px;
+    border: 2px double;
+    font-weight: normal;
+}
+
+.page
+{
+    padding-left: 250px;
+}
+
+.totem
+{
+    display: relative;
+    width: 300px;
+    height: 200px;
+    padding-top: 30px;
+}
+
+.food
+{
+    width: 150px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.house
+{
+    width: 150px;
+    height: 350px;
+    padding-left: 150px;
+}
+
+.bottle
+{
+    width: 100px;
+    height: auto;
+}
+
+.mega
+{
+    width: 250px;
+}
+
+.picture
+{
+    width: 700px;
+    font-weight: bold;
+}
+
+.picture-header
+{
+    background-color: black;
+    color: white;
+    width: 600px;
+    font-size: 20px;
+}
+
+.picture-header div
+{
+    display: inline-block;
+}
+
+.cake
+{
+    text-align: center;
+}
+
+.big-text
+{
+    text-align: right;
+    width: 70%;
+    font-size: 20px;
+}
+
+.little-text
+{
+    text-align: left;
+    width: 20%;
+    font-size: 10px;
+}
+
+.picture-main-food
+{
+    width: 49%;
+}
+
+.picture-main-shop
+{
+    width: 50%;
+}
+
+.big-house-text
+{
+    font-size: 20px;
+}
+
+.little-house-text
+{
+    font-size: 12px;
+}
+
+.rotatable
+{
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.scissors
+{
+    width: 30px;
+    height: 150px;
+}
+
+.stock
+{
+    width: 300px;
+    height: 155px;
+}
+
+.mega-box
+{
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.main
+{
+    padding-left: 3%;
+}
+
+.world
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.big-world
+{
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.colla-text
+{
+    width: 250px;
+}
+
+.coast
+{
+    color: gray;
+}
+
+h3
+{
+    padding-left: 3%;
+}
+
+h1::first-letter
+{
+    color: darkkhaki;
+}
+
+.vertical
+{
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
