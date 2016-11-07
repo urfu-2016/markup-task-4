@@ -105,6 +105,14 @@ header h1
     text-align: center;
 }
 
+article p:first-child:first-letter,
+article h2 + p:first-letter
+{
+    color: #b71c1c;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .newspaper-table
 {
     border-spacing: 0;
