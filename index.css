@@ -34,8 +34,25 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family: 'Refale BG';
+    src: url('fonts/Refale BG.eot');
+    src: url('fonts/Refale BG.woff') format('woff'), url('fonts/Refale BG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
+    min-width: 800px;
+    margin: 0;
+}
+
+main
+{
+    margin-top: 20px;
+    padding: 10px;
     background: url(images/background.jpg);
     font: 18px Oranienbaum, sans-serif;
 }
@@ -43,6 +60,7 @@ body
 .table-header
 {
     width: 100%;
+    border-top: 2px solid;
 }
 
 .newspaper-header,
@@ -53,31 +71,29 @@ body
 
 .newspaper-header
 {
-    font: 100px 'Jellyka Delicious Cake', Remeslo, serif;
+    font: 5.5em 'Jellyka Delicious Cake', Remeslo, serif;
 }
 
-.edition,
-.weather
+.side-info
 {
     width: 200px;
     padding: 30px;
 }
 
-.edition div,
-.weather div
+.side-info .side-info-content
 {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     text-align: center;
     padding: 10px 0;
-    font: 14px Alabama, serif;
+    font: .75em Alabama, serif;
 }
 
 .date
 {
     border-top: 6px double #000;
     border-bottom: 6px double #000;
-    line-height: 35px;
+    line-height: 2em;
     font-family: Alabama, serif;
     font-weight: 100;
 }
@@ -101,7 +117,7 @@ body
 
 .secondary-articles
 {
-    font-size: 16px;
+    font-size: .9em;
     padding: 15px 0 0 15px;
 }
 
@@ -127,7 +143,7 @@ body
 .main-header,
 .secondary-header
 {
-    font: bold 28px 'Snowstorm Light', serif;
+    font: bold 1.5em 'Snowstorm Light', serif;
     padding-bottom: 10px;
 }
 
@@ -148,7 +164,7 @@ body
 
 .secondary-header
 {
-    font-size: 22px;
+    font-size: 1.2em;
 }
 
 .content figure
@@ -181,12 +197,68 @@ body
 
 .vertical
 {
-    font-size: 8px;
+    font-size: .5em;
     width: 1em;
     word-wrap: break-word;
 }
 
 .secondary-articles .vertical:first-letter
 {
-    font: 8px Oranienbaum, sans-serif;
+    font: 1em Oranienbaum, sans-serif;
+}
+
+.controls-header
+{
+    margin: 20px 0 0 20px;
+}
+
+.controls-header + input
+{
+    margin-left: 30px;
+}
+
+.small-size:checked ~ main
+{
+    font-size: 14px;
+}
+
+.big-size:checked ~ main
+{
+    font-size: 22px;
+}
+
+.Refale-BG:checked ~ main
+{
+    font-family: "Refale BG";
+}
+
+.black-beige:checked ~ main
+{
+    background: #000;
+    color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-header:before
+{
+    color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-article-text,
+.black-beige:checked ~ main .secondary-article-text,
+.black-beige:checked ~ main .content
+{
+    -moz-column-rule-color: #d3c2a1;
+    column-rule-color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .content,
+.black-beige:checked ~ main .date,
+.black-beige:checked ~ main .side-info .side-info-content
+{
+    border-color: #d3c2a1;
+}
+
+.black-beige:checked ~ main .main-header:before
+{
+    background: #d3c2a1;
 }
