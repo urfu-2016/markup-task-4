@@ -183,8 +183,14 @@ input
 
 .image img
 {
-    margin-left: 2.5%;
+    display: block;
     width: 95%;
+    margin: 0 auto;
+}
+
+.image figcaption
+{
+    text-align: center;
 }
 
 label
