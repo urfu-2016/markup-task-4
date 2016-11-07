@@ -1,0 +1,238 @@
+@font-face
+{
+    font-family: 'unifrakturmaguntiabook';
+    src: local('UnifrakturMaguntia')
+        , url('unifrakturmaguntia-book-webfont.woff2') format('woff2')
+        , url('unifrakturmaguntia-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'cormorant_scbold';
+    src: local('Cormorant')
+        , url('cormorantsc-bold-webfont.woff2') format('woff2')
+        , url('cormorantsc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html
+{
+    background-color: white;
+}
+
+.bodyNewspaper
+{
+    margin: 0 auto;
+    padding: 7px;
+    width: 850px;
+    border: 2px double black;
+    font: 14px serif;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: rgba(41, 30, 3, .9);
+    background: url(background.jpg) 100% 100% no-repeat rgba(232, 200, 120, .8);
+    background-size: cover;
+}
+
+.mainTitle
+{
+    font-size: 4em;
+    font-weight: 400;
+    font-family: 'unifrakturmaguntiabook', serif;
+}
+
+.secondVersionColor:checked ~ .bodyNewspaper
+{
+    color: white;
+    background: url(backgroundStars.png) 100% 100% no-repeat black;
+    background-size: cover;
+}
+
+.secondVersionType:checked ~ .bodyNewspaper
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondVersionSize:checked ~ .bodyNewspaper
+{
+    font-size: 1.1em;
+}
+
+.bodyNewspaper > header
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.leftHeader
+{
+    border: 1px solid black;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.rightHeader
+{
+    border: 1px solid black;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.date
+{
+    font-size: 1em;
+}
+
+hr
+{
+    width: 95%;
+    border: none;
+    color: rgba(41, 30, 3, .8);
+    background-color: rgba(41, 30, 3, .8);
+    height: 1px;
+}
+
+main
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.firstArticle .text
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    -webkit-column-rule: 1px solid rgba(41, 30, 3, .5);
+    -moz-column-rule: 1px solid rgba(41, 30, 3, .5);
+    column-rule: 1px solid rgba(41, 30, 3, .5);
+}
+
+.text::first-letter
+{
+    font-size: 2.5em;
+}
+
+.mainSection header h2
+{
+    margin-top: 2px;
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 400;
+    font-family: 'cormorant_scbold', serif;
+    margin-bottom: 0;
+}
+
+.mainTitlePart
+{
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+}
+
+.continue
+{
+    white-space: nowrap;
+}
+
+.verticalText
+{
+    margin-left: 7px;
+    font-size: .8em;
+    font-weight: 400;
+    width: 13px;
+    border: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.secondArticle
+{
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.secondArticle h3
+{
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.thirdArticle
+{
+    display: inline-block;
+    width: 450px;
+    padding-left: 10px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    vertical-align: middle;
+}
+
+.thirdArticle h2
+{
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.thirdArticle p
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-column-rule: 1px solid rgba(41, 30, 3, .5);
+    -moz-column-rule: 1px solid rgba(41, 30, 3, .5);
+    column-rule: 1px solid rgba(41, 30, 3, .5);
+}
+
+.thirdArticle img
+{
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.fourthArticle
+{
+    display: inline-block;
+    width: 160px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.fourthArticle h3
+{
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.fourthArticle img
+{
+    margin-bottom: 2px;
+}
+
+footer
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
