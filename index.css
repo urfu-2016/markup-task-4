@@ -1,41 +1,41 @@
 @font-face
 {
     font-family: 'Lobster_Two';
-    src: url('fonts/Lobster-Two/Lobster-Two-700.woff')
-        format('woff'), url('fonts/Lobster-Two/Lobster-Two-700.woff2')
-        format('woff2'), url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
+    src: url('fonts/Lobster-Two/Lobster-Two-700.woff') format('woff')
+        , url('fonts/Lobster-Two/Lobster-Two-700.woff2') format('woff2')
+        , url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Architects_Daughter';
-    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff')
-        format('woff'), url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2')
-        format('woff2'), url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
+    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff') format('woff')
+        , url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2') format('woff2')
+        , url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Fjalla_One';
-    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff')
-        format('woff'), url('fonts/Fjalla-One/Fjalla-One-regular.woff2')
-        format('woff2'), url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
+    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff') format('woff')
+        , url('fonts/Fjalla-One/Fjalla-One-regular.woff2') format('woff2')
+        , url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron/Orbitron-Regular.woff')
-        format('woff'), url('fonts/Orbitron/Orbitron-Regular.woff2')
-        format('woff2'), url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
+    src: url('fonts/Orbitron/Orbitron-Regular.woff') format('woff')
+        , url('fonts/Orbitron/Orbitron-Regular.woff2') format('woff2')
+        , url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Libre_Baskerville';
-    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff')
-        format('woff'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2')
-        format('woff2'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
+    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff') format('woff')
+        , url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2') format('woff2')
+        , url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
 }
 
 .date
@@ -46,12 +46,11 @@
 
 .bold-hr
 {
-    border-color: #000;
-    border-width: 3px;
+    border: 3px solid #000;
     margin: 1px 0;
 }
 
-hr
+.separator
 {
     margin: 11px 0;
 }
@@ -63,13 +62,7 @@ hr
     margin-top: 2px;
 }
 
-.separator
-{
-    border-width: 1px;
-}
-
-input,
-label
+.tool-label
 {
     font-size: .7em;
 }
@@ -104,17 +97,17 @@ main
     -webkit-column-rule: 2px solid #000;
     column-rule: 2px solid #000;
     margin-left: 1px;
+    text-indent: 5%;
 }
 
-h2
+.section-header
 {
     font-family: Orbitron, monospace;
-    text-align: left;
     letter-spacing: .4em;
     margin: .4em 0;
 }
 
-h3
+.article-header
 {
     font-family: Fjalla_One, sans-serif;
     text-align: center;
@@ -125,37 +118,34 @@ p
 {
     margin: 2%;
     font-size: .9em;
-    text-indent: 5%;
 }
 
-figure img
+.picture-block
+{
+    margin: 2px;
+    font-size: .6em;
+}
+
+.blocked-picture
 {
     width: 100%;
     height: 100%;
 
 }
 
-figure
-{
-    margin: 2px;
-}
-
-figcaption
-{
-    font-size: .6em;
-}
-
 .section-vertical-header
 {
+    font-family: Orbitron, monospace;
+    letter-spacing: .4em;
     word-wrap: break-word;
     width: .7em;
     float: left;
     margin: 0 .7em;
 }
 
-blockquote
+.arial-blockquote
 {
-    font: .9em Architects_Daughter, cursive;
+    font: .9em Architects_Daughter, arial;
     margin: 0 15px;
 }
 
@@ -164,7 +154,7 @@ blockquote
     font: italic 3em 'Times New Roman';
 }
 
-li > div
+.li-header
 {
     font: .7em Libre_Baskerville, sans-serif;
 }
@@ -172,9 +162,10 @@ li > div
 .cursive-blockquote
 {
     font: .9em Lobster_Two, cursive;
+    margin: 0 15px;
 }
 
-ul
+.advice-list
 {
     padding-left: 15px;
 }
