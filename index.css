@@ -104,8 +104,8 @@ p::first-letter
 {
     display: block;
     margin: 0 auto;
-    height: 451px;
-    width: 312px;
+    width: 100%;
+    height: auto;
 }
 
 .picture figcaption
