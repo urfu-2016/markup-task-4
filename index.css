@@ -36,7 +36,7 @@ p
     text-indent: 8%;
 }
 
-article.two-columns
+.two-columns
 {
     -moz-columns: 2;
     columns: 2;
@@ -47,19 +47,18 @@ article.two-columns
 .image-in-text
 {
     width: 100%;
-    height: auto;
     filter: grayscale(1);
     border-radius: 25%;
     box-sizing: border-box;
     border: 6px double #000;
 }
 
-p.first
+.first
 {
     font-weight: 600;
 }
 
-p.first::first-letter
+.first::first-letter
 {
     font: 400 250% Edisson;
 }
