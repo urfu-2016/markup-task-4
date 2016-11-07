@@ -1,0 +1,103 @@
+@font-face
+{
+    font-family: gothical;
+    src: local('gothical'), url(1.ttf);
+}
+
+body
+{
+    background: url(1.jpg);
+    background-size: 100%;
+    font-family: bart, segoe print, gabriola;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+}
+
+h1
+{
+    text-align: center;
+    font: italic 250% gothical;
+}
+
+.image
+{
+    font: italic 150% gabriola, bart, segoe print;
+    padding-top: 66%;
+    position: relative;
+    margin: 5%;
+    text-align: center;
+}
+
+blockquote
+{
+    font: italic 150% gabriola, bart, segoe print;
+}
+
+img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h3
+{
+    font: italic 150% gothical;
+    font-weight: bold;
+}
+
+p::first-letter
+{
+    font: italic 250% segoe print;
+    color: #000;
+}
+
+.right,
+.left
+{
+    font: italic 150% gothical;
+    color: #000;
+    width: 1ch;
+    word-wrap: break-word;
+}
+
+.left
+{
+    float: left;
+}
+
+footer
+{
+    font: italic 150% gothical;
+    font-weight: bold;
+    text-align: right;
+}
+
+.right
+{
+    float: right;
+}
+
+.one-column,
+.two-column
+{
+    -webkit-column-rule: 2px solid gray;
+    -moz-column-rule: 2px solid gray;
+    column-rule: 2px solid gray;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 150%;
+    -moz-column-gap: 150%;
+    column-gap: 150%;
+}
+
+.two-column
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
