@@ -1,8 +1,7 @@
 @font-face
 {
     font-family: 'unifrakturmaguntiabook';
-    src: local('UnifrakturMaguntia'), url('unifrakturmaguntia-book-webfont.woff2') format('woff2');
-    src: url('unifrakturmaguntia-book-webfont.woff') format('woff');
+    src: local('UnifrakturMaguntia'), url('unifrakturmaguntia-book-webfont.woff2') format('woff2'), url('unifrakturmaguntia-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +9,7 @@
 @font-face
 {
     font-family: 'cormorant_scbold';
-    src: local('Cormorant'), url('cormorantsc-bold-webfont.woff2') format('woff2');
-    src: url('cormorantsc-bold-webfont.woff') format('woff');
+    src: local('Cormorant'), url('cormorantsc-bold-webfont.woff2') format('woff2'), url('cormorantsc-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -35,6 +33,13 @@ html
     background-size: cover;
 }
 
+.mainTitle
+{
+    font-size: 4em;
+    font-weight: 400;
+    font-family: 'unifrakturmaguntiabook', serif;
+}
+
 .secondVersionColor:checked ~ .bodyNewspaper
 {
     color: white;
@@ -49,13 +54,12 @@ html
 
 .secondVersionSize:checked ~ .bodyNewspaper
 {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .bodyNewspaper > header
 {
     text-align: center;
-    width: 100%;
     margin-top: 10px;
 }
 
@@ -64,17 +68,10 @@ table
     width: 100%;
 }
 
-.bodyNewspaper header .mainTitle
-{
-    font: 65px bold;
-    font-family: 'unifrakturmaguntiabook', serif;
-}
-
 .leftHeader
 {
     border: 1px solid black;
     width: 150px;
-    hyphens: manual;
     margin-left: 20px;
 }
 
@@ -82,13 +79,12 @@ table
 {
     border: 1px solid black;
     width: 150px;
-    hyphens: manual;
     margin-right: 20px;
 }
 
-header > span
+.date
 {
-    font: 14px serif;
+    font-size: 1em;
 }
 
 hr
@@ -104,8 +100,6 @@ main
 {
     margin-left: 20px;
     margin-right: 20px;
-    height: 100%;
-    overflow: hidden;
 }
 
 .firstArticle .text
@@ -123,20 +117,15 @@ main
 
 .text::first-letter
 {
-    font: 35px serif;
-    font-family: Georgia, Arial serif;
-}
-
-.text::first-line
-{
-    margin-top: -15px;
+    font-size: 2.5em;
 }
 
 .mainSection header h2
 {
     margin-top: 2px;
     text-align: center;
-    font: 42px bold;
+    font-size: 2.7em;
+    font-weight: 400;
     font-family: 'cormorant_scbold', serif;
     margin-bottom: 0;
 }
@@ -156,7 +145,8 @@ main
 .verticalText
 {
     margin-left: 7px;
-    font: 14px bold;
+    font-size: 1em;
+    font-weight: 400;
     width: 13px;
     border: 1px solid;
     padding-top: 5px;
@@ -171,11 +161,14 @@ main
 {
     display: inline-block;
     width: 150px;
+    vertical-align: middle;
 }
 
 .secondArticle h3
 {
     margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 .thirdArticle
@@ -185,11 +178,14 @@ main
     padding-left: 10px;
     border-left: 1px solid;
     border-right: 1px solid;
+    vertical-align: middle;
 }
 
 .thirdArticle h2
 {
     margin-top: 0;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 .thirdArticle p
@@ -208,7 +204,7 @@ main
 .thirdArticle img
 {
     margin-right: 8px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     float: left;
 }
 
@@ -217,11 +213,14 @@ main
     display: inline-block;
     width: 160px;
     margin-left: 10px;
+    vertical-align: middle;
 }
 
 .fourthArticle h3
 {
     margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
 .fourthArticle img
