@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: gothical;
-    src: local('gothical'), 
+    src: local('gothical') ,
         url(1.ttf);
 }
 
