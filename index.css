@@ -1,0 +1,193 @@
+@font-face
+{
+    font-family: 'Lobster_Two';
+    src: url('fonts/Lobster-Two/Lobster-Two-700.woff') format('woff')
+        , url('fonts/Lobster-Two/Lobster-Two-700.woff2') format('woff2')
+        , url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
+}
+
+@font-face
+{
+    font-family: 'Architects_Daughter';
+    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff') format('woff')
+        , url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2') format('woff2')
+        , url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
+}
+
+@font-face
+{
+    font-family: 'Fjalla_One';
+    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff') format('woff')
+        , url('fonts/Fjalla-One/Fjalla-One-regular.woff2') format('woff2')
+        , url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
+}
+
+@font-face
+{
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron/Orbitron-Regular.woff') format('woff')
+        , url('fonts/Orbitron/Orbitron-Regular.woff2') format('woff2')
+        , url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
+}
+
+@font-face
+{
+    font-family: 'Libre_Baskerville';
+    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff') format('woff')
+        , url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2') format('woff2')
+        , url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
+}
+
+.date
+{
+    text-align: center;
+    font-size: .7em;
+}
+
+.bold-hr
+{
+    border: 3px solid #000;
+    margin: 1px 0;
+}
+
+.separator
+{
+    margin: 11px 0;
+}
+
+.author
+{
+    font-size: .6em;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.tool-label
+{
+    font-size: .7em;
+}
+
+main
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+    text-align: justify;
+    margin-top: 10px;
+    font-size: .9em;
+}
+
+.main-header
+{
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 4px;
+    font: 3em Lobster_Two, cursive;
+}
+
+.four-column
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+    margin-left: 1px;
+    text-indent: 5%;
+}
+
+.section-header
+{
+    font-family: Orbitron, monospace;
+    letter-spacing: .4em;
+    margin: .4em 0;
+}
+
+.article-header
+{
+    font-family: Fjalla_One, sans-serif;
+    text-align: center;
+    margin: .4em 0;
+}
+
+p
+{
+    margin: 2%;
+    font-size: .9em;
+}
+
+.picture-block
+{
+    margin: 2px;
+    font-size: .6em;
+}
+
+.blocked-picture
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.section-vertical-header
+{
+    font-family: Orbitron, monospace;
+    letter-spacing: .4em;
+    word-wrap: break-word;
+    width: .7em;
+    float: left;
+    margin: 0 .7em;
+}
+
+.arial-blockquote
+{
+    font: .9em Architects_Daughter, arial;
+    margin: 0 15px;
+}
+
+.first-paragraph::first-letter
+{
+    font: italic 3em 'Times New Roman';
+}
+
+.li-header
+{
+    font: .7em Libre_Baskerville, sans-serif;
+}
+
+.cursive-blockquote
+{
+    font: .9em Lobster_Two, cursive;
+    margin: 0 15px;
+}
+
+.advice-list
+{
+    padding-left: 15px;
+}
+
+.color-theme:checked ~ main
+{
+    background-color: #f5f5dc;
+    color: #808080;
+}
+
+.font-style:checked ~ main
+{
+    font-family: Fjalla_One, sans-serif;
+}
+
+.big-font-size:checked ~ main
+
+{
+    font-size: 1em;
+}
+
+.small-font-size:checked ~ main
+{
+    font-size: .7em;
+}
