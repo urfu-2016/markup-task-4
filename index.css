@@ -64,8 +64,7 @@ body
 }
 
 .column1,
-.column2,
-.column3
+.column2
 {
     break-inside: avoid-column;
     break-after: column;
