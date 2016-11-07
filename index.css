@@ -1,0 +1,176 @@
+
+@font-face 
+{
+    font-family: 'NewRocker';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NewRocker'), local('NewRocker-Regular')
+        , url(http://allfont.ru/cache/fonts/new-rocker_6a45a1efb38c1e69518fcfaaf1342973.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/new-rocker_6a45a1efb38c1e69518fcfaaf1342973.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Capture it';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Capture it'), local('Captureit-Regular')
+        , url(http://allfont.ru/cache/fonts/capture-it_36d8e4bafcd0d3bd809b9d12e819982e.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/capture-it_36d8e4bafcd0d3bd809b9d12e819982e.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono'), local('FiraMono-Regular')
+        , url(http://allfont.ru/cache/fonts/fira-mono_d00642903e191dad7f366d95cbbaeaf6.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/fira-mono_d00642903e191dad7f366d95cbbaeaf6.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'IM FELL English PRO Roman';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IM FELL English PRO Roman'), local('IMFELLEnglishPRO-Regular')
+        , url(http://www.allfont.es/cache/fonts/im-fell-english-pro-roman_648685cadbc4eb3256e5debc5f4d51ef.woff) format('woff')
+        , url(http://www.allfont.es/cache/fonts/im-fell-english-pro-roman_648685cadbc4eb3256e5debc5f4d51ef.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bree Serif'), local('BreeSerif-Regular')
+        , url(http://allfont.ru/cache/fonts/bree-serif_8e6c84b1a2c67148eb4fcf3bf88213af.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/bree-serif_8e6c84b1a2c67148eb4fcf3bf88213af.ttf) format('truetype');
+}
+
+body 
+{
+    background: url(http://img15.deviantart.net/cbb9/i/2005/258/c/4/paper_texture_v5_by_bashcorpo.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+}
+
+header 
+{
+    height: 100px;
+    text-align: center;
+    border-bottom: 10px double #000;
+    border-top: 5px solid #000;
+}
+
+.head1 
+{
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'NewRocker', cursive;
+}
+
+article 
+{
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+    align-content: center;
+}
+
+.first
+{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+}
+
+.first-img
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+.second
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-rule: 2px solid #000;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+}
+
+.second-img
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+.preColumn
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph
+{
+    font-family: 'Fira Mono', serif;
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+img 
+{
+    margin: 10px 15px;
+    width: 100%;
+}
+
+.head2,
+.head3,
+.head4,
+.head5,
+.head6
+{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-family: 'IM FELL English PRO Roman', serif;
+    font-size: 32px;
+}
+
+.head2
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    width: 300px;
+}
+
+.paragraph:first-letter 
+{
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-family: 'Capture it', cursive;
+}
+
+.author
+{
+    font-family: 1.1em 'Bree Serif', serif;
+    line-height: 20px;
+    padding-top: 10px;
+    float: right;
+}
+
+.more
+{
+    font: 1.1em 'IM FELL English PRO Roman', cursive;
+}
