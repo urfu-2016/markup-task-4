@@ -1,0 +1,126 @@
+@font-face
+{
+    font-family: 'Old London';
+    src: local('Old London')
+        , url('fonts/Old London V1.woff2') format('woff2')
+        , url('fonts/Old London V1.woff') format('woff')
+        , url('fonts/Old London V1.ttf') format('truetype');
+}
+
+body
+{
+    background-color: #f9f7f1;
+    font-family: 'Droid Serif', serif;
+}
+
+.vertical
+{
+    float: left;
+    margin-top: .5em;
+}
+
+h1
+{
+    font: 80px 'Old London', fantasy;
+    text-align: center;
+    margin: 0;
+}
+
+.separator
+{
+    border-width: 5px 0;
+    border-style: double;
+    text-align: center;
+}
+
+main,
+section:not(.main-news),
+.column-count-2
+{
+    column-count: 2;
+    column-rule: 2px solid black;
+    -moz-column-count: 2;
+    -moz-column-rule: 2px solid black;
+}
+
+section
+{
+    border-bottom: 4px double black;
+}
+
+main > section:last-of-type
+{
+    border: none;
+}
+
+article
+{
+    text-align: justify;
+}
+
+.unbreakable
+{
+    break-inside: avoid; /* Для Chrome, Edge */
+    page-break-inside: avoid; /* Для Firefox */
+}
+
+article > div:first-of-type > p::first-letter
+{
+    font: 600 20px 'Playfair Display', serif;
+}
+
+h2
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px 0;
+    padding: 15px;
+    margin: 10px;
+    font-style: oblique;
+    font-size: 35px;
+    background-color: #ddd;
+}
+
+blockquote
+{
+    background-color: #fcfcfc;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    font-family: 'Monotype Corsiva', serif;
+}
+
+p
+{
+    hyphens: auto;
+}
+
+span
+{
+    display: inline-block;
+}
+
+.ya::first-letter
+{
+    font-size: 1.5em;
+    color: #f00;
+}
+
+img
+{
+    width: 100%;
+}
+
+figure
+{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+figcaption
+{
+    font-style: italic;
+    text-align: right;
+}
