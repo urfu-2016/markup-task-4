@@ -1,41 +1,41 @@
 @font-face
 {
     font-family: 'Lobster_Two';
-    src: url('fonts/Lobster-Two/Lobster-Two-700.woff') format('woff'),
-        url('fonts/Lobster-Two/Lobster-Two-700.woff2') format('woff2'),
-        url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
+    src: url('fonts/Lobster-Two/Lobster-Two-700.woff')
+        format('woff'), url('fonts/Lobster-Two/Lobster-Two-700.woff2')
+        format('woff2'), url('fonts/Lobster-Two/Lobster-Two-700.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Architects_Daughter';
-    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff') format('woff'),
-        url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2') format('woff2'),
-        url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
+    src: url('fonts/Architects-Daughter/Architects-Daughter-regular.woff')
+        format('woff'), url('fonts/Architects-Daughter/Architects-Daughter-regular.woff2')
+        format('woff2'), url('fonts/Architects-Daughter/Architects-Daughter-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Fjalla_One';
-    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff') format('woff'),
-        url('fonts/Fjalla-One/Fjalla-One-regular.woff2') format('woff2'),
-        url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
+    src: url('fonts/Fjalla-One/Fjalla-One-regular.woff')
+        format('woff'), url('fonts/Fjalla-One/Fjalla-One-regular.woff2')
+        format('woff2'), url('fonts/Fjalla-One/Fjalla-One-regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Orbitron';
-    src: url('fonts/Orbitron/Orbitron-Regular.woff') format('woff'),
-        url('fonts/Orbitron/Orbitron-Regular.woff2') format('woff2'),
-        url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
+    src: url('fonts/Orbitron/Orbitron-Regular.woff')
+        format('woff'), url('fonts/Orbitron/Orbitron-Regular.woff2')
+        format('woff2'), url('fonts/Orbitron/Orbitron-Regular.eot') format('eot');
 }
 
 @font-face
 {
     font-family: 'Libre_Baskerville';
-    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff') format('woff'),
-        url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2') format('woff2'),
-        url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
+    src: url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff')
+        format('woff'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.woff2')
+        format('woff2'), url('fonts/Libre-Baskerville/Libre-Baskerville-italic.eot') format('eot');
 }
 
 .date
