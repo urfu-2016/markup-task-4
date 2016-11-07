@@ -48,6 +48,7 @@ main
     -webkit-column-rule: 1px solid;
     -moz-column-rule: 1px solid;
     column-rule: 1px solid;
+    -moz-column-fill: balance
 }
 
 article
@@ -66,20 +67,20 @@ body
 .column1
 {
     break-after: column;
-    -moz-break-inside: avoid-column;
+    break-inside: avoid-column;
 }
 
 .column2
 {
     break-before: column;
     break-after: column;
-    -moz-break-inside: avoid-column;
+    break-inside: avoid;
 }
 
 .column3
 {
     break-before: column;
-    -moz-break-inside: avoid-column;
+    break-inside: avoid;
 }
 
 h1,
