@@ -1,14 +1,54 @@
-@import url(https://fonts.googleapis.com/css?family=New+Rocker);
-@import url(https://fonts.googleapis.com/css?family=Diplomata+SC);
-@import url(https://fonts.googleapis.com/css?family=UnifrakturCook:700);
-@import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
-@import url(https://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+@font-face 
+{
+    font-family: 'NewRocker';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NewRocker'), local('NewRocker-Regular')
+        , url(http://allfont.ru/cache/fonts/new-rocker_6a45a1efb38c1e69518fcfaaf1342973.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/new-rocker_6a45a1efb38c1e69518fcfaaf1342973.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Capture it';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Capture it'), local('Captureit-Regular')
+        , url(http://allfont.ru/cache/fonts/capture-it_36d8e4bafcd0d3bd809b9d12e819982e.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/capture-it_36d8e4bafcd0d3bd809b9d12e819982e.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono'), local('FiraMono-Regular')
+        , url(http://allfont.ru/cache/fonts/fira-mono_d00642903e191dad7f366d95cbbaeaf6.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/fira-mono_d00642903e191dad7f366d95cbbaeaf6.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'IM FELL English PRO Roman';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IM FELL English PRO Roman'), local('IMFELLEnglishPRO-Regular')
+        , url(http://www.allfont.es/cache/fonts/im-fell-english-pro-roman_648685cadbc4eb3256e5debc5f4d51ef.woff) format('woff')
+        , url(http://www.allfont.es/cache/fonts/im-fell-english-pro-roman_648685cadbc4eb3256e5debc5f4d51ef.ttf) format('truetype');
+}
+@font-face 
+{
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bree Serif'), local('BreeSerif-Regular')
+        , url(http://allfont.ru/cache/fonts/bree-serif_8e6c84b1a2c67148eb4fcf3bf88213af.woff) format('woff')
+        , url(http://allfont.ru/cache/fonts/bree-serif_8e6c84b1a2c67148eb4fcf3bf88213af.ttf) format('truetype');
+}
 
 body 
 {
     background: url(http://img15.deviantart.net/cbb9/i/2005/258/c/4/paper_texture_v5_by_bashcorpo.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: 100%;
     -webkit-background-size: 100%;
 }
@@ -21,24 +61,24 @@ header
     border-top: 5px solid #000;
 }
 
-h1 
+.head1 
 {
     margin: 20px;
     font-size: 50px;
-    font-family: 'New Rocker', cursive;
+    font-family: 'NewRocker', cursive;
 }
 
 article 
 {
     -webkit-column-count: 5;
-    column-count: 5;
     -moz-column-count: 5;
+    column-count: 5;
     -webkit-column-width: 300px;
     -moz-column-width: 300px;
     column-width: 300px;
-    column-rule: 2px solid #000;
     -webkit-column-rule: 2px solid #000;
     -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
     align-content: center;
 }
 
@@ -55,6 +95,7 @@ article
 .first-img
 {
     -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
@@ -71,64 +112,59 @@ article
 .second-img
 {
     -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
 }
 
-pre
+.preColumn
 {
     font-size: 30px;
     font-weight: bold;
 }
 
-article p,
-h2,
-h3,
-h4,
-h5,
-h6 
+.paragraph
 {
     font-family: 'Fira Mono', serif;
-    text-indent: 20px;
     font-size: 18px;
+    text-indent: 20px;
 }
 
 img 
 {
+    margin: 10px 15px;
     width: 100%;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 
+.head2,
+.head3,
+.head4,
+.head5,
+.head6
 {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    font-family: 'IM Fell English', serif;
+    font-family: 'IM FELL English PRO Roman', serif;
     font-size: 32px;
 }
 
-h2 
+.head2
 {
     -webkit-column-span: all;
-    -ms-grid-column-span: all;
+    -moz-column-span: all;
     column-span: all;
-    width: 500px;
-    font-family: 'IM Fell English', serif;
-    font-size: 32px;
+    width: 300px;
 }
 
-p:first-letter 
+.paragraph:first-letter 
 {
     letter-spacing: 5px;
     font-size: 18px;
-    font-family: 'Diplomata SC', cursive;
+    font-family: 'Capture it', cursive;
 }
 
 .author
 {
-    font: 1.1em 'Bree Serif', serif;
+    font-family: 1.1em 'Bree Serif', serif;
     line-height: 20px;
     padding-top: 10px;
     float: right;
@@ -136,5 +172,5 @@ p:first-letter
 
 .more
 {
-    font: 1.1em IM Fell English, cursive;
+    font: 1.1em 'IM FELL English PRO Roman', cursive;
 }
