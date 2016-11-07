@@ -34,7 +34,7 @@ header div
 .logo
 {
     font-family: Canterbury, serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .match
@@ -87,7 +87,7 @@ article img
     font-size: 18px;
 }
 
-main.p:first-letter
+main p:first-letter
 {
     font-family: Georgia, serif;
     font-weight: bold;
@@ -95,7 +95,12 @@ main.p:first-letter
     text-indent: 20px;
 }
 
-main.p:first-of-type
+main p
+{
+    text-align: justify;
+}
+
+main p:first-of-type
 {
     text-indent: 20px;
 }
