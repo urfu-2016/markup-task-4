@@ -1,0 +1,137 @@
+@font-face
+{
+    font-family: 'Pattaya';
+    src: url(Pattaya.woff) format(woff), url(Pattaya.ttf) format(truetype);
+}
+
+html
+{
+    margin: 0;
+    background-color: #fff3da;
+    font: 18px serif;
+    color: #211702;
+}
+
+body
+{
+    margin: 0;
+    padding: 2rem 4rem;
+}
+
+.newspaper-info
+{
+    position: absolute;
+    left: 3rem;
+    width: 1rem;
+}
+
+.info
+{
+    display: block;
+    width: .5em;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    font: .75rem 'Courier', monospace;
+    text-transform: uppercase;
+    word-break: break-all;
+}
+
+.newspaper-name
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font: 4rem 'Pattaya', sans-serif;
+}
+
+.newspaper-date
+{
+    margin: 0;
+    padding: .25rem 0;
+    border-top: 4px double #211702;
+    border-bottom: 4px double #211702;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: normal;
+}
+
+.newspaper-image
+{
+    width: 100%;
+    margin: 0 0 .25rem;
+}
+
+.newspaper-news
+{
+    margin: 0;
+    padding: 1.5rem 0;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-rule: 1px solid #211702;
+    -webkit-column-rule: 1px solid #211702;
+    column-rule: 1px solid #211702;
+    -moz-column-gap: 1.5rem;
+    -webkit-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.newspaper-subhead
+{
+    margin: 0 0 1rem;
+    padding: 0;
+    text-align: center;
+    font: 2rem 'Pattaya', sans-serif;
+    line-height: 2rem;
+}
+
+figure
+{
+    margin: 0 0 1rem;
+}
+
+figcaption
+{
+    text-align: center;
+    font-size: .75rem;
+}
+
+.any-news
+{
+    margin: 0;
+}
+
+.any-news:nth-of-type(4) .any-news-text
+{
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.any-news-header
+{
+    margin: 1.5rem 0;
+    padding: 0;
+    text-align: center;
+    font: 1.5rem 'Russo One', sans-serif;
+    line-height: 1.75rem;
+}
+
+.any-news p
+{
+    margin: 0 0 .5rem;
+    padding: 0;
+    text-align: justify;
+    font-size: 1rem;
+    text-indent: 2rem;
+}
+
+.any-news p q
+{
+    font-style: italic;
+}
+
+.any-news p:nth-of-type(1)::first-letter
+{
+    font-size: 1.5rem;
+}
