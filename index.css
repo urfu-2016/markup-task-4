@@ -147,7 +147,7 @@ main
     margin: 15px 0;
 }
 
-.column-3
+.three-columns-text
 {
     -webkit-column-count: 3;
     -moz-column-count: 3;
