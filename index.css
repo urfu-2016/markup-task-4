@@ -66,26 +66,27 @@ body
 .column1
 {
     break-after: column;
-    break-inside: avoid-column;
+    -moz-break-inside: avoid-column;
 }
 
 .column2
 {
     break-before: column;
     break-after: column;
-    break-inside: avoid-column;
+    -moz-break-inside: avoid-column;
 }
 
 .column3
 {
     break-before: column;
-    break-inside: avoid-column;
+    -moz-break-inside: avoid-column;
 }
 
 h1,
-h3
+h3,
+h4
 {
-    margin: 5px 0 20px 0;
+    margin: 10px;
 }
 
 h4
