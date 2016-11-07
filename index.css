@@ -3,9 +3,9 @@
     font-family: 'Pacifico';
     src: url('fonts/pacifico-webfont.eot');
     src: local('Pacifico'), url('fonts/pacifico-webfont.eot?#iefix')
-    format('embedded-opentype'), url('fonts/pacifico-webfont.woff2')
-    format('woff2'), url('fonts/pacifico-webfont.woff')
-    format('woff'), url('fonts/pacifico-webfont.ttf') format('truetype');
+        format('embedded-opentype'), url('fonts/pacifico-webfont.woff2')
+        format('woff2'), url('fonts/pacifico-webfont.woff')
+        format('woff'), url('fonts/pacifico-webfont.ttf') format('truetype');
 }
 
 @font-face
@@ -13,9 +13,9 @@
     font-family: 'Kaushan Script';
     src: url('fonts/kaushanscript-regular-webfont.eot');
     src: local('Kaushan Script'), url('fonts/kaushanscript-regular-webfont.eot?#iefix')
-    format('embedded-opentype'), url('fonts/kaushanscript-regular-webfont.woff2')
-    format('woff2'), url('fonts/kaushanscript-regular-webfont.woff')
-    format('woff'), url('fonts/kaushanscript-regular-webfont.ttf') format('truetype');
+        format('embedded-opentype'), url('fonts/kaushanscript-regular-webfont.woff2')
+        format('woff2'), url('fonts/kaushanscript-regular-webfont.woff')
+        format('woff'), url('fonts/kaushanscript-regular-webfont.ttf') format('truetype');
 }
 
 @font-face
@@ -23,9 +23,9 @@
     font-family: 'Sacramento';
     src: url('fonts/sacramento-regular-webfont.eot');
     src: local('Scramento'), url('fonts/sacramento-regular-webfont.eot?#iefix')
-    format('embedded-opentype'), url('fonts/sacramento-regular-webfont.woff2')
-    format('woff2'), url('fonts/sacramento-regular-webfont.woff')
-    format('woff'), url('fonts/sacramento-regular-webfont.ttf') format('truetype');
+        format('embedded-opentype'), url('fonts/sacramento-regular-webfont.woff2')
+        format('woff2'), url('fonts/sacramento-regular-webfont.woff')
+        format('woff'), url('fonts/sacramento-regular-webfont.ttf') format('truetype');
 }
 
 header
