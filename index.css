@@ -19,9 +19,9 @@ body
     margin: 0;
 }
 
-img
+figure
 {
-    position: relative;
+    margin: 0 10px auto;
 }
 
 main
@@ -31,12 +31,6 @@ main
     column-count: 4;
     -moz-column-rule: 2px solid #000;
     column-rule: 2px solid #000;
-}
-
-h3
-{
-    border-bottom: solid;
-    border-top: solid;
 }
 
 .fednews
@@ -78,8 +72,10 @@ main .third p
     column-rule: 2px solid #000;
 }
 
-h3
+.advertisment
 {
+    border-bottom: solid;
+    border-top: solid;
     letter-spacing: -1px;
     font-style: italic;
     font-size: 1.5em;
@@ -88,7 +84,7 @@ h3
     text-transform: uppercase;
 }
 
-h3 span
+.advertisment span
 {
     font-size: .8em;
     font-style: normal;
@@ -123,7 +119,7 @@ blockquote
     color: #fff;
 }
 
-.change-color:checked ~ div p::first-letter
+.change-color:checked ~ .main-content p::first-letter
 {
     color: #fff;
 }
