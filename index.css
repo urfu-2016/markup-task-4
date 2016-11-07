@@ -60,8 +60,8 @@ footer
     -moz-column-count: 2;
     column-count: 2;
     column-fill: auto;
-    -moz-column-rule: 1px solid black;
-    column-rule: 1px solid black;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
 .span
