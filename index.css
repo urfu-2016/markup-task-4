@@ -8,18 +8,14 @@ body
 {
     background: url(1.jpg);
     background-size: 100%;
+    font-family: bart, segoe print, gabriola;
+    hyphens: manual;
 }
 
 h1
 {
     text-align: center;
     font: italic 250% gothical;
-}
-
-p
-{
-    font-family: bart, segoe print, gabriola;
-    hyphens: manual;
 }
 
 .image
@@ -37,6 +33,7 @@ blockquote
 img
 {
     width: 100%;
+    height: 100%;
 }
 
 h3
@@ -60,7 +57,7 @@ p::first-letter
     word-wrap: break-word;
 }
 
-.footer
+footer
 {
     font: italic 150% gothical;
     font-weight: bold;
@@ -76,41 +73,23 @@ p::first-letter
     word-wrap: break-word;
 }
 
-.one_column
+.one-column,
+.two-column
 {
-    column-rule: 2px solid gray;
-    column-count: 1;
-    column-gap: 150%;
-    -moz-column-rule: 2px solid gray;
-    -moz-column-count: 1;
-    -moz-column-gap: 150%;
     -webkit-column-rule: 2px solid gray;
+    -moz-column-rule: 2px solid gray;
+    column-rule: 2px solid gray;
     -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
     -webkit-column-gap: 150%;
+    -moz-column-gap: 150%;
+    column-gap: 150%;
 }
 
-.two_column
+.two-column
 {
-    column-rule: 2px solid gray;
-    column-count: 2;
-    column-gap: 150%;
-    -moz-column-rule: 2px solid gray;
-    -moz-column-count: 2;
-    -moz-column-gap: 150%;
-    -webkit-column-rule: 2px solid gray;
     -webkit-column-count: 2;
-    -webkit-column-gap: 150%;
-}
-
-.three_column
-{
-    column-rule: 2px solid gray;
-    column-count: 2;
-    column-gap: 150%;
-    -moz-column-rule: 2px solid gray;
     -moz-column-count: 2;
-    -moz-column-gap: 150%;
-    -webkit-column-rule: 2px solid gray;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 150%;
+    column-count: 2;
 }
