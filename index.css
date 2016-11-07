@@ -48,9 +48,6 @@ main
     -webkit-column-rule: 1px solid;
     -moz-column-rule: 1px solid;
     column-rule: 1px solid;
-    -webkit-column-fill: auto;
-    -moz-column-fill: auto;
-    column-fill: auto;
 }
 
 article
@@ -85,6 +82,12 @@ body
     break-inside: avoid-column;
 }
 
+h1,
+h3
+{
+    margin: 5px 0 20px 0;
+}
+
 h4
 {
     text-align: left;
@@ -93,7 +96,7 @@ h4
 
 h1
 {
-    font: 48px 'Parseltongue', arial;
+    font: bold 50px 'Parseltongue', arial;
     text-shadow: 4px 4px 4px #aaa;
     letter-spacing: normal;
     text-align: center;
@@ -176,7 +179,7 @@ figure
 
 img
 {
-    width: 150px;
+    width: 100%;
 }
 
 div.content
