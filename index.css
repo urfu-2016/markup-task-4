@@ -229,7 +229,7 @@ main
 
 .Refale-BG:checked ~ main
 {
-    font-family: "Refale BG";
+    font-family: 'Refale BG';
 }
 
 .black-beige:checked ~ main
