@@ -64,23 +64,11 @@ body
     background-image: url('paper2.jpg');
 }
 
-.column1
-{
-    break-after: column;
-    break-inside: avoid;
-}
-
-.column2
-{
-    break-before: column;
-    break-after: column;
-    break-inside: avoid;
-}
-
+.column1,
+.column2,
 .column3
 {
-    break-before: column;
-    break-inside: avoid;
+    break-inside: avoid-column;
 }
 
 h1,
