@@ -59,22 +59,22 @@
     src: url('fonts/Lobster/Lobster-Regular.ttf'), url('fonts/Lobster/Lobster-Regular.woff');
 }
 
-input[value='large'][name="font_size"]:checked ~ main
+input[value='large'].radio:checked ~ main
 {
     font-size: 1.3em;
 }
 
-input[name="font_size"][value='small']:checked ~ main
+input[value='small'].radio:checked ~ main
 {
     font-size: .7em;
 }
 
-input#font_family:checked ~ main
+input.font-family-checkbox:checked ~ main
 {
     font-family: 'Trirong', serif;
 }
 
-input#color:checked ~ main
+input.color-checkbox:checked ~ main
 {
     color: #fff;
     background: #000;
@@ -152,9 +152,11 @@ figure.img-full-line figcaption.caption-full-line
     font: 1rem 'Cormorant Garamond', serif;
 }
 
-figure.img-full-line figcaption.caption-full-line.q
+figure.img-full-line figcaption.caption-full-line blockquote
 {
     font-family: 'Cormorant Garamond Italic', fantasy;
+    margin: 0;
+    padding: 0;
 }
 
 figure.img-column
@@ -175,10 +177,12 @@ figcaption.caption-column
     font: .6rem 'Rock Salt', fantasy;
 }
 
-p q
+blockquote
 {
     font: 1.2em 'Playball', fantasy;
     text-indent: 4%;
+    margin: inherit;
+    padding: inherit;
 }
 
 em
