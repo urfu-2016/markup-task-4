@@ -14,7 +14,7 @@ body
     background: linear-gradient(to bottom, #deb887, #bdb76b);
     font-family: 'Kelly Slab', cursive, Verdana, Arial, Calibri, sans-serif;
     padding: 10px;
-    min-width: 320px;
+    min-width: 650px;
 }
 
 header
@@ -65,15 +65,16 @@ img
     -khtml-opacity: .5;
     opacity: .5;
     width: 100%;
-    display: block;
+    height: auto;
+    display: block;     
 }
 
 .card
 {
     text-align: right;
-    margin: 0;
+    margin: 0 9%;
     padding: 0;
-    width: 100%;
+    width: 80%;
     border: 1px solid black;
 }
 
@@ -136,12 +137,12 @@ blockquote
 
 .large-font:checked ~ .newspaper
 {
-    font-size: larger;
+    font-size: 1.2em;
 }
 
 .small-font:checked ~ .newspaper
 {
-    font-size: smaller;
+    font-size: .8em;
 }
 
 footer 
