@@ -286,15 +286,12 @@ header h1
 {
     break-inside: avoid;
     page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    -webkit-region-break-before: avoid;
+    -webkit-region-break-inside: avoid;
     break-before: column;
     page-break-before: always;
-    webkit-column-break-before: column;
     -webkit-region-break-before: column;
     break-after: column;
     page-break-after: always;
-    webkit-column-break-after: column;
     -webkit-region-break-after: column;
     padding-bottom: 8px;
 }
