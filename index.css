@@ -68,6 +68,7 @@ body
 .column3
 {
     break-inside: avoid-column;
+    break-after: column;
 }
 
 h1,
