@@ -77,7 +77,7 @@ main
     column-rule: solid 1px #d3d3d3;
 }
 
-article
+.news
 {
     margin: 10px;
     padding: 10px;
@@ -90,7 +90,7 @@ article
     padding: 10px 0;
 }
 
-h2
+.news > h2
 {
     color: #1e90ff;
     margin-top: 0;
@@ -100,19 +100,19 @@ h2
     text-shadow: 2px 2px 2px #000;
 }
 
-h3
+.news > h3
 {
     text-shadow: 1px 1px 5px #808080;
 }
 
-figure
+.pic
 {
     text-align: center;
     color: #808080;
     margin: 1em 10%;
 }
 
-figure > img
+.pic > img
 {
     border: solid 1px #808080;
     border-radius: 5px;
@@ -148,19 +148,19 @@ footer
     padding: 10px;
 }
 
-section
+.quotes
 {
     position: absolute;
     width: 25%;
     right: 10px;
 }
 
-section > q
+.quotes > q
 {
     font-family: 'Bad Script', cursive;
 }
 
-section > div
+.author
 {
     color: #808080;
     text-align: right;
