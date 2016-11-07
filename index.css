@@ -173,8 +173,14 @@ header h1
 .multicolumn
 {
     column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-gap: 2em;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
     column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
     padding: 0 24px;
     text-align: justify;
 }
@@ -219,7 +225,7 @@ header h1
     text-align: center;
     text-transform: uppercase;
     width: 1em;
-    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .main-entry-img-cell
@@ -255,6 +261,8 @@ header h1
     background-color: #000;
     color: #fff;
     column-rule: none;
+    -moz-column-rule: none;
+    -webkit-column-rule: none;
     margin-top: 24px;
     padding-bottom: 24px;
 }
@@ -262,7 +270,6 @@ header h1
 .website-news h2,
 .other-news > h2
 {
-    column-span: all;
     margin: 0;
     padding: 1em 0;
     text-align: center;
@@ -278,8 +285,17 @@ header h1
 .website-news ul li
 {
     break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -webkit-region-break-before: avoid;
     break-before: column;
+    page-break-before: always;
+    webkit-column-break-before: column;
+    -webkit-region-break-before: column;
     break-after: column;
+    page-break-after: always;
+    webkit-column-break-after: column;
+    -webkit-region-break-after: column;
     padding-bottom: 8px;
 }
 
