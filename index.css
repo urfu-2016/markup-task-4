@@ -16,9 +16,14 @@
     src: url('Queen.ttf');
 }
 
+html
+{
+    font-size: 16px;
+}
+
 body
 {
-    margin: 0 3em;
+    margin: 0 3rem;
     background: url(fon.jpg) no-repeat;
     background-size: cover;
 }
@@ -28,32 +33,32 @@ h2,
 h3,
 p
 {
-    margin: 0;
     text-align: center;
+    margin: 0;
 }
 
 h4
 {
 
-    width: .6em;
-    font: italic 1.3em Arial, sans-serif;
+    width: .6rem;
+    font: italic 1.3rem Arial, sans-serif;
     word-wrap: break-word;
     float: left;
 }
 
 h1
 {
-    font: italic 3.7em Arial, sans-serif;
+    font: italic 3.7rem Arial, sans-serif;
 }
 
 h2
 {
-    font: 1.8em Queen, sans-serif;
+    font: 1.8rem Queen, sans-serif;
 }
 
 header h1
 {
-    font: 6em Bickham, sans-serif;
+    font: 6rem Bickham, sans-serif;
     text-shadow: .03em .02em #696969;
 }
 
@@ -65,22 +70,22 @@ q
 header img
 {
     position: absolute;
-    margin: 2.4em 3.5em;
-    border: solid #222;
+    margin: 2.4rem 3.5rem;
+    border: 1px solid #222;
 }
 
 hr
 {
+    height: 1px;
     border: none;
+    color: #000;
     background-color: #000;
-    height: .1em;
-    text-align: center;
 }
 
 main
 {
-    text-indent: .2em;
-    font-size: 1em;
+    text-indent: .2rem;
+    font-size: 1rem;
 }
 
 figure.img figcaption
@@ -106,13 +111,15 @@ p:first-letter
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-    column-rule: .15em solid #000;
-    -moz-column-rule: .15em solid #000;
-    -webkit-column-rule: .15em solid #000;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
 }
 
 .biography
 {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1;
 }
 
@@ -121,8 +128,7 @@ p:first-letter
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    column-rule: .15em solid #000;
-    -moz-column-rule: .15em solid #000;
-    -webkit-column-rule: .15em solid #000;
-    font-size: 1em;
+    -webkit-column-rule: 1px solid #000;
+    -moz-column-rule: .1px solid #000;
+    column-rule: 1px solid #000;
 }
