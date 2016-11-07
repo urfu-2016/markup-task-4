@@ -48,7 +48,6 @@ main
     -webkit-column-rule: 1px solid;
     -moz-column-rule: 1px solid;
     column-rule: 1px solid;
-    -moz-column-fill: balance;
 }
 
 article
