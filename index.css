@@ -56,7 +56,6 @@ header
 
 .info
 {
-    flex: 1 100%;
     text-align: center;
     border-top: solid 2px #000;
 }
@@ -97,8 +96,7 @@ h2
     margin-top: 0;
     column-span: all;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Ruslan Display', cursive;
+    font: 30px 'Ruslan Display', cursive;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -107,21 +105,20 @@ h3
     text-shadow: 1px 1px 5px #808080;
 }
 
-.pic
+figure
 {
-    display: inline-block;
     text-align: center;
     color: #808080;
+    margin: 1em 10%;
 }
 
-.pic > img
+figure > img
 {
     border: solid 1px #808080;
     border-radius: 5px;
     max-width: 100%;
 }
 
-.pic > span,
 .weather > div > span
 {
     display: block;
@@ -147,7 +144,6 @@ p > q
 
 footer
 {
-    flex: 1 100%;
     border-top: solid 2px #000;
     padding: 10px;
 }
