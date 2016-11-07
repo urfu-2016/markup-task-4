@@ -1,11 +1,7 @@
 header 
 {
     text-align: center;
-}
-
-.header-text
-{
-    font: normal 8em Edisson;
+    font: 8em Edisson, Cambria, serif;
 }
 
 body 
@@ -53,26 +49,26 @@ p
     border: 6px double #000;
 }
 
-.first
+article > p:first-of-type
 {
     font-weight: 600;
 }
 
-.first::first-letter
+article > p:first-of-type::first-letter
 {
-    font: 400 250% Edisson;
+    font: 400 250% Edisson, Cambria, serif;
 }
 
 q
 {
-    font: italic 100% Five;
+    font: italic 100% Five, Cambria, serif;
 }
 
 .edition
 {
     display: block;
     text-align: center;
-    font: normal 200% Edisson;
+    font: 200% Edisson, Cambria, serif;
     border: 4px double #000;
     border-left: none;
     border-right: none;
@@ -81,24 +77,29 @@ q
 
 .vertical-text
 {
-    font-size: 120%;
+    font-size: 105%;
     font-weight: 600;
-    display: block;
-    float: left;
+    display: inline-block;
     text-align: left;
     margin: 5px;
     width: 15px;
     word-break: break-all;
 }
 
+.with-vertical-text
+{
+    display: inline-block;
+    width: 90%;
+}
+
 /* Custom fonts */
 @font-face
 {
     font-family: Edisson;
-    src: url(fonts/Edisson.ttf) format('truetype'), url(fonts/Edisson.woff) format('woff'), url(fonts/Edisson.eot) format('embedded-opentype');
+    src: local('Five'), url(fonts/Edisson.ttf) format('truetype'), url(fonts/Edisson.woff) format('woff'), url(fonts/Edisson.eot) format('embedded-opentype');
 }
 @font-face
 {
     font-family: Five;
-    src: url(fonts/Five.ttf) format('truetype'), url(fonts/Five.woff) format('woff'), url(fonts/Five.eot) format('embedded-opentype');
+    src: local('Five'), url(fonts/Five.ttf) format('truetype'), url(fonts/Five.woff) format('woff'), url(fonts/Five.eot) format('embedded-opentype');
 }
