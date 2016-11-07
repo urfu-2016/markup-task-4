@@ -24,7 +24,9 @@ h1
 .image
 {
     font: italic 150% gabriola, bart, segoe print;
-    padding: 5%;
+    padding-top: 66%;
+    position: relative;
+    margin: 5%;
     text-align: center;
 }
 
@@ -35,8 +37,10 @@ blockquote
 
 img
 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 400px;
 }
 
 h3
