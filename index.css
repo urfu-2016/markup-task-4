@@ -59,22 +59,22 @@
     src: url('fonts/Lobster/Lobster-Regular.ttf'), url('fonts/Lobster/Lobster-Regular.woff');
 }
 
-input[name='font_size'][value='large']:checked ~ main
+input[value='large'][name="font_size"]:checked ~ main
 {
     font-size: 1.3em;
 }
 
-input[name='font_size'][value='small']:checked ~ main
+input[name="font_size"][value='small']:checked ~ main
 {
     font-size: .7em;
 }
 
-input[id='font_family']:checked ~ main
+input#font_family:checked ~ main
 {
-    font-family: 'Trirong';
+    font-family: 'Trirong', serif;
 }
 
-input[id='color']:checked ~ main
+input#color:checked ~ main
 {
     color: #fff;
     background: #000;
@@ -186,7 +186,7 @@ em
     font-family: 'Fredoka One', cursive;
 }
 
-span.checkbox_caption,
+.checkbox_caption,
 .radio_caption
 {
     font-family: 'Lobster', cursive;
