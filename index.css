@@ -15,7 +15,6 @@ body
 
 .vertical
 {
-    display: inline-block;
     float: left;
     margin-top: .5em;
 }
@@ -35,11 +34,12 @@ h1
 }
 
 main,
-section
+section:not(.main-news),
+.column-count-2
 {
     column-count: 2;
-    -moz-column-count: 2;
     column-rule: 2px solid black;
+    -moz-column-count: 2;
     -moz-column-rule: 2px solid black;
 }
 
@@ -48,7 +48,7 @@ section
     border-bottom: 4px double black;
 }
 
-section.last
+main > section:last-of-type
 {
     border: none;
 }
@@ -58,14 +58,10 @@ article
     text-align: justify;
 }
 
-.column-span-all
-{
-    column-span: all;
-}
-
 .unbreakable
 {
-    break-inside: avoid-column;
+    break-inside: avoid; /* Для Chrome, Edge */
+    page-break-inside: avoid; /* Для Firefox */
 }
 
 article > div:first-of-type > p::first-letter
