@@ -3,8 +3,7 @@
 @font-face
 {
     font-family: Pompadur;
-    src: url(Pompadur.woff);
-    src: url(Pompadur.ttf);
+    src: url(Pompadur.woff), url(Pompadur.ttf);
 }
 
 h1,
