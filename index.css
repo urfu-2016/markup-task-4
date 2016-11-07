@@ -148,11 +148,15 @@ q:after
     vertical-align: -.45em;
 }
 
+input[value='night']:checked ~ .container
+{
+    background: #000;
+}
+
 input[value='night']:checked ~ .container,
 input[value='night']:checked ~ .container q:after,
 input[value='night']:checked ~ .container q:before
 {
-    background: #000;
     color: #fff;
 }
 
