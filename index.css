@@ -1,9 +1,8 @@
 @font-face
 {
     font-family: gothical;
-    src:
-        local('gothical'),
-        url(1.ttf);
+    src: local('gothical'),
+         url(1.ttf);
 }
 
 body
