@@ -1,0 +1,175 @@
+body
+{
+    font-size: 15px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.black-color:checked ~ .main
+{
+    background: #000;
+    color: #fff;
+}
+
+.white-color:checked ~ .main
+{
+    background: #f9e593;
+    color: #000;
+}
+
+.content
+{
+    margin: 5px 0;
+    font-size: 0;
+}
+
+.large-font:checked ~ .content
+{
+    font-size: 20px;
+}
+
+.normal-font:checked ~ .content
+{
+    font-size: 15px;
+}
+
+.small-font:checked ~ .content
+{
+    font-size: 12px;
+}
+
+.first-font-family:checked ~ .content
+{
+    font-family: 'Neucha', cursive;
+}
+
+.second-font-family:checked ~ .content
+{
+    font-family: 'Marck Script', cursive;
+}
+
+.first-font-family:checked ~ .content .second-font,
+.first-font
+{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.second-font-family:checked ~ .content .second-font
+{
+    font-family: Comic Sans MS;
+}
+
+.first-font
+{
+    font-size: 3em;
+}
+
+.second-font
+{
+    font-size: 1.2em;
+}
+
+.header
+{
+    text-align: center;
+    margin: 0;
+}
+
+p:first-letter
+{
+    font-size: 1.5em;
+}
+
+.v-direction
+{
+    word-break: break-all;
+    white-space: pre-wrap;
+    letter-spacing: 1em;
+    font: small-caps 1.2em Verdana;
+    width: 1em;
+}
+
+.poem p
+{
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.column
+{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.one-column
+{
+    width: 21%;
+    min-width: 200px;
+}
+
+.thin-column
+{
+    width: 50px;
+}
+
+.center-column
+{
+    width: 50%;
+    min-width: 200px;
+}
+
+.story
+{
+    column-count: 2;
+    -moz-column-count: 2;
+    column-width: 200px;
+    -moz-column-width: 200px;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.poem
+{
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.poem span
+{
+    white-space: nowrap;
+}
+
+blockquote
+{
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 1.2em;
+}
+
+.all-columns
+{
+    column-span: all;
+}
+
+.frame
+{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+blockquote > q
+{
+    quotes: '«' '»';
+}
+
+.illustration
+{
+    margin: 5px 0;
+}
+
+.illustration > img
+{
+    width: 100%;
+}

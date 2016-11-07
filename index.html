@@ -2,7 +2,140 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> 
+    <title>DeLorean DMC-12</title>
 </head>
 <body>
+    <span>Режим:</span>
+    <input type="radio" id="white-color" class="white-color" name="color" checked>
+    <label for="white-color">Дневной</label>
+    <input type="radio" class="black-color" id="black-color" name="color">
+    <label for="black-color">Ночной</label><br>
+    <span>Размер шрифта:</span>
+    <input type="radio" class="large-font" id="large-font" name="font-size">
+    <label for="large-font">Большой</label>
+    <input type="radio" class="normal-font" id="normal-font" name="font-size" checked>
+    <label for="normal-font">Средний</label>
+    <input type="radio" class="small-font"  id="small-font" name="font-size">
+    <label for="small-font">Маленький</label><br>
+    <span>Тип шрифта:</span>
+    <input type="radio" class="first-font-family" id="first-font" name="font-type">
+    <label for="first-font">Neucha, Philosopher</label>
+    <input type="radio" class="second-font-family" id="second-font" name="font-type" checked>
+    <label for="second-font">Marck Script, Comic Sans MS</label>
+    <header class="main frame">
+        <h1 class="header first-font">Литературная неделя</h1>  
+    </header>
+    <main class="main content">
+        <div class="one-column column">
+            <article class="poem">
+                <h2 class="header second-font">Под вечер</h2>
+                <p>
+                    Угрюмо шмель гудит, <span>толкаясь по стеклу...</span><br>
+                    В окно зарница <span>глянула тревожно...</span><br>
+                    Притихший соловей <span>в сирени на валу</span><br>
+                    Выводит трели <span>осторожно.</span>
+                </p>
+                <p>
+                    Гром, проворчав в саду, <span>скатился за гумно;</span><br>
+                    Но воздух меркнет, <span>небо потухает...</span><br>
+                    А тополь тянется <span>в открытое окно</span><br>
+                    И ладаном <span>благоухает.</span><br>
+                </p>
+            </article>
+            <article class="poem">
+                <h2 class="header second-font">* * *</h2>
+                <p>
+                    На окне, серебряном <span>от инея,</span><br>
+                    За ночь хризантемы расцвели.<br>
+                    В верхних стеклах - <span>небо ярко-синее</span><br>
+                    И застреха в <span>снеговой пыли.</span>
+                </p>
+                <p>
+                    Всходит солнце, <span>бодрое от холода,</span><br>
+                    Золотится отблеском окно.<br>
+                    Утро тихо, <span>радостно и молодо.</span><br>
+                    Белым снегом <span>все запушено.</span>
+                </p>
+                <p>
+                    И все утро яркие <span>и чистые</span><br>
+                    Буду видеть краски <span>в вышине,</span><br>
+                    И до полдня <span>будут серебристые</span><br>
+                    Хризантемы на моем окне.
+                </p>
+            </article>
+        </div>
+        <div class="thin-column column">
+            <article><p class="v-direction">Иван Бунин</p></article>
+        </div>
+        <div class="center-column column">
+            <article class="story">
+                <h2 class="header all-columns second-font">
+                    Отрывок из рассказа <q>Антоновский яблоки</q>
+                </h2>
+                <p>Помню раннее, свежее, тихое утро... Помню боль&shy;шой, весь зо&shy;ло&shy;той,
+                под&shy;сох&shy;ший и по&shy;ре&shy;дев&shy;ший сад, помню кленовые аллеи, тон&shy;кий
+                аро&shy;мат опав&shy;шей лист&shy;вы и – за&shy;пах антоновских яблок, за&shy;пах мёда
+                и осен&shy;ней све&shy;жес&shy;ти. Воз&shy;дух так чист, точ&shy;но его сов&shy;сем нет,
+                по все&shy;му са&shy;ду раз&shy;да&shy;ются го&shy;ло&shy;са и скрип те&shy;лег.
+
+                Это тар&shy;хане, ме&shy;ща&shy;не-са&shy;дов&shy;ни&shy;ки, наняли мужиков и насыпают
+                яблоки, чтобы в ночь от&shy;прав&shy;лять их в го&shy;род, – не&shy;пременно в ночь,
+                ко&shy;гда так слав&shy;но ле&shy;жать на во&shy;зу, смот&shy;реть в звёз&shy;дное 
+                не&shy;бо, чув&shy;ство&shy;вать за&shy;пах дёг&shy;тя в све&shy;жем воз&shy;ду&shy;хе
+                и слу&shy;шать, как ос&shy;то&shy;рож&shy;но пос&shy;крип&shy;ыва&shy;ет в
+                тем&shy;но&shy;те длин&shy;ный об&shy;оз по боль&shy;шой до&shy;ро&shy;ге. Муж&shy;ик,
+                на&shy;сып&shy;ающий яб&shy;ло&shy;ки, ест их соч&shy;ным трес&shy;ком од&shy;но за
+                од&shy;ним, но уж та&shy;ко&shy;во за&shy;ве&shy;де&shy;ние – ни&shy;ког&shy;да
+                ме&shy;ща&shy;нин не об&shy;ор&shy;вёт его, а ещё ска&shy;жет:
+                </p>
+                <blockquote class="all-columns">
+                    – Вали, ешь досыта, – делать нечего! На сливанье все мёд пьют.
+                </blockquote>
+                <figure class="all-columns illustration">
+                    <img src="images/apples.jpg" alt="Картина «Яблоки», Петров-Водкин Кузьма"
+                        title="Картина «Яблоки», Петров-Водкин Кузьма">
+                    <figcaption>Петров-Водкин Кузьма <q>Яблоки</q></figcaption>
+                </figure>
+                <p>
+                    И прох&shy;лад&shy;ную ти&shy;ши&shy;ну ут&shy;ра на&shy;руш&shy;ает толь&shy;ко сытое
+                    квох&shy;танье дроз&shy;дов на ко&shy;рал&shy;ло&shy;вых ря&shy;би&shy;нах в ча&shy;ще
+                    са&shy;да, го&shy;ло&shy;са да гул&shy;кий стук ссы&shy;па&shy;ем&shy;ых в ме&shy;ры и
+                    ка&shy;душ&shy;ки яб&shy;лок. В по&shy;ре&shy;дев&shy;шем са&shy;ду да&shy;ле&shy;ко
+                    вид&shy;на до&shy;ро&shy;га к боль&shy;шо&shy;му ша&shy;ла&shy;шу, усы&shy;пан&shy;ная
+                    со&shy;ло&shy;мой, и са&shy;мый ша&shy;лаш, око&shy;ло ко&shy;то&shy;ро&shy;го
+                    ме&shy;ща&shy;не об&shy;за&shy;ве&shy;лись за ле&shy;то це&shy;лым хо&shy;зяй&shy;ством.
+                    Всю&shy;ду силь&shy;но пах&shy;нет яб&shy;ло&shy;ка&shy;ми, тут – осо&shy;бен&shy;но.
+                </p>
+            </article>
+        </div>
+        <div class="one-column column">
+            <article class="poem">
+                <h2 class="header second-font">* * *</h2>
+                <p>
+                    На даче тихо, ночь темна,<br>
+                    Туманны звезды голубые<br>
+                    Вздыхая, ширится волна,<br>
+                    Цветы качаются слепые -<br>
+                </p>
+                <p>
+                    И часто с ветром, <span>до скамьи,</span><br>
+                    Как некий дух в <span>эфирной плоти,</span><br>
+                    Доходят свежие струи<br>
+                    Волны, вздыхающей <span>в дремоте.</span>
+                </p>
+            </article>
+            <blockquote class="frame">
+                <q>Какая радость — существовать! Только видеть, хотя бы видеть лишь один этот
+                дым и этот свет. Если бы у меня не было рук и ног и я бы только мог сидеть
+                на лавочке и смотреть на заходящее солнце, то я был бы счастлив этим. Одно
+                нужно только — видеть и дышать. Ничто не дает такого наслаждения, как краски…</q> 
+                И.А.Бунин
+            </blockquote>
+        </div>
+    </main>
 </body>
 </html>
