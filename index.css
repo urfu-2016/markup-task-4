@@ -1,0 +1,105 @@
+header 
+{
+    text-align: center;
+    font: 8em Edisson, Cambria, serif;
+}
+
+body 
+{
+    background-color: #ffdead;
+}
+
+main 
+{
+    width: 100%;
+    -moz-columns: 4;
+    columns: 4;
+    -moz-column-rule: 1px solid #2f4f4f;
+    column-rule: 1px solid #2f4f4f;
+}
+
+article
+{
+    font-family: Cambria, serif;
+    text-align: justify;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-indent: 8%;
+}
+
+.two-columns
+{
+    -moz-columns: 2;
+    columns: 2;
+    -moz-column-rule: 1px solid #2f4f4f;
+    column-rule: 1px solid #2f4f4f;
+}
+
+.image-in-text
+{
+    width: 100%;
+    filter: grayscale(1);
+    border-radius: 25%;
+    box-sizing: border-box;
+    border: 6px double #000;
+}
+
+article > p:first-of-type
+{
+    font-weight: 600;
+}
+
+article > p:first-of-type::first-letter
+{
+    font: 400 250% Edisson, Cambria, serif;
+}
+
+q
+{
+    font: italic 100% Five, Cambria, serif;
+}
+
+.edition
+{
+    display: block;
+    text-align: center;
+    font: 200% Edisson, Cambria, serif;
+    border: 4px double #000;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+}
+
+.vertical-text
+{
+    font-size: 105%;
+    font-weight: 600;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+    width: 15px;
+    word-break: break-all;
+}
+
+.with-vertical-text
+{
+    display: inline-block;
+    width: 90%;
+}
+
+/* Custom fonts */
+@font-face
+{
+    font-family: Edisson;
+    src: local('Edisson'), url(fonts/Edisson.ttf) format('truetype'), url(fonts/Edisson.woff) format('woff'), url(fonts/Edisson.eot) format('embedded-opentype');
+}
+@font-face
+{
+    font-family: Five;
+    src: local('Five'), url(fonts/Five.ttf) format('truetype'), url(fonts/Five.woff) format('woff'), url(fonts/Five.eot) format('embedded-opentype');
+}
