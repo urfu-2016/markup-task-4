@@ -99,11 +99,13 @@ p:first-letter
 {
     display: inline-block;
     vertical-align: top;
+
 }
 
 .one-column
 {
-    width: 250px;
+    width: 21%;
+    min-width: 200px;
 }
 
 .thin-column
@@ -113,13 +115,16 @@ p:first-letter
 
 .center-column
 {
-    width: 520px;
+    width: 50%;
+    min-width: 200px;
 }
 
 .story
 {
     column-count: 2;
     -moz-column-count: 2;
+    column-width: 200px;
+    -moz-column-width: 200px;
     text-align: justify;
     padding: 0 5px;
 }
@@ -136,7 +141,7 @@ p:first-letter
     white-space: nowrap;
 }
 
-.blockquote
+blockquote
 {
     text-align: center;
     margin: 10px 20px;
