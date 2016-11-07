@@ -17,7 +17,7 @@
 
 body
 {
-    background: papayawhip;
+    background: #fde1c4;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -32,11 +32,15 @@ h1
 .info-bar
 {
     font-family: 'Pattaya', sans-serif;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
 }
 
 footer
 {
     font-family: 'Lobster', cursive;
+    border-top: 1px solid #000;
 }
 
 .columns-3
@@ -45,8 +49,8 @@ footer
     -moz-column-count: 3;
     column-count: 3;
     column-fill: auto;
-    -moz-column-rule: 2px solid black;
-    column-rule: 2px solid black;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
     margin-right: 15px;
 }
 
@@ -66,7 +70,7 @@ footer
 }
 
 h3,
-.article-header
+h4
 {
     font-family: 'Lobster', cursive;
     font-size: 20px;
@@ -97,15 +101,17 @@ h3,
 
 .image
 {
+    border: 1px solid #c0c0c0;
     text-align: center;
-    border: 1px solid dimgray;
+    margin: 0;
+    overflow: hidden;
 }
 
-.image-note
+figcaption
 {
     font-family: 'Underdog', cursive;
     font-size: 85%;
-    margin-top: -4px;
+    margin-top: 4px;
 }
 
 .vertical-text
