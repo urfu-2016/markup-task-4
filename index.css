@@ -37,6 +37,16 @@ header div
     font-size: 50px;
 }
 
+.vertical
+{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: black;
+    color: white;
+    vertical-align: bottom;
+    font-size: 21px;
+}
+
 .match
 {
     text-align: left;
