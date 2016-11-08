@@ -1,0 +1,112 @@
+@font-face
+{
+    font-family: 'Pacifico';
+    src: url('fonts/pacifico-webfont.eot');
+    src: local('Pacifico'), url('fonts/pacifico-webfont.eot?#iefix')
+        format('embedded-opentype'), url('fonts/pacifico-webfont.woff2')
+        format('woff2'), url('fonts/pacifico-webfont.woff')
+        format('woff'), url('fonts/pacifico-webfont.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Kaushan Script';
+    src: url('fonts/kaushanscript-regular-webfont.eot');
+    src: local('Kaushan Script'), url('fonts/kaushanscript-regular-webfont.eot?#iefix')
+        format('embedded-opentype'), url('fonts/kaushanscript-regular-webfont.woff2')
+        format('woff2'), url('fonts/kaushanscript-regular-webfont.woff')
+        format('woff'), url('fonts/kaushanscript-regular-webfont.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Sacramento';
+    src: url('fonts/sacramento-regular-webfont.eot');
+    src: local('Scramento'), url('fonts/sacramento-regular-webfont.eot?#iefix')
+        format('embedded-opentype'), url('fonts/sacramento-regular-webfont.woff2')
+        format('woff2'), url('fonts/sacramento-regular-webfont.woff')
+        format('woff'), url('fonts/sacramento-regular-webfont.ttf') format('truetype');
+}
+
+header
+{
+    font-family: 'Pacifico', cursive;
+    font-variant: normal;
+}
+
+main article p:first-of-type:first-letter
+{
+    font: 800 33px 'Sacramento', cursive;
+}
+
+main article p
+{
+    font-family: 'Kaushan Script', cursive;
+    text-align: justify;
+}
+
+html
+{
+    background-image: url('https://goo.gl/I52HiU');
+}
+
+body
+{
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Oldenburg', cursive;
+    letter-spacing: .5rem;
+}
+
+main article
+{
+    line-height: 20px;
+}
+
+.date
+{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.articles
+{
+    -moz-column-count: 3;
+    -moz-column-rule: 2px solid;
+    -moz-column-gap: 100px;
+    column-count: 3;
+    column-gap: 100px;
+    column-rule: 2px solid;
+    margin: 2% 3%;
+    font-size: 20px;
+}
+
+.image
+{
+    float: left;
+    margin: 3%;
+}
+
+.image img
+{
+    width: 200px;
+    height: 300px;
+}
+
+article q
+{
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.vertical
+{
+    margin-left: 49%;
+    width: 1px;
+    word-break: break-all;
+    text-transform: uppercase;
+    font-size: 20px;
+}
