@@ -84,10 +84,14 @@ main article
     font-size: 20px;
 }
 
-img
+.image
 {
     float: left;
     margin: 3%;
+}
+
+.image img
+{
     width: 200px;
     height: 300px;
 }
