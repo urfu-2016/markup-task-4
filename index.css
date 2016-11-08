@@ -1,6 +1,6 @@
 body
 {
-    min-width: 800px;
+    min-width: 1000px;
 }
 
 p
@@ -135,4 +135,10 @@ header
     -webkit-column-count: 2;
     text-align: center;
     column-count: 2;
+}
+
+.header-img
+{
+    width: 90%;
+    height: auto;
 }
