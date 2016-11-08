@@ -117,6 +117,13 @@ article h2 + p:first-letter
     font-weight: bold;
 }
 
+article .attention p:first-letter
+{
+    color: #000;
+    font-size: 1em;
+    font-weight: normal;
+}
+
 .newspaper-table
 {
     border-spacing: 0;
@@ -224,18 +231,18 @@ article h2 + p:first-letter
 
 .attention
 {
-    width: 2em;
+    font-size: 28px;
+    padding-right: 1em;
+    width: 1em;
 }
 
 .attention p
 {
-    font-size: 28px;
     margin: 0;
-    padding-right: 1em;
     text-align: center;
     text-transform: uppercase;
     width: 1em;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .main-entry-img-cell
