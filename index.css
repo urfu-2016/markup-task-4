@@ -6,8 +6,8 @@
 {
     font-family: GothicRus;
     src: local('GothicRus'),
-        url('fonts/GothicRus.woff') format('woff'),
-        url('fonts/GothicRus.ttf') format('truetype');
+ url('fonts/GothicRus.woff') format('woff'),
+ url('fonts/GothicRus.ttf') format('truetype');
 }
 
 header h1
