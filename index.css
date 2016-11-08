@@ -15,23 +15,21 @@ p
 
 h1
 {
-    font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: normal;
 }
 
 h2
 {
-    font-size: 15px;
-}
-
-h2:first-letter
-{
-    color: red;
-    font-size: 14px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
 }
 
 header
 {
-    font-size: 70px;
+    font-size: 35px;
     text-align: center;
     font-family: 'decor', 'Times New Roman';
 }
@@ -65,7 +63,7 @@ footer
     font-size: 15px;
 }
 
-.imgAnalyzing
+.img-analyzing
 {
     width: 150px;
     height: 200px;
@@ -73,7 +71,7 @@ footer
     padding-left: 5px;
 }
 
-.imgKnower
+.img-knower
 {
     width: 150px;
     height: 210px;
@@ -81,7 +79,7 @@ footer
     padding-left: 5px;
 }
 
-.imgThinking
+.img-thinking
 {
     width: 200px;
     height: 150px;
@@ -90,7 +88,12 @@ footer
     margin-right: auto;
 }
 
-.theme
+.yandex
 {
-    font-weight: bold;
+    display: block;
+}
+
+.yandex:first-letter
+{
+    color: red;
 }
