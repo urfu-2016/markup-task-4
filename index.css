@@ -26,7 +26,7 @@ p:first-letter
 {
     word-break: break-word;
     position: absolute;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
     letter-spacing: 5px;
     overflow: hidden;
 }
@@ -62,18 +62,13 @@ header
     text-align: center;
     color: #000;
     border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
 }
 
 h1
 {
     font: bold 50px 'Pacifico', cursive;
     margin: 5px;
-}
-
-.under-header
-{
-    text-align: center;
-    border-bottom: 10px solid #000;
 }
 
 .date
