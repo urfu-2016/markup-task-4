@@ -117,7 +117,7 @@ p::first-letter
 
 article:after
 {
-    content: "";
+    content: '';
     display: block;
     width: 100px;
     margin: 0 auto;
