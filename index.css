@@ -2,12 +2,10 @@ body,
 div,
 header,
 main,
-h1,
 hr,
 article,
 footer
 {
-    display: flex;
     box-sizing: border-box;
 }
 
@@ -21,8 +19,9 @@ body
 
 .wrapper
 {
+    margin-left: auto;
+    margin-right: auto;
     width: 80rem;
-    flex-direction: column;
     box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
     padding: 1rem;
     margin-bottom: 2rem;
@@ -31,21 +30,50 @@ body
 header
 {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+}
+
+header:after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wheather
+{
+    display: inline-block;
+    float: left;
+    font-size: 1.2rem;
+}
+
+.title
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+header address
+{
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+    vertical-align: middle;
+    font-size: 1.3rem;
 }
 
 h1
 {
+    display: inline;
     margin: 0;
     font-size: 5rem;
     font-family: Garamond, serif;
+    vertical-align: middle;
 }
 
 .title span
 {
-    display: flex;
+    display: inline-block;
     word-break: break-all;
     width: .5rem;
     font-size: .8rem;
@@ -53,16 +81,7 @@ h1
     text-align: center;
     font-weight: bolder;
     margin-left: 1rem;
-}
-
-header table
-{
-    font-size: 1.2rem;
-}
-
-header address
-{
-    font-size: 1.3rem;
+    vertical-align: middle;
 }
 
 hr
@@ -75,40 +94,53 @@ hr
 
 .subheader
 {
-    justify-content: space-between;
     font-size: 1.3rem;
+}
+
+.subheader span
+{
+    display: inline-block;
+}
+
+.subheader span:nth-child(1)
+{
+    margin-left: 0;
 }
 
 .subheader span:nth-child(2)
 {
+    margin-left: 26rem;
     font-weight: bold;
+}
+
+.subheader span:nth-child(3)
+{
+    margin-left: 22rem;
 }
 
 main > section
 {
-    flex-basis: 0;
+    vertical-align: top;
 }
 
 .main_column
 {
-    flex-grow: 3;
+    display: inline-block;
+    width: 34rem;
 }
 
 .secondary_column
 {
-    flex-grow: 2;
+    display: inline-block;
+    width: 24rem;
     margin-left: 1rem;
 }
 
 .tertiary_column
 {
-    flex-grow: 1;
+    display: inline-block;
+    width: 16rem;
     margin-left: 1rem;
-}
-
-article
-{
-    flex-direction: column;
 }
 
 article h2
@@ -125,22 +157,31 @@ article img
 
 .inline-photo
 {
-    display: inline-flex;
+    display: inline;
     width: 100%;
 }
 
-article p
+.columns
 {
     column-rule: .15rem solid #000;
     -moz-column-rule: .15rem solid #000;
+}
+
+article
+{
     hyphens: auto;
     -ms-hyphens: auto;
     text-align: justify;
 }
 
+article p:first-of-type:first-letter
+{
+    font-size: 3em;
+}
+
 q
 {
-    display: flex;
+    display: block;
     font-family: 'Playfair Display', serif;
     column-span: all;
     font-size: 2rem;
@@ -162,13 +203,13 @@ span.continue
     font-weight: bolder;
 }
 
-.main_column p
+.main_column .columns
 {
     column-count: 3;
     -moz-column-count: 3;
 }
 
-.secondary_column p
+.secondary_column .columns
 {
     column-count: 2;
     -moz-column-count: 2;
@@ -183,12 +224,8 @@ span.continue
 {
     width: 100%;
     height: 20rem;
+    margin-bottom: 1rem;
     background-color: #404040;
-}
-
-.main_article p:first-letter
-{
-    font-size: 3em;
 }
 
 .secondary_article h2
@@ -208,8 +245,6 @@ span.continue
 
 footer
 {
-    justify-content: space-between;
-    flex-direction: column;
     font-family: 'Noto Serif', serif;
 }
 
@@ -219,15 +254,19 @@ footer h2
     border-top: 1rem solid #000;
 }
 
-footer section
-{
-    display: flex;
-    flex-direction: row;
-}
-
 footer article
 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: start;
     font-size: 2rem;
+    width: 18rem;
+    margin-left: 1rem;
+}
+
+footer article:first-of-type
+{
+    margin-left: 0;
 }
 
 footer article strong
@@ -235,4 +274,33 @@ footer article strong
     font-weight: 900;
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
+}
+
+figure
+{
+    margin: 0 0 1rem;
+}
+
+figcaption
+{
+    font-size: 1.5rem;
+}
+
+blockquote
+{
+    font-weight: bold;
+}
+
+blockquote
+{
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+blockquote .author
+{
+    text-align: end;
+    display: block;
+    font-style: italic;
+    font-weight: normal;
 }
