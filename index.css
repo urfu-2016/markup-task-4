@@ -1,25 +1,28 @@
 @font-face
 {
     font-family: Cloister Black;
-    src: url(cloisterblack-webfont.woff2)
-        format('woff2'), url(cloisterblack-webfont.woff)
-        format('woff'), url(cloisterblack-webfont.ttf) format('truetype');
+    src: local('Cloister Black')
+        , url(cloisterblack-webfont.woff2) format('woff2')
+        , url(cloisterblack-webfont.woff) format('woff')
+        , url(cloisterblack-webfont.ttf) format('truetype');
 }
 
 @font-face
 {
     font-family: Roland;
-    src: url(roland-webfont.woff2)
-        format('woff2'), url(roland-webfont.woff)
-        format('woff'), url(roland-webfont.ttf) format('truetype');
+    src: local('Roland')
+        , url(roland-webfont.woff2) format('woff2')
+        , url(roland-webfont.woff) format('woff')
+        , url(roland-webfont.ttf) format('truetype');
 }
 
 @font-face
 {
     font-family: Black Label;
-    src: url(vtks_black_label_normal-webfont.woff2)
-        format('woff2'), url(vtks_black_label_normal-webfont.woff)
-        format('woff'), url(vtks_black_label_normal-webfont.ttf) format('truetype');
+    src: local('Black Label')
+        , url(vtks_black_label_normal-webfont.woff2) format('woff2')
+        , url(vtks_black_label_normal-webfont.woff) format('woff')
+        , url(vtks_black_label_normal-webfont.ttf) format('truetype');
 }
 
 body,
@@ -37,6 +40,10 @@ p
 html
 {
     font-size: 16px;
+}
+
+body
+{
     margin: 0 1%;
 }
 
@@ -45,27 +52,16 @@ html
     text-align: center;
 }
 
-.head
-{
-    width: 100%;
-}
-
-.info,
-.subinfo
-{
-    width: 100%;
-}
-
-.head div,
-.head h1
+.info div,
+.info h1
 {
     display: inline-block;
-    margin-bottom: 1%;
+    margin-bottom: 15px;
 }
 
-.head > div:last-child
+.dateinfo
 {
-    margin-bottom: 3px;
+    margin-bottom: 15px;
 }
 
 .weather
@@ -75,12 +71,12 @@ html
 
 .weather h4
 {
-    font: italic .8rem Arial, sans-serif;
+    font: italic 1rem Arial, sans-serif;
 }
 
 .weather p
 {
-    font: .5rem Arial, sans-serif;
+    font: .8rem Arial, sans-serif;
 }
 
 .info h1
@@ -92,22 +88,28 @@ html
 
 .rate
 {
-    margin-top: 1%;
+    margin-top: 20px;
     width: 20%;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .rate table
 {
     width: 100%;
     border: .2rem solid black;
-    padding: 0;
     border-spacing: 0;
+}
+
+.rate th
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .rate th,
 .rate td
 {
+    padding: .2rem;
     margin: 0;
     border-right: 1px solid black;
 }
@@ -117,7 +119,7 @@ html
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 2px;
+    padding: .2rem;
 }
 
 .date p
@@ -204,32 +206,8 @@ main
     font-size: 1.5rem;
 }
 
-.l
+.excrete-name
 {
     font-size: 1.5rem;
     font-family: Cloister Black, serif;
-}
-
-@media screen and (min-width: 1400px)
-{
-    html
-    {
-        width: 1400px;
-        margin: auto;
-    }
-
-    .weather
-    {
-        width: 25%;
-    }
-
-    .info h1
-    {
-        width: 48%;
-    }
-
-    .rate
-    {
-        width: 25%;
-    }
 }
