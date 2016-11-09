@@ -115,7 +115,7 @@ p
     padding-top: 15px;
 }
 
-.results tr:nth-child(even) td:nth-child(even),
+.results tr:nth-child(even) td,
 .schedule tr:nth-child(even) td
 {
     border-top: 2px solid #ccc;
