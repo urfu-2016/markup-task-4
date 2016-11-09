@@ -46,6 +46,11 @@ body
     text-align: center;
 }
 
+h2
+{
+    font: 17px 'Chocolate', serif;
+}
+
 h3
 {
     font: 15px 'Chocolate', serif;
@@ -123,12 +128,22 @@ input[name='size'][value='80']:checked ~ .content h3
     font-size: 1rem;
 }
 
+input[name='size'][value='80']:checked ~ .content h2
+{
+    font-size: 1rem;
+}
+
 input[name='size'][value='110']:checked ~ .content
 {
     font-size: 1.1rem;
 }
 
 input[name='size'][value='110']:checked ~ .content h3
+{
+    font-size: 1.2rem;
+}
+
+input[name='size'][value='110']:checked ~ .content h2
 {
     font-size: 1.2rem;
 }
@@ -143,12 +158,22 @@ input[name='size'][value='120']:checked ~ .content h3
     font-size: 1.4rem;
 }
 
+input[name='size'][value='120']:checked ~ .content h2
+{
+    font-size: 1.4rem;
+}
+
 input[name='size'][value='140']:checked ~ .content
 {
     font-size: 1.4rem;
 }
 
 input[name='size'][value='140']:checked ~ .content h3
+{
+    font-size: 1.6rem;
+}
+
+input[name='size'][value='140']:checked ~ .content h2
 {
     font-size: 1.6rem;
 }
@@ -163,12 +188,22 @@ input[name='family'][value='Serif']:checked ~ .content h3
     font-family: serif;
 }
 
+input[name='family'][value='Serif']:checked ~ .content h2
+{
+    font-family: serif;
+}
+
 input[name='family'][value='Sans-serif']:checked ~ .content
 {
     font-family: sans-serif;
 }
 
 input[name='family'][value='Sans-serif']:checked ~ .content h3
+{
+    font-family: sans-serif;
+}
+
+input[name='family'][value='Sans-serif']:checked ~ .content h2
 {
     font-family: sans-serif;
 }
@@ -183,12 +218,22 @@ input[name='family'][value='Monospace']:checked ~ .content h3
     font-family: monospace;
 }
 
+input[name='family'][value='Monospace']:checked ~ .content h2
+{
+    font-family: monospace;
+}
+
 input[name='family'][value='Cursive']:checked ~ .content
 {
     font-family: cursive;
 }
 
 input[name='family'][value='Cursive']:checked ~ .content h3
+{
+    font-family: cursive;
+}
+
+input[name='family'][value='Cursive']:checked ~ .content h2
 {
     font-family: cursive;
 }
