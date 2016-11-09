@@ -121,3 +121,34 @@ p
     border-top: 2px solid #ccc;
     padding-bottom: 15px;
 }
+
+.sale
+{
+    border: 2px dashed #666;
+    clear: both;
+    padding: 5px;
+}
+
+.sale div
+{
+    display: inline-block;
+}
+
+.procent
+{
+    padding-left: 10px;
+    font-size: 5em;
+    font-family: 'Bodoni MT Black', 'Bookman Old Style';
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px #666;
+}
+
+.verticalText
+{
+    font-family: 'Century Gothic', 'Bookman Old Style';
+    font-size: 12px;
+    text-align: center;
+    width: 1px;
+    word-wrap: break-word;
+}
