@@ -11,7 +11,6 @@ footer
 
 body
 {
-    justify-content: center;
     margin: 0;
     padding-top: 2rem;
     font-family: 'Times New Roman', serif;
@@ -19,8 +18,7 @@ body
 
 .wrapper
 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 80rem;
     box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
     padding: 1rem;
@@ -115,20 +113,20 @@ main > section
     vertical-align: top;
 }
 
-.main_column
+.main-column
 {
     display: inline-block;
     width: 34rem;
 }
 
-.secondary_column
+.secondary-column
 {
     display: inline-block;
     width: 24rem;
     margin-left: 1rem;
 }
 
-.tertiary_column
+.tertiary-column
 {
     display: inline-block;
     width: 16rem;
@@ -155,8 +153,9 @@ article img
 
 .columns
 {
-    column-rule: .15rem solid #000;
+    -webkit-column-rule: .15rem solid #000;
     -moz-column-rule: .15rem solid #000;
+    column-rule: .15rem solid #000;
 }
 
 article
@@ -174,10 +173,10 @@ article p:first-of-type:first-letter
 q
 {
     display: block;
-    font-family: 'Playfair Display', serif;
+    font: bold 2rem 'Playfair Display', serif;
+    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
-    font-size: 2rem;
-    font-weight: bold;
     border-width: .15rem 0;
     border-style: solid;
     text-align: center;
@@ -195,24 +194,24 @@ span.continue
     font-weight: bolder;
 }
 
-.main_column .columns
+.main-column .columns
 {
     column-count: 3;
     -moz-column-count: 3;
 }
 
-.secondary_column .columns
+.secondary-column .columns
 {
     column-count: 2;
     -moz-column-count: 2;
 }
 
-.main_article h2
+.main-article h2
 {
     font-size: 3.5rem;
 }
 
-.main_article img
+.main-article img
 {
     width: 100%;
     height: 20rem;
@@ -220,17 +219,17 @@ span.continue
     background-color: #404040;
 }
 
-.secondary_article h2
+.secondary-article h2
 {
     font-size: 2.5rem;
 }
 
-.secondary_article img
+.secondary-article img
 {
     height: 7rem;
 }
 
-.secondary_article p
+.secondary-article p
 {
     margin: 0;
 }
@@ -246,7 +245,7 @@ footer h2
     border-top: 1rem solid #000;
 }
 
-footer article
+footer .showcase
 {
     vertical-align: top;
     display: inline-block;
@@ -256,12 +255,12 @@ footer article
     margin-left: 1rem;
 }
 
-footer article:first-of-type
+footer .showcase:first-of-type
 {
     margin-left: 0;
 }
 
-footer article strong
+footer .showcase strong
 {
     font-weight: 900;
     font-family: 'Playfair Display', serif;
@@ -276,11 +275,6 @@ figure
 figcaption
 {
     font-size: 1.5rem;
-}
-
-blockquote
-{
-    font-weight: bold;
 }
 
 blockquote
