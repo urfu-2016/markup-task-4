@@ -1,0 +1,355 @@
+body,
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+main
+{
+    margin: auto;
+    width: 1140px;
+    padding: 20px;
+    background: #f9ecd0;
+    color: #575757;
+    background-image: url('https://s14.postimg.org/m00hqgizl/m_X8_Rmz_I.jpg');
+}
+
+.red-header
+{
+    text-transform: uppercase;
+    color: #fc5a44;
+    text-align: center;
+    font-size: 59px;
+    font-family: 'PT Mono', monospace;
+    letter-spacing: -4px;
+    word-spacing: 8px;
+    margin: 5px 0;
+}
+
+.underline
+{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.frame-box
+{
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 39px;
+    border: 1px solid #111;
+    width: 300px;
+    font-size: 10px;
+    padding-bottom: 45px;
+}
+
+.frame-box h3
+{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.frame-box p
+{
+    padding: 0 7px;
+    text-indent: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+.frame-box .bottom-left-record,
+.frame-box .bottom-right-record
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.frame-box .bottom-left-record
+{
+    position: absolute;
+    left: 25px;
+    bottom: 13px;
+}
+
+.frame-box .bottom-right-record
+{
+    position: absolute;
+    right: 25px;
+    bottom: 13px;
+}
+
+.main-header article
+{
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 0;
+    width: 790px;
+    position: relative;
+    border-bottom: 5px solid #111;
+}
+
+.main-header article .underline
+{
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.main-header article h1
+{
+    margin: 0;
+    text-align: right;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+article .subtext
+{
+    font-family: sans-serif;
+    position: absolute;
+    font-size: 17px;
+    width: 220px;
+    text-align: center;
+    bottom: 57px;
+    left: 120px;
+    line-height: 1.3em;
+    letter-spacing: 0;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    word-spacing: 7px;
+}
+
+.text-large
+{
+    font-size: 1.5em;
+}
+
+.logo
+{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 120px;
+}
+
+.note
+{
+    font-size: 30px;
+    height: 32px;
+    line-height: .7em;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    margin-bottom: 2px;
+}
+
+.note div
+{
+    font-size: .45em;
+    display: inline-block;
+    text-align: center;
+}
+
+.note div:first-child
+{
+    font-size: .49em;
+    font-style: italic;
+    text-align: left;
+}
+
+.note div:last-child
+{
+    text-align: right;
+}
+
+.large-marker
+{
+    border-radius: .5em;
+    width: 10px;
+    height: 10px;
+    background: #111;
+    margin: 0 46px;
+}
+
+.main-content
+{
+    margin-top: 25px;
+}
+
+.main-content section:first-child
+{
+    display: inline-block !important;
+    width: 440px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+
+.main-content .text-container
+{
+    display: inline-block !important;
+    width: 650px;
+}
+
+.group
+{
+    font-size: 14px;
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+    column-width: 100px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.group p
+{
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-indent: 14px;
+}
+
+.illustration
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 440px;
+    display: inline-block;
+}
+
+.illustration figcaption
+{
+    text-align: right;
+    font-size: 14px;
+}
+
+.illustration img
+{
+    width: 440px;
+}
+
+.illustration p
+{
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.bottom-content
+{
+    margin-top: 20px;
+}
+
+.bottom-content .left-collumn
+{
+    width: 335px;
+    display: inline-block;
+}
+
+.bottom-content .left-collumn p:first-child::first-letter
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.info-box
+{
+    display: inline-block;
+    margin: 0;
+    margin-left: 35px;
+    width: 750px;
+    border: 1px solid #111;
+    border-radius: 3px;
+    position: relative;
+    padding: 14px 0 20px 5px;
+    vertical-align: top;
+}
+
+.info-box .box-label
+{
+    position: absolute;
+    font-size: 30px;
+    font-style: italic;
+    font-family: serif;
+    margin: 0;
+    top: -21px;
+    left: 260px;
+    background: #fde4b5;
+    padding: 0 5px;
+    border-radius: .5em .5em 0 0;
+    height: 25px;
+}
+
+.info-box img
+{
+    width: 105px;
+}
+
+.group-min
+{
+    font-size: 14px;
+    -webkit-column-width: 100px;
+    -moz-column-width: 100px;
+    column-width: 100px;
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    column-count: 6;
+    -webkit-column-gap: 14px;
+    -moz-column-gap: 14px;
+    column-gap: 14px;
+}
+
+.group-min p
+{
+    margin-top: 0;
+    margin-bottom: 14px;
+    text-indent: 14px;
+}
+
+.info-box h6
+{
+    text-indent: 14px;
+    font-weight: bold;
+    display: inline-block;
+    width: 250px;
+    font-size: 14px;
+}
+
+.info-box .group
+{
+    -webkit-column-gap: 14px;
+    -moz-column-gap: 14px;
+    column-gap: 14px;
+    margin-right: 11px;
+}
+
+.group-min figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.group-min figure p
+{
+    margin: 0;
+}
+
+.group-min figure figcaption
+{
+    font-weight: bold;
+    text-align: center;
+}
