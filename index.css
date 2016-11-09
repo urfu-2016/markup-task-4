@@ -7,12 +7,12 @@ body
 
 p
 {
-    font-family: "Century Gothic", "Bookman Old Style";
+    font-family: 'Century Gothic', 'Bookman Old Style';
 }
 
 .title
 {
-    font-family: "Bodoni MT Black", "Bookman Old Style";
+    font-family: 'Bodoni MT Black', 'Bookman Old Style';
     font-style: italic;
     font-size: 5em;
     text-align: center;
@@ -20,7 +20,7 @@ p
 
 .date
 {
-    font-family: "Century Gothic", "Bookman Old Style";
+    font-family: 'Century Gothic', 'Bookman Old Style';
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ p
 
 .gametime table td
 {
-    font-family: "Century Gothic", "Bookman Old Style";
+    font-family: 'Century Gothic', 'Bookman Old Style';
     text-align: left;
     padding: 0 5px;
 }
