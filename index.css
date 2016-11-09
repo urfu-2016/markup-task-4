@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic');
+
+@font-face
+{
+    font-family: GothicRus;
+    src: local('GothicRus')
+        , url('fonts/GothicRus.woff') format('woff')
+        , url('fonts/GothicRus.ttf') format('truetype');
+}
+
+header h1
+{
+    font-family: 'GothicRus', serif;
+}
+
+.weather-today,
+.quote-of-day,
+h2,
+h3
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body,
+.main-header,
+.website-news h2,
+.other-news > h2,
+.main-entry-img figcaption,
+h4
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+footer p
+{
+    font-family: 'Marck Script', cursive;
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: #f8cfa7 url('img/page-background.png');
+    font-size: 14px;
+}
+
+a,
+a:link,
+a:visited
+{
+    color: #000;
+}
+
+a[href]:hover
+{
+    text-decoration: none;
+}
+
+figure
+{
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+figcaption
+{
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto !important;
+}
+
+header
+{
+    padding: 16px 24px;
+}
+
+h4
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+h4 + p
+{
+    margin-top: 0;
+}
+
+header h1
+{
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+article p:first-child:first-letter,
+article h2 + p:first-letter
+{
+    color: #b71c1c;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+article .attention p:first-letter
+{
+    color: #000;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.newspaper-table
+{
+    border-spacing: 0;
+    width: 100%;
+}
+
+.weather-today,
+.quote-of-day
+{
+    border: 2px solid #000;
+    font-size: 13px;
+    padding: 16px;
+    width: 240px;
+}
+
+.quote-of-day .author
+{
+    font-style: italic;
+    padding-top: 8px;
+    text-align: right;
+}
+
+.weather-value,
+.weather-stat
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.weather-value
+{
+    width: 30%;
+}
+
+.weather-temperature
+{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.weather-unit
+{
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.weather-stat
+{
+    width: 69%;
+}
+
+.today
+{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: block;
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.multicolumn
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
+    column-gap: 2em;
+    -moz-column-rule: 1px solid #000;
+    -webkit-column-rule: 1px solid #000;
+    column-rule: 1px solid #000;
+    padding: 0 24px;
+    text-align: justify;
+}
+
+.weather-today p,
+.multicolumn h2:first-child,
+.main-entry p:first-child
+{
+    margin-top: 0;
+}
+
+.main-header
+{
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-entry-section
+{
+    margin: 0 24px;
+}
+
+.attention,
+.main-entry-img-cell,
+.main-entry-cell
+{
+    vertical-align: top;
+}
+
+.attention
+{
+    font-size: 28px;
+    padding-right: 1em;
+    width: 1em;
+}
+
+.attention p
+{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 1em;
+    word-break: break-word;
+}
+
+.main-entry-img-cell
+{
+    width: 470px;
+}
+
+.main-entry-img
+{
+    padding-right: 24px;
+}
+
+.main-entry-img figcaption
+{
+    font-size: 17px;
+    padding: 8px 0;
+    text-align: right;
+    text-transform: none;
+}
+
+.main-entry
+{
+    padding: 0;
+}
+
+.main-entry p
+{
+    line-height: 20px;
+}
+
+.website-news
+{
+    background-color: #000;
+    color: #fff;
+    -moz-column-rule: none;
+    -webkit-column-rule: none;
+    column-rule: none;
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+
+.website-news h2,
+.other-news > h2
+{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.website-news ul
+{
+    list-style-type: square;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.website-news ul li
+{
+    -webkit-region-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-region-break-before: column;
+    page-break-before: always;
+    break-before: column;
+    -webkit-region-break-after: column;
+    page-break-after: always;
+    break-after: column;
+    padding-bottom: 8px;
+}
+
+.other-news > h2
+{
+    font-size: 24px;
+}
+
+footer
+{
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    margin: 24px 0 8px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+footer p
+{
+    margin: 0;
+}
