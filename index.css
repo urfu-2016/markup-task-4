@@ -1,0 +1,190 @@
+@font-face
+{
+    font-family: Faster One;
+    src: local('Faster One')
+        , url(fonts/FasterOne-Regular.ttf)
+        , url(fonts/FasterOne-Regular.woff);
+}
+@font-face
+{
+    font-family: Ruslan Display;
+    src: local('Ruslan Display')
+        , url(fonts/RuslanDisplay.ttf)
+        , url(fonts/RuslanDisplay.woff);
+}
+@font-face
+{
+    font-family: Lobster;
+    src: local('Lobster')
+        , url(fonts/Lobster-Regular.ttf)
+        , url(fonts/Lobster-Regular.woff);
+}
+@font-face
+{
+    font-family: Neucha;
+    src: local('Neucha')
+        , url(fonts/Neucha.ttf)
+        , url(fonts/Neucha.woff);
+}
+@font-face
+{
+    font-family: Marck Script;
+    src: local('Marck Script')
+        , url(fonts/MarckScript-Regular.ttf)
+        , url(fonts/MarckScript-Regular.woff);
+}
+@font-face
+{
+    font-family: Prosto One;
+    src: local('Prosto One')
+        , url(fonts/ProstoOne-Regular.ttf)
+        , url(fonts/ProstoOne-Regular.woff);
+}
+@font-face
+{
+    font-family: Russo One;
+    src: local('Russo One')
+        , url(fonts/RussoOne-Regular.ttf)
+        , url(fonts/RussoOne-Regular.woff);
+}
+@font-face
+{
+    font-family: Pattaya;
+    src: local('Pattaya')
+        , url(fonts/Pattaya-Regular.ttf)
+        , url(fonts/Pattaya-Regular.woff);
+}
+@font-face
+{
+    font-family: Ledger;
+    src: local('Ledger')
+        , url(fonts/Ledger-Regular.ttf)
+        , url(fonts/Ledger-Regular.wofff);
+}
+@font-face
+{
+    font-family: Anonymous Pro;
+    src: local('Anonymous Pro')
+        , url(fonts/AnonymousPro-Italic.ttf)
+        , url(fonts/AnonymousPro-Italic.woff);
+}
+
+body
+{
+    background-color: #eee;
+    margin: 30px;
+}
+
+header
+{
+    font: bold 100px Faster One;
+    text-align: center;
+}
+
+h1
+{
+    font: 30px Ruslan Display;
+    text-align: center;
+}
+
+h2
+{
+    font-family: Lobster;
+}
+
+blockquote
+{
+    font: 20px Marck Script;
+}
+
+p
+{
+    text-indent: 1%;
+    white-space: normal;
+}
+
+p.first-paragraph::first-letter
+{
+    font: italic 35px Times New Roman;
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+}
+
+.coach
+{
+    font-family: Pattaya;
+}
+
+.young-player
+{
+    font-family: Ledger;
+}
+
+.player
+{
+    font-family: Neucha;
+}
+
+.club
+{
+    font-family: Prosto One;
+    font-size: 13px;
+}
+
+.governing
+{
+    font-family: Anonymous Pro;
+}
+
+.president
+{
+    font-family: Russo One;
+}
+
+.shock
+{
+    text-decoration: underline;
+}
+
+.vertical-text
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer
+{
+    font: italic bold 20px Times New Roman;
+    margin-top: 15px;
+}
+
+.main-article
+{
+    column-width: 550px;
+    -moz-column-width: 550px;
+    -webkit-column-width: 550px;
+    column-rule: 2px solid;
+    -moz-column-rule: 2px solid;
+    -webkit-column-rule: 2px solid;
+}
+
+.facts
+{
+    border: 3px solid;
+    padding: 1%;
+    margin-top: 40px;
+}
+
+.img-center
+{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px 10px;
+}
+
+figcaption
+{
+    text-align: center;
+}
