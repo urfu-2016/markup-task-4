@@ -1,0 +1,292 @@
+body,
+div,
+header,
+main,
+hr,
+article,
+footer
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding-top: 2rem;
+    font-family: 'Times New Roman', serif;
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    width: 80rem;
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .2);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+header
+{
+    width: 100%;
+}
+
+.wheather
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+.title
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 8rem ;
+}
+
+header address
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6rem;
+    font-size: 1.3rem;
+}
+
+h1
+{
+    display: inline;
+    margin: 0;
+    font-size: 5rem;
+    font-family: Garamond, serif;
+    vertical-align: middle;
+}
+
+.title span
+{
+    display: inline-block;
+    word-break: break-all;
+    width: .5rem;
+    font-size: .8rem;
+    line-height: .9rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+hr
+{
+    height: .3rem;
+    width: auto;
+    margin: .5rem 0;
+    background-color: #404040;
+}
+
+.subheader
+{
+    font-size: 1.3rem;
+}
+
+.subheader span
+{
+    display: inline-block;
+}
+
+.subheader span:nth-child(1)
+{
+    margin-left: 0;
+}
+
+.subheader span:nth-child(2)
+{
+    margin-left: 26rem;
+    font-weight: bold;
+}
+
+.subheader span:nth-child(3)
+{
+    margin-left: 22rem;
+}
+
+main > section
+{
+    vertical-align: top;
+}
+
+.main-column
+{
+    display: inline-block;
+    width: 34rem;
+}
+
+.secondary-column
+{
+    display: inline-block;
+    width: 24rem;
+    margin-left: 1rem;
+}
+
+.tertiary-column
+{
+    display: inline-block;
+    width: 16rem;
+    margin-left: 1rem;
+}
+
+article h2
+{
+    margin: 1rem 0 ;
+    font-family: 'Noto Serif', serif;
+    border-top: 1rem solid #000;
+}
+
+article img
+{
+    object-fit: cover;
+}
+
+.inline-photo
+{
+    display: inline;
+    width: 100%;
+}
+
+.columns
+{
+    -webkit-column-rule: .15rem solid #000;
+    -moz-column-rule: .15rem solid #000;
+    column-rule: .15rem solid #000;
+}
+
+article
+{
+    hyphens: auto;
+    -ms-hyphens: auto;
+    text-align: justify;
+}
+
+article p:first-of-type:first-letter
+{
+    font-size: 3em;
+}
+
+q
+{
+    display: block;
+    font: bold 2rem 'Playfair Display', serif;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    border-width: .15rem 0;
+    border-style: solid;
+    text-align: center;
+}
+
+q:before,
+q:after
+{
+    content: none;
+}
+
+span.continue
+{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.main-column .columns
+{
+    column-count: 3;
+    -moz-column-count: 3;
+}
+
+.secondary-column .columns
+{
+    column-count: 2;
+    -moz-column-count: 2;
+}
+
+.main-article h2
+{
+    font-size: 3.5rem;
+}
+
+.main-article img
+{
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    background-color: #404040;
+}
+
+.secondary-article h2
+{
+    font-size: 2.5rem;
+}
+
+.secondary-article img
+{
+    height: 7rem;
+}
+
+.secondary-article p
+{
+    margin: 0;
+}
+
+footer
+{
+    font-family: 'Noto Serif', serif;
+}
+
+footer h2
+{
+    margin: 1rem 0 0;
+    border-top: 1rem solid #000;
+}
+
+footer .showcase
+{
+    vertical-align: top;
+    display: inline-block;
+    text-align: start;
+    font-size: 2rem;
+    width: 18rem;
+    margin-left: 1rem;
+}
+
+footer .showcase:first-of-type
+{
+    margin-left: 0;
+}
+
+footer .showcase strong
+{
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+figure
+{
+    margin: 0 0 1rem;
+}
+
+figcaption
+{
+    font-size: 1.5rem;
+}
+
+blockquote
+{
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+blockquote .author
+{
+    text-align: end;
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
