@@ -1,19 +1,25 @@
 
 @font-face
 {
-    font-family: RadioNewsman;
-    src: local('RadioNewsman'), url(fonts/RadioNewsman.ttf);
+    font-family: RadioNewsman-bold;
+    font-weight: bold;
+    font-style: normal;
+    src: local('RadioNewsman'), local('Radio Newsman'), url(fonts/RadioNewsman.ttf);
 }
 
 @font-face
 {
     font-family: ChunkFive;
+    font-weight: normal;
+    font-style: normal;
     src: local('ChunkFive'), url(chunk-master/chunk.ttf);
 }
 
 @font-face
 {
     font-family: Knorke;
+    font-weight: normal;
+    font-style: normal;
     src: local('Knorke'), url(fonts/Knorke.ttf);
 }
 
@@ -26,13 +32,16 @@ body
 
 .body-main,
 .body-header,
-.usa-today-header,
 .body-footer
 {
     width: 1000px;
-    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.usa-today-header
+{
+    margin-bottom: 10px;
 }
 
 .top-info
@@ -98,7 +107,7 @@ body
 
 .column-header
 {
-    font: 1.5em bold, RadioNewsman, ChunkFive, sans-serif;
+    font: 1.5em RadioNewsman-bold, ChunkFive, sans-serif;
     word-break: normal;
     text-align: center;
     column-span: all;
@@ -149,9 +158,10 @@ body
     font-size: 2em;
 }
 
-.newsline p:first-of-type
+.newsline h3
 {
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .newsline > img
@@ -163,9 +173,9 @@ body
     border: 2px solid black;
 }
 
-.newsline-topic
+.newsline__topic
 {
-    font: 1.2em bold, RadioNewsman, ChunkFive, sans-serif;
+    font: 1.2em RadioNewsman-bold, ChunkFive, sans-serif;
     text-transform: uppercase;
     word-break: normal;
 }
@@ -188,27 +198,33 @@ body
     width: 650px;
 }
 
-.main-info-top,
-.main-info-middle,
-.main-info-bottom
+.main-info__top,
+.main-info__middle,
+.main-info__bottom
 {
     width: 630px;
     margin: 5px auto;
 }
 
-.main-info-top
+.main-info__top
 {
     border: 10px solid red;
     box-shadow: 0 0 0 2px black;
 }
 
-.main-info-top h1,
-.main-info-top h2
+.main-info__top__header
 {
-    margin: 10px;
+    text-align: center;
+    font: 2em bold, RadioNewsman-bold, ChunkFive, sans-serif;
 }
 
-.main-info-top-img
+.main-info__top__header p:last-child
+{
+    margin-top: -10px;
+    font-size: .8em;
+}
+
+.main-info__top__img
 {
     font-family: Knorke, ChunkFive, sans-serif;
     float: left;
@@ -219,19 +235,19 @@ body
     font-weight: bold;
 }
 
-.main-info-top-img > img
+.main-info__top__img > img
 {
     width: 100%;
 }
 
-.main-info-top-article > article
+.main-info__top__article > article
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
 }
 
-.main-info-top-article
+.main-info__top__article
 {
     display: inline-block;
     border-top: 2px solid black;
@@ -241,34 +257,33 @@ body
     padding: 5px;
 }
 
-.main-info-middle,
-.main-info-bottom
+.main-info__middle,
+.main-info__bottom
 {
     width: 98%;
     border-top: 3px solid black;
-    padding: 5px;
 }
 
-.main-info-middle
+.main-info__middle
 {
     border-top: 3px solid black;
     border-bottom: 2px solid black;
 }
 
-.main-info-middle-article
+.main-info__middle__article
 {
     -moz-column-count: 4;
     -webkit-column-count: 4;
     column-count: 4;
+    padding: 5px;
 }
 
-.main-info-middle-article img
+.main-info__middle__article img
 {
-    width: 100%;
-    float: right;
+    width: 90%;
 }
 
-.main-info-bottom-article
+.main-info__bottom__article
 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -281,27 +296,27 @@ body
     border-top: 2px solid black;
 }
 
-.bottom-info-left,
-.bottom-info-right
+.bottom-info__left,
+.bottom-info__right
 {
     display: inline-block;
     margin: 10px;
 }
 
-.bottom-info-left
+.bottom-info__left
 {
     width: 65%;
     border-right: 2px solid black;
 }
 
-.bottom-info-left-article
+.bottom-info__left__article
 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
 }
 
-.bottom-info-left figure
+.bottom-info__left figure
 {
     margin: 0;
     width: 100%;
@@ -310,12 +325,12 @@ body
     text-align: center;
 }
 
-.bottom-info-left img
+.bottom-info__left img
 {
     width: 80%;
 }
 
-.bottom-info-right-article
+.bottom-info__right__article
 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -335,7 +350,7 @@ body
     font-size: 2em;
 }
 
-.bottom-info-right
+.bottom-info__right
 {
     float: right;
     width: 30%;
