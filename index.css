@@ -1,0 +1,175 @@
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHIC.ttf);
+}
+
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHICI.ttf);
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHICB.ttf);
+    font-style: bold;
+}
+
+@font-face
+{
+    font-family: 'Bodoni MT Black';
+    src: url(BOD_BLAI.ttf);
+    font-style: italic;
+}
+
+body
+{
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+p
+{
+    font-family: 'Century Gothic', 'Bookman Old Style';
+}
+
+.title
+{
+    font: italic 5em 'Bodoni MT Black', 'Bookman Old Style';
+    text-align: center;
+}
+
+.date
+{
+    font: 12px 'Century Gothic', 'Bookman Old Style';
+    text-align: center;
+    text-transform: uppercase;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.frontpages
+{
+    float: left;
+    text-align: justify;
+}
+
+.sign
+{
+    max-width: 50%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.sign figcaption
+{
+    font: italic 'Bodoni MT Black', 'Bookman Old Style';
+    margin: 0;
+}
+
+.frontpages .sign img
+{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.othernews
+{
+    width: 100%;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    text-align: justify;
+}
+
+.othernews article p:first-letter
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+}
+
+.gametime
+{
+    margin-left: 30px;
+    break-inside: avoid;
+    break-before: column;
+    break-after: column;
+    display: block;
+}
+
+.gametime h3
+{
+    text-align: center;
+}
+
+.results,
+.schedule
+{
+    width: 100%;
+}
+
+.results td,
+.schedule td
+{
+    font-family: 'Century Gothic', 'Bookman Old Style';
+    text-align: left;
+    padding: 0 5px;
+}
+
+.results tr:nth-child(odd) td,
+.schedule tr:nth-child(odd) td:nth-child(odd)
+{
+    padding-top: 15px;
+}
+
+.results tr:nth-child(even) td,
+.schedule tr:nth-child(even) td
+{
+    border-top: 2px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.sale
+{
+    border: 2px dashed #666;
+    clear: both;
+    padding: 5px;
+}
+
+.sale div
+{
+    display: inline-block;
+}
+
+.procent
+{
+    padding-left: 10px;
+    font: italic 5em 'Bodoni MT Black', 'Bookman Old Style';
+    text-align: center;
+    text-shadow: 2px 2px #666;
+}
+
+.verticalText
+{
+    font: 12px 'Century Gothic', 'Bookman Old Style';
+    text-align: center;
+    width: 1px;
+    word-wrap: break-word;
+}
