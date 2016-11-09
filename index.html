@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="index.css" media="screen" title="no title">
 </head>
 <body>
-    <input id="bg_b" type="checkbox" name="bg_b" value="" class="background_black">
+    <div class="nav__btn">
+        <svg height="6" width="50">
+            <line x1="0" y1="0" x2="50" y2="0"></line>
+        </svg>
+        <svg height="6" width="50">
+            <line x1="0" y1="0" x2="50" y2="0"></line>
+        </svg>
+        <svg height="6" width="50">
+            <line x1="0" y1="0" x2="50" y2="0"></line>
+        </svg>
+    </div>
+    <input type="checkbox" name="nav" id="nav" class="nav">
+    <label for="nav" class="label nav_label"></label>
+    <input id="default" type="radio" name="intarface" value="" class="defoult" checked="checked">
+    <label for="default" class="label default_label">Стандартные настройки</label>
+    <input id="bg_b" type="radio" name="intarface" value="" class="background_black">
     <label for="bg_b" class="label bg_b">Черный фон и белый шрифт</label>
-    <input id="bg_w" type="checkbox" name="bg_w" value="" class="background_white">
+    <input id="bg_w" type="radio" name="intarface" value="" class="background_white">
     <label for="bg_w" class="label bg_w">Белый фон и черный шрифт</label>
-    <input id="font-family-1" type="checkbox" name="font-family-1" value="" class="press-start">
+    <input id="font-family-1" type="radio" name="intarface" value="" class="press-start">
     <label for="font-family-1" class="label font-family-1">Шрифт: Press Start 2P</label>
-    <input id="font-family-2" type="checkbox" name="font-family-2" value="" class="ruslan-display">
+    <input id="font-family-2" type="radio" name="intarface" value="" class="ruslan-display">
     <label for="font-family-2" class="label font-family-2">Шрифт: Ruslan Display</label>
-    <input id="font-family-3" type="checkbox" name="font-family-3" value="" class="kelly-slab">
+    <input id="font-family-3" type="radio" name="intarface" value="" class="kelly-slab">
     <label for="font-family-3" class="label font-family-3">Шрифт: Kelly Slab</label>
-    <input id="font-size-16" type="checkbox" name="font-size-16" value="" class="font-size-16">
+    <input id="font-size-16" type="radio" name="intarface" value="" class="font-size-16">
     <label for="font-size-16" class="label font-size-16">Размер шрифта: 16</label>
-    <input id="font-size-18" type="checkbox" name="font-size-18" value="" class="font-size-18">
+    <input id="font-size-18" type="radio" name="intarface" value="" class="font-size-18">
     <label for="font-size-18" class="label font-size-18">Размер шрифта: 18</label>
-    <input id="font-size-20" type="checkbox" name="font-size-20" value="" class="font-size-20">
+    <input id="font-size-20" type="radio" name="intarface" value="" class="font-size-20">
     <label for="font-size-20" class="label font-size-20">Размер шрифта: 20</label>
     <div class="common_bg"></div>
     <div class="main-block">
@@ -67,8 +82,9 @@
 ку&shy;мен&shy;тов или по&shy;про&shy;сту быст&shy;рой воз&shy;мож&shy;но&shy;
 сти по&shy;де&shy;лить&shy;ся фай&shy;лом. Те&shy;перь вы мо&shy;же&shy;те вы&shy;не&shy; сти
 лю&shy;бую функ&shy;цию в этот «бар» са&shy;мо&shy;сто&shy;я&shy;тель&shy;но, ес&shy; ли,
-ко&shy;неч&shy;но, она уже не там.<br>
-                <span>3 Но можно и без нее</span>Та са&shy;мая тре&shy;тья мо&shy;дель
+ко&shy;неч&shy;но, она уже не там.<br></p>
+                <h5>10 фактов о новых MacBook Pro</h5>
+                <p><span>3 Но можно и без нее</span>Та са&shy;мая тре&shy;тья мо&shy;дель
                      MacBook Pro 13 по&shy;нра&shy;вит&shy;ся не толь&shy;ко са&shy;мым
                      эко&shy;ном&shy;ным (сто&shy;ит она по&shy;чти на $300 мень&shy;ше),
                      но и кон&shy;сер&shy;ва&shy;тив&shy;ным: ни&shy;ка&shy;ко&shy;го
@@ -148,16 +164,23 @@ MacBook.<br>
                         трех вы&shy;пи&shy;тых кру&shy;жек пи&shy;ва в не&shy;де&shy;лю!<br>
 Об этом нам за&shy;яви&shy;ли ис&shy;пан&shy;ские уче&shy;ные. Их ис&shy;сле&shy;до&shy;ва&shy;ния
 по&shy;ка&shy;за&shy;ли, что для ре&shy;ше&shy;ния иден&shy;тич&shy;ных за&shy;дач пью&shy;щие лю&shy;
-ди при&shy;ла&shy;га&shy;ют на&shy;мно&shy;го боль&shy;ше уси&shy;лий, чем не&shy;пью&shy;щие.<br>
- В хо&shy;де экс&shy;пе&shy;ри&shy;мен&shy;та доб&shy;ро&shy;воль&shy;цев раз&shy;де&shy;ли&shy;ли
- на две груп&shy;пы. Не&shy;удач&shy;ни&shy;ки из пер&shy;вой груп&shy;пы ал&shy;ко&shy;голь не упо&shy;
- треб&shy;ля&shy;ли, а вот счаст&shy;лив&shy;цы-доб&shy;ро&shy;воль&shy;цы из вто&shy;рой груп&shy;пы
- вы&shy;пи&shy;ва&shy;ли не&shy;мно&shy;го боль&shy;ше 1,5 лит&shy;ра пи&shy;ва в не&shy;де&shy;лю.<br>
- Всем участ&shy;ни&shy;кам по окон&shy;ча&shy;нию экс&shy;пе&shy;ри&shy;мен&shy;та про&shy;ве&shy;ри&shy;
- ли ре&shy;ак&shy;цию на ми&shy;га&shy;ю&shy;щие сиг&shy;на&shy;лы. По&shy;сле че&shy;го каж&shy;до&shy;
- му ис&shy;пы&shy;ту&shy;е&shy;мо&shy;му из&shy;ме&shy;ри&shy;ли моз&shy;го&shy;вую ак&shy;тив&shy;ность,
-  ско&shy;рость и точ&shy;ность ре&shy;ак&shy;ций.<br>
-Ре&shy;зуль&shy;тат ис&shy;сле&shy;до&shy;ва&shy;ния по&shy;ка&shy;зал, что обе груп&shy;пы доб&shy;
+ди при&shy;ла&shy;га&shy;ют на&shy;мно&shy;го боль&shy;ше уси&shy;лий, чем не&shy;пью&shy;щие.<br></p>
+<hr>
+<blockquote>
+    <q>
+        В хо&shy;де экс&shy;пе&shy;ри&shy;мен&shy;та доб&shy;ро&shy;воль&shy;цев раз&shy;де&shy;ли&shy;ли
+        на две груп&shy;пы. Не&shy;удач&shy;ни&shy;ки из пер&shy;вой груп&shy;пы ал&shy;ко&shy;голь
+        не упо&shy;треб&shy;ля&shy;ли, а вот счаст&shy;лив&shy;цы-доб&shy;ро&shy;воль&shy;цы из вто&shy;
+        рой груп&shy;пы вы&shy;пи&shy;ва&shy;ли не&shy;мно&shy;го боль&shy;ше 1,5 лит&shy;ра пи&shy;ва в
+         не&shy;де&shy;лю.<br>
+        Всем участ&shy;ни&shy;кам по окон&shy;ча&shy;нию экс&shy;пе&shy;ри&shy;мен&shy;та про&shy;ве&shy;
+        ри&shy;ли ре&shy;ак&shy;цию на ми&shy;га&shy;ю&shy;щие сиг&shy;на&shy;лы. По&shy;сле че&shy;го
+         каж&shy;до&shy; му ис&shy;пы&shy;ту&shy;е&shy;мо&shy;му из&shy;ме&shy;ри&shy;ли моз&shy;го&shy;
+         вую ак&shy;тив&shy;ность, ско&shy;рость и точ&shy;ность ре&shy;ак&shy;ций.<br>
+    </q>
+</blockquote>
+<hr>
+<p>Ре&shy;зуль&shy;тат ис&shy;сле&shy;до&shy;ва&shy;ния по&shy;ка&shy;зал, что обе груп&shy;пы доб&shy;
 ро&shy;воль&shy;цев в рав&shy;ной сте&shy;пе&shy;ни хо&shy;ро&shy;шо спра&shy;ви&shy;лись с за&shy;
 да&shy;ни&shy;ем: раз&shy;ни&shy;ца меж&shy;ду точ&shy;но&shy;стью и ско&shy;ро&shy;стью ре&shy;ак&shy;
 ций «под&shy;опыт&shy;ных» бы&shy;ла не&shy;зна&shy;чи&shy;тель&shy;ная. Но под&shy;вох крыл&shy;ся в

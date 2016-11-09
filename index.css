@@ -17,6 +17,32 @@
     margin: 20px;
 }
 
+.nav__btn
+{
+    width: 50px;
+    height: 48px !important;
+    position: fixed;
+    top: 32px;
+    right: 18px;
+    z-index: 20;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    padding: 4px 10px;
+    opacity: .5;
+}
+
+.nav__btn line
+{
+    stroke: #ccc;
+    stroke-width: 5;
+}
+
+.nav_label
+{
+    z-index: 30;
+}
+
 header
 {
     position: relative;
@@ -81,11 +107,11 @@ header
     font-size: 50px;
     font-family: 'Pacifico';
     font-weight: bold;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
     position: absolute;
-    top: 44px;
-    right: 0;
+    top: 0;
+    right: 50px;
+    word-wrap: break-word;
+    width: 10px;
 }
 
 .header__info p
@@ -140,8 +166,13 @@ header
 {
     font-size: 24px;
     font-family: 'Play';
-
     line-height: 1.1;
+}
+
+.page-content__header h3::first-letter
+{
+    font-size: 30px;
+    color: red;
 }
 
 .page-content__article
@@ -164,11 +195,29 @@ header
     visibility: hidden;
 }
 
-.page-content__article p
+.page-content__article p,
+.page-content__article q
 {
     font-size: 20px;
     line-height: 1.1;
     font-family: 'Open Sans Condensed';
+}
+
+.page-content__article h5
+{
+    column-span: all;
+    font-size: 30px;
+    font-family: 'Play';
+    line-height: 1.1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-content__article p::first-letter,
+.page-content__article q::first-letter
+{
+    font-size: 30px;
+    color: red;
 }
 
 .page-content__article p span
@@ -255,11 +304,6 @@ header
     border-right: 4px solid #252525;
     float: left;
     box-sizing: border-box;
-}
-
-.page-content__article_pos-2
-{
-    visibility: hidden;
 }
 
 .main-page-aside__joke
@@ -353,14 +397,43 @@ input
     text-transform: uppercase;
     font-family: 'Open Sans Condensed';
     font-weight: bold;
-    padding: 10px;
+    padding: 0 10px;
     background: #fff;
     position: fixed;
     width: 220px;
+    height: 0;
+    line-height: 38px;
+    box-sizing: border-box;
     display: block;
     opacity: .5;
-    -webkit-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.nav_label
+{
+    width: 74px;
+    height: 60px;
+    position: fixed;
+    top: 32px;
+    right: 18px;
+    z-index: 20;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    padding: 4px 10px;
+    opacity: .5;
+}
+
+.nav:checked ~ .label
+{
+    height: 38px;
+}
+
+.nav:checked + .label
+{
+    height: 60px;
 }
 
 .label:hover
@@ -368,39 +441,49 @@ input
     opacity: 1;
 }
 
+.default_label
+{
+    top: 90px;
+}
+
+.bg_b
+{
+    top: 128px;
+}
+
 .bg_w
 {
-    top: 100px;
+    top: 166px;
 }
 
 .font-family-1
 {
-    top: 150px;
+    top: 204px;
 }
 
 .font-family-2
 {
-    top: 200px;
+    top: 242px;
 }
 
 .font-family-3
 {
-    top: 250px;
+    top: 280px;
 }
 
 .font-size-16
 {
-    top: 300px;
+    top: 318px;
 }
 
 .font-size-18
 {
-    top: 350px;
+    top: 356px;
 }
 
 .font-size-20
 {
-    top: 400px;
+    top: 394px;
 }
 
 .background_black:checked ~ .common_bg
@@ -432,6 +515,7 @@ input
 .background_black:checked ~ .main-block h4,
 .background_black:checked ~ .main-block span,
 .background_black:checked ~ .main-block p,
+.background_black:checked ~ .main-block q,
 .background_black:checked ~ .main-block p span,
 .background_black:checked ~ .main-block div,
 .background_black:checked ~ .main-block header,
@@ -447,6 +531,7 @@ input
 .press-start:checked ~ .main-block h4,
 .press-start:checked ~ .main-block span,
 .press-start:checked ~ .main-block p,
+.press-start:checked ~ .main-block q,
 .press-start:checked ~ .main-block p span,
 .press-start:checked ~ .main-block div,
 .press-start:checked ~ .main-block header,
@@ -461,6 +546,7 @@ input
 .ruslan-display:checked ~ .main-block h4,
 .ruslan-display:checked ~ .main-block span,
 .ruslan-display:checked ~ .main-block p,
+.ruslan-display:checked ~ .main-block q,
 .ruslan-display:checked ~ .main-block p span,
 .ruslan-display:checked ~ .main-block div,
 .ruslan-display:checked ~ .main-block header,
@@ -475,6 +561,7 @@ input
 .kelly-slab:checked ~ .main-block h4,
 .kelly-slab:checked ~ .main-block span,
 .kelly-slab:checked ~ .main-block p,
+.kelly-slab:checked ~ .main-block q,
 .kelly-slab:checked ~ .main-block p span,
 .kelly-slab:checked ~ .main-block div,
 .kelly-slab:checked ~ .main-block header,
@@ -487,6 +574,7 @@ input
 .font-size-16:checked ~ .main-block h4,
 .font-size-16:checked ~ .main-block span,
 .font-size-16:checked ~ .main-block p,
+.font-size-16:checked ~ .main-block q,
 .font-size-16:checked ~ .main-block p span,
 .font-size-16:checked ~ .main-block div
 {
@@ -497,6 +585,7 @@ input
 .font-size-18:checked ~ .main-block h4,
 .font-size-18:checked ~ .main-block span,
 .font-size-18:checked ~ .main-block p,
+.font-size-18:checked ~ .main-block q,
 .font-size-18:checked ~ .main-block p span,
 .font-size-18:checked ~ .main-block div
 {
@@ -507,6 +596,7 @@ input
 .font-size-20:checked ~ .main-block h4,
 .font-size-20:checked ~ .main-block span,
 .font-size-20:checked ~ .main-block p,
+.font-size-20:checked ~ .main-block q,
 .font-size-20:checked ~ .main-block p span,
 .font-size-20:checked ~ .main-block div
 {
