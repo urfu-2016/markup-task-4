@@ -38,13 +38,28 @@ p
     text-align: justify;
 }
 
-.frontpages img
+.sign
 {
     max-width: 50%;
-    height: auto;
     float: left;
+    margin: 0;
+    text-align: center;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+
+.sign figcaption
+{
+    font-family: 'Bodoni MT Black', 'Bookman Old Style';
+    font-style: italic;
+    margin: 0;
+ }
+
+.frontpages .sign img
+{
+    width: 100%;
+    height: auto;
+    float: left;
 }
 
 .othernews
@@ -57,6 +72,13 @@ p
     -moz-column-gap: 30px;
     column-gap: 30px;
     text-align: justify;
+}
+
+.othernews article p:first-letter
+{
+	font-size: 30px;
+	font-weight: bold;
+    color: #666; 
 }
 
 .gametime
