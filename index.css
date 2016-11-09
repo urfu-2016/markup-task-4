@@ -1,8 +1,36 @@
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHIC.ttf);
+}
+
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHICI.ttf);
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: 'Century Gothic';
+    src: url(GOTHICB.ttf);
+    font-style: bold;
+}
+
+@font-face
+{
+    font-family: 'Bodoni MT Black';
+    src: url(BOD_BLAI.ttf);
+    font-style: italic;
+}
+
 body
 {
     width: 800px;
     text-align: center;
     margin: auto;
+    padding: 10px;
 }
 
 p
@@ -12,16 +40,13 @@ p
 
 .title
 {
-    font-family: 'Bodoni MT Black', 'Bookman Old Style';
-    font-style: italic;
-    font-size: 5em;
+    font: italic 5em 'Bodoni MT Black', 'Bookman Old Style';
     text-align: center;
 }
 
 .date
 {
-    font-family: 'Century Gothic', 'Bookman Old Style';
-    font-size: 12px;
+    font: 12px 'Century Gothic', 'Bookman Old Style';
     text-align: center;
     text-transform: uppercase;
     border-top-width: 2px;
@@ -50,8 +75,7 @@ p
 
 .sign figcaption
 {
-    font-family: 'Bodoni MT Black', 'Bookman Old Style';
-    font-style: italic;
+    font: italic 'Bodoni MT Black', 'Bookman Old Style';
     margin: 0;
 }
 
@@ -137,17 +161,14 @@ p
 .procent
 {
     padding-left: 10px;
-    font-size: 5em;
-    font-family: 'Bodoni MT Black', 'Bookman Old Style';
-    font-style: italic;
+    font: italic 5em 'Bodoni MT Black', 'Bookman Old Style';
     text-align: center;
     text-shadow: 2px 2px #666;
 }
 
 .verticalText
 {
-    font-family: 'Century Gothic', 'Bookman Old Style';
-    font-size: 12px;
+    font: 12px 'Century Gothic', 'Bookman Old Style';
     text-align: center;
     width: 1px;
     word-wrap: break-word;
