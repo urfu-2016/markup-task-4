@@ -40,36 +40,28 @@ body
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
-    width: 1366px;
+    width: 75%;
     margin: 0 auto;
     line-height: 1.15;
 }
 
-@media (max-width: 1455px)
-{
-    body
-    {
-        margin-left: 40px;
-    }
-}
-
-h1,
-h2,
-h3
-{
-    margin: 0;
-}
-
 h1
 {
+    margin: 0;
     font-size: 100px;
     font-weight: normal;
 }
 
 h2
 {
+    margin: 0;
     font-size: 2.5em;
     font-weight: normal;
+}
+
+h3
+{
+    margin: 0;
 }
 
 .night-mode:checked ~ header,
@@ -292,11 +284,10 @@ figure img
 
 .want-to-buy
 {
-    float: right;
     height: 135px;
     width: 170px;
+    margin: 5px auto;
     border: 3px dashed black;
-    margin: 5px 0 0 10px;
     padding: 5px;
 }
 
