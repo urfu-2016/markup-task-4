@@ -1,0 +1,191 @@
+@font-face
+{
+    font-family: DreamScar;
+    src: local('DreamScar'), url(fonts/dreamscar.ttf) format('truetype'), url(fonts/DreamScar.woff) format('woff'), url(fonts/dreamscar.woff2) format('woff2'), url(fonts/dreamscar.eot) format('eot');
+}
+
+@font-face
+{
+    font-family: DrPoDecorRu;
+    src: local('DrPoDecorRu'), url(fonts/drpodecorru.ttf) format('truetype'), url(fonts/drpodecorru.eot) format('eot'), url(fonts/DrPoDecorRu.woff) format('woff'), url(fonts/drpodecorru.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: B52;
+    src: local('B52'), url(fonts/b52.ttf) format('truetype'), url(fonts/b52.eot) format('eot'), url(fonts/B52.woff) format('woff'), url(fonts/b52.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: AdanaScript;
+    src: local('AdanaScript'), url(fonts/adana-script.ttf) format('truetype'), url(fonts/adana-script.eot) format('eot'), url(fonts/Adanascript.woff) format('woff'), url(fonts/adana-script.woff2) format('woff2');
+}
+
+aside
+{
+    width: 27%;
+    padding-left: 10px;
+    text-align: justify;
+    border-left: 1px solid black;
+    float: right;
+    margin-top: 30px;
+}
+
+.focus
+{
+    float: left;
+    width: 47%;
+}
+
+.description
+{
+    font-style: italic;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article:after
+{
+    content: '';
+    height: 5px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    align-self: center;
+}
+
+.author
+{
+    font-style: italic;
+}
+
+.bordered
+{
+    border: solid 1px black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+blockquote
+{
+    font-family: B52, monospace;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+.left
+{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.left p
+{
+    margin-top: 10px;
+}
+
+.vertical
+{
+    float: left;
+    width: 1.5%;
+    margin-top: 10px;
+    padding-left: 3px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    border: solid 1px black;
+    min-width: 1em;
+    letter-spacing: 100px;
+}
+
+.focus img
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wide-column
+{
+    -webkit-column-count: 2;
+    -webkit-column-width: 100px;
+    -moz-column-count: 2;
+    -moz-column-width: 100px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-count: 2;
+    column-width: 100px;
+    column-rule: 1px solid #000;
+    text-align: justify;
+    column-gap: 20px;
+}
+
+header
+{
+    font: 120px DrPoDecorRu, serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+aside img
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.small-column
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.header-border
+{
+    content: '';
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    height: 6px;
+}
+
+h3
+{
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: inherit;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3:first-letter
+{
+    font-family: AdanaScript, serif;
+    font-size: 25px;
+}
+
+p
+{
+    font-size: 14px;
+    margin-top: 0;
+}
+
+body
+{
+    font-family: Georgia, serif;
+}
+
+.vertical p
+{
+    font-size: 16px;
+}
