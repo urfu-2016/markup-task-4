@@ -1,149 +1,177 @@
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
 
-@font-face 
+@font-face
 {
     font-family: DSMoster;
-    src: url(DSMoster.ttf);
-    
+    src: local('DSMoster'),
+        url('DSMoster.woff'),
+        url('DSMoster.ttf');
 }
 
-@font-face 
+@font-face
 {
     font-family: Tribune;
-    src: url(Tribune.ttf);
-    
+    src: local('Tribune'),
+        url(Tribune.woff);
+        url(Tribune.ttf);
 }
 
-@font-face 
+@font-face
 {
     font-family: RedOctober;
-    src: url(Red_October.ttf);
-    
+    src: local('Red October'),
+        url(Red_October.woff),
+        url(Red_October.ttf);
 }
 
-h1 
+h1
  {
-    font-size: 124px;
+    font: bold 124px Tribune;
     text-align: center;
-    font-weight: 900;
-    font-family: Tribune;
     margin: 0;
+}
+
+.info{
+    position: relative;
+    min-height: 50px;
 }
 
 .cost
 {
     text-align: left;
     letter-spacing: -1.5px;
-    float: left;
+    position: absolute;
+    display: inline-block;
 }
 
-.articles
-{
-    float: left;
-}
 
-.date 
+.date
 {
     max-width: 49%;
     text-align: right;
     letter-spacing: -1.5px;
-    float: right;
+    position: absolute;
+    display: inline-block;
+    right: 0;
 }
 
-.main_theme
+.articles
 {
+    position: relative;
+}
+
+.news
+{
+    position: absolute;
+    left: 0;
     width: 77%;
-    float: left;
+    display: inline-block;
+
+}
+
+.main-theme
+{
+    display: inline-block;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
-    font-family: DSMoster;
+    font: .8em DSmoster;
     text-indent: 25px;
     text-align: justify;
     hyphens: manual;
-    font-size: .8em;
 }
 
-.main_theme h4
+.main-theme h4,
+.main-theme hr,
+x:-moz-any-link
 {
+    display: none;
+}
+
+.main-theme h4
+{
+    -webkit-column-span: all;
     column-span: all;
     font-family: sans-serif;
     margin: 0;
 }
 
-.main_theme hr
+.main-theme hr
 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
     column-span: all;
     height: 3px;
     background-color: black;
 }
 
-.main_theme header,
-.other_news header
+.moz-span
+{
+    display: none;
+}
+
+.moz-span,
+x:-moz-any-link
+{
+    display: block;
+}
+
+.main-theme header,
+.other-news header
 {
     margin: 3px;
     padding: 3px;
     font-size: 1.2em;
     font-weight: bold;
     border: 1px solid;
-   
+
 }
 
-.other_news
+
+.other-news
 {
     text-indent: 25px;
-    float: left;
-    width: 77%;
     text-align: justify;
     hyphens: manual;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-count: 4;
     border: 2px solid;
     font-family: sans-serif;
 }
 
-.other_news p
+.other-news p
 {
     margin: 3px;
 }
 
-.main_theme p:first-of-type,
-.other_news p:first-of-type
+.main-theme p:first-of-type,
+.other-news p:first-of-type
 {
     font-weight: bold;
 }
 
-.main_theme p:first-of-type:first-letter,
-.other_news p:first-of-type:first-letter
+.main-theme p:first-of-type:first-letter,
+.other-news p:first-of-type:first-letter
 {
     font-size: 2em;
-}
-
-.add
-{
-    width: 25%;
-    float: left;
-    padding: 3px;
-    border: 2px solid;
-    height: 100%;
-}
-
-.add img
-{
-    width: 100%;
 }
 
 .blog
 {
     width: 20%;
-    float: right;
+    display: inline-block;
     border: 5px dashed;
     padding: 0 0 0 8px;
-    
-    
+    position: absolute;
+    right: 0;
+    top: 5px;
+
 }
 
 .blog h2
 {
-    font-family: RedOctober;
-    font-size: .9em;
+    font: .9em RedOctober;
 }
 
 .blog p
@@ -153,21 +181,11 @@ h1
 
 .label
 {
-    font-size: 38px;
     margin: 0;
-    font-style: oblique;
-    font-family: fantasy;
+    font: oblique 38px fantasy;
     text-align: center;
+    height: 50px;
     border: double;
     border-width: 5px 0;
     min-width: 100%;
-    float: left;
-}
-
-.main_block 
-{
-    padding: 10px;
-    column-count: 10;
-    column-rule: 2px solid;
-    word-break: break-all;
 }
