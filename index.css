@@ -12,7 +12,7 @@
 {
     font-family: Tribune;
     src: local('Tribune'),
-        url(Tribune.woff);
+        url(Tribune.woff),
         url(Tribune.ttf);
 }
 
