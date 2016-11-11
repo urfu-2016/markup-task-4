@@ -3,25 +3,19 @@
 @font-face
 {
     font-family: DSMoster;
-    src: local('DSMoster'),
-        url('DSMoster.woff'),
-        url('DSMoster.ttf');
+    src: local('DSMoster'), url('DSMoster.woff'), url('DSMoster.ttf');
 }
 
 @font-face
 {
     font-family: Tribune;
-    src: local('Tribune'),
-        url(Tribune.woff),
-        url(Tribune.ttf);
+    src: local('Tribune'), url(Tribune.woff), url(Tribune.ttf);
 }
 
 @font-face
 {
     font-family: RedOctober;
-    src: local('Red October'),
-        url(Red_October.woff),
-        url(Red_October.ttf);
+    src: local('Red October'), url(Red_October.woff), url(Red_October.ttf);
 }
 
 h1
@@ -31,7 +25,8 @@ h1
     margin: 0;
 }
 
-.info{
+.info
+{
     position: relative;
     min-height: 50px;
 }
@@ -43,7 +38,6 @@ h1
     position: absolute;
     display: inline-block;
 }
-
 
 .date
 {
@@ -66,7 +60,6 @@ h1
     left: 0;
     width: 77%;
     display: inline-block;
-
 }
 
 .main-theme
@@ -83,7 +76,7 @@ h1
 
 .main-theme h4,
 .main-theme hr,
-x:-moz-any-link
+:-moz-any-link
 {
     display: none;
 }
@@ -111,7 +104,7 @@ x:-moz-any-link
 }
 
 .moz-span,
-x:-moz-any-link
+:-moz-any-link
 {
     display: block;
 }
@@ -126,7 +119,6 @@ x:-moz-any-link
     border: 1px solid;
 
 }
-
 
 .other-news
 {
