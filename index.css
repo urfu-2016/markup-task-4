@@ -1,39 +1,33 @@
-.pageHeader
+.note
 {
+    display: block;
     border: 2px solid black;
     width: 1200px;
     margin: auto;
+    vertical-align: top;
 }
 
-.pageHeader > div:first-child
+.titleNote
 {
+    margin: auto;
     position: relative;
-    display: inline-block;
-    width: 180px;
-    height: 120px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
     text-align: center;
     font-weight: bold;
 }
 
-.mainTheme
-{
-    position: absolute;
-    height: 36px;
-    width: 100px;
-    left: 50%;
-    top: 50%;
-    margin: -18px 0 0 -50px;
-}
-
-.month
+.titleNote > .month
 {
     letter-spacing: 7px;
 }
 
-.pageHeader > div:last-child
+.bodyNote
 {
-    display: inline-block;
+    display: table-cell;
     width: 1000px;
+    padding: 10px 0;
     column-count: 6;
     font-size: 11px;
 }
@@ -47,9 +41,10 @@
 
 .logo
 {
+    vertical-align: top;
     display: inline-block;
     position: relative;
-    width: 605px;
+    width: 580px;
     height: 205px;
     margin: 0 5px 0 0;
 }
@@ -58,13 +53,15 @@
 {
     display: inline-block;
     height: 150px;
+    position: relative;
+    top: 20px;
     z-index: 2;
 }
 
 .logo .nameNewspaper
 {
     z-index: 1;
-    font: 130px fantasy;
+    font: 120px fantasy;
     display: inline-block;
     height: 150px;
     letter-spacing: 15px;
@@ -81,32 +78,31 @@
     text-decoration: underline;
 }
 
-.logo div:last-child
+.logo .publisher
 {
     text-align: center;
-    font: 22px serif;
+    font: 20px serif;
     padding: 5px 0;
     letter-spacing: -1px;
     font-stretch: ultra-condensed;
 }
 
-.mainNew
+.congratulations
 {
-    padding: 0 5px 0 10px;
+    padding: 10px;
     display: inline-block;
-    width: 570px;
-    height: 215px;
+    width: 580px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.mainNew h6
+.congratulations .congratulationsHeader
 {
     text-align: center;
     margin: 5px 0;
 }
 
-.mainNew > div
+.congratulations .congratulationsBody
 {
     display: inline-block;
     column-count: 2;
@@ -120,13 +116,12 @@
     margin: auto;
 }
 
-.inset
+.tabs
 {
     border: 2px solid black;
-    width: 680px;
 }
 
-.inset > div
+.tabs .tab
 {
     vertical-align: middle;
     height: 40px;
