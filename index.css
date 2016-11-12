@@ -1,7 +1,8 @@
 @font-face
 {
     font-family: myFont;
-    src: url(IndieFlower.woff);
+    src: local('MyFont'),
+        url(IndieFlower.woff);
 }
 
 header
@@ -9,7 +10,7 @@ header
     text-align: center;
     font-size: 3.5em;
     line-height: 1.5em;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
     border-bottom: solid;
 }
 
@@ -50,7 +51,7 @@ main
 
 main .second h2
 {
-    font-family: Verdana;
+    font-family: Verdana, sans-serif;
     font-style: normal;
     text-decoration: underline;
 }
@@ -58,7 +59,7 @@ main .second h2
 main .third h2
 {
     font-size: 1.5em;
-    font-family: Cambria;
+    font-family: Cambria, serif;
     font-style: normal;
     text-decoration: overline;
     letter-spacing: -1px;
@@ -97,7 +98,7 @@ main .third p
 main p::first-letter
 {
     color: #000;
-    font: normal 40px Times New Roman;
+    font: normal 40px Times New Roman Serif;
 }
 
 blockquote
@@ -107,7 +108,7 @@ blockquote
 
 .weather
 {
-    font: normal 20px Verdana;
+    font: normal 20px Verdana Serif;
     margin: 5px;
     padding: 5px;
     border: 2px;
