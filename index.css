@@ -1,3 +1,19 @@
+@font-face
+{
+    font-family: 'LetoOneDefect';
+    src: url('fonts/LetoOneDefect/LetoOneDefect.ttf'), url('fonts/LetoOneDefect/LetoOneDefect.woff');
+}
+@font-face
+{
+    font-family: 'RodchenkoInlineC';
+    src: url('fonts/RodchenkoInlineC/RodchenkoInlineC.ttf'), url('fonts/RodchenkoInlineC/RodchenkoInlineC.woff');
+}
+
+html
+{
+    font-family: 'LetoOneDefect', 'Arial Narrow', 'sans-serif';
+}
+
 .note
 {
     display: block;
@@ -18,7 +34,7 @@
     font-weight: bold;
 }
 
-.titleNote > .month
+.titleNote .month
 {
     letter-spacing: 7px;
 }
@@ -29,6 +45,8 @@
     width: 1000px;
     padding: 10px 0;
     column-count: 6;
+    -moz-column-count: 6;
+    -webkit-column-count: 6;
     font-size: 11px;
 }
 
@@ -49,7 +67,7 @@
     margin: 0 5px 0 0;
 }
 
-.logo img
+.logo .imageLogo
 {
     display: inline-block;
     height: 150px;
@@ -61,7 +79,7 @@
 .logo .nameNewspaper
 {
     z-index: 1;
-    font: 120px fantasy;
+    font: 120px 'RodchenkoInlineC';
     display: inline-block;
     height: 150px;
     letter-spacing: 15px;
@@ -106,6 +124,8 @@
 {
     display: inline-block;
     column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
     font-size: 10px;
     overflow: hidden;
 }
@@ -116,8 +136,9 @@
     margin: auto;
 }
 
-.tabs
+.containerTabs
 {
+    display: inline-block;
     border: 2px solid black;
 }
 
@@ -127,14 +148,16 @@
     height: 40px;
     display: inline-block;
     text-align: center;
-    border-left: 1px solid black;
+    border-left: 1px solid #000;
     padding: 0 25px;
     font: bold 14px monospace;
 }
 
 .bodyNewspaper
 {
-    border: 1px solid black;
+    border: 1px solid #000;
+    min-height: 2200px;
+    height: 1px;
 }
 
 .leftColumnNews
@@ -146,50 +169,52 @@
 
 .firstNews
 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
 }
 
-.firstNews h1
+.firstNews .titleFirstNews
 {
     font-family: sans-serif;
     margin: 5px 25px;
 }
 
-.firstNews img
+.firstNews .imageFirstNews
 {
     width: 700px;
     margin: 10px 25px;
 }
 
-.firstNews div
+.firstNews .bodyFirstNews
 {
     padding: 10px 25px;
     display: inline-block;
     font-size: 12px;
     column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
     column-gap: 20px;
 }
 
 .rightColumnNews
 {
-    padding: 10px;
+    padding: 0 10px;
     display: inline-block;
-    border-left: 1px solid black;
-    height: 1700px;
+    border-left: 1px solid #000;
+    height: 100%;
 }
 
-.rightColumnNews h5
+.rightColumnNews .mainTitleRightColumnNews
 {
     text-align: center;
 }
 
-.rightColumnNews h3
+.rightColumnNews .titleRightColumnNews
 {
     text-align: center;
     margin: 10px;
 }
 
-.rightColumnNews div
+.rightColumnNews .bodyRightColumnNews
 {
     display: inline-block;
     width: 266px;
@@ -199,7 +224,7 @@
 
 .secondNews
 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
 }
 
 .leftColumnSecondNews
@@ -209,15 +234,17 @@
     width: 350px;
 }
 
-.leftColumnSecondNews h3
+.leftColumnSecondNews .titleLeftColumnSecondNews
 {
     text-align: center;
 }
 
-.leftColumnSecondNews div
+.leftColumnSecondNews .bodyLeftColumnSecondNews
 {
     display: inline-block;
     column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
     font-size: 12px;
 }
 
@@ -227,32 +254,48 @@
     padding: 10px;
     display: inline-block;
     width: 500px;
-    border-left: 1px solid black;
+    border-left: 1px solid #000;
 }
 
-.rightColumnSecondNews h2
+.rightColumnSecondNews .titleRightColumnSecondNews
 {
     text-align: center;
 }
 
-.rightColumnSecondNews div
+.rightColumnSecondNews .bodyRightColumnSecondNews
 {
     display: inline-block;
     column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
     font-size: 12px;
 }
 
-.thirdNews h1
+.thirdNews .titleThirdNews
 {
     padding: 10px 20px;
     margin: 3px;
     text-align: right;
 }
 
-.thirdNews div
+.thirdNews .bodyThirdNews
 {
     display: inline-block;
     column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
     font-size: 10px;
     padding: 10px;
+}
+
+.paragraph:first-child:first-letter
+{
+    font-size: 20px;
+}
+
+.quote
+{
+    background-color: #f7f7f7;
+    font-style: italic;
+    font-size: 105%;
 }
