@@ -156,8 +156,6 @@ html
 .bodyNewspaper
 {
     border: 1px solid #000;
-    min-height: 2200px;
-    height: 1px;
 }
 
 .leftColumnNews
@@ -170,6 +168,7 @@ html
 .firstNews
 {
     border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 .firstNews .titleFirstNews
@@ -199,8 +198,6 @@ html
 {
     padding: 0 10px;
     display: inline-block;
-    border-left: 1px solid #000;
-    height: 100%;
 }
 
 .rightColumnNews .mainTitleRightColumnNews
@@ -225,6 +222,7 @@ html
 .secondNews
 {
     border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 .leftColumnSecondNews
@@ -269,6 +267,11 @@ html
     -moz-column-count: 3;
     -webkit-column-count: 3;
     font-size: 12px;
+}
+
+.thirdNews
+{
+    border-right: 1px solid #000;
 }
 
 .thirdNews .titleThirdNews
