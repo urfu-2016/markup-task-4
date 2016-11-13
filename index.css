@@ -33,6 +33,7 @@ main
     column-width: 250px;
     column-rule: 2px solid #cd853f;
     column-gap: 2em;
+    max-height: 1000px;
 }
 
 img
@@ -97,9 +98,9 @@ figcaption
 
 .first-text
 {
-    font: 20px 'Roboto Condensed', sans-serif;
+    font: 19px 'Roboto Condensed', sans-serif;
     line-height: 30px;
-    height: 850px;
+    height: 1000px;
 }
 
 .second-text
@@ -107,12 +108,15 @@ figcaption
     font: 16px 'Merriweather', serif;
     line-height: 23px;
     letter-spacing: -.5px;
+    max-height: 1100px;
+    min-height: 1000px;
 }
 
 .third-text
 {
     font: 18px 'PT Sans Narrow', sans-serif;
     line-height: 15px;
+    height: 50%;
 }
 
 .fourth-text
