@@ -61,10 +61,12 @@ body
 {
     background-color: #fff;
     background-image: url('paper2.jpg');
+    min-width: 700px;
 }
 
 .column1,
-.column2
+.column2,
+.column3
 {
     break-inside: avoid-column;
     break-after: column;
@@ -146,7 +148,7 @@ blockquote
     text-align: center;
 }
 
-.factfile div:first-child
+.factfile div
 {
     font-weight: bold;
 }
