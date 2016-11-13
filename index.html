@@ -2,25 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Newspaper</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
     <link rel="stylesheet" href="index.css" media="screen" title="no title">
 </head>
 <body>
-    <div class="nav__btn">
-        <svg height="6" width="50">
-            <line x1="0" y1="0" x2="50" y2="0"></line>
-        </svg>
-        <svg height="6" width="50">
-            <line x1="0" y1="0" x2="50" y2="0"></line>
-        </svg>
-        <svg height="6" width="50">
-            <line x1="0" y1="0" x2="50" y2="0"></line>
-        </svg>
+    <div class="nav-btn">
+        <div class="nav-btn__line"></div>
+        <div class="nav-btn__line"></div>
+        <div class="nav-btn__line"></div>
     </div>
     <input type="checkbox" name="nav" id="nav" class="nav">
-    <label for="nav" class="label nav_label"></label>
-    <input id="default" type="radio" name="intarface" value="" class="defoult" checked="checked">
+    <label for="nav" class="label nav-label"></label>
+    <input id="default" type="radio" name="intarface" value="" class="defoult">
     <label for="default" class="label default_label">Стандартные настройки</label>
     <input id="bg_b" type="radio" name="intarface" value="" class="background_black">
     <label for="bg_b" class="label bg_b">Черный фон и белый шрифт</label>
@@ -32,23 +27,27 @@
     <label for="font-family-2" class="label font-family-2">Шрифт: Ruslan Display</label>
     <input id="font-family-3" type="radio" name="intarface" value="" class="kelly-slab">
     <label for="font-family-3" class="label font-family-3">Шрифт: Kelly Slab</label>
-    <input id="font-size-16" type="radio" name="intarface" value="" class="font-size-16">
+    <input id="font-size-16" type="radio" name="intarface" value="" class="font-size font-size-16">
     <label for="font-size-16" class="label font-size-16">Размер шрифта: 16</label>
-    <input id="font-size-18" type="radio" name="intarface" value="" class="font-size-18">
+    <input id="font-size-18" type="radio" name="intarface" value="" class="font-size font-size-18">
     <label for="font-size-18" class="label font-size-18">Размер шрифта: 18</label>
-    <input id="font-size-20" type="radio" name="intarface" value="" class="font-size-20">
+    <input id="font-size-20" type="radio" name="intarface" value="" class="font-size font-size-20">
     <label for="font-size-20" class="label font-size-20">Размер шрифта: 20</label>
-    <div class="common_bg"></div>
+    <div class="common-bg"></div>
     <div class="main-block">
-        <header>
+        <header class="header">
             <div class="header__logo">
                 <img src="img/logo.png" alt="WTF">
-            </div><div class="header__info">
+            </div>
+            <div class="header__info">
                 <h4>№ 111</h4>
-                <p class="header__info_data">21 <span>October</span> 2015г</p>
-            </div><div class="header__name">
+                    <p class="header__info-data"><time datetime="2015-10-21">21 October 2015</time></p>
+            </div>
+            <div class="header__name">
                 <h1>WTF is <span>goin on?!</span></h1>
-            </div></header><main>
+            </div>
+        </header>
+        <main>
             <section class="page-content">
                 <header class="page-content__header page-content__header_pos-1">
                     <img src="http://static.gq.ru/medialibrary/494/49400d5a3640532bd35daf4b69bcc5b1.gif"
@@ -143,12 +142,11 @@ MacBook.<br>
 пах Apple. В MacBook он один. В MacBook Pro 13 без Touch Bar – два. А в MacBook Pro
 13 и 15 с Touch Bar – аж це&shy;лых че&shy;ты&shy;ре. Каж&shy;дый из них мо&shy;жет
 за&shy;ря&shy;жать ком&shy;пью&shy;тер, быть пор&shy;том для под&shy; клю&shy;че&shy;
-ния внеш&shy;не&shy;го дис&shy;плея и во&shy;об&shy;ще чем угод&shy;но.<br>
-</p>
+ния внеш&shy;не&shy;го дис&shy;плея и во&shy;об&shy;ще чем угод&shy;но.<br></p>
                 </article>
                 <footer class="page-content__footer page-content__footer_pos-1">
-                    <p><span>АВТОР:</span> ПАВЕЛ ЛОМАКИН, 28 ОКТЯБРЯ 2016 Г.</p>
-                    <p><span>ИСТОЧНИК ФОТО:</span> APPLE</p>
+                    <span><strong>АВТОР:</strong>ПАВЕЛ ЛОМАКИН, 28 ОКТЯБРЯ 2016 Г.</span>
+                    <span><strong>ИСТОЧНИК ФОТО:</strong> APPLE</span>
                 </footer>
             </section>
             <p class="diffe-section">МУЖСКИЕ НОВОСТИ</p>
@@ -166,9 +164,7 @@ MacBook.<br>
 по&shy;ка&shy;за&shy;ли, что для ре&shy;ше&shy;ния иден&shy;тич&shy;ных за&shy;дач пью&shy;щие лю&shy;
 ди при&shy;ла&shy;га&shy;ют на&shy;мно&shy;го боль&shy;ше уси&shy;лий, чем не&shy;пью&shy;щие.<br></p>
 <hr>
-<blockquote>
-    <q>
-        В хо&shy;де экс&shy;пе&shy;ри&shy;мен&shy;та доб&shy;ро&shy;воль&shy;цев раз&shy;де&shy;ли&shy;ли
+    <q>В хо&shy;де экс&shy;пе&shy;ри&shy;мен&shy;та доб&shy;ро&shy;воль&shy;цев раз&shy;де&shy;ли&shy;ли
         на две груп&shy;пы. Не&shy;удач&shy;ни&shy;ки из пер&shy;вой груп&shy;пы ал&shy;ко&shy;голь
         не упо&shy;треб&shy;ля&shy;ли, а вот счаст&shy;лив&shy;цы-доб&shy;ро&shy;воль&shy;цы из вто&shy;
         рой груп&shy;пы вы&shy;пи&shy;ва&shy;ли не&shy;мно&shy;го боль&shy;ше 1,5 лит&shy;ра пи&shy;ва в
@@ -176,9 +172,7 @@ MacBook.<br>
         Всем участ&shy;ни&shy;кам по окон&shy;ча&shy;нию экс&shy;пе&shy;ри&shy;мен&shy;та про&shy;ве&shy;
         ри&shy;ли ре&shy;ак&shy;цию на ми&shy;га&shy;ю&shy;щие сиг&shy;на&shy;лы. По&shy;сле че&shy;го
          каж&shy;до&shy; му ис&shy;пы&shy;ту&shy;е&shy;мо&shy;му из&shy;ме&shy;ри&shy;ли моз&shy;го&shy;
-         вую ак&shy;тив&shy;ность, ско&shy;рость и точ&shy;ность ре&shy;ак&shy;ций.<br>
-    </q>
-</blockquote>
+         вую ак&shy;тив&shy;ность, ско&shy;рость и точ&shy;ность ре&shy;ак&shy;ций.</q><br>
 <hr>
 <p>Ре&shy;зуль&shy;тат ис&shy;сле&shy;до&shy;ва&shy;ния по&shy;ка&shy;зал, что обе груп&shy;пы доб&shy;
 ро&shy;воль&shy;цев в рав&shy;ной сте&shy;пе&shy;ни хо&shy;ро&shy;шо спра&shy;ви&shy;лись с за&shy;
@@ -204,16 +198,16 @@ MacBook.<br>
                         <p>
                         Сидит программист глубоко в отладке.<br>
                         Подходит сынишка:<br>
-                        - Папа, почему солнышко каждый день встает на востоке, а садится на западе?<br>
-                        - Ты это проверял?<br>
-                        - Проверял.<br>
-                        - Хорошо проверял?<br>
-                        - Хорошо.<br>
-                        - Работает?<br>
-                        - Работает.<br>
-                        - Каждый день работает?<br>
-                        - Да, каждый день.<br>
-                        - Тогда ради бога, сынок, ничего не трогай, ничего не меняй.<br>
+                        - <q>Папа, почему солнышко каждый день встает на востоке, а садится на западе?</q><br>
+                        - <q>Ты это проверял?</q><br>
+                        - <q>Проверял.</q><br>
+                        - <q>Хорошо проверял?</q><br>
+                        - <q>Хорошо.</q><br>
+                        - <q>Работает?</q><br>
+                        - <q>Работает.</q><br>
+                        - <q>Каждый день работает?</q><br>
+                        - <q>Да, каждый день.</q><br>
+                        - <q>Тогда ради бога, сынок, ничего не трогай, ничего не меняй.</q>
                         </p>
                     </div>
                 </aside>

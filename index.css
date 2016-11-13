@@ -1,4 +1,4 @@
-.common_bg
+.common-bg
 {
     background: url(img/newspaper_bg.jpg) center no-repeat;
     background-size: cover;
@@ -7,7 +7,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Lobster', Arial, sans-serif;
 }
 
 .main-block
@@ -15,12 +14,13 @@
     position: relative;
     z-index: 10;
     margin: 20px;
+    font-size: 20px;
 }
 
-.nav__btn
+.nav-btn
 {
     width: 50px;
-    height: 48px !important;
+    height: 48px ;
     position: fixed;
     top: 32px;
     right: 18px;
@@ -30,17 +30,19 @@
     background: #fff;
     padding: 4px 10px;
     opacity: .5;
+    cursor: pointer;
 }
 
-.nav__btn line
+.nav-btn__line
 {
-    stroke: #ccc;
-    stroke-width: 5;
+    width: 100%;
+    height: 12px;
+    border-top: 2px solid #ccc;
 }
 
-.nav_label
+.nav-btn__line:first-of-type
 {
-    z-index: 30;
+    margin-top: 10px;
 }
 
 header
@@ -198,7 +200,7 @@ header
 .page-content__article p,
 .page-content__article q
 {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 1.1;
     font-family: 'Open Sans Condensed';
 }
@@ -206,7 +208,7 @@ header
 .page-content__article h5
 {
     column-span: all;
-    font-size: 30px;
+    font-size: 1.5em;
     font-family: 'Play';
     line-height: 1.1;
     text-align: center;
@@ -222,7 +224,7 @@ header
 
 .page-content__article p span
 {
-    font-size: 22px;
+    font-size: 1.1em;
     font-weight: bold;
     display: block;
     text-indent: 10px;
@@ -252,7 +254,7 @@ header
     overflow: hidden;
 }
 
-.page-content__footer p
+.page-content__footer span
 {
     font-size: 16px;
     line-height: 1.3;
@@ -262,11 +264,6 @@ header
     float: right;
     clear: both;
 
-}
-
-.page-content__footer p span
-{
-    font-weight: bold;
 }
 
 .diffe-section
@@ -326,7 +323,7 @@ header
 
 .main-page-aside__joke p
 {
-    font-size: 16px;
+    font-size: .8em;
     font-family: 'Open Sans Condensed';
     margin: 20px 0;
     position: relative;
@@ -346,7 +343,7 @@ header
 .main-page-aside__joke p:before
 {
     content: '*****';
-    font-size: 20px;
+    font-size: 1em;
     font-family: 'Open Sans Condensed';
     position: absolute;
     top: -20px;
@@ -407,11 +404,12 @@ input
     display: block;
     opacity: .5;
     overflow: hidden;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    cursor: pointer;
+    -webkit-transition: opacity .2s ease-in-out, height .2s ease-in-out;
+    transition: opacity .2s ease-in-out, height .2s ease-in-out;
 }
 
-.nav_label
+.nav-label
 {
     width: 74px;
     height: 60px;
@@ -486,12 +484,12 @@ input
     top: 394px;
 }
 
-.background_black:checked ~ .common_bg
+.background_black:checked ~ .common-bg
 {
     background: #000;
 }
 
-.background_white:checked ~ .common_bg
+.background_white:checked ~ .common-bg
 {
     background: #fff;
 }
@@ -509,96 +507,50 @@ input
 
 }
 
-.background_black:checked ~ .main-block h1,
-.background_black:checked ~ .main-block h2,
-.background_black:checked ~ .main-block h3,
-.background_black:checked ~ .main-block h4,
-.background_black:checked ~ .main-block span,
-.background_black:checked ~ .main-block p,
-.background_black:checked ~ .main-block q,
-.background_black:checked ~ .main-block p span,
-.background_black:checked ~ .main-block div,
-.background_black:checked ~ .main-block header,
-.background_black:checked ~ .main-block footer
- {
+.background_black:checked ~ .main-block
+{
     color: #fff;
     border-color: #fff;
 }
 
-.press-start:checked ~ .main-block h1,
-.press-start:checked ~ .main-block h2,
-.press-start:checked ~ .main-block h3,
-.press-start:checked ~ .main-block h4,
-.press-start:checked ~ .main-block span,
-.press-start:checked ~ .main-block p,
-.press-start:checked ~ .main-block q,
-.press-start:checked ~ .main-block p span,
-.press-start:checked ~ .main-block div,
-.press-start:checked ~ .main-block header,
-.press-start:checked ~ .main-block footer
- {
-    font-family: 'Press Start 2P', 'Open Sans Condensed' !important;
-}
-
-.ruslan-display:checked ~ .main-block h1,
-.ruslan-display:checked ~ .main-block h2,
-.ruslan-display:checked ~ .main-block h3,
-.ruslan-display:checked ~ .main-block h4,
-.ruslan-display:checked ~ .main-block span,
-.ruslan-display:checked ~ .main-block p,
-.ruslan-display:checked ~ .main-block q,
-.ruslan-display:checked ~ .main-block p span,
-.ruslan-display:checked ~ .main-block div,
-.ruslan-display:checked ~ .main-block header,
-.ruslan-display:checked ~ .main-block footer
- {
-    font-family: 'Ruslan Display', 'Open Sans Condensed' !important;
-}
-
-.kelly-slab:checked ~ .main-block h1,
-.kelly-slab:checked ~ .main-block h2,
-.kelly-slab:checked ~ .main-block h3,
-.kelly-slab:checked ~ .main-block h4,
-.kelly-slab:checked ~ .main-block span,
-.kelly-slab:checked ~ .main-block p,
-.kelly-slab:checked ~ .main-block q,
-.kelly-slab:checked ~ .main-block p span,
-.kelly-slab:checked ~ .main-block div,
-.kelly-slab:checked ~ .main-block header,
-.kelly-slab:checked ~ .main-block footer
- {
-    font-family: 'Kelly Slab', 'Open Sans Condensed' !important;
-}
-
-.font-size-16:checked ~ .main-block h3,
-.font-size-16:checked ~ .main-block h4,
-.font-size-16:checked ~ .main-block span,
-.font-size-16:checked ~ .main-block p,
-.font-size-16:checked ~ .main-block q,
-.font-size-16:checked ~ .main-block p span,
-.font-size-16:checked ~ .main-block div
+input[name='intarface']:not([class='defoult']):checked ~ .main-block h2,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block h3,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block h4,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block p,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block p span,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block q,
+input[name='intarface']:not([class='defoult']):checked ~ .main-block div
 {
-    font-size: 16px !important;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-.font-size-18:checked ~ .main-block h3,
-.font-size-18:checked ~ .main-block h4,
-.font-size-18:checked ~ .main-block span,
-.font-size-18:checked ~ .main-block p,
-.font-size-18:checked ~ .main-block q,
-.font-size-18:checked ~ .main-block p span,
-.font-size-18:checked ~ .main-block div
-{
-    font-size: 18px !important;
+.press-start:checked ~ .main-block
+ {
+    font-family: 'Press Start 2P', 'Open Sans Condensed';
 }
 
-.font-size-20:checked ~ .main-block h3,
-.font-size-20:checked ~ .main-block h4,
-.font-size-20:checked ~ .main-block span,
-.font-size-20:checked ~ .main-block p,
-.font-size-20:checked ~ .main-block q,
-.font-size-20:checked ~ .main-block p span,
-.font-size-20:checked ~ .main-block div
+.ruslan-display:checked ~ .main-block
 {
-    font-size: 20px !important;
+    font-family: 'Ruslan Display', 'Open Sans Condensed';
+}
+
+.kelly-slab:checked ~ .main-block
+{
+    font-family: 'Kelly Slab', 'Open Sans Condensed';
+}
+
+.font-size-16:checked ~ .main-block
+{
+    font-size: 16px;
+}
+
+.font-size-18:checked ~ .main-block
+{
+    font-size: 18px;
+}
+
+.font-size-20:checked ~ .main-block
+{
+    font-size: 22px;
 }
