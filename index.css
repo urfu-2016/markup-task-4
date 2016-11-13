@@ -1,0 +1,199 @@
+@font-face
+{
+    font-family: 'HogwartsWizard';
+    src: url('fonts/HogwartsWizard.eot?') format('eot'), url('fonts/HogwartsWizard.woff') format('woff'), url('fonts/HogwartsWizard.ttf') format('truetype'), url('fonts/HogwartsWizard.svg#HogwartsWizard') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Parseltongue';
+    src: url('fonts/PARSELTO.eot?') format('eot'), url('fonts/PARSELTO.woff') format('woff'), url('fonts/PARSELTO.ttf') format('truetype'), url('fonts/PARSELTO.svg#Parseltongue') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Lazurski Bold Italic';
+    src: url('fonts/LAZURSK2.eot?') format('eot'), url('fonts/LAZURSK2.woff') format('woff'), url('fonts/LAZURSK2.ttf') format('truetype'), url('fonts/LAZURSK2.svg#Lazurski-BoldItalic') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Harrington';
+    src: local('Harrington'), url('fonts/HARNGTON.eot?') format('eot'), url('fonts/HARNGTON.woff') format('woff'), url('fonts/HARNGTON.ttf') format('truetype'), url('fonts/HARNGTON.svg#Harrington') format('svg');
+}
+
+@font-face
+{
+    font-family: 'Walk Around the Block';
+    src: url('fonts/Walk-Around-the-Block.eot?') format('eot'), url('fonts/Walk-Around-the-Block.woff') format('woff'), url('fonts/Walk-Around-the-Block.ttf') format('truetype'), url('fonts/Walk-Around-the-Block.svg#WalkAroundtheBlock') format('svg');
+}
+
+@font-face
+{
+    font-family: 'CinzelDecorative-Regular';
+    src: url('fonts/CinzelDecorative-Regular.eot?') format('eot'), url('fonts/CinzelDecorative-Regular.woff') format('woff'), url('fonts/CinzelDecorative-Regular.ttf') format('truetype'), url('fonts/CinzelDecorative-Regular.svg#CinzelDecorative-Regular') format('svg');
+}
+
+@font-face 
+{
+    font-family: 'Parisian  Normal';
+    src: url('fonts/parisr.eot?') format('eot'), url('fonts/parisr.woff') format('woff'), url('fonts/parisr.ttf') format('truetype'), url('fonts/parisr.svg#ParisianNormal') format('svg');
+}
+
+main
+{
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    -webkit-column-rule: 1px solid;
+    -moz-column-rule: 1px solid;
+    column-rule: 1px solid;
+}
+
+article
+{
+    -webkit-columns: 150px;
+    -moz-columns: 150px;
+    columns: 150px;
+}
+
+body
+{
+    background-color: #fff;
+    background-image: url('paper2.jpg');
+    min-width: 700px;
+}
+
+.column1,
+.column2,
+.column3
+{
+    break-inside: avoid-column;
+    break-after: column;
+}
+
+h1,
+h3,
+h4
+{
+    margin: 10px;
+}
+
+h4
+{
+    text-align: left;
+    font: bold 1em 'Lazurski Bold Italic', arial;
+}
+
+h1
+{
+    font: bold 50px 'Parseltongue', arial;
+    text-shadow: 4px 4px 4px #aaa;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    font: bold 28px 'HogwartsWizard', 'Times New Roman';
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+.firstParagraph
+{
+    text-indent: 0;
+}
+
+p.firstParagraph::first-letter
+{
+    font-size: 30px;
+}
+
+p
+{
+    text-indent: 30px;
+    text-align: justify;
+    font-family: 'Harrington', sans-serif;
+}
+
+p.author,
+address
+{
+    font: italic 1em 'Times New Roman';
+    text-align: right;
+}
+
+hr
+{
+    background-color: #555;
+    border: 0 none;
+    height: 1px;
+}
+
+blockquote
+{
+    font: italic 14px Georgia, serif;
+    text-align: justify;
+    margin: 15px;
+}
+
+.factfile
+{
+    font: 1em 'Parisian  Normal', cursive;
+    break-inside: avoid-column;
+    text-indent: 0;
+    text-align: center;
+}
+
+.factfile div
+{
+    font-weight: bold;
+}
+
+figure
+{
+    margin: 0;
+    break-inside: avoid-column;
+    text-align: center;
+    font-family: 'CinzelDecorative-Regular', arial;
+}
+
+.date
+{
+    font: 2em 'Walk Around the Block', arial;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+}
+
+img
+{
+    width: 100%;
+}
+
+div.content
+{
+    display: table;
+    width: 100%;
+    font: 40px 'Walk Around the Block', arial;
+    color: #000;
+    text-shadow: 4px 4px 4px #aaa;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
+
+div.content div
+{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.page
+{
+    font-size: 2em;
+    text-align: center;
+}
