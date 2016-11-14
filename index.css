@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: myFont;
-    src: local('MyFont'), url(IndieFlower.woff);
+    src: local('IndieFlower'), url(IndieFlower.woff);
 }
 
 header
@@ -97,7 +97,7 @@ main .third p
 main p::first-letter
 {
     color: #000;
-    font: normal 40px Times New Roman serif;
+    font: normal 40px 'Times New Roman', serif;
 }
 
 blockquote
@@ -107,7 +107,7 @@ blockquote
 
 .weather
 {
-    font: normal 20px Verdana serif;
+    font: normal 20px Verdana, sans-serif;
     margin: 5px;
     padding: 5px;
     border: 2px;
