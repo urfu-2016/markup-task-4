@@ -1,0 +1,143 @@
+@font-face
+{
+    font-family: myFont;
+    src: local('IndieFlower'), url(IndieFlower.woff);
+}
+
+header
+{
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    font-family: 'Times New Roman', serif;
+    border-bottom: solid;
+}
+
+body
+{
+    background: url(http://bgfons.com/upload/paper_texture331.jpg);
+    margin: 0;
+}
+
+.image
+{
+    margin: 0 10px auto;
+    text-align: center;
+}
+
+main
+{
+    margin: 8px;
+    -moz-column-count: 4;
+    column-count: 4;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.fednews
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.usa
+{
+    font-style: italic;
+    margin: 10px;
+}
+
+main .second h2
+{
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+main .third h2
+{
+    font-size: 1.5em;
+    font-family: Cambria, serif;
+    font-style: normal;
+    text-decoration: overline;
+    letter-spacing: -1px;
+    word-spacing: -1.5px;
+}
+
+main .third p
+{
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+.advertisment
+{
+    border-bottom: solid;
+    border-top: solid;
+    letter-spacing: -1px;
+    font-style: italic;
+    font-size: 1.5em;
+    word-spacing: -1.5px;
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+.advertisment span
+{
+    font-size: .8em;
+    font-style: normal;
+    text-transform: lowercase;
+    font-family: myFont, cursive;
+    text-decoration: overline;
+}
+
+main p::first-letter
+{
+    color: #000;
+    font: normal 40px 'Times New Roman', serif;
+}
+
+blockquote
+{
+    font-style: italic;
+}
+
+.weather
+{
+    font: normal 20px Verdana, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    border: 2px;
+    border-style: solid;
+}
+
+.change-color:checked ~ .main-content
+{
+    background: #000;
+    color: #fff;
+}
+
+.change-color:checked ~ .main-content p::first-letter
+{
+    color: #fff;
+}
+
+.zoom:checked ~ .main-content
+{
+    font-size: 1.5em;
+}
+
+.change-style:checked ~ .main-content
+{
+    font-family: myFont, cursive;
+}
+
+label
+{
+    font-size: 1.2em;
+    width: 100%;
+}
+
