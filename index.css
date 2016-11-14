@@ -1,19 +1,13 @@
 @font-face
 {
     font-family: DeWarped;
-    src: url(fonts/AnUnfortunateEventDeWarped.ttf);
+    src: local('An Unfortunate Event DeWarped'), url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2'), url(fonts/AnUnfortunateEventDeWarped.eot) format('embedded-opentype');
 }
 
 @font-face
 {
     font-family: BurtonNightmare;
-    src: url(fonts/BurtonNightmare.ttf);
-}
-
-@font-face
-{
-    font-family: RingbearerMedium;
-    src: url(fonts/RingbearerMedium.ttf);
+    src: local('Burton\'s Nightmare'), url(fonts/BurtonNightmare.woff2) format('woff2'), url(fonts/BurtonNightmare.eot) format('embedded-opentype');
 }
 
 div.header-bloсk
@@ -49,7 +43,11 @@ header
 
 .right-side
 {
-    float: right;
+    position: absolute;
+    left: 1.5%;
+    width: 1ch;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 p.signature-header
@@ -75,7 +73,7 @@ div.content-news
 
 }
 
-div.short-news
+aside
 {
     border-left: 7px solid black;
     padding-left: 10px;
@@ -94,8 +92,8 @@ p.short-news
     height: 100%;
 }
 
-.first,
-.second
+.first-short-news,
+.second-short-news
 {
     max-width: 100%;
     margin-bottom: 0%;
@@ -154,7 +152,7 @@ mark
 
 }
 
-p.first-letter:first-letter
+p.article-text:first-letter
 {
     font-weight: 800;
     word-break: normal;
@@ -165,18 +163,18 @@ p.first-letter:first-letter
     float: left;
 }
 
-.change-color:checked ~ div.main
+.change-color:checked ~ main
 {
     background-color: black;
     color: white;
 }
 
-.change-font:checked ~ div.main
+.change-font:checked ~ main
 {
     font-family: Arial;
 }
 
-.change-size:checked ~ div.main
+.change-size:checked ~ main
 {
     font-size: 1.5em;
 }
