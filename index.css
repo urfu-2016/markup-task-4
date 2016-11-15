@@ -1,0 +1,99 @@
+@font-face
+{
+    font-family: 'decor';
+    src: url('fonts/decor.eot');
+    src: local('☺'), url('fonts/decor.woff') format('woff'), url('fonts/decor.ttf')
+        format('truetype'), url('fonts/decor.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p
+{
+    text-indent: 20px;
+}
+
+h1
+{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: normal;
+}
+
+h2
+{
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+header
+{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'decor', 'Times New Roman';
+}
+
+main
+{
+    -moz-column-count: 4; /* Firefox */
+    -moz-column-gap: 20px;
+    -moz-column-rule: 2px solid black;
+    -webkit-column-count: 4; /* Safari, Google */
+    -webkit-column-gap: 20px;
+    -webkit-column-rule: 2px solid black;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid black;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+main:first-letter
+{
+    font-size: 40px;
+    font-family: 'decor', 'Times New Roman';
+}
+
+footer
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+.img-analyzing
+{
+    width: 150px;
+    height: 200px;
+    float: right;
+    padding-left: 5px;
+}
+
+.img-knower
+{
+    width: 150px;
+    height: 210px;
+    float: right;
+    padding-left: 5px;
+}
+
+.img-thinking
+{
+    width: 200px;
+    height: 150px;
+    display: block; /* by center */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yandex
+{
+    display: block;
+}
+
+.yandex:first-letter
+{
+    color: red;
+}
