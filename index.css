@@ -20,7 +20,7 @@
 
 h1
  {
-    font: bold 124px Tribune;
+    font: bold 124px Tribune, cursive;
     text-align: center;
     margin: 0;
 }
@@ -68,7 +68,7 @@ h1
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
-    font: .8em DSmoster;
+    font: .8em DSmoster, fantasy;
     text-indent: 25px;
     text-align: justify;
     hyphens: manual;
@@ -163,12 +163,12 @@ h1
 
 .blog h2
 {
-    font: .9em RedOctober;
+    font: .9em RedOctober, fantasy;
 }
 
 .blog p
 {
-    font-family: 'Marck Script';
+    font-family: 'Marck Script', cursive;
 }
 
 .label
