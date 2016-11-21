@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+@font-face
+{
+    font-family: DSMoster;
+    src: local('DSMoster'), url('DSMoster.woff'), url('DSMoster.ttf');
+}
+
+@font-face
+{
+    font-family: Tribune;
+    src: local('Tribune'), url(Tribune.woff), url(Tribune.ttf);
+}
+
+@font-face
+{
+    font-family: RedOctober;
+    src: local('Red October'), url(Red_October.woff), url(Red_October.ttf);
+}
+
+h1
+ {
+    font: bold 124px Tribune, cursive;
+    text-align: center;
+    margin: 0;
+}
+
+.info
+{
+    position: relative;
+    min-height: 50px;
+}
+
+.cost
+{
+    text-align: left;
+    letter-spacing: -1.5px;
+    position: absolute;
+    display: inline-block;
+}
+
+.date
+{
+    max-width: 49%;
+    text-align: right;
+    letter-spacing: -1.5px;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+.articles
+{
+    position: relative;
+}
+
+.news
+{
+    position: absolute;
+    left: 0;
+    width: 77%;
+    display: inline-block;
+}
+
+.main-theme
+{
+    display: inline-block;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    font: .8em DSmoster, fantasy;
+    text-indent: 25px;
+    text-align: justify;
+    hyphens: manual;
+}
+
+.main-theme h4,
+.main-theme hr,
+:-moz-any-link
+{
+    display: none;
+}
+
+.main-theme h4
+{
+    -webkit-column-span: all;
+    column-span: all;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.main-theme hr
+{
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    height: 3px;
+    background-color: black;
+}
+
+.moz-span
+{
+    display: none;
+}
+
+.moz-span,
+:-moz-any-link
+{
+    display: block;
+}
+
+.main-theme header,
+.other-news header
+{
+    margin: 3px;
+    padding: 3px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid;
+
+}
+
+.other-news
+{
+    text-indent: 25px;
+    text-align: justify;
+    hyphens: manual;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    border: 2px solid;
+    font-family: sans-serif;
+}
+
+.other-news p
+{
+    margin: 3px;
+}
+
+.main-theme p:first-of-type,
+.other-news p:first-of-type
+{
+    font-weight: bold;
+}
+
+.main-theme p:first-of-type:first-letter,
+.other-news p:first-of-type:first-letter
+{
+    font-size: 2em;
+}
+
+.blog
+{
+    width: 20%;
+    display: inline-block;
+    border: 5px dashed;
+    padding: 0 0 0 8px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+}
+
+.blog h2
+{
+    font: .9em RedOctober, fantasy;
+}
+
+.blog p
+{
+    font-family: 'Marck Script', cursive;
+}
+
+.label
+{
+    margin: 0;
+    font: oblique 38px fantasy;
+    text-align: center;
+    height: 50px;
+    border: double;
+    border-width: 5px 0;
+    min-width: 100%;
+}
