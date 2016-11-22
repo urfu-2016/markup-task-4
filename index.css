@@ -1,0 +1,204 @@
+@font-face
+{
+    font-family: 'Abhaya Libre';
+    src: url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.ttf'), url('fonts/Abhaya_Libre/AbhayaLibre-ExtraBold.woff');
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: 'Indie Flower';
+    src: url('fonts/Indie_Flower/IndieFlower.ttf'), url('fonts/Indie_Flower/IndieFlower.woff');
+}
+
+@font-face
+{
+    font-family: 'Cormorant Garamond Italic';
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf'), url('fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.woff');
+}
+
+@font-face
+{
+    font-family: 'Cormorant Garamond';
+    src: url('fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf'), url('fonts/Cormorant_Garamond/CormorantGaramond-Light.woff');
+}
+
+@font-face
+{
+    font-family: 'Cookie Regular';
+    src: url('fonts/Cookie/Cookie-Regular.ttf'), url('fonts/Cookie/Cookie-Regular.woff');
+}
+
+@font-face
+{
+    font-family: 'Rock Salt';
+    src: url('fonts/Rock_Salt/RockSalt.ttf'), url('fonts/Rock_Salt/RockSalt.woff');
+}
+
+@font-face
+{
+    font-family: 'Playball';
+    src: url('fonts/Playball/Playball-Regular.ttf'), url('fonts/Playball/Playball-Regular.woff');
+}
+
+@font-face
+{
+    font-family: 'Fredoka One';
+    src: url('fonts/Fredoka_One/FredokaOne-Regular.ttf'), url('fonts/Fredoka_One/FredokaOne-Regular.woff');
+}
+
+@font-face
+{
+    font-family: 'Trirong';
+    src: url('fonts/Trirong/Trirong-Black.ttf'), url('fonts/Trirong/Trirong-Black.woff');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('fonts/Lobster/Lobster-Regular.ttf'), url('fonts/Lobster/Lobster-Regular.woff');
+}
+
+input[value='large'].radio:checked ~ main
+{
+    font-size: 1.3em;
+}
+
+input[value='small'].radio:checked ~ main
+{
+    font-size: .7em;
+}
+
+input.font-family-checkbox:checked ~ main
+{
+    font-family: 'Trirong', serif;
+}
+
+.color-checkbox:checked ~ main
+{
+    color: #fff;
+    background: #000;
+}
+
+header
+{
+    font: 5rem 'Abhaya Libre', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header img
+{
+    height: 5rem;
+}
+
+main
+{
+    -moz-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+    -moz-column-rule: 3px groove #2f4f4f;
+    column-rule: 3px groove #2f4f4f;
+    border: 3px groove #2f4f4f;
+    padding: 8px;
+}
+
+h1
+{
+    font-family: 'Indie Flower', fantasy;
+    color: #900;
+    word-spacing: 1rem;
+    font-size: 2rem;
+    line-height: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    column-span: all;
+}
+
+p
+{
+    text-indent: .02em;
+}
+
+p::first-letter
+{
+    font-family: 'Cookie Regular', fantasy;
+    font-size: 4em;
+    color: #dc143c;
+}
+
+.img-full-line
+{
+    column-span: all;
+    border: 3px groove #2f4f4f;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.img-full-line img
+{
+    width: 50%;
+    float: left;
+    margin: 0 20px;
+}
+
+.img-full-line .caption-full-line
+{
+    display: inline-block;
+    width: 15rem;
+    font: 1rem 'Cormorant Garamond', serif;
+}
+
+.img-full-line .caption-full-line blockquote
+{
+    font-family: 'Cormorant Garamond Italic', fantasy;
+    margin: 0;
+    padding: 0;
+}
+
+.img-column
+{
+    padding: 2px;
+    margin: 0;
+}
+
+.img-column img
+{
+    width: 100%;
+    display: block;
+}
+
+.caption-column
+{
+    font: .6rem 'Rock Salt', fantasy;
+}
+
+blockquote
+{
+    font: 1.2em 'Playball', fantasy;
+    text-indent: .04em;
+    margin: inherit;
+    padding: inherit;
+}
+
+em
+{
+    font-family: 'Fredoka One', cursive;
+}
+
+.checkbox_caption,
+.radio_caption
+{
+    font-family: 'Lobster', cursive;
+}
+
+.vertical-block
+{
+    text-indent: 0;
+    width: .7em;
+    text-align: center;
+    word-wrap: break-word;
+    margin-left: 35%;
+    font: 2em inherit;
+}
