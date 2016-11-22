@@ -1,0 +1,89 @@
+@font-face
+{
+    font-family: 'Bungee Shade';
+    src: local('Bungee Shade');
+    src: url('fonts/Bungee_Shade/BungeeShade-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Kelly Slab';
+    src: local('Kelly Slab');
+    src: url('fonts/Kelly_Slab/KellySlab-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Lobster';
+    src: local('Lobster');
+    src: url('fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Open Sans Condensed';
+    src: local('Open Sans Condensed');
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondBold.ttf') format('truetype');
+    src: url('fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf') format('truetype'), url('fonts/Open_Sans_Condensed/OpenSans-CondLightItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Pacifico';
+    src: local('Pacifico');
+    src: url('fonts/Pacifico/Pacifico.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Play';
+    src: local('Play');
+    src: url('fonts/Play/Play-Bold.ttf') format('truetype'), url('fonts/Play/Play-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Poiret One';
+    src: local('Poiret One');
+    src: url('fonts/Poiret_One/PoiretOne-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Press Start 2P';
+    src: local('Press Start 2P');
+    src: url('fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Ruslan Display';
+    src: local('Ruslan Display');
+    src: url('fonts/Ruslan_Display/RuslanDisplay.ttf') format('truetype');
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body
+{
+    width: 100%;
+    min-width: 1280px;
+    color: #252525;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
