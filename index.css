@@ -1,0 +1,208 @@
+@font-face
+{
+    font-family: Italy B;
+    src: local(italyb), url(fonts/ItalyB.eot), url(fonts/ItalyB.ttf);
+}
+
+@font-face
+{
+    font-family: Marianna;
+    src: local(marianna), url(fonts/Marianna.ttf), url(fonts/Marianna.woff);
+}
+
+@font-face
+{
+    font-family: Roland-Decor;
+    src: local(roland-decor), url(fonts/Roland-Decor.ttf), url(fonts/Roland-Decor.woff);
+}
+
+@font-face
+{
+    font-family: Parisian;
+    src: local(parisian), url(fonts/Parisian.ttf), url(fonts/Parisian.woff);
+}
+
+@font-face
+{
+    font-family: Matreshka;
+    src: local(matreshka), url(fonts/Matreshka.ttf), url(fonts/Matreshka.ttf);
+}
+
+aside
+{
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+}
+
+body
+{
+    background: url(2.png) repeat-y, url(2.png) 100% 0 repeat-y;
+    background-size: 10px;
+    margin: 10px 40px;
+}
+
+.date
+{
+    text-align: center;
+}
+
+.content
+{
+    margin: 1px;
+    font-family: 'Italy B';
+    border-bottom: 1px solid #000;
+    text-align: left;
+}
+
+.cat
+{
+    position: relative;
+    left: 850px;
+}
+
+p
+{
+    margin: 10px;
+    padding: 0;
+    text-indent: 8px;
+    text-align: justify;
+    font-family: Parisian;
+}
+
+p:first-letter
+{
+    float: left;
+    color: #f36;
+    font: 2em, Georgia, 'Times New Roman', serif;
+}
+
+.first-article
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.first
+{
+    letter-spacing: 3px;
+    font-family: Marianna;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-style: double;
+}
+
+figure
+{
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #000;
+    float: left;
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+figcaption
+{
+    font-style: italic;
+    text-align: center;
+}
+
+.last-article
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.title
+{
+    color: #343434;
+
+    font: 70px 'Ultra', sans-serif;
+
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;
+    text-align: right;
+
+    max-width: 700px;
+}
+
+.head
+{
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+h2 
+{
+    text-align: center;
+    font-family: 'Roland-Decor';
+}
+
+img
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+.info
+{
+    padding: 5px 0;
+    margin-top: 5px;
+    font-family: Italy B;
+}
+
+.round
+{
+    width: 500px;
+    height: 365px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 7px #666;
+}
+
+.photoby
+{
+    text-align: center;
+}
+
+.number
+{
+    text-align: left;
+
+}
+
+.header
+{
+    font-family: Matreshka;
+    border: 1px solid #808080;
+    margin: 10px;
+    text-align: center;
+}
+
+.tophead
+{
+    border-bottom: 1 px solid #000;
+}
+
+.weather
+{
+    margin: 3px;
+    font-family: 'Italy B';
+    float: left;
+    display: inline-block;
+    max-width: 700px;
+    border-bottom: 1px solid #000;
+
+}
+
+.vertical
+{
+    width: 1em;
+    word-wrap: break-word;
+    letter-spacing: 100px;
+    overflow: hidden;
+}
