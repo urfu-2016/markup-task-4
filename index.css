@@ -60,7 +60,7 @@ header
     margin: 20px auto;
 }
 
-.header__name h1
+.header__name
 {
     font-size: 86px;
     color: #252525;
@@ -70,7 +70,7 @@ header
     transform: rotate(-15deg);
 }
 
-.header__name h1 span
+.header__name span
 {
     font-size: 54px;
     color: #252525;
@@ -114,9 +114,11 @@ header
     right: 50px;
     word-wrap: break-word;
     width: 10px;
+    line-height: 1;
+    margin: 0;
 }
 
-.header__info p
+.header__info time
 {
     font-size: 30px;
     font-family: 'Pacifico';
