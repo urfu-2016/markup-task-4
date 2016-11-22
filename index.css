@@ -40,10 +40,9 @@ body
     background: url(2.png) repeat-y, url(2.png) 100% 0 repeat-y;
     background-size: 10px;
     margin: 10px 40px;
-    overflow-x: hidden;
 }
 
-.centered
+.date
 {
     text-align: center;
 }
@@ -73,11 +72,9 @@ p
 
 p:first-letter
 {
-    display: block;
     float: left;
     color: #f36;
-    font-size: 2em;
-    font-family: Georgia, 'Times New Roman', serif;
+    font: 2em, Georgia, 'Times New Roman', serif;
 }
 
 .first-article
@@ -93,7 +90,7 @@ p:first-letter
     font-family: Marianna;
     font-weight: bold;
     border: 1px solid #000;
-    border-style: 2px, double;
+    border-style: double;
 }
 
 figure
@@ -109,7 +106,7 @@ figure
 figcaption
 {
     font-style: italic;
-    text-align: right;
+    text-align: center;
 }
 
 .last-article
@@ -124,8 +121,7 @@ figcaption
     color: #343434;
 
     font-weight: normal;
-    font-family: 'Ultra', sans-serif;
-    font-size: 70px;
+    font: 70px 'Ultra', sans-serif;
 
     text-transform: uppercase;
     text-shadow: 0 2px white, 0 3px #777;
@@ -169,22 +165,23 @@ img
     box-shadow: 0 0 7px #666;
 }
 
-.left
+.photoby
 {
     text-align: center;
 }
 
-.right
+.number
 {
     text-align: left;
 
 }
 
-.state
+.header
 {
     font-family: Matreshka;
     border: 1px solid #808080;
     margin: 10px;
+    text-align: center;
 }
 
 .tophead
