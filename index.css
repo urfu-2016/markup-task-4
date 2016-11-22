@@ -3,47 +3,17 @@
 .title
 {
     font-family: 'Marck Script', cursive;
-    font-size: 75px;
-    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 15%;
 }
 
-h2
+.when
 {
+    text-align: center;
     font-size: 10px;
     margin: 5px;
     font-family: 'STIXGeneral';
-}
-
-table
-{
-    text-align: center;
-    border-spacing: 20px;
-    font-family: 'Noteworthy'; /* откуда этот шрифт*/
-    vertical-align: top;
-    table-layout: fixed; /* Фиксированная ширина ячеек */
-    width: 100%;
-}
-
-td
-{
-    text-align: justify;
-    font-size: 14px;
-    vertical-align: top;
-}
-
-tr
-{
-    text-align: start;
-}
-
-th
-{
-    text-align: center;
-}
-
-thead
-{
-    margin: 5px;
 }
 
 .quest
@@ -59,24 +29,98 @@ p:first-letter
 
 .date
 {
-    border: 3px;
-    border-color: black;
-    border-style: double none;
+    border: 3px double black;
+    border-left: none;
+    border-right: none;
     padding: 5px;
+    margin: 10px;
 }
 
 .head
 {
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    padding: 5px;
-    height: 100px;
+    border: 1px solid black;
+    width: 20%;
+    padding: 20px;
     vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .picture
 {
     width: 100%;
 
+}
+
+footer
+{
+    text-align: right;
+    background: #eee;
+    height: 30px;
+    border-top: double;
+    margin-top: 2px;
+}
+
+h1
+{
+    display: inline-block;
+    font-size: 5vw;
+}
+
+.titleimg
+{
+    width: 100%;
+}
+
+header
+{
+    text-align: center;
+}
+
+.article
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    text-align: justify;
+    column-rule: 1px solid;
+    padding: 10px;
+}
+
+.paragraph
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    text-align: justify;
+    display: inline-block;
+    padding: 10px;
+    column-rule: 1px solid;
+}
+
+p
+{
+    text-indent: 5%;
+}
+
+.all
+{
+    column-span: all;
+    text-align: center;
+    font-size: 40px;
+    margin: 5%;
+}
+
+.vertical
+{
+    font-size: 18px;
+    width: 15px;
+    display: inline-block;
+}
+
+.test
+{
+    width: 75%;
+    vertical-align: top;
+    display: inline-block;
 }
