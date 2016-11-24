@@ -6,44 +6,54 @@ body
 @font-face
 {
     font-family: Goudy;
-    src: url('fonts/goudy.ttf') format('truetype'), url('fonts/goudy.woff') format('woff');
+    src: local('Goudy'), url('fonts/goudy.eot') format('embedded-opentype'), url('fonts/goudy.woff') format('woff'), url('fonts/goudy.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: Grotesk;
-    src: url('fonts/grotesk.ttf') format('truetype'), url('fonts/grotesk.woff') format('woff');
+    src: local('Grotesk'), url('fonts/grotesk.eot') format('embedded-opentype'), url('fonts/grotesk.woff') format('woff'), url('fonts/grotesk.ttf') format('truetype');
 }
 
 @font-face
 {
     font-family: President;
-    src: url('fonts/president.ttf') format('truetype'), url('fonts/president.woff') format('woff');
+    src: local('President'), url('fonts/president.eot') format('embedded-opentype'), url('fonts/president.woff') format('woff'), url('fonts/president.ttf') format('truetype');
+}
+
+.news
+{
+    text-align: center;
+    font: oblique 2em Grotesk, serif;
+    margin: 10px;
 }
 
 .title
 {
-    font: normal 55px Goudy;
+    width: 85%;
+    font: normal 55px Goudy, 'Times New Roman';
     letter-spacing: -2px;
+    text-align: center;
     font-weight: 500;
+    display: inline-block;
+    margin: 0;
+}
+
+.quote
+{
+    font: italic 16px President, 'Times New Roman';
+    font-weight: 900;
 }
 
 .datetime
 {
-    float: left;
-    font: normal 20px Cambria;
+    width: 12%;
+    display: inline-block;
+    font-size: 20px;
     font-weight: 900;
 }
 
-blockquote
-{
-    font-family: President, serif;
-    font-style: italic;
-    font-weight: 900;
-    font-size: 16px;
-}
-
-article
+.content
 {
     margin-top: 20px;
     border-top: 2px solid;
@@ -53,17 +63,18 @@ article
     column-rule: 2px solid #000;
 }
 
-p:first-letter
+.paragraph:first-letter
 {
     font-size: 2em;
 }
 
-.paragraph p
+.paragraph
 {
     font-size: 18px;
+    text-align: justify;
 }
 
-.block1-paragraph p
+.first-style
 {
     -moz-column-count: 2;
     column-count: 2;
@@ -71,7 +82,7 @@ p:first-letter
     column-rule: 1px solid #000;
 }
 
-.block2-paragraph p
+.second-style
 {
     font-weight: 700;
     -moz-column-count: 2;
@@ -80,7 +91,7 @@ p:first-letter
     column-rule: 1px solid #000;
 }
 
-.block3-paragraph p
+.third-style
 {
     font-weight: 600;
     -moz-column-count: 2;
@@ -89,23 +100,14 @@ p:first-letter
     column-rule: 1px solid #000;
 }
 
-.paragraph h1
-{
-    text-align: center;
-    font-family: Grotesk, serif;
-    font-style: oblique;
-    font-size: 2em;
-    margin: 10px;
-}
-
-.paragraph h6
+.comment
 {
     margin-top: 3px;
-    text-align: center;
 }
 
-.paragraph img
+.image
 {
     margin-top: 3px;
     width: 100%;
+    height: auto;
 }
