@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+@font-face
+{
+    font-family: 'Zanerian';
+    src: local('Zanerian'), url(zanerian_two.ttf);
+}
+
+@font-face
+{
+    font-family: 'Keetanokatakana';
+    src: local('Keetanokatakana'), url(keetanokatakana.ttf);
+}
+
+body
+{
+    background-color: #ffe4c4;
+}
+
+main
+{
+    -moz-column-count: 4;
+    -moz-column-rule: 2px solid #cd853f;
+    -moz-column-gap: 2em;
+    column-width: 280px;
+    column-rule: 2px solid #cd853f;
+    column-gap: 2em;
+    min-width: 270px;
+}
+
+img
+{
+    width: 250px;
+}
+
+header
+{
+    font: bold 35px 'Zanerian', arial;
+    letter-spacing: 50px;
+    text-align: center;
+    word-spacing: 40px;
+    -moz-column-span: all;
+    column-span: all;
+    color: #cd853f;
+}
+
+.date
+{
+    font: bold 20px 'Keetanokatakana', arial;
+    letter-spacing: 20px;
+    text-align: center;
+    -moz-column-span: all;
+    column-span: all;
+    border: 1px solid #cd853f;
+    color: #cd853f;
+}
+
+.first-type-title
+{
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+}
+
+.second-type-title
+{
+    font-family: 'Roboto Slab', serif;
+    line-height: 2px;
+}
+
+article::first-letter
+{
+    font: 25px 'Keetanokatakana', arial;
+}
+
+article
+{
+    -moz-column-count: 1;
+    column-count: 1;
+    color: #8b4513;
+    text-align: justify;
+    min-width: 270px;
+}
+
+figcaption
+{
+    color: #8b4513;
+}
+
+.first-text
+{
+    font: 19px 'Roboto Condensed', sans-serif;
+    line-height: 30px;
+    min-height: 920px;
+}
+
+.second-text
+{
+    font: 16px 'Merriweather', serif;
+    line-height: 23px;
+    letter-spacing: -.5px;
+    max-height: 1100px;
+    min-height: 1000px;
+}
+
+.third-text
+{
+    font: 18px 'PT Sans Narrow', sans-serif;
+    line-height: 15px;
+}
+
+.fourth-text
+{
+    font: 18px 'Play', sans-serif;
+    line-height: 16px;
+}
+
+.fifth-text
+{
+    font: 16px 'Comfortaa', sans-serif;
+    line-height: 14px;
+}
+
+h3
+{
+    -moz-column-span: all;
+    column-span: all;
+    text-align: center;
+    color: #daa520;
+    font-size: 20px;
+}
+
+h3::first-letter
+{
+    font: 30px 'Zanerian', arial;
+}
