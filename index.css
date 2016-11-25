@@ -26,14 +26,12 @@ body
 main
 {
     -moz-column-count: 4;
-    -moz-column-width: 250px;
     -moz-column-rule: 2px solid #cd853f;
     -moz-column-gap: 2em;
-    column-count: 4;
-    column-width: 250px;
+    column-width: 280px;
     column-rule: 2px solid #cd853f;
     column-gap: 2em;
-    max-height: 1000px;
+    min-width: 270px;
 }
 
 img
@@ -63,19 +61,16 @@ header
     color: #cd853f;
 }
 
-.title1,
-.title3,
-.title5
+.first-type-title
 {
     font-family: 'Roboto', sans-serif;
     line-height: 35px;
 }
 
-.title2,
-.title4
+.second-type-title
 {
     font-family: 'Roboto Slab', serif;
-    line-height: 35px;
+    line-height: 2px;
 }
 
 article::first-letter
@@ -89,6 +84,7 @@ article
     column-count: 1;
     color: #8b4513;
     text-align: justify;
+    min-width: 270px;
 }
 
 figcaption
@@ -100,7 +96,7 @@ figcaption
 {
     font: 19px 'Roboto Condensed', sans-serif;
     line-height: 30px;
-    height: 1000px;
+    min-height: 920px;
 }
 
 .second-text
@@ -116,7 +112,6 @@ figcaption
 {
     font: 18px 'PT Sans Narrow', sans-serif;
     line-height: 15px;
-    height: 50%;
 }
 
 .fourth-text
