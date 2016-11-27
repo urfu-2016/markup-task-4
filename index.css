@@ -1,12 +1,13 @@
 @font-face
 {
     font-family: 'LetoOneDefect';
-    src: url('fonts/LetoOneDefect/LetoOneDefect.ttf'), url('fonts/LetoOneDefect/LetoOneDefect.woff');
+    src: local('LetoOneDefect'), url('fonts/LetoOneDefect/LetoOneDefect.ttf'), url('fonts/LetoOneDefect/LetoOneDefect.woff');
 }
+
 @font-face
 {
     font-family: 'RodchenkoInlineC';
-    src: url('fonts/RodchenkoInlineC/RodchenkoInlineC.ttf'), url('fonts/RodchenkoInlineC/RodchenkoInlineC.woff');
+    src: local('RodchenkoInlineC'), url('fonts/RodchenkoInlineC/RodchenkoInlineC.ttf'), url('fonts/RodchenkoInlineC/RodchenkoInlineC.woff');
 }
 
 html
@@ -14,39 +15,60 @@ html
     font-family: 'LetoOneDefect', 'Arial Narrow', 'sans-serif';
 }
 
+.logo .nameNewspaper
+{
+    z-index: 1;
+    font: 120px 'RodchenkoInlineC';
+    display: inline-block;
+    height: 150px;
+    letter-spacing: 15px;
+}
+
 .note
 {
     display: block;
-    border: 2px solid black;
+    border: 2px solid #000;
     width: 1200px;
     margin: auto;
     vertical-align: top;
+}
+
+.note:before
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
 }
 
 .titleNote
 {
     margin: auto;
     position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    width: 150px;
+    display: inline-block;
+    width: 11%;
+    padding: 60px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    vertical-align: top;
     text-align: center;
     font-weight: bold;
 }
 
 .titleNote .month
 {
-    letter-spacing: 7px;
+    display: block;
 }
 
 .bodyNote
 {
-    display: table-cell;
-    width: 1000px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 88%;
     padding: 10px 0;
-    column-count: 6;
     -moz-column-count: 6;
     -webkit-column-count: 6;
+    column-count: 6;
     font-size: 11px;
 }
 
@@ -62,8 +84,9 @@ html
     vertical-align: top;
     display: inline-block;
     position: relative;
-    width: 580px;
-    height: 205px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 200px;
     margin: 0 5px 0 0;
 }
 
@@ -74,15 +97,6 @@ html
     position: relative;
     top: 20px;
     z-index: 2;
-}
-
-.logo .nameNewspaper
-{
-    z-index: 1;
-    font: 120px 'RodchenkoInlineC';
-    display: inline-block;
-    height: 150px;
-    letter-spacing: 15px;
 }
 
 .logo .motto
@@ -108,10 +122,11 @@ html
 .congratulations
 {
     padding: 10px;
+    box-sizing: border-box;
     display: inline-block;
-    width: 580px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    width: 49%;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 .congratulations .congratulationsHeader
@@ -123,9 +138,9 @@ html
 .congratulations .congratulationsBody
 {
     display: inline-block;
-    column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
+    column-count: 2;
     font-size: 10px;
     overflow: hidden;
 }
@@ -139,7 +154,7 @@ html
 .containerTabs
 {
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid #000;
 }
 
 .tabs .tab
@@ -155,14 +170,10 @@ html
 
 .bodyNewspaper
 {
-    border: 1px solid #000;
-}
-
-.leftColumnNews
-{
-    vertical-align: top;
     display: inline-block;
-    width: 900px;
+    font-size: 0;
+    border: 1px solid #000;
+    position: relative;
 }
 
 .firstNews
@@ -188,16 +199,34 @@ html
     padding: 10px 25px;
     display: inline-block;
     font-size: 12px;
-    column-count: 4;
     -moz-column-count: 4;
     -webkit-column-count: 4;
+    column-count: 4;
     column-gap: 20px;
+}
+
+.leftColumnNews
+{
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    width: 75%;
 }
 
 .rightColumnNews
 {
-    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
     display: inline-block;
+    padding: 5px;
+    border-left: 1px solid #000;
+    margin-left: -1px;
+    width: 24%;
+}
+
+.rightColumnNews .imageRightColumnNews
+{
+    width: 100%;
 }
 
 .rightColumnNews .mainTitleRightColumnNews
@@ -213,8 +242,7 @@ html
 
 .rightColumnNews .bodyRightColumnNews
 {
-    display: inline-block;
-    width: 266px;
+    display: block;
     font-size: 12px;
     text-align: justify;
 }
@@ -223,13 +251,16 @@ html
 {
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
+    font-size: 0;
 }
 
 .leftColumnSecondNews
 {
+    box-sizing: border-box;
     padding: 10px;
     display: inline-block;
-    width: 350px;
+    width: 39%;
+    border-right: 1px solid #000;
 }
 
 .leftColumnSecondNews .titleLeftColumnSecondNews
@@ -240,18 +271,20 @@ html
 .leftColumnSecondNews .bodyLeftColumnSecondNews
 {
     display: inline-block;
-    column-count: 2;
     -moz-column-count: 2;
     -webkit-column-count: 2;
+    column-count: 2;
     font-size: 12px;
 }
 
 .rightColumnSecondNews
 {
+    box-sizing: border-box;
     vertical-align: top;
     padding: 10px;
     display: inline-block;
-    width: 500px;
+    width: 60%;
+    margin-left: -1px;
     border-left: 1px solid #000;
 }
 
@@ -260,12 +293,16 @@ html
     text-align: center;
 }
 
+.rightColumnSecondNews .paragraph
+{
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
 .rightColumnSecondNews .bodyRightColumnSecondNews
 {
     display: inline-block;
-    column-count: 3;
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
     font-size: 12px;
 }
 
@@ -284,9 +321,9 @@ html
 .thirdNews .bodyThirdNews
 {
     display: inline-block;
-    column-count: 5;
     -moz-column-count: 5;
     -webkit-column-count: 5;
+    column-count: 5;
     font-size: 10px;
     padding: 10px;
 }
@@ -300,5 +337,5 @@ html
 {
     background-color: #f7f7f7;
     font-style: italic;
-    font-size: 105%;
+    font-size: 1.1em;
 }
