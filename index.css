@@ -86,6 +86,16 @@ h1
     break-inside: avoid-column;
 }
 
+.vertical-text
+{
+    width: 15px;
+    word-break: break-all;
+    float: left;
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+
 .container
 {
     -moz-column-count: 3;
