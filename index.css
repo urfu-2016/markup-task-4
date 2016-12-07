@@ -88,12 +88,20 @@ h1
 
 .vertical-text
 {
-    width: 15px;
+    width: 5px;
     word-break: break-all;
-    float: left;
     border: 1px solid #000;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
+}
+
+aside
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .container
