@@ -1,13 +1,17 @@
 @font-face
 {
     font-family: DeWarped;
-    src: local('An Unfortunate Event DeWarped'), url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2'), url(fonts/AnUnfortunateEventDeWarped.eot) format('embedded-opentype');
+    src: local('An Unfortunate Event DeWarped');
+    src: url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2');
+    src: url(fonts/AnUnfortunateEventDeWarped.eot) format('embedded-opentype');
 }
 
 @font-face
 {
     font-family: BurtonNightmare;
-    src: local('Burton\'s Nightmare'), url(fonts/BurtonNightmare.woff2) format('woff2'), url(fonts/BurtonNightmare.eot) format('embedded-opentype');
+    src: local('Burton\'s Nightmare');
+    src: url(fonts/BurtonNightmare.woff2) format('woff2');
+    src: url(fonts/BurtonNightmare.eot) format('embedded-opentype');
 }
 
 body
