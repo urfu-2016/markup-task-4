@@ -10,146 +10,112 @@
     src: local('Burton\'s Nightmare'), url(fonts/BurtonNightmare.woff2) format('woff2'), url(fonts/BurtonNightmare.eot) format('embedded-opentype');
 }
 
-div.header-bloсk
-{
-    margin-top: 7%;
-    line-height: .75;
-}
-
 body
 {
-    background: url('images/background.jpg');
+    margin: 0;
 }
 
-div.date
+main
+{
+    background: url('images/background.jpg');
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    padding: 5%;
+    /*чтобы заголовок не прилипал к содержанию(для красоты) */
+}
+
+.big-header
+{
+    font-family: DeWarped, sans-serif;
+    font-size: 6em;
+    text-align: center;
+    margin: 0;
+}
+
+.signature-header
+{
+    float: right;
+    text-align: right;
+    width: 200px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.date
 {
     line-height: 0;
-    padding-bottom: -2%;
-    padding-top: -14%;
-    margin-top: 5%;
     border-top-style: solid;
-    margin-bottom: -1%;
     border-bottom-style: solid;
     height: 100%;
     text-align: center;
 }
 
-header
-{
-    font-family: DeWarped;
-    font-size: 6em;
-    text-align: center;
-}
-
-.right-side
-{
-    position: absolute;
-    left: 1.5%;
-    width: 1ch;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-p.signature-header
-{
-    width: 20%;
-    float: right;
-    font-size: 1em;
-    text-decoration: underline;
-}
-
-div.content
-{
-    line-height: 1.5;
-    padding-top: 2%;
-}
-
-div.content-news
+.content-news
 {
     width: 80%;
     column-count: 2;
     float: left;
     height: 100%;
-
 }
 
-aside
+.header-news,
+.header-short-news
 {
-    border-left: 7px solid black;
-    padding-left: 10px;
-    width: 18%;
-    float: right;
-    height: 100%;
-}
-
-p.short-news
-{
-    font-family: BurtonNightmare;
-    font-size: 2em;
-    text-align: center;
-    color: black;
-    column-count: 1;
-    height: 100%;
-}
-
-.first-short-news,
-.second-short-news
-{
-    max-width: 100%;
-    margin-bottom: 0%;
-}
-
-div.count-colunm2
-{
-    column-count: 2;
-    height: 100%;
-    margin-left: 5%;
-}
-
-div.count-colunm4
-{
-    padding-top: 20%;
-    column-count: 4;
-    height: 100%;
-}
-
-div.img-1column
-{
-    width: 100%;
-    height: 300px;
-}
-
-.three-column
-{
-    width: 100%;
-    height: 100%;
-}
-
-figcaption
-{
-    font-size: 10px;
-}
-
-p.header-news,
-p.header-short-news
-{
-    font-family: EvitaRegular;
+    font-family: EvitaRegular, sans-serif;
     column-span: all;
     font-size: 2em;
     text-align: center;
     height: 100%;
 }
 
-p.header-short-news
+.count-colunm2
 {
-    font-size: 1em;
+    column-count: 2;
+    margin: 5% 5% 0; /* для красоты */
 }
 
-mark
+img
 {
-    font-weight: 800;
-    background-color: white;
+    width: 100%;
+}
 
+.vertical-block
+{
+    width: 1ch;
+    min-height: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+blockquote
+{
+    text-align: center;
+}
+
+aside
+{
+    border-left: 7px solid black;
+    width: 18%;
+    float: right;
+    height: 100%;
+}
+
+.short-news
+{
+    font-family: BurtonNightmare, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    height: 100%;
+}
+
+figcaption
+{
+    font-size: .7em;
 }
 
 p.article-text:first-letter
@@ -158,20 +124,55 @@ p.article-text:first-letter
     word-break: normal;
 }
 
-.color-change
+input
 {
-    float: left;
+    display: none;
+}
+
+label
+{
+    width: 150px;
+    text-align: center;
+}
+
+.change-size:checked ~ main .small-size,
+.change-color:checked ~ main .black-color,
+.change-font:checked ~ main .times-new-roman,
+.change-size:not(:checked) ~ main .big-size,
+.change-color:not(:checked) ~ main .white-color,
+.change-font:not(:checked) ~ main .takaop-gothic
+{
+    display: inline-block;
+}
+
+.change-size:checked ~ main .big-size,
+.change-color:checked ~ main .white-color,
+.change-font:checked ~ main .takaop-gothic,
+.change-size:not(:checked) ~ main .small-size,
+.change-color:not(:checked) ~ main .black-color,
+.change-font:not(:checked) ~ main .times-new-roman
+{
+    display: none;
 }
 
 .change-color:checked ~ main
 {
-    background-color: black;
+    background: black;
     color: white;
 }
 
-.change-font:checked ~ main
+.change-font:checked ~ main,
+.change-font:checked ~ main header .big-header,
+.change-font:checked ~ main .top-news .content-news .header-news,
+.change-font:checked ~ main .top-news aside header
 {
-    font-family: Arial;
+    font-family: TakaoPGothic, sans-serif;
+}
+
+.change-font:checked ~ main .top-news .content-news .vertical-block
+{
+    width: 1px;
+    word-wrap: break-word;
 }
 
 .change-size:checked ~ main
