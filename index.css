@@ -45,27 +45,6 @@ header
     text-align: center;
 }
 
-input[name='size'][value='font_larger']:checked ~ main
-{
-    font-size: 2em;
-}
-
-input[name='size'][value='font_smaller']:checked ~ main
-{
-    font-size: .5em;
-}
-
-input[name='family'][value='font_Arial']:checked ~ main div.text
-{
-    font-family: 'Arial';
-}
-
-input[name='color'][value='font_white']:checked ~ main
-{
-    color: white;
-    background: black;
-}
-
 main
 {
     column-count: 2;
@@ -91,8 +70,7 @@ h1
 
 .caption
 {
-    font-family: 'Quattrocento', serif;
-    font-size: 1.2rem;
+    font: 1.2rem 'Quattrocento', serif;
     border-bottom: 4px inset aquamarine;
 }
 
@@ -109,34 +87,39 @@ q
     background-color: khaki;
 }
 
-.first_img
+.first-img
 {
     column-span: all;
-    width: 100% ;
+    width: 100%;
     margin-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 4px inset aquamarine;
+    border-bottom: 4px inset #7fffd4;
 }
 
-.first_img img
+figure
+{
+    margin: 0 0;
+}
+
+.first-img img
 {
     width: 50%;
     float: left;
     margin-right: 20px;
 }
 
-.first_img div
+.first-img figcaption
 {
     margin: 5%;
     padding-left: 20px;
 }
 
-.img_caption
+.img-caption
 {
     font-family: 'Pacifico', fantasy;
 }
 
-.second_img
+.second-img
 {
     width: 100%;
 }
