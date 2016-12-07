@@ -1,0 +1,125 @@
+@font-face
+{
+    font-family: 'Righteous';
+    src: url('fonts/Righteous/Righteous-Regular.ttf'), url('fonts/Righteous/Righteous-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Covered_By_Your_Grace';
+    src: url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.ttf'), url('fonts/Covered_By_Your_Grace/CoveredByYourGrace.woff');
+}
+
+@font-face
+{
+    font-family: 'Quattrocento';
+    src: url('fonts/Quattrocento/Quattrocento-Regular.ttf'), url('fonts/Quattrocento/Quattrocento-Regular.woff');
+}
+
+@font-face
+{
+    font-family: 'Coming_Soon';
+    src: url('fonts/Coming_Soon/ComingSoon.ttf'), url('fonts/Coming_Soon/ComingSoon.woff');
+}
+
+@font-face
+{
+    font-family: 'Handlee';
+    src: url('fonts/Handlee/Handlee-Regular.ttf'), url('fonts/Handlee/Handlee-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico/Pacifico.ttf'), url('fonts/Pacifico/Pacifico.ttf');
+}
+
+body
+{
+    background-color: azure;
+}
+
+header
+{
+    font: 5rem 'Righteous';
+    text-align: center;
+}
+
+main
+{
+    column-count: 2;
+    column-rule: 3px solid darkcyan;
+}
+
+div.text
+{
+    font-family: 'Handlee', sans-serif;
+    column-count: 4;
+    column-rule: 3px dashed darkcyan;
+}
+
+h1
+{
+    font-family: 'Covered_By_Your_Grace', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    border: 4px inset aquamarine;
+    background-color: lavender;
+    color: #00004d;
+}
+
+.caption
+{
+    font: 1.2rem 'Quattrocento', serif;
+    border-bottom: 4px inset aquamarine;
+}
+
+.text::first-letter
+{
+    font-size: 2.5em;
+    color: #5e0080;
+    font-weight: bold;
+}
+
+q
+{
+    font-family: 'Coming_Soon', fantasy;
+    background-color: khaki;
+}
+
+.first-img
+{
+    column-span: all;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px inset #7fffd4;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.first-img img
+{
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.first-img figcaption
+{
+    margin: 5%;
+    padding-left: 20px;
+}
+
+.img-caption
+{
+    font-family: 'Pacifico', fantasy;
+}
+
+.second-img
+{
+    width: 100%;
+}
