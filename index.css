@@ -2,16 +2,16 @@
 {
     font-family: DeWarped;
     src: local('An Unfortunate Event DeWarped');
-    src: url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2');
     src: url(fonts/AnUnfortunateEventDeWarped.eot) format('embedded-opentype');
+    src: url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2');
 }
 
 @font-face
 {
     font-family: BurtonNightmare;
     src: local('Burton\'s Nightmare');
-    src: url(fonts/BurtonNightmare.woff2) format('woff2');
     src: url(fonts/BurtonNightmare.eot) format('embedded-opentype');
+    src: url(fonts/BurtonNightmare.woff2) format('woff2');
 }
 
 body
@@ -45,7 +45,7 @@ header
 {
     float: right;
     text-align: right;
-    width: 200px;
+    width: 250px;
     margin: 0;
     text-decoration: underline;
 }
@@ -135,7 +135,7 @@ input
 
 label
 {
-    width: 150px;
+    width: 250px;
     text-align: center;
 }
 
