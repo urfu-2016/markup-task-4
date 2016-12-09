@@ -22,29 +22,28 @@ body
 main
 {
     background: url('images/background.jpg');
-    overflow: auto;
     margin: 0;
     padding: 0;
 }
 
 header
 {
-    padding: 5%;
+    padding: 40px;
     /*чтобы заголовок не прилипал к содержанию(для красоты) */
 }
 
 .big-header
 {
-    font-family: DeWarped, sans-serif;
-    font-size: 6em;
+    font: 6em DeWarped, sans-serif;
     text-align: center;
     margin: 0;
 }
 
 .signature-header
 {
-    float: right;
-    text-align: right;
+    position: absolute;
+    right: 0;
+    text-align: left;
     width: 250px;
     margin: 0;
     text-decoration: underline;
@@ -53,26 +52,25 @@ header
 .date
 {
     line-height: 0;
-    border-top-style: solid;
-    border-bottom-style: solid;
+    border-style: solid none;
     height: 100%;
     text-align: center;
 }
 
 .content-news
 {
+    display: inline-block;
     width: 80%;
     column-count: 2;
-    float: left;
+    top: 0;
     height: 100%;
 }
 
 .header-news,
 .header-short-news
 {
-    font-family: EvitaRegular, sans-serif;
+    font: 2em EvitaRegular, sans-serif;
     column-span: all;
-    font-size: 2em;
     text-align: center;
     height: 100%;
 }
@@ -80,7 +78,7 @@ header
 .count-colunm2
 {
     column-count: 2;
-    margin: 5% 5% 0; /* для красоты */
+    margin: 20px 20px 0; /* для красоты */
 }
 
 img
@@ -103,16 +101,15 @@ blockquote
 
 aside
 {
+    display: inline-block;
     border-left: 7px solid black;
     width: 18%;
-    float: right;
     height: 100%;
 }
 
 .short-news
 {
-    font-family: BurtonNightmare, sans-serif;
-    font-size: 2em;
+    font: 2em BurtonNightmare, sans-serif;
     text-align: center;
     height: 100%;
 }
