@@ -88,20 +88,13 @@ h1
 
 .vertical-text
 {
+    position: absolute;
+    left: 3px;
     width: 5px;
     word-break: break-all;
     border: 1px solid #000;
     margin: 5px;
     padding: 10px;
-}
-
-aside
-{
-    position: absolute;
-    right: 0;
-    top: 0;
-    overflow: hidden;
-    background-color: #fff;
 }
 
 .container
@@ -112,6 +105,8 @@ aside
     column-rule: 1px solid #000;
     border-top: 1px solid #000;
     font-family: 'Nova Mono', serif;
+    width: 90vw;
+    margin-left: 3vw;
 }
 
 h3,
