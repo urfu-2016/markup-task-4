@@ -71,18 +71,18 @@ body
 
 .weather h4
 {
-    font: italic 1rem Arial, sans-serif;
+    font: italic 1em Arial, sans-serif;
 }
 
 .weather p
 {
-    font: .8rem Arial, sans-serif;
+    font: .8em Arial, sans-serif;
 }
 
 .info h1
 {
     width: 59%;
-    font: 5rem Cloister Black, sans-serif;
+    font: 5em Cloister Black, sans-serif;
     text-align: center;
 }
 
@@ -90,13 +90,13 @@ body
 {
     margin-top: 20px;
     width: 20%;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .rate table
 {
     width: 100%;
-    border: .2rem solid black;
+    border: .2em solid black;
     border-spacing: 0;
 }
 
@@ -109,7 +109,7 @@ body
 .rate th,
 .rate td
 {
-    padding: .2rem;
+    padding: .2em;
     margin: 0;
     border-right: 1px solid black;
 }
@@ -119,7 +119,7 @@ body
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: .2rem;
+    padding: .2em;
 }
 
 .date p
@@ -128,7 +128,7 @@ body
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 main
@@ -139,19 +139,6 @@ main
     -webkit-column-rule: 2px solid black;
     -moz-column-rule: 2px solid black;
     column-rule: 2px solid black;
-}
-
-.vertical-text
-{
-    float: left;
-    font-size: 1.2rem;
-    font-family: Times New Roman;
-    text-align: center;
-    text-transform: uppercase;
-    word-wrap: break-word;
-    width: 1ch;
-    border: 3px solid black;
-    padding: 5px;
 }
 
 .paper
@@ -172,17 +159,17 @@ main
 .paper h3
 {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .paper p
 {
-    font-size: .9rem;
+    font-size: .9em;
 }
 
 .big-text p
 {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-style: oblique;
 }
 
@@ -205,7 +192,35 @@ main
 
 .img-block p
 {
-    font-size: 1rem;
+    font-size: 1em;
+}
+
+.vertical-img-block
+{
+    padding: 4px;
+    border-top: 2px solid black;
+    break-inside: avoid-column;
+    border-bottom: 2px solid black;
+    margin: 2px 0;
+    font-family: Black Label, sans-serif;
+    text-align: left;
+}
+
+.vertical-img-block img
+{
+    display: inline-block;
+    width: 85%;
+    height: 100%;
+}
+
+.vertical-img-block p
+{
+    display: inline-block;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 1em;
+    font-size: 1em;
 }
 
 .allcols
@@ -216,11 +231,11 @@ main
 .paper p:first-of-type:first-letter
 {
     font-family: Roland, serif;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .excrete-name
 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-family: Cloister Black, serif;
 }
