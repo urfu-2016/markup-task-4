@@ -1,0 +1,176 @@
+@font-face
+{
+    font-family: DeWarped;
+    src: local('An Unfortunate Event DeWarped');
+    src: url(fonts/AnUnfortunateEventDeWarped.eot) format('embedded-opentype');
+    src: url(fonts/AnUnfortunateEventDeWarped.woff2) format('woff2');
+}
+
+@font-face
+{
+    font-family: BurtonNightmare;
+    src: local('Burton\'s Nightmare');
+    src: url(fonts/BurtonNightmare.eot) format('embedded-opentype');
+    src: url(fonts/BurtonNightmare.woff2) format('woff2');
+}
+
+body
+{
+    margin: 0;
+}
+
+main
+{
+    background: url('images/background.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    margin: 40px;
+    /*чтобы заголовок не прилипал к содержанию(для красоты) */
+}
+
+.big-header
+{
+    font: 6em DeWarped, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.signature-header
+{
+    position: absolute;
+    right: 0;
+    text-align: left;
+    width: 250px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.date
+{
+    line-height: 0;
+    border-style: solid none;
+    text-align: center;
+}
+
+.content-news
+{
+    display: inline-block;
+    width: 80%;
+    column-count: 2;
+    top: 0;
+}
+
+.header-news,
+.header-short-news
+{
+    font: 2em EvitaRegular, sans-serif;
+    column-span: all;
+    text-align: center;
+}
+
+.count-colunm2
+{
+    column-count: 2;
+    margin: 20px 20px 0; /* для красоты */
+}
+
+img
+{
+    width: 100%;
+}
+
+.vertical-block
+{
+    width: 1ch;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+blockquote
+{
+    text-align: center;
+}
+
+aside
+{
+    display: inline-block;
+    border-left: 7px solid black;
+    width: 18%;
+}
+
+.short-news
+{
+    font: 2em BurtonNightmare, sans-serif;
+    text-align: center;
+}
+
+figcaption
+{
+    font-size: .7em;
+}
+
+p.article-text:first-letter
+{
+    font-weight: 800;
+    word-break: normal;
+}
+
+input
+{
+    display: none;
+}
+
+label
+{
+    width: 250px;
+    text-align: center;
+}
+
+.change-size:checked ~ main .small-size,
+.change-color:checked ~ main .black-color,
+.change-font:checked ~ main .times-new-roman,
+.change-size:not(:checked) ~ main .big-size,
+.change-color:not(:checked) ~ main .white-color,
+.change-font:not(:checked) ~ main .takaop-gothic
+{
+    display: inline-block;
+}
+
+.change-size:checked ~ main .big-size,
+.change-color:checked ~ main .white-color,
+.change-font:checked ~ main .takaop-gothic,
+.change-size:not(:checked) ~ main .small-size,
+.change-color:not(:checked) ~ main .black-color,
+.change-font:not(:checked) ~ main .times-new-roman
+{
+    display: none;
+}
+
+.change-color:checked ~ main
+{
+    background: black;
+    color: #fff;
+}
+
+.change-font:checked ~ main,
+.change-font:checked ~ main header .big-header,
+.change-font:checked ~ main .top-news .content-news .header-news,
+.change-font:checked ~ main .top-news aside header
+{
+    font-family: TakaoPGothic, sans-serif;
+}
+
+.change-font:checked ~ main .top-news .content-news .vertical-block
+{
+    width: 1px;
+    word-wrap: break-word;
+}
+
+.change-size:checked ~ main
+{
+    font-size: 1.5em;
+}
