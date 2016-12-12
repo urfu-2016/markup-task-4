@@ -1,0 +1,241 @@
+@font-face
+{
+    font-family: Cloister Black;
+    src: local('Cloister Black')
+        , url(cloisterblack-webfont.woff2) format('woff2')
+        , url(cloisterblack-webfont.woff) format('woff')
+        , url(cloisterblack-webfont.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: Roland;
+    src: local('Roland')
+        , url(roland-webfont.woff2) format('woff2')
+        , url(roland-webfont.woff) format('woff')
+        , url(roland-webfont.ttf) format('truetype');
+}
+
+@font-face
+{
+    font-family: Black Label;
+    src: local('Black Label')
+        , url(vtks_black_label_normal-webfont.woff2) format('woff2')
+        , url(vtks_black_label_normal-webfont.woff) format('woff')
+        , url(vtks_black_label_normal-webfont.ttf) format('truetype');
+}
+
+body,
+h1,
+h3,
+header,
+div,
+section,
+p
+{
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    margin: 0 20px 20px;
+}
+
+.rate thead
+{
+    text-align: center;
+}
+
+.info div,
+.info h1
+{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dateinfo
+{
+    margin-bottom: 15px;
+}
+
+.weather
+{
+    width: 20%;
+}
+
+.weather h4
+{
+    font: italic 1em Arial, sans-serif;
+}
+
+.weather p
+{
+    font: .8em Arial, sans-serif;
+}
+
+.info h1
+{
+    width: 59%;
+    font: 5em Cloister Black, sans-serif;
+    text-align: center;
+}
+
+.rate
+{
+    margin-top: 20px;
+    width: 20%;
+    font-size: 1em;
+}
+
+.rate table
+{
+    width: 100%;
+    border: .2em solid black;
+    border-spacing: 0;
+}
+
+.rate th
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.rate th,
+.rate td
+{
+    padding: .2em;
+    margin: 0;
+    border-right: 1px solid black;
+}
+
+.date
+{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: .2em;
+}
+
+.date p
+{
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+main
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 2px solid black;
+    -moz-column-rule: 2px solid black;
+    column-rule: 2px solid black;
+}
+
+.paper
+{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 15px 0;
+}
+
+.three-columns-text
+{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.paper h3
+{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.paper p
+{
+    font-size: .9em;
+}
+
+.big-text p
+{
+    font-size: 1.1em;
+    font-style: oblique;
+}
+
+.img-block
+{
+    padding: 4px;
+    border-top: 2px solid black;
+    break-inside: avoid-column;
+    border-bottom: 2px solid black;
+    margin: 2px 0;
+    font-family: Black Label, sans-serif;
+    text-align: center;
+}
+
+.img-block img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.img-block p
+{
+    font-size: 1em;
+}
+
+.vertical-img-block
+{
+    padding: 4px;
+    border-top: 2px solid black;
+    break-inside: avoid-column;
+    border-bottom: 2px solid black;
+    margin: 2px 0;
+    font-family: Black Label, sans-serif;
+    text-align: left;
+}
+
+.vertical-img-block img
+{
+    display: inline-block;
+    width: 85%;
+    height: 100%;
+}
+
+.vertical-img-block p
+{
+    display: inline-block;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 1em;
+    font-size: 1em;
+}
+
+.allcols
+{
+    column-span: all;
+}
+
+.paper p:first-of-type:first-letter
+{
+    font-family: Roland, serif;
+    font-size: 1.5em;
+}
+
+.excrete-name
+{
+    font-size: 1.5em;
+    font-family: Cloister Black, serif;
+}
